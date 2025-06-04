@@ -7,15 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-yellow-400 font-sans">
-
-  <!-- JOIN THE PACK Section -->
-  <section class="flex flex-col items-center justify-center min-h-screen text-center p-6 bg-gradient-to-br from-yellow-800/20 via-black to-black">
-    <h1 class="text-5xl md:text-7xl font-extrabold text-yellow-300 drop-shadow-lg mb-4">Join the Pack</h1>
-    <p class="text-xl md:text-2xl text-yellow-200 max-w-2xl mb-6">The Alpha Husky movement isn’t just coming — it’s already here.</p>
-    <a href="#community" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 shadow-md transition">Howl With Us</a>
-  </section>
-
-  <!-- Original Hero Section -->
+  <!-- Hero Section -->
   <section class="flex flex-col items-center justify-center min-h-screen text-center p-6">
     <img src="logo.png" alt="Alpha Husky Logo" class="w-48 mb-6">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">Alpha Husky</h1>
@@ -25,15 +17,66 @@
     <div class="space-x-4">
       <a href="#game" class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-300">Play the Game</a>
       <a href="#lore" class="border border-yellow-400 px-4 py-2 rounded hover:bg-yellow-800">Read the Lore</a>
+      <a href="#legends" class="border border-yellow-400 px-4 py-2 rounded hover:bg-yellow-800">Meet the Legends</a>
+    </div>
+  </section>
+
+  <!-- Legends Section -->
+  <section id="legends" class="p-10 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Legends of the Pack</h2>
+    <p class="text-lg text-yellow-200 mb-6">
+      Meet the legendary Alphas and contributors who shaped the story and spirit of Alpha Husky. Each legend has a story, a face, and a legacy. 
+    </p>
+    <!-- Example Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center">
+        <img src="legend_alpha.png" alt="Alpha" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg">
+        <h3 class="text-xl font-bold mb-2">Alpha</h3>
+        <p class="text-yellow-200 text-sm">Founder, leader, and the spirit behind the movement. Read the full legend soon.</p>
+      </div>
+      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center">
+        <img src="legend_drenton.png" alt="Drenton" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg">
+        <h3 class="text-xl font-bold mb-2">Drenton</h3>
+        <p class="text-yellow-200 text-sm">The relentless raider. Scarred by the chain, but born to lead. More legends dropping soon.</p>
+      </div>
+      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center">
+        <img src="legend_gtl.png" alt="GTL" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg">
+        <h3 class="text-xl font-bold mb-2">GTL</h3>
+        <p class="text-yellow-200 text-sm">Shadow agent and master of the network. Discover his legend in the next drop.</p>
+      </div>
+    </div>
+    <div class="mt-8 text-yellow-300 text-center italic">
+      More legends and their stories coming soon.
     </div>
   </section>
 
   <!-- Sections -->
   <section id="lore" class="p-10 max-w-4xl mx-auto">
     <h2 class="text-3xl font-bold mb-4">The Lore</h2>
-    <p class="text-lg text-yellow-200">
-      Dive into a rich universe shaped by the Pack. Alpha Husky is more than a coin — it’s a living legend.
+    <p class="text-lg text-yellow-200 mb-6">
+      Dive into a rich universe shaped by the Pack. Alpha Husky is more than a coin — it’s a living legend.<br>
+      <span class="text-yellow-400">All past lore chapters and illustrations will be archived here, along with teasers for upcoming lore drops and storylines. </span>
     </p>
+    <!-- Lore Chapters Example -->
+    <div class="space-y-8">
+      <div class="bg-yellow-900/10 rounded-xl p-6 flex flex-col md:flex-row items-center gap-4">
+        <img src="lore_chapter1.png" alt="Chapter 1" class="w-32 h-32 rounded-lg shadow-lg">
+        <div>
+          <h3 class="text-xl font-bold mb-2">Chapter 1: Origins of the Pack</h3>
+          <p class="text-yellow-200 text-sm">How the legend was born. <a href="#" class="underline hover:text-yellow-400">Read now</a></p>
+        </div>
+      </div>
+      <div class="bg-yellow-900/10 rounded-xl p-6 flex flex-col md:flex-row items-center gap-4">
+        <img src="lore_chapter2.png" alt="Chapter 2" class="w-32 h-32 rounded-lg shadow-lg">
+        <div>
+          <h3 class="text-xl font-bold mb-2">Chapter 2: The Meme War</h3>
+          <p class="text-yellow-200 text-sm">The war that changed everything. <a href="#" class="underline hover:text-yellow-400">Read now</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-yellow-300 text-center italic">
+      More lore drops and art coming soon. Stay tuned for updates and teasers!
+    </div>
   </section>
 
   <section id="game" class="p-10 max-w-4xl mx-auto">
@@ -71,8 +114,8 @@
   <footer class="bg-yellow-900 p-6 text-center text-black mt-10">
     <p class="mb-2">Join the Pack:</p>
     <div class="space-x-4">
-      <a href="https://t.me/+QaAcoS1Cp_9kNTVk" target="_blank" class="underline">Telegram</a>
-      <a href="https://x.com/The_Alpha_Husky?t=05lGNHXvrrQvioGIoo8xjQ&s=09" target="_blank" class="underline">X (Twitter)</a>
+      <a href="https://t.me/AlphaHusky" target="_blank" class="underline">Telegram</a>
+      <a href="https://x.com/AlphaHusky" target="_blank" class="underline">X (Twitter)</a>
     </div>
     <p class="mt-4 text-yellow-200 text-sm">© 2025 Alpha Husky. All rights reserved.</p>
   </footer>
