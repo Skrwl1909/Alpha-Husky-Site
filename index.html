@@ -56,7 +56,23 @@
   </style>
 </head>
 <body class="bg-black text-yellow-400">
-
+<nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
+  <div class="flex items-center gap-3">
+    <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9">
+    <span class="font-bold text-xl tracking-widest glow">Alpha Husky</span>
+  </div>
+  <div class="space-x-2 text-sm md:text-base font-bold">
+    <a href="#game" class="hover:text-yellow-200 transition">Game</a>
+    <a href="#lore" class="hover:text-yellow-200 transition">Lore</a>
+    <a href="#legends" class="hover:text-yellow-200 transition">Legends</a>
+    <a href="#gallery" class="hover:text-yellow-200 transition">Gallery</a>
+    <a href="#blog" class="hover:text-yellow-200 transition">Updates</a>
+    <a href="#community" class="hover:text-yellow-200 transition">Community</a>
+    <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
+    <a href="#token" class="hover:text-yellow-200 transition">Token</a>
+    <a href="https://t.me/The_Alpha_husky" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl ml-2 hover:bg-yellow-300 shadow font-bold">Join The Pack</a>
+  </div>
+</nav>  
   <!-- Navbar -->
   <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
     <div class="flex items-center gap-3">
@@ -134,6 +150,45 @@
       More legends and their stories coming soon. <span class="text-yellow-500">#JoinThePack</span>
     </div>
   </section>
+  <section id="blog" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow flex items-center gap-3">
+    Blog & Updates
+    <span class="bg-yellow-500/80 text-black text-xs px-2 py-1 rounded-full">New</span>
+  </h2>
+  <div class="space-y-6">
+    <!-- Example post -->
+    <div class="bg-yellow-900/10 rounded-xl p-6 card-glow flex flex-col md:flex-row items-center gap-5">
+      <div class="flex-1">
+        <h3 class="font-bold text-lg mb-1 text-yellow-200">📢 Alpha Husky launches “The Meme War” – Chapter 5 is LIVE!</h3>
+        <p class="text-yellow-200 text-sm mb-2">We're entering a new phase of lore – meet the legend Blood-Moon Whisper and fight with us!</p>
+        <a href="#chapter5" class="text-yellow-300 underline font-bold hover:text-yellow-100">Read chapter</a>
+      </div>
+      <span class="bg-yellow-400/70 text-black px-3 py-1 rounded font-bold text-xs">Lore</span>
+    </div>
+    <!-- Add more posts the same way! -->
+    <div class="bg-yellow-900/10 rounded-xl p-6 card-glow flex flex-col md:flex-row items-center gap-5 opacity-60 pointer-events-none">
+      <div class="flex-1">
+        <h3 class="font-bold text-lg mb-1 text-yellow-200">Update #2 (coming soon)</h3>
+        <p class="text-yellow-200 text-sm">Next announcements, events and lore drops coming soon!</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow flex items-center gap-3">
+    Gallery <span class="bg-yellow-500/70 text-black text-xs px-2 py-1 rounded-full">Coming Soon</span>
+  </h2>
+  <div class="flex flex-wrap gap-8 items-center justify-center min-h-[140px]">
+    <div class="w-40 h-40 bg-yellow-900/20 rounded-xl flex items-center justify-center text-yellow-400 text-xl font-bold border-2 border-yellow-700/40 opacity-60">Preview 1</div>
+    <div class="w-40 h-40 bg-yellow-900/20 rounded-xl flex items-center justify-center text-yellow-400 text-xl font-bold border-2 border-yellow-700/40 opacity-60">Preview 2</div>
+    <div class="w-40 h-40 bg-yellow-900/20 rounded-xl flex items-center justify-center text-yellow-400 text-xl font-bold border-2 border-yellow-700/40 opacity-60">Preview 3</div>
+  </div>
+  <div class="mt-6 text-center">
+    <button disabled class="bg-yellow-400/70 text-black font-bold px-8 py-2 rounded-xl shadow text-lg opacity-80 cursor-not-allowed">
+      Notify me when the gallery launches (soon)
+    </button>
+  </div>
+</section>
 
   <!-- Lore Section -->
   <!-- Lore Section -->
@@ -148,6 +203,9 @@
     <a href="#chapter5" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 5: The Meme War</a>
     <a href="#chapter6" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 6 (Coming Soon)</a>
   </div>
+  <div class="flex justify-center mt-10">
+  <a href="https://t.me/AlphaHusky" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-yellow-300 transition">Join The Community &rarr;</a> 
+</div>
 
   <!-- Chapter 2 -->
   <section id="chapter2" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
@@ -402,27 +460,65 @@ It had no need.
   </section>
 
   <!-- Roadmap Section -->
-  <section id="roadmap" class="section p-8 md:p-12 max-w-5xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Roadmap</h2>
-    <ul class="list-disc list-inside text-yellow-200 space-y-2 text-lg">
-      <li>Phase 1: Build the Pack (game, lore, socials)</li>
-      <li>Phase 2: Token launch & utility integration</li>
-      <li>Phase 3: NFT collection & advanced gameplay</li>
-      <li>Phase 4: Expansion beyond the chain</li>
-    </ul>
-    <div class="mt-8 text-yellow-300 text-center italic">
+  <section id="roadmap" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Roadmap</h2>
+  <div class="flex flex-col gap-4">
+    <div class="group flex items-center gap-4">
+      <div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">1</div>
+      <div>
+        <div class="font-bold text-yellow-200 group-hover:text-yellow-400">Build the Pack (game, lore, socials)</div>
+        <div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">Phase one: building the community foundations, lore, and launching the Telegram game.</div>
+      </div>
+    </div>
+    <div class="group flex items-center gap-4">
+      <div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">2</div>
+      <div>
+        <div class="font-bold text-yellow-200 group-hover:text-yellow-400">Token launch & utility integration</div>
+        <div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">Token launch, first utilities in the game and for the community.</div>
+      </div>
+    </div>
+    <div class="group flex items-center gap-4">
+      <div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">3</div>
+      <div>
+        <div class="font-bold text-yellow-200 group-hover:text-yellow-400">NFT collection & advanced gameplay</div>
+        <div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">NFT collection drop + new gameplay features.</div>
+      </div>
+    </div>
+    <div class="group flex items-center gap-4">
+      <div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">4</div>
+      <div>
+        <div class="font-bold text-yellow-200 group-hover:text-yellow-400">Expansion beyond the chain</div>
+        <div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">Expansion – partnerships, new platforms, and new markets.</div>
+      </div>
+    </div>
+  </div>
+</section>
       Community-driven. Transparent. #AlphaJourney
     </div>
   </section>
 
   <!-- Token Utility Section -->
-  <section id="token" class="section p-8 md:p-12 max-w-5xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Token Utility</h2>
-    <p class="text-lg text-yellow-200 mb-6">
-      A future token, designed for real in-game utility, rewards, and long-term community value.<br>
-      <span class="text-yellow-400">Not just a meme. A tool for the Pack.</span>
-    </p>
-    <div class="mt-8 text-yellow-300 text-center italic">
+ <section id="token" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Token Utility</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">In-game</div>
+      <div class="text-yellow-200 text-sm">Use the token to unlock quests, missions, items, and skins.</div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">Community</div>
+      <div class="text-yellow-200 text-sm">Stake or use for voting, nominations, and future rewards.</div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">NFT / Collectibles</div>
+      <div class="text-yellow-200 text-sm">Token required to claim and exchange NFTs and rewards for activity.</div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-60">
+      <div class="font-bold text-yellow-400">More (soon)</div>
+      <div class="text-yellow-200 text-sm">More utilities will come as the project develops.</div>
+    </div>
+  </div>
+</section>
       Tokenomics, utilities & full details dropping soon.
     </div>
   </section>
