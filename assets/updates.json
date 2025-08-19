@@ -1,1 +1,12 @@
 
+{
+  "date": "2025-08-19",
+  "title": "Site Launch + Skins Gallery MVP",
+  "status": "LIVE",
+  "text": "We launched the public site and the first version of the animated skins gallery. MP4 clips autoplay when visible and pause off-screen. More skins, posters, and UI polish coming next.",
+  "media": "assets/skins/ASHCLAW.mp4",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+  ]
+}
