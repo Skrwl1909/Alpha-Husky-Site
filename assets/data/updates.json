@@ -5,7 +5,7 @@
   "text": "Shipped tiered Bug Hunter badges (5/15/25), Howl Streak badges (7 & 30 days), single-tier Never Lucky, unified stat pipeline across /mystats, /stats and upgrades, admin-only /accept_bug, idempotent /dailyhowl; plus multiple fixes.",
   "media": "assets/badges/bug_hunter3.png",
   "links": [
-    { "label": "Telegram", "url": ""https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 }
