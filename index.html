@@ -515,7 +515,7 @@ It had no need.
 
   async function loadUpdates(){
     try{
-      const res = await fetch('assets/data/updates.json?ts='+Date.now());
+      const res = await fetch('assets/updates.json?ts=' + Date.now());
       const items = await res.json();
       const list = document.getElementById(listElId);
       list.innerHTML = '';
