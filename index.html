@@ -455,19 +455,23 @@ It had no need.
   document.querySelectorAll('#skinsGrid video').forEach(v => io.observe(v));
 </script>
 
-<!-- Updates loader (reads assets/data/updates.json) -->
+<!-- Updates loader (robust, tries multiple paths) -->
 <script>
 (function(){
   const listElId = 'updatesList';
+
+  // Autoplay/pause for any MP4 in updates
   const io = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{ const v=e.target; e.isIntersecting ? v.play().catch(()=>{}) : v.pause(); });
+    entries.forEach(e=>{
+      const v = e.target;
+      e.isIntersecting ? v.play().catch(()=>{}) : v.pause();
+    });
   }, {threshold:0.4});
 
   function renderItem(u){
     const card = document.createElement('article');
     card.className = 'bg-yellow-900/10 border border-yellow-700 rounded-xl p-6 shadow-lg';
 
-    // header
     const header = document.createElement('div');
     header.className = 'flex justify-between items-center mb-2';
     const d = document.createElement('span');
@@ -477,36 +481,50 @@ It had no need.
     if(u.status){
       const b = document.createElement('span');
       b.className = 'bg-yellow-500 text-black text-xs px-3 py-1 rounded-full font-bold';
-      b.textContent = u.status; header.appendChild(b);
+      b.textContent = u.status;
+      header.appendChild(b);
     }
     card.appendChild(header);
 
     if(u.title){
       const h3 = document.createElement('h3');
       h3.className = 'text-xl font-bold mb-2';
-      h3.textContent = u.title; card.appendChild(h3);
+      h3.textContent = u.title;
+      card.appendChild(h3);
     }
 
     if(u.media){
-      if(/\.mp4$/i.test(u.media)){
-        const v=document.createElement('video');
-        v.src=u.media; v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('loop',''); v.setAttribute('preload','none');
-        v.className='w-full rounded-xl border border-yellow-700/50 mb-3';
+      if(/\.(mp4)$/i.test(u.media)){
+        const v = document.createElement('video');
+        v.src = u.media;
+        v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('loop',''); v.setAttribute('preload','none');
+        v.className = 'w-full rounded-xl border border-yellow-700/50 mb-3';
         card.appendChild(v); io.observe(v);
       } else {
-        const img=document.createElement('img');
-        img.src=u.media; img.alt=u.title||'update'; img.loading='lazy';
-        img.className='w-full rounded-xl border border-yellow-700/50 mb-3'; card.appendChild(img);
+        const img = document.createElement('img');
+        img.src = u.media; img.alt = u.title || 'update'; img.loading = 'lazy';
+        img.className = 'w-full rounded-xl border border-yellow-700/50 mb-3';
+        card.appendChild(img);
       }
     }
 
     if(u.text){
-      const p=document.createElement('p'); p.className='text-yellow-200 text-sm'; p.textContent=u.text; card.appendChild(p);
+      const p = document.createElement('p');
+      p.className = 'text-yellow-200 text-sm';
+      p.textContent = u.text;
+      card.appendChild(p);
     }
 
     if(Array.isArray(u.links) && u.links.length){
-      const row=document.createElement('div'); row.className='mt-3 flex gap-3 flex-wrap';
-      u.links.forEach(l=>{ const a=document.createElement('a'); a.href=l.url; a.target='_blank'; a.rel='noopener'; a.textContent='→ '+(l.label||'Link'); a.className='underline text-yellow-400 text-sm'; row.appendChild(a); });
+      const row = document.createElement('div');
+      row.className = 'mt-3 flex gap-3 flex-wrap';
+      u.links.forEach(l=>{
+        const a = document.createElement('a');
+        a.href = l.url; a.target = '_blank'; a.rel = 'noopener';
+        a.textContent = '→ ' + (l.label || 'Link');
+        a.className = 'underline text-yellow-400 text-sm';
+        row.appendChild(a);
+      });
       card.appendChild(row);
     }
 
@@ -514,22 +532,45 @@ It had no need.
   }
 
   async function loadUpdates(){
-    try{
-      const res = await fetch('assets/updates.json?ts=' + Date.now());
-      const items = await res.json();
-      const list = document.getElementById(listElId);
-      list.innerHTML = '';
-      (items||[]).sort((a,b)=> (b.date||'').localeCompare(a.date||''));
-      (items||[]).forEach(u=> list.appendChild(renderItem(u)) );
-    }catch(err){
-      console.error('Updates load error', err);
-      const list = document.getElementById(listElId);
-      if(list) list.innerHTML = '<div class="text-yellow-300">Could not load updates.</div>';
+    // Try both common locations (absolute and relative)
+    const paths = [
+      '/assets/data/updates.json',
+      'assets/data/updates.json',
+      '/assets/updates.json',
+      'assets/updates.json'
+    ];
+    let items = null, lastErr = null, usedPath = null;
+
+    for (const p of paths){
+      try{
+        const res = await fetch(p + '?ts=' + Date.now());
+        if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + res.statusText + ' for ' + p);
+        items = await res.json();
+        usedPath = p;
+        break;
+      }catch(err){
+        lastErr = err;
+      }
     }
+
+    const list = document.getElementById(listElId);
+    if(!items){
+      console.error('Updates load error:', lastErr);
+      list.innerHTML = '<div class="text-yellow-300">Could not load updates.</div>';
+      return;
+    }
+
+    // Normalize to array just in case
+    if (!Array.isArray(items)) items = [items];
+
+    // Sort newest first and render
+    list.innerHTML = '';
+    items.sort((a,b)=> (b.date||'').localeCompare(a.date||''));
+    items.forEach(u => list.appendChild(renderItem(u)));
+
+    console.log('[Updates] Loaded from:', usedPath);
   }
 
   document.addEventListener('DOMContentLoaded', loadUpdates);
 })();
 </script>
-</body>
-</html>
