@@ -4,7 +4,7 @@
     "title": "Consumables rework + Mystery/Premium/Legendary Boxes",
     "status": "LIVE",
     "text": "Finished the consumables pass and wired effects into gameplay hooks. New/updated items: XP Surge (+25%/30m), Chaos Dice (+25% next roll), Speed Boost (-50% cooldowns/15m), Turbo Bone (double feed), Husky Plushie (fail protection x1), Alpha Surge (+20% XP/loot/bones/30m), Lucky Coin (2× XP next feed), Energy Drink (next mission 2× faster). Added Bones bonus + mission duration helpers. Loot boxes shipped: Mystery Box (consumables-only pool), Premium Box (random gear), Legendary Box (legendary gear + support for unique pet/skin tokens). Bone Pack converted to a lottery (10–2000 bones; shop price 1000).",
-    "media": "assets/items/boxes_promo.png",
+    "media": "assets/items/legendary_box.png",
     "links": [
       { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
       { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
