@@ -1,4 +1,14 @@
 [
+{
+  "date": "2025-08-22",
+  "title": "Forge Week Day 1 — Materials & Shards foundation",
+  "status": "LIVE",
+  "text": "Laid the economy groundwork. 1) Data migration complete: every player now has materials.scrap and materials.rune_dust plus a per-slot shards dictionary (weapon/armor/fangs/cloak/collar/helmet/ring/offhand/gloves). Pet is excluded from shards. The script created an automatic backup before saving. 2) Config set: SELECTOR_SHARD_SLOTS updated (no pet), SHARDS_REQUIRED_UNCOMMON=10, and a materials-only drop table scaffolded; ENABLE_FULL_GEAR_DROPS is prepared for the switch. 3) New /materials command is live — shows Scrap, Rune Dust, and Shards; Bones are intentionally not shown here to avoid desync (Bones remain governed by core balance). 4) Art for Scrap Alloy and Rune Dust is ready. Next: swap mission/box loot to materials+shards and ship salvage (manual, bulk, auto-dupe) with the one-time Forge Clean.",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+  ]
+}.
   {
     "date": "2025-08-21",
     "title": "Effects live, boxes refined, gameplay hooks wired",
