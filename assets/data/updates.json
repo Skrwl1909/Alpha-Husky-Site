@@ -1,5 +1,16 @@
 [
 {
+"date": "2025-08-24",
+"title": "Profile Card Badges live + 2,200 milestone",
+"status": "LIVE",
+"text": "Profile cards now render real badge PNGs. We filtered /setbadges to true BADGES keys, added a robust icon resolver (absolute assets/badges paths, slug + icon_file support), and sanitized markup to avoid parse errors. Result: the bottom row shows selected badges instead of placeholders (with +N overflow). Milestone: we crossed 2,200 followers on X — thank you, pack!",
+"media": "assets/alphahusky_x_2200.png",
+"links": [
+{ "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+{ "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+]
+},
+{
   "date": "2025-08-22",
   "title": "Forge Week Day 1 — Materials & Shards foundation",
   "status": "LIVE",
