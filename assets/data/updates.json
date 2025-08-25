@@ -1,4 +1,13 @@
-[
+{
+  "date": "2025-08-25",
+  "title": "Forge Week Day 2 — Loot Patch (Solo/Co-op/Boxes) + Lore Ch.2 + Website refresh",
+  "status": "LIVE",
+  "text": "Forge Week continues. 1) Swapped ALL core loot sources to the new economy: solo missions, TeamUp (co-op) stages, and boxes now grant Bones, Scrap Alloy, Rune Dust, and Selector Shards (no full gear) while ENABLE_FULL_GEAR_DROPS=false; rare boss/event drops remain a separate toggle. 2) Unified helpers and removed ‘Bones’ from materials storage to prevent desync (Bones remain from points). 3) /materials + HUD stay aligned with the new counts. Also today: Chapter 2 of the lore premiered, and we refreshed several sections of the website with cleaner layouts and a mobile-friendly pass (navigation, spacing, typography). Next: Salvage (manual/bulk/auto-dupe) and the one-time Forge Clean.",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+  ]
+},
 {
 "date": "2025-08-24",
 "title": "Profile Card Badges live + 2,200 milestone",
