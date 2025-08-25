@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -565,6 +564,14 @@ It had no need.
     menu.classList.toggle('hidden');
   });
 </script>
+<!-- Toggle script for Chapter 5 -->
+<script>
+  document.getElementById('toggle-chapter5').addEventListener('click', () => {
+    const content = document.getElementById('chapter5-content');
+    content.classList.toggle('hidden');
+    const button = document.getElementById('toggle-chapter5');
+    button.textContent = content.classList.contains('hidden') ? 'Read More' : 'Hide';
+  });
+</script>
 </body>
 </html>
-```
