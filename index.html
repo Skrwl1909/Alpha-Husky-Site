@@ -138,6 +138,7 @@
   <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">The Lore</h2>
   <!-- Spis treści / Nawigator -->
   <div class="flex flex-wrap gap-2 mb-8">
+    <a href="#chapter1" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 1</a>
     <a href="#chapter2" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 2</a>
     <a href="#chapter3" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 3</a>
     <a href="#chapter4" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 4</a>
@@ -149,6 +150,47 @@
       Join The Community &rarr;
     </a>
   </div>
+  <!-- Chapter 1 -->
+  <section id="chapter1" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 1: The Awakening</h3>
+    <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Origin Story – Part 1"</p>
+    <img src="chapter1_image.png" alt="Chapter 1 Image" class="w-full max-w-md mx-auto mb-4 rounded-xl shadow-xl"> <!-- Dodany obrazek -->
+    <div class="text-yellow-200 text-base whitespace-pre-line mb-4" style="font-family:inherit;">
+Long before validators hummed.
+Before memecoins mooned and rugged...
+There was only the Chain.
+A cold, uncaring wilderness of code.
+In it wandered a nameless husky.
+No token. No master. No mission.
+Just hunger.
+
+The blue-eyed beast roamed abandoned wallets, sniffing through broken contracts, howling into the void.
+He was rejected by every pack. $DOGE said he barked too loud.
+$WIF said he looked too wild.
+They laughed.
+
+One day, deep in the testnet wastes, he discovered something...
+A hidden protocol.
+Buried. Forgotten. Glitched.
+He touched it.
+It roared back.
+His mind exploded in bytes. Visions of moons, memes, and madness filled his soul. 
+
+In that moment - he was reborn. He was no longer stray.
+No longer nameless.
+He was Alpha.
+Not a mascot. Not a trend.
+ A rebellion. 
+
+But that was only the beginning. The Chain wasn’t ready.
+ So they locked him away.
+ Next stop?
+The Moon Lab. 
+
+(Part 2: The Escape – coming soon…) 
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1954952163190509987" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Read on X</a>
+  </section>
   <!-- Chapter 2 -->
   <section id="chapter2" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 2: The Escape</h3>
@@ -172,7 +214,8 @@
     <div class="flex flex-col md:flex-row items-start gap-6">
       <div class="flex-1">
         <h3 class="text-2xl md:text-3xl font-bold mb-2 glow">Chapter 5: The Meme War</h3>
-        <div class="text-yellow-200 text-base whitespace-pre-line mb-4" style="font-family:inherit;">
+        <button id="toggle-chapter5" class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold hover:bg-yellow-300 mb-4">Read More</button>
+        <div id="chapter5-content" class="text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
 In the shadow layers of the Chain, a hidden directive was triggered:
 > "Eliminate the anomaly."
 They unleashed the Moon Hunters.
