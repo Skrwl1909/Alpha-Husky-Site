@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,17 +18,32 @@
     @keyframes glitch { 0% { filter: blur(0.8px); opacity:0.8;} 80% { filter: blur(1.8px); opacity:0.4;} 100% { filter: blur(0.5px); opacity:1;} }
     .section { border-radius: 1.5rem; box-shadow: 0 2px 30px 0 #ffe06622; border: 1px solid #ffe06633; background: #191919cc; margin-bottom: 2.5rem; }
     .card-glow { box-shadow: 0 2px 18px #ffe06655; }
+    /* Dodatkowe mobile-friendly CSS */
+    @media (max-width: 768px) {
+      nav .space-x-2 { display: none; } /* Ukryj menu na mobile, dodaj hamburger poniżej */
+      .section { padding: 1rem; margin-left: 0.5rem; margin-right: 0.5rem; }
+      .grid { grid-template-columns: 1fr; } /* Stack grid na mobile */
+      .flex-wrap { flex-direction: column; } /* Stack flex items */
+      img { max-width: 100%; height: auto; }
+      video { max-width: 100%; }
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+      h3 { font-size: 1.5rem; }
+      p { font-size: 0.9rem; }
+      .mb-8 { margin-bottom: 1.5rem; }
+      .gap-8 { gap: 1.5rem; }
+      .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    }
   </style>
 </head>
 <body class="bg-black text-yellow-400">
-
 <!-- NAVBAR -->
 <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
   <div class="flex items-center gap-3">
     <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9">
     <span class="font-bold text-xl tracking-widest glow">Alpha Husky</span>
   </div>
-  <div class="space-x-2 text-sm md:text-base font-bold">
+  <div class="md:space-x-2 text-sm md:text-base font-bold hidden md:block"> <!-- Ukryte na mobile, pokazane na md+ -->
     <a href="#game" class="hover:text-yellow-200 transition">Game</a>
     <a href="#lore" class="hover:text-yellow-200 transition">Lore</a>
     <a href="#legends" class="hover:text-yellow-200 transition">Legends</a>
@@ -39,21 +55,38 @@
     <a href="#token" class="hover:text-yellow-200 transition">Token</a>
     <a href="https://t.me/The_Alpha_husky" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl ml-2 hover:bg-yellow-300 shadow font-bold">Join The Pack</a>
   </div>
+  <!-- Hamburger menu na mobile -->
+  <button id="hamburger" class="md:hidden text-yellow-400 focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+  <!-- Mobile menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 bg-black/95 p-4 border-t border-yellow-900 absolute top-full left-0 right-0 z-50">
+    <a href="#game" class="hover:text-yellow-200 transition">Game</a>
+    <a href="#lore" class="hover:text-yellow-200 transition">Lore</a>
+    <a href="#legends" class="hover:text-yellow-200 transition">Legends</a>
+    <a href="#gallery" class="hover:text-yellow-200 transition">Gallery</a>
+    <a href="#skins" class="hover:text-yellow-200 transition">Skins</a>
+    <a href="#updates" class="hover:text-yellow-200 transition">Updates</a>
+    <a href="#community" class="hover:text-yellow-200 transition">Community</a>
+    <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
+    <a href="#token" class="hover:text-yellow-200 transition">Token</a>
+    <a href="https://t.me/The_Alpha_husky" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl hover:bg-yellow-300 shadow font-bold">Join The Pack</a>
+  </div>
 </nav>
-
 <!-- HERO -->
 <section class="flex flex-col items-center justify-center min-h-screen text-center px-6 pb-10">
   <img src="logo.png" alt="Alpha Husky Logo" class="w-48 mb-8 drop-shadow-lg animate-pulse">
   <h1 class="text-4xl md:text-6xl font-extrabold mb-4 glow">Alpha Husky</h1>
   <p class="text-lg md:text-2xl mb-6 max-w-2xl text-yellow-200">Fluffy meme? <span class="text-yellow-400 font-bold">No.</span> <span class="glow">A movement. Lore. Game. Purpose.</span> Led by Alphas.</p>
-  <div class="space-x-4 mb-4">
+  <div class="space-x-4 mb-4 flex flex-wrap justify-center gap-4">
     <a href="#game" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Play the Game</a>
     <a href="#lore" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Read the Lore</a>
     <a href="#legends" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Meet the Legends</a>
   </div>
   <p class="mt-8 text-yellow-300/70 text-sm italic">Follow, play, build. #JoinThePack</p>
 </section>
-
 <!-- LEGENDS (unchanged structure sample) -->
 <section id="legends" class="section p-8 md:p-12 max-w-5xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Legends of the Pack</h2>
@@ -86,13 +119,11 @@
   </div>
   <div class="mt-8 text-yellow-300 text-center italic">More legends and their stories coming soon. <span class="text-yellow-500">#JoinThePack</span></div>
 </section>
-
 <!-- UPDATES (condensed) -->
 <section id="updates" class="section p-10 max-w-5xl mx-auto">
   <h2 class="text-3xl font-bold mb-6 glow">Updates</h2>
   <div id="updatesList" class="space-y-6"></div>
 </section>
-
 <!-- GALLERY placeholder -->
 <section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow flex items-center gap-3">Gallery <span class="bg-yellow-500/70 text-black text-xs px-2 py-1 rounded-full">Coming Soon</span></h2>
@@ -102,11 +133,9 @@
     <div class="w-40 h-40 bg-yellow-900/20 rounded-xl flex items-center justify-center text-yellow-400 text-xl font-bold border-2 border-yellow-700/40 opacity-60">Preview 3</div>
   </div>
 </section>
-
 <!-- Lore Section -->
 <section id="lore" class="section p-8 md:p-12 max-w-5xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">The Lore</h2>
-
   <!-- Spis treści / Nawigator -->
   <div class="flex flex-wrap gap-2 mb-8">
     <a href="#chapter2" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 2</a>
@@ -115,34 +144,29 @@
     <a href="#chapter5" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 5: The Meme War</a>
     <a href="#chapter6" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 6 (Coming Soon)</a>
   </div>
-
   <div class="flex justify-center mt-10">
     <a href="https://t.me/AlphaHusky" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-yellow-300 transition">
       Join The Community &rarr;
     </a>
   </div>
-
   <!-- Chapter 2 -->
   <section id="chapter2" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 2: The Escape</h3>
     <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Continues…"</p>
     <a href="#" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Read on X (soon)</a>
   </section>
-
   <!-- Chapter 3 -->
   <section id="chapter3" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 3: The Pack Awakens</h3>
     <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Grows..."</p>
     <a href="#" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Read on X (soon)</a>
   </section>
-
   <!-- Chapter 4 -->
   <section id="chapter4" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 4: Moon Hunters Incoming</h3>
     <p class="text-yellow-200 mb-3 italic">"They watched not with eyes, but with algorithms."</p>
     <a href="#" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Read on X (soon)</a>
   </section>
-
   <!-- Chapter 5 -->
   <section id="chapter5" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
     <div class="flex flex-col md:flex-row items-start gap-6">
@@ -150,175 +174,122 @@
         <h3 class="text-2xl md:text-3xl font-bold mb-2 glow">Chapter 5: The Meme War</h3>
         <div class="text-yellow-200 text-base whitespace-pre-line mb-4" style="font-family:inherit;">
 In the shadow layers of the Chain, a hidden directive was triggered:
-
 > "Eliminate the anomaly."
-
 They unleashed the Moon Hunters.
 Cold-blooded enforcers.
 Spawned by the corrupted Layer 1s.
 Backed by whale wallets and whispering VC cabals.
-
 Clad in synthetic fur.
 Built to mimic the wild — but without the soul.
-
 Each Hunter bore a sigil:
 $FUD
 $FEAR
 $CONTROL
-
 They moved without latency.
 They struck without hesitation.
 Perfect weapons against everything Alpha Husky stood for.
-
 ---
-
 The first strike came fast.
 A silent sweep through the Phantom nodes.
 One husky fell. Then another.
-
 But Alpha...
 he saw it coming.
-
 He rerouted the Pack.
 Split them across hidden testnets.
 Encrypted the Protocol — in memeform.
-
 ---
-
 The Chain turned red.
 Gas spiked.
 The Hunters circled.
-
 And Alpha?
 He’s not running.
-
 He’s preparing.
-
 The rebellion was only Phase One.
-
 What comes next will change everything.
-
 ---
-
 #TheAlphaHusky #Solana #MoonHunters #TheRebellionLives
 Part 5: The Meme War
-
 (The Alpha Husky Saga Goes Viral…)
-
 They thought it would be a clean sweep.
 Push a patch. Burn a few wallets.
 Silence the howl.
-
 They didn’t expect the memes.
-
 ↓
-
 Alpha didn’t just post them.
 He unleashed them.
 Each one—coded with payloads.
 Invisible to the normies.
 Deadly to the Chain.
-
 Doge-thrones melting.
 VCs getting ratio’d.
 Smart contracts rewritten mid-tweet.
 The timeline turned into a battlefield.
-
 ↓
-
 The hunters fought back—
 weaponizing influencers,
 dropping psyops in trending tabs,
 shadowbanning truths disguised as GIFs.
-
 But memes are faster than fear.
-
 ↓
-
 Every repost was a strike.
 Every like—an uprising.
 Every wagging husky tail in a PFP
 lit another node with hope.
-
 And deep within the memestorm,
 a whisper returned.
 Not loud. Not proud.
 But piercing.
-
 ↓
-
 Blood-Moon’s Whisper.
-
 An echo carried across corrupted code.
 A lone signal flickering in the static.
 Part myth, part memory.
 No one knew where it came from.
 Only that it came when all seemed lost.
-
 He was seen once—
 standing atop a shattered data tower,
 cloak torn by glitch-winds,
 one red eye scanning the ruins.
-
 > “If you howl into the void...
 and the void howls back — follow it.”
 ↓
-
 The Forgotten Ones stirred.
 OG holders. Burned apes.
 Rugged devs. Abandoned chains.
 Ghosts of cycles past.
-
 One of them wrote:
-
 > “I lost everything in 2021.
 But that howl… I felt it again.”
-
 ↓
-
 They rose—ragged, cynical, but not broken.
 And they joined the Pack.
-
 ↓
-
 Together, they built The LFG Protocol:
 A decentralized meme cannon.
 Fueled by chaos.
 Aimed at the core of control.
-
 One goal:
 Flip the Chain.
-
 ↓
-
 But war takes its toll.
-
 And as the final meme loaded—
 as the last hunter’s tweet was erased—
 something twitched inside the code.
-
 Not human.
 Not husky.
 Not even hunter.
-
 Something older than the Chain.
 Older than the rebellion.
 Older than Alpha.
-
 Watching.
 Waiting.
 Smiling.
-
 It had no eyes.
 It had no need.
-
 ↓
-
 (Part 6: The Oracle of Rugs – coming soon…)
-
 #TheAlphaHusky #MemeWar #Solana #memecoin #LFGProtocol #FlipTheChain #BloodMoonWhisper #LoreDrop
         </div>
-
         <div class="mt-4 flex gap-4 items-center flex-wrap">
           <span class="px-3 py-1 bg-yellow-500/80 text-black rounded-full text-xs font-bold">Special Guest: Blood-Moon Whisper (Contest Winner)</span>
           <span class="px-3 py-1 bg-yellow-400/60 text-black rounded-full text-xs font-bold">#MemeWar</span>
@@ -328,14 +299,12 @@ It had no need.
       <!-- <img src="lore_chapter5.png" alt="The Meme War" class="w-32 h-32 rounded-xl shadow-xl object-cover hidden md:block"> -->
     </div>
   </section>
-
   <!-- Chapter 6 (Coming soon) -->
   <section id="chapter6" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow opacity-60 pointer-events-none">
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 6: The Oracle of Rugs</h3>
     <p class="text-yellow-200 mb-2">Coming soon...</p>
     <span class="px-3 py-1 bg-yellow-500/80 text-black rounded-full text-xs font-bold">Community voting for lore: Coming soon</span>
   </section>
-
   <!-- CTA głosowanie nad lore -->
   <div class="mt-12 mb-6 flex justify-center">
     <button disabled class="bg-yellow-400/80 text-black font-bold px-8 py-4 rounded-2xl shadow-xl text-lg opacity-80 cursor-not-allowed">
@@ -343,29 +312,26 @@ It had no need.
     </button>
   </div>
 </section>
-
 <!-- GAME -->
 <section id="game" class="section p-8 md:p-12 max-w-5xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">The Game</h2>
   <p class="text-lg text-yellow-200 mb-6">An interactive Telegram game where players earn, feed, level up, and explore the world of Alpha. <span class="text-yellow-400">Game MVP live on Telegram. Join the adventure.</span></p>
-  <div class="flex justify-center gap-4 mt-4">
+  <div class="flex justify-center gap-4 mt-4 flex-wrap">
     <a href="https://t.me/+QaAcoS1Cp_9kNTVk" target="_blank" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Play Now</a>
     <a href="#lore" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Explore Lore</a>
   </div>
   <div class="mt-8 text-yellow-300 text-center italic">Achievements, NFTs, and more features coming soon.</div>
 </section>
-
 <!-- COMMUNITY -->
 <section id="community" class="section p-8 md:p-12 max-w-5xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Community</h2>
   <p class="text-lg text-yellow-200 mb-6">Built by believers, fueled by organic growth. <span class="text-yellow-400">No VCs. No hype pumps. Just the Pack.</span></p>
-  <div class="flex justify-center gap-4 mt-4">
+  <div class="flex justify-center gap-4 mt-4 flex-wrap">
     <a href="https://t.me/+QaAcoS1Cp_9kNTVk" target="_blank" class="underline text-lg font-bold hover:text-yellow-300">Telegram</a>
     <a href="https://x.com/The_Alpha_Husky" target="_blank" class="underline text-lg font-bold hover:text-yellow-300">X (Twitter)</a>
   </div>
   <div class="mt-8 text-yellow-300 text-center italic">#BuiltByBelievers #JoinThePack</div>
 </section>
-
 <!-- ROADMAP -->
 <section id="roadmap" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Roadmap</h2>
@@ -376,7 +342,6 @@ It had no need.
     <div class="group flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">4</div><div><div class="font-bold text-yellow-200 group-hover:text-yellow-400">Expansion beyond the chain</div><div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">Expansion – partnerships, new platforms, and new markets.</div></div></div>
   </div>
 </section>
-
 <!-- TOKEN -->
 <section id="token" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Token Utility</h2>
@@ -387,7 +352,6 @@ It had no need.
     <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-60"><div class="font-bold text-yellow-400">More (soon)</div><div class="text-yellow-200 text-sm">More utilities will come as the project develops.</div></div>
   </div>
 </section>
-
 <!-- ========= SKINS SECTION (NEW) ========= -->
 <section id="skins" class="section p-8 md:p-12 max-w-6xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow flex items-center gap-3">Animated Skins <span class="bg-yellow-500/70 text-black text-xs px-2 py-1 rounded-full">MP4</span></h2>
@@ -395,7 +359,6 @@ It had no need.
   <div id="skinsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
   <p class="mt-4 text-yellow-300/70 text-sm">Tip: keep files small (< 10–15MB) for fast loads. WEBM with alpha can be added later as a fallback for transparency.</p>
 </section>
-
 <!-- FOOTER -->
 <footer class="bg-yellow-900/90 p-6 text-center text-black mt-12 rounded-t-3xl shadow-xl border-t border-yellow-400">
   <p class="mb-3 text-lg font-bold glow">Join the Pack</p>
@@ -405,7 +368,6 @@ It had no need.
   </div>
   <p class="mt-4 text-yellow-200 text-sm">© 2025 Alpha Husky. All rights reserved.</p>
 </footer>
-
 <!-- SKINS SCRIPT -->
 <script>
   const SKINS = [
@@ -420,9 +382,7 @@ It had no need.
     { id:'MOONLAB_ROGUE', title:'Moonlab Rogue', src:'assets/skins/MOONLAB_ROGUE.mp4' },
     { id:'NOMADS_GUARD', title:"Nomad's Guard", src:'assets/skins/NOMADS_GUARD.mp4' },
   ];
-
   const grid = document.getElementById('skinsGrid');
-
   function cardTemplate(item){
     return `
       <article class="relative rounded-2xl border border-yellow-700/40 bg-yellow-900/20 overflow-hidden shadow hover:shadow-yellow-500/20 transition card-glow aspect-square">
@@ -431,7 +391,6 @@ It had no need.
         <video class="w-full h-full object-contain" preload="none" muted loop playsinline></video>
       </article>`;
   }
-
   // Render
   SKINS.forEach(s => {
     const wrap = document.createElement('div');
@@ -442,24 +401,20 @@ It had no need.
     video.setAttribute('aria-label', s.title);
     grid.appendChild(card);
   });
-
   // Autoplay/pause when visible
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      const v = e.target; 
+      const v = e.target;
       if (e.isIntersecting) { v.play().catch(()=>{}); }
       else { v.pause(); }
     });
   }, { threshold: 0.4 });
-
   document.querySelectorAll('#skinsGrid video').forEach(v => io.observe(v));
 </script>
-
 <!-- Updates loader (robust, tries multiple paths) -->
 <script>
 (function(){
   const listElId = 'updatesList';
-
   // Autoplay/pause for any MP4 in updates
   const io = new IntersectionObserver(entries=>{
     entries.forEach(e=>{
@@ -467,11 +422,9 @@ It had no need.
       e.isIntersecting ? v.play().catch(()=>{}) : v.pause();
     });
   }, {threshold:0.4});
-
   function renderItem(u){
     const card = document.createElement('article');
     card.className = 'bg-yellow-900/10 border border-yellow-700 rounded-xl p-6 shadow-lg';
-
     const header = document.createElement('div');
     header.className = 'flex justify-between items-center mb-2';
     const d = document.createElement('span');
@@ -485,14 +438,12 @@ It had no need.
       header.appendChild(b);
     }
     card.appendChild(header);
-
     if(u.title){
       const h3 = document.createElement('h3');
       h3.className = 'text-xl font-bold mb-2';
       h3.textContent = u.title;
       card.appendChild(h3);
     }
-
     if(u.media){
       if(/\.(mp4)$/i.test(u.media)){
         const v = document.createElement('video');
@@ -507,14 +458,12 @@ It had no need.
         card.appendChild(img);
       }
     }
-
     if(u.text){
       const p = document.createElement('p');
       p.className = 'text-yellow-200 text-sm';
       p.textContent = u.text;
       card.appendChild(p);
     }
-
     if(Array.isArray(u.links) && u.links.length){
       const row = document.createElement('div');
       row.className = 'mt-3 flex gap-3 flex-wrap';
@@ -527,10 +476,8 @@ It had no need.
       });
       card.appendChild(row);
     }
-
     return card;
   }
-
   async function loadUpdates(){
     // Try both common locations (absolute and relative)
     const paths = [
@@ -540,7 +487,6 @@ It had no need.
       'assets/updates.json'
     ];
     let items = null, lastErr = null, usedPath = null;
-
     for (const p of paths){
       try{
         const res = await fetch(p + '?ts=' + Date.now());
@@ -552,25 +498,30 @@ It had no need.
         lastErr = err;
       }
     }
-
     const list = document.getElementById(listElId);
     if(!items){
       console.error('Updates load error:', lastErr);
       list.innerHTML = '<div class="text-yellow-300">Could not load updates.</div>';
       return;
     }
-
     // Normalize to array just in case
     if (!Array.isArray(items)) items = [items];
-
     // Sort newest first and render
     list.innerHTML = '';
     items.sort((a,b)=> (b.date||'').localeCompare(a.date||''));
     items.forEach(u => list.appendChild(renderItem(u)));
-
     console.log('[Updates] Loaded from:', usedPath);
   }
-
   document.addEventListener('DOMContentLoaded', loadUpdates);
 })();
 </script>
+<!-- Hamburger toggle script -->
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
+```
