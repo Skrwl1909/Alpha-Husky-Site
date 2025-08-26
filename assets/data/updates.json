@@ -1,4 +1,14 @@
 [
+  {
+  "date": "2025-08-26",
+  "title": "Forge Week Day 3 — Salvage, Bulk & Auto-Dupe + Forge Clean (admin) 🎉🐶",
+  "status": "LIVE",
+  "text": "We shipped the inventory quality-of-life trio and closed D2–D3. 1) New player commands: /lock, /unlock, /locks, /salvage <item> [qty], /bulk_dismantle rarity=... keep=... — safe cleanup with locked items always skipped. 2) Auto-Dupe: excess copies now auto-salvage into Scrap (and sometimes Rune Dust) using per-rarity limits (common/uncommon=3, rare=2, epic/legendary=1). 3) Admin /forge_clean_user: one-time tester cleanup that keeps ≥1 per item key (and equipped), skips locked, grants Veteran Salvager badge + small shard cache, and reports materials gained. 4) Hotfix: bulk & clean now affect gear only (consumables/boxes/tokens remain untouched). Next: Day 4–5 — Upgrade/Reforge/Fuse on materials with daily limits. Happy International Dog Day to the whole pack! 🐾",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+  ]
+}
 {
   "date": "2025-08-25",
   "title": "Forge Week Day 2 — Loot Patch (Solo/Co-op/Boxes) + Lore Ch.2 + Website refresh",
