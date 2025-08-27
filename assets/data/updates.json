@@ -1,5 +1,15 @@
 [
   {
+  "date": "2025-08-27",
+  "title": "Forge Week Day 4 — Backpack Cap + Cap-aware Auto-Dupe (no Loadout/Stash)",
+  "status": "LIVE",
+  "text": "Clean and simple progression. 1) Backpack cap is live (default 30): only gear counts; locked items are excluded when BACKPACK_COUNT_LOCKED=false. 2) Auto-Dupe now respects the cap — when full, extra gear instantly converts into Scrap (and sometimes Rune Dust); non-gear never counts. 3) Start-mission alert warns when your backpack is full; missions still run, and excess drops auto-salvage. 4) Safety pass: a gear-only filter powers bulk/clean to ensure consumables/boxes/tokens are never affected. No Loadout, no Stash — by design, to keep UX lean. Next: Day 4–5 — Upgrade/Reforge/Fuse on materials with daily limits.",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+  ]
+}
+  {
   "date": "2025-08-26",
   "title": "Forge Week Day 3 — Salvage, Bulk & Auto-Dupe + Forge Clean (admin) 🎉🐶",
   "status": "LIVE",
