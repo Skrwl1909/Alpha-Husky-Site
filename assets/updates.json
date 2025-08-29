@@ -1,5 +1,15 @@
 [
   {
+  "date": "2025-08-29",
+  "title": "Forge Week D4–D5 — Legacy Token Upgrade Hotfix & Root Cause",
+  "status": "HOTFIXED",
+  "text": "Symptom: some upgrades still deducted tokens despite materials mode. Root cause: UPGRADE_COST_MODEL was imported at module load (stale value cached) and a legacy `else: spend_tokens(...)` path still existed; a second handler might also have been catching `^upgrade_`.\n\nFixes applied: 1) Removed module-level import of UPGRADE_COST_MODEL; the mode is now read dynamically inside the handler. 2) Added a hard guard in the upgrade handler to enforce materials-only during Forge Week; legacy branch disabled. 3) Normalized config/env to strict 'materials'. 4) Atomic materials deduction before stat changes; int-safe helpers. 5) Anti double-tap lock around upgrade. 6) Process restart to refresh config.\n\nDiagnostics & safety: temporary breaker available in spend_tokens() to raise if materials mode is active (to reveal stray call-sites). Repo grep planned for any extra `CallbackQueryHandler(..., pattern=\"^upgrade_\")` and `spend_tokens(` references.\n\nState: materials upgrades verified in smoke tests (no 'Spent X tokens' logs), reforge/fuse limits remain green, backpack cap OK. Monitoring continues while we clean up any legacy handlers. Next: enable telemetry (materials_spent + star5_at) and add /dev_star5 + /dev_costmodel.",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+  ]
+},
+  {
   "date": "2025-08-28",
   "title": "Forge Week Day 5 — Materials Upgrades, Reforge & Fuse (daily limits)",
   "status": "LIVE",
