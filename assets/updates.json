@@ -1,5 +1,15 @@
 [
   {
+  "date": "2025-08-30",
+  "title": "Forge Week D4–D5 — DONE",
+  "status": "LIVE",
+  "text": "Wrap-up: materials-only upgrades are fully enforced (token path hard-blocked), Reforge (5/day) and Fuse (8/day) live, ★5 cap active. Inspect/Upgrade/Unequip routing fixed (slot whitelist); inventory Inspect now stable with text fallback while assets are added. Telemetry enabled for dev (materials_spent by reason, first ★5 timestamp). Monitoring remains on, but D4–D5 are considered complete.",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
+  ]
+},
+  {
   "date": "2025-08-29",
   "title": "Forge Week D4–D5 — Legacy Token Upgrade Hotfix & Root Cause",
   "status": "HOTFIXED",
