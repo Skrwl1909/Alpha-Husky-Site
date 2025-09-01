@@ -1,5 +1,15 @@
 [
   {
+  "date": "2025-09-01",
+  "title": "Forge Week D6 — Region Keys + Moon Lab",
+  "status": "LIVE",
+  "text": "Region Keys meta is live: collect Map Key Fragments and craft region keys in Forge (Moon Lab: 10, Testnet Wastes: 15). Unified gates in Bot + WebApp: /keys shows status and Unlock; map modal shows requirements. Moon Lab fortress online (3 floors × 10 encounters, 1h cooldown, persistent progress). WebApp gains clickable commands (Mission, Inventory, Equipped, Keys, Feed, MyStats, MyPets, Profile, Howlboard, Shop, Map). Consumables rotation hooks ready (SKU e.g. moon_frag_pack).",
+  "links": [
+    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "X Post",   "url": "https://x.com/The_Alpha_Husky" }
+  ]
+},
+  {
   "date": "2025-08-30",
   "title": "Forge Week D4–D5 — DONE",
   "status": "LIVE",
