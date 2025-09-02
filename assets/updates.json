@@ -1,5 +1,15 @@
 [
   {
+  "date": "2025-09-02",
+  "title": "WebApp Bridge v1 — Clickable UI → Bot + Fallback",
+  "status": "LIVE (partial)",
+  "text": "We launched the WebApp → bot bridge: buttons in the WebApp now trigger bot actions (Mission, Inventory, Equipped, Keys, Feed, MyStats, MyPets, Profile, Howlboard, Shop, Map). Added a robust web_app_data handler + sniffer, a global menu button, /app_* commands, and the webapp_kb helper. Brought up a minimal /webapp/state API (aiohttp:8081). Enabled DEBUG logging and installed aiohttp. Fixed mission_open → mission mapping. Rollback-ready: /dashboard works as the classic text view if needed. The map modal wires up Ask the Bot / Forge / Shop.",
+  "links": [
+    { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
+    { "label": "Open WebApp (Map)", "url": "https://thealphahusky.netlify.app/?section=map" }
+  ]
+},
+  {
   "date": "2025-09-01",
   "title": "Forge Week D6 — Region Keys + Moon Lab",
   "status": "LIVE",
