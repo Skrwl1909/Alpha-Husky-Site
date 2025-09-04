@@ -62,7 +62,78 @@
       const el = document.getElementById('ah-teaser'); if (el) el.remove();
     }
   </script>
+    <!-- === BLOOD MOON EVENT BANNER (z odliczaniem) === -->
+  <section id="bloodmoon-banner" class="bm-wrap">
+    <picture class="bm-bg">
+      <!-- Możesz podmienić na inne źródła; nazwa zgodna z prośbą -->
+      <img src="/assets/event/bloodmoon_banner_1920x640.jpg?v=1" alt="Blood Moon Eclipse — Alpha Husky" loading="eager" />
+    </picture>
 
+    <div class="bm-overlay">
+      <div class="bm-left">
+        <span class="bm-tag">Event</span>
+        <h3 class="bm-title">Blood Moon Eclipse</h3>
+        <p class="bm-sub">
+          Final countdown: <span id="bm-dd">0</span>d : <span id="bm-hh">00</span>h : <span id="bm-mm">00</span>m : <span id="bm-ss">00</span>s
+        </p>
+      </div>
+      <div class="bm-right">
+        <a href="https://t.me/The_Alpha_Husky" class="bm-cta" target="_blank" rel="noopener">Join the Howl</a>
+        <button id="bm-dismiss" class="bm-dismiss" aria-label="Dismiss banner">✕</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (() => {
+    // USTAW dokładny moment startu (UTC lub z offsetem, np. "2025-09-07T01:00:00+01:00")
+    const EVENT_AT = "2025-09-07T20:00:00Z"; // <- PODMIEŃ
+    const HIDE_KEY = "bm_hide_2025"; // unikalny klucz dla tego eventu
+
+    const el = document.getElementById('bloodmoon-banner');
+    if (!el) return;
+
+    const dd = document.getElementById('bm-dd');
+    const hh = document.getElementById('bm-hh');
+    const mm = document.getElementById('bm-mm');
+    const ss = document.getElementById('bm-ss');
+    const dismissBtn = document.getElementById('bm-dismiss');
+
+    const eventTime = new Date(EVENT_AT);
+    const startWindow = new Date(eventTime.getTime() - 3*24*60*60*1000); // D-3
+    const endWindow   = new Date(eventTime.getTime() + 6*60*60*1000);    // +6h po starcie
+
+    const now = new Date();
+    if (localStorage.getItem(HIDE_KEY) === "1" || now < startWindow || now > endWindow) {
+      el.remove();
+      return;
+    }
+
+    function tick(){
+      const t = new Date();
+      let diff = eventTime - t;
+      if (diff < 0) diff = 0;
+      const s = Math.floor(diff/1000);
+      const d = Math.floor(s/86400);
+      const h = Math.floor((s%86400)/3600);
+      const m = Math.floor((s%3600)/60);
+      const sec = s%60;
+      dd.textContent = d;
+      hh.textContent = String(h).padStart(2,"0");
+      mm.textContent = String(m).padStart(2,"0");
+      ss.textContent = String(sec).padStart(2,"0");
+    }
+    tick();
+    const int = setInterval(tick, 1000);
+
+    dismissBtn.addEventListener("click", () => {
+      localStorage.setItem(HIDE_KEY, "1");
+      el.remove();
+      clearInterval(int);
+    }, { once:true });
+  })();
+  </script>
+  <!-- === /BLOOD MOON EVENT BANNER === -->
   <!-- NAVBAR -->
 <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
   <div class="flex items-center gap-3">
