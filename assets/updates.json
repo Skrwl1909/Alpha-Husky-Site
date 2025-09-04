@@ -1,5 +1,17 @@
 [
   {
+    "date": "2025-09-04",
+    "title": "Event Banner + Countdown — Blood Moon prep & front-end polish",
+    "status": "LIVE",
+    "text": "Today we focused on the front-end to make the game experience smoother and to prep for the Blood Moon eclipse. Added an event banner to the homepage with a D-3→start countdown, light glitch pulse on digits, mobile/desktop responsive picture, dismiss button (localStorage), and auto-expire after the event window. Also tightened WebApp entry points and minor UI polish (lazy videos + IntersectionObserver). Worth checking the site daily — the banner flips to LIVE coverage during the eclipse.",
+    "media": "/assets/event/bloodmoon_banner_1920x640.jpg",
+    "links": [
+      { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
+      { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
+      { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+    ]
+ },
+  {
   "date": "2025-09-02",
   "title": "WebApp Bridge v1 — Clickable UI → Bot + Fallback",
   "status": "LIVE (partial)",
