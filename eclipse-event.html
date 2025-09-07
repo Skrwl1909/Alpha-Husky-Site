@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alpha Husky — Eclipse Event ’25</title>
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="description" content="Blood Moon Eclipse ’25 — live status, countdown, rules, gallery, and badge claim for Alpha Husky players." />
+  <meta property="og:title" content="Alpha Husky — Eclipse Event ’25" />
+  <meta property="og:description" content="Live countdown, claim badge, and Photo-Relic contest." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/og/eclipse_og.jpg" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: rgba(255,255,255,0.06);
+      --stroke: rgba(255,255,255,0.14);
+      --txt: #e8f0ff;
+      --muted: #9aa8be;
+      --accent: #7a7dff;/* violet */
+      --accent2: #00d1ff;/* cyan */
+      --crimson: #b5162f;
+      --success: #29c17e;
+      --warning: #f5a524;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: radial-gradient(1200px 700px at 85% -10%, rgba(181,22,47,.20), transparent 60%),
+                               radial-gradient(900px 600px at 10% -10%, rgba(122,125,255,.18), transparent 60%),
+                               var(--bg);
+      color: var(--txt); font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+      line-height: 1.45;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 18px 0 8px; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .brand .logo { width:36px; height:36px; border-radius:50%; background: radial-gradient(80% 80% at 60% 30%, var(--crimson), #3b0911 60%); box-shadow: 0 0 0 2px rgba(181,22,47,.4);
+    }
+    .brand h1 { font-size: 18px; letter-spacing:.3px; margin: 0; font-weight: 700; }
+    nav a { color: var(--muted); text-decoration:none; margin-left: 16px; font-size: 14px; }
+    nav a:hover { color: var(--txt); }
+
+    .hero { display:grid; grid-template-columns: 1.2fr .8fr; gap: 20px; align-items: stretch; }
+    @media (max-width: 900px){ .hero { grid-template-columns: 1fr; } }
+
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+            border: 1px solid var(--stroke); border-radius: 16px; padding: 18px; box-shadow: 0 2px 20px rgba(0,0,0,.25); }
+    .card h2 { margin: 0 0 8px; font-size: 18px; letter-spacing:.2px; }
+    .sub { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+
+    .status-pill { display:inline-flex; align-items:center; gap:8px; font-size:12px; padding: 6px 10px; border-radius: 999px; border:1px solid var(--stroke); background:rgba(255,255,255,.04); }
+    .status-dot { width:8px; height:8px; border-radius:50%; background: var(--muted); box-shadow: 0 0 12px currentColor; }
+    .status-live { color: var(--success); }
+    .status-soon { color: var(--warning); }
+    .status-closed { color: var(--muted); }
+    .status-dev { color: var(--accent2); }
+
+    .countdown { display:flex; gap: 14px; margin: 14px 0 8px; }
+    .cd-box { min-width: 78px; text-align:center; padding: 10px 8px; border-radius: 12px; border: 1px solid var(--stroke);
+              background: linear-gradient(180deg, rgba(122,125,255,.10), rgba(0,0,0,.10)); }
+    .cd-box strong { display:block; font-size: 28px; font-variant-numeric: tabular-nums; letter-spacing:.5px; }
+    .cd-box span { display:block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+    .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top: 12px; }
+    .btn { appearance:none; border:1px solid var(--stroke); border-radius: 999px; padding: 10px 14px; background: rgba(255,255,255,.04);
+           color: var(--txt); font-weight:600; font-size: 14px; cursor: pointer; }
+    .btn:hover { background: rgba(255,255,255,.08); }
+    .btn.primary { border-color: rgba(181,22,47,.5); background: linear-gradient(90deg, rgba(181,22,47,.5), rgba(122,125,255,.35)); }
+    .btn[disabled] { opacity: .45; cursor: not-allowed; }
+
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
+    @media (max-width: 900px){ .grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px){ .grid { grid-template-columns: 1fr; } }
+    .photo { position:relative; border-radius: 12px; overflow:hidden; border:1px solid var(--stroke); background:#0f141a; }
+    .photo img { width:100%; height: 210px; object-fit: cover; display:block; filter: saturate(1.05) contrast(1.05); }
+    .photo .cap { position:absolute; left:0; right:0; bottom:0; padding:8px 10px; font-size:12px; background: linear-gradient(180deg, transparent, rgba(0,0,0,.7)); }
+
+    .rulelist { margin: 0; padding-left: 18px; }
+    .rulelist li { margin: 6px 0; }
+
+    footer { color: var(--muted); font-size: 12px; text-align:center; padding: 26px 0 10px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Alpha Husky — Eclipse Event ’25</h1>
+      </div>
+      <nav>
+        <a href="/">Dashboard</a>
+        <a href="#rules">Rules</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="evt-title">
+      <div class="card">
+        <h2 id="evt-title">Blood Moon Eclipse 🔴🐺</h2>
+        <p class="sub">Europe/London (BST). Window: <span id="wStart" class="mono"></span> → <span id="wEnd" class="mono"></span></p>
+
+        <div class="status-pill" id="statusPill" aria-live="polite">
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusText">Checking…</span>
+        </div>
+
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="cd-box"><strong id="d">0</strong><span>days</span></div>
+          <div class="cd-box"><strong id="h">0</strong><span>hours</span></div>
+          <div class="cd-box"><strong id="m">0</strong><span>minutes</span></div>
+          <div class="cd-box"><strong id="s">0</strong><span>seconds</span></div>
+        </div>
+
+        <div class="btns">
+          <button class="btn primary" id="claimBtn" disabled>Claim Badge</button>
+          <button class="btn" id="submitBtn">Submit Photo</button>
+          <button class="btn" id="watchBtn">Watch Live</button>
+        </div>
+      </div>
+
+      <div class="card" id="rules">
+        <h2>How it works</h2>
+        <ol class="rulelist">
+          <li>Take an <strong>original eclipse/sky photo</strong> during the window. <em>No AI / composites.</em></li>
+          <li>Post with <span class="mono">#AlphaHowlEclipse</span> + your <strong>location</strong> (city / country).</li>
+          <li>Claim your in-game badge: <span class="mono">Eclipse Witness ’25</span>.</li>
+          <li>Top 3 photos become <strong>Photo-Relics</strong> in-lore (framed + metadata).</li>
+        </ol>
+        <p class="sub">Pro tip: Use tripod/railing, night mode, tap to focus, tweak EV −0.3/−0.7. Lunar eclipses are <strong>safe for eyes</strong>.</p>
+      </div>
+    </section>
+
+    <section class="card" id="gallery" style="margin-top:16px;">
+      <h2>Community Gallery</h2>
+      <p class="sub">Auto-refreshed from submissions. Placeholder images below until entries arrive.</p>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <footer>
+      <div>© The Alpha Husky — Blood Moon ’25. All rights reserved.</div>
+      <div class="sub">Testing shortcut: append <span class="mono">?dev=1</span> to the URL to simulate open window on this page only.</div>
+    </footer>
+  </div>
+
+  <script>
+    // === Config ===
+    const EVENT = {
+      tz: 'Europe/London',
+      start: '2025-09-07T16:00:00+01:00',
+      end:   '2025-09-08T02:30:00+01:00',
+    };
+    const DEV = new URLSearchParams(location.search).has('dev');
+
+    // STREAM: wklej link gdy będzie dostępny; inaczej użyjemy wyszukiwarki
+    const STREAM_URL = ""; // ← TODO: oficjalny link streamu gdy będzie
+    const SEARCH_URL = "https://www.youtube.com/results?search_query=lunar+eclipse+live+2025";
+
+    // Format helpers
+    const fmt = new Intl.DateTimeFormat('en-GB', { timeZone: EVENT.tz, year:'numeric', month:'short', day:'2-digit', hour:'2-digit', minute:'2-digit' });
+    const toDate = (iso) => new Date(iso);
+
+    const start = toDate(EVENT.start);
+    const end   = toDate(EVENT.end);
+
+    // Render window timestamps
+    document.getElementById('wStart').textContent = fmt.format(start);
+    document.getElementById('wEnd').textContent   = fmt.format(end);
+
+    const statusText = document.getElementById('statusText');
+    const statusDot  = document.getElementById('statusDot');
+    const statusPill = document.getElementById('statusPill');
+    const claimBtn   = document.getElementById('claimBtn');
+    const watchBtn   = document.getElementById('watchBtn'); // ← NEW
+
+    // jawne referencje do liczników (nie polegamy na globalnych ID)
+    const D = document.getElementById('d');
+    const H = document.getElementById('h');
+    const M = document.getElementById('m');
+    const S = document.getElementById('s');
+
+    function setStatus(kind, text){
+      statusText.textContent = text;
+      statusDot.style.background = getComputedStyle(statusPill).getPropertyValue('--muted');
+      statusPill.classList.remove('status-live','status-soon','status-closed','status-dev');
+      if(kind==='live'){ statusPill.classList.add('status-live'); statusDot.style.background = 'var(--success)'; }
+      else if(kind==='soon'){ statusPill.classList.add('status-soon'); statusDot.style.background = 'var(--warning)'; }
+      else if(kind==='dev'){ statusPill.classList.add('status-dev'); statusDot.style.background = 'var(--accent2)'; }
+      else { statusPill.classList.add('status-closed'); statusDot.style.background = 'var(--muted)'; }
+    }
+
+    function tick(){
+      const now = new Date();
+      let phase = '';
+      if (DEV) phase = 'dev';
+      else if (now < start) phase = 'soon';
+      else if (now >= start && now <= end) phase = 'live';
+      else phase = 'closed';
+
+      // Countdown target depends on phase
+      const target = (phase==='soon') ? start : (phase==='live' ? end : null);
+      if(target){
+        const ms = Math.max(0, target - now);
+        const sec = Math.floor(ms / 1000) % 60;
+        const min = Math.floor(ms / (1000*60)) % 60;
+        const hr  = Math.floor(ms / (1000*60*60)) % 24;
+        const day = Math.floor(ms / (1000*60*60*24));
+        D.textContent = String(day);
+        H.textContent = String(hr).padStart(2,'0');
+        M.textContent = String(min).padStart(2,'0');
+        S.textContent = String(sec).padStart(2,'0');
+      }
+
+      // Status + przyciski
+      if (phase==='dev') {
+        setStatus('dev', 'DEV override — testing');
+        claimBtn.disabled = false;
+        watchBtn.disabled = false; watchBtn.textContent = 'Watch (search)';
+      } else if (phase==='soon') {
+        setStatus('soon', 'Opens soon');
+        claimBtn.disabled = true;
+        watchBtn.disabled = true; watchBtn.textContent = 'Streams soon';
+      } else if (phase==='live') {
+        setStatus('live', 'LIVE — window open');
+        claimBtn.disabled = false;
+        watchBtn.disabled = false; watchBtn.textContent = 'Watch Live';
+      } else {
+        setStatus('closed', 'Ended');
+        claimBtn.disabled = true;
+        watchBtn.disabled = true; watchBtn.textContent = 'Ended';
+      }
+    }
+
+    setInterval(tick, 1000); tick();
+
+    // Buttons
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      // PODSTAW swój docelowy adres / hashtag; zostawiam jak masz
+      const url = 'https://x.com/The_Alpha_Husky/status/1964599646921068691?t=1onwupR6Sg6x14k-Iua5iA&s=19' + encodeURIComponent('#AlphaHowlEclipse — City, Country')
+                + '&hashtags=' + encodeURIComponent('AlphaHowlEclipse');
+      window.open(url, '_blank', 'noopener');
+    });
+
+    // WATCH: otwiera STREAM_URL albo fallback do wyszukiwania
+    document.getElementById('watchBtn').addEventListener('click', () => {
+      const url = STREAM_URL || SEARCH_URL;
+      window.open(url, '_blank', 'noopener');
+    });
+
+    claimBtn.addEventListener('click', () => {
+      // If opened inside Telegram WebApp, ping the bot; else, fallback deep link
+      try {
+        if (window.Telegram && window.Telegram.WebApp) {
+          window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
+          window.Telegram.WebApp.sendData(JSON.stringify({ action: 'claim_eclipse' }));
+          window.Telegram.WebApp.close();
+          return;
+        }
+      } catch(e){}
+      // Fallback: open bot deep link
+      const url = 'https://t.me/ALPHA_husky_bot?start=claim_eclipse';
+      window.open(url, '_blank', 'noopener');
+    });
+
+    // Gallery loader (optional JSON at /data/photo_relics.json)
+    const grid = document.getElementById('grid');
+    const placeholder = [
+      {url:'/images/eclipse/placeholders/p1.jpg', author:'anon', location:'Wasteland Ridge'},
+      {url:'/images/eclipse/placeholders/p2.jpg', author:'anon', location:'Ashplain'},
+      {url:'/images/eclipse/placeholders/p3.jpg', author:'anon', location:'Moon Lab Outskirts'},
+    ];
+    fetch('/data/photo_relics.json', {cache:'no-store'})
+      .then(r => r.ok ? r.json() : placeholder)
+      .then(items => Array.isArray(items) ? items : placeholder)
+      .catch(() => placeholder)
+      .then(items => {
+        grid.innerHTML = '';
+        for(const it of items){
+          const card = document.createElement('div');
+          card.className = 'photo';
+          const img = document.createElement('img');
+          img.loading = 'lazy';
+          img.src = it.url; img.alt = `Photo by ${it.author || 'anon'}`;
+          const cap = document.createElement('div');
+          cap.className = 'cap';
+          cap.textContent = `${it.author || 'anon'} — ${it.location || ''}`;
+          card.appendChild(img); card.appendChild(cap); grid.appendChild(card);
+        }
+      });
+  </script>
+</body>
+</html>
