@@ -1,5 +1,16 @@
 [
   {
+  "date": "2025-09-09",
+  "title": "Alpha Update — quick TL;DR",
+  "status": "LIVE",
+  "text": "🗺️ New WebApp Map — click buildings; the old image-map is retired.\n🧪 Moon Lab: Fortress — multi-floor boss gauntlet, rising difficulty, 1h cooldown, rare drops.\n🧠 41 new Daily Quiz questions.\n🔹 Missions → Key Shards — missions now drop region key shards (with a pity every 10 wins).\n🔑 /keys & /forge — craft keys from shards and Unlock regions (inline buttons).\nℹ️ “How to get keys?” — helpful popup (no cooldown toast).\n\nHow to play: Open App → Map → try Moon Lab • farm shards in missions • /keys or /forge → Craft Key → Unlock new regions. 🚀",
+  "links": [
+    { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
+    { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
+    { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+  ]
+},
+  {
     "date": "2025-09-04",
     "title": "Event Banner + Countdown — Blood Moon prep & front-end polish",
     "status": "LIVE",
