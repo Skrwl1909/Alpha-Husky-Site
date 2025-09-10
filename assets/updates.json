@@ -1,5 +1,16 @@
 [
   {
+"date": "2025-09-10",
+"title": "Devlog #HOWLitsMade — Keys migration + Consumables shop",
+"status": "LIVE",
+"text": "🧩 Universal Key Shards — added a self-serve migration in /keys. If you have old “Map Fragment(s)”, you’ll see a Migrate old fragments → Universal button. Migration is idempotent and supports legacy names.\n🔑 /keys panel upgrade — shows Universal shards and new inline actions: per-region +1 / +5 / MAX and ⚖️ Split ALL evenly. Craft & Unlock uses KEY_RECIPES (dynamic needs).\n🛒 Shop: Daily Consumables — rotation enabled (auto-refresh). handle_buy updated to support consumables cleanly.\n🧰 Admin tools — bulk prep/migration for legacy holders; test seeding for QA.\n🔗 QoL — /forge shortcut opens the /keys panel; minor inline UI polish.\n\nHow to use: farm shards → open /keys → (if you have legacy, hit Migrate) → convert Universal → Craft Key → Unlock regions. Consumables are in the shop’s daily rotation.",
+"links": [
+{ "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
+{ "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
+{ "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+]
+},
+  {
   "date": "2025-09-09",
   "title": "Alpha Update — quick TL;DR",
   "status": "LIVE",
