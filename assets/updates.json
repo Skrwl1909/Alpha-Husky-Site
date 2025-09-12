@@ -1,5 +1,17 @@
 [
   {
+  "date": "2025-09-12",
+  "title": "Devlog #HOWLitsMade — All-Unlock Map + Moon Lab (WIP) + WebApp Bridge",
+  "status": "LIVE",
+  "text": "🔓 Map All-Unlock — temporarily all regions and buildings are open for everyone (no keys/fragments).\n⚔️ Moon Lab: Fortress — **under construction (WIP)**. Menu is available from the map; boss fight prototype behind a toggle (1h CD). Progression/rewards are subject to change.\n🌀 Lightweight battle animation (WebApp) — HP bars, hits/CRIT, VICTORY/DEFEAT, Replay; steps delivered via /webapp/state (lastBattle). Zero extra bot load.\n🧩 WebApp Bridge — new on_webapp_data understands JSON and short \"a:b:c\"; handles building_enter, region_open, cmd. No more “Unsupported WebApp action”.\n🗺️ map.json (front) — defaults set to unlocked; Moon Lab & Testnet Wastes use unlock: free; paths render without locks.\n🎯 Explore/Hunt mapping — Exploration → Abandoned Wallets (abandoned_wallets_vault), Hunt → Broken Contracts (broken_contracts_hub).\n🔧 Stability — WebApp handler runs first (group=-1, block=True); fixed WEBAPP_BASE (no trailing slash); lazy-imported Moon Lab menu (fixes NameError).\n🛠️ Dev switch — UNLOCK_ALL=1 active; turn off with UNLOCK_ALL=0.\n\nHow to test: Open App → Map → Moon Lab → “⚔️ Fight Boss (prototype)”. Abandoned/Broken → “Enter” starts a run.",
+  "links": [
+    { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
+    { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=map" },
+    { "label": "Open WebApp (Vercel)", "url": "https://alpha-husky-webapp.vercel.app/?section=map" },
+    { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+  ]
+},
+  {
 "date": "2025-09-10",
 "title": "Devlog #HOWLitsMade — Keys migration + Consumables shop",
 "status": "LIVE",
