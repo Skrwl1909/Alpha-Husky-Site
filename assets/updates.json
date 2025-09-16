@@ -1,4 +1,15 @@
-[
+[,
+  {
+  "date": "2025-09-16",
+  "title": "Devlog #HOWLitsMade — Cloudflare Tunnel + Stable API Domain",
+  "status": "LIVE",
+  "text": "☁️ Backend now runs behind a Cloudflare Tunnel — our IPv6-only VPS is reachable from both IPv4 & IPv6 with automatic HTTPS.\n🔒 Safer exposure — traffic goes through Cloudflare; the origin stays behind the tunnel (no public inbound port needed).\n🌉 Stable API domain — WebApp targets https://api.alphahusky.win, paving the way for new features and smoother deploys.\n🗺️ Roadmap — work in progress; more details soon. We’ll keep posting updates on the site.",
+  "links": [
+    { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
+    { "label": "Open WebApp (Vercel)", "url": "https://alpha-husky-webapp.vercel.app/?section=map" },
+    { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+  ]
+  },
   {
   "date": "2025-09-12",
   "title": "Devlog #HOWLitsMade — All-Unlock Map + Moon Lab (WIP) + WebApp Bridge",
