@@ -1,0 +1,280 @@
+<!-- /partials/roadmap.html -->
+<section id="roadmap" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">Roadmap</h2>
+  <p class="text-yellow-300/90 mb-6 text-sm">
+    Lean, stage/gate. <span class="font-bold">No hard dates.</span> Every task has a <span class="font-bold">DoD</span> (Definition of Done) and/or <span class="font-bold">Proof/Link</span>.
+  </p>
+
+  <div class="flex flex-wrap gap-2 mb-4 text-[11px]">
+    <span class="px-2 py-1 rounded-full bg-green-400 text-black font-bold">Shipped</span>
+    <span class="px-2 py-1 rounded-full bg-blue-400 text-black font-bold">In progress</span>
+    <span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold">Next</span>
+    <span class="px-2 py-1 rounded-full bg-purple-400 text-black font-bold">Backlog</span>
+    <span class="px-2 py-1 rounded-full bg-red-400 text-black font-bold">Paused</span>
+  </div>
+
+  <div class="overflow-x-auto border border-yellow-700/40 rounded-2xl">
+    <table class="min-w-full text-sm text-yellow-100">
+      <thead class="bg-yellow-900/30 text-yellow-300">
+        <tr class="[&>th]:px-3 [&>th]:py-3 text-left">
+          <th>Status</th>
+          <th>Area</th>
+          <th>Task</th>
+          <th>DoD (Definition of Done)</th>
+          <th>Proof/Link</th>
+          <th>Owner</th>
+        </tr>
+      </thead>
+      <tbody class="[&>tr>*]:align-top [&>tr>*]:px-3 [&>tr>*]:py-3">
+        <!-- SHIPPED -->
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-green-400 text-black font-bold text-[11px]">Shipped</span></td>
+          <td>Map/WebApp</td>
+          <td class="font-bold">Map + hotspots; Moon Lab (C) wired</td>
+          <td>Pins/hotspots clickable; building actions connected</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-green-400 text-black font-bold text-[11px]">Shipped</span></td>
+          <td>Loot Loop</td>
+          <td class="font-bold">Materials & Shards; solo missions drop materials</td>
+          <td>Full items disabled; materials/shards only</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-green-400 text-black font-bold text-[11px]">Shipped</span></td>
+          <td>Forge</td>
+          <td class="font-bold">Upgrade / Reforge / Fuse (★ cap = 5)</td>
+          <td>Costs visible; ★5 stamp + counters tracked</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-green-400 text-black font-bold text-[11px]">Shipped</span></td>
+          <td>Keys</td>
+          <td class="font-bold">Legacy fragments → universal shards; <code>/keys</code> UI</td>
+          <td>Conversion works; legacy data migrated</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-green-400 text-black font-bold text-[11px]">Shipped</span></td>
+          <td>Shop</td>
+          <td class="font-bold">Daily consumables rotation</td>
+          <td>Assortment rotates at reset</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10 border-b border-yellow-800/40">
+          <td><span class="px-2 py-1 rounded-full bg-green-400 text-black font-bold text-[11px]">Shipped</span></td>
+          <td>Admin</td>
+          <td class="font-bold">Telemetry for ★5 + materials totals</td>
+          <td>First ★5 stamp; aggregate material spend tracked</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+
+        <!-- IN PROGRESS -->
+        <tr>
+          <td><span class="px-2 py-1 rounded-full bg-blue-400 text-black font-bold text-[11px]">In progress</span></td>
+          <td>Telemetry</td>
+          <td class="font-bold">D7 events & tuning</td>
+          <td>Log mission start/finish, drop, purchase, 429/fail</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="border-b border-yellow-800/40">
+          <td><span class="px-2 py-1 rounded-full bg-blue-400 text-black font-bold text-[11px]">In progress</span></td>
+          <td>WebApp</td>
+          <td class="font-bold">Action migration to WebApp (Open App)</td>
+          <td>Building actions launched from the WebApp UI</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+
+        <!-- NEXT -->
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Quests</td>
+          <td class="font-bold">Bring back <code>/daily</code></td>
+          <td>3–5 tasks; max 2 in parallel; reset 00:00 UTC; anti-dupe; persist in <code>user.daily</code></td>
+          <td>15s video + reset logs</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Buildings</td>
+          <td class="font-bold">Start/resolve for 2–3 buildings</td>
+          <td>Broken Contracts & Abandoned Wallets wired to bot</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Inventory</td>
+          <td class="font-bold">Backpack cap + overflow → Stash</td>
+          <td>Hard cap; clear UI message on overflow</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10 border-b border-yellow-800/40">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>State</td>
+          <td class="font-bold">“Vercel-lite” HMAC state token</td>
+          <td><code>/api/state</code>; Moon Lab gate via <code>is_region_unlocked</code>; bump <code>map.json.version</code></td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+
+        <!-- BACKLOG / PAUSED -->
+        <tr>
+          <td><span class="px-2 py-1 rounded-full bg-purple-400 text-black font-bold text-[11px]">Backlog</span></td>
+          <td>Co-op</td>
+          <td class="font-bold">Stage loot → materials/shards</td>
+          <td>Parity with solo missions</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><span class="px-2 py-1 rounded-full bg-red-400 text-black font-bold text-[11px]">Paused</span></td>
+          <td>Cosmetics</td>
+          <td class="font-bold">Skins/avatars expansion</td>
+          <td>After MVP</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Milestones (gates, not dates) -->
+  <div class="mt-6 grid md:grid-cols-2 gap-4">
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+      <h3 class="font-bold text-yellow-200 mb-2">Milestones (gates)</h3>
+      <ul class="list-disc list-inside text-yellow-200 text-sm space-y-1">
+        <li><span class="font-bold">M0 — Stable skeleton:</span> bot + WebApp shell, map & materials OK, 429 ≤ 1%.</li>
+        <li><span class="font-bold">M1 — MVP game:</span> solo missions + key buildings, <code>/daily</code>, shop rotation, balanced forge-loop, stash/overflow.</li>
+        <li><span class="font-bold">M2 — Public Alpha:</span> onboarding in WebApp, dev telemetry panel, 7-day retention ≥ 20%, crash-free ≥ 99%.</li>
+        <li><span class="font-bold">M3 — Pre-launch readiness (token optional):</span> economy & sinks tested, safety checklists, LP plan.</li>
+      </ul>
+    </div>
+
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+      <h3 class="font-bold text-yellow-200 mb-2">Token readiness gates</h3>
+      <ul class="list-disc list-inside text-yellow-200 text-sm space-y-1">
+        <li>Closed economy loops (no infinite mint; clear sinks).</li>
+        <li>Stability: 14-day retention ≥ 15–20%, 429/fail ≤ 1%, no reward dupes.</li>
+        <li>Security: code review, key actions logging, snapshot & rollback plan.</li>
+        <li>Liquidity & allocations: total supply 25M; 10M locked; ~23% LP added gradually; ~15% founder (facts).</li>
+        <li>Comms: demos + changelog; no promises.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pre-Token Track (after M1): concrete solo-dev steps -->
+  <h3 class="text-2xl font-bold mt-8 mb-3 glow">Pre-Token Track (after M1)</h3>
+  <div class="overflow-x-auto border border-yellow-700/40 rounded-2xl">
+    <table class="min-w-full text-sm text-yellow-100">
+      <thead class="bg-yellow-900/30 text-yellow-300">
+        <tr class="[&>th]:px-3 [&>th]:py-3 text-left">
+          <th>Status</th>
+          <th>Area</th>
+          <th>Task</th>
+          <th>DoD</th>
+          <th>Proof/Link</th>
+          <th>Owner</th>
+        </tr>
+      </thead>
+      <tbody class="[&>tr>*]:align-top [&>tr>*]:px-3 [&>tr>*]:py-3">
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Utility</td>
+          <td class="font-bold">Token utility one-pager</td>
+          <td>1 page: utilities tied to Bones/Scrap/Rune Dust/Shards + clear sinks</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Economy</td>
+          <td class="font-bold">Loop audit + abuse tests</td>
+          <td>No “printer”; limits; edge-case sims (dupe/loop/overflow)</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Security</td>
+          <td class="font-bold">Baseline hardening</td>
+          <td>Code review, key action logs, snapshot/rollback ready</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Telemetry</td>
+          <td class="font-bold">Dev panel (table)</td>
+          <td>View: daily sessions, success %, 429, avg drops</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr class="bg-yellow-900/10">
+          <td><span class="px-2 py-1 rounded-full bg-yellow-400 text-black font-bold text-[11px]">Next</span></td>
+          <td>Community</td>
+          <td class="font-bold">Contributor Points (off-chain)</td>
+          <td>Categories + weights; weekly export; public leaderboard</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr>
+          <td><span class="px-2 py-1 rounded-full bg-purple-400 text-black font-bold text-[11px]">Backlog</span></td>
+          <td>Launchpad</td>
+          <td class="font-bold">Shortlist + criteria</td>
+          <td>Compare fees/KYC/regions/indie support; no choice before gates</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr>
+          <td><span class="px-2 py-1 rounded-full bg-purple-400 text-black font-bold text-[11px]">Backlog</span></td>
+          <td>Tokenomics</td>
+          <td class="font-bold">Public page (draft)</td>
+          <td>Structure + rules; explicit “no promises”</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+        <tr>
+          <td><span class="px-2 py-1 rounded-full bg-purple-400 text-black font-bold text-[11px]">Backlog</span></td>
+          <td>Liquidity</td>
+          <td class="font-bold">LP plan (skeleton)</td>
+          <td>Reflect facts: 25M supply; 10M locked; ~23% LP gradual; ~15% founder</td>
+          <td>—</td>
+          <td>Alpha Dev</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Next Goals (reserved space) -->
+  <h3 class="text-2xl font-bold mt-8 mb-3 glow">Next Goals</h3>
+  <div class="bg-yellow-900/10 border border-yellow-700/40 rounded-2xl p-5">
+    <p class="text-yellow-200 text-sm mb-2">Add upcoming, scoped items here (keep lean, each with DoD + Proof/Link).</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-sm text-yellow-100">
+        <thead class="bg-yellow-900/30 text-yellow-300">
+          <tr class="[&>th]:px-3 [&>th]:py-3 text-left">
+            <th>Status</th><th>Area</th><th>Task</th><th>DoD</th><th>Proof/Link</th><th>Owner</th>
+          </tr>
+        </thead>
+        <tbody class="[&>tr>*]:align-top [&>tr>*]:px-3 [&>tr>*]:py-3">
+          <!-- Leave empty by default; insert future rows here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="mt-4 text-yellow-300/80 text-xs">
+    Note: “Pre-Token Track” runs <span class="font-bold">after M1</span>. Any launch timing will be announced only after all “Token readiness” gates are met.
+  </p>
+</section>
