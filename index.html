@@ -487,24 +487,77 @@ It had no need.
   </div>
   <div class="mt-8 text-yellow-300 text-center italic">#BuiltByBelievers #JoinThePack</div>
 </section>
-<!-- ROADMAP -->
-<section id="roadmap" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Roadmap</h2>
-  <div class="flex flex-col gap-4">
-    <div class="group flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">1</div><div><div class="font-bold text-yellow-200 group-hover:text-yellow-400">Build the Pack (game, lore, socials)</div><div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">Phase one: building the community foundations, lore, and launching the Telegram game.</div></div></div>
-    <div class="group flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">2</div><div><div class="font-bold text-yellow-200 group-hover:text-yellow-400">Token launch & utility integration</div><div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">Token launch, first utilities in the game and for the community.</div></div></div>
-    <div class="group flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">3</div><div><div class="font-bold text-yellow-200 group-hover:text-yellow-400">NFT collection & advanced gameplay</div><div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">NFT collection drop + new gameplay features.</div></div></div>
-    <div class="group flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center font-bold text-black">4</div><div><div class="font-bold text-yellow-200 group-hover:text-yellow-400">Expansion beyond the chain</div><div class="text-yellow-300 text-sm opacity-0 group-hover:opacity-100 transition">Expansion – partnerships, new platforms, and new markets.</div></div></div>
-  </div>
-</section>
-<!-- TOKEN -->
-<section id="token" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Token Utility</h2>
+<!-- Roadmap loader (fetches /partials/roadmap.html and injects it) -->
+<div id="roadmap-root" data-src="/partials/roadmap.html"
+     class="section p-8 md:p-12 max-w-6xl mx-auto mb-10 text-yellow-300/70">
+  Loading roadmap…
+</div>
+<script>
+(async () => {
+  const slot = document.getElementById('roadmap-root');
+  const src = slot?.dataset?.src || '/partials/roadmap.html';
+  try {
+    const res = await fetch(src + '?v=1'); // bump v to bust cache when you update
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const html = await res.text();
+    // Replace the placeholder entirely so #roadmap anchors work
+    slot.outerHTML = html;
+  } catch (e) {
+    console.error('Roadmap load failed:', e);
+    slot.innerHTML = '<p>Could not load roadmap. Check <code>/partials/roadmap.html</code> path.</p>';
+  }
+})();
+</script>
+<!-- TOKEN (planned; post-MVP, temporarily hidden) -->
+<section id="token" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
+  <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">
+    Planned Token Utility (post-MVP)
+    <span class="ml-2 align-middle px-2 py-1 text-xs rounded-full bg-yellow-500/80 text-black font-bold">Draft</span>
+  </h2>
+  <p class="text-yellow-300/90 mb-6 text-sm">
+    Not live yet. Any launch will be announced only after the <a href="#roadmap" class="underline text-yellow-200 hover:text-yellow-100 font-bold">token readiness gates</a> are met.
+    No hard dates. No promises — ship &gt; hype.
+  </p>
+
   <div class="grid md:grid-cols-2 gap-8">
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2"><div class="font-bold text-yellow-400">In-game</div><div class="text-yellow-200 text-sm">Use the token to unlock quests, missions, items, and skins.</div></div>
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2"><div class="font-bold text-yellow-400">Community</div><div class="text-yellow-200 text-sm">Stake or use for voting, nominations, and future rewards.</div></div>
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2"><div class="font-bold text-yellow-400">NFT / Collectibles</div><div class="text-yellow-200 text-sm">Token required to claim and exchange NFTs and rewards for activity.</div></div>
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-60"><div class="font-bold text-yellow-400">More (soon)</div><div class="text-yellow-200 text-sm">More utilities will come as the project develops.</div></div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">In-game (planned)</div>
+      <div class="text-yellow-200 text-sm">
+        Unlock/select quests, tougher missions, item upgrades, and cosmetic skins — after MVP & economy balancing.
+      </div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">Community (planned)</div>
+      <div class="text-yellow-200 text-sm">
+        Roles, nominations, governance signals, and event access tied to contribution & on-chain proofs.
+      </div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">NFT / Collectibles (planned)</div>
+      <div class="text-yellow-200 text-sm">
+        Claims, upgrades, and redemptions connected to gameplay & engagement — contingent on security reviews.
+      </div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-70">
+      <div class="font-bold text-yellow-400">More (later)</div>
+      <div class="text-yellow-200 text-sm">
+        Additional utilities may be added after stability/retention targets are consistently met.
+      </div>
+    </div>
+  </div>
+
+  <!-- factual draft, aligned with your notes -->
+  <div class="mt-6 bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+    <h3 class="font-bold text-yellow-200 mb-2">Current draft facts (subject to change)</h3>
+    <ul class="list-disc list-inside text-yellow-200 text-sm space-y-1">
+      <li>Total supply: <span class="font-bold">25M</span></li>
+      <li>Locked: <span class="font-bold">10M</span></li>
+      <li>Liquidity: ~<span class="font-bold">23%</span> added gradually (no big treasury)</li>
+      <li>Founder: ~<span class="font-bold">15%</span> for Alpha Dev (contribution-based)</li>
+    </ul>
+    <p class="text-yellow-300/80 text-xs mt-2">
+      Utilities and allocations can be adjusted during testing. See <a href="#roadmap" class="underline">Roadmap</a> for readiness gates.
+    </p>
   </div>
 </section>
 <!-- ========= SKINS SECTION (NEW) ========= -->
