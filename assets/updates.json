@@ -1,4 +1,15 @@
 [
+   {
+    "date": "2025-09-17",
+    "title": "Devlog #HOWLitsMade — API Hardening + Tunnel Complete",
+    "status": "LIVE",
+    "text": "🌐 Cloudflare Tunnel locked in — api.alphahusky.win now terminates HTTPS and forwards to the private backend on 127.0.0.1:8081 (no public ports exposed).\n🔐 Security: Correct Telegram init_data verification (HMAC/WebAppData) with 24h freshness + strict CORS allow-list for production origin, with optional dev toggles (DEV_OPEN_CORS, DEV_NO_VERIFY) for safe diagnostics.\n🛎️ API surface: /health, /dbg/ping, /webapp/state, /webapp/daily/state, /webapp/daily/action — consistent JSON shapes & status codes for easier client integrations.\n🧭 Observability: clear structured logs ([CORS], [AUTH], [DAILY_*]) and boot banner with active flags → faster triage.\n🧪 Testing: ready cURL snippets for health, CORS preflight and payload endpoints.\n🗺️ Roadmap (next): persist user stats/quests in storage, hook daily_raid completion to bot events, add basic metrics (DAU, bones/day), smoke tests in deploy, per-env config & feature flags, versioned API.\n",
+    "links": [
+      { "label": "API Health", "url": "https://api.alphahusky.win/health" },
+      { "label": "Ping (POST)", "url": "https://api.alphahusky.win/dbg/ping" },
+      { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+    ]
+  },
   {
   "date": "2025-09-16",
   "title": "Devlog #HOWLitsMade — Cloudflare Tunnel + Stable API Domain",
