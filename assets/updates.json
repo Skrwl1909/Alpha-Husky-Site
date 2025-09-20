@@ -1,4 +1,15 @@
 [
+  {
+    "date": "2025-09-20",
+    "title": "Devlog #HOWLitsMade — BAD_HASH fix + WebApp Map/Buildings",
+    "status": "LIVE",
+    "text": "✅ BAD_HASH: root cause fixed — WebApp now consistently launches under @Alpha_husky_bot; backend verifies Telegram init_data (HMAC) and rejects bad signatures; [AUTH] logs show set_bot_token OK.\n🗺️ WebApp Map: pins, paths & glow; label-collision fixes; Region Sheet; Locked modal; unlock progress counter (fragments → key); particle-burst click effect.\n🏗️ Buildings (HTTP): new endpoints /webapp/building/state, /webapp/building/start, /webapp/building/resolve + in-app modal (“Refresh/Start/Resolve”) — works for Abandoned Wallets Vault; Moon Lab (moonlab_fortress) stays bot-handled for now.\n🧩 Daily Quests: WebApp-first — /webapp/daily/state and /webapp/daily/action wired to the list with Claim/RAID buttons.\n🎨 Contrast & theme: no more black-on-black; automatic colors from Telegram theme with safe fallbacks; topbar shows LVL/Bones.\n🛡️ UI hardening: global try/catch, tiny debug badge (status/error), rapid-click guards, consistent JSON shapes & HTTP codes, strict CORS allow-list.\n🗺️ map.json: remains the source of truth for pins/regions; note: Moon Lab pin uses action=building_enter → buildingId=moonlab_fortress (not in BUILDING_CFG yet by design), so it routes to the bot.",
+    "links": [
+      { "label": "API Health", "url": "https://api.alphahusky.win/health" },
+      { "label": "WebApp (prod)", "url": "https://alpha-husky-webapp.vercel.app/" },
+      { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+    ]
+  },
    {
     "date": "2025-09-17",
     "title": "Devlog #HOWLitsMade — API Hardening + Tunnel Complete",
