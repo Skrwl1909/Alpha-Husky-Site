@@ -1,4 +1,17 @@
 [
+{
+"date": "2025-09-25",
+"title": "Devlog #HOWLitsMade — Unified WebApp + Map/Buildings",
+"status": "LIVE",
+"text": "✅ Unified paths: the split behavior between “Open Mini App” and “Open Dashboard” is gone — both now share one flow; Map and Daily Quests work consistently in both.\n🔐 Auth: fixed Authorization header (Bearer init_data); backend strictly verifies Telegram init_data (HMAC) via _verify_init_data; set_bot_token logging confirms correct token.\n🔁 Bridge: added /webapp/action to support dual transport (keyboard sendData ↔ HTTP + answerWebAppQuery) with identical payloads.\n🗺️ Map & Buildings: front handles node entry + in-app modal (Start/Resolve) with auto-resolve and reward alert; Abandoned Wallets Vault and Broken Contracts Hub are wired; Moon Lab (moonlab_fortress) remains bot-handled.\n🧭 map.json is the source of truth: nodes = chain_gate, abandoned_wallets, broken_contracts, moon_lab, testnet_wastes; defaults → chain, moon_lab unlocked; testnet_wastes locked.\n🧩 Daily Quests: /webapp/daily/state and /webapp/daily/action unified — Claim/RAID works in Mini App and Dashboard.\n🛡️ Hardening: strict JSON shapes & HTTP codes, rapid-click guards, tiny debug badge (status/error), tightened CORS to app.alphahusky.win (+ preview).\n🔗 Entry policy: one way in — Telegram WebApp via WebAppInfo or short_name link; avoid bare URLs. Short name: AlphaHuskyHub.",
+"links": [
+{ "label": "WebApp (prod)", "url": "https://app.alphahusky.win
+" },
+{ "label": "API Health", "url": "https://api.alphahusky.win/health" },
+{ "label": "Open in Telegram (Mini App)", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
+{ "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+]
+},
   {
     "date": "2025-09-20",
     "title": "Devlog #HOWLitsMade — BAD_HASH fix + WebApp Map/Buildings",
