@@ -199,7 +199,7 @@
   </div>
   <p class="mt-8 text-yellow-300/70 text-sm italic">Follow, play, build. #JoinThePack</p>
 </section>
-<!-- LEGENDS (unchanged structure sample) -->
+<!-- LEGENDS -->
 <section id="legends" class="section p-8 md:p-12 max-w-5xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Legends of the Pack</h2>
   <p class="text-lg text-yellow-200 mb-8">Meet the legendary Alphas and contributors who shaped the story and spirit of Alpha Husky. Each legend has a story, a face, and a legacy.</p>
@@ -219,6 +219,23 @@
       <h3 class="text-xl font-bold mb-2">GTL</h3>
       <p class="text-yellow-200 text-sm text-center">Shadow agent and master of the network. Discover his legend in the next drop.</p>
     </div>
+
+    <!-- NEW: Alpha Herod -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow">
+      <img src="/assets/legends/alpha_herod.png" alt="Alpha Herod" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover">
+      <h3 class="text-xl font-bold mb-1">Alpha Herod</h3>
+      <p class="text-yellow-200 text-sm text-center mb-1">Story architect who keeps the flame steady and the vision sharp.</p>
+      <p class="text-yellow-300 text-xs italic">Vibe: Calm · Creative · Visionary</p>
+    </div>
+
+    <!-- NEW: Cherenkov Warden -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow">
+      <img src="/assets/legends/cherenkov_warden.png" alt="Cherenkov Warden" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover">
+      <h3 class="text-xl font-bold mb-1">Cherenkov Warden</h3>
+      <p class="text-yellow-200 text-sm text-center mb-1">Armor of grit, eyes on the breach. Holds the line when the chain turns red.</p>
+      <p class="text-yellow-300 text-xs italic">Vibe: Relentless · Ruggedness · Doggedness</p>
+    </div>
+
     <!-- BLOOD-MOON WHISPER spotlight -->
     <div class="flex flex-col sm:flex-row items-center gap-4 mb-7 max-w-2xl w-full mx-auto p-4 bg-yellow-900/30 rounded-2xl shadow-xl border border-yellow-700 sm:col-span-2 md:col-span-3">
       <img src="bloodmoons_whisper.png" alt="Blood-Moon Whisper" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-lg bg-black object-cover">
@@ -241,17 +258,17 @@
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Gallery</h2>
 
   <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    <!-- PRZYKŁADOWA POZYCJA (możesz duplikować i dodawać kolejne) -->
+    <!-- PRZYKŁADOWA POZYCJA -->
     <figure class="relative">
-  <img
-    src="/assets/gallery/alpha_pixel.jpg"
-    alt="Alpha Husky — pixel art"
-    class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in"
-    loading="lazy" decoding="async">
-  <figcaption class="mt-2 text-yellow-300 text-xs text-center">
-    Alpha — Pixel
-  </figcaption>
-</figure>
+      <img
+        src="/assets/gallery/alpha_pixel.jpg"
+        alt="Alpha Husky — pixel art"
+        class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in"
+        loading="lazy" decoding="async">
+      <figcaption class="mt-2 text-yellow-300 text-xs text-center">
+        Alpha — Pixel
+      </figcaption>
+    </figure>
   </div>
 </section>
 <!-- Lore Section -->
@@ -716,6 +733,33 @@ It had no need.
   document.addEventListener('DOMContentLoaded', loadUpdates);
 })();
 </script>
+
+<!-- LIGHTBOX for Gallery -->
+<script>
+  (function(){
+    const grid = document.getElementById('galleryGrid'); if(!grid) return;
+    const lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.className = 'fixed inset-0 bg-black/90 hidden items-center justify-center p-4 z-[100]';
+    lb.innerHTML = '<img class="max-h-[90vh] max-w-[90vw] rounded-xl border border-yellow-700/60 shadow-xl"/><button type="button" class="absolute top-4 right-4 border border-yellow-700/60 text-yellow-200 px-3 py-1 rounded-lg hover:bg-yellow-900/50">✕</button>';
+    document.body.appendChild(lb);
+    const imgEl = lb.querySelector('img');
+    const btn = lb.querySelector('button');
+
+    grid.addEventListener('click', e=>{
+      const t = e.target;
+      if (t.tagName === 'IMG'){
+        imgEl.src = t.currentSrc || t.src;
+        lb.classList.remove('hidden'); lb.classList.add('flex');
+      }
+    });
+    function close(){ lb.classList.add('hidden'); lb.classList.remove('flex'); imgEl.src=''; }
+    btn.addEventListener('click', close);
+    lb.addEventListener('click', (e)=>{ if(e.target === lb) close(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && !lb.classList.contains('hidden')) close(); });
+  })();
+</script>
+
 <!-- Hamburger toggle script -->
 <script>
   document.getElementById('hamburger').addEventListener('click', () => {
