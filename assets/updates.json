@@ -6,8 +6,8 @@
     "text": "🥋 Dojo (Testnet Wastes): shipped a zero-risk training ground. Front: new js/dojo.js modal with timer + live metrics (DPS, total, hits, avg/max, crit%). Map pin routes straight to Dojo; Start triggers /webapp/building/start (dojo), state returns last session. No materials lost, small mastery rewards planned.\n🔌 Wiring: index loads js/dojo.js (cachebusted), Dojo.init shares apiPost with Fortress; map click handler and bot’s NODE_TO_BUILDING map now include testnet_wastes → testnet_wastes_dojo. Backend: dedicated dojo branches in /webapp/building/state and /webapp/building/start.\n🖼️ Gallery: added two legend cards (Alpha Herod, Cherenkov Warden) with lightbox, lazy-load and proper alt text.\n🗺️ Lore consistency: kept location name as “Testnet Wastes”; Dojo is a building/function inside that region, not a new region.\n🧭 Roadmap: updated “Shipped” with Site/Gallery row, consolidated Shop/Admin telemetry, tightened wording on DoD. Kept WebApp action migration as “In progress”; clarified “Next” (bring back /daily; wire start/resolve for AW/BC; inventory cap → stash).\n🐛 UX: fixed start/refresh flows in the building modal to reflect server timers reliably; added gentle haptics + clearer alerts.",
     "links": [
       { "label": "WebApp (prod)", "url": "https://app.alphahusky.win?section=map" },
-      { "label": "Roadmap section", "url": "https://app.alphahusky.win/#roadmap" },
-      { "label": "Gallery", "url": "https://app.alphahusky.win/#gallery" }
+      { "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap" },
+      { "label": "Gallery", "url": "https://thealphahusky.netlify.app/#gallery" }
     ]
   },
 {
