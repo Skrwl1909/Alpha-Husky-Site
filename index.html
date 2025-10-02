@@ -205,6 +205,119 @@
     </div>
     <p class="mt-8 text-yellow-300/70 text-sm italic">Follow, play, build. #JoinThePack</p>
   </section>
+  <!-- What's New / Social Proof Section -->
+<section id="whats-new" class="section p-8 md:p-12 max-w-5xl mx-auto">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6 glow text-center">What's New in the Pack</h2>
+  <p class="text-lg text-yellow-200 mb-8 text-center">Stay howling with the latest updates from our Alpha community. Follow us on X for real-time drops! <span class="font-bold text-yellow-400">2.6K+ Believers Strong 🐺</span></p>
+  
+  <!-- Rotating Update Cards -->
+  <div class="flex justify-center mb-8">
+    <div id="update-carousel" class="relative w-full max-w-2xl h-48 bg-yellow-900/20 rounded-xl overflow-hidden border border-yellow-700/50">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <!-- Card 1: New Skin -->
+        <div class="update-card active text-center p-6">
+          <h3 class="text-xl font-bold mb-2">New Skin Dropped!</h3>
+          <p class="text-yellow-300 mb-4">Unlock Ashclaw Founder Blade in the game – equip your husky for the next raid!</p>
+          <a href="#skins" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">View Gallery</a>
+        </div>
+        <!-- Card 2: Lore Teaser -->
+        <div class="update-card text-center p-6">
+          <h3 class="text-xl font-bold mb-2">Chapter 6 Voting Live Soon</h3>
+          <p class="text-yellow-300 mb-4">Shape the Oracle of Rugs – vote in Telegram for epic twists!</p>
+          <a href="#lore" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">Read Lore</a>
+        </div>
+        <!-- Card 3: Community Event -->
+        <div class="update-card text-center p-6">
+          <h3 class="text-xl font-bold mb-2">Pack Raid Night</h3>
+          <p class="text-yellow-300 mb-4">Join tonight's Telegram raid for exclusive rewards – LFG!</p>
+          <a href="https://t.me/The_Alpha_husky" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Live X Feed -->
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Post 1 -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
+      <div class="flex items-center mb-3">
+        <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
+        <div>
+          <h4 class="font-bold">@The_Alpha_Husky</h4>
+          <p class="text-yellow-300 text-sm">2 Oct 2025</p>
+        </div>
+      </div>
+      <p class="text-yellow-200 mb-3">Good morning Legend 🫡🐺</p>
+      <a href="https://x.com/The_Alpha_Husky/status/1973713058938880045" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a><grok-card data-id="3e2a48" data-type="citation_card"></grok-card>
+    </div>
+    
+    <!-- Post 2 -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
+      <div class="flex items-center mb-3">
+        <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
+        <div>
+          <h4 class="font-bold">@The_Alpha_Husky</h4>
+          <p class="text-yellow-300 text-sm">2 Oct 2025</p>
+        </div>
+      </div>
+      <p class="text-yellow-200 mb-3">🔥🔥🐺</p>
+      <a href="https://x.com/The_Alpha_Husky/status/1973712963786952889" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a><grok-card data-id="b0d74c" data-type="citation_card"></grok-card>
+    </div>
+    
+    <!-- Post 3 -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
+      <div class="flex items-center mb-3">
+        <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
+        <div>
+          <h4 class="font-bold">@The_Alpha_Husky</h4>
+          <p class="text-yellow-300 text-sm">2 Oct 2025</p>
+        </div>
+      </div>
+      <p class="text-yellow-200 mb-3">Best of morning For you my Howler 🫡🐺 Lets hunt 🔥🐺</p>
+      <a href="https://x.com/The_Alpha_Husky/status/1973708614432121181" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a><grok-card data-id="fbb376" data-type="citation_card"></grok-card>
+    </div>
+  </div>
+  
+  <div class="text-center mt-6">
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition">
+      Follow on X for More 🐺
+    </a>
+  </div>
+</section>
+
+<!-- Inline JS for Carousel Rotation -->
+<script>
+  const carousel = document.getElementById('update-carousel');
+  const cards = carousel.querySelectorAll('.update-card');
+  let currentCard = 0;
+  
+  function rotateCards() {
+    cards.forEach((card, index) => {
+      card.classList.remove('active');
+      if (index === currentCard) {
+        card.classList.add('active');
+      }
+    });
+    currentCard = (currentCard + 1) % cards.length;
+  }
+  
+  // Initial active
+  cards[0].classList.add('active');
+  
+  // Rotate every 5 seconds
+  setInterval(rotateCards, 5000);
+</script>
+
+<!-- Inline CSS for Active Card (fade effect) -->
+<style>
+  .update-card {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .update-card.active {
+    opacity: 1;
+  }
+</style>
   <!-- QUIZ SECTION -->
   <section id="quiz" class="section p-8 md:p-12 max-w-5xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Which Pack Character Are You?</h2>
