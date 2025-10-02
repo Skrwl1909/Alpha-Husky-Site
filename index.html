@@ -534,90 +534,165 @@ It had no need.
     </p>
   </section>
   <!-- Roadmap (Interactive Timeline with AOS) -->
-  <section id="roadmap" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">Roadmap</h2>
-    <div class="timeline" data-aos="fade-up">
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
-          <h3 class="text-xl font-bold">MVP Game Launch</h3>
-          <p class="text-yellow-200">Beta live on Telegram – Q3 2025</p>
-        </div>
-      </div>
-      <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-content">
-          <h3 class="text-xl font-bold">Lore Chapters 1-5</h3>
-          <p class="text-yellow-200">Full drops on X – Completed</p>
-        </div>
-      </div>
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
-          <h3 class="text-xl font-bold">Blood Moon Eclipse Event</h3>
-          <p class="text-yellow-200">Exclusive rewards – Oct 2025</p>
-        </div>
-      </div>
-      <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-content">
-          <h3 class="text-xl font-bold">Token Utilities</h3>
-          <p class="text-yellow-200">In-game & community features – Q4 2025</p>
-        </div>
-      </div>
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
-          <h3 class="text-xl font-bold">NFT Drops</h3>
-          <p class="text-yellow-200">Collectibles tied to gameplay – 2026</p>
-        </div>
+<section id="roadmap" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">Roadmap</h2>
+  <div class="timeline" data-aos="fade-up">
+    <div class="timeline-item left" data-aos="fade-right">
+      <div class="timeline-content">
+        <h3 class="text-xl font-bold">MVP Game Launch</h3>
+        <p class="text-yellow-200">Beta live on Telegram – Q3 2025</p>
       </div>
     </div>
-  </section>
-  <!-- TOKEN (planned; post-MVP, temporarily hidden) -->
-  <section id="token" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
-    <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">
-      Planned Token Utility (post-MVP)
-      <span class="ml-2 align-middle px-2 py-1 text-xs rounded-full bg-yellow-500/80 text-black font-bold">Draft</span>
-    </h2>
-    <p class="text-yellow-300/90 mb-6 text-sm">
-      Not live yet. Any launch will be announced only after the <a href="#roadmap" class="underline text-yellow-200 hover:text-yellow-100 font-bold">token readiness gates</a> are met.
-      No hard dates. No promises — ship &gt; hype.
+    <div class="timeline-item right" data-aos="fade-left">
+      <div class="timeline-content">
+        <h3 class="text-xl font-bold">Lore Chapters 1-5</h3>
+        <p class="text-yellow-200">Full drops on X – Completed</p>
+      </div>
+    </div>
+    <div class="timeline-item left" data-aos="fade-right">
+      <div class="timeline-content">
+        <h3 class="text-xl font-bold">Blood Moon Eclipse Event</h3>
+        <p class="text-yellow-200">Exclusive rewards – Oct 2025</p>
+      </div>
+    </div>
+    <div class="timeline-item right" data-aos="fade-left">
+      <div class="timeline-content">
+        <h3 class="text-xl font-bold">Token Utilities</h3>
+        <p class="text-yellow-200">In-game & community features – Q4 2025</p>
+      </div>
+    </div>
+    <div class="timeline-item left" data-aos="fade-right">
+      <div class="timeline-content">
+        <h3 class="text-xl font-bold">NFT Drops</h3>
+        <p class="text-yellow-200">Collectibles tied to gameplay – 2026</p>
+      </div>
+    </div>
+  </div>
+  <!-- Button to toggle detailed lean roadmap table -->
+  <div class="text-center mt-8">
+    <button id="toggle-detailed-roadmap" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">
+      View Detailed Milestones
+    </button>
+  </div>
+  <!-- Detailed Lean Roadmap Table (hidden by default) -->
+  <div id="detailed-roadmap-table" class="mt-8 hidden">
+    <h3 class="text-2xl font-bold mb-4 glow text-center">Lean Roadmap Milestones</h3>
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse border border-yellow-700/50 bg-yellow-900/20 rounded-xl">
+        <thead>
+          <tr class="bg-yellow-800/50">
+            <th class="border border-yellow-700/50 p-3 text-left">Milestone</th>
+            <th class="border border-yellow-700/50 p-3 text-left">Status</th>
+            <th class="border border-yellow-700/50 p-3 text-left">Details</th>
+            <th class="border border-yellow-700/50 p-3 text-left">Timeline</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-yellow-900/10 transition">
+            <td class="border border-yellow-700/50 p-3">MVP Game Launch</td>
+            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-green-500 text-black rounded-full text-xs font-bold">Achieved</span></td>
+            <td class="border border-yellow-700/50 p-3">Beta live on Telegram with core earn/feed/level mechanics.</td>
+            <td class="border border-yellow-700/50 p-3">Q3 2025</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10 transition">
+            <td class="border border-yellow-700/50 p-3">Lore Chapters 1-5</td>
+            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-green-500 text-black rounded-full text-xs font-bold">Achieved</span></td>
+            <td class="border border-yellow-700/50 p-3">Full story drops on X, including Meme War chapter.</td>
+            <td class="border border-yellow-700/50 p-3">Q3 2025</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10 transition">
+            <td class="border border-yellow-700/50 p-3">Blood Moon Eclipse Event</td>
+            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
+            <td class="border border-yellow-700/50 p-3">Exclusive rewards and pack challenges under the red moon.</td>
+            <td class="border border-yellow-700/50 p-3">Oct 2025</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10 transition">
+            <td class="border border-yellow-700/50 p-3">Token Utilities</td>
+            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
+            <td class="border border-yellow-700/50 p-3">In-game quests, community roles, NFT claims post-MVP balancing.</td>
+            <td class="border border-yellow-700/50 p-3">Q4 2025</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10 transition">
+            <td class="border border-yellow-700/50 p-3">NFT Drops</td>
+            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
+            <td class="border border-yellow-700/50 p-3">Collectibles linked to gameplay and engagement.</td>
+            <td class="border border-yellow-700/50 p-3">2026</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10 transition">
+            <td class="border border-yellow-700/50 p-3">Token Launch</td>
+            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
+            <td class="border border-yellow-700/50 p-3">Total supply 25M, locked 10M, liquidity ~23%, founder 15%.</td>
+            <td class="border border-yellow-700/50 p-3">Post-MVP</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-yellow-300 mt-4 text-center text-sm italic">Ship > hype. Adjustments based on community feedback and readiness gates.</p>
+  </div>
+</section>
+<script>
+  // Toggle detailed roadmap table
+  document.getElementById('toggle-detailed-roadmap').addEventListener('click', () => {
+    const table = document.getElementById('detailed-roadmap-table');
+    const button = document.getElementById('toggle-detailed-roadmap');
+    if (table.classList.contains('hidden')) {
+      table.classList.remove('hidden');
+      button.textContent = 'Hide Detailed Milestones';
+    } else {
+      table.classList.add('hidden');
+      button.textContent = 'View Detailed Milestones';
+    }
+  });
+</script>
+<!-- TOKEN (planned; post-MVP, temporarily hidden) -->
+<section id="token" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
+  <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">
+    Planned Token Utility (post-MVP)
+    <span class="ml-2 align-middle px-2 py-1 text-xs rounded-full bg-yellow-500/80 text-black font-bold">Draft</span>
+  </h2>
+  <p class="text-yellow-300/90 mb-6 text-sm">
+    Not live yet. Any launch will be announced only after the <a href="#roadmap" class="underline text-yellow-200 hover:text-yellow-100 font-bold">token readiness gates</a> are met.
+    No hard dates. No promises — ship > hype.
+  </p>
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">In-game (planned)</div>
+      <div class="text-yellow-200 text-sm">
+        Unlock/select quests, tougher missions, item upgrades, and cosmetic skins — after MVP & economy balancing.
+      </div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">Community (planned)</div>
+      <div class="text-yellow-200 text-sm">
+        Roles, nominations, governance signals, and event access tied to contribution & on-chain proofs.
+      </div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
+      <div class="font-bold text-yellow-400">NFT / Collectibles (planned)</div>
+      <div class="text-yellow-200 text-sm">
+        Claims, upgrades, and redemptions connected to gameplay & engagement — contingent on security reviews.
+      </div>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-70">
+      <div class="font-bold text-yellow-400">More (later)</div>
+      <div class="text-yellow-200 text-sm">
+        Additional utilities may be added after stability/retention targets are consistently met.
+      </div>
+    </div>
+  </div>
+  <div class="mt-6 bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+    <h3 class="font-bold text-yellow-200 mb-2">Current draft facts (subject to change)</h3>
+    <ul class="list-disc list-inside text-yellow-200 text-sm space-y-1">
+      <li>Total supply: <span class="font-bold">25M</span></li>
+      <li>Locked: <span class="font-bold">10M</span></li>
+      <li>Liquidity: ~<span class="font-bold">23%</span> added gradually (no big treasury)</li>
+      <li>Founder: ~<span class="font-bold">15%</span> for Alpha Dev (contribution-based)</li>
+    </ul>
+    <p class="text-yellow-300/80 text-xs mt-2">
+      Utilities and allocations can be adjusted during testing. See <a href="#roadmap" class="underline">Roadmap</a> for readiness gates.
     </p>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
-        <div class="font-bold text-yellow-400">In-game (planned)</div>
-        <div class="text-yellow-200 text-sm">
-          Unlock/select quests, tougher missions, item upgrades, and cosmetic skins — after MVP & economy balancing.
-        </div>
-      </div>
-      <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
-        <div class="font-bold text-yellow-400">Community (planned)</div>
-        <div class="text-yellow-200 text-sm">
-          Roles, nominations, governance signals, and event access tied to contribution & on-chain proofs.
-        </div>
-      </div>
-      <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
-        <div class="font-bold text-yellow-400">NFT / Collectibles (planned)</div>
-        <div class="text-yellow-200 text-sm">
-          Claims, upgrades, and redemptions connected to gameplay & engagement — contingent on security reviews.
-        </div>
-      </div>
-      <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-70">
-        <div class="font-bold text-yellow-400">More (later)</div>
-        <div class="text-yellow-200 text-sm">
-          Additional utilities may be added after stability/retention targets are consistently met.
-        </div>
-      </div>
-    </div>
-    <div class="mt-6 bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
-      <h3 class="font-bold text-yellow-200 mb-2">Current draft facts (subject to change)</h3>
-      <ul class="list-disc list-inside text-yellow-200 text-sm space-y-1">
-        <li>Total supply: <span class="font-bold">25M</span></li>
-        <li>Locked: <span class="font-bold">10M</span></li>
-        <li>Liquidity: ~<span class="font-bold">23%</span> added gradually (no big treasury)</li>
-        <li>Founder: ~<span class="font-bold">15%</span> for Alpha Dev (contribution-based)</li>
-      </ul>
-      <p class="text-yellow-300/80 text-xs mt-2">
-        Utilities and allocations can be adjusted during testing. See <a href="#roadmap" class="underline">Roadmap</a> for readiness gates.
-      </p>
-    </div>
-  </section>
+  </div>
+</section>
   <!-- ========= SKINS SECTION (NEW) ========= -->
   <section id="skins" class="section p-8 md:p-12 max-w-6xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold mb-4 glow flex items-center gap-3">Animated Skins <span class="bg-yellow-500/70 text-black text-xs px-2 py-1 rounded-full">MP4</span></h2>
