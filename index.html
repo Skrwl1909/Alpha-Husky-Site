@@ -568,78 +568,41 @@ It had no need.
       </div>
     </div>
   </div>
-  <!-- Button to toggle detailed lean roadmap table -->
+  <!-- Button to toggle detailed lean roadmap -->
   <div class="text-center mt-8">
     <button id="toggle-detailed-roadmap" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">
       View Detailed Milestones
     </button>
   </div>
-  <!-- Detailed Lean Roadmap Table (hidden by default) -->
-  <div id="detailed-roadmap-table" class="mt-8 hidden">
-    <h3 class="text-2xl font-bold mb-4 glow text-center">Lean Roadmap Milestones</h3>
-    <div class="overflow-x-auto">
-      <table class="w-full border-collapse border border-yellow-700/50 bg-yellow-900/20 rounded-xl">
-        <thead>
-          <tr class="bg-yellow-800/50">
-            <th class="border border-yellow-700/50 p-3 text-left">Milestone</th>
-            <th class="border border-yellow-700/50 p-3 text-left">Status</th>
-            <th class="border border-yellow-700/50 p-3 text-left">Details</th>
-            <th class="border border-yellow-700/50 p-3 text-left">Timeline</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="hover:bg-yellow-900/10 transition">
-            <td class="border border-yellow-700/50 p-3">MVP Game Launch</td>
-            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-green-500 text-black rounded-full text-xs font-bold">Achieved</span></td>
-            <td class="border border-yellow-700/50 p-3">Beta live on Telegram with core earn/feed/level mechanics.</td>
-            <td class="border border-yellow-700/50 p-3">Q3 2025</td>
-          </tr>
-          <tr class="hover:bg-yellow-900/10 transition">
-            <td class="border border-yellow-700/50 p-3">Lore Chapters 1-5</td>
-            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-green-500 text-black rounded-full text-xs font-bold">Achieved</span></td>
-            <td class="border border-yellow-700/50 p-3">Full story drops on X, including Meme War chapter.</td>
-            <td class="border border-yellow-700/50 p-3">Q3 2025</td>
-          </tr>
-          <tr class="hover:bg-yellow-900/10 transition">
-            <td class="border border-yellow-700/50 p-3">Blood Moon Eclipse Event</td>
-            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
-            <td class="border border-yellow-700/50 p-3">Exclusive rewards and pack challenges under the red moon.</td>
-            <td class="border border-yellow-700/50 p-3">Oct 2025</td>
-          </tr>
-          <tr class="hover:bg-yellow-900/10 transition">
-            <td class="border border-yellow-700/50 p-3">Token Utilities</td>
-            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
-            <td class="border border-yellow-700/50 p-3">In-game quests, community roles, NFT claims post-MVP balancing.</td>
-            <td class="border border-yellow-700/50 p-3">Q4 2025</td>
-          </tr>
-          <tr class="hover:bg-yellow-900/10 transition">
-            <td class="border border-yellow-700/50 p-3">NFT Drops</td>
-            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
-            <td class="border border-yellow-700/50 p-3">Collectibles linked to gameplay and engagement.</td>
-            <td class="border border-yellow-700/50 p-3">2026</td>
-          </tr>
-          <tr class="hover:bg-yellow-900/10 transition">
-            <td class="border border-yellow-700/50 p-3">Token Launch</td>
-            <td class="border border-yellow-700/50 p-3"><span class="px-3 py-1 bg-red-500 text-black rounded-full text-xs font-bold">Pending</span></td>
-            <td class="border border-yellow-700/50 p-3">Total supply 25M, locked 10M, liquidity ~23%, founder 15%.</td>
-            <td class="border border-yellow-700/50 p-3">Post-MVP</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="text-yellow-300 mt-4 text-center text-sm italic">Ship > hype. Adjustments based on community feedback and readiness gates.</p>
+  <!-- Detailed Roadmap Loader (fetches /partials/roadmap.html) -->
+  <div id="detailed-roadmap-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/roadmap.html">
+    Loading detailed roadmap…
   </div>
 </section>
 <script>
-  // Toggle detailed roadmap table
-  document.getElementById('toggle-detailed-roadmap').addEventListener('click', () => {
-    const table = document.getElementById('detailed-roadmap-table');
+  // Toggle and load detailed roadmap
+  document.getElementById('toggle-detailed-roadmap').addEventListener('click', async () => {
+    const root = document.getElementById('detailed-roadmap-root');
     const button = document.getElementById('toggle-detailed-roadmap');
-    if (table.classList.contains('hidden')) {
-      table.classList.remove('hidden');
+    if (root.classList.contains('hidden')) {
+      root.classList.remove('hidden');
       button.textContent = 'Hide Detailed Milestones';
+      if (!root.dataset.loaded) {
+        const src = root.dataset.src || '/partials/roadmap.html';
+        try {
+          const res = await fetch(src + '?v=1');
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          const html = await res.text();
+          root.outerHTML = html;
+          // Mark as loaded to avoid refetch
+          document.querySelector('#detailed-roadmap-root').dataset.loaded = 'true';
+        } catch (e) {
+          console.error('Detailed roadmap load failed:', e);
+          root.innerHTML = '<p class="text-yellow-300">Could not load detailed roadmap. Check <code>/partials/roadmap.html</code> path.</p>';
+        }
+      }
     } else {
-      table.classList.add('hidden');
+      root.classList.add('hidden');
       button.textContent = 'View Detailed Milestones';
     }
   });
