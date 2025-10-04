@@ -405,51 +405,51 @@
     </div>
   </section>
   <!-- LEGENDS -->
-  <section id="legends" class="section p-8 md:p-12 max-w-5xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Legends of the Pack</h2>
-    <p class="text-lg text-yellow-200 mb-8">Meet the legendary Alphas and contributors who shaped the story and spirit of Alpha Husky. Each legend has a story, a face, and a legacy.</p>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow">
-        <img src="Alpha.png" alt="Alpha" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg">
-        <h3 class="text-xl font-bold mb-2">Alpha</h3>
-        <p class="text-yellow-200 text-sm text-center">Founder, leader, and the spirit behind the movement. Read the full legend soon.</p>
-      </div>
-      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow">
-        <img src="Hound_Drenton.png" alt="Drenton" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg">
-        <h3 class="text-xl font-bold mb-2">Drenton</h3>
-        <p class="text-yellow-200 text-sm text-center">The relentless raider. Scarred by the chain, but born to lead. More legends dropping soon.</p>
-      </div>
-      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow">
-        <img src="ShadowAgent.png" alt="GTL" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg">
-        <h3 class="text-xl font-bold mb-2">GTL</h3>
-        <p class="text-yellow-200 text-sm text-center">Shadow agent and master of the network. Discover his legend in the next drop.</p>
-      </div>
-      <!-- NEW: Alpha Herod -->
-      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow">
-        <img src="alpha_herod.jpg" alt="Alpha Herod" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover">
-        <h3 class="text-xl font-bold mb-1">Alpha Herod</h3>
-        <p class="text-yellow-200 text-sm text-center mb-1">Story architect who keeps the flame steady and the vision sharp.</p>
-        <p class="text-yellow-300 text-xs italic">Vibe: Calm · Creative · Visionary</p>
-      </div>
-      <!-- NEW: Cherenkov Warden -->
-      <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow">
-        <img src="cherenkov_warden.jpg" alt="Cherenkov Warden" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover">
-        <h3 class="text-xl font-bold mb-1">Cherenkov Warden</h3>
-        <p class="text-yellow-200 text-sm text-center mb-1">Armor of grit, eyes on the breach. Holds the line when the chain turns red.</p>
-        <p class="text-yellow-300 text-xs italic">Vibe: Relentless · Ruggedness · Doggedness</p>
-      </div>
-      <!-- BLOOD-MOON WHISPER spotlight -->
-      <div class="flex flex-col sm:flex-row items-center gap-4 mb-7 max-w-2xl w-full mx-auto p-4 bg-yellow-900/30 rounded-2xl shadow-xl border border-yellow-700 sm:col-span-2 md:col-span-3">
-        <img src="bloodmoons_whisper.png" alt="Blood-Moon Whisper" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-lg bg-black object-cover">
-        <div class="text-left sm:ml-4 flex-1">
-          <h2 class="text-xl font-bold text-yellow-200 mb-1">Blood-Moon Whisper</h2>
-          <p class="text-yellow-300 text-sm mb-1"><span class="font-bold text-yellow-400">Legendary Contest Winner:</span> The enigmatic husky cloaked in glitch and myth. Appears when hope seems lost, a signal in the chaos—part memory, part myth, forever scanning the ruins with a single red eye.</p>
-          <span class="inline-block mt-2 px-3 py-1 bg-yellow-500/70 text-black rounded-full text-xs font-bold">Featured in Chapter 5: The Meme War</span>
-        </div>
+<section id="legends" class="section p-8 md:p-12 max-w-5xl mx-auto">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center"><span class="font-extrabold">Legends</span> of the Pack</h2> <!-- WDROŻONO: Pogrubienie kluczowej frazy dla dynamiki typografii -->
+  <p class="text-lg text-yellow-200 mb-8 text-center">Meet the legendary Alphas and contributors who shaped the story and spirit of Alpha Husky. Each legend has a story, a face, and a legacy.</p>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8"> <!-- Już responsywny grid; WDROŻONO: Dodano subtelne cienie i hover do kart dla lepszego balansu wizualnego -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1"> <!-- WDROŻONO: Hover lift i cień dla interaktywności -->
+      <img src="Alpha.png" alt="Alpha" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors"> <!-- WDROŻONO: Hover na border (niebieski) i scale z globalnego CSS -->
+      <h3 class="text-xl font-bold mb-2">Alpha</h3>
+      <p class="text-yellow-200 text-sm text-center">Founder, leader, and the spirit behind the movement. Read the full legend soon.</p>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="Hound_Drenton.png" alt="Drenton" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-2">Drenton</h3>
+      <p class="text-yellow-200 text-sm text-center">The relentless raider. Scarred by the chain, but born to lead. More legends dropping soon.</p>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="ShadowAgent.png" alt="GTL" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-2">GTL</h3>
+      <p class="text-yellow-200 text-sm text-center">Shadow agent and master of the network. Discover his legend in the next drop.</p>
+    </div>
+    <!-- NEW: Alpha Herod -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="alpha_herod.jpg" alt="Alpha Herod" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-1">Alpha Herod</h3>
+      <p class="text-yellow-200 text-sm text-center mb-1">Story architect who keeps the flame steady and the vision sharp.</p>
+      <p class="text-yellow-300 text-xs italic">Vibe: Calm · Creative · Visionary</p>
+    </div>
+    <!-- NEW: Cherenkov Warden -->
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="cherenkov_warden.jpg" alt="Cherenkov Warden" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-1">Cherenkov Warden</h3>
+      <p class="text-yellow-200 text-sm text-center mb-1">Armor of grit, eyes on the breach. Holds the line when the chain turns red.</p>
+      <p class="text-yellow-300 text-xs italic">Vibe: Relentless · Ruggedness · Doggedness</p>
+    </div>
+    <!-- BLOOD-MOON WHISPER spotlight – WDROŻONO: Dodano hover dla spójności -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 mb-7 max-w-2xl w-full mx-auto p-4 bg-yellow-900/30 rounded-2xl shadow-xl border border-yellow-700 sm:col-span-2 md:col-span-3 group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/40 hover:-translate-y-1">
+      <img src="bloodmoons_whisper.png" alt="Blood-Moon Whisper" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-lg bg-black object-cover group-hover:border-blue-500 transition-colors"> <!-- WDROŻONO: Hover na border -->
+      <div class="text-left sm:ml-4 flex-1">
+        <h2 class="text-xl font-bold text-yellow-200 mb-1">Blood-Moon Whisper</h2>
+        <p class="text-yellow-300 text-sm mb-1"><span class="font-bold text-yellow-400">Legendary Contest Winner:</span> The enigmatic husky cloaked in glitch and myth. Appears when hope seems lost, a signal in the chaos—part memory, part myth, forever scanning the ruins with a single red eye.</p>
+        <span class="inline-block mt-2 px-3 py-1 bg-yellow-500/70 text-black rounded-full text-xs font-bold border border-blue-500/50 transition-colors group-hover:bg-yellow-400">Featured in Chapter 5: The Meme War</span> <!-- WDROŻONO: Subtelny hover na tagu -->
       </div>
     </div>
-    <div class="mt-8 text-yellow-300 text-center italic">More legends and their stories coming soon. <span class="text-yellow-500">#JoinThePack</span></div>
-  </section>
+  </div>
+  <div class="mt-8 text-yellow-300 text-center italic">More legends and their stories coming soon. <span class="text-yellow-500 font-bold">#JoinThePack</span></div> <!-- WDROŻONO: Pogrubienie hasztagu -->
+</section>
   <!-- UPDATES (condensed) -->
   <section id="updates" class="section p-10 max-w-5xl mx-auto">
     <h2 class="text-3xl font-bold mb-6 glow">Updates</h2>
