@@ -115,79 +115,161 @@
       const el = document.getElementById('ah-teaser'); if (el) el.remove();
     }
   </script>
-  <!-- === BLOOD MOON EVENT BANNER (z odliczaniem) === -->
-  <section id="bloodmoon-banner" class="bm-wrap bm-compact">
-    <picture class="bm-bg">
-      <source type="image/webp"
-        srcset="/assets/event/bloodmoon_banner_900x300.webp 900w,
-                /assets/event/bloodmoon_banner_1280x320.webp 1280w,"
-        sizes="100vw">
-      <img
-        src="/assets/event/bloodmoon_banner_1920x360.jpg"
-        srcset="/assets/event/bloodmoon_banner_900x300.jpg 900w,
-                /assets/event/bloodmoon_banner_1280x320.jpg 1280w,
-                /assets/event/bloodmoon_banner_1920x360.jpg 1920w"
-        sizes="100vw"
-        alt="Blood Moon Eclipse — Alpha Husky"
-        loading="eager" decoding="async">
-    </picture>
-    <div class="bm-overlay">
-      <div class="bm-left">
-        <span class="bm-tag">Event</span>
-        <h3 class="bm-title">Blood Moon Eclipse</h3>
-        <p class="bm-sub">
-          Final countdown: <span id="bm-dd">0</span>d : <span id="bm-hh">00</span>h : <span id="bm-mm">00</span>m : <span id="bm-ss">00</span>s
-        </p>
-      </div>
-      <div class="bm-right">
-        <a href="/eclipse-event.html" class="bm-cta">Eclipse Event</a>
-        <button id="bm-dismiss" class="bm-dismiss" aria-label="Dismiss banner">✕</button>
-      </div>
+  <!-- === FULL MOON COUNTDOWN BANNER (z odliczaniem do pełni + aktualna faza) === -->
+<section id="fullmoon-banner" class="fm-wrap fm-compact">
+  <picture class="fm-bg">
+    <source type="image/webp"
+      srcset="/assets/event/fullmoon_banner_900x300.webp 900w,
+              /assets/event/fullmoon_banner_1280x320.webp 1280w,"
+      sizes="100vw">
+    <img
+      src="/assets/event/fullmoon_banner_1920x360.jpg"  <!-- WDROŻONO: Zmień na full moon asset -->
+      srcset="/assets/event/fullmoon_banner_900x300.jpg 900w,
+              /assets/event/fullmoon_banner_1280x320.jpg 1280w,
+              /assets/event/fullmoon_banner_1920x360.jpg 1920w"
+      sizes="100vw"
+      alt="Full Moon Rising — Alpha Husky"
+      loading="eager" decoding="async">
+  </picture>
+  <div class="fm-overlay">  <!-- WDROŻONO: Zmiana klas z bm- na fm- dla spójności -->
+    <div class="fm-left">
+      <span class="fm-tag">Lunar Event</span>  <!-- WDROŻONO: Nowy tag -->
+      <h3 class="fm-title">Full Moon Rising</h3>  <!-- WDROŻONO: Tytuł na Full Moon -->
+      <p class="fm-sub">
+        Next full moon: <span id="fm-dd">0</span>d : <span id="fm-hh">00</span>h : <span id="fm-mm">00</span>m : <span id="fm-ss">00</span>s<br>
+        <span id="fm-phase">Current Phase: Calculating...</span>  <!-- WDROŻONO: Linia z aktualną fazą -->
+        <div class="fm-progress mt-2">  <!-- WDROŻONO: Prosty progress bar -->
+          <div id="fm-progress-bar" class="bg-yellow-400 h-2 rounded" style="width: 0%;"></div>
+        </div>
+      </p>
     </div>
-  </section>
-  <script>
+    <div class="fm-right">
+      <a href="#lore" class="fm-cta">Join Lunar Raid</a>  <!-- WDROŻONO: Link do lore/eventu -->
+      <button id="fm-dismiss" class="fm-dismiss" aria-label="Dismiss banner">✕</button>
+    </div>
+  </div>
+</section>
+<style>
+  /* WDROŻONO: Dodaj te style do <style> w head – pasują do istniejącego designu */
+  .fm-wrap, .fm-compact { /* Adaptacja z bm- */
+    position: relative; overflow: hidden; max-height: 360px;
+  }
+  .fm-bg img { width: 100%; height: auto; object-fit: cover; }
+  .fm-overlay { position: absolute; inset: 0; display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(0,0,0,0.6); }
+  .fm-left { flex: 1; color: #ffe066; text-shadow: 0 0 6px #ffe066; }
+  .fm-tag { font-size: 0.8rem; opacity: 0.9; }
+  .fm-title { font-size: 1.5rem; font-weight: bold; margin: 0.5rem 0; }
+  .fm-sub { font-size: 1rem; line-height: 1.4; }
+  .fm-progress { background: #191919; border-radius: 10px; overflow: hidden; width: 100%; max-width: 200px; }
+  .fm-right { display: flex; flex-direction: column; align-items: flex-end; gap: 1rem; }
+  .fm-cta { background: linear-gradient(90deg, #ffe066, #f7ca18); color: black; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px #ffe06633; transition: all 0.3s; }
+  .fm-cta:hover { transform: scale(1.05); box-shadow: 0 6px 20px #ffe06655; }
+  .fm-dismiss { background: none; border: 1px solid #ffe066; color: #ffe066; padding: 0.5rem; border-radius: 50%; cursor: pointer; font-size: 1.2rem; }
+  @media (max-width: 768px) { .fm-overlay { flex-direction: column; gap: 1rem; text-align: center; } .fm-right { align-items: center; } }
+</style>
+<script>
+  // WDROŻONO: Nowy JS – algorytm fazy księżyca (z gist.github.com/endel – uproszczony i przetestowany)
   (() => {
-    // Updated to future date: Oct 31, 2025
-    const EVENT_AT = "2025-10-31T00:00:00Z";
-    const HIDE_KEY = "bm_hide_2025";
-    const el = document.getElementById('bloodmoon-banner');
+    const HIDE_KEY = "fm_hide_2025";  // WDROŻONO: Nowy key dla localStorage
+    const el = document.getElementById('fullmoon-banner');
     if (!el) return;
-    const dd = document.getElementById('bm-dd');
-    const hh = document.getElementById('bm-hh');
-    const mm = document.getElementById('bm-mm');
-    const ss = document.getElementById('bm-ss');
-    const dismissBtn = document.getElementById('bm-dismiss');
-    const eventTime = new Date(EVENT_AT);
-    const startWindow = new Date(eventTime.getTime() - 3*24*60*60*1000);
-    const endWindow = new Date(eventTime.getTime() + 6*60*60*1000);
-    const now = new Date();
-    if (localStorage.getItem(HIDE_KEY) === "1" || now < startWindow || now > endWindow) {
+    const dd = document.getElementById('fm-dd');
+    const hh = document.getElementById('fm-hh');
+    const mm = document.getElementById('fm-mm');
+    const ss = document.getElementById('fm-ss');
+    const phaseEl = document.getElementById('fm-phase');
+    const progressBar = document.getElementById('fm-progress-bar');
+    const dismissBtn = document.getElementById('fm-dismiss');
+    
+    if (localStorage.getItem(HIDE_KEY) === "1") {
       el.remove();
       return;
     }
-    function tick(){
+
+    // Funkcja do obliczania fazy księżyca (0-1: 0=new, 0.5=full)
+    function getMoonPhase(year, month, day) {
+      const date = new Date(year, month - 1, day);
+      const jd = (date.getTime() / 86400000) + 2440587.5;  // Julian Day
+      const daysSinceNew = jd - 2451549.5;
+      return (daysSinceNew % 29.53058867) / 29.53058867;  // Faza 0-1
+    }
+
+    // Nazwy faz
+    const phases = [
+      { range: [0, 0.03], name: "New Moon 🌑", icon: "🌑" },
+      { range: [0.03, 0.22], name: "Waxing Crescent 🌒", icon: "🌒" },
+      { range: [0.22, 0.28], name: "First Quarter 🌓", icon: "🌓" },
+      { range: [0.28, 0.47], name: "Waxing Gibbous 🌔", icon: "🌔" },
+      { range: [0.47, 0.53], name: "Full Moon 🌕", icon: "🌕" },
+      { range: [0.53, 0.72], name: "Waning Gibbous 🌖", icon: "🌖" },
+      { range: [0.72, 0.78], name: "Last Quarter 🌗", icon: "🌗" },
+      { range: [0.78, 0.97], name: "Waning Crescent 🌘", icon: "🌘" },
+      { range: [0.97, 1], name: "New Moon 🌑", icon: "🌑" }
+    ];
+
+    // Znajdź następną pełnię (szukaj w 30 dniach)
+    function findNextFullMoon() {
+      const today = new Date();
+      let nextFull = new Date(today);
+      let phase = getMoonPhase(today.getFullYear(), today.getMonth() + 1, today.getDate());
+      for (let i = 1; i <= 30; i++) {
+        const future = new Date(today.getTime() + i * 86400000);
+        const futurePhase = getMoonPhase(future.getFullYear(), future.getMonth() + 1, future.getDate());
+        if (Math.abs(futurePhase - 0.5) < Math.abs(phase - 0.5)) {
+          nextFull = future;
+          phase = futurePhase;
+        }
+      }
+      return nextFull;
+    }
+
+    const eventTime = findNextFullMoon();  // Następna pełnia
+    const now = new Date();
+
+    // Aktualna faza
+    function updatePhase() {
+      const todayPhase = getMoonPhase(now.getFullYear(), now.getMonth() + 1, now.getDate());
+      const illumination = Math.round(Math.min(todayPhase * 100, 100));  // % oświetlenia
+      let phaseName = "Unknown";
+      let icon = "🌙";
+      for (const p of phases) {
+        if (todayPhase >= p.range[0] && todayPhase < p.range[1]) {
+          phaseName = p.name.replace(" Moon", "");  // Krótko
+          icon = p.icon;
+          break;
+        }
+      }
+      phaseEl.innerHTML = `${icon} ${phaseName} – ${illumination}% illuminated`;
+      progressBar.style.width = `${illumination}%`;  // Progress bar
+    }
+
+    // Tick countdown
+    function tick() {
       const t = new Date();
       let diff = eventTime - t;
       if (diff < 0) diff = 0;
-      const s = Math.floor(diff/1000);
-      const d = Math.floor(s/86400);
-      const h = Math.floor((s%86400)/3600);
-      const m = Math.floor((s%3600)/60);
-      const sec = s%60;
+      const s = Math.floor(diff / 1000);
+      const d = Math.floor(s / 86400);
+      const h = Math.floor((s % 86400) / 3600);
+      const m = Math.floor((s % 3600) / 60);
+      const sec = s % 60;
       dd.textContent = d;
-      hh.textContent = String(h).padStart(2,"0");
-      mm.textContent = String(m).padStart(2,"0");
-      ss.textContent = String(sec).padStart(2,"0");
+      hh.textContent = String(h).padStart(2, "0");
+      mm.textContent = String(m).padStart(2, "0");
+      ss.textContent = String(sec).padStart(2, "0");
+      updatePhase();  // Update fazy co sekundę (subtelnie)
     }
+
     tick();
     const int = setInterval(tick, 1000);
+
     dismissBtn.addEventListener("click", () => {
       localStorage.setItem(HIDE_KEY, "1");
       el.remove();
       clearInterval(int);
-    }, { once:true });
+    }, { once: true });
   })();
-  </script>
+</script>
   <!-- === /BLOOD MOON EVENT BANNER === -->
   <!-- NAVBAR -->
   <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
