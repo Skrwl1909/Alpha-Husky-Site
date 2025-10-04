@@ -5,20 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alpha Husky</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- WDROŻONO: Dodano Open Sans -->
   <!-- AOS for animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     html { scroll-behavior: smooth; }
-    body { font-family: 'Share Tech Mono', monospace; }
-    body::before { content: ""; position: fixed; inset: 0; z-index: -1; background: linear-gradient(135deg, #101010 70%, #1e1e1e 100%); opacity: 0.95; pointer-events: none; }
+    body { 
+      font-family: 'Open Sans', 'Share Tech Mono', monospace; /* WDROŻONO: Zmiana na Open Sans dla lepszej czytelności */
+    }
+    body::before { 
+      content: ""; 
+      position: fixed; 
+      inset: 0; 
+      z-index: -1; 
+      background: linear-gradient(135deg, #001f3f 0%, #101010 70%, #1e1e1e 100%); /* WDROŻONO: Ulepszony gradient – dodano niebieski dla mistycyzmu */
+      opacity: 0.95; 
+      pointer-events: none; 
+    }
     .glow { text-shadow: 0 0 6px #ffe066, 0 0 18px #f7ca18; }
     .glitch-btn { position: relative; overflow: hidden; }
     .glitch-btn::before, .glitch-btn::after { content: ''; position: absolute; left: 0; right: 0; height: 2px; background: linear-gradient(90deg,#ffe066,#e5ff00,#00f5c6,#ff0083); opacity: 0.8; animation: glitch 1.8s infinite linear alternate; }
     .glitch-btn::before { top: 0; } .glitch-btn::after { bottom: 0; }
     @keyframes glitch { 0% { filter: blur(0.8px); opacity:0.8;} 80% { filter: blur(1.8px); opacity:0.4;} 100% { filter: blur(0.5px); opacity:1;} }
-    .section { border-radius: 1.5rem; box-shadow: 0 2px 30px 0 #ffe06622; border: 1px solid #ffe06633; background: #191919cc; margin-bottom: 2.5rem; }
+    .section { 
+      border-radius: 1.5rem; 
+      box-shadow: 0 2px 30px 0 #ffe06622; 
+      border: 1px solid #ffe06633; 
+      background: #191919cc; 
+      margin-bottom: 3rem; /* WDROŻONO: Zwiększony odstęp między sekcjami */
+      padding: 2rem; /* WDROŻONO: Dodany padding dla przestronności */
+    }
     .card-glow { box-shadow: 0 2px 18px #ffe06655; }
+    /* WDROŻONO: Stylizacja przycisków – zaokrąglenie i niebieska obwódka */
+    a[href="#game"], a[href="#lore"], a[href="#legends"], .bg-yellow-400, .bm-cta, .update-card a {
+      border-radius: 8px !important;
+      border: 1px solid #007BFF !important; /* Niebieska obwódka */
+      transition: all 0.3s ease;
+    }
+    a[href="#game"]:hover, a[href="#lore"]:hover, a[href="#legends"]:hover, .bg-yellow-400:hover, .bm-cta:hover, .update-card a:hover {
+      box-shadow: 0 0 10px #007BFF55;
+    }
+    /* WDROŻONO: Efekty hover na obrazach */
+    img {
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
     .timeline { position: relative; max-width: 1200px; margin: 0 auto; }
     .timeline::after { content: ''; position: absolute; width: 6px; background-color: #ffe066; top: 0; bottom: 0; left: 50%; margin-left: -3px; }
     .timeline-item { padding: 10px 40px; position: relative; background-color: inherit; width: 50%; }
@@ -32,7 +65,12 @@
     .quiz-question.active { display: block; }
     @media (max-width: 768px) {
       nav .space-x-2 { display: none; }
-      .section { padding: 1rem; margin-left: 0.5rem; margin-right: 0.5rem; }
+      .section { 
+        padding: 1.5rem; /* WDROŻONO: Dostosowany padding dla mobile */
+        margin-left: 0.5rem; 
+        margin-right: 0.5rem; 
+        margin-bottom: 2rem; /* WDROŻONO: Zwiększony na mobile */
+      }
       .grid { grid-template-columns: 1fr; }
       .flex-wrap { flex-direction: column; }
       img { max-width: 100%; height: auto; }
@@ -154,8 +192,8 @@
   <!-- NAVBAR -->
   <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
     <div class="flex items-center gap-3">
-      <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9">
-      <span class="font-bold text-xl tracking-widest glow">Alpha Husky</span>
+      <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9"> <!-- WDROŻONO: Hover zoom działa tu -->
+      <span class="font-bold text-xl tracking-widest glow"><span class="font-extrabold">Alpha</span> Husky</span> <!-- WDROŻONO: Pogrubienie dla dynamiki -->
     </div>
     <div class="md:space-x-2 text-sm md:text-base font-bold hidden md:block">
       <a href="#game" class="hover:text-yellow-200 transition">Game</a>
@@ -169,7 +207,7 @@
       <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
       <a href="#token" class="hover:text-yellow-200 transition">Token</a>
       <a href="/eclipse-event.html" class="hover:text-yellow-200 transition">Eclipse Event</a>
-      <a href="https://t.me/The_Alpha_husky" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl ml-2 hover:bg-yellow-300 shadow font-bold">Join The Pack</a>
+      <a href="https://t.me/The_Alpha_husky" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl ml-2 hover:bg-yellow-300 shadow font-bold">Join The Pack</a> <!-- WDROŻONO: Styl przycisku -->
     </div>
     <!-- Hamburger menu na mobile -->
     <button id="hamburger" class="md:hidden text-yellow-400 focus:outline-none">
