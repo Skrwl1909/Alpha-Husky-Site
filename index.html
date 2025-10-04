@@ -168,9 +168,9 @@
   @media (max-width: 768px) { .fm-overlay { flex-direction: column; gap: 1rem; text-align: center; } .fm-right { align-items: center; } }
 </style>
 <script>
-  // WDROŻONO: Nowy JS – algorytm fazy księżyca (z gist.github.com/endel – uproszczony i przetestowany)
+  // WDROŻONO: Poprawiony JS – dokładniejszy JD i logika full moon search
   (() => {
-    const HIDE_KEY = "fm_hide_2025";  // WDROŻONO: Nowy key dla localStorage
+    const HIDE_KEY = "fm_hide_2025";
     const el = document.getElementById('fullmoon-banner');
     if (!el) return;
     const dd = document.getElementById('fm-dd');
@@ -186,64 +186,69 @@
       return;
     }
 
-    // Funkcja do obliczania fazy księżyca (0-1: 0=new, 0.5=full)
+    // Dokładniejszy getMoonPhase (z precyzyjnym JD)
     function getMoonPhase(year, month, day) {
-      const date = new Date(year, month - 1, day);
-      const jd = (date.getTime() / 86400000) + 2440587.5;  // Julian Day
+      const date = new Date(year, month - 1, day);  // month 1-12 -> JS 0-11
+      let jd = date.getTime() / 86400000 + 2440587.5;  // Unix to JD
+      jd += (date.getTimezoneOffset() / 1440);  // Dostosuj do lokalnego TZ dla precyzji
       const daysSinceNew = jd - 2451549.5;
-      return (daysSinceNew % 29.53058867) / 29.53058867;  // Faza 0-1
+      return (daysSinceNew % 29.53058867 + 29.53058867) % 29.53058867 / 29.53058867;  // Normalize 0-1
     }
 
-    // Nazwy faz
-    const phases = [
-      { range: [0, 0.03], name: "New Moon 🌑", icon: "🌑" },
-      { range: [0.03, 0.22], name: "Waxing Crescent 🌒", icon: "🌒" },
-      { range: [0.22, 0.28], name: "First Quarter 🌓", icon: "🌓" },
-      { range: [0.28, 0.47], name: "Waxing Gibbous 🌔", icon: "🌔" },
-      { range: [0.47, 0.53], name: "Full Moon 🌕", icon: "🌕" },
-      { range: [0.53, 0.72], name: "Waning Gibbous 🌖", icon: "🌖" },
-      { range: [0.72, 0.78], name: "Last Quarter 🌗", icon: "🌗" },
-      { range: [0.78, 0.97], name: "Waning Crescent 🌘", icon: "🌘" },
-      { range: [0.97, 1], name: "New Moon 🌑", icon: "🌑" }
-    ];
-
-    // Znajdź następną pełnię (szukaj w 30 dniach)
+    // Ulepszona findNextFullMoon – szuka pierwszej przyszłej fazy bliższej 0.5 niż current
     function findNextFullMoon() {
       const today = new Date();
+      let currentPhase = getMoonPhase(today.getFullYear(), today.getMonth() + 1, today.getDate());
+      console.log(`Debug: Today phase: ${currentPhase.toFixed(4)}`);  // Debug – usuń po
       let nextFull = new Date(today);
-      let phase = getMoonPhase(today.getFullYear(), today.getMonth() + 1, today.getDate());
+      let minDiff = Math.abs(currentPhase - 0.5);
       for (let i = 1; i <= 30; i++) {
         const future = new Date(today.getTime() + i * 86400000);
         const futurePhase = getMoonPhase(future.getFullYear(), future.getMonth() + 1, future.getDate());
-        if (Math.abs(futurePhase - 0.5) < Math.abs(phase - 0.5)) {
+        const diff = Math.abs(futurePhase - 0.5);
+        if (diff < minDiff && futurePhase > currentPhase) {  // Dodano: tylko rosnąca faza (waxing)
+          minDiff = diff;
           nextFull = future;
-          phase = futurePhase;
+          console.log(`Debug: Candidate day ${i}: phase ${futurePhase.toFixed(4)}, diff ${diff.toFixed(4)}`);  // Debug
         }
       }
+      console.log(`Debug: Next full moon: ${nextFull.toDateString()}, phase ${getMoonPhase(nextFull.getFullYear(), nextFull.getMonth() + 1, nextFull.getDate()).toFixed(4)}`);  // Debug
       return nextFull;
     }
 
-    const eventTime = findNextFullMoon();  // Następna pełnia
+    const eventTime = findNextFullMoon();
     const now = new Date();
 
-    // Aktualna faza
+    // Update fazy (z % illuminated, max 100%)
     function updatePhase() {
-      const todayPhase = getMoonPhase(now.getFullYear(), now.getMonth() + 1, now.getDate());
-      const illumination = Math.round(Math.min(todayPhase * 100, 100));  // % oświetlenia
+      const today = new Date();
+      const todayPhase = getMoonPhase(today.getFullYear(), today.getMonth() + 1, today.getDate());
+      const illumination = Math.round(Math.sin(todayPhase * Math.PI) * 100);  // Lepsze approx % (sin dla krzywizny)
       let phaseName = "Unknown";
       let icon = "🌙";
+      const phases = [
+        { range: [0, 0.03], name: "New", icon: "🌑" },
+        { range: [0.03, 0.22], name: "Waxing Crescent", icon: "🌒" },
+        { range: [0.22, 0.28], name: "First Quarter", icon: "🌓" },
+        { range: [0.28, 0.47], name: "Waxing Gibbous", icon: "🌔" },
+        { range: [0.47, 0.53], name: "Full", icon: "🌕" },
+        { range: [0.53, 0.72], name: "Waning Gibbous", icon: "🌖" },
+        { range: [0.72, 0.78], name: "Last Quarter", icon: "🌗" },
+        { range: [0.78, 0.97], name: "Waning Crescent", icon: "🌘" },
+        { range: [0.97, 1], name: "New", icon: "🌑" }
+      ];
       for (const p of phases) {
         if (todayPhase >= p.range[0] && todayPhase < p.range[1]) {
-          phaseName = p.name.replace(" Moon", "");  // Krótko
+          phaseName = p.name;
           icon = p.icon;
           break;
         }
       }
       phaseEl.innerHTML = `${icon} ${phaseName} – ${illumination}% illuminated`;
-      progressBar.style.width = `${illumination}%`;  // Progress bar
+      progressBar.style.width = `${illumination}%`;
     }
 
-    // Tick countdown
+    // Tick
     function tick() {
       const t = new Date();
       let diff = eventTime - t;
@@ -257,7 +262,7 @@
       hh.textContent = String(h).padStart(2, "0");
       mm.textContent = String(m).padStart(2, "0");
       ss.textContent = String(sec).padStart(2, "0");
-      updatePhase();  // Update fazy co sekundę (subtelnie)
+      updatePhase();
     }
 
     tick();
