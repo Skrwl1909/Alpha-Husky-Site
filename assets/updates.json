@@ -1,15 +1,14 @@
 [
-{
-"date": "2025-10-10",
-"title": "Devlog #HOWLitsMade — Mission Board MVP",
-"status": "LIVE (MVP)",
-"text": "🪧 Mission Board opens from Broken Contracts. Added high-contrast board styling.\n🌐 Backend: /webapp/quests, /quest/accept, /quest/complete (MVP) wired; server boots clean.\n🐍 quests.py: fixed setdefault bug; reward/grant logic cleaned; daily rotation stable.\n⚔️ Missions: post-battle quest ticks prepared (auto/manual resolve).",
-"links": [
-{ "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map
-" }
-],
-"next": "Hook real quest logic to endpoints, finalize battle hooks, add progress/claim UI, add mission_board.png, QA cooldowns/rewards."
-},
+  {
+    "date": "2025-10-10",
+    "title": "Devlog #HOWLitsMade — Mission Board MVP",
+    "status": "LIVE (MVP)",
+    "text": "🪧 Mission Board opens from Broken Contracts. Added high-contrast board styling.\n🌐 Backend: /webapp/quests, /quest/accept, /quest/complete (MVP) wired; server boots clean.\n🐍 quests.py: fixed setdefault bug; reward/grant logic cleaned; daily rotation stable.\n⚔️ Missions: post-battle quest ticks prepared (auto/manual resolve).",
+    "links": [
+      { "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map" }
+    ],
+    "next": "Hook real quest logic to endpoints, finalize battle hooks, add progress/claim UI, add mission_board.png, QA cooldowns/rewards."
+  },
   {
     "date": "2025-09-30",
     "title": "Devlog #HOWLitsMade — Dojo, Legends in Gallery, Roadmap pass",
