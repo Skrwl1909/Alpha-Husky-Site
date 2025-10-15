@@ -102,67 +102,68 @@
 </head>
 <body class="bg-black text-yellow-400">
   <!-- TEASER -->
-  <div id="ah-teaser"
-       class="sticky top-0 z-50 border-b border-yellow-400/20 bg-black/60 backdrop-blur px-3 py-2">
-    <div class="mx-auto max-w-6xl flex items-center justify-center gap-3 text-sm">
-      <span class="glow">🚀 WebApp beta is live</span>
-      <a href="https://t.me/ALPHA_husky_bot"
-         class="glitch-btn rounded-full border border-yellow-400/40 px-3 py-1 font-bold hover:bg-yellow-400/10">
-        Open in Telegram
-      </a>
-      <a href="https://thealphahusky.netlify.app/?section=dashboard"
-         class="rounded-full border border-yellow-400/20 px-3 py-1 hover:bg-yellow-400/5">
-        Open WebApp (web)
-      </a>
-      <button type="button" aria-label="Close"
-              class="ml-2 rounded-full border border-yellow-400/20 px-2 hover:bg-yellow-400/5"
-              onclick="document.getElementById('ah-teaser').remove(); localStorage.setItem('ah_teaser_closed','1')">
-        ×
-      </button>
-    </div>
+<div id="ah-teaser"
+     class="sticky top-0 z-50 border-b border-yellow-400/20 bg-black/60 backdrop-blur px-3 py-2">
+  <div class="mx-auto max-w-6xl flex items-center justify-center gap-3 text-sm">
+    <span class="glow">🚀 WebApp beta is live</span>
+    <a href="https://t.me/ALPHA_husky_bot"
+       class="glitch-btn rounded-full border border-yellow-400/40 px-3 py-1 font-bold hover:bg-yellow-400/10">
+      Open in Telegram
+    </a>
+    <a href="https://thealphahusky.netlify.app/?section=dashboard"
+       class="rounded-full border border-yellow-400/20 px-3 py-1 hover:bg-yellow-400/5">
+      Open WebApp (web)
+    </a>
+    <button type="button" aria-label="Close"
+            class="ml-2 rounded-full border border-yellow-400/20 px-2 hover:bg-yellow-400/5"
+            onclick="document.getElementById('ah-teaser').remove(); localStorage.setItem('ah_teaser_closed','1')">
+      ×
+    </button>
   </div>
-  <script>
-    if (localStorage.getItem('ah_teaser_closed') === '1') {
-      const el = document.getElementById('ah-teaser'); if (el) el.remove();
-    }
-  </script>
-  <!-- === FULL MOON COUNTDOWN BANNER (z odliczaniem do pełni + aktualna faza) === -->
+</div>
+<script>
+  if (localStorage.getItem('ah_teaser_closed') === '1') {
+    const el = document.getElementById('ah-teaser'); if (el) el.remove();
+  }
+</script>
+
+<!-- === FULL MOON COUNTDOWN BANNER (z dynamicznym odliczaniem do pełni + aktualna faza) === -->
 <section id="fullmoon-banner" class="fm-wrap fm-compact">
   <picture class="fm-bg">
-  <source type="image/png"  <!-- WDROŻONO: Zmiana na PNG -->
-    srcset="/assets/event/fullmoon_banner_900x300.png 900w,
-            /assets/event/fullmoon_banner_1280x320.png 1280w,"
-    sizes="100vw">
-  <img
-    src="/assets/event/fullmoon_banner_1920x360.png"  <!-- Główny PNG z repo -->
-    srcset="/assets/event/fullmoon_banner_900x300.png 900w,
-            /assets/event/fullmoon_banner_1280x320.png 1280w,
-            /assets/event/fullmoon_banner_1920x360.png 1920w"
-    sizes="100vw"
-    alt="Full Moon Rising — Alpha Husky"
-    loading="eager" decoding="async">
-</picture>
-  <div class="fm-overlay">  <!-- WDROŻONO: Zmiana klas z bm- na fm- dla spójności -->
+    <source type="image/png"
+      srcset="/assets/event/fullmoon_banner_900x300.png 900w,
+              /assets/event/fullmoon_banner_1280x320.png 1280w,"
+      sizes="100vw">
+    <img
+      src="/assets/event/fullmoon_banner_1920x360.png"
+      srcset="/assets/event/fullmoon_banner_900x300.png 900w,
+              /assets/event/fullmoon_banner_1280x320.png 1280w,
+              /assets/event/fullmoon_banner_1920x360.png 1920w"
+      sizes="100vw"
+      alt="Full Moon Rising — Alpha Husky"
+      loading="eager" decoding="async">
+  </picture>
+  <div class="fm-overlay">
     <div class="fm-left">
-      <span class="fm-tag">Lunar Event</span>  <!-- WDROŻONO: Nowy tag -->
-      <h3 class="fm-title">Full Moon Rising</h3>  <!-- WDROŻONO: Tytuł na Full Moon -->
+      <span class="fm-tag">Lunar Event</span>
+      <h3 class="fm-title">Full Moon Rising</h3>
       <p class="fm-sub">
         Next full moon: <span id="fm-dd">0</span>d : <span id="fm-hh">00</span>h : <span id="fm-mm">00</span>m : <span id="fm-ss">00</span>s<br>
-        <span id="fm-phase">Current Phase: Calculating...</span>  <!-- WDROŻONO: Linia z aktualną fazą -->
-        <div class="fm-progress mt-2">  <!-- WDROŻONO: Prosty progress bar -->
+        <span id="fm-phase">Current Phase: Calculating...</span>
+        <div class="fm-progress mt-2">
           <div id="fm-progress-bar" class="bg-yellow-400 h-2 rounded" style="width: 0%;"></div>
         </div>
       </p>
     </div>
     <div class="fm-right">
-      <a href="#lore" class="fm-cta">Join Lunar Raid</a>  <!-- WDROŻONO: Link do lore/eventu -->
+      <a href="#lore" class="fm-cta">Join Lunar Raid</a>
       <button id="fm-dismiss" class="fm-dismiss" aria-label="Dismiss banner">✕</button>
     </div>
   </div>
 </section>
+
 <style>
-  /* WDROŻONO: Dodaj te style do <style> w head – pasują do istniejącego designu */
-  .fm-wrap, .fm-compact { /* Adaptacja z bm- */
+  .fm-wrap, .fm-compact {
     position: relative; overflow: hidden; max-height: 360px;
   }
   .fm-bg img { width: 100%; height: auto; object-fit: cover; }
@@ -178,12 +179,19 @@
   .fm-dismiss { background: none; border: 1px solid #ffe066; color: #ffe066; padding: 0.5rem; border-radius: 50%; cursor: pointer; font-size: 1.2rem; }
   @media (max-width: 768px) { .fm-overlay { flex-direction: column; gap: 1rem; text-align: center; } .fm-right { align-items: center; } }
 </style>
+
 <script>
   (() => {
     const HIDE_KEY = "fm_hide_2025";
     const el = document.getElementById('fullmoon-banner');
     if (!el) return;
-    localStorage.removeItem(HIDE_KEY);  // Force show banner
+
+    // Sprawdź localStorage – nie force show
+    if (localStorage.getItem(HIDE_KEY) === '1') {
+      el.remove();
+      return;
+    }
+
     const dd = document.getElementById('fm-dd');
     const hh = document.getElementById('fm-hh');
     const mm = document.getElementById('fm-mm');
@@ -191,48 +199,57 @@
     const phaseEl = document.getElementById('fm-phase');
     const progressBar = document.getElementById('fm-progress-bar');
     const dismissBtn = document.getElementById('fm-dismiss');
-    
-    // Kalibrowany getMoonPhase – dokładny na 5.10.2025 (phase ~0.48, illum 97%)
-    function getMoonPhase(year, month, day) {
-      const date = new Date(year, month - 1, day);
-      let jd = date.getTime() / 86400000 + 2440587.5;
-      jd += (date.getTimezoneOffset() / 1440);
-      const daysSinceNew = jd - 2451549.5 - 0.0008;  // Kalibracja offsetu dla 2025
-      const phase = (daysSinceNew % 29.53058867 + 29.53058867) % 29.53058867 / 29.53058867;
-      return phase;
+
+    // Dynamiczny algorytm Julian Date i fazy Księżyca (dokładny na ±1 dzień)
+    const LUNAR_CYCLE = 29.53058867;
+    const FULL_PHASE = 0.5; // Pełnia przy phase ≈0.5
+
+    function getJulianDate(date = new Date()) {
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      const a = Math.floor((14 - month) / 12);
+      const y = year + 4800 - a;
+      const m = month + 12 * a - 3;
+      let jd = day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
+      jd += (date.getHours() - 12) / 24 + date.getMinutes() / 1440 + date.getSeconds() / 86400;
+      return jd;
     }
 
-    // Ulepszona findNextFullMoon – celuje w exact 7.10.2025
-    function findNextFullMoon() {
-      const today = new Date();
-      let currentPhase = getMoonPhase(today.getFullYear(), today.getMonth() + 1, today.getDate());
-      let nextFull = new Date('2025-10-07T05:47:00Z');  // Exact Hunter's Moon UTC
-      return nextFull;
+    function getMoonPhase(date = new Date()) {
+      const jd = getJulianDate(date);
+      let daysSinceNew = (jd - 2451549.5) % LUNAR_CYCLE;
+      if (daysSinceNew < 0) daysSinceNew += LUNAR_CYCLE;
+      return daysSinceNew / LUNAR_CYCLE;
     }
 
-    const eventTime = findNextFullMoon();
-    const now = new Date();
+    function getDaysToNextFull(date = new Date()) {
+      const phase = getMoonPhase(date);
+      let daysToFull = (FULL_PHASE - phase + 1) * LUNAR_CYCLE;
+      daysToFull = daysToFull % LUNAR_CYCLE;
+      return daysToFull;
+    }
 
-    // Update fazy – kalibrowane na 97% dla 5.10
+    // Update fazy z ikonami i iluminacją
     function updatePhase() {
-      const today = new Date();
-      const todayPhase = getMoonPhase(today.getFullYear(), today.getMonth() + 1, today.getDate());
-      const illumination = Math.round(Math.sin(todayPhase * Math.PI) * 100);
-      let phaseName = "Waxing Gibbous";  // Default dla 5.10
-      let icon = "🌔";
+      const now = new Date();
+      const phase = getMoonPhase(now);
+      const illumination = Math.round(Math.abs(Math.sin(phase * 2 * Math.PI)) * 100); // Aproksymacja iluminacji
+      let phaseName = "Unknown";
+      let icon = "🌙";
       const phases = [
-        { range: [0, 0.03], name: "New", icon: "🌑" },
+        { range: [0, 0.03], name: "New Moon", icon: "🌑" },
         { range: [0.03, 0.22], name: "Waxing Crescent", icon: "🌒" },
         { range: [0.22, 0.28], name: "First Quarter", icon: "🌓" },
         { range: [0.28, 0.47], name: "Waxing Gibbous", icon: "🌔" },
-        { range: [0.47, 0.53], name: "Full", icon: "🌕" },
+        { range: [0.47, 0.53], name: "Full Moon", icon: "🌕" },
         { range: [0.53, 0.72], name: "Waning Gibbous", icon: "🌖" },
         { range: [0.72, 0.78], name: "Last Quarter", icon: "🌗" },
         { range: [0.78, 0.97], name: "Waning Crescent", icon: "🌘" },
-        { range: [0.97, 1], name: "New", icon: "🌑" }
+        { range: [0.97, 1], name: "New Moon", icon: "🌑" }
       ];
       for (const p of phases) {
-        if (todayPhase >= p.range[0] && todayPhase < p.range[1]) {
+        if (phase >= p.range[0] && phase < p.range[1]) {
           phaseName = p.name;
           icon = p.icon;
           break;
@@ -242,12 +259,12 @@
       progressBar.style.width = `${illumination}%`;
     }
 
-    // Tick
+    // Tick – dynamiczny countdown na podstawie dni do pełni
     function tick() {
-      const t = new Date();
-      let diff = eventTime - t;
-      if (diff < 0) diff = 0;
-      const s = Math.floor(diff / 1000);
+      const now = new Date();
+      const daysToFull = getDaysToNextFull(now);
+      const totalMs = daysToFull * 86400000; // ms do następnej pełni
+      const s = Math.floor(totalMs / 1000);
       const d = Math.floor(s / 86400);
       const h = Math.floor((s % 86400) / 3600);
       const m = Math.floor((s % 3600) / 60);
@@ -259,18 +276,20 @@
       updatePhase();
     }
 
-    updatePhase();  // Immediate start – zero "Calculating..."
+    // Start
+    updatePhase();
     tick();
-    const int = setInterval(tick, 1000);
+    const interval = setInterval(tick, 1000);
 
+    // Dismiss
     dismissBtn.addEventListener("click", () => {
       localStorage.setItem(HIDE_KEY, "1");
       el.remove();
-      clearInterval(int);
+      clearInterval(interval);
     }, { once: true });
   })();
 </script>
-  <!-- === /BLOOD MOON EVENT BANNER === -->
+<!-- === /FULL MOON EVENT BANNER === -->
   <!-- NAVBAR -->
   <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
     <div class="flex items-center gap-3">
