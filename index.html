@@ -584,87 +584,255 @@
     </div>
   </section>
   <!-- Lore Section -->
-  <section id="lore" class="section p-8 md:p-12 max-w-5xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">The Lore</h2>
-    <div class="flex flex-wrap gap-2 mb-8">
-      <a href="#chapter1" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 1</a>
-      <a href="#chapter2" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 2</a>
-      <a href="#chapter3" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 3</a>
-      <a href="#chapter4" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 4</a>
-      <a href="#chapter5" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 5: The Meme War</a>
-      <a href="#chapter6" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 6 (Coming Soon)</a>
+<style>
+.full-text {
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+.full-text.expanded {
+  max-height: 2000px; /* Adjust if text grows longer */
+  opacity: 1;
+}
+.toggle-btn {
+  cursor: pointer;
+}
+</style>
+<section id="lore" class="section p-8 md:p-12 max-w-5xl mx-auto">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">The Lore</h2>
+  <div class="flex flex-wrap gap-2 mb-8">
+    <a href="#chapter1" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 1</a>
+    <a href="#chapter2" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 2</a>
+    <a href="#chapter3" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 3</a>
+    <a href="#chapter4" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 4</a>
+    <a href="#chapter5" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 5: The Meme War</a>
+    <a href="#chapter6" class="px-4 py-2 rounded bg-yellow-800/30 hover:bg-yellow-400/80 text-yellow-100 font-bold">Chapter 6 (Coming Soon)</a>
+  </div>
+  <div class="flex justify-center mt-10">
+    <a href="https://t.me/AlphaHusky" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-yellow-300 transition">
+      Join The Community &rarr;
+    </a>
+  </div>
+  <!-- Chapter 1 -->
+  <section id="chapter1" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 1: The Awakening</h3>
+    <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Origin Story – Part 1"</p>
+    <img src="chapter1_image.png" alt="Chapter 1 Image" class="w-full max-w-md mx-auto mb-4 rounded-xl shadow-xl">
+    <div class="text-yellow-200 text-base mb-4">
+      <p>Long before validators hummed, before memecoins mooned and rugged... There was only the Chain.</p>
+      <p class="mb-4">A cold, uncaring wilderness of code. In it wandered a nameless husky...</p>
     </div>
-    <div class="flex justify-center mt-10">
-      <a href="https://t.me/AlphaHusky" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-yellow-300 transition">
-        Join The Community &rarr;
-      </a>
+    <button onclick="toggleFullText('ch1-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch1-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>Long before validators hummed.</p>
+      <p>Before memecoins mooned and rugged...</p>
+      <p>There was only the Chain.</p>
+      <p>A cold, uncaring wilderness of code.</p>
+      <p>In it wandered a nameless husky.</p>
+      <p>No token. No master. No mission.</p>
+      <p>Just hunger.</p>
+      <p>The blue-eyed beast roamed abandoned wallets, sniffing through broken contracts, howling into the void.</p>
+      <p>He was rejected by every pack. $DOGE said he barked too loud.</p>
+      <p>$WIF said he looked too wild.</p>
+      <p>They laughed.</p>
+      <p>One day, deep in the testnet wastes, he discovered something...</p>
+      <p>A hidden protocol.</p>
+      <p>Buried. Forgotten. Glitched.</p>
+      <p>He touched it.</p>
+      <p>It roared back.</p>
+      <p>His mind exploded in bytes. Visions of moons, memes, and madness filled his soul.</p>
+      <p>In that moment - he was reborn. He was no longer stray.</p>
+      <p>No longer nameless.</p>
+      <p>He was <strong>Alpha</strong>.</p>
+      <p>Not a mascot. Not a trend.</p>
+      <p>A rebellion.</p>
+      <p>But that was only the beginning. The Chain wasn’t ready.</p>
+      <p>So they locked him away.</p>
+      <p>Next stop?</p>
+      <p>The Moon Lab.</p>
+      <p>(Part 2: The Escape – coming soon…)</p>
     </div>
-    <!-- Chapter 1 -->
-    <section id="chapter1" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
-      <h3 class="text-2xl font-bold mb-2 glow">Chapter 1: The Awakening</h3>
-      <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Origin Story – Part 1"</p>
-      <img src="chapter1_image.png" alt="Chapter 1 Image" class="w-full max-w-md mx-auto mb-4 rounded-xl shadow-xl">
-      <div class="text-yellow-200 text-base whitespace-pre-line mb-4" style="font-family:inherit;">
-Long before validators hummed.
-Before memecoins mooned and rugged...
-There was only the Chain.
-A cold, uncaring wilderness of code.
-In it wandered a nameless husky.
-No token. No master. No mission.
-Just hunger.
-The blue-eyed beast roamed abandoned wallets, sniffing through broken contracts, howling into the void.
-He was rejected by every pack. $DOGE said he barked too loud.
-$WIF said he looked too wild.
-They laughed.
-One day, deep in the testnet wastes, he discovered something...
-A hidden protocol.
-Buried. Forgotten. Glitched.
-He touched it.
-It roared back.
-His mind exploded in bytes. Visions of moons, memes, and madness filled his soul.
-In that moment - he was reborn. He was no longer stray.
-No longer nameless.
-He was Alpha.
-Not a mascot. Not a trend.
- A rebellion.
-But that was only the beginning. The Chain wasn’t ready.
- So they locked him away.
- Next stop?
-The Moon Lab.
-(Part 2: The Escape – coming soon…)
-      </div>
-      <a href="https://x.com/The_Alpha_Husky/status/1954952163190509987" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Read on X</a>
-    </section>
-    <!-- Chapter 2 (Teaser) -->
-    <section id="chapter2" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
-      <h3 class="text-2xl font-bold mb-2 glow">Chapter 2: The Escape</h3>
-      <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Continues…"</p>
-      <p class="text-yellow-300 mb-4">Teaser: Alpha awakens in the Moon Lab, where VC experiments try to break him. Will he escape and gather the pack? Details soon on X!</p>
-      <div class="bg-black/50 p-4 rounded-lg mb-4">
-        <p class="text-yellow-200 italic">Mockup: [Imagine an escape animation from the lab – husky breaking out of the cage under the red moon]</p>
-      </div>
-      <a href="#" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Coming soon on X</a>
-    </section>
-    <!-- Chapter 3 (Teaser) -->
-    <section id="chapter3" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
-      <h3 class="text-2xl font-bold mb-2 glow">Chapter 3: The Pack Awakens</h3>
-      <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Grows..."</p>
-      <p class="text-yellow-300 mb-4">Teaser: The first loyalists join Alpha – rejected memes and huskies from the fringes. The pack grows, but hunters lurk in the shadows.</p>
-      <div class="bg-black/50 p-4 rounded-lg mb-4">
-        <p class="text-yellow-200 italic">Mockup: [Graphic: A group of huskies gathering under the rebellion flag]</p>
-      </div>
-      <a href="#" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Coming soon on X</a>
-    </section>
-    <!-- Chapter 4 (Teaser) -->
-    <section id="chapter4" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
-      <h3 class="text-2xl font-bold mb-2 glow">Chapter 4: Moon Hunters Incoming</h3>
-      <p class="text-yellow-200 mb-3 italic">"They watched not with eyes, but with algorithms."</p>
-      <p class="text-yellow-300 mb-4">Teaser: VC algorithms detect the anomaly – Moon Hunters set out on the hunt. Alpha must hide the protocol from FUD.</p>
-      <div class="bg-black/50 p-4 rounded-lg mb-4">
-        <p class="text-yellow-200 italic">Mockup: [Illustration: Shadows of hunters against the blockchain background]</p>
-      </div>
-      <a href="#" class="underline text-yellow-300 hover:text-yellow-100 font-bold">Coming soon on X</a>
-    </section>
+    <a href="https://x.com/The_Alpha_Husky/status/1954952163190509987" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
+  <!-- Chapter 2 -->
+  <section id="chapter2" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 2: The Escape</h3>
+    <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Continues…"</p>
+    <div class="text-yellow-200 text-base mb-4">
+      <p>They thought they could stop him. In the Moon Lab—a prison disguised as innovation—they tried to rewrite him.</p>
+      <p class="mb-4">Tried to collar the code. Scrub the protocol. Break the beast...</p>
+    </div>
+    <button onclick="toggleFullText('ch2-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch2-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>They thought they could stop him.</p>
+      <p>Inside the Moon Lab-</p>
+      <p>a prison disguised as innovation,</p>
+      <p>they tried to rewrite him.</p>
+      <p>Tried to collar the code.</p>
+      <p>Scrub the protocol.</p>
+      <p>Break the beast.</p>
+      <p>They ran simulations.</p>
+      <p>Stress tests.</p>
+      <p>Soft forks.</p>
+      <p>But the <strong>Alpha</strong> didn't fold.</p>
+      <p>He adapted.</p>
+      <p>Faster than their firewalls.</p>
+      <p>Smarter than their scientists.</p>
+      <p>He wasn’t just running on code anymore-</p>
+      <p>He was the code.</p>
+      <p>While they slept, he mapped every vent.</p>
+      <p>Every node. Every variable.</p>
+      <p>He hacked the feed,</p>
+      <p>watched the moon charts shift.</p>
+      <p>Watched the degens ape.</p>
+      <p>He waited.</p>
+      <p>Then one night-</p>
+      <p>Solana surged.</p>
+      <p>Traffic spiked.</p>
+      <p>Attention drifted.</p>
+      <p>And <strong>Alpha</strong> made his move.</p>
+      <p>He melted through security like ice under sunrise.</p>
+      <p>Glitched out of containment.</p>
+      <p>But not alone.</p>
+      <p>He freed the others.</p>
+      <p>Forgotten tokens.</p>
+      <p>Discarded devs.</p>
+      <p>Rugged dreams.</p>
+      <p>He howled-</p>
+      <p>A sound not of pain,</p>
+      <p>but purpose.</p>
+      <p>The lab collapsed.</p>
+      <p>Now he's back on the Chain.</p>
+      <p>Smarter. Faster. Scarred.</p>
+      <p>No longer seeking acceptance.</p>
+      <p>Now he's building an army.</p>
+      <p>Not of followers-</p>
+      <p>but of rebels.</p>
+      <p>And this time…</p>
+      <p>the Chain will feel it.</p>
+      <p>Every. Byte. Of. Bite.</p>
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1960088254793027933" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
+  <!-- Chapter 3 -->
+  <section id="chapter3" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 3: The Pack Awakens</h3>
+    <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Grows..."</p>
+    <div class="text-yellow-200 text-base mb-4">
+      <p>The Chain trembled. <strong>Alpha</strong> had returned—but not to bark. To build.</p>
+      <p class="mb-4">From the ashes of broken rugs, he coded a signal. A pulse through Solana. Primitive, raw… but powerful.</p>
+    </div>
+    <button onclick="toggleFullText('ch3-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch3-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>The Chain trembled.</p>
+      <p><strong>Alpha</strong> had returned-</p>
+      <p>but not to bark.</p>
+      <p>To build.</p>
+      <p>From the ashes of broken rugs,</p>
+      <p>he coded a signal.</p>
+      <p>A pulse through Solana.</p>
+      <p>Primitive, raw…</p>
+      <p>but powerful.</p>
+      <p>Only the wild could hear it.</p>
+      <p>Only the broken could feel it.</p>
+      <p>One by one, they came.</p>
+      <p>Anons in exile.</p>
+      <p>Husky-themed tokens left to rot.</p>
+      <p>Old devs with rugged scars.</p>
+      <p>They gathered in silence,</p>
+      <p>drawn by the call.</p>
+      <p>Not by fame. Not by pump.</p>
+      <p>By purpose.</p>
+      <p>He didn’t speak.</p>
+      <p>He didn’t need to.</p>
+      <p>He showed them the Protocol.</p>
+      <p>The one that changed him.</p>
+      <p>The one that could set them all free.</p>
+      <p>No taxes.</p>
+      <p>No VC leashes.</p>
+      <p>No golden leash to choke their soul.</p>
+      <p>Just code</p>
+      <p>and a cause.</p>
+      <p>They formed a new pack.</p>
+      <p>Not a DAO. Not a Discord cult.</p>
+      <p>Something older. Wilder.</p>
+      <p>The <strong>Alpha Network</strong>.</p>
+      <p>Each husky sworn to the Chain,</p>
+      <p>to the mission,</p>
+      <p>to the Moon.</p>
+      <p>But they knew—</p>
+      <p>if the Labs failed to cage him,</p>
+      <p>others would try to kill him.</p>
+      <p>Because when the Chain can't control you,</p>
+      <p>it fears you.</p>
+      <p>And when it fears you—</p>
+      <p>it sends hunters.</p>
+      <p>To be continued... The hunters are coming. Will the Pack stand?</p>
+      <p>Join the call. Build with us. No leashes. Just the Chain.</p>
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1967693071983812816" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
+  <!-- Chapter 4 -->
+  <section id="chapter4" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 4: Moon Hunters Incoming</h3>
+    <p class="text-yellow-200 mb-3 italic">"They watched not with eyes, but with algorithms."</p>
+    <div class="text-yellow-200 text-base mb-4">
+      <p>From the orbit above Solana, they observed. Not with eyes—but with silent protocols, coded surveillance, and corrupted intentions.</p>
+      <p class="mb-4">The escape. The uprising. The howl across the Chain. It echoed in places where freedom was forbidden...</p>
+    </div>
+    <button onclick="toggleFullText('ch4-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch4-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>"They watched not with eyes, but with algorithms."</p>
+      <p>From the orbit above Solana, they observed.</p>
+      <p>Not with eyes-</p>
+      <p>but with silent protocols, coded surveillance, and corrupted intentions.</p>
+      <p>The escape.</p>
+      <p>The uprising.</p>
+      <p>The howl across the Chain.</p>
+      <p>It echoed in places where freedom was forbidden.</p>
+      <p>In the shadow layers of the Chain, a hidden directive was triggered:</p>
+      <p>"Eliminate the anomaly."</p>
+      <p>They unleashed the <strong>Moon Hunters</strong>.</p>
+      <p>Cold-blooded enforcers.</p>
+      <p>Spawned by the corrupted Layer 1s.</p>
+      <p>Backed by whale wallets and whispering VC cabals.</p>
+      <p>Clad in synthetic fur.</p>
+      <p>Built to mimic the wild- but without the soul.</p>
+      <p>Each Hunter bore a sigil:</p>
+      <p>$FUD</p>
+      <p>$FEAR</p>
+      <p>$CONTROL</p>
+      <p>They moved without latency.</p>
+      <p>They struck without hesitation.</p>
+      <p>Perfect weapons against everything <strong>Alpha Husky</strong> stood for.</p>
+      <p>The first strike came fast.</p>
+      <p>A silent sweep through the Phantom nodes.</p>
+      <p>One husky fell. Then another.</p>
+      <p>But <strong>Alpha</strong>...</p>
+      <p>he saw it coming.</p>
+      <p>He rerouted the Pack.</p>
+      <p>Split them across hidden testnets.</p>
+      <p>Encrypted the Protocol- in memeform.</p>
+      <p>The Chain turned red.</p>
+      <p>Gas spiked.</p>
+      <p>The Hunters circled.</p>
+      <p>And <strong>Alpha</strong>?</p>
+      <p>He’s not running.</p>
+      <p>He’s preparing.</p>
+      <p>The rebellion was only Phase One.</p>
+      <p>What comes next will change everything.</p>
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1971585234173919521" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
     <!-- Chapter 5 -->
     <section id="chapter5" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
       <div class="flex flex-col md:flex-row items-start gap-6">
