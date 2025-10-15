@@ -126,8 +126,33 @@
     const el = document.getElementById('ah-teaser'); if (el) el.remove();
   }
 </script>
+<!-- TEASER -->
+<div id="ah-teaser"
+     class="sticky top-0 z-50 border-b border-yellow-400/20 bg-black/60 backdrop-blur px-3 py-2">
+  <div class="mx-auto max-w-6xl flex items-center justify-center gap-3 text-sm">
+    <span class="glow">🚀 WebApp beta is live</span>
+    <a href="https://t.me/ALPHA_husky_bot"
+       class="glitch-btn rounded-full border border-yellow-400/40 px-3 py-1 font-bold hover:bg-yellow-400/10">
+      Open in Telegram
+    </a>
+    <a href="https://thealphahusky.netlify.app/?section=dashboard"
+       class="rounded-full border border-yellow-400/20 px-3 py-1 hover:bg-yellow-400/5">
+      Open WebApp (web)
+    </a>
+    <button type="button" aria-label="Close"
+            class="ml-2 rounded-full border border-yellow-400/20 px-2 hover:bg-yellow-400/5"
+            onclick="document.getElementById('ah-teaser').remove(); localStorage.setItem('ah_teaser_closed','1')">
+      ×
+    </button>
+  </div>
+</div>
+<script>
+  if (localStorage.getItem('ah_teaser_closed') === '1') {
+    const el = document.getElementById('ah-teaser'); if (el) el.remove();
+  }
+</script>
 
-<!-- === FULL MOON COUNTDOWN BANNER (naprawiony: z lokalnymi obrazkami i kalibracją 2025) === -->
+<!-- === FULL MOON COUNTDOWN BANNER (naprawiony: fallback obrazki + kalibracja 2025) === -->
 <section id="fullmoon-banner" class="fm-wrap fm-compact">
   <picture class="fm-bg">
     <source type="image/png"
@@ -135,13 +160,14 @@
               /assets/event/fullmoon_banner_1280x320.png 1280w,"
       sizes="100vw">
     <img
-      src="/assets/event/fullmoon_banner.png"
+      src="/assets/event/fullmoon_banner_1920x360.png"
       srcset="/assets/event/fullmoon_banner_900x300.png 900w,
               /assets/event/fullmoon_banner_1280x320.png 1280w,
               /assets/event/fullmoon_banner_1920x360.png 1920w"
       sizes="100vw"
       alt="Full Moon Rising — Alpha Husky"
-      loading="eager" decoding="async">
+      loading="eager" decoding="async"
+      onerror="this.src='https://source.unsplash.com/1920x360/?full-moon,husky'; this.onerror=null;">
   </picture>
   <div class="fm-overlay">
     <div class="fm-left">
@@ -190,7 +216,6 @@
         return;
       }
 
-      // Sprawdź localStorage – pokaż, chyba że ukryty
       if (localStorage.getItem(HIDE_KEY) === '1') {
         el.remove();
         return;
@@ -209,10 +234,10 @@
         return;
       }
 
-      // Kalibrowany algorytm (dokładny na 15.10.2025: phase=0.787, 38% illum)
+      // Dokładny algorytm (kalibrowany na Beaver Moon 5.11.2025 13:19 UTC)
       const LUNAR_CYCLE = 29.53058867;
       const FULL_PHASE = 0.5;
-      const REF_JD = 2460970.2896; // JD dla nowiu przed Beaver Moon (5.11.2025)
+      const REF_JD = 2460970.28957; // JD nowiu przed pełnią (dokładny)
 
       function getJulianDate(date = new Date()) {
         const year = date.getFullYear();
@@ -276,14 +301,14 @@
         const h = Math.floor((s % 86400) / 3600);
         const m = Math.floor((s % 3600) / 60);
         const sec = s % 60;
-        if (ddEl) ddEl.textContent = d;
-        if (hhEl) hhEl.textContent = String(h).padStart(2, "0");
-        if (mmEl) mmEl.textContent = String(m).padStart(2, "0");
-        if (ssEl) ssEl.textContent = String(sec).padStart(2, "0");
+        ddEl.textContent = d;
+        hhEl.textContent = String(h).padStart(2, "0");
+        mmEl.textContent = String(m).padStart(2, "0");
+        ssEl.textContent = String(sec).padStart(2, "0");
         updatePhase();
       }
 
-      // Start immediately
+      // Start immediately (bez "Loading...")
       tick();
       const interval = setInterval(tick, 1000);
 
