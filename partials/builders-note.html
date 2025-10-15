@@ -1,0 +1,200 @@
+<section id="builders-note" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" data-aos="fade-up">
+  <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">Why Alpha Husky Is Different</h2>
+  <p class="text-yellow-300/90 mb-6 text-sm">A builder’s note from Alpha Dev — v0.2 (Oct 15, 2025)</p>
+  
+  <!-- TL;DR -->
+  <div class="bg-yellow-900/20 rounded-xl p-6 mb-8 border border-yellow-700/40">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">TL;DR</h3>
+    <p class="text-yellow-200 mb-2">Playable from day one. Not just a token: a live Telegram mini‑game + WebApp with Moon Lab (Fortress) already playable; Vault and Quest Board in MVP testing; Dojo UI live (server feed rolling out).</p>
+    <p class="text-yellow-200 mb-2">Ship > Hype. Public build notes (#HowlItsMade), lean roadmap (Shipped / In progress / Next / Backlog / Paused) and proof digests.</p>
+    <p class="text-yellow-200 mb-2">Fair contribution. CP with Definitions of Done and proof links; allocations tied to shipped milestones.</p>
+    <p class="text-yellow-200">Ethical tokenomics. 25M supply; 10M locked; gradual LP; founder/team/community splits; vesting aligned to deliveries.</p>
+  </div>
+  
+  <!-- What we’re building -->
+  <div class="mb-8">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">What we’re building (in one breath)</h3>
+    <p class="text-yellow-200">Alpha Husky is a tribal‑tech, story‑driven mini‑game on Solana with a living WebApp. Players run missions, craft via salvage/forge loops, unlock regions with key shards, and face tiered trials in Moon Lab. The token is a by‑product of utility and community — not the other way around.</p>
+  </div>
+  
+  <!-- Core Differentiators -->
+  <div class="mb-8">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">Core Differentiators</h3>
+    <ol class="list-decimal list-inside space-y-4 text-yellow-200">
+      <li class="mb-4">
+        <strong>Lore‑first utility, not utility‑last lore</strong>
+        <p class="mt-2">Ongoing worldbuilding (Alpha, Shadow Agent, Blood‑Moon Whisper, Founder Set, etc.) directly feeds gameplay loops and collectible moments (e.g., Photo‑Relic events around Full Moons). Visual language stays consistent: heterochromia (cyan/amber), cool moonlight with cyan/violet rim, tribal‑post‑apocalyptic kit across UI and promos.</p>
+      </li>
+      <li class="mb-4">
+        <strong>A working loop you can touch today</strong>
+        <p class="mt-2">Telegram WebApp: interactive map (pins/hotspots, anti‑collision labels), building modals, region gating.</p>
+        <p class="mt-2"><strong>Status by building</strong></p>
+        <ul class="list-disc list-inside space-y-1 text-yellow-300/90 ml-4">
+          <li><strong>Moon Lab (Fortress — C tiers):</strong> Live. Cooldowns and next‑opponent display. Known issue: legacy HP miscalc (1 HP) — fix rolling out.</li>
+          <li><strong>Abandoned Wallets (Vault):</strong> MVP / early loop live.</li>
+          <li><strong>Broken Contracts (Quest Board):</strong> MVP in testing — endpoints exist; full progress wiring In progress.</li>
+          <li><strong>Testnet Wastes (Dojo):</strong> UI live (30/60 s, DPS ring, sparkline, crit marks); server feed rolling out (window.Dojo.feed() → backend).</li>
+        </ul>
+        <p class="mt-2"><strong>Forge Week shipped</strong></p>
+        <ul class="list-disc list-inside space-y-1 text-yellow-300/90 ml-4">
+          <li>Keys & universal_key_shards migration (UI buttons + bulk migrators).</li>
+          <li>Materials: Scrap, Rune Dust; upgrades to ★5; reforge & fuse (daily limits).</li>
+          <li>Daily consumables rotation; backpack cap live; stash overflow QA in progress.</li>
+        </ul>
+        <p class="mt-2"><strong>Endpoints (prod)</strong> /webapp/state, /webapp/daily/state, /webapp/daily/action, /webapp/building/state|start|resolve, /webapp/action (bridge).</p>
+        <p class="mt-2"><strong>Integrity</strong> Signed state tokens + Telegram WebApp HMAC (the 401 BAD_HASH case fixed & documented).</p>
+        <p class="mt-2"><strong>Receipts</strong></p>
+        <ul class="list-disc list-inside space-y-1 text-yellow-300/90 ml-4">
+          <li>WebApp: <a href="https://app.alphahusky.win" class="underline hover:text-yellow-100">https://app.alphahusky.win</a></li>
+          <li>API (via Cloudflare Tunnel → VPS): <a href="https://api.alphahusky.win" class="underline hover:text-yellow-100">https://api.alphahusky.win</a></li>
+        </ul>
+        <p class="mt-2">Optional artifacts to embed on the page: a 10–15 s Moon Lab → Dojo clip; a redacted JSON showing regionsUnlocked + universal_key_shards.</p>
+        <!-- Embed video (wrzuć plik do /assets/ i zaktualizuj src) -->
+        <video src="/assets/moon-lab-dojo-clip.mp4" controls class="w-full mt-4 rounded-lg bg-black/20" poster="/assets/moon-lab-poster.jpg">
+          Your browser does not support the video tag.
+        </video>
+        <!-- Redacted JSON -->
+        <details class="mt-4">
+          <summary class="cursor-pointer text-yellow-300/90 font-bold">Redacted JSON (example)</summary>
+          <pre class="bg-black/50 p-4 rounded mt-2 overflow-x-auto text-sm text-yellow-100">{
+  "regionsUnlocked": ["Moon Lab", "Testnet Wastes"],
+  "universal_key_shards": 5
+}</pre>
+        </details>
+      </li>
+      <li class="mb-4">
+        <strong>Transparent operations</strong>
+        <p class="mt-2">#HowlItsMade daily/weekly notes: what shipped, what slipped, what’s next. Lean roadmap (no fake dates): every line has a Definition of Done and a proof/link. Telemetry intent: lightweight /webapp/telemetry (events + meta) with opt‑in privacy to measure real usage — not vanity metrics.</p>
+      </li>
+      <li class="mb-4">
+        <strong>Fair contribution & anti‑fake hype</strong>
+        <p class="mt-2">CP buckets: Docs, Lore, Ops, Raids, Art, Code, Community. Every task requires DoD + reviewer + proof link. Proof digest: daily/weekly depending on load; no “screenshot‑only” claims — require on‑chain/platform traces. Ledger (append‑only) planned for rewards/sinks (public extract).</p>
+      </li>
+      <li class="mb-4">
+        <strong>Ethical tokenomics & launch posture</strong>
+        <p class="mt-2">Supply 25,000,000; 10,000,000 locked. Indicative splits: Community ~33%, Liquidity ~23% (added gradually), Founder ~15%, Team ~14%, Dev ~10%, Marketing ~5%. Vesting: milestone‑based; cliff/stream details in the pre‑TGE brief. TGE window: around a Full Moon; we’ll announce ≥72 h in advance. LP discipline: top‑ups for real progress, not marketing spikes.</p>
+      </li>
+      <li class="mb-4">
+        <strong>Small, accountable team</strong>
+        <p class="mt-2">Solo‑core: Alpha Dev (ops, code, art direction). Active collaborators (mapped to receipts): GTL (Shadow Agent), Drenton (hound), Mikage (Alpha Hype); other friends of the project as available. Availability varies; we settle on receipts over titles.</p>
+      </li>
+      <li>
+        <strong>Honest constraints — the warts</strong>
+        <p class="mt-2">Small test cohort (on the order of a few DAU) — intentionally product‑first.</p>
+        <ul class="list-disc list-inside space-y-1 text-yellow-300/90 ml-4">
+          <li>Infra lean: VPS + Cloudflare Tunnel + Vercel.</li>
+          <li>Known tech debt: stars/backpack QA (stash overflow), image pipeline, backup hygiene.</li>
+          <li>Known bug: Moon Lab HP miscalc (1 HP) — fix rolling out.</li>
+          <li>Feature backlog exists by design — “Next” is not marketed as “Shipped”.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  
+  <!-- Status Matrix -->
+  <div class="mb-8">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">Status Matrix</h3>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse border border-yellow-700/40">
+        <thead>
+          <tr class="bg-yellow-900/30">
+            <th class="border border-yellow-700/40 p-3 font-bold text-yellow-300">Module</th>
+            <th class="border border-yellow-700/40 p-3 font-bold text-yellow-300">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-yellow-900/10">
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Moon Lab (Fortress)</td>
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Shipped — bugfix rolling out</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10">
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Vault (Abandoned Wallets)</td>
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">MVP (Shipped‑Early)</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10">
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Quest Board (Broken Contracts)</td>
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">In progress (MVP test)</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10">
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Dojo</td>
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">UI Shipped, server feed In progress</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10">
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Telemetry (D7)</td>
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Next</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10">
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Ledger lite</td>
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Next</td>
+          </tr>
+          <tr class="hover:bg-yellow-900/10">
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Global Reset (pre‑Season 0)</td>
+            <td class="border border-yellow-700/40 p-3 text-yellow-200">Next</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!-- FAQ -->
+  <div class="mb-8">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">FAQ</h3>
+    <div class="space-y-4">
+      <details class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+        <summary class="cursor-pointer font-bold text-yellow-300/90 mb-2">“Global Reset?”</summary>
+        <p class="text-yellow-200 mt-2">Yes — before Season 0, to equalise start state and telemetry.</p>
+      </details>
+      <details class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+        <summary class="cursor-pointer font-bold text-yellow-300/90 mb-2">“Is this short‑term?”</summary>
+        <p class="text-yellow-200 mt-2">No. We’ve shipped continuously through 2025 with public notes and receipts; scope grows iteratively.</p>
+      </details>
+      <details class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+        <summary class="cursor-pointer font-bold text-yellow-300/90 mb-2">“Utility beyond token?”</summary>
+        <p class="text-yellow-200 mt-2">Yes. Play loops, region unlocking, salvage/forge economy, daily quests, fortress trials. The token amplifies; it doesn’t replace.</p>
+      </details>
+      <details class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+        <summary class="cursor-pointer font-bold text-yellow-300/90 mb-2">“Which chain?”</summary>
+        <p class="text-yellow-200 mt-2">Core on Solana. We adopt patterns that help users (e.g., mini‑app standards) without chasing buzzwords.</p>
+      </details>
+      <details class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+        <summary class="cursor-pointer font-bold text-yellow-300/90 mb-2">“Privacy?”</summary>
+        <p class="text-yellow-200 mt-2">We store game state linked to Telegram user id; no data selling; simple backups (manual + weekly snapshot).</p>
+      </details>
+      <details class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
+        <summary class="cursor-pointer font-bold text-yellow-300/90 mb-2">“Rug risk?”</summary>
+        <p class="text-yellow-200 mt-2">Countered by public receipts, gradual LP, vesting, and open building.</p>
+      </details>
+    </div>
+  </div>
+  
+  <!-- Changelog Snapshot -->
+  <div class="mb-8">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">Changelog Snapshot (Sep → Oct 2025)</h3>
+    <ul class="list-disc list-inside space-y-1 text-yellow-200">
+      <li>Keys → universal_key_shards (UI + bulk migrators).</li>
+      <li>Materials (Scrap, Rune Dust) + ★5 cap; reforge/fuse (daily limits).</li>
+      <li>Shop: daily consumables; handle_buy updated.</li>
+      <li>Moon Lab (C tiers): cooldown/status/next‑opponent; HP fix rolling out; alias‑tolerant parser.</li>
+      <li>Dojo: UI (30/60 s, DPS ring, sparkline, crit marks), server feed rolling out.</li>
+      <li>Bridge /webapp/action; consolidated state endpoints; HMAC finalised.</li>
+      <li>map.json integration + cache‑bump; pins/hotspots anti‑collision; consistent region gating.</li>
+    </ul>
+    <p class="text-yellow-300/90 mt-4">Next up: telemetry + tuning (D7), ledger lite, clean migration flows, Moon Lab polish, snapshot Season 0 Points, player reset (pre‑S0).</p>
+  </div>
+  
+  <!-- Links -->
+  <div class="mb-8">
+    <h3 class="text-xl font-bold text-yellow-400 mb-4">Links</h3>
+    <ul class="list-disc list-inside space-y-1 text-yellow-200">
+      <li>WebApp: <a href="https://app.alphahusky.win" class="underline hover:text-yellow-100">https://app.alphahusky.win</a></li>
+      <li>API base: <a href="https://api.alphahusky.win" class="underline hover:text-yellow-100">https://api.alphahusky.win</a></li>
+      <li>Telegram (WebApp entry): <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" class="underline hover:text-yellow-100">t.me/Alpha_husky_bot/AlphaHuskyHub</a></li>
+      <li>X/Twitter: <a href="https://x.com/The_Alpha_Husky" class="underline hover:text-yellow-100">@The_Alpha_Husky</a></li>
+    </ul>
+  </div>
+  
+  <!-- Signature -->
+  <div class="text-center mt-8">
+    <p class="text-yellow-300/80 italic font-bold text-lg">— Alpha Dev “Brick by brick. One Pack.”</p>
+  </div>
+</section>
