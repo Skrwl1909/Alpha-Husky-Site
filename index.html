@@ -126,44 +126,20 @@
     const el = document.getElementById('ah-teaser'); if (el) el.remove();
   }
 </script>
-<!-- TEASER -->
-<div id="ah-teaser"
-     class="sticky top-0 z-50 border-b border-yellow-400/20 bg-black/60 backdrop-blur px-3 py-2">
-  <div class="mx-auto max-w-6xl flex items-center justify-center gap-3 text-sm">
-    <span class="glow">🚀 WebApp beta is live</span>
-    <a href="https://t.me/ALPHA_husky_bot"
-       class="glitch-btn rounded-full border border-yellow-400/40 px-3 py-1 font-bold hover:bg-yellow-400/10">
-      Open in Telegram
-    </a>
-    <a href="https://thealphahusky.netlify.app/?section=dashboard"
-       class="rounded-full border border-yellow-400/20 px-3 py-1 hover:bg-yellow-400/5">
-      Open WebApp (web)
-    </a>
-    <button type="button" aria-label="Close"
-            class="ml-2 rounded-full border border-yellow-400/20 px-2 hover:bg-yellow-400/5"
-            onclick="document.getElementById('ah-teaser').remove(); localStorage.setItem('ah_teaser_closed','1')">
-      ×
-    </button>
-  </div>
-</div>
-<script>
-  if (localStorage.getItem('ah_teaser_closed') === '1') {
-    const el = document.getElementById('ah-teaser'); if (el) el.remove();
-  }
-</script>
 
-<!-- === FULL MOON COUNTDOWN BANNER (naprawiony: fallback obrazki + kalibracja 2025) === -->
+<!-- === FULL MOON COUNTDOWN BANNER (naprawiony: ścieżka /assets/events/ + fallback) === -->
 <section id="fullmoon-banner" class="fm-wrap fm-compact">
   <picture class="fm-bg">
     <source type="image/png"
-      srcset="/assets/event/fullmoon_banner_900x300.png 900w,
-              /assets/event/fullmoon_banner_1280x320.png 1280w,"
-      sizes="100vw">
+      srcset="/assets/events/fullmoon_banner_900x300.png 900w,
+              /assets/events/fullmoon_banner_1280x320.png 1280w,"
+      sizes="100vw"
+      onerror="this.srcset='https://source.unsplash.com/900x300/?moon,husky 900w, https://source.unsplash.com/1280x320/?moon,husky 1280w';">
     <img
-      src="/assets/event/fullmoon_banner_1920x360.png"
-      srcset="/assets/event/fullmoon_banner_900x300.png 900w,
-              /assets/event/fullmoon_banner_1280x320.png 1280w,
-              /assets/event/fullmoon_banner_1920x360.png 1920w"
+      src="/assets/events/fullmoon_banner_1920x360.png"
+      srcset="/assets/events/fullmoon_banner_900x300.png 900w,
+              /assets/events/fullmoon_banner_1280x320.png 1280w,
+              /assets/events/fullmoon_banner_1920x360.png 1920w"
       sizes="100vw"
       alt="Full Moon Rising — Alpha Husky"
       loading="eager" decoding="async"
@@ -211,10 +187,7 @@
     try {
       const HIDE_KEY = "fm_hide_2025";
       const el = document.getElementById('fullmoon-banner');
-      if (!el) {
-        console.warn("Full Moon banner element not found");
-        return;
-      }
+      if (!el) return;
 
       if (localStorage.getItem(HIDE_KEY) === '1') {
         el.remove();
@@ -229,15 +202,12 @@
       const progressBar = document.getElementById('fm-progress-bar');
       const dismissBtn = document.getElementById('fm-dismiss');
 
-      if (!ddEl || !phaseEl) {
-        console.error("Required elements missing in banner");
-        return;
-      }
+      if (!ddEl || !phaseEl) return;
 
-      // Dokładny algorytm (kalibrowany na Beaver Moon 5.11.2025 13:19 UTC)
+      // Kalibrowany na 15.10.2025 (Waning Crescent ~33%, Beaver Moon 5.11.2025 13:19 UTC)
       const LUNAR_CYCLE = 29.53058867;
       const FULL_PHASE = 0.5;
-      const REF_JD = 2460970.28957; // JD nowiu przed pełnią (dokładny)
+      const REF_JD = 2460970.28957; // JD nowiu przed Beaver Moon
 
       function getJulianDate(date = new Date()) {
         const year = date.getFullYear();
@@ -308,22 +278,17 @@
         updatePhase();
       }
 
-      // Start immediately (bez "Loading...")
-      tick();
-      const interval = setInterval(tick, 1000);
+      tick(); // Immediate update
+      setInterval(tick, 1000);
 
-      // Dismiss
       if (dismissBtn) {
         dismissBtn.addEventListener("click", () => {
           localStorage.setItem(HIDE_KEY, "1");
           el.remove();
-          clearInterval(interval);
         }, { once: true });
       }
     } catch (error) {
       console.error("Moon banner error:", error);
-      const phaseEl = document.getElementById('fm-phase');
-      if (phaseEl) phaseEl.textContent = "Current Phase: Error – check console (F12)";
     }
   })();
 </script>
