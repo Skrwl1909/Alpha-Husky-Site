@@ -182,111 +182,115 @@
 
 <script>
   (() => {
-    const HIDE_KEY = "fm_hide_2025";
-    const el = document.getElementById('fullmoon-banner');
-    if (!el) return;
+    try {
+      const HIDE_KEY = "fm_hide_2025";
+      const el = document.getElementById('fullmoon-banner');
+      if (!el) return;
 
-    // Sprawdź localStorage – nie force show
-    if (localStorage.getItem(HIDE_KEY) === '1') {
-      el.remove();
-      return;
-    }
-
-    const dd = document.getElementById('fm-dd');
-    const hh = document.getElementById('fm-hh');
-    const mm = document.getElementById('fm-mm');
-    const ss = document.getElementById('fm-ss');
-    const phaseEl = document.getElementById('fm-phase');
-    const progressBar = document.getElementById('fm-progress-bar');
-    const dismissBtn = document.getElementById('fm-dismiss');
-
-    // Dynamiczny algorytm Julian Date i fazy Księżyca (dokładny na ±1 dzień)
-    const LUNAR_CYCLE = 29.53058867;
-    const FULL_PHASE = 0.5; // Pełnia przy phase ≈0.5
-
-    function getJulianDate(date = new Date()) {
-      const year = date.getFullYear();
-      const month = date.getMonth() + 1;
-      const day = date.getDate();
-      const a = Math.floor((14 - month) / 12);
-      const y = year + 4800 - a;
-      const m = month + 12 * a - 3;
-      let jd = day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
-      jd += (date.getHours() - 12) / 24 + date.getMinutes() / 1440 + date.getSeconds() / 86400;
-      return jd;
-    }
-
-    function getMoonPhase(date = new Date()) {
-      const jd = getJulianDate(date);
-      let daysSinceNew = (jd - 2451549.5) % LUNAR_CYCLE;
-      if (daysSinceNew < 0) daysSinceNew += LUNAR_CYCLE;
-      return daysSinceNew / LUNAR_CYCLE;
-    }
-
-    function getDaysToNextFull(date = new Date()) {
-      const phase = getMoonPhase(date);
-      let daysToFull = (FULL_PHASE - phase + 1) * LUNAR_CYCLE;
-      daysToFull = daysToFull % LUNAR_CYCLE;
-      return daysToFull;
-    }
-
-    // Update fazy z ikonami i iluminacją
-    function updatePhase() {
-      const now = new Date();
-      const phase = getMoonPhase(now);
-      const illumination = Math.round(Math.abs(Math.sin(phase * 2 * Math.PI)) * 100); // Aproksymacja iluminacji
-      let phaseName = "Unknown";
-      let icon = "🌙";
-      const phases = [
-        { range: [0, 0.03], name: "New Moon", icon: "🌑" },
-        { range: [0.03, 0.22], name: "Waxing Crescent", icon: "🌒" },
-        { range: [0.22, 0.28], name: "First Quarter", icon: "🌓" },
-        { range: [0.28, 0.47], name: "Waxing Gibbous", icon: "🌔" },
-        { range: [0.47, 0.53], name: "Full Moon", icon: "🌕" },
-        { range: [0.53, 0.72], name: "Waning Gibbous", icon: "🌖" },
-        { range: [0.72, 0.78], name: "Last Quarter", icon: "🌗" },
-        { range: [0.78, 0.97], name: "Waning Crescent", icon: "🌘" },
-        { range: [0.97, 1], name: "New Moon", icon: "🌑" }
-      ];
-      for (const p of phases) {
-        if (phase >= p.range[0] && phase < p.range[1]) {
-          phaseName = p.name;
-          icon = p.icon;
-          break;
-        }
+      if (localStorage.getItem(HIDE_KEY) === '1') {
+        el.remove();
+        return;
       }
-      phaseEl.innerHTML = `${icon} ${phaseName} – ${illumination}% illuminated`;
-      progressBar.style.width = `${illumination}%`;
+
+      const dd = document.getElementById('fm-dd');
+      const hh = document.getElementById('fm-hh');
+      const mm = document.getElementById('fm-mm');
+      const ss = document.getElementById('fm-ss');
+      const phaseEl = document.getElementById('fm-phase');
+      const progressBar = document.getElementById('fm-progress-bar');
+      const dismissBtn = document.getElementById('fm-dismiss');
+
+      // Kalibrowany algorytm Julian Date i fazy Księżyca (dokładny na 2025)
+      const LUNAR_CYCLE = 29.53058867;
+      const FULL_PHASE = 0.5;
+      const REF_JD = 2451548.83485; // Kalibrowane na pełni 7.10.2025
+
+      function getJulianDate(date = new Date()) {
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const a = Math.floor((14 - month) / 12);
+        const y = year + 4800 - a;
+        const m = month + 12 * a - 3;
+        let jd = day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
+        jd += (date.getHours() - 12) / 24 + date.getMinutes() / 1440 + date.getSeconds() / 86400;
+        return jd;
+      }
+
+      function getMoonPhase(date = new Date()) {
+        const jd = getJulianDate(date);
+        let daysSinceNew = (jd - REF_JD) % LUNAR_CYCLE;
+        if (daysSinceNew < 0) daysSinceNew += LUNAR_CYCLE;
+        return daysSinceNew / LUNAR_CYCLE;
+      }
+
+      function getDaysToNextFull(date = new Date()) {
+        const phase = getMoonPhase(date);
+        let daysToFull = (FULL_PHASE - phase + 1) * LUNAR_CYCLE;
+        daysToFull = daysToFull % LUNAR_CYCLE;
+        return daysToFull;
+      }
+
+      // Update fazy z ikonami i poprawioną iluminacją
+      function updatePhase() {
+        const now = new Date();
+        const phase = getMoonPhase(now);
+        const illumination = Math.round((1 - Math.cos(phase * 2 * Math.PI)) / 2 * 100); // Poprawiona formuła
+        let phaseName = "Unknown";
+        let icon = "🌙";
+        const phases = [
+          { range: [0, 0.03], name: "New Moon", icon: "🌑" },
+          { range: [0.03, 0.22], name: "Waxing Crescent", icon: "🌒" },
+          { range: [0.22, 0.28], name: "First Quarter", icon: "🌓" },
+          { range: [0.28, 0.47], name: "Waxing Gibbous", icon: "🌔" },
+          { range: [0.47, 0.53], name: "Full Moon", icon: "🌕" },
+          { range: [0.53, 0.72], name: "Waning Gibbous", icon: "🌖" },
+          { range: [0.72, 0.78], name: "Last Quarter", icon: "🌗" },
+          { range: [0.78, 0.97], name: "Waning Crescent", icon: "🌘" },
+          { range: [0.97, 1], name: "New Moon", icon: "🌑" }
+        ];
+        for (const p of phases) {
+          if (phase >= p.range[0] && phase < p.range[1]) {
+            phaseName = p.name;
+            icon = p.icon;
+            break;
+          }
+        }
+        phaseEl.innerHTML = `${icon} ${phaseName} – ${illumination}% illuminated`;
+        progressBar.style.width = `${illumination}%`;
+      }
+
+      // Tick – dynamiczny countdown
+      function tick() {
+        const now = new Date();
+        const daysToFull = getDaysToNextFull(now);
+        const totalMs = daysToFull * 86400000;
+        const s = Math.floor(totalMs / 1000);
+        const d = Math.floor(s / 86400);
+        const h = Math.floor((s % 86400) / 3600);
+        const m = Math.floor((s % 3600) / 60);
+        const sec = s % 60;
+        dd.textContent = d;
+        hh.textContent = String(h).padStart(2, "0");
+        mm.textContent = String(m).padStart(2, "0");
+        ss.textContent = String(sec).padStart(2, "0");
+        updatePhase();
+      }
+
+      // Start immediately
+      tick();
+      const interval = setInterval(tick, 1000);
+
+      // Dismiss
+      dismissBtn.addEventListener("click", () => {
+        localStorage.setItem(HIDE_KEY, "1");
+        el.remove();
+        clearInterval(interval);
+      }, { once: true });
+    } catch (error) {
+      console.error("Moon banner error:", error); // Debug w konsoli
+      document.getElementById('fm-phase').textContent = "Current Phase: Error – check console";
     }
-
-    // Tick – dynamiczny countdown na podstawie dni do pełni
-    function tick() {
-      const now = new Date();
-      const daysToFull = getDaysToNextFull(now);
-      const totalMs = daysToFull * 86400000; // ms do następnej pełni
-      const s = Math.floor(totalMs / 1000);
-      const d = Math.floor(s / 86400);
-      const h = Math.floor((s % 86400) / 3600);
-      const m = Math.floor((s % 3600) / 60);
-      const sec = s % 60;
-      dd.textContent = d;
-      hh.textContent = String(h).padStart(2, "0");
-      mm.textContent = String(m).padStart(2, "0");
-      ss.textContent = String(sec).padStart(2, "0");
-      updatePhase();
-    }
-
-    // Start
-    updatePhase();
-    tick();
-    const interval = setInterval(tick, 1000);
-
-    // Dismiss
-    dismissBtn.addEventListener("click", () => {
-      localStorage.setItem(HIDE_KEY, "1");
-      el.remove();
-      clearInterval(interval);
-    }, { once: true });
   })();
 </script>
 <!-- === /FULL MOON EVENT BANNER === -->
