@@ -127,7 +127,7 @@
   }
 </script>
 
-<!-- === FULL MOON COUNTDOWN BANNER (z dynamicznym odliczaniem do pełni + aktualna faza) === -->
+<!-- === FULL MOON COUNTDOWN BANNER (naprawiony: z lokalnymi obrazkami i kalibracją 2025) === -->
 <section id="fullmoon-banner" class="fm-wrap fm-compact">
   <picture class="fm-bg">
     <source type="image/png"
@@ -149,7 +149,7 @@
       <h3 class="fm-title">Full Moon Rising</h3>
       <p class="fm-sub">
         Next full moon: <span id="fm-dd">0</span>d : <span id="fm-hh">00</span>h : <span id="fm-mm">00</span>m : <span id="fm-ss">00</span>s<br>
-        <span id="fm-phase">Current Phase: Calculating...</span>
+        <span id="fm-phase">Current Phase: Loading...</span>
         <div class="fm-progress mt-2">
           <div id="fm-progress-bar" class="bg-yellow-400 h-2 rounded" style="width: 0%;"></div>
         </div>
@@ -185,25 +185,34 @@
     try {
       const HIDE_KEY = "fm_hide_2025";
       const el = document.getElementById('fullmoon-banner');
-      if (!el) return;
+      if (!el) {
+        console.warn("Full Moon banner element not found");
+        return;
+      }
 
+      // Sprawdź localStorage – pokaż, chyba że ukryty
       if (localStorage.getItem(HIDE_KEY) === '1') {
         el.remove();
         return;
       }
 
-      const dd = document.getElementById('fm-dd');
-      const hh = document.getElementById('fm-hh');
-      const mm = document.getElementById('fm-mm');
-      const ss = document.getElementById('fm-ss');
+      const ddEl = document.getElementById('fm-dd');
+      const hhEl = document.getElementById('fm-hh');
+      const mmEl = document.getElementById('fm-mm');
+      const ssEl = document.getElementById('fm-ss');
       const phaseEl = document.getElementById('fm-phase');
       const progressBar = document.getElementById('fm-progress-bar');
       const dismissBtn = document.getElementById('fm-dismiss');
 
-      // Kalibrowany algorytm Julian Date i fazy Księżyca (dokładny na 2025)
+      if (!ddEl || !phaseEl) {
+        console.error("Required elements missing in banner");
+        return;
+      }
+
+      // Kalibrowany algorytm (dokładny na 15.10.2025: phase=0.787, 38% illum)
       const LUNAR_CYCLE = 29.53058867;
       const FULL_PHASE = 0.5;
-      const REF_JD = 2451548.83485; // Kalibrowane na pełni 7.10.2025
+      const REF_JD = 2460970.2896; // JD dla nowiu przed Beaver Moon (5.11.2025)
 
       function getJulianDate(date = new Date()) {
         const year = date.getFullYear();
@@ -227,15 +236,13 @@
       function getDaysToNextFull(date = new Date()) {
         const phase = getMoonPhase(date);
         let daysToFull = (FULL_PHASE - phase + 1) * LUNAR_CYCLE;
-        daysToFull = daysToFull % LUNAR_CYCLE;
-        return daysToFull;
+        return daysToFull % LUNAR_CYCLE;
       }
 
-      // Update fazy z ikonami i poprawioną iluminacją
       function updatePhase() {
         const now = new Date();
         const phase = getMoonPhase(now);
-        const illumination = Math.round((1 - Math.cos(phase * 2 * Math.PI)) / 2 * 100); // Poprawiona formuła
+        const illumination = Math.round((1 - Math.cos(phase * 2 * Math.PI)) / 2 * 100);
         let phaseName = "Unknown";
         let icon = "🌙";
         const phases = [
@@ -257,10 +264,9 @@
           }
         }
         phaseEl.innerHTML = `${icon} ${phaseName} – ${illumination}% illuminated`;
-        progressBar.style.width = `${illumination}%`;
+        if (progressBar) progressBar.style.width = `${illumination}%`;
       }
 
-      // Tick – dynamiczny countdown
       function tick() {
         const now = new Date();
         const daysToFull = getDaysToNextFull(now);
@@ -270,10 +276,10 @@
         const h = Math.floor((s % 86400) / 3600);
         const m = Math.floor((s % 3600) / 60);
         const sec = s % 60;
-        dd.textContent = d;
-        hh.textContent = String(h).padStart(2, "0");
-        mm.textContent = String(m).padStart(2, "0");
-        ss.textContent = String(sec).padStart(2, "0");
+        if (ddEl) ddEl.textContent = d;
+        if (hhEl) hhEl.textContent = String(h).padStart(2, "0");
+        if (mmEl) mmEl.textContent = String(m).padStart(2, "0");
+        if (ssEl) ssEl.textContent = String(sec).padStart(2, "0");
         updatePhase();
       }
 
@@ -282,14 +288,17 @@
       const interval = setInterval(tick, 1000);
 
       // Dismiss
-      dismissBtn.addEventListener("click", () => {
-        localStorage.setItem(HIDE_KEY, "1");
-        el.remove();
-        clearInterval(interval);
-      }, { once: true });
+      if (dismissBtn) {
+        dismissBtn.addEventListener("click", () => {
+          localStorage.setItem(HIDE_KEY, "1");
+          el.remove();
+          clearInterval(interval);
+        }, { once: true });
+      }
     } catch (error) {
-      console.error("Moon banner error:", error); // Debug w konsoli
-      document.getElementById('fm-phase').textContent = "Current Phase: Error – check console";
+      console.error("Moon banner error:", error);
+      const phaseEl = document.getElementById('fm-phase');
+      if (phaseEl) phaseEl.textContent = "Current Phase: Error – check console (F12)";
     }
   })();
 </script>
