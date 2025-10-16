@@ -1005,10 +1005,20 @@ It had no need.
       View Detailed Milestones
     </button>
   </div>
- html<!-- Detailed Roadmap Loader (fetches /partials/roadmap.html) -->
-<div id="detailed-roadmap-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/roadmap.html">
-  Loading detailed roadmap…
-</div>
+  <!-- Detailed Roadmap Loader (fetches /partials/roadmap.html) -->
+  <div id="detailed-roadmap-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/roadmap.html">
+    Loading detailed roadmap…
+  </div>
+  <!-- Button to toggle Builder's Notes -->
+  <div class="text-center mt-8">
+    <button id="toggle-builders-note" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">
+      View Builder's Notes
+    </button>
+  </div>
+  <!-- Builder's Notes Loader (fetches /partials/builders-note.html) -->
+  <div id="builders-note-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/builders-note.html">
+    Loading builder's notes…
+  </div>
 </section>
 <script>
   // Toggle and load detailed roadmap
@@ -1038,17 +1048,6 @@ It had no need.
     }
   });
 </script>
-
-<!-- Button to toggle Builder's Notes -->
-<div class="text-center mt-8">
-  <button id="toggle-builders-note" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">
-    View Builder's Notes
-  </button>
-</div>
-<!-- Builder's Notes Loader (fetches /partials/builders-note.html) -->
-<div id="builders-note-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/builders-note.html">
-  Loading builder's notes…
-</div>
 <script>
   // Toggle and load Builder's Notes
   document.getElementById('toggle-builders-note').addEventListener('click', async () => {
@@ -1077,7 +1076,6 @@ It had no need.
     }
   });
 </script>
-
 <!-- TOKEN (planned; post-MVP, temporarily hidden) -->
 <section id="token" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
   <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">
