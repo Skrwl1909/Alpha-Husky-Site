@@ -999,83 +999,109 @@ It had no need.
       </div>
     </div>
   </div>
+
   <!-- Button to toggle detailed lean roadmap -->
   <div class="text-center mt-8">
     <button id="toggle-detailed-roadmap" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">
       View Detailed Milestones
     </button>
   </div>
+
   <!-- Detailed Roadmap Loader (fetches /partials/roadmap.html) -->
   <div id="detailed-roadmap-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/roadmap.html">
     Loading detailed roadmap…
   </div>
-  <!-- Button to toggle Builder's Notes -->
+
+  <!-- Builder’s Notes (hybrid: link opens new tab by default; JS loads inline on click) -->
   <div class="text-center mt-8">
-    <button id="toggle-builders-note" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">
+    <a id="toggle-builders-note"
+       href="/partials/builders-note.html?v=1"
+       target="_blank" rel="noopener"
+       class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">
       View Builder's Notes
-    </button>
+    </a>
   </div>
+
   <!-- Builder's Notes Loader (fetches /partials/builders-note.html) -->
   <div id="builders-note-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/builders-note.html">
     Loading builder's notes…
   </div>
 </section>
+
 <script>
-  // Toggle and load detailed roadmap
-  document.getElementById('toggle-detailed-roadmap').addEventListener('click', async () => {
-    const root = document.getElementById('detailed-roadmap-root');
-    const button = document.getElementById('toggle-detailed-roadmap');
-    if (root.classList.contains('hidden')) {
-      root.classList.remove('hidden');
-      button.textContent = 'Hide Detailed Milestones';
-      if (!root.dataset.loaded) {
-        const src = root.dataset.src || '/partials/roadmap.html';
-        try {
-          const res = await fetch(src + '?v=1');
-          if (!res.ok) throw new Error('HTTP ' + res.status);
-          const html = await res.text();
-          root.outerHTML = html;
-          // Mark as loaded to avoid refetch
-          document.querySelector('#detailed-roadmap-root').dataset.loaded = 'true';
-        } catch (e) {
-          console.error('Detailed roadmap load failed:', e);
-          root.innerHTML = '<p class="text-yellow-300">Could not load detailed roadmap. Check <code>/partials/roadmap.html</code> path.</p>';
-        }
+(() => {
+  // Cache-busting param (use global WEBAPP_VER if present)
+  const ver = window.WEBAPP_VER ? `?v=${window.WEBAPP_VER}` : "?v=1";
+
+  async function loadPartialInto(root, defaultPath) {
+    if (root.dataset.loaded === "true") return;
+    const src = (root.dataset.src || defaultPath) + ver;
+    const res = await fetch(src, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    root.innerHTML = await res.text();      // zostawiamy kontener
+    root.dataset.loaded = "true";
+  }
+
+  // ===== Detailed Roadmap (fixed: uses innerHTML, keeps container) =====
+  const btnDR  = document.getElementById("toggle-detailed-roadmap");
+  const rootDR = document.getElementById("detailed-roadmap-root");
+
+  btnDR?.addEventListener("click", async () => {
+    const wasHidden = rootDR.classList.contains("hidden");
+
+    if (wasHidden && rootDR.dataset.loaded !== "true") {
+      try {
+        await loadPartialInto(rootDR, "/partials/roadmap.html");
+      } catch (e) {
+        console.error("Detailed roadmap load failed:", e);
+        rootDR.innerHTML = '<p class="text-yellow-300">Could not load detailed roadmap. Check <code>/public/partials/roadmap.html</code> path.</p>';
       }
-    } else {
-      root.classList.add('hidden');
-      button.textContent = 'View Detailed Milestones';
     }
+
+    rootDR.classList.toggle("hidden");
+    btnDR.textContent = rootDR.classList.contains("hidden")
+      ? "View Detailed Milestones"
+      : "Hide Detailed Milestones";
   });
-</script>
-<script>
-  // Toggle and load Builder's Notes
-  document.getElementById('toggle-builders-note').addEventListener('click', async () => {
-    const root = document.getElementById('builders-note-root');
-    const button = document.getElementById('toggle-builders-note');
-    if (root.classList.contains('hidden')) {
-      root.classList.remove('hidden');
-      button.textContent = 'Hide Builder's Notes';
-      if (!root.dataset.loaded) {
-        const src = root.dataset.src || '/partials/builders-note.html';
-        try {
-          const res = await fetch(src + '?v=1');
-          if (!res.ok) throw new Error('HTTP ' + res.status);
-          const html = await res.text();
-          root.outerHTML = html;
-          // Mark as loaded to avoid refetch
-          document.querySelector('#builders-note-root').dataset.loaded = 'true';
-        } catch (e) {
-          console.error('Builder\'s notes load failed:', e);
-          root.innerHTML = '<p class="text-yellow-300">Could not load builder\'s notes. Check <code>/partials/builders-note.html</code> path.</p>';
-        }
+
+  // ===== Builder's Notes (hybrid: link + inline toggle) =====
+  const btnBN  = document.getElementById("toggle-builders-note");
+  const rootBN = document.getElementById("builders-note-root");
+
+  btnBN?.addEventListener("click", async (ev) => {
+    // allow middle/ctrl/meta clicks to open in new tab
+    if (ev.button === 1 || ev.ctrlKey || ev.metaKey) return;
+
+    // switch to inline toggle
+    ev.preventDefault();
+    const wasHidden = rootBN.classList.contains("hidden");
+
+    if (wasHidden && rootBN.dataset.loaded !== "true") {
+      try {
+        await loadPartialInto(rootBN, "/partials/builders-note.html");
+      } catch (e) {
+        console.error("Builder's notes load failed:", e);
+        rootBN.innerHTML = '<p class="text-yellow-300">Could not load builder\'s notes. Check <code>/public/partials/builders-note.html</code> path.</p>';
       }
-    } else {
-      root.classList.add('hidden');
-      button.textContent = 'View Builder\'s Notes';
     }
+
+    rootBN.classList.toggle("hidden");
+    btnBN.textContent = rootBN.classList.contains("hidden")
+      ? "View Builder's Notes"
+      : "Hide Builder's Notes";
   });
+
+  // Deep-link to auto-open Builder's Notes
+  (function autoOpenBuildersNote() {
+    const params = new URLSearchParams(location.search);
+    if (params.get("section") === "builders-note" || location.hash === "#builders-note") {
+      btnBN?.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true }));
+      setTimeout(() => rootBN?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+    }
+  })();
+})();
 </script>
+
 <!-- TOKEN (planned; post-MVP, temporarily hidden) -->
 <section id="token" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
   <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">
@@ -1084,25 +1110,25 @@ It had no need.
   </h2>
   <p class="text-yellow-300/90 mb-6 text-sm">
     Not live yet. Any launch will be announced only after the <a href="#roadmap" class="underline text-yellow-200 hover:text-yellow-100 font-bold">token readiness gates</a> are met.
-    No hard dates. No promises — ship > hype.
+    No hard dates. No promises — ship &gt; hype.
   </p>
   <div class="grid md:grid-cols-2 gap-8">
     <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
       <div class="font-bold text-yellow-400">In-game (planned)</div>
       <div class="text-yellow-200 text-sm">
-        Unlock/select quests, tougher missions, item upgrades, and cosmetic skins — after MVP & economy balancing.
+        Unlock/select quests, tougher missions, item upgrades, and cosmetic skins — after MVP &amp; economy balancing.
       </div>
     </div>
     <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
       <div class="font-bold text-yellow-400">Community (planned)</div>
       <div class="text-yellow-200 text-sm">
-        Roles, nominations, governance signals, and event access tied to contribution & on-chain proofs.
+        Roles, nominations, governance signals, and event access tied to contribution &amp; on-chain proofs.
       </div>
     </div>
     <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
       <div class="font-bold text-yellow-400">NFT / Collectibles (planned)</div>
       <div class="text-yellow-200 text-sm">
-        Claims, upgrades, and redemptions connected to gameplay & engagement — contingent on security reviews.
+        Claims, upgrades, and redemptions connected to gameplay &amp; engagement — contingent on security reviews.
       </div>
     </div>
     <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-70">
@@ -1113,19 +1139,21 @@ It had no need.
     </div>
   </div>
 </section>
-  <div class="mt-6 bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40">
-    <h3 class="font-bold text-yellow-200 mb-2">Current draft facts (subject to change)</h3>
-    <ul class="list-disc list-inside text-yellow-200 text-sm space-y-1">
-      <li>Total supply: <span class="font-bold">25M</span></li>
-      <li>Locked: <span class="font-bold">10M</span></li>
-      <li>Liquidity: ~<span class="font-bold">23%</span> added gradually (no big treasury)</li>
-      <li>Founder: ~<span class="font-bold">25%</span> for Alpha Dev (contribution-based)</li>
-    </ul>
-    <p class="text-yellow-300/80 text-xs mt-2">
-      Utilities and allocations can be adjusted during testing. See <a href="#roadmap" class="underline">Roadmap</a> for readiness gates.
-    </p>
-  </div>
-</section>
+
+<!-- Visible facts card (kept outside the hidden token section) -->
+<div class="mt-6 bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/40 max-w-6xl mx-auto">
+  <h3 class="font-bold text-yellow-200 mb-2">Current draft facts (subject to change)</h3>
+  <ul class="list-disc list-inside text-yellow-200 text-sm space-y-1">
+    <li>Total supply: <span class="font-bold">25M</span></li>
+    <li>Locked: <span class="font-bold">10M</span></li>
+    <li>Liquidity: ~<span class="font-bold">23%</span> added gradually (no big treasury)</li>
+    <li>Founder: ~<span class="font-bold">25%</span> for Alpha Dev (contribution-based)</li>
+  </ul>
+  <p class="text-yellow-300/80 text-xs mt-2">
+    Utilities and allocations can be adjusted during testing. See <a href="#roadmap" class="underline">Roadmap</a> for readiness gates.
+  </p>
+</div>
+
   <!-- ========= SKINS SECTION (NEW) ========= -->
   <section id="skins" class="section p-8 md:p-12 max-w-6xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold mb-4 glow flex items-center gap-3">Animated Skins <span class="bg-yellow-500/70 text-black text-xs px-2 py-1 rounded-full">MP4</span></h2>
