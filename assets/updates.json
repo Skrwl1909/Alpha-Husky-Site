@@ -1,4 +1,17 @@
 [
+{
+"date": "2025-10-17",
+"title": "Devlog #HOWLitsMade — Ledger-Lite Core, Wallet Migration & Upgrade Sync",
+"status": "LIVE (Phase 1)",
+"text": "💾 Ledger-Lite = single source of truth for game wallets (Scrap, Rune Dust, Bones, Tokens). Snapshot (user.materials) mirrors ledger on read.\n🛒 Shop & 🛠️ Upgrade now use the same flow: check → ledger_spend → mirror (no more points/materials decrements). Purchases and upgrades are fully auditable.\n🪙 Tokens & 🦴 Bones helpers refactored: add/spend write to ledger; daily limits & history remain as telemetry (separate from wallet balance).\n🧰 Admin toolbelt: /ledger_report_bones, /migrate_bones_all [force], /migrate_bones <uid>, /wallet_bones_set, /wallet_sync_bones_from_score, /grant, /bones_debug.\n📦 Migration executed: 29 users credited, +4,663,469,484 Bones total (module=bootstrap). Wallets now match pre-reset balances.\n🧪 Dev UI: /dev_me shows real ledger balances and Total Spent computed from ledger entries.\n🔒 Guardrails: token spends for upgrades blocked in materials mode; zero-safe mirroring for known assets; CSV export fixed; double-tap locks on upgrades.\n📣 Clarity: “Bone Score (lifetime)” (leaderboards) vs “Bones (wallet)” (spendable) distinguished across UI.",
+"links": [
+{ "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map
+" },
+{ "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap
+" }
+],
+"next": "Finish swapping remaining flows (quests, drops/crafting, any legacy spends) to ledger; add per-user ledger history in WebApp; nightly backups + compaction; finalize reset script using ledger as audit trail; migrate tokens/scrap where needed; publish player FAQ on wallet vs score; TGE prep: bridge integration & post-reset wallet seeding."
+},
   {
     "date": "2025-10-10",
     "title": "Devlog #HOWLitsMade — Mission Board MVP",
