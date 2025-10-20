@@ -1,5 +1,18 @@
 [
 {
+"date": "2025-10-20",
+"title": "Devlog #HOWLitsMade — Missions→Ledger, Daily/RAID Flow, Gifts & Wallet Sync",
+"status": "LIVE",
+"text": "⚔️ Missions now pay via Ledger-Lite (Bones/Scrap/Rune Dust/Shards) with a single apply; XP unchanged.\n📅 Daily Quests: “Explore” completes after any mission resolve (win/lose). RAID daily completes after /raid <passcode> with DM fallback.\n🛡️ Anti-abuse: tokens are granted at /end_raid (1 per raid per user), daily cap enforced, per-raid dedup; status and ranking live.\n🎁 /gift: Bones transfer runs through ledger with a shared transfer_id (auditable), mirrored to UI; self-gift blocked.\n📊 /materials & /profile: now read from ledger snapshot (Bones fixed); /skills formatting cleanup.",
+"links": [
+{ "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map
+" },
+{ "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap
+" }
+],
+"next": "Wire remaining minigames (Lucky Dice, Slot) to ledger; add per-user ledger history in WebApp; nightly backups + compaction; finalize reset script using ledger as audit trail; finish Mission Board hooks; patch Moon Lab 1-HP edge case; publish FAQ (wallet vs score) ahead of TGE."
+},
+{
 "date": "2025-10-17",
 "title": "Devlog #HOWLitsMade — Ledger-Lite Core, Wallet Migration & Upgrade Sync",
 "status": "LIVE (Phase 1)",
