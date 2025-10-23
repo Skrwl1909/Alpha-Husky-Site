@@ -12,11 +12,11 @@
   <meta property="og:url" content="https://thealphahusky.netlify.app/events/howloween/">
   <meta property="og:title" content="HOWL-o-ween — Limited Event | Alpha Husky">
   <meta property="og:description" content="Masks on. Lanterns lit. Join the first wave.">
-  <meta property="og:image" content="https://thealphahusky.netlify.app/assets/events/howloween/howloween-banner-1022x505.png">
+  <meta property="og:image" content="https://thealphahusky.netlify.app/assets/event/howloween/howloween-banner-1022x505.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HOWL-o-ween — Limited Event | Alpha Husky">
   <meta name="twitter:description" content="One hashtag. One CTA. One image.">
-  <meta name="twitter:image" content="https://thealphahusky.netlify.app/assets/events/howloween/howloween-banner-1022x505.png">
+  <meta name="twitter:image" content="https://thealphahusky.netlify.app/assets/event/howloween/howloween-banner-1022x505.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -54,8 +54,8 @@
     </header>
 
     <div class="hero" aria-label="HOWL-o-ween banner">
-      <!-- FIX: poprawiona ścieżka /assets/events/... -->
-      <img src="/assets/events/howloween/howloween-banner-1022x505.png"
+      <!-- FIX: poprawiona ścieżka /assets/event/... -->
+      <img src="/assets/event/howloween/howloween-banner-1022x505.png"
            width="1022" height="505"
            alt="HOWL-o-ween — Limited Event (cyan/amber nightmare title on dark obsidian background)">
     </div>
@@ -133,7 +133,7 @@
       const i = new Date().getUTCDate() % existing.length;
       const img = document.getElementById("riddle-img");
       if (img && existing.length > 0) {
-        img.src = `/assets/events/howloween/${existing[i]}`;
+        img.src = `/assets/event/howloween/${existing[i]}`;
       }
     })();
   </script>
