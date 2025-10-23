@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HOWL-o-ween — Limited Event | Alpha Husky</title>
   <meta name="description" content="One hashtag. One CTA. One image. Post your meme/art, tag @AlphaHusky, add #HowlOWeen. We’ll reshare the best. A small graphic riddle drops in-between.">
+
+  <!-- OpenGraph / Twitter -->
+  <link rel="canonical" href="https://thealphahusky.netlify.app/events/howloween/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thealphahusky.netlify.app/events/howloween/">
   <meta property="og:title" content="HOWL-o-ween — Limited Event | Alpha Husky">
   <meta property="og:description" content="Masks on. Lanterns lit. Join the first wave.">
   <meta property="og:image" content="https://thealphahusky.netlify.app/assets/events/howloween/howloween-banner-1022x505.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thealphahusky.netlify.app/howloween.html">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HOWL-o-ween — Limited Event | Alpha Husky">
+  <meta name="twitter:description" content="One hashtag. One CTA. One image.">
+  <meta name="twitter:image" content="https://thealphahusky.netlify.app/assets/events/howloween/howloween-banner-1022x505.png">
+
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -29,6 +36,14 @@
     .small{font-size:.92rem}
     .title{font-size:clamp(28px,4.5vw,44px);margin:.6rem 0 .3rem;letter-spacing:.3px}
     .footer{margin:28px 0 8px;color:#a8adba;font-size:.9rem}
+
+    /* Riddle image */
+    .riddle{margin:0}
+    .riddle-img{
+      width:100%;height:auto;display:block;
+      border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.45);
+      object-fit:cover;aspect-ratio:4/5;
+    }
   </style>
 </head>
 <body>
@@ -39,7 +54,8 @@
     </header>
 
     <div class="hero" aria-label="HOWL-o-ween banner">
-      <img src="/assets/event/howloween/howloween-banner-1022x505.png"
+      <!-- FIX: poprawiona ścieżka /assets/events/... -->
+      <img src="/assets/events/howloween/howloween-banner-1022x505.png"
            width="1022" height="505"
            alt="HOWL-o-ween — Limited Event (cyan/amber nightmare title on dark obsidian background)">
     </div>
@@ -64,27 +80,38 @@
       </div>
 
       <div class="card span-6">
-  <h2 class="text-lg" style="margin:.1rem 0 .4rem;font-weight:600">HOWL-o-ween Contest (X only)</h2>
-  <ul class="list-disc" style="padding-left:1.25rem;margin:.4rem 0">
-    <li><b>Timing:</b> opens soon — watch our pinned post on X.</li>
-    <li><b>Where:</b> <a href="https://x.com/AlphaHusky" target="_blank" rel="noopener">@AlphaHusky</a> on X.</li>
-    <li><b>How to enter:</b>
-      <ul class="list-disc" style="margin:.3rem 0 .2rem 1.0rem">
-        <li>Post your <i>meme/art</i> (1 image/video recommended).</li>
-        <li>Tag <b>@AlphaHusky</b> and add <b>#HowlOWeen</b>.</li>
-        <li>Keep caption to 1 line. Optional: drop a 🐺 in replies.</li>
-      </ul>
-    </li>
-    <li><b>Prizes:</b> reshares from the main account, spotlight thread, header collage, bragging rights.</li>
-    <li><b>Rules:</b> keep it clean; no spam/NSFW; original or properly credited remix.</li>
-  </ul>
-  <p class="muted small">Tip: 4:5 or 1:1 aspect works best on X; avoid heavy text on image.</p>
-</div>
+        <h2 class="text-lg" style="margin:.1rem 0 .4rem;font-weight:600">HOWL-o-ween Contest (X only)</h2>
+        <ul class="list-disc" style="padding-left:1.25rem;margin:.4rem 0">
+          <li><b>Timing:</b> opens soon — watch our pinned post on X.</li>
+          <li><b>Where:</b> <a href="https://x.com/AlphaHusky" target="_blank" rel="noopener">@AlphaHusky</a> on X.</li>
+          <li><b>How to enter:</b>
+            <ul class="list-disc" style="margin:.3rem 0 .2rem 1.0rem">
+              <li>Post your <i>meme/art</i> (1 image/video recommended).</li>
+              <li>Tag <b>@AlphaHusky</b> and add <b>#HowlOWeen</b>.</li>
+              <li>Keep caption to 1 line. Optional: drop a 🐺 in replies.</li>
+            </ul>
+          </li>
+          <li><b>Prizes:</b> reshares from the main account, spotlight thread, header collage, bragging rights.</li>
+          <li><b>Rules:</b> keep it clean; no spam/NSFW; original or properly credited remix.</li>
+        </ul>
+        <p class="muted small">Tip: 4:5 or 1:1 aspect works best on X; avoid heavy text on image.</p>
+      </div>
 
+      <!-- Graphic Riddle with image (riddle1.png) + opcjonalna rotacja -->
       <div class="card span-6">
-        <h2 class="text-lg font-semibold mb-1">Graphic Riddle (tease)</h2>
-        <p class="small">A crown of fire, two colors to see, hunting where contracts break — who am I?</p>
-        <p class="muted small">Drop your guess under our latest post. Best replies get highlighted.</p>
+        <h2 class="text-lg font-semibold mb-1">Graphic Riddle</h2>
+        <figure class="riddle">
+          <picture>
+            <img id="riddle-img"
+                 src="/assets/events/howloween/riddle1.png"
+                 alt="HOWL-o-ween riddle — One question. Two doors."
+                 loading="lazy" decoding="async"
+                 class="riddle-img">
+          </picture>
+          <figcaption class="muted small" style="text-align:center;margin-top:.5rem">
+            “One question. Two doors.” — Reply on <a href="https://x.com/AlphaHusky" target="_blank" rel="noopener">X</a> with <b>#HowlOWeen</b>.
+          </figcaption>
+        </figure>
       </div>
 
       <div class="card span-6">
@@ -97,5 +124,18 @@
 
     <footer class="footer">© Alpha Husky — HOWL-o-ween. Hunt clean.</footer>
   </div>
+
+  <!-- (Opcjonalnie) rotacja riddle obrazków: riddle1.png, riddle2.png, riddle3.png -->
+  <script>
+    (function(){
+      const list = ["riddle1.png","riddle2.png","riddle3.png"];
+      const existing = list.filter(Boolean);
+      const i = new Date().getUTCDate() % existing.length;
+      const img = document.getElementById("riddle-img");
+      if (img && existing.length > 0) {
+        img.src = `/assets/events/howloween/${existing[i]}`;
+      }
+    })();
+  </script>
 </body>
 </html>
