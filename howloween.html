@@ -97,46 +97,74 @@
         <p class="muted small">Tip: 4:5 or 1:1 aspect works best on X; avoid heavy text on image.</p>
       </div>
 
-      <!-- Graphic Riddle with image (riddle1.png) + opcjonalna rotacja -->
-      <div class="card span-6">
+     <!-- Graphic Riddle (fixed <picture> + cache-bust + robust fallback) -->
+<div class="card span-6">
   <h2 class="text-lg font-semibold mb-1">Graphic Riddle</h2>
   <figure class="riddle">
     <picture>
-      <img id="riddle-img"
-     src="/assets/event/howloween/riddle1.png?v=1"
-     width="1080" height="1350"
-     alt="HOWL-o-ween riddle — One question. Two doors."
-     loading="lazy" decoding="async"
-     class="riddle-img"
-     onerror="this.onerror=null; this.src='/assets/event/howloween/howloween-banner-1022x505.png?v=1';">
+      <!-- jeśli dorzucisz webp, ten source zadziała jako preferowany -->
+      <source type="image/webp" srcset="/assets/event/howloween/riddle1.webp?ts=1">
+      <img
+        id="riddle-img"
+        src="/assets/event/howloween/riddle1.png?ts=1"
+        width="1080" height="1350"
+        alt="HOWL-o-ween riddle — One question. Two doors."
+        loading="lazy" decoding="async"
+        class="riddle-img"
+        style="background:#0e0f13;border-radius:14px;min-height:200px"
+      >
+    </picture>
     <figcaption class="muted small" style="text-align:center;margin-top:.5rem">
-      “One question. Two doors.” — Reply on <a href="https://x.com/AlphaHusky" target="_blank" rel="noopener">X</a> with <b>#HowlOWeen</b>.
+      “One question. Two doors.” — Reply on
+      <a href="https://x.com/AlphaHusky" target="_blank" rel="noopener">X</a> with <b>#HowlOWeen</b>.
     </figcaption>
   </figure>
 </div>
 
-      <div class="card span-6">
-        <h2 class="text-lg font-semibold mb-1">FAQ</h2>
-        <p><b>Do I need tokens?</b> No — it’s free.</p>
-        <p><b>Is it time-limited?</b> Yes — short window, first wave prioritized.</p>
-        <p><b>Will there be more?</b> Possibly. Early wave gets first look.</p>
-      </div>
-    </section>
+<div class="card span-6">
+  <h2 class="text-lg font-semibold mb-1">FAQ</h2>
+  <p><b>Do I need tokens?</b> No — it’s free.</p>
+  <p><b>Is it time-limited?</b> Yes — short window, first wave prioritized.</p>
+  <p><b>Will there be more?</b> Possibly. Early wave gets first look.</p>
+</div>
+</section>
 
-    <footer class="footer">© Alpha Husky — HOWL-o-ween. Hunt clean.</footer>
-  </div>
+<footer class="footer">© Alpha Husky — HOWL-o-ween. Hunt clean.</footer>
+</div>
 
-  <!-- (Opcjonalnie) rotacja riddle obrazków: riddle1.png, riddle2.png, riddle3.png -->
-  <script>
-    (function(){
-      const list = ["riddle1.png","riddle2.png","riddle3.png"];
-      const existing = list.filter(Boolean);
-      const i = new Date().getUTCDate() % existing.length;
-      const img = document.getElementById("riddle-img");
-      if (img && existing.length > 0) {
-        img.src = `/assets/event/howloween/${existing[i]}`;
-      }
-    })();
-  </script>
+<!-- Rotacja + fallback loader -->
+<script>
+  (function () {
+    const img = document.getElementById("riddle-img");
+    if (!img) return;
+
+    // 1) spróbuj rotacji (riddle1/2/3) z cache-bust
+    const dayPick = ["riddle1.png","riddle2.png","riddle3.png"][new Date().getUTCDate() % 3];
+    const base = "/assets/event/howloween/";
+    const candidates = [
+      base + dayPick,                  // rotacja dnia
+      base + "riddle1.png",           // podstawowy
+      base + "riddle1.webp",          // webp jeśli jest
+      base + "riddle1a.png",          // alias omijający ewentualny 404-cache
+      "https://raw.githubusercontent.com/Skrwl1909/Alpha-Husky-Site/main/assets/event/howloween/riddle1.png" // awaryjny RAW
+    ];
+
+    let i = 0;
+    function bust(u){ return u + (u.includes("?") ? "&" : "?") + "ts=" + Date.now(); }
+    function tryNext(){
+      if (i >= candidates.length) return;
+      const url = bust(candidates[i++]);
+      const probe = new Image();
+      probe.onload  = () => { img.src = url; };
+      probe.onerror = tryNext;
+      probe.src = url;
+    }
+
+    // jeśli domyślny src się nie wczyta w 600 ms — przełącz na kolejne
+    setTimeout(() => {
+      if (!img.complete || img.naturalWidth === 0) tryNext();
+    }, 600);
+  })();
+</script>
 </body>
 </html>
