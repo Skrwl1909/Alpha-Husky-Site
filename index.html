@@ -126,7 +126,46 @@
     const el = document.getElementById('ah-teaser'); if (el) el.remove();
   }
 </script>
+<!-- HOWL-o-ween — TOP HERO (wstaw tuż pod teaserem, przed Full Moon) -->
+<section id="howloween-hero" class="howl-hero">
+  <a class="howl-hero__link" href="/howloween.html" aria-label="HOWL-o-ween — Limited Event">
+    <img
+      src="/assets/events/howloween/howloween-banner-1022x505.png"
+      srcset="/assets/events/howloween/howloween-banner-1022x505.png 1022w"
+      sizes="100vw"
+      width="1022" height="505"
+      alt="HOWL-o-ween — Limited Event (Alpha Husky)"
+      loading="eager" decoding="async">
+  </a>
 
+  <div class="howl-hero__info" role="note" aria-label="HOWL-o-ween quick brief">
+    <div class="howl-hero__pill">Limited Event</div>
+    <p class="howl-hero__text">
+      One hashtag. One CTA. One image. <br>
+      <b>Post your meme/art</b>, tag <b>@AlphaHusky</b>, add <b>#HowlOWeen</b>. Keep caption to 1 line.
+      We’ll reshare the best. <span class="howl-hero__aside">I’ll drop a small graphic riddle meanwhile. 🐺🎃</span>
+    </p>
+    <a class="howl-hero__cta" href="/howloween.html">Event brief →</a>
+  </div>
+</section>
+
+<style>
+  .howl-hero{margin:0 auto;max-width:1200px;padding:12px 16px 20px}
+  .howl-hero__link{display:block}
+  .howl-hero img{width:100%;height:auto;display:block;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+  .howl-hero__info{margin-top:10px;background:linear-gradient(180deg,#0f1116,#0b0c10);
+    border:1px solid #1a1d24;border-radius:16px;padding:12px 14px}
+  .howl-hero__pill{display:inline-block;margin-bottom:6px;padding:.3rem .6rem;border:1px solid #1f222a;
+    border-radius:999px;background:#101218;color:#bdbdc4;font-size:.82rem}
+  .howl-hero__text{margin:6px 0 10px;color:#d9d9e0}
+  .howl-hero__text b{color:#fff}
+  .howl-hero__aside{color:#aab;opacity:.95}
+  .howl-hero__cta{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border-radius:12px;
+    border:1px solid #1f222a;background:#12151c;color:#fff;text-decoration:none}
+  .howl-hero__cta:hover{transform:translateY(-1px)}
+  @media (max-width:640px){.howl-hero img{border-radius:14px}}
+</style>
+  
 <!-- === FULL MOON COUNTDOWN BANNER (naprawiony: ścieżka /assets/events/ + fallback) === -->
 <section id="fullmoon-banner" class="fm-wrap fm-compact">
   <picture class="fm-bg">
