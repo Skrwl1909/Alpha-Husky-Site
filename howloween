@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HOWL-o-ween — Limited Event | Alpha Husky</title>
+  <meta name="description" content="One hashtag. One CTA. One image. Post your meme/art, tag @AlphaHusky, add #HowlOWeen. We’ll reshare the best. A small graphic riddle drops in-between.">
+  <meta property="og:title" content="HOWL-o-ween — Limited Event | Alpha Husky">
+  <meta property="og:description" content="Masks on. Lanterns lit. Join the first wave.">
+  <meta property="og:image" content="https://thealphahusky.netlify.app/assets/events/howloween/howloween-banner-1022x505.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thealphahusky.netlify.app/howloween.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--bg:#0b0b10;--fg:#e8e8ea;--muted:#b6bac3;--ink:#111318;}
+    html,body{background:var(--bg);color:var(--fg);margin:0;font:16px/1.55 'Open Sans','Share Tech Mono',system-ui,Segoe UI,Roboto,Inter,Arial;}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px;}
+    .hero img{width:100%;height:auto;display:block;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+    .pill{display:inline-block;padding:.3rem .65rem;border:1px solid #1f222a;border-radius:999px;background:#101218;color:#bdbdc4;font-size:.82rem}
+    .card{background:linear-gradient(180deg,#0f1116,#0b0c10);border:1px solid #1a1d24;border-radius:16px;padding:14px}
+    .btn{display:inline-flex;gap:.6rem;align-items:center;margin-top:.6rem;padding:.7rem 1rem;border-radius:12px;border:1px solid #1f222a;background:#12151c;color:#fff;text-decoration:none}
+    .btn:hover{transform:translateY(-1px)}
+    .grid-12{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+    .span-6{grid-column:span 12}
+    @media(min-width:900px){.span-6{grid-column:span 6}}
+    .muted{color:var(--muted)}
+    .small{font-size:.92rem}
+    .title{font-size:clamp(28px,4.5vw,44px);margin:.6rem 0 .3rem;letter-spacing:.3px}
+    .footer{margin:28px 0 8px;color:#a8adba;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="flex items-center justify-between mb-3">
+      <a class="pill" href="/index.html">← Back to Home</a>
+      <span class="muted small">Alpha Husky</span>
+    </header>
+
+    <div class="hero" aria-label="HOWL-o-ween banner">
+      <img src="/assets/event/howloween/howloween-banner-1022x505.png"
+           width="1022" height="505"
+           alt="HOWL-o-ween — Limited Event (cyan/amber nightmare title on dark obsidian background)">
+    </div>
+
+    <h1 class="title">HOWL-o-ween — Limited Event</h1>
+    <p class="muted small" style="margin-top:-4px">Masks on. Lanterns lit. Join the first wave.</p>
+
+    <section class="grid-12" style="margin-top:10px">
+      <div class="card span-6">
+        <h2 class="text-lg font-semibold mb-1">Plan (ultra-simple)</h2>
+        <ul class="list-disc pl-6">
+          <li><b>Create:</b> post your <i>meme/art</i></li>
+          <li><b>Tag:</b> <b>@AlphaHusky</b> + hashtag <b>#HowlOWeen</b></li>
+          <li><b>Caption:</b> keep it to 1 line</li>
+          <li><b>We’ll reshare the best</b> — and drop a small graphic riddle in-between 🐺🎃</li>
+        </ul>
+        <div class="flex gap-2 flex-wrap">
+          <a class="btn" href="https://x.com/AlphaHusky" target="_blank" rel="noopener">Follow on X →</a>
+          <a class="btn" href="https://t.me/Alpha_husky_bot" target="_blank" rel="noopener">Open Telegram App →</a>
+          <a class="btn" href="https://t.me/The_Alpha_husky" target="_blank" rel="noopener">Join the Community →</a>
+        </div>
+      </div>
+
+      <div class="card span-6">
+        <h2 class="text-lg font-semibold mb-1">When & How</h2>
+        <ul class="list-disc pl-6">
+          <li><b>Timing:</b> event window opens soon (watch alerts on X & TG)</li>
+          <li><b>Where:</b> Alpha Husky Telegram Mini App</li>
+          <li><b>How to enter:</b> look for the pumpkin icon in the dashboard and follow the short run</li>
+          <li><b>Rewards:</b> early-wave badge + small perks, bragging rights</li>
+        </ul>
+        <p class="muted small">Tip: set alerts on X so you don’t miss the first wave.</p>
+      </div>
+
+      <div class="card span-6">
+        <h2 class="text-lg font-semibold mb-1">Graphic Riddle (tease)</h2>
+        <p class="small">A crown of fire, two colors to see, hunting where contracts break — who am I?</p>
+        <p class="muted small">Drop your guess under our latest post. Best replies get highlighted.</p>
+      </div>
+
+      <div class="card span-6">
+        <h2 class="text-lg font-semibold mb-1">FAQ</h2>
+        <p><b>Do I need tokens?</b> No — it’s free.</p>
+        <p><b>Is it time-limited?</b> Yes — short window, first wave prioritized.</p>
+        <p><b>Will there be more?</b> Possibly. Early wave gets first look.</p>
+      </div>
+    </section>
+
+    <footer class="footer">© Alpha Husky — HOWL-o-ween. Hunt clean.</footer>
+  </div>
+</body>
+</html>
