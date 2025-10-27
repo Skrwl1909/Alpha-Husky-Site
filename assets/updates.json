@@ -1,5 +1,18 @@
 [
 {
+"date": "2025-10-27",
+"title": "Devlog #HOWLitsMade — Fortress fixes, Ledger hardening, Inventory & Pets",
+"status": "LIVE",
+"text": "🏰 Fortress: fixed L1 loop & 1-HP bosses (HP from blueprint + safe min), reliable cooldown (cooldownUntil + legacy), no rollback on save, dynamic encounter count, gentle agility/crit scaling, turn_cap=60.\n💰 Ledger: shop spends Bones via ledger; missions (auto-resolve, daily + RAID bonus) pay through ledger/tokens; pets evolve by spending tokens via ledger; inventory (boxes, salvage, bulk, auto-dupe, item “bones” rewards) credits via ledger with UI snapshot mirror.\n🧰 Utils: save-time fortress_progress_guard prevents stale writes; minor polling stability tips documented.\n🧩 Dev: universal credit/debit/tx shims added for consistent economy calls.",
+"links": [
+{ "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map
+" },
+{ "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap
+" }
+],
+"next": "Migrate Moon Lab victory rewards fully to ledger; wire Forge/salvage admin tools to ledger; unify co-op payouts; add per-user ledger history in WebApp; maintenance switch + nightly backups/compaction; finalize reset script using ledger audit; publish short FAQ (ledger vs points/tokens)."
+},
+{
 "date": "2025-10-20",
 "title": "Devlog #HOWLitsMade — Missions→Ledger, Daily/RAID Flow, Gifts & Wallet Sync",
 "status": "LIVE",
