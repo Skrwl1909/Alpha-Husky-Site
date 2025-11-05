@@ -1526,45 +1526,72 @@ It had no need.
     });
   </script>
   <!-- Quiz Script -->
-  <script>
-    const quiz = {
-      questions: 3,
-      answers: {},
-      results: {
-        alpha: { title: 'You are Alpha!', desc: 'Leader of the rebellion, visionary of the Chain. Join the front lines!' },
-        drenton: { title: 'You are Drenton!', desc: 'Relentless raider, survival is your anthem.' },
-        gtl: { title: 'You are GTL!', desc: 'Shadow of the network, master hacker – invisible guardian.' },
-        herod: { title: 'You are Alpha Herod!', desc: 'Architect of stories, calm visionary of the pack.' },
-        warden: { title: 'You are Cherenkov Warden!', desc: 'Grit and defense – you hold the line in the fire.' },
-        whisper: { title: 'You are Blood-Moon Whisper!', desc: 'Enigmatic myth, red eye in the chaos.' }
-      }
-    };
-    document.getElementById('start-quiz').addEventListener('click', () => {
-      document.getElementById('quiz-start').style.display = 'none';
-      showQuestion(1);
+<script>
+  const quiz = {
+    questions: 3,
+    answers: {},
+    results: {
+      alpha: { title: 'You are Alpha!', desc: 'Leader of the rebellion, visionary of the Chain. Join the front lines!' },
+      drenton: { title: 'You are Drenton!', desc: 'Relentless raider, survival is your anthem.' },
+      gtl: { title: 'You are GTL!', desc: 'Shadow of the network, master hacker – invisible guardian.' },
+      herod: { title: 'You are Alpha Herod!', desc: 'Architect of stories, calm visionary of the pack.' },
+      warden: { title: 'You are Cherenkov Warden!', desc: 'Grit and defense – you hold the line in the fire.' },
+      whisper: { title: 'You are Blood-Moon Whisper!', desc: 'Enigmatic myth, red eye in the chaos.' }
+    }
+  };
+  document.getElementById('start-quiz').addEventListener('click', () => {
+    document.getElementById('quiz-start').style.display = 'none';
+    showQuestion(1);
+  });
+  document.querySelectorAll('.quiz-question button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const q = parseInt(e.target.closest('.quiz-question').dataset.question);
+      const selected = document.querySelector(`input[name="q${q}"]:checked`);
+      if (selected) quiz.answers[`q${q}`] = selected.value;
+      if (q < quiz.questions) showQuestion(q + 1);
+      else showResult();
     });
-    document.querySelectorAll('.quiz-question button').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const q = parseInt(e.target.closest('.quiz-question').dataset.question);
-        const selected = document.querySelector(`input[name="q${q}"]:checked`);
-        if (selected) quiz.answers[`q${q}`] = selected.value;
-        if (q < quiz.questions) showQuestion(q + 1);
-        else showResult();
+  });
+  function showQuestion(num) {
+    document.querySelectorAll('.quiz-question').forEach(q => q.classList.remove('active'));
+    document.querySelector(`[data-question="${num}"]`).classList.add('active');
+  }
+  function showResult() {
+    document.getElementById('quiz-questions').style.display = 'none';
+    const scores = { alpha: 0, drenton: 0, gtl: 0, herod: 0, warden: 0, whisper: 0 };
+    Object.values(quiz.answers).forEach(ans => scores[ans]++);
+    const winner = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+    document.getElementById('result-title').textContent = quiz.results[winner].title;
+    document.getElementById('result-desc').textContent = quiz.results[winner].desc;
+    document.getElementById('quiz-result').classList.remove('hidden');
+  }
+</script>
+<!-- Tabs Functionality for Gallery -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.dataset.tab;
+        
+        // Update active button
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update active content
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          content.classList.add('hidden');
+          if (content.id === `tab-${targetTab}`) {
+            content.classList.remove('hidden');
+            content.classList.add('active');
+          }
+        });
       });
     });
-    function showQuestion(num) {
-      document.querySelectorAll('.quiz-question').forEach(q => q.classList.remove('active'));
-      document.querySelector(`[data-question="${num}"]`).classList.add('active');
-    }
-    function showResult() {
-      document.getElementById('quiz-questions').style.display = 'none';
-      const scores = { alpha: 0, drenton: 0, gtl: 0, herod: 0, warden: 0, whisper: 0 };
-      Object.values(quiz.answers).forEach(ans => scores[ans]++);
-      const winner = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
-      document.getElementById('result-title').textContent = quiz.results[winner].title;
-      document.getElementById('result-desc').textContent = quiz.results[winner].desc;
-      document.getElementById('quiz-result').classList.remove('hidden');
-    }
-  </script>
+  });
+</script>
 </body>
 </html>
