@@ -568,21 +568,128 @@
     <div id="updatesList" class="space-y-6"></div>
   </section>
   <!-- GALLERY -->
-  <section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Gallery</h2>
+<section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center">Gallery</h2>
+  <p class="text-lg text-yellow-200 mb-6 text-center">Discover the Pack's visual masterpieces – from pixel art to contest memes. #JoinThePack</p>
+ 
+  <!-- Tabs Navigation -->
+  <div class="flex justify-center mb-6 bg-yellow-900/20 rounded-t-xl p-1">
+    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200 mr-1 active" data-tab="general">
+      General Gallery
+    </button>
+    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200" data-tab="howloween">
+      Howl o Ween – Contest Graphics
+      <span class="inline-block ml-1 bg-yellow-500/70 text-black text-xs px-2 py-0.5 rounded-full font-bold">Archive!</span>
+    </button>
+  </div>
+ 
+  <!-- GALLERY -->
+<section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center">Gallery</h2>
+  <p class="text-lg text-yellow-200 mb-6 text-center">Discover the Pack's visual masterpieces – from pixel art to contest memes. #JoinThePack</p>
+ 
+  <!-- Tabs Navigation -->
+  <div class="flex justify-center mb-6 bg-yellow-900/20 rounded-t-xl p-1">
+    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200 mr-1 active" data-tab="general">
+      General Gallery
+    </button>
+    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200" data-tab="howloween">
+      Howl o Ween – Contest Graphics
+      <span class="inline-block ml-1 bg-yellow-500/70 text-black text-xs px-2 py-0.5 rounded-full font-bold">Archive!</span>
+    </button>
+  </div>
+ 
+  <!-- Tab Content: General Gallery (default active) -->
+  <div id="tab-general" class="tab-content bg-yellow-900/20 rounded-xl p-6 border border-yellow-700/50 active">
+    <h3 class="text-2xl font-bold mb-4 glow text-center">Pack Classics</h3>
     <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <figure class="relative">
         <img
           src="/assets/gallery/alpha_pixel.jpg"
           alt="Alpha Husky — pixel art"
-          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
           loading="lazy" decoding="async">
         <figcaption class="mt-2 text-yellow-300 text-xs text-center">
-          Alpha — Pixel
+          Alpha — Pixel Art
         </figcaption>
       </figure>
+      <!-- Add more existing graphics here if you have them – copy <figure> -->
     </div>
-  </section>
+  </div>
+ 
+  <!-- Tab Content: Howl o Ween -->
+  <div id="tab-howloween" class="tab-content bg-yellow-900/20 rounded-xl p-6 border border-yellow-700/50 hidden">
+    <h3 class="text-2xl font-bold mb-4 glow text-center border-b border-yellow-400/50 pb-2">Howl o Ween – Best Submissions</h3>
+    <p class="text-yellow-200 mb-6 text-center italic text-lg">
+      Thanks for joining #HowlOWeen! Your memes and art lit up the Chain – reshared by @AlphaHusky. Pack howls louder together! 🐺🎃<br>
+      <small class="text-yellow-300">Selected contest entries – more on X.</small>
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-1.jpg"
+          alt="Contest graphic #1 from Howl o Ween – Armored husky wizard in a witch hat casting fiery magic on a cliffside, surrounded by ghosts, bats, and glowing pumpkins under a full moon"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#1 – Cliffside wizard howl</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-2.png"
+          alt="Contest graphic #2 from Howl o Ween – Terrifying winged undead witch with white braids and a jagged sword, emerging from a foggy graveyard with dripping slime and glowing eyes"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#2 – Graveyard witch rise</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-3.jpg"
+          alt="Contest graphic #3 from Howl o Ween – Mysterious hooded husky with skeletal hands clutching a pile of carved pumpkins in a stormy autumn forest filled with falling leaves"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#3 – Pumpkin reaper husky</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-4.png"
+          alt="Contest graphic #4 from Howl o Ween – Ferocious Alpha Husky werewolf leading a zombie horde under a blood moon, with scattered pumpkins and fiery chaos in the night"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#4 – Zombie pack raid</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-5.jpg"
+          alt="Contest graphic #5 from Howl o Ween – Cute yet creepy Pomeranian dressed as Chucky doll, wielding a knife in a moonlit cemetery overgrown with webs and graves"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#5 – Chucky Pom terror</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-6.png"
+          alt="Contest graphic #6 from Howl o Ween – Savage werewolf howling fiercely amid twisted trees, watchful owls, bats, and a carved pumpkin under a crimson harvest moon"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#6 – Moonlit owl watch</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-7.jpg"
+          alt="Contest graphic #7 from Howl o Ween – Cyberpunk husky mage in a neon-lit haunted hall, summoning ghosts and crystals amid glowing jack-o'-lanterns and spiderwebs"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#7 – Echo archives haunt</figcaption>
+      </figure>
+      <!-- Copy <figure> for additional graphics if needed -->
+    </div>
+    <div class="text-center mt-6">
+      <a href="https://x.com/search?q=%23HowlOWeen%20%40AlphaHusky&src=typed_query" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all">
+        Browse #HowlOWeen on X 🐺
+      </a>
+    </div>
+  </div>
+</section>
   <!-- Lore Section -->
 <style>
 .full-text {
