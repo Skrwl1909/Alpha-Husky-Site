@@ -1,193 +1,119 @@
-<!-- /partials/roadmap.html -->
-<section class="space-y-6">
-  <header class="flex items-center justify-between">
-    <h3 class="text-2xl md:text-3xl font-bold glow">Lean Roadmap — TGE Readiness</h3>
-    <span class="text-xs text-yellow-300/80">Updated: 2025-11-07</span>
-  </header>
+<!-- Lean Roadmap — TGE Readiness (compact, fast) -->
+<div class="mb-4 flex items-center justify-between">
+  <h3 class="text-2xl font-extrabold glow">Lean Roadmap — TGE Readiness</h3>
+  <span class="text-xs text-yellow-400/80">Updated: 2025-11-07</span>
+</div>
 
-  <!-- Legend -->
-  <div class="flex flex-wrap gap-2 text-xs">
-    <span class="px-2 py-1 rounded-full bg-green-500/20 border border-green-500/40 text-green-200 font-bold">Shipped</span>
-    <span class="px-2 py-1 rounded-full bg-blue-500/20 border border-blue-500/40 text-blue-200 font-bold">In progress</span>
-    <span class="px-2 py-1 rounded-full bg-yellow-500/20 border border-yellow-500/40 text-yellow-200 font-bold">Next</span>
-    <span class="px-2 py-1 rounded-full bg-gray-500/20 border border-gray-500/40 text-gray-200 font-bold">Backlog</span>
-  </div>
+<div id="lean-roadmap"
+     class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
 
-  <!-- Columns -->
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+  <!-- SHIPPED -->
+  <section class="flex flex-col h-full rounded-2xl border border-yellow-700/40 bg-black/40 p-4">
+    <header class="flex items-center justify-between mb-2">
+      <h4 class="text-lg font-bold">Shipped</h4>
+      <span class="px-2 py-0.5 text-xs rounded-full bg-green-500/20 text-green-300 border border-green-500/30">done</span>
+    </header>
+    <ul class="space-y-3 text-yellow-200/90 text-sm leading-relaxed">
+      <li>
+        <div class="font-semibold">Purge Day — World Reset</div>
+        <div class="text-yellow-300/80">Fresh inventories, clean stats, equal chances. DoD: reset executed, players rejoined without edge cases.</div>
+      </li>
+      <li>
+        <div class="font-semibold">HP & Stats — One Source of Truth</div>
+        <div class="text-yellow-300/80">Pipeline: <code>compute_full_stats → player_from_totals → compute_player_max_hp</code> (HP = 50 + 12×VIT). Parity Missions ⇄ Moon Lab.</div>
+      </li>
+      <li>
+        <div class="font-semibold">Shard credit bug — FIXED</div>
+        <div class="text-yellow-300/80">Premium Box no longer overwrites balances; additive ledger credit; back-compat reader sums legacy + new.</div>
+      </li>
+      <li>
+        <div class="font-semibold">One-off migration</div>
+        <div class="text-yellow-300/80">Merged <code>shard_&lt;slot&gt;</code> → <code>&lt;slot&gt;_shards</code> (idempotent), spot-checked.</div>
+      </li>
+      <li>
+        <div class="font-semibold">Adoption Center</div>
+        <div class="text-yellow-300/80">Standalone pet adoption; Bones via ledger; correct stat assign & persist.</div>
+      </li>
+      <li>
+        <div class="font-semibold">Forge → Shards (LIVE)</div>
+        <div class="text-yellow-300/80">Craft UI + backend: RNG 80/20, pity 5, refine +2. Proper additive credits & UI feedback.</div>
+      </li>
+      <li>
+        <div class="font-semibold">Site/WebApp polish</div>
+        <div class="text-yellow-300/80">Lean Roadmap section, banner/tabs/updates cleanup; Builder’s Notes: “Why Alpha Husky is Different”.</div>
+      </li>
+    </ul>
+  </section>
 
-    <!-- SHIPPED -->
-    <div class="rounded-xl border border-yellow-700/40 bg-yellow-900/20 p-4">
-      <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
-        Shipped <span class="px-2 py-0.5 text-[10px] rounded-full bg-green-500/20 border border-green-500/40 text-green-200">done</span>
-      </h4>
-      <div class="space-y-3">
+  <!-- IN PROGRESS -->
+  <section class="flex flex-col h-full rounded-2xl border border-yellow-700/40 bg-black/40 p-4">
+    <header class="flex items-center justify-between mb-2">
+      <h4 class="text-lg font-bold">In progress</h4>
+      <span class="px-2 py-0.5 text-xs rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">doing</span>
+    </header>
+    <ul class="space-y-3 text-yellow-200/90 text-sm leading-relaxed">
+      <li>
+        <div class="font-semibold">TGE Readiness — Gates</div>
+        <ul class="list-disc list-inside text-yellow-300/80">
+          <li>Telemetry & retention: DAU, session length, return rate; target thresholds.</li>
+          <li>Anti-exploit checks: economy invariants; crate/box overwrite tests.</li>
+          <li>Docs: FAQ + facts (no dates); light-paper v0.1 outline.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="font-semibold">Ledger history (WebApp)</div>
+        <div class="text-yellow-300/80">Per-user lightweight history panel for transparency/audit.</div>
+      </li>
+      <li>
+        <div class="font-semibold">Season 0 snapshot plan</div>
+        <div class="text-yellow-300/80">Scope, signals, and export format (for allowlist/merkle later).</div>
+      </li>
+    </ul>
+  </section>
 
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Purge Day — World Reset</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-green-500/20 border border-green-500/40 text-green-200">shipped</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Fresh inventory, clean stats, equal chances for newcomers.</li>
-            <li>DoD: reset executed, players rejoined without edge cases.</li>
-            <li>Proof/Link: WebApp open → Hub (Purge notice archived).</li>
-          </ul>
-        </article>
+  <!-- NEXT -->
+  <section class="flex flex-col h-full rounded-2xl border border-yellow-700/40 bg-black/40 p-4">
+    <header class="flex items-center justify-between mb-2">
+      <h4 class="text-lg font-bold">Next</h4>
+      <span class="px-2 py-0.5 text-xs rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">up next</span>
+    </header>
+    <ul class="space-y-3 text-yellow-200/90 text-sm leading-relaxed">
+      <li>
+        <div class="font-semibold">TGE Prep (teaser, no date)</div>
+        <ul class="list-disc list-inside text-yellow-300/80">
+          <li>Publish light-paper v0.1 + “Why Alpha is different” thread.</li>
+          <li>Contributor allowlist form (Season 0 proof link).</li>
+          <li>72-hour stability run + telemetry capture.</li>
+          <li>Outline staged-LP / liquidity plan.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="font-semibold">Maintenance</div>
+        <div class="text-yellow-300/80">Nightly backups, compaction, simple maintenance switch.</div>
+      </li>
+    </ul>
+  </section>
 
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>HP & Stats — One Source of Truth</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-green-500/20 border border-green-500/40 text-green-200">shipped</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Pipeline: <code>compute_full_stats</code> → <code>player_from_totals</code> → <code>compute_player_max_hp</code> (HP = 50 + 12×VIT).</li>
-            <li>Applied in Missions & Moon Lab (parity confirmed).</li>
-            <li>Proof/Link: repo <code>stats.py</code>, <code>combat.py</code>, <code>missions.py</code>, <code>fortress.py</code>.</li>
-          </ul>
-        </article>
+  <!-- BACKLOG -->
+  <section class="flex flex-col h-full rounded-2xl border border-yellow-700/40 bg-black/40 p-4">
+    <header class="flex items-center justify-between mb-2">
+      <h4 class="text-lg font-bold">Backlog</h4>
+      <span class="px-2 py-0.5 text-xs rounded-full bg-slate-500/20 text-slate-300 border border-slate-500/30">later</span>
+    </header>
+    <ul class="space-y-3 text-yellow-200/90 text-sm leading-relaxed">
+      <li>
+        <div class="font-semibold">NFT Drops (story-tied)</div>
+        <div class="text-yellow-300/80">Lore characters (e.g., Frequency Keeper); security review + economy fit first.</div>
+      </li>
+      <li>
+        <div class="font-semibold">Dojo rankings & seasonal ladders</div>
+        <div class="text-yellow-300/80">Leaderboard, PR badge tiers, anti-spam.</div>
+      </li>
+      <li>
+        <div class="font-semibold">Extra skins & cosmetics</div>
+        <div class="text-yellow-300/80">Animated skins set; shop rotation polish.</div>
+      </li>
+    </ul>
+  </section>
 
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Forge Week D1–D6 → Ledger-Lite Economy</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-green-500/20 border border-green-500/40 text-green-200">shipped</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Materials: Bones, Scrap, Rune Dust; ★ upgrades to cap 5.</li>
-            <li>Reforge & Fuse (daily limits); single source of truth = ledger.</li>
-            <li>Proof/Link: <code>ledger_lite.py</code>, WebApp /materials.</li>
-          </ul>
-        </article>
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Keys & Fragments — Migration to Universal Shards</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-green-500/20 border border-green-500/40 text-green-200">shipped</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Legacy map fragments → <em>universal_key_shards</em> (UI in /keys).</li>
-            <li>Gating: Moon Lab fortress & region access unified.</li>
-            <li>Proof/Link: /keys conversion UI + migration logs.</li>
-          </ul>
-        </article>
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Adoption Center (Pets)</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-green-500/20 border border-green-500/40 text-green-200">shipped</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Standalone flow (poza Daily Shop), bones-ledger payments.</li>
-            <li>DoD: adopt → assign stats → persist; UX tested.</li>
-            <li>Proof/Link: <code>/adopt</code> command & WebApp modal (planned).</li>
-          </ul>
-        </article>
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Events: Full Moon / Howl-O-Ween</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-green-500/20 border border-green-500/40 text-green-200">shipped</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Live drops, badges, community posts integrated z WebApp.</li>
-            <li>Proof/Link: site banner + X feed embeds.</li>
-          </ul>
-        </article>
-
-      </div>
-    </div>
-
-    <!-- IN PROGRESS -->
-    <div class="rounded-xl border border-yellow-700/40 bg-yellow-900/20 p-4">
-      <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
-        In progress <span class="px-2 py-0.5 text-[10px] rounded-full bg-blue-500/20 border border-blue-500/40 text-blue-200">doing</span>
-      </h4>
-      <div class="space-y-3">
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Forge → Shards (finalization)</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-blue-500/20 border border-blue-500/40 text-blue-200">TGE-prep</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>WebApp modal <em>shards.js</em>: slot / count / refine (+tooltip).</li>
-            <li>Backend <code>POST /webapp/forge/shards/craft</code>: RNG 80/20, pity 5, refine +2.</li>
-            <li>Box/Rewards write-path: ledger <em>additive</em> credit (no overwrites).</li>
-            <li>Proof/Link: craft results in UI, balances stable in ledger.</li>
-          </ul>
-        </article>
-
-      </div>
-    </div>
-
-    <!-- NEXT -->
-    <div class="rounded-xl border border-yellow-700/40 bg-yellow-900/20 p-4">
-      <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
-        Next <span class="px-2 py-0.5 text-[10px] rounded-full bg-yellow-500/20 border border-yellow-500/40 text-yellow-200">up next</span>
-      </h4>
-      <div class="space-y-3">
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>TGE Readiness Gates</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-yellow-500/20 border border-yellow-500/40 text-yellow-200">gate</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li><strong>Telemetry & Retention</strong>: light metrics (DAU, session length, return rate); target thresholds defined.</li>
-            <li><strong>Anti-exploit pass</strong>: economy & crates; ledger invariants; simple rate-limits.</li>
-            <li><strong>Comms kit</strong>: short “Why Alpha Husky is different”, FAQ, token facts page (no hard dates).</li>
-            <li>Status: validating before any TGE announcement.</li>
-          </ul>
-        </article>
-
-      </div>
-    </div>
-
-    <!-- BACKLOG -->
-    <div class="rounded-xl border border-yellow-700/40 bg-yellow-900/20 p-4">
-      <h4 class="text-lg font-bold mb-3 flex items-center gap-2">
-        Backlog <span class="px-2 py-0.5 text-[10px] rounded-full bg-gray-500/20 border border-gray-500/40 text-gray-200">later</span>
-      </h4>
-      <div class="space-y-3">
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>NFT Drops (story-tied)</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-gray-500/20 border border-gray-500/40 text-gray-200">post-TGE</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Lore characters (e.g., Frequency Keeper), narrative utilities.</li>
-            <li>Security review + economy fit required first.</li>
-          </ul>
-        </article>
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Dojo rankings & seasonal ladders</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-gray-500/20 border border-gray-500/40 text-gray-200">later</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Leaderboard, PR badge tiers, soft anti-spam.</li>
-          </ul>
-        </article>
-
-        <article class="rounded-lg border border-yellow-700/40 bg-black/40 p-3">
-          <div class="flex items-center justify-between">
-            <strong>Extra skins & cosmetics</strong>
-            <span class="px-2 py-0.5 text-[10px] rounded-full bg-gray-500/20 border border-gray-500/40 text-gray-200">later</span>
-          </div>
-          <ul class="list-disc list-inside text-yellow-200 text-xs mt-2 space-y-1">
-            <li>Animated skins set + shop rotation polish.</li>
-          </ul>
-        </article>
-
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Footer status line -->
-  <div class="mt-4 text-sm text-yellow-300/80">
-    <strong>Status:</strong> Core shipped. Finalizing <em>Forge → Shards</em> and validating <em>TGE readiness gates</em> before any token comms.
-  </div>
-</section>
+</div>
