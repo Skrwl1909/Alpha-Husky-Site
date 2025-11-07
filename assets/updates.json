@@ -1,5 +1,17 @@
 [
 {
+  "date": "2025-11-07",
+  "title": "Devlog #HOWLitsMade — Purge, HP Parity, Shard Fix, Adoption Center, Forge→Shards",
+  "status": "LIVE",
+  "text": "🧹 Purge Day: world reset shipped — fresh inventories, clean stats, equal chances for newcomers.\\n💙 One Source of Truth (HP/Stats): Missions now use the same pipeline as Moon Lab → compute_full_stats → player_from_totals → compute_player_max_hp (HP = 50 + 12×VIT). 1-HP edge cases removed; parity confirmed.\\n🧩 Shards (ledger path): fixed a bug where Premium Box could overwrite shard balances — rewards now credit additively via ledger (no set/overwrite). Unified naming to <slot>_shards with a back-compat reader that sums (new + legacy).\\n🧰 Migration: shipped one-off, idempotent script to merge legacy shard_<slot> → <slot>_shards in ledger and reconcile totals for affected users.\\n🐾 Adoption Center: standalone pet adoption (separate from Daily Shop) with Bones-ledger payments and correct stat assignment/persist.\\n🔥 Forge→Shards: craft flow live (RNG 80/20, pity 5, refine +2) with proper additive credits and UI feedback.\\n📝 Builder’s Notes: added “Why Alpha Husky is Different” section (lean, proof-first).",
+  "links": [
+    { "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map" },
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" },
+    { "label": "Builder’s Notes", "url": "https://thealphahusky.netlify.app/partials/builders-note.html" }
+  ],
+  "next": "Gearing up for TGE (no date): finalize ledger/audit checks and crate tests; publish light-paper v0.1 + ‘Why Alpha is different’ teaser thread; prepare Season 0 snapshot plan and contributor allowlist form; outline staged-LP/liquidity approach; 72-hour stability & telemetry pass; soft-announce readiness gates (ship > hype)."
+},
+{  
 "date": "2025-10-27",
 "title": "Devlog #HOWLitsMade — Fortress fixes, Ledger hardening, Inventory & Pets",
 "status": "LIVE",
