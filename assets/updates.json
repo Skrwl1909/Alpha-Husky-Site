@@ -1,4 +1,15 @@
 [
+  {
+"date": "2025-11-11",
+"title": "Devlog #HOWLitsMade — Equipment Guard, Single-Buff Policy, Inventory UX, WebApp FAQ",
+"status": "LIVE",
+"text": "🔧 Equipment Upgrade Guard: enforced per-item star cap (star_cap) server-side and in the inspect refresher — the Upgrade button now switches to “At cap” immediately. No overshoot; costs/preview only when below cap.\n🧪 Single Timed-Buff Policy: only one timed consumable buff can be active at a time (xp_gain 30m, cooldown_reduction 15m, alpha_surge 30m, generic boost 24h). Central lock (buff_lock_until) with user message showing remaining time. Both /use and inline ‘Use’ respect the lock. One-offs (dice_luck, double_feed, plushie_protect, mission_speed_next) are unaffected.\n🎒 Inventory & Use Handlers: aligned /use and inline callback behavior; normalized “consumable”→“special” alias; consistent achievements + save flow. Cleaned indentation (tabs→spaces) to remove a runtime IndentationError.\n🖼️ Inspect Card UX: refresh now respects per-item cap instantly (shows Stars bar and disabled state), preserves cost & stat-preview when upgrade is available, and keeps Unequip/Back actions in place.\n❓ WebApp FAQ (v0): added faq.js module and wiring; seeded Quick Start, How to begin, and Core Loop entries; content is scaffolded for fast iteration.",
+"links": [
+{ "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win
+" },
+{ "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+],
+},
 {
   "date": "2025-11-07",
   "title": "Devlog #HOWLitsMade — Purge, HP Parity, Shard Fix, Adoption Center, Forge→Shards",
