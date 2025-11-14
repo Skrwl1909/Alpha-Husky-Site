@@ -1,5 +1,15 @@
 [
   {
+    "date": "2025-11-14",
+    "title": "Devlog #HOWLitsMade — Referral Spine, WebApp start_param, Admin Audit",
+    "status": "LIVE",
+    "text": "🧬 Referral Spine E2E: locked `ref_` as the canonical invite prefix and wired it into /referral — each player now gets both a classic bot link and a Mini App link that feed into the same tracking path.\n🌐 WebApp start_param Wiring: the WebApp state endpoint now reads start_param=ref_<id> from Telegram init_data, sets invited_by once, applies the 5-per-day referral reward cap, and grants the four referral badges at their thresholds (ECHO_HOWLER, SIGNAL_CALLER, ALPHA_HERALD, PACK_SUMMONER).\n📣 Player Referral Panel: refstats was cleaned up into a proper referral dashboard — it shows who invited you (if tracked), total rewarded invites, today’s progress out of 5, and referral-only badges instead of dumping every achievement you’ve ever earned.\n📊 Admin Referral Audit: shipped ref_audit as an admin-only overview that reports how many users have an inviter tracked and ranks referrers by rewarded invites; fixed the ADMIN_IDS string/int mismatch so all admin checks behave consistently across commands.\n🎯 Why It Matters: referrals are now a reliable Season 0 signal — every valid invite is tracked and capped fairly, whether a new Howler lands through the bot or directly in the Mini App, laying groundwork for pre-TGE contribution recognition.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    ]
+  },
+  {
     "date": "2025-11-11",
     "title": "Devlog #HOWLitsMade — Equipment Guard, Single-Buff Policy, Inventory UX, WebApp FAQ",
     "status": "LIVE",
