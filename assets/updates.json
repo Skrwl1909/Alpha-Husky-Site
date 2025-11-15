@@ -1,5 +1,15 @@
 [
   {
+  "date": "2025-11-15",
+  "title": "Devlog #HOWLitsMade — Ledger Spine, Shop Anti-Farm, Inspect HUD",
+  "status": "LIVE",
+  "text": "📒 Ledger Sanity & Admin View: wired an admin-only /verify_ledger and /ledger_show on top of ledger_lite — admins can now run signature checks across the full log, see per-user balances, and inspect the last entries directly in Telegram, making the ledger the single source of truth for Season 0 rewards.\n♻️ Auto-Dupe 2.0: refined add_item_autodupe and auto_dupe_cleanup so excess gear copies are safely auto-salvaged into Scrap and Rune Dust, respect backpack capacity and locked items, and write a single aggregated materials grant to the ledger while tracking how many items were auto-salvaged per player.\n🛡️ Shop Anti-Farm Limits: introduced per-item daily limits for the Daily Shop (with a global default and optional daily_limit overrides in all_items.json). Both /buy and inline buy_... buttons now share a unified check backed by per-user shop_limits, so key consumables and utility items cannot be spam-farmed in a single day.\n🧬 Referrals → Ledger Wiring: the existing invite flow now appends a referral_bonus entry to the ledger whenever a referrer is rewarded (within the 5-per-day cap), with ref metadata (type=referral, from=referrer_id, to=new_howler_id). Badge thresholds were updated so ECHO_HOWLER now unlocks at 5 invites and SIGNAL_CALLER at 8, while ALPHA_HERALD and PACK_SUMMONER remain the higher milestones.\n🪙 Inspect HUD with Live Materials: unified the inspect view for equipped and inventory items into a single _render_inspect_card_inplace that shows current stats, Next★ preview, Max★ projection (including HP gain from VIT) and a live ledger-based readout of the player’s Scrap, Rune Dust and Bones vs the upgrade cost, so every Howler instantly sees if they can afford the next forge.\n🎯 Why It Matters: today’s work hardens the backbone for TGE — referrals, shop, forge and future Season 0 snapshots all read from the same append-only ledger, and the in-game UI finally reflects those true balances, making progression and rewards transparent, auditable and much harder to game.",
+  "links": [
+    { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+  ]
+},
+  {
     "date": "2025-11-14",
     "title": "Devlog #HOWLitsMade — Referral Spine, WebApp start_param, Admin Audit",
     "status": "LIVE",
