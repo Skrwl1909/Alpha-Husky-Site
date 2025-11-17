@@ -1,4 +1,16 @@
-[
+[  
+{
+"date": "2025-11-17",
+"title": "Devlog #HOWLitsMade — WebApp HUD, Player Card, Chain Gate AFK",
+"status": "LIVE",
+"text": "🧩 Cleaner WebApp Layout: rebalanced the main dashboard and map view so key actions, stats and buttons are easier to see at a glance, with less clutter and more readable spacing on both desktop and mobile.\n🖼️ Central Player Card: added a new hero panel in the middle of the dashboard that shows your Husky skin artwork, nickname and real in-game level pulled from the backend, so every login feels like stepping back into your own character rather than a generic menu.\n🎭 Skins Ready for Future Utility: wired the skin slot into a dedicated frame and DOM IDs, making it straightforward to later plug in dynamic skins, rarity frames and event cosmetics without reshaping the whole layout again.\n⏳ Chain Gate AFK Mode: turned Chain Gate into a proper utility building by giving it an AFK loop — you send your Husky on an AFK run, let the timer tick in the background and then claim rewards directly via the WebApp through a dedicated claim action.\n🦴 AFK State Tracking: backend now stores per-player AFK state (idle → running → ready) and safely resets progress once rewards are collected, so AFK gains are trackable, fair and easy to tune.\n🎯 Why It Matters: this update makes the WebApp feel more like a real character hub and less like a prototype UI, while introducing AFK progression as a new pillar of the core loop — even when you are offline, the Pack keeps moving and your Husky does not stand still.",
+"links": [
+{ "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win
+" },
+{ "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap
+" }
+]
+},
   {
   "date": "2025-11-15",
   "title": "Devlog #HOWLitsMade — Ledger Spine, Shop Anti-Farm, Inspect HUD",
