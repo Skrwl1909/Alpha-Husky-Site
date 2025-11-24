@@ -1,4 +1,14 @@
-[  
+[
+{
+"date": "2025-11-24",
+"title": "Devlog #HOWLitsMade — Quest Engine, AFK Lock, Pet Bonds",
+"status": "LIVE",
+"text": "📜 Quest Engine Clean-Up: reworked the quest backend so story, daily and repeatable quests are now clearly separated, easier to tune and safer for long-term balance. XP rewards were normalized (with a soft cap for regular tasks) so progress feels steady instead of spiky.\n🧭 Lore-Driven Story Quests: expanded the STORY category with new lore quests and pet milestones (pet level 10 and 20), tying progression directly into the Alpha Husky saga instead of generic “do X times Y” objectives.\n🧩 Backend Wiring for Quests: hooked quest progress into multiple systems — missions, shop, main loop, fortress and WebApp — so actions across the game reliably emit quest events and contribute to the right tasks without hidden side paths.\n⛓️ AFK Chain Gate Lock & Claim: tightened the AFK system by adding a proper lock — when your avatar is on AFK duty at the Chain Gate, they can’t start other building runs, and rewards are now claimed manually via a dedicated resolve action instead of silently in the background.\n🔄 Unified AFK State Machine: integrated AFK state (idle → running → ready → claimed) into the WebApp + bot handlers, ensuring that timers, rewards and locks stay in sync and are easier to reason about before TGE.\n🐾 Pet Arena Evolution: refined pet XP and level-up logic so skills unlock cleanly and both daily-style progress (pet_level_up) and story milestones (pet_level_reached) are tracked consistently across feeding, arena battles and future pet content.\n🎯 Why It Matters: this update doesn’t scream with new buttons, but it hardens the spine of the game — quests, AFK and pets now behave more like a production-grade system than a prototype, which is exactly the kind of stability we need before putting a real token on top.",
+"links": [
+{ "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+{ "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+]
+}, 
 {
 "date": "2025-11-17",
 "title": "Devlog #HOWLitsMade — WebApp HUD, Player Card, Chain Gate AFK",
