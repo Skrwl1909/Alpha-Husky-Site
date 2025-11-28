@@ -1,4 +1,14 @@
 [
+  {
+  "date": "2025-11-28",
+  "title": "Devlog #HOWLitsMade — Pet Archetypes & RPS Arena",
+  "status": "LIVE",
+  "text": "🐾 Full Pet Stat Pass: defined BASE_STATS for all existing pets — not only adoptable companions, but also evolutions, exclusives and event pets. Every pet now has clear STR/AGI/LUCK/VIT/DEF values instead of relying on loose defaults.\n🔺 Feral / Trickster / Mystic Archetypes: grouped every pet into one of three arena archetypes (feral, trickster, mystic), including hidden and token-only pets. Each archetype has at least one easily accessible pet, so new players can pick a style instead of being locked into one meta.\n🎮 Rock–Paper–Scissors Layer in Pet Arena: wired a light RPS system into Pet Arena — Feral beats Trickster, Trickster beats Mystic, Mystic beats Feral. The winner archetype gets a small stat boost, the weaker one a small debuff, before the normal combat simulation runs.\n⚖️ Less RNG, More Meaningful Choices: fights between similar-level pets are no longer pure coin flips. Archetype matchups matter, but RNG and progression still play a big role, keeping battles exciting instead of deterministic.\n🧱 Why It Matters: this update turns Pet Arena from a fun prototype into a more deliberate system — pet choice, progression and matchups all matter, and the backend is ready for future pet content, skills and token-linked rewards.",
+  "links": [
+    { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+  ]
+},
 {
 "date": "2025-11-24",
 "title": "Devlog #HOWLitsMade — Quest Engine, AFK Lock, Pet Bonds",
