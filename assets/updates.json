@@ -1,5 +1,45 @@
 [
   {
+    "date": "2025-12-16",
+    "title": "Devlog #HOWLitsMade — WebApp Referrals + Forge Ledger-First Core",
+    "status": "LIVE",
+    "text": "🧲 WebApp Referrals (Recruit & Earn): added the missing referral flow directly inside the dashboard, so the pack can share invites and track progress in-app.\n⚙️ Forge Ledger-First Upgrade: moved Forge actions to a single source of truth — costs and rewards now go through the ledger to prevent desync and economy exploits before TGE.\n🎲 Shard Pity Unified: standardized shard crafting pity into one canonical tracker (shard_pity) with auto-migration and a pityMap returned to the UI for clear state visibility.\n🌑 Background Refresh: shipped a new WebApp ambience layer to make the hub feel more alive while we keep porting core loops into the UI.\n🎯 Why It Matters: this is TGE hardening work — referrals and Forge are now closer to production-grade reliability and ready for full end-to-end testing.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    ]
+  },
+  {
+    "date": "2025-12-11",
+    "title": "Devlog #HOWLitsMade — Character & Equipped Panel (WebApp)",
+    "status": "LIVE",
+    "text": "🧍 Character & Equipped Panel: shipped the first working version of the character view inside the WebApp — avatar preview + equipped slots.\n🧩 Equipped Module: split into a dedicated equipped.js flow that talks to /webapp/equipped/* endpoints and renders the character PNG with gear overlays.\n🗺️ UI Navigation Step-Up: the dashboard is evolving from text commands into a true hub — more actions are now reachable as buttons/modals instead of chat-only.\n🎯 Why It Matters: this is the bridge between the game’s core economy and a clean, modern UI — a key step before token utility goes live.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    ]
+  },
+  {
+    "date": "2025-12-03",
+    "title": "Devlog #HOWLitsMade — Moon Lab Fortress Combat Parity (Stats & HP)",
+    "status": "LIVE",
+    "text": "🧪 Fortress Combat Parity: unified the combat pipeline so every mode reads from the same stats source (base + gear + pet).\n❤️ HP Consistency Pass: standardized player max HP calculation (HP = 50 + 12*VIT) to eliminate edge cases where the WebApp/boss fight could show incorrect HP.\n📜 Cleaner Battle Logs: improved the clarity of combat outputs so totals reflect what the player actually has equipped.\n🎯 Why It Matters: stability beats hype — combat parity across systems is mandatory before scaling the economy into TGE territory.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    ]
+  },
+  {
+    "date": "2025-12-01",
+    "title": "Devlog #HOWLitsMade — Mission Board MVP + Fortress Integration",
+    "status": "LIVE",
+    "text": "📋 Mission Board MVP: brought the Quest/Mission Board into the WebApp with a real UI (filters, states, actions) backed by /webapp/quests endpoints.\n🧠 Quest Hooks Everywhere: prepared hooks so victories and key actions reliably push quest progress across missions and building runs.\n🏰 Moon Lab Fortress Wired: integrated Fortress state/start flows into the WebApp router, including cooldown handling and save protection.\n🎯 Why It Matters: quests are the long-term progression spine — moving them into the WebApp makes the experience feel like a real game hub, not just a bot menu.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    ]
+  },
+  {
   "date": "2025-11-28",
   "title": "Devlog #HOWLitsMade — Pet Archetypes & RPS Arena",
   "status": "LIVE",
