@@ -1,5 +1,16 @@
 [
   {
+  "date": "2025-12-31",
+  "title": "Devlog #HOWLitsMade — Pet Arena Polish + Set Bonus Pass + WebApp “What’s New”",
+  "status": "LIVE",
+  "text": "🐾 Pet Arena Stability Pass: continued tightening Arena behavior and fixing edge cases so battles, replays, and pet effects feel consistent.\n🧬 Set Bonuses WIP: started consolidating how set bonuses are applied so stats remain predictable across modes (no hidden stacking / no desync between views).\n🧪 Consumables Effects Fix: corrected consumable effect application so buffs/debuffs reliably trigger and persist through the intended flow.\n🛒 Shop Consistency & Tuning: another balancing and cleanup pass to keep pricing, rotations, and rewards aligned with the ledger-first economy direction.\n📰 WebApp “What’s New” Integration: connected the site’s updates feed to the WebApp — users now get an in-app updates modal with a NEW indicator, per-user read state, and direct links back to the devlog for full details.\n🎯 Why It Matters: this is core hardening work — the boring fixes that prevent economy exploits, UI mismatches, and combat confusion as we scale toward TGE readiness.",
+  "links": [
+    { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" },
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+  ]
+},
+  {
     "date": "2025-12-16",
     "title": "Devlog #HOWLitsMade — WebApp Referrals + Forge Ledger-First Core",
     "status": "LIVE",
