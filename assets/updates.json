@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-01-05",
+    "title": "Devlog #HOWLitsMade — Pet Arena Replay Patch B (MP4 Render + Background Task)",
+    "status": "LIVE",
+    "text": "🎬 Pet Arena Replay Patch B: switched replay delivery to a single MP4 video generated from battle frames (PNG ➜ ffmpeg ➜ H.264 MP4) instead of sending multiple assets.\n⚙️ Background Render Job: replay generation now runs as a non-blocking background task — the callback immediately responds with a \"Rendering replay…\" message and the video arrives when ready.\n🛡️ Per-User Task Guard: added a uid→Task lock so the same player can’t accidentally start two renders at once (prevents duplicate load + spam).\n🧹 Guaranteed Cleanup: implemented strict try/finally cleanup for both frame directories and MP4 output folders under /tmp (no orphaned temp files).\n⏳ Telegram Flood Safety: wrapped send_video with RetryAfter handling to respect Telegram rate limits and avoid failed sends during peak usage.\n🧩 Compatibility Hardening: added tolerant field mapping for steps (HP keys, actor side detection) and a safer renderer init path to reduce edge-case failures across battle payload variants.\n🎯 Why It Matters: replays are now lighter, cleaner, and more scalable — faster delivery, fewer messages, and safer server behavior as Arena usage ramps up.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" },
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    ]
+  },
+  {
   "date": "2025-12-31",
   "title": "Devlog #HOWLitsMade — Pet Arena Polish + Set Bonus Pass + WebApp “What’s New”",
   "status": "LIVE",
