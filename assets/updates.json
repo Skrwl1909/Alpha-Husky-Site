@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-01-08",
+    "title": "Devlog #HOWLitsMade — WebApp Navigation Stabilization + Active Pet Picker + UI Focus",
+    "status": "LIVE",
+    "text": "🧭 Navigation Fix (WebApp): introduced a single, deterministic navigation flow with ONE global HOME (goHome) and a BackButton router.\n🔁 BackButton Router: replaced the old BackButton behavior (closing the WebApp instantly) with a proper stack-based handler — Back now closes the topmost open modal/sheet first, and only closes the WebApp when nothing is open.\n🧱 Nav Stack Consistency: added safe stack clearing on goHome() to prevent “ghost” back states after returning to the map.\n🌐 Global Helpers for Modules: exposed nav helpers globally (window.navOpen/navClose/navCloseTop) so standalone modules (like quests.js) can use the same navigation rules without scope errors.\n🐾 Active Pet Picker (MyPets): aligned the pets flow with an explicit “set active pet” picker in the WebApp — a dedicated MyPets entrypoint is now wired as the canonical way to choose your active pet during gameplay.\n🎯 Community-Driven Direction: next work sessions will focus primarily on UI/navigation polish (clarity, flow, fewer clicks, stronger wayfinding) based on the community’s feedback — making the product feel smooth before pushing further content.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" },
+    ]
+  },
+  {
     "date": "2026-01-05",
     "title": "Devlog #HOWLitsMade — Pet Arena Replay Patch B (MP4 Render + Background Task)",
     "status": "LIVE",
