@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-01-10",
+    "title": "Devlog #HOWLitsMade — Shop Item Inspect + Stat Compare (Buy With Confidence)",
+    "status": "LIVE",
+    "text": "🛒 Shop Inspect (WebApp): added a new item details preview when you tap an item in the Shop — so you can actually judge if it’s worth buying.\n🧩 Full Item Card: shows rarity/slot/price + description and quick stat chips for fast readability.\n📊 Compare vs Equipped: the inspect view includes a clean NEW vs EQ comparison table with a Δ column, so you instantly see what you gain (or lose) before spending.\n🧭 Navigation-Friendly: the inspect modal follows the new stack-based navigation rules — Back/Close behaves predictably and never breaks your flow.\n✅ Goal: reduce “blind buys” and make progression feel smarter and more fair for players.",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
     "date": "2026-01-08",
     "title": "Devlog #HOWLitsMade — WebApp Navigation Stabilization + Active Pet Picker + UI Focus",
     "status": "LIVE",
