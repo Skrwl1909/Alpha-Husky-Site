@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-01-15",
+    "title": "Devlog #HOWLitsMade — Data Desync Fix (Root UID Ghost + WebApp Save Crash) ⚙️🐺",
+    "status": "IN PROGRESS",
+    "text": "🛠️ This week was a real \"systems over content\" moment — the game looked like it was randomly wiping progress (lvl 1 / empty inventory), especially when more than 1 player was testing at the same time.\n\n✅ What was happening (real cause):\n• We had TWO user trees living at once: data[uid] (root) AND data['users'][uid] (schema2).\n• Some modules were writing to the ROOT bucket while others were reading from users[].\n• That created a ghost profile: one user could exist twice with different levels/items.\n• In parallel requests, this caused overwrites + desync between Telegram and WebApp.\n\n✅ Fixes shipped so far:\n1) Unified user access with users_dict(data)\n   • Patched wallet.py and started replacing any data.setdefault(uid, ...) that created root UID ghosts.\n\n2) Verified & repaired the \"root vs users\" mismatch\n   • Confirmed both references can point to the SAME object (no more split progress).\n   • Progress started loading correctly again (lvl / inv / stats are back).\n\n3) WebApp write protection (anti-desync)\n   • save_data() is now hard-disabled inside webapp_dashboard.py on purpose.\n   • Any leftover save_data(data) calls inside WebApp handlers crash instantly → this exposed every unsafe endpoint.\n\n4) Started the SAVE_DATA PURGE\n   • The WebApp is being migrated to a clean rule:\n     READ = read_user(uid)\n     WRITE = with_user(uid, mutator)\n   • This prevents race conditions + makes writes atomic and consistent.\n\n5) Fixed Telegram WebApp restriction crash\n   • Dashboard button (WebApp keyboard) can only be used in private chats.\n   • Patch added: in groups it now sends a safe \"Open Dashboard in DM\" link instead of hard-failing.\n\n📌 What’s still in progress (next):\n• Purge remaining save_data(data) calls from webapp_dashboard.py (many endpoints still contain legacy saves).\n• Patch Building flows (start/resolve), Moon Lab Fortress menu/start, Quests, Daily actions, Pets, Shop, Referrals.\n• Make sure ALL WebApp actions follow the same pipeline and never create/overwrite ghost users.\n\n🎯 Result so far:\n• Player progress started showing correctly again (no more fake lvl 1 ghost profile).\n• The system now clearly reveals any unsafe save paths instead of silently corrupting data.\n\nPack update: This is the kind of boring fix that makes the whole game 10x stronger long-term. Brick by brick 🧱🐺",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
     "date": "2026-01-10",
     "title": "Devlog #HOWLitsMade — Shop Item Inspect + Stat Compare (Buy With Confidence)",
     "status": "LIVE",
