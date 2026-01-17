@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-01-17",
+    "title": "Devlog #HOWLitsMade — User Lock Datastore (Race-Condition Killer) ✅🐺",
+    "status": "SHIPPED",
+    "text": "✅ FINAL PUSH: the \"progress rolls back / disappears\" ghost is now under control.\n\nAfter fixing the root UID ghost (data[uid] vs data['users'][uid]), the next beast was even worse:\n\n⚠️ The real nightmare:\n• Telegram Bot + WebApp were both doing load_data() → mutate → save_data(data)\n• In parallel requests, older snapshots were overwriting newer saves\n• Result: random rollbacks, missing rewards, WebApp vs Bot desync\n\n✅ What we shipped to kill it properly:\n1) Tripwire protection (WebApp)\n   • save_data() is hard-disabled in webapp_dashboard.py on purpose\n   • any legacy save path crashes instantly instead of silently corrupting progress\n\n2) New safe persistence layer: data_store.py\n   • per-user asyncio.Lock (one writer at a time)\n   • atomic writes (temp → rename)\n   • backups/rotation\n   • one rule:\n     READ = read_user(uid)\n     WRITE = with_user(uid, mutator)\n\n3) Core migration started (no more \"save the whole world\")\n   • WebApp state endpoints = read-only (no setdefault + no saves)\n   • WebApp actions = with_user() only\n   • Telegram mission start/resolve is being moved into the same safe pattern\n\n🎯 Result right now:\n• Massive drop in rollback risk (no more silent overwrites)\n• Progress stays consistent across Bot + WebApp\n• If something unsafe still exists, it fails LOUD (easy to find + patch)\n\n📌 Next cleanup (small remaining %):\n• Convert any last legacy save_data() in TG modules (daily/teamup multi-user rewards)\n• Add run_id/idempotency to spam-click actions (no double rewards)\n• Final grep pass to confirm: WebApp = zero legacy saves\n\nThis wasn’t a fun content week… but it’s the upgrade that makes the game scale. Brick by brick 🧱🐺",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
     "date": "2026-01-15",
     "title": "Devlog #HOWLitsMade — Data Desync Fix (Root UID Ghost + WebApp Save Crash) ⚙️🐺",
     "status": "IN PROGRESS",
