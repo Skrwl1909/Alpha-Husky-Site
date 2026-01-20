@@ -1,5 +1,15 @@
 [
   {
+  "date": "2026-01-20",
+  "title": "Devlog #HOWLitsMade — Pet Arena Scaling + Boxes Loot + Shop UX + Consumables ⚔️🐾🎁",
+  "status": "SHIPPED",
+  "text": "✅ Today was all about turning rough systems into real long-term gameplay.\n\n🐾 1) Pet Arena — proper stats + HP scaling (long-term fair play)\nWe fixed the core issue where pet power didn’t scale consistently with level, causing weird HP gaps (like 50 HP forever vs 400+ tanks).\n\nWhat shipped:\n• Canonical pet stat calculation via compute_pet_effective_stats()\n• Arena uses one clean source of truth (no mixed legacy bonuses)\n• Hybrid HP system (Step C):\n  - Level ALWAYS increases HP\n  - Vitality adds bonus HP, but capped to prevent extreme tank meta\n  - Tunable via ENV without patching code\n\nResult:\n• Pet levels finally matter\n• Fights feel fairer across archetypes\n• Huge future-proof base for real pet grinding\n\n🎁 2) Loot Tables for Boxes\nWe added the loot table foundation for box rewards.\nThis unlocks scaling rewards like:\n• shards\n• materials\n• special drops\n• future cosmetics / event items\n\n🛒 3) Shop — better purchase feedback\nShop purchase messaging is now cleaner and more readable.\nPlayers immediately know:\n• what they bought\n• what it cost\n• what changed in their balance\n\n🧊 4) Prep for the Shardborn Skin\nWe prepared the structure so Shardborn can drop in cleanly as a cosmetic without breaking UI flow.\nReady for:\n• unlock/purchase\n• reward drop\n• event-only release\n\n⚡ 5) Consumables — real timed effects\nConsumables are now wired to actually apply timed buffs instead of being “just an item”.\nNext step is already planned:\n• show active buffs visibly in UI (with remaining duration)\n\nThis wasn’t just content — it was the kind of systems work that makes the whole game scale smoothly. Brick by brick 🧱🐺",
+  "links": [
+    { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+  ]
+},
+  {
     "date": "2026-01-17",
     "title": "Devlog #HOWLitsMade — User Lock Datastore (Race-Condition Killer) ✅🐺",
     "status": "SHIPPED",
