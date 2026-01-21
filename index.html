@@ -1385,20 +1385,57 @@ It had no need.
     <p class="mt-4 text-yellow-300/70 text-sm">Tip: keep files small (&lt; 10–15MB) for fast loads. WEBM with alpha can be added later as a fallback for transparency.</p>
   </section>
   <!-- FOOTER -->
-  <footer class="bg-yellow-900/90 p-6 text-center text-black mt-12 rounded-t-3xl shadow-xl border-t border-yellow-400">
-    <p class="mb-3 text-lg font-bold glow">Join the Pack</p>
-    <div class="space-x-6">
-      <a href="https://t.me/The_Alpha_husky" target="_blank" class="underline hover:text-yellow-600">Telegram</a>
-      <a href="https://x.com/The_Alpha_Husky" target="_blank" class="underline hover:text-yellow-600">X (Twitter)</a>
-    </div>
-    <p class="mt-4 text-yellow-200 text-sm">© 2025 Alpha Husky. All rights reserved.</p>
-  </footer>
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1200 });
-  </script>
-  <!-- SKINS SCRIPT -->
+<footer class="bg-yellow-900/90 p-6 text-center text-black mt-12 rounded-t-3xl shadow-xl border-t border-yellow-400">
+
+  <p class="mb-3 text-lg font-bold glow">Join the Pack</p>
+
+  <!-- Primary links (in-site + legal) -->
+  <div class="flex flex-wrap items-center justify-center gap-3 text-sm font-bold mb-4">
+    <a href="#game-first" class="hover:text-yellow-200 transition">Game First</a>
+    <span class="opacity-40">•</span>
+    <a href="#faq" class="hover:text-yellow-200 transition">FAQ</a>
+    <span class="opacity-40">•</span>
+    <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
+    <span class="opacity-40">•</span>
+    <a href="terms.html" class="hover:text-yellow-200 transition">Terms</a>
+    <span class="opacity-40">•</span>
+    <a href="privacy.html" class="hover:text-yellow-200 transition">Privacy</a>
+    <span class="opacity-40">•</span>
+    <a href="cookies.html" class="hover:text-yellow-200 transition">Cookies</a>
+    <span class="opacity-40">•</span>
+    <a href="contact.html" class="hover:text-yellow-200 transition">Contact</a>
+    <span class="opacity-40">•</span>
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="hover:text-yellow-200 transition">X</a>
+  </div>
+
+  <!-- Social links (external) -->
+  <div class="space-x-6">
+    <a href="https://t.me/The_Alpha_husky" target="_blank" rel="noopener" class="underline hover:text-yellow-200 transition">Telegram</a>
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="underline hover:text-yellow-200 transition">X (Twitter)</a>
+  </div>
+
+  <p class="mt-4 text-yellow-200 text-sm">
+    © <span id="ah-year"></span> Alpha Husky. All rights reserved.
+  </p>
+
+  <p class="mt-2 text-yellow-200/80 text-xs">
+    Game first • No wallet required • Not an investment
+  </p>
+</footer>
+
+<script>
+  (function(){
+    var y = document.getElementById('ah-year');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200 });
+</script>
+<!-- SKINS SCRIPT -->
   <script>
     const SKINS = [
       { id:'ASHCLAW', title:'Ashclaw — Founder Blade', src:'assets/skins/ASHCLAW.mp4' },
