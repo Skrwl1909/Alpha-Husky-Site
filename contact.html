@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Alpha Husky</title>
+  <meta name="description" content="Contact Alpha Husky.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior:smooth; }
+    body { font-family:'Open Sans','Share Tech Mono',monospace; }
+    body::before{
+      content:""; position:fixed; inset:0; z-index:-1;
+      background: linear-gradient(135deg, #001f3f 0%, #101010 70%, #1e1e1e 100%);
+      opacity:.95; pointer-events:none;
+    }
+    .glow{ text-shadow:0 0 6px #ffe066, 0 0 18px #f7ca18; }
+    .section{
+      border-radius:1.5rem;
+      box-shadow:0 2px 30px 0 #ffe06622;
+      border:1px solid #ffe06633;
+      background:#191919cc;
+      margin-bottom:2rem;
+      padding:2rem;
+    }
+    a{ text-decoration:none; }
+  </style>
+</head>
+
+<body class="bg-black text-yellow-400">
+  <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
+    <a href="/" class="flex items-center gap-3">
+      <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9">
+      <span class="font-bold text-xl tracking-widest glow"><span class="font-extrabold">Alpha</span> Husky</span>
+    </a>
+    <div class="text-sm md:text-base font-bold flex gap-4">
+      <a class="hover:text-yellow-200 transition" href="/terms.html">Terms</a>
+      <a class="hover:text-yellow-200 transition" href="/privacy.html">Privacy</a>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <section class="section">
+      <h1 class="text-3xl md:text-4xl font-extrabold glow mb-2">Contact</h1>
+      <p class="text-yellow-300/70 text-sm mb-6">For support, verification, or business inquiries</p>
+
+      <div class="space-y-5 text-yellow-200">
+        <div class="p-4 rounded-xl border border-yellow-700/40 bg-black/30">
+          <h2 class="text-xl font-bold text-yellow-300 mb-1">Email</h2>
+          <p class="text-yellow-200"><b>kovciu1909@gmail.com</b></p>
+        </div>
+
+        <div class="p-4 rounded-xl border border-yellow-700/40 bg-black/30">
+          <h2 class="text-xl font-bold text-yellow-300 mb-1">Telegram</h2>
+          <p class="text-yellow-200">
+            Community: <a class="underline hover:text-yellow-100" href="https://t.me/The_Alpha_husky" target="_blank" rel="noopener">t.me/The_Alpha_husky</a>
+          </p>
+          <p class="text-yellow-200 mt-2">
+            Bot: <a class="underline hover:text-yellow-100" href="https://t.me/ALPHA_husky_bot" target="_blank" rel="noopener">t.me/ALPHA_husky_bot</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-yellow-700/30 text-yellow-300/70 text-sm">
+        <p><b>Game first.</b> No wallet required. Not an investment.</p>
+      </div>
+
+      <div class="mt-6">
+        <a href="/" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold hover:bg-yellow-300 transition-all">
+          ← Back to Home
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
