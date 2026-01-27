@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-01-24",
+    "title": "Devlog #HOWLitsMade — WebApp Salvage Back Online + Lootboxes Wired + Consumables Reconnected 🛠️🎁⚡",
+    "status": "SHIPPED",
+    "text": "✅ Big stability day — bringing core loops back to life and making rewards actually feel real.\n\n🧰 1) WebApp Salvage — restored + safe again\nWe brought salvage back online in the WebApp and made it reliable (no ghost gains / no half-applied state).\n• Salvage applies inventory changes only after the ledger-side result is confirmed\n• Clean output summary (Scrap/Shards yielded)\n• Safer flow for duplicate cleanup\n\n🎁 2) Lootboxes — Mystery/Premium/Legendary opening flow wired\nWe connected the box opening flow so boxes can be consumed and rewards can be applied correctly.\n• Box open path moved into /webapp/inventory/use (sync-safe)\n• Drop results apply through ledger-first logic and mirror into materials for UI\n• Foundation ready for proper loot tuning (pools / rarity / pity)\n\n⚡ 3) Consumables — effects restored + visible again\nConsumables were reconnected so they actually do something when used.\n• Effects execute properly on use\n• UI displays the effect feedback (no more silent 'Used item')\n• Buff/effect visibility path re-synced so players can tell what’s active\n\nThis was a systems day — not flashy, but it makes everything else scale and stay stable. Brick by brick 🧱🐺",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
+    "date": "2026-01-25",
+    "title": "Devlog #HOWLitsMade — Loot Tables Finalized + Boxes Activated + New Set + 3 New Consumables 🎁⚔️🧪",
+    "status": "SHIPPED",
+    "text": "✅ Rewards day — boxes are live, loot logic is real, and the content pool got a serious upgrade.\n\n🎲 1) loot_tables.py — closed + tuned (no longer 'next')\nWe finished the loot tables properly, including the real tuning knobs:\n• Reward pools per box (Mystery / Premium / Legendary)\n• Rarity odds + slot weights\n• Pity rules to avoid dead streaks and keep openings exciting\n\n🎁 2) Mystery/Premium/Legendary boxes — activated for players\nBoxes are now usable end-to-end:\n• Use box → roll drops → apply rewards → update balances → inventory refresh\n• The goal is simple: opening a box should never feel empty\n\n🧪 3) 3 new consumables + effects added\nAdded three new consumables to the pool and shipped their gameplay effects.\n• Effects execute consistently\n• Feedback shows up in UI so players know what they triggered\n\n⚔️ 4) New gear set added\nA new set is now part of the item universe and ready to appear through rewards.\n• Integrated into the item pool cleanly\n• Ready for drops / future event hooks\n\nThis was the missing piece for progression: rewards with structure, fairness, and momentum. 🐺",
+    "links": [
+      { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
   "date": "2026-01-20",
   "title": "Devlog #HOWLitsMade — Pet Arena Scaling + Boxes Loot + Shop UX + Consumables ⚔️🐾🎁",
   "status": "SHIPPED",
