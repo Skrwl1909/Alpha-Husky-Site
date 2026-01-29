@@ -1,5 +1,15 @@
 [
   {
+  "date": "2026-01-29",
+  "title": "Devlog #HOWLitsMade — Legendary Path Main Reward Preview + Limited-Time Skin Claim + Eclipse Raider Set 🌘🐺",
+  "status": "SHIPPED",
+  "text": "✅ Today was about clarity + urgency + fresh content — making the WebApp feel more like a real game loop.\n\n🏆 1) Legendary Path — Main Reward Preview (Mission Board)\nLegendary Path now shows ONE main reward for the whole track (not per step), so it reads like a real progression path.\n• Added track-level reward preview (shown once per Legendary Path card)\n• Cloudinary-first icon handling (consistent with the rest of the project)\n• Hard size cap to prevent the icon from taking over the entire quest card\n• Track progress displayed as doneSteps/totalSteps for clean readability\n\n🧬 2) Limited-Time Skin — claim window flow\nA limited skin drop can now be claimed only during an active time window.\n• One-time claim behavior + guard rails\n• Designed to be run_id/idempotent friendly (spam-safe)\n• Ready for optional code/password hunts for lore events\n\n🌑 3) New gear content — Eclipse Raider set\nDropped a new gear set to expand rewards and keep the loot ecosystem moving.\n• Prepared for future lootbox/shop rotations and WebApp inspect/compare\n\nNot a noisy day — but a very real step forward. Brick by brick 🧱🐺",
+  "links": [
+    { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+  ]
+},
+  {
     "date": "2026-01-24",
     "title": "Devlog #HOWLitsMade — WebApp Salvage Back Online + Lootboxes Wired + Consumables Reconnected 🛠️🎁⚡",
     "status": "SHIPPED",
