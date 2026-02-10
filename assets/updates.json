@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-02-10",
+    "title": "Devlog #HOWLitsMade — Missions → WebApp: 404 Fixed + Routes Live + Mission Board Highlight 🐾",
+    "status": "IN_PROGRESS",
+    "text": "✅ Big blocker removed: Missions endpoints are now properly wired into the WebApp API (no more 404s).\n\n🔧 1) Missions → WebApp routing fix\n• Registered Missions routes on the correct aiohttp app (make_state_app)\n• Confirmed live via /webapp/missions/ping\n• Cleaned up legacy TG handler references that caused a startup crash (NameError)\n\n🧭 2) Mission Board visibility update\n• Mission Board UI was highlighted/cleaned up so it reads clearer as a core game loop entry\n\n⏭️ Next (tomorrow)\n• Final cutover: /mission in Telegram becomes “Open Missions (WebApp)”\n• Disable old TG mission buttons/callbacks\n• Full E2E run: state → refresh offers → start → countdown → resolve\n\nClose to the finish line. WebApp-first missions are about to be fully locked in 🐺",
+    "links": [
+      { "label": "WebApp", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
   "date": "2026-01-29",
   "title": "Devlog #HOWLitsMade — Legendary Path Main Reward Preview + Limited-Time Skin Claim + Eclipse Raider Set 🌘🐺",
   "status": "SHIPPED",
