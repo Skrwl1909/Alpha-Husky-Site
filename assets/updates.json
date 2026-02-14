@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-02-13",
+    "title": "Devlog #HOWLitsMade — FAQ Hub Rebuild + Rarity Glow + Visual Stability ✅",
+    "status": "SHIPPED",
+    "text": "✅ Rebuilt the FAQ into a proper hub (clean sections, real info, no fluff)\n\n✨ Equipment UI polish\n• Rarity-based glow now matches item rarity (finally feels like a game)\n\n🧼 Visual stability pass\n• Fixed missing graphics / blank squares issues across the WebApp\n\n🧰 Content drop\n• Added new items / 1–2 gear sets live\n\n⏭️ Next\n• Keep rolling more small fixes + upgrades into “What’s New”\n• Continue Missions polish toward the final look/feel\n\nRest is earned family 🐺🔥",
+    "links": [
+      { "label": "WebApp", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
+    "date": "2026-02-14",
+    "title": "Devlog #HOWLitsMade — Missions Timer Locked + Stylish Waiting Screen (WebApp) 🕒",
+    "status": "IN_PROGRESS",
+    "text": "✅ Missions → WebApp core flow progress\n• Timer/countdown now holds stable (no more blinking back to offers)\n• Added pending-start sync + state polling to bridge backend confirmation\n• Waiting screen supports RUNNING → READY → Resolve properly\n\n🧱 UI groundwork\n• Missions sheet behavior improved (closer to a real feature, less like a random popup)\n• Backgrounds wired for offers + waiting modes\n\n⏭️ Next\n• “Visual punch” pass: header, badges, stronger game framing (no backend rebuild)\n• Tighten full-screen feel + presentation so it reads like a core game loop\n\nBig step forward. Now it’s about making it look as good as it plays 🐺",
+    "links": [
+      { "label": "WebApp", "url": "https://app.alphahusky.win" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
     "date": "2026-02-10",
     "title": "Devlog #HOWLitsMade — Missions → WebApp: 404 Fixed + Routes Live + Mission Board Highlight 🐾",
     "status": "IN_PROGRESS",
