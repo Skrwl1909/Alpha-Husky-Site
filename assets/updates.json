@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-02-18",
+    "title": "Devlog #HOWLitsMade — Missions Loot Cleanup + WebApp Home Flow Rebuild + Forge Shards Craft Locked ✅",
+    "status": "SHIPPED",
+    "text": "✅ Missions loot + UI cleanup\n• Fixed the backend item catalog so Missions “possible rare drop” shows only real items that can actually drop (no ghost/locked items)\n• Repaired broken/duplicated mission helpers so the loop is cleaner + consistent\n\n🏠 WebApp Home rebuild\n• Rebuilt Home into a clean Bottom Nav + Hub / Character / Share sheets flow\n• Fixed BackButton + nav stack so modals behave properly (no weird back / stuck layers)\n• Skins opens reliably again\n• Polished hero-frame setup (overlay/frame behavior + modal blur) so the character card feels more premium + consistent\n\n⚒️ Forge Shards craft — end-to-end locked in\nBackend\n• Shard balance is uid/ledger-truth first (no more mismatched “have vs UI”)\n• Added run_id idempotency (plan → spend → apply → done) so retries don’t dupe or eat shards\n• Craft uses deterministic roll plan per run_id + resume-safe inventory apply\n• Added pity per slot (stored + returned) + roll config/pools debug for tuning\n• Added Quest hook on craft (meta + rarity counts + uncommon+ totals) and made it idempotent per run_id\n• Hardened inventory handling (no more empty refs / refresh glitches, better proof logs)\n\nFront\n• Updated forge.js to read pityMap properly, show cost/after preview, and keep local pity override\n• Improved craft UX: shows results with rarity tags, handles backend made[] objects, richer debug on errors\n• Added support for Epic/Legendary chances (display + effective probabilities) + stores last rollCfg from backend\n\nNet: Forge craft is now stable, replay-safe, ledger-consistent, and ready for real players.\n\nRest is earned family 🐺🔥",
+    "links": [
+      { "label": "WebApp", "url": "https://app.alphahusky.win" },
+      { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
     "date": "2026-02-13",
     "title": "Devlog #HOWLitsMade — FAQ Hub Rebuild + Rarity Glow + Visual Stability ✅",
     "status": "SHIPPED",
