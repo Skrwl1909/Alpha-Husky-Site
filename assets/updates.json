@@ -1,5 +1,27 @@
 [
   {
+  "date": "2026-02-27",
+  "title": "Devlog #HOWLitsMade — Factions Backend + HQ Foundation + Influence Routing Live 🛡️",
+  "status": "IN PROGRESS",
+  "text": "🛡️ Factions — WebApp integration\n• Rebuilt /choosefaction flow to use data_store + faction_core (no legacy load/save race)\n• Added dedicated webapp_factions.py module (clean separation from dashboard)\n• Hardened auth layer (no more 500 on missing init_data, proper 401 responses)\n• Confirmed CORS + Telegram init verification working correctly\n\n🏰 Faction HQ foundation\n• Created faction_store.py (persistent faction treasury layer)\n• Added /webapp/faction/hq/state endpoint\n• Added donate handler writing to data/factions/<faction>.json\n• Wired influence + faction logic separation\n\n🗺️ Influence system sync\n• Registered influence routes cleanly in make_state_app()\n• Normalized building mapping for map → backend cohesion\n• Fixed Telegram popup limitation (max 3 buttons) in faction picker\n\n⚠️ Pending\n• Frontend ensureFaction() currently loops due to local faction state mismatch vs backend truth\n• Patrol + Donate blocked until state sync bridge is finalized\n\nNet: Faction system is structurally live. Backend stable. UI-state reconciliation next.\n\nFoundations before expansion. 🐺",
+  "links": [
+    { "label": "WebApp", "url": "https://app.alphahusky.win" },
+    { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
+    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+  ]
+},
+{
+  "date": "2026-02-25",
+  "title": "Devlog #HOWLitsMade — Official Telegram App Center Listing 🎉",
+  "status": "SHIPPED",
+  "text": "🚀 Alpha Husky officially joined Telegram App Center.\n\n• Completed technical compliance requirements\n• Finalized Stars-based support flow (Supporter + Patron)\n• Confirmed WebApp production domain + API routing stability\n• Passed CORS + auth verification under Telegram environment\n\nThis marks our first official ecosystem listing.\nFrom a solo-built experiment to a verified Telegram Mini App.\n\nNext: scale DAU, refine onboarding, and strengthen core loops.\n\nOne year building. Still here. 🐺🔥",
+  "links": [
+    { "label": "WebApp", "url": "https://app.alphahusky.win" },
+    { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
+    { "label": "Telegram App Center", "url": "https://telegram.org/apps" }
+  ]
+},
+  {
     "date": "2026-02-18",
     "title": "Devlog #HOWLitsMade — Missions Loot Cleanup + WebApp Home Flow Rebuild + Forge Shards Craft Locked ✅",
     "status": "SHIPPED",
