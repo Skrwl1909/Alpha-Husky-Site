@@ -1,5 +1,16 @@
 [
   {
+  "date": "2026-03-05",
+  "title": "Devlog #HOWLitsMade — Faction HQ Goes Live + Influence UX + Map Pin CSS Scoped 🐺",
+  "status": "IN PROGRESS",
+  "text": "🏰 Faction HQ — now actually live\n• Fixed WebApp auth/UID edge-case that caused 401 / wrong user context\n• Members tracking is persistent (membersCount no longer stuck at 0)\n• HQ Donate is confirmed working: pulls BOTH Bones + Scrap from player balance and fills treasury + feed\n\n🗺️ Influence / Map — stability + clarity\n• Verified /webapp/map/leaders returns leadersMap correctly\n• Scoped pin styling to #pins to prevent modal soft-lock (map-pin transform no longer breaks Influence modal)\n• Prepared full Influence.js upgrade: inline status box + clear reason messages (COOLDOWN / NOT_ENOUGH / etc.) + cooldown countdown on Patrol button\n\n✅ Net\nHQ is no longer a mock — it’s a real treasury loop. Map influence is functional and now moving into player-facing clarity.\n\n⚠️ Next\n• Ship the updated Influence.js (cache-bust WEBAPP_VER) and confirm cooldown/toasts UX on mobile + desktop\n• Ensure Influence donate reads ledger-truth consistently (no false have=0)\n• Make map feel “alive” after actions: always apply leadersMap / refresh pins immediately on success\n• Optional: verify HQ Upgrade E2E (level/bonuses) once treasury has funds\n\nQuiet progress. Real loop. 🐺",
+  "links": [
+    { "label": "WebApp", "url": "https://app.alphahusky.win" },
+    { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
+    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+  ]
+},
+  {
   "date": "2026-02-27",
   "title": "Devlog #HOWLitsMade — Factions Backend + HQ Foundation + Influence Routing Live 🛡️",
   "status": "IN PROGRESS",
