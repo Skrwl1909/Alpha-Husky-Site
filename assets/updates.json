@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-03-10",
+    "title": "Devlog #HOWLitsMade — Siege Unfreeze + Real Combat Stats Wired 🐺",
+    "status": "IN PROGRESS",
+    "text": "⚔️ Siege — major stability progress\n• Tracked down the real `Next Fight` freeze path during active siege resolution\n• Refactored siege duel flow so the duel itself no longer blocks the whole siege path the old way\n• Added timeout protection + disk fallback for stuck user reads during duel resolution\n• Confirmed duel now resolves instead of hard-freezing the bot\n\n🧠 Combat truth — real stats now used\n• Wired siege duel stats to the real `compute_full_stats()` pipeline\n• Siege now reads actual full player totals instead of only raw/base stats\n• Confirmed totals match correctly for real player data (base + gear + pet)\n\n📜 Siege event flow\n• Started wiring siege event/feed logging deeper into the backend flow\n• Watch / launch / fight / result states are moving toward clearer player-facing visibility\n\n✅ Net\nSiege is no longer just conceptually working — the core fight loop now survives live execution and uses real player strength.\n\n⚠️ Next\n• Finish quick E2E checks for watch / active siege / final result branches\n• Surface siege feed properly inside the modal so players can actually see battle progress\n• Add simple anti-spam / loading state on `Next Fight`\n• Keep tightening edge cases around state refresh and stale fight handling\n\nQuiet progress. Hard part first. 🐺",
+    "links": [
+      { "label": "WebApp", "url": "https://app.alphahusky.win" },
+      { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+},
+  {
   "date": "2026-03-05",
   "title": "Devlog #HOWLitsMade — Faction HQ Goes Live + Influence UX + Map Pin CSS Scoped 🐺",
   "status": "IN PROGRESS",
