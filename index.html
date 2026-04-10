@@ -332,6 +332,7 @@
     <div class="md:space-x-2 text-sm md:text-base font-bold hidden md:block">
       <a href="#game-first" class="hover:text-yellow-200 transition">Game First</a>
 <a href="#faq" class="hover:text-yellow-200 transition">FAQ</a>
+<a href="#launch-docs" class="hover:text-yellow-200 transition">Docs</a>
 <a href="#game" class="hover:text-yellow-200 transition">Game</a>
 <a href="#lore" class="hover:text-yellow-200 transition">Lore</a>
 <a href="#legends" class="hover:text-yellow-200 transition">Legends</a>
@@ -353,6 +354,7 @@
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 bg-black/95 p-4 border-t border-yellow-900 absolute top-full left-0 right-0 z-50">
       <a href="#game" class="hover:text-yellow-200 transition">Game</a>
+      <a href="#launch-docs" class="hover:text-yellow-200 transition">Docs</a>
       <a href="#lore" class="hover:text-yellow-200 transition">Lore</a>
       <a href="#legends" class="hover:text-yellow-200 transition">Legends</a>
       <a href="#gallery" class="hover:text-yellow-200 transition">Gallery</a>
@@ -458,6 +460,39 @@
     Game first. No wallet required. Not an investment.
   </p>
 </section>
+<!-- Launch Docs -->
+<section id="launch-docs" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-3 glow">Launch Docs</h2>
+  <p class="text-yellow-200 max-w-3xl">
+    Built first. Token second. This section keeps launch clarity in one place: purpose, holder flow, and official safety guidance.
+  </p>
+  <div id="launch-docs-root" class="mt-6 text-yellow-300/70" data-src="/partials/launch-docs.html">
+    Loading launch docs...
+  </div>
+</section>
+<script>
+(() => {
+  const root = document.getElementById("launch-docs-root");
+  if (!root) return;
+
+  const ver = window.WEBAPP_VER ? `?v=${window.WEBAPP_VER}` : "?v=1";
+  const src = (root.dataset.src || "/partials/launch-docs.html") + ver;
+
+  fetch(src, { cache: "no-store" })
+    .then((res) => {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.text();
+    })
+    .then((html) => {
+      root.innerHTML = html;
+      root.dataset.loaded = "true";
+    })
+    .catch((err) => {
+      console.error("Launch docs load failed:", err);
+      root.innerHTML = '<p class="text-yellow-300">Could not load Launch Docs. Check <code>/partials/launch-docs.html</code>.</p>';
+    });
+})();
+</script>
   <!-- What's New / Social Proof Section -->
 <section id="whats-new" class="section p-8 md:p-12 max-w-5xl mx-auto">
   <h2 class="text-3xl md:text-4xl font-bold mb-6 glow text-center">What's New in the Pack</h2>
