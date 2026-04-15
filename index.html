@@ -161,15 +161,13 @@
 <section id="fullmoon-banner" class="fm-wrap fm-compact">
   <picture class="fm-bg">
     <source type="image/png"
-      srcset="/assets/event/fullmoon_banner.png 900w,
-              /assets/event/fullmoon_banner.png 1280w,"
-      sizes="100vw"
-      onerror="this.srcset='https://source.unsplash.com/900x300/?moon,husky 900w, https://source.unsplash.com/1280x320/?moon,husky 1280w';">
+      srcset="/assets/event/fullmoon_banner_1920x360.png 1920w,
+              /assets/event/fullmoon_banner.png 2560w"
+      sizes="100vw">
     <img
       src="/assets/event/fullmoon_banner_1920x360.png"
-      srcset="/assets/event/fullmoon_banner_900x300.png 900w,
-              /assets/event/fullmoon_banner_1280x320.png 1280w,
-              /assets/event/fullmoon_banner.png 1920w"
+      srcset="/assets/event/fullmoon_banner_1920x360.png 1920w,
+              /assets/event/fullmoon_banner.png 2560w"
       sizes="100vw"
       alt="Full Moon Rising — Alpha Husky"
       loading="eager" decoding="async"
@@ -181,7 +179,7 @@
       <h3 class="fm-title">Full Moon Rising</h3>
       <p class="fm-sub">
         Next full moon: <span id="fm-dd">0</span>d : <span id="fm-hh">00</span>h : <span id="fm-mm">00</span>m : <span id="fm-ss">00</span>s<br>
-        <span id="fm-phase">Current Phase: Loading...</span>
+        <span id="fm-phase">Current Phase: Calculating…</span>
         <div class="fm-progress mt-2">
           <div id="fm-progress-bar" class="bg-yellow-400 h-2 rounded" style="width: 0%;"></div>
         </div>
@@ -466,9 +464,7 @@
   <p class="text-yellow-200 max-w-3xl">
     Built first. Token second. This section keeps launch clarity in one place: purpose, holder flow, and official safety guidance.
   </p>
-  <div id="launch-docs-root" class="mt-6 text-yellow-300/70" data-src="/partials/launch-docs.html">
-    Loading launch docs...
-  </div>
+  <div id="launch-docs-root" class="mt-6 text-yellow-300/70" data-src="/partials/launch-docs.html" aria-live="polite"></div>
 </section>
 <script>
 (() => {
@@ -489,7 +485,7 @@
     })
     .catch((err) => {
       console.error("Launch docs load failed:", err);
-      root.innerHTML = '<p class="text-yellow-300">Could not load Launch Docs. Check <code>/partials/launch-docs.html</code>.</p>';
+      root.innerHTML = '<p class="text-yellow-300">Launch docs are temporarily unavailable.</p>';
     });
 })();
 </script>
@@ -547,7 +543,7 @@
       </div>
       <p class="text-yellow-200 mb-3">Good Morning Howlers 🫡🐺 Happy new week 💚 Festina lente- make haste slowly. One done > five started. I will fix a couple things and test. Drop your single target below- lets keep each other honest.</p>
       <img src="https://pbs.twimg.com/media/G2j4QLOW4AAoKYK.jpg" alt="Post image" class="w-full rounded-lg mb-3">
-      <a href="https://x.com/The_Alpha_Husky/status/1975101396627464372" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a><grok-card data-id="0d4ae0" data-type="citation_card"></grok-card>
+      <a href="https://x.com/The_Alpha_Husky/status/1975101396627464372" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
     </div>
    
     <!-- Post 2: Good night howlers (Oct 5, 2025) -->
@@ -561,7 +557,7 @@
       </div>
       <p class="text-yellow-200 mb-3">Good night howlers 🐺🫡 Lights out. Momentum stays. We build while the city sleeps. One howl, one path. 🐺 #JoinThePack</p>
       <img src="https://pbs.twimg.com/media/G2hpWVZXUAAgHGw.jpg" alt="Post image" class="w-full rounded-lg mb-3">
-      <a href="https://x.com/The_Alpha_Husky/status/1974944271452299349" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a><grok-card data-id="144dab" data-type="citation_card"></grok-card>
+      <a href="https://x.com/The_Alpha_Husky/status/1974944271452299349" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
     </div>
    
     <!-- Post 3: Good afternoon howlers (Oct 5, 2025) -->
@@ -575,7 +571,7 @@
       </div>
       <p class="text-yellow-200 mb-3">Good afternoon howlers ! 🐺🫡 Sunday is for recovery, reset, clarity. Light movement, fresh air, water. Clear the tabs, tidy the board, pick one gentle 25-min starter for Monday. Early night, calm mind. No rush- just alignment. Same mission, steadier pace. Brick by brick. One Pack. P.S Small sneak peek: next Full Moon is Tue, 7 Oct 👀 we start the week under bright skies. 🌕 #JoinThePack #AlphaHusky</p>
       <img src="https://pbs.twimg.com/media/G2geMr1XcAAy4Xi.jpg" alt="Post image" class="w-full rounded-lg mb-3">
-      <a href="https://x.com/The_Alpha_Husky/status/1974861642325192738" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a><grok-card data-id="76c64b" data-type="citation_card"></grok-card>
+      <a href="https://x.com/The_Alpha_Husky/status/1974861642325192738" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
     </div>
   </div>
  
@@ -733,23 +729,6 @@
       <span class="inline-block ml-1 bg-yellow-500/70 text-black text-xs px-2 py-0.5 rounded-full font-bold">Archive!</span>
     </button>
   </div>
- 
-  <!-- GALLERY -->
-<section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center">Gallery</h2>
-  <p class="text-lg text-yellow-200 mb-6 text-center">Discover the Pack's visual masterpieces – from pixel art to contest memes. #JoinThePack</p>
- 
-  <!-- Tabs Navigation -->
-  <div class="flex justify-center mb-6 bg-yellow-900/20 rounded-t-xl p-1">
-    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200 mr-1 active" data-tab="general">
-      General Gallery
-    </button>
-    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200" data-tab="howloween">
-      Howl o Ween – Contest Graphics
-      <span class="inline-block ml-1 bg-yellow-500/70 text-black text-xs px-2 py-0.5 rounded-full font-bold">Archive!</span>
-    </button>
-  </div>
- 
   <!-- Tab Content: General Gallery (default active) -->
   <div id="tab-general" class="tab-content bg-yellow-900/20 rounded-xl p-6 border border-yellow-700/50 active">
     <h3 class="text-2xl font-bold mb-4 glow text-center">Pack Classics</h3>
@@ -812,8 +791,8 @@
         <img
           src="/assets/event/howloween/entry-5.jpg"
           alt="Contest graphic #5 from Howl o Ween – Mysterious hooded husky with skeletal hands clutching a pile of carved pumpkins in a stormy autumn forest filled with falling leaves"
-          class="w-full rounded-xl border border-yellow-700/50 sha-zoom-in hover:shadow-yellow-500/30 transition"
-          loading="lazy" decoding="async">dow cursor
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
         <figcaption class="mt-2 text-yellow-300 text-xs text-center">#5 – Chucky Pom terror</figcaption>
       </figure>
       <figure class="relative">
@@ -876,7 +855,6 @@
   <section id="chapter1" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow">
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 1: The Awakening</h3>
     <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Origin Story – Part 1"</p>
-    <img src="chapter1_image.png" alt="Chapter 1 Image" class="w-full max-w-md mx-auto mb-4 rounded-xl shadow-xl">
     <div class="text-yellow-200 text-base mb-4">
       <p>Long before validators hummed, before memecoins mooned and rugged... There was only the Chain.</p>
       <p class="mb-4">A cold, uncaring wilderness of code. In it wandered a nameless husky...</p>
@@ -1192,7 +1170,7 @@ It had no need.
     <div class="mt-8 text-yellow-300 text-center italic">Achievements, NFTs, and more features coming soon.</div>
   </section>
   <!-- COMMUNITY -->
-  <section id="community" class="section p-8 md:p-12 max-w-5xl mx-auto">
+  <section id="community-links" class="section p-8 md:p-12 max-w-5xl mx-auto">
     <h2 class="text-3xl font-bold mb-4 glow">Community</h2>
     <p class="text-lg text-yellow-200 mb-6">Built by believers, fueled by organic growth. <span class="text-yellow-400">No VCs. No hype pumps. Just the Pack.</span></p>
     <div class="flex justify-center gap-4 mt-4 flex-wrap">
@@ -1201,25 +1179,21 @@ It had no need.
     </div>
     <div class="mt-8 text-yellow-300 text-center italic">#BuiltByBelievers #JoinThePack</div>
   </section>
-  <!-- POLICY / TASKS (Notion embed) -->
+  <!-- POLICY -->
   <section id="policy" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Community Policy & Tasks</h2>
-    <p class="text-yellow-200 text-sm mb-4">
-      Team note: to <span class="font-bold text-yellow-300">claim</span> a task, sign into Notion inside the embed and assign yourself. Changes sync live.
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Community Policy</h2>
+    <p class="text-yellow-200 mb-4">
+      Alpha Husky is game-first and community-first. Respect other players, avoid impersonation, and use only official channels.
     </p>
-    <div class="rounded-2xl border border-yellow-700/40 overflow-hidden bg-black">
-      <!-- If your CSP is strict, allow frame-src for *.notion.so and *.notion.site -->
-      <iframe
-        src="https://exuberant-volcano-05f.notion.site/ebd/67ff20ba27274b9897babc37937e9940"
-        class="w-full h-[80vh]"
-        style="border:0;"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer">
-      </iframe>
+    <div class="rounded-2xl border border-yellow-700/40 bg-black/40 p-5 text-yellow-200">
+      <ul class="list-disc list-inside space-y-2">
+        <li>No scams, fake support accounts, or DM pressure.</li>
+        <li>No harassment, hate speech, or doxxing.</li>
+        <li>Report suspicious behavior through official Telegram or X channels.</li>
+      </ul>
     </div>
-    <p class="mt-3 text-yellow-300 text-xs">
-      Prefer a full page? <a class="underline text-yellow-200 font-bold" target="_blank" href="https://exuberant-volcano-05f.notion.site/ebd/67ff20ba27274b9897babc37937e9940">Open in Notion →</a>
+    <p class="mt-4 text-yellow-300 text-sm">
+      Full legal terms: <a class="underline text-yellow-200 font-bold" href="terms.html">Terms</a> • <a class="underline text-yellow-200 font-bold" href="privacy.html">Privacy</a> • <a class="underline text-yellow-200 font-bold" href="cookies.html">Cookies</a>
     </p>
   </section>
   <!-- Roadmap (Interactive Timeline with AOS) -->
@@ -1266,9 +1240,7 @@ It had no need.
   </div>
 
   <!-- Detailed Roadmap Loader (fetches /partials/roadmap.html) -->
-  <div id="detailed-roadmap-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/roadmap.html">
-    Loading detailed roadmap…
-  </div>
+  <div id="detailed-roadmap-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/roadmap.html"></div>
 
   <!-- Builder’s Notes (hybrid: link opens new tab by default; JS loads inline on click) -->
   <div class="text-center mt-8">
@@ -1281,9 +1253,7 @@ It had no need.
   </div>
 
   <!-- Builder's Notes Loader (fetches /partials/builders-note.html) -->
-  <div id="builders-note-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/builders-note.html">
-    Loading builder's notes…
-  </div>
+  <div id="builders-note-root" class="mt-8 hidden text-yellow-300/70" data-src="/partials/builders-note.html"></div>
 </section>
 
 <script>
@@ -1312,7 +1282,7 @@ It had no need.
         await loadPartialInto(rootDR, "/partials/roadmap.html");
       } catch (e) {
         console.error("Detailed roadmap load failed:", e);
-        rootDR.innerHTML = '<p class="text-yellow-300">Could not load detailed roadmap. Check <code>/public/partials/roadmap.html</code> path.</p>';
+        rootDR.innerHTML = '<p class="text-yellow-300">Detailed roadmap is temporarily unavailable.</p>';
       }
     }
 
@@ -1339,7 +1309,7 @@ It had no need.
         await loadPartialInto(rootBN, "/partials/builders-note.html");
       } catch (e) {
         console.error("Builder's notes load failed:", e);
-        rootBN.innerHTML = '<p class="text-yellow-300">Could not load builder\'s notes. Check <code>/public/partials/builders-note.html</code> path.</p>';
+        rootBN.innerHTML = '<p class="text-yellow-300">Builder\'s notes are temporarily unavailable.</p>';
       }
     }
 
@@ -1565,23 +1535,14 @@ It had no need.
       return card;
     }
     async function loadUpdates(){
-      const paths = [
-        '/assets/data/updates.json',
-        'assets/data/updates.json',
-        '/assets/updates.json',
-        'assets/updates.json'
-      ];
-      let items = null, lastErr = null, usedPath = null;
-      for (const p of paths){
-        try{
-          const res = await fetch(p + '?ts=' + Date.now());
-          if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + res.statusText + ' for ' + p);
-          items = await res.json();
-          usedPath = p;
-          break;
-        }catch(err){
-          lastErr = err;
-        }
+      const source = '/assets/updates.json';
+      let items = null, lastErr = null;
+      try{
+        const res = await fetch(source + '?ts=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + res.statusText + ' for ' + source);
+        items = await res.json();
+      }catch(err){
+        lastErr = err;
       }
       const list = document.getElementById(listElId);
       if(!items){
@@ -1625,7 +1586,7 @@ It had no need.
         });
         list.appendChild(btn);
       }
-      console.log('[Updates] Loaded from:', usedPath, 'items:', items.length);
+      console.log('[Updates] Loaded from:', source, 'items:', items.length);
     }
     document.addEventListener('DOMContentLoaded', loadUpdates);
   })();
