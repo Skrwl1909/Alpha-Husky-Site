@@ -218,6 +218,57 @@
       line-height: 1.35;
     }
 
+    .ah-right-rail {
+      display: grid;
+      gap: 1.5rem;
+      align-content: start;
+    }
+    .ah-nft-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.6rem;
+      border: 1px solid rgba(250, 204, 21, 0.16);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(250,204,21,0.10), transparent 24%),
+        radial-gradient(circle at 86% 82%, rgba(96,165,250,0.10), transparent 26%),
+        linear-gradient(180deg, rgba(11,11,17,0.95), rgba(18,18,26,0.98));
+      box-shadow:
+        0 16px 44px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    .ah-nft-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.03), transparent 34%),
+        linear-gradient(315deg, rgba(250,204,21,0.035), transparent 40%);
+    }
+    .ah-luxe-kicker {
+      color: rgba(255, 244, 214, 0.92);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .ah-nft-model {
+      border-radius: 1.1rem;
+      border: 1px solid rgba(250,204,21,0.12);
+      background: rgba(255,255,255,0.035);
+    }
+    .ah-nft-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.48rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250,204,21,0.12);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,244,214,0.9);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
   </style>
 </head>
 <body class="bg-black text-yellow-400">
@@ -1281,12 +1332,12 @@ It had no need.
 <section id="launch-trust" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
   <div class="ah-luxe-shell p-6 md:p-8">
     <div class="relative z-10">
-      <div class="ah-luxe-badge mb-4">Launch Clarity & Planned Depth</div>
+      <div class="ah-luxe-badge mb-4">Launch Clarity • Planned Depth • Future Collectibles</div>
       <div class="max-w-4xl mb-8">
         <h2 class="text-3xl md:text-5xl font-bold mb-4 glow text-yellow-200">Built First. Token Second. World Depth With a Real Plan.</h2>
         <p class="text-yellow-100/90 text-base md:text-lg leading-8">
           Alpha Husky is being built as a live world first — with gameplay, identity, and long-term direction already in motion.
-          The token is a support layer for future growth, not the foundation of legitimacy. And systems like Instinct Tree exist to show where that world is heading next.
+          The token is a support layer for future growth, not the foundation of legitimacy. Systems like Instinct Tree and a carefully staged NFT direction exist to show where that world can deepen next without drifting into pay-to-win or empty market theater.
         </p>
       </div>
 
@@ -1348,42 +1399,87 @@ It had no need.
           </div>
         </div>
 
-        <aside class="ah-instinct-card p-6 md:p-7 text-yellow-100">
-          <div class="relative z-10">
-            <div class="ah-luxe-badge mb-4">Planned Progression System</div>
-            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-yellow-100 leading-tight">Instinct Tree<br><span class="text-yellow-300">Long-Term Build Identity</span></h3>
-            <p class="text-yellow-100/88 text-base leading-8 mb-5">
-              Instinct Tree is a planned post-launch progression layer designed to deepen player identity across combat, crafting, pets, and faction play — without replacing the importance of gear, forging, or the world itself.
-            </p>
-            <p class="text-yellow-100/72 text-sm leading-7 mb-6">
-              The goal is specialization, not power creep. It expands the game’s existing loops instead of competing with them, giving players a stronger build path inside the world they are already shaping.
-            </p>
+        <aside class="ah-right-rail">
+          <section class="ah-instinct-card p-6 md:p-7 text-yellow-100">
+            <div class="relative z-10">
+              <div class="ah-luxe-badge mb-4">Planned Progression System</div>
+              <h3 class="text-3xl md:text-4xl font-bold mb-4 text-yellow-100 leading-tight">Instinct Tree<br><span class="text-yellow-300">Long-Term Build Identity</span></h3>
+              <p class="text-yellow-100/88 text-base leading-8 mb-5">
+                Instinct Tree is a planned post-launch progression layer designed to deepen player identity across combat, crafting, pets, and faction play — without replacing the importance of gear, forging, or the world itself.
+              </p>
+              <p class="text-yellow-100/72 text-sm leading-7 mb-6">
+                The goal is specialization, not power creep. It expands the game’s existing loops instead of competing with them, giving players a stronger build path inside the world they are already shaping.
+              </p>
 
-            <div class="space-y-3 mb-6">
-              <article class="ah-instinct-path p-4">
-                <h4 class="text-lg font-bold text-yellow-200 mb-1">Hunt</h4>
-                <p class="text-sm text-yellow-100/72 leading-6">Combat pressure, survival, mission efficiency, and decisive finishing power.</p>
-              </article>
-              <article class="ah-instinct-path p-4">
-                <h4 class="text-lg font-bold text-yellow-200 mb-1">Salvage</h4>
-                <p class="text-sm text-yellow-100/72 leading-6">Material flow, forging discipline, loot efficiency, and long-term account progression.</p>
-              </article>
-              <article class="ah-instinct-path p-4">
-                <h4 class="text-lg font-bold text-yellow-200 mb-1">Pack</h4>
-                <p class="text-sm text-yellow-100/72 leading-6">Pet synergy, faction contribution, map actions, and stronger presence across the world.</p>
-              </article>
-            </div>
+              <div class="space-y-3 mb-6">
+                <article class="ah-instinct-path p-4">
+                  <h4 class="text-lg font-bold text-yellow-200 mb-1">Hunt</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Combat pressure, survival, mission efficiency, and decisive finishing power.</p>
+                </article>
+                <article class="ah-instinct-path p-4">
+                  <h4 class="text-lg font-bold text-yellow-200 mb-1">Salvage</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Material flow, forging discipline, loot efficiency, and long-term account progression.</p>
+                </article>
+                <article class="ah-instinct-path p-4">
+                  <h4 class="text-lg font-bold text-yellow-200 mb-1">Pack</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Pet synergy, faction contribution, map actions, and stronger presence across the world.</p>
+                </article>
+              </div>
 
-            <div class="flex flex-wrap gap-2.5 mb-6" aria-label="Example Instinct Tree nodes">
-              <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Trail Sense</strong> — faster mission flow</div>
-              <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Tempered Hand</strong> — steadier forge progression</div>
-              <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Alpha Bond</strong> — stronger pet-backed identity</div>
-            </div>
+              <div class="flex flex-wrap gap-2.5 mb-6" aria-label="Example Instinct Tree nodes">
+                <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Trail Sense</strong> — faster mission flow</div>
+                <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Tempered Hand</strong> — steadier forge progression</div>
+                <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Alpha Bond</strong> — stronger pet-backed identity</div>
+              </div>
 
-            <div class="pt-5 border-t border-yellow-500/15 text-sm text-yellow-100/72 leading-7">
-              <strong class="text-yellow-200">Concept Card:</strong> Instinct Tree is planned as a post-launch expansion layer created to strengthen replayability, progression depth, and long-term player identity across the world of Alpha Husky.
+              <div class="pt-5 border-t border-yellow-500/15 text-sm text-yellow-100/72 leading-7">
+                <strong class="text-yellow-200">Concept Card:</strong> Instinct Tree is planned as a post-launch expansion layer created to strengthen replayability, progression depth, and long-term player identity across the world of Alpha Husky.
+              </div>
             </div>
-          </div>
+          </section>
+
+          <section class="ah-nft-card p-6 md:p-7 text-yellow-100">
+            <div class="relative z-10">
+              <div class="ah-luxe-badge mb-4">NFT Direction</div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-3 text-yellow-100 leading-tight">World-Linked Collectibles<br><span class="text-yellow-300">Premium First. Utility With Restraint.</span></h3>
+              <p class="text-yellow-100/84 text-sm leading-7 mb-5">
+                If Alpha Husky moves into NFTs, the strongest path is not chart support or combat advantage. It is premium identity: cosmetics, prestige, collectibility, and world-linked supporter presence that feels native to the game.
+              </p>
+
+              <div class="ah-nft-model p-4 mb-4">
+                <div class="ah-luxe-kicker mb-2">Recommended Start</div>
+                <p class="text-sm leading-7 text-yellow-100/86">
+                  A small, highly polished <span class="text-yellow-300 font-bold">Founder / Supporter Relics</span> collection with effective ownership unlocks — skins, frames, badges, and subtle prestige marks that stay active while the wallet still holds the NFT.
+                </p>
+              </div>
+
+              <div class="grid gap-3 mb-5">
+                <article class="ah-nft-model p-4">
+                  <h4 class="text-base font-bold text-yellow-200 mb-1">Model A — Safe Premium</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Cleanest first step: premium cosmetics, prestige, and a mature collector identity before token complexity grows.</p>
+                </article>
+                <article class="ah-nft-model p-4">
+                  <h4 class="text-base font-bold text-yellow-200 mb-1">Model B — Growth Collector</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Later expansion into faction, event, or seasonal sets that reward long-term collecting without turning Alpha into a drop machine.</p>
+                </article>
+                <article class="ah-nft-model p-4">
+                  <h4 class="text-base font-bold text-yellow-200 mb-1">Model C — Dynamic Premium</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Long-term vision: NFTs that evolve with milestones, factions, and world events once the base product is fully stable.</p>
+                </article>
+              </div>
+
+              <div class="flex flex-wrap gap-2.5 mb-5" aria-label="NFT direction principles">
+                <div class="ah-nft-chip">No pay-to-win</div>
+                <div class="ah-nft-chip">No price promises</div>
+                <div class="ah-nft-chip">Cosmetics & prestige first</div>
+                <div class="ah-nft-chip">Effective ownership unlocks</div>
+              </div>
+
+              <div class="pt-5 border-t border-yellow-500/15 text-sm text-yellow-100/72 leading-7">
+                <strong class="text-yellow-200">Direction Card:</strong> The most reasonable start is a single premium collection grounded in the Alpha world. Collector sets can come later. Truly dynamic NFTs should only arrive once the world has earned them.
+              </div>
+            </div>
+          </section>
         </aside>
       </div>
 
