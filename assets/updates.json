@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-04-29",
+    "title": "Devlog #HOWLitsMade — Awakening Origin Flow + Fresh Start Readiness 🐺",
+    "status": "IN PROGRESS",
+    "text": "🌑 The Awakening — origin flow upgraded\n• Turned the Origin screen into a proper cinematic choice moment instead of plain text options\n• Added the final Origin seal assets for Stray, Broken, Forgotten, and Unchained\n• Screen 3 now reveals the full origin artwork first, then brings in selectable cards with emblem, lore copy, selected glow, and check state\n• Fixed the flow so Claim Origin no longer completes onboarding immediately — it now moves into the final 4/4 Enter the Pack screen\n• Final completion now happens on Enter the Pack with the selected origin safely passed to the existing backend endpoint\n\n🧬 Identity layer, not power\n• Origins remain lore/profile identity only\n• No XP, stats, currency, items, buffs, materials, tokens, or gameplay advantage added\n• Pack Profile can surface the Origin chip as part of player identity\n\n🛡️ Fresh Start readiness fixes\n• Removed equipment level gating so players can equip owned gear regardless of level\n• Kept the real checks intact: item exists, player owns it, item slot is valid, and the slot is supported\n• Added limited rookie mission protection so fresh players are not immediately discouraged by repeated early losses\n• First protected Easy mission can rescue a failed battle into a win; the next protected Easy attempts get a high success floor\n• Hard / Very Hard missions do not receive rookie protection\n\n💸 HowlPay path\n• Continued preparing the WebApp HowlPay route/module path for optional $HOWL cosmetic payments\n• Kept this separate from holder verification, support purchases, wallet links, and cosmetic entitlement logic\n• Still no pay-to-win: support and token identity remain cosmetic/status layers\n\n✅ Net\nThe first minutes of Alpha Husky are getting much cleaner: players enter through lore, choose an identity, can equip what they own, and have a fairer shot at completing early missions.\n\n⚠️ Next\n• Deploy and smoke test the final Awakening 1/4 → 4/4 flow on Telegram\n• Restart backend for the equipment and starter mission fixes\n• Run the Fresh Start audit + dry-run mapping before any real reset\n• Preserve trust, reset gameplay, and keep support/holder cosmetics safe\n\nBuilt first. Token second. Pack always. 🐺",
+    "links": [
+      { "label": "WebApp", "url": "https://app.alphahusky.win" },
+      { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
+      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    ]
+  },
+  {
     "date": "2026-03-10",
     "title": "Devlog #HOWLitsMade — Siege Unfreeze + Real Combat Stats Wired 🐺",
     "status": "IN PROGRESS",
