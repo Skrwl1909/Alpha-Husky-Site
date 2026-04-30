@@ -341,14 +341,35 @@
       align-items: center;
       margin-bottom: 1.15rem;
     }
-    .howl-token-logo {
+    .howl-token-logo-wrap {
+      position: relative;
+      display: inline-grid;
+      place-items: center;
       width: 4.75rem;
       height: 4.75rem;
       border-radius: 999px;
       border: 1px solid rgba(250, 204, 21, 0.28);
       background: rgba(0,0,0,0.45);
-      object-fit: cover;
       box-shadow: 0 0 28px rgba(96,165,250,0.18);
+      overflow: hidden;
+    }
+    .howl-token-logo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      background: rgba(0,0,0,0.45);
+      z-index: 1;
+    }
+    .howl-token-logo-fallback {
+      color: rgba(254,243,199,0.82);
+      font-size: 0.86rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      text-align: center;
     }
     .howl-token-kicker,
     .howl-panel-kicker {
@@ -659,7 +680,7 @@
       .howl-token-brand {
         grid-template-columns: 1fr;
       }
-      .howl-token-logo {
+      .howl-token-logo-wrap {
         width: 4rem;
         height: 4rem;
       }
@@ -1253,7 +1274,10 @@
     <div class="howl-token-grid">
       <div class="howl-token-left">
         <div class="howl-token-brand">
-          <img src="logo.png" alt="Alpha Husky token logo" class="howl-token-logo" loading="lazy">
+          <div class="howl-token-logo-wrap">
+            <span class="howl-token-logo-fallback" aria-hidden="true">$HOWL</span>
+            <img src="assets/howl-token-logo.png" alt="Official $HOWL token logo" class="howl-token-logo" loading="lazy" data-howl-token-logo>
+          </div>
           <div>
             <p class="howl-token-kicker">Official Alpha Husky Token</p>
             <h2 class="howl-token-title"><span>$HOWL</span> Token Hub</h2>
