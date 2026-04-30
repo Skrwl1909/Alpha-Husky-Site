@@ -8,7 +8,7 @@
   <meta name="description" content="Alpha Husky: Fluffy? No. A husky-led movement with epic lore, Telegram game, and community raids. #JoinThePack for exclusive drops under the Full Moon.">
   <meta property="og:title" content="Alpha Husky – Lore, Game, Purpose">
   <meta property="og:description" content="Led by Alphas. Play, build, howl. Discover the legends and join the pack.">
-  <meta property="og:image" content="/alpha_logo.png">
+  <meta property="og:image" content="/logo.png">
   <meta property="og:url" content="https://thealphahusky.netlify.app">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -267,6 +267,427 @@
       color: rgba(255,244,214,0.9);
       font-size: 0.78rem;
       line-height: 1.35;
+    }
+
+    .howl-token-section {
+      padding: 0 !important;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .howl-token-section img:hover {
+      transform: none;
+    }
+    .howl-token-shell {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.75rem;
+      border: 1px solid rgba(250, 204, 21, 0.18);
+      background:
+        radial-gradient(circle at 14% 10%, rgba(59, 130, 246, 0.16), transparent 26%),
+        radial-gradient(circle at 86% 14%, rgba(250, 204, 21, 0.10), transparent 24%),
+        radial-gradient(circle at 80% 92%, rgba(251, 146, 60, 0.12), transparent 28%),
+        linear-gradient(180deg, rgba(6, 8, 13, 0.98), rgba(13, 14, 20, 0.98));
+      box-shadow: 0 28px 80px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,255,255,0.05);
+      padding: clamp(1.25rem, 3vw, 2.5rem);
+    }
+    .howl-token-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.045), transparent 27%),
+        linear-gradient(315deg, rgba(250,204,21,0.04), transparent 36%);
+    }
+    .howl-token-grid,
+    .howl-token-trust,
+    .howl-token-lower {
+      position: relative;
+      z-index: 1;
+    }
+    .howl-token-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(330px, 0.9fr);
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+    .howl-token-left,
+    .howl-token-panel,
+    .howl-chart-card,
+    .howl-safety-card,
+    .howl-trust-card {
+      border: 1px solid rgba(250, 204, 21, 0.12);
+      background: rgba(255,255,255,0.04);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+      backdrop-filter: blur(7px);
+    }
+    .howl-token-left,
+    .howl-token-panel,
+    .howl-chart-card,
+    .howl-safety-card {
+      border-radius: 1.25rem;
+      padding: clamp(1rem, 2.4vw, 1.6rem);
+    }
+    .howl-token-left {
+      background:
+        radial-gradient(circle at top left, rgba(96,165,250,0.10), transparent 30%),
+        rgba(0,0,0,0.24);
+    }
+    .howl-token-brand {
+      display: grid;
+      grid-template-columns: auto minmax(0,1fr);
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.15rem;
+    }
+    .howl-token-logo {
+      width: 4.75rem;
+      height: 4.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250, 204, 21, 0.28);
+      background: rgba(0,0,0,0.45);
+      object-fit: cover;
+      box-shadow: 0 0 28px rgba(96,165,250,0.18);
+    }
+    .howl-token-kicker,
+    .howl-panel-kicker {
+      margin: 0 0 0.45rem;
+      color: rgba(191, 219, 254, 0.88);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .howl-token-title {
+      margin: 0;
+      color: #fff4cf;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 900;
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+    .howl-token-title span {
+      color: #facc15;
+    }
+    .howl-token-subtitle {
+      margin: 0.45rem 0 0;
+      color: rgba(254, 243, 199, 0.76);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .howl-token-lede {
+      max-width: 46rem;
+      color: rgba(255, 248, 220, 0.88);
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+    .howl-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1.1rem;
+    }
+    .howl-pill-row span {
+      border: 1px solid rgba(250, 204, 21, 0.13);
+      background: rgba(0,0,0,0.26);
+      border-radius: 999px;
+      color: rgba(255, 244, 214, 0.88);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 0.55rem 0.78rem;
+      white-space: nowrap;
+    }
+    .howl-mint-card {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) auto;
+      gap: 0.85rem;
+      align-items: center;
+      margin-top: 1.25rem;
+      border: 1px solid rgba(96,165,250,0.16);
+      background: rgba(0,0,0,0.34);
+      border-radius: 1rem;
+      padding: 0.95rem;
+    }
+    .howl-mint-label {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: rgba(250,204,21,0.82);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .howl-mint-value {
+      display: block;
+      color: #fff7d6;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .howl-copy-feedback {
+      min-height: 1.4rem;
+      margin-top: 0.65rem;
+      color: #bfdbfe;
+      font-size: 0.85rem;
+      font-weight: 800;
+      opacity: 0;
+      transition: opacity 0.18s ease;
+    }
+    .howl-copy-feedback.is-visible {
+      opacity: 1;
+    }
+    .howl-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.15rem;
+    }
+    .howl-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      border-radius: 0.7rem;
+      border: 1px solid rgba(96,165,250,0.38);
+      padding: 0.72rem 1rem;
+      font-weight: 900;
+      line-height: 1.1;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+    .howl-btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(191,219,254,0.75);
+    }
+    .howl-btn-primary {
+      background: #facc15;
+      color: #090909;
+      border-color: rgba(96,165,250,0.7);
+    }
+    .howl-btn-ghost {
+      background: rgba(0,0,0,0.20);
+      color: #fef3c7;
+    }
+    .howl-btn-copy {
+      background: rgba(96,165,250,0.12);
+      color: #dbeafe;
+      cursor: pointer;
+    }
+    .howl-market-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .howl-market-state {
+      border-radius: 999px;
+      border: 1px solid rgba(96,165,250,0.18);
+      background: rgba(96,165,250,0.08);
+      color: #dbeafe;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.35rem 0.62rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .howl-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+    .howl-stat {
+      min-width: 0;
+      border-radius: 0.95rem;
+      border: 1px solid rgba(250,204,21,0.10);
+      background: rgba(0,0,0,0.28);
+      padding: 0.85rem;
+    }
+    .howl-stat span {
+      display: block;
+      color: rgba(254,243,199,0.62);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .howl-stat strong {
+      display: block;
+      margin-top: 0.25rem;
+      color: #fff7d6;
+      font-size: 1.08rem;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+    .howl-stat-change.is-up { color: #86efac; }
+    .howl-stat-change.is-down { color: #fca5a5; }
+    .howl-market-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-top: 0.95rem;
+      color: rgba(254,243,199,0.62);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+    .howl-market-foot a {
+      color: #fde68a;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .howl-token-lower {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.7fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .howl-chart-card,
+    .howl-safety-card {
+      background:
+        radial-gradient(circle at top right, rgba(96,165,250,0.09), transparent 28%),
+        rgba(0,0,0,0.24);
+    }
+    .howl-chart-embed {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      min-height: 320px;
+      border-radius: 1rem;
+      border: 1px solid rgba(96,165,250,0.18);
+      background: rgba(0,0,0,0.32);
+    }
+    .howl-chart-embed iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+      display: block;
+    }
+    .howl-chart-fallback h3,
+    .howl-safety-card h3 {
+      margin: 0 0 0.55rem;
+      color: #fef3c7;
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+    .howl-chart-fallback p,
+    .howl-safety-card p,
+    .howl-safety-card li {
+      color: rgba(255,248,220,0.78);
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+    .howl-safety-card ul {
+      display: grid;
+      gap: 0.45rem;
+      margin: 0.85rem 0 0;
+      padding: 0;
+    }
+    .howl-safety-card li {
+      list-style: none;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .howl-safety-card li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.72rem;
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 999px;
+      background: #facc15;
+    }
+    .howl-token-trust {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 1.25rem;
+    }
+    .howl-trust-card {
+      border-radius: 1rem;
+      padding: 0.9rem;
+      min-width: 0;
+    }
+    .howl-trust-card span {
+      display: inline-flex;
+      border-radius: 999px;
+      border: 1px solid rgba(96,165,250,0.18);
+      background: rgba(96,165,250,0.08);
+      color: #dbeafe;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      padding: 0.28rem 0.48rem;
+      text-transform: uppercase;
+    }
+    .howl-trust-card h3 {
+      margin: 0.65rem 0 0.3rem;
+      color: #fde68a;
+      font-size: 1rem;
+      font-weight: 900;
+    }
+    .howl-trust-card p,
+    .howl-trust-card a {
+      color: rgba(255,248,220,0.72);
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+    .howl-trust-card a {
+      color: #fef3c7;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    @media (max-width: 1040px) {
+      .howl-token-grid,
+      .howl-token-lower {
+        grid-template-columns: 1fr;
+      }
+      .howl-token-trust {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 640px) {
+      .howl-token-shell {
+        border-radius: 1.2rem;
+        padding: 1rem;
+      }
+      .howl-token-brand {
+        grid-template-columns: 1fr;
+      }
+      .howl-token-logo {
+        width: 4rem;
+        height: 4rem;
+      }
+      .howl-mint-card,
+      .howl-stats-grid,
+      .howl-token-trust {
+        grid-template-columns: 1fr;
+      }
+      .howl-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .howl-btn {
+        width: 100%;
+      }
+      .howl-market-head,
+      .howl-market-foot {
+        display: grid;
+      }
+      .howl-market-state {
+        text-align: left;
+        white-space: normal;
+      }
+      .howl-chart-embed,
+      .howl-chart-embed iframe {
+        min-height: 260px;
+        height: 260px;
+      }
     }
 
   </style>
@@ -827,67 +1248,142 @@
   <p class="mt-4 text-yellow-300/70 text-sm italic">Game first. No wallet required. Not an investment.</p>
 </section>
 
-<section id="howl-token" class="section p-6 md:p-10 max-w-6xl mx-auto mb-10">
-  <div class="ah-luxe-shell p-5 md:p-7">
-    <div class="relative z-10 grid lg:grid-cols-[minmax(0,1fr)_280px] gap-6 items-stretch">
-      <div>
-        <div class="flex flex-wrap items-center gap-3 mb-4">
-          <span class="ah-luxe-badge">Official</span>
-          <span class="inline-flex items-center rounded-full border border-blue-400/20 bg-blue-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-blue-100">HOWL is live</span>
+<section id="howl-token" class="section howl-token-section max-w-6xl mx-auto mb-10">
+  <div class="howl-token-shell">
+    <div class="howl-token-grid">
+      <div class="howl-token-left">
+        <div class="howl-token-brand">
+          <img src="logo.png" alt="Alpha Husky token logo" class="howl-token-logo" loading="lazy">
+          <div>
+            <p class="howl-token-kicker">Official Alpha Husky Token</p>
+            <h2 class="howl-token-title"><span>$HOWL</span> Token Hub</h2>
+            <p class="howl-token-subtitle">Game first. Token second.</p>
+          </div>
         </div>
 
-        <h2 class="text-3xl md:text-5xl font-bold mb-4 glow text-yellow-200">Official HOWL Token</h2>
-
-        <div class="space-y-4 text-yellow-100/90 text-base leading-8 max-w-4xl">
-          <p><strong class="text-yellow-300">HOWL is live.</strong></p>
-          <p>Alpha Husky was built first as a live Telegram Mini App RPG, not as a promise waiting for a token.</p>
-          <p>HOWL is a support layer for the continued development of the Alpha Husky world: servers, visuals, systems, community tools, and future expansion.</p>
-        </div>
-
-        <div class="mt-5 grid sm:grid-cols-3 gap-3 text-sm">
-          <div class="rounded-xl border border-yellow-700/40 bg-black/35 p-3 font-bold text-yellow-200">Not pay-to-win</div>
-          <div class="rounded-xl border border-yellow-700/40 bg-black/35 p-3 font-bold text-yellow-200">Not a gate pass</div>
-          <div class="rounded-xl border border-yellow-700/40 bg-black/35 p-3 font-bold text-yellow-200">Not required to enter the game</div>
-        </div>
-
-        <p class="mt-5 text-yellow-100/86 leading-8">
-          It is a way for early supporters to back the build and become part of the pack.
+        <p class="howl-token-lede">
+          Alpha Husky was built as a game first. $HOWL is the support and community layer for the existing world - not a pay-to-win token.
         </p>
 
-        <div class="mt-6 rounded-2xl border border-yellow-500/20 bg-black/45 p-4">
-          <p class="text-xs font-bold uppercase tracking-[0.16em] text-yellow-300/80 mb-2">Contract Address</p>
-          <p class="font-mono text-sm md:text-base text-yellow-100 break-all">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</p>
-          <p class="mt-3 text-sm text-yellow-200/75">Always verify the CA from official Alpha Husky sources only.</p>
+        <div class="howl-pill-row" aria-label="HOWL principles">
+          <span>Holder perks</span>
+          <span>Cosmetics layer</span>
+          <span>Community layer</span>
+          <span>No pay-to-win</span>
         </div>
 
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="https://solscan.io/token/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">View on Solscan</a>
-          <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Open Game / Join CT</a>
-          <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">X / Launch Post</a>
+        <div class="howl-mint-card">
+          <div>
+            <span class="howl-mint-label">Official mint</span>
+            <code id="howl-mint-value" class="howl-mint-value">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</code>
+          </div>
+          <button type="button" class="howl-btn howl-btn-copy" data-howl-copy aria-label="Copy HOWL mint address">Copy</button>
         </div>
+        <p class="howl-copy-feedback" data-howl-copy-status aria-live="polite"></p>
 
-        <p class="mt-4 text-xs md:text-sm text-yellow-300/70">Official links only. DYOR. Fresh launches are high risk.</p>
+        <div class="howl-actions" aria-label="HOWL actions">
+          <a class="howl-btn howl-btn-primary" href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener noreferrer">Play Alpha Husky</a>
+          <a class="howl-btn howl-btn-ghost" href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-dex-link>Open DexScreener</a>
+          <button type="button" class="howl-btn howl-btn-copy" data-howl-copy>Copy Mint</button>
+        </div>
       </div>
 
-      <aside class="rounded-2xl border border-yellow-500/15 bg-black/30 p-5 flex flex-col justify-between">
-        <div class="flex justify-center">
-          <img src="assets/howl-token-logo.png" alt="Alpha Husky HOWL token logo" class="w-32 h-32 rounded-full border border-yellow-500/25 bg-black/40 object-cover shadow-xl">
+      <aside class="howl-token-panel" aria-live="polite">
+        <div class="howl-market-head">
+          <div>
+            <p class="howl-panel-kicker">Live market data</p>
+            <h3 class="text-xl font-extrabold text-yellow-100">DexScreener snapshot</h3>
+          </div>
+          <span class="howl-market-state" data-howl-market-state>Loading</span>
         </div>
-        <div class="mt-5 space-y-3 text-sm text-yellow-100/86">
-          <div class="flex items-center justify-between gap-4 border-t border-yellow-500/15 pt-4">
-            <span class="text-yellow-300/75">Token name</span>
-            <strong class="text-yellow-100 text-right">Alpha Husky</strong>
-          </div>
-          <div class="flex items-center justify-between gap-4 border-t border-yellow-500/15 pt-3">
-            <span class="text-yellow-300/75">Ticker</span>
-            <strong class="text-yellow-100 text-right">HOWL</strong>
-          </div>
-          <div class="border-t border-yellow-500/15 pt-3">
-            <span class="block text-yellow-300/75 mb-1">Official website</span>
-            <a href="https://thealphahusky.netlify.app/" target="_blank" rel="noopener" class="font-bold text-yellow-200 underline hover:text-yellow-100 break-all">thealphahusky.netlify.app</a>
-          </div>
+
+        <div class="howl-stats-grid">
+          <article class="howl-stat">
+            <span>Price</span>
+            <strong data-howl-stat="price">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>Market Cap / FDV</span>
+            <strong data-howl-stat="marketCap">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>Liquidity</span>
+            <strong data-howl-stat="liquidity">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>24h Volume</span>
+            <strong data-howl-stat="volume24h">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>24h Change</span>
+            <strong class="howl-stat-change" data-howl-stat="change24h">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>24h Buys / Sells</span>
+            <strong data-howl-stat="txns24h">&mdash;</strong>
+          </article>
+        </div>
+
+        <div class="howl-market-foot">
+          <span>Last updated <time data-howl-last-updated>&mdash;</time></span>
+          <a href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-dex-link>Data by DexScreener</a>
         </div>
       </aside>
+    </div>
+
+    <div class="howl-token-lower">
+      <div class="howl-chart-card">
+        <div class="howl-chart-embed" data-howl-chart-embed hidden></div>
+        <div class="howl-chart-fallback" data-howl-chart-fallback>
+          <p class="howl-panel-kicker">Chart</p>
+          <h3>Live chart opens on DexScreener</h3>
+          <p>
+            The website keeps the market panel compact so Alpha Husky still reads as a game world first. Open the full live chart externally when you want deeper trading detail.
+          </p>
+          <div class="howl-actions">
+            <a class="howl-btn howl-btn-ghost" href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-chart-link>Open Live Chart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="howl-safety-card">
+        <p class="howl-panel-kicker">Verify before interacting</p>
+        <h3>Official links only</h3>
+        <p><strong class="text-yellow-200">Official mint:</strong> <code class="howl-mint-value">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</code></p>
+        <ul>
+          <li>No seed phrase. Alpha Husky will never ask for it.</li>
+          <li>No forced wallet connection to play.</li>
+          <li>No pay-to-win token mechanics.</li>
+          <li>Always verify official links from this website or @The_Alpha_Husky.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="howl-token-trust" aria-label="HOWL trust status">
+      <article class="howl-trust-card">
+        <span>Live</span>
+        <h3>DexScreener</h3>
+        <p>Live market data.</p>
+        <a href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-dex-link>Open market</a>
+      </article>
+      <article class="howl-trust-card">
+        <span>Submitted</span>
+        <h3>Jupiter VRFD</h3>
+        <p>Submitted to Jupiter VRFD &mdash; Pending review</p>
+        <a href="https://verified.jup.ag/tokens" target="_blank" rel="noopener noreferrer">View VRFD</a>
+      </article>
+      <article class="howl-trust-card">
+        <span>Pending</span>
+        <h3>Solscan</h3>
+        <p>Profile / Reputation pending</p>
+        <a href="https://solscan.io/token/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer">Open Solscan</a>
+      </article>
+      <article class="howl-trust-card">
+        <span>Live Beta</span>
+        <h3>Mini App</h3>
+        <p>Alpha Husky is playable through Telegram.</p>
+        <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener noreferrer">Play now</a>
+      </article>
     </div>
   </div>
 </section>
@@ -2301,5 +2797,11 @@ It had no need.
     });
   });
 </script>
+<script>
+  window.HOWL_TOKEN_CONFIG = {
+    HOWL_CHART_EMBED_URL: ""
+  };
+</script>
+<script src="assets/js/howl-token.js" defer></script>
 </body>
 </html>
