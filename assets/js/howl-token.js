@@ -16,8 +16,24 @@
     if (!section) return;
 
     setupCopyButtons(section);
+    setupLogoFallback(section);
     setupChart(section);
     loadMarketData(section);
+  }
+
+  function setupLogoFallback(section) {
+    section.querySelectorAll("[data-howl-token-logo]").forEach((image) => {
+      if (image.complete && image.naturalWidth === 0) {
+        hideBrokenLogo(image);
+        return;
+      }
+
+      image.addEventListener("error", () => hideBrokenLogo(image), { once: true });
+    });
+  }
+
+  function hideBrokenLogo(image) {
+    image.hidden = true;
   }
 
   function setupCopyButtons(section) {
