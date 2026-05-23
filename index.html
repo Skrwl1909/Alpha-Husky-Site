@@ -622,9 +622,87 @@
       border-radius: 999px;
       background: #facc15;
     }
+    .howl-safety-check {
+      margin-top: 1rem;
+      border-radius: 1rem;
+      border: 1px solid rgba(34,197,94,0.18);
+      background:
+        radial-gradient(circle at top left, rgba(34,197,94,0.11), transparent 32%),
+        rgba(0,0,0,0.24);
+      padding: 0.95rem;
+    }
+    .howl-safety-check-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      margin-bottom: 0.65rem;
+    }
+    .howl-safety-check-title {
+      color: #fef3c7;
+      font-size: 0.9rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+    .howl-safety-check-badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid rgba(34,197,94,0.28);
+      background: rgba(34,197,94,0.12);
+      color: #bbf7d0;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      padding: 0.3rem 0.55rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .howl-safety-check p {
+      margin: 0;
+      color: rgba(255,248,220,0.76);
+      font-size: 0.84rem;
+      line-height: 1.65;
+    }
+    .howl-safety-check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem;
+      margin: 0.75rem 0;
+    }
+    .howl-safety-check-grid span {
+      border-radius: 0.75rem;
+      border: 1px solid rgba(250,204,21,0.08);
+      background: rgba(0,0,0,0.22);
+      color: rgba(255,248,220,0.78);
+      font-size: 0.76rem;
+      font-weight: 800;
+      line-height: 1.35;
+      padding: 0.55rem 0.65rem;
+    }
+    .howl-safety-check-grid strong {
+      color: #bbf7d0;
+      display: block;
+      font-size: 0.86rem;
+      margin-top: 0.12rem;
+    }
+    .howl-safety-check a {
+      color: #fef3c7;
+      font-size: 0.82rem;
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .howl-safety-note {
+      margin-top: 0.55rem !important;
+      color: rgba(255,248,220,0.58) !important;
+      font-size: 0.76rem !important;
+      line-height: 1.55 !important;
+    }
     .howl-token-trust {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 0.85rem;
       margin-top: 1.25rem;
     }
@@ -686,7 +764,8 @@
       }
       .howl-mint-card,
       .howl-stats-grid,
-      .howl-token-trust {
+      .howl-token-trust,
+      .howl-safety-check-grid {
         grid-template-columns: 1fr;
       }
       .howl-actions {
@@ -1380,6 +1459,22 @@
           <li>No pay-to-win token mechanics.</li>
           <li>Always verify official links from this website or @The_Alpha_Husky.</li>
         </ul>
+
+        <div class="howl-safety-check" aria-label="Public RugCheck token risk check">
+          <div class="howl-safety-check-head">
+            <div class="howl-safety-check-title">Public safety check</div>
+            <span class="howl-safety-check-badge">RugCheck: Good</span>
+          </div>
+          <p>RugCheck currently shows $HOWL as <strong class="text-green-200">Good</strong> with a <strong class="text-green-200">7 / 100</strong> risk score.</p>
+          <div class="howl-safety-check-grid" aria-label="RugCheck highlights">
+            <span>LP locked <strong>100%</strong></span>
+            <span>Mint authority <strong>disabled</strong></span>
+            <span>Insider networks <strong>not detected</strong></span>
+            <span>Creator balance <strong>sold</strong></span>
+          </div>
+          <a href="https://rugcheck.xyz/tokens/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer">Open RugCheck</a>
+          <p class="howl-safety-note">Public risk checks are not audits or guarantees. Always verify the official mint before interacting.</p>
+        </div>
       </div>
     </div>
 
@@ -1389,6 +1484,12 @@
         <h3>DexScreener</h3>
         <p>Live market data.</p>
         <a href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-dex-link>Open market</a>
+      </article>
+      <article class="howl-trust-card">
+        <span>Good</span>
+        <h3>RugCheck</h3>
+        <p>Public token risk check: Good — 7 / 100 risk.</p>
+        <a href="https://rugcheck.xyz/tokens/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer">Open RugCheck</a>
       </article>
       <article class="howl-trust-card">
         <span>Submitted</span>
