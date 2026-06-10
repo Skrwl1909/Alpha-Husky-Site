@@ -135,7 +135,7 @@
 
     <section class="card" id="gallery" style="margin-top:16px;">
       <h2>Community Gallery</h2>
-        <p class="sub">Auto-refreshed from submissions. Sample images are shown until the first entries arrive.</p>
+        <p class="sub">Community submissions are published here when official entries are available.</p>
       <div class="grid" id="grid"></div>
     </section>
 
@@ -154,8 +154,7 @@
     };
     const DEV = new URLSearchParams(location.search).has('dev');
 
-    // STREAM: wklej link gdy będzie dostępny; inaczej użyjemy wyszukiwarki
-    const STREAM_URL = ""; // ← TODO: oficjalny link streamu gdy będzie
+    const STREAM_URL = "";
     const SEARCH_URL = "https://www.youtube.com/results?search_query=lunar+eclipse+live+2025";
 
     // Format helpers
@@ -260,23 +259,24 @@
         }
       } catch(e){}
       // Fallback: open bot deep link
-      const url = 'https://t.me/ALPHA_husky_bot?start=claim_eclipse';
+      const url = 'https://t.me/Alpha_husky_bot/AlphaHuskyHub';
       window.open(url, '_blank', 'noopener');
     });
 
-    // Gallery loader (optional JSON at /data/photo_relics.json)
     const grid = document.getElementById('grid');
-    const placeholder = [
-      {url:'/images/eclipse/placeholders/p1.jpg', author:'anon', location:'Wasteland Ridge'},
-      {url:'/images/eclipse/placeholders/p2.jpg', author:'anon', location:'Ashplain'},
-      {url:'/images/eclipse/placeholders/p3.jpg', author:'anon', location:'Moon Lab Outskirts'},
-    ];
     fetch('/data/photo_relics.json', {cache:'no-store'})
-      .then(r => r.ok ? r.json() : placeholder)
-      .then(items => Array.isArray(items) ? items : placeholder)
-      .catch(() => placeholder)
+      .then(r => r.ok ? r.json() : [])
+      .then(items => Array.isArray(items) ? items : [])
+      .catch(() => [])
       .then(items => {
         grid.innerHTML = '';
+        if (!items.length) {
+          const empty = document.createElement('div');
+          empty.className = 'card';
+          empty.innerHTML = '<p class="sub">Community submissions are announced through official Alpha Husky channels when available.</p>';
+          grid.appendChild(empty);
+          return;
+        }
         for(const it of items){
           const card = document.createElement('div');
           card.className = 'photo';

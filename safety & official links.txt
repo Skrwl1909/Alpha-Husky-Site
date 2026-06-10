@@ -1,21 +1,36 @@
-Alpha Husky Token — Safety & Official Links
+Alpha Husky - HOWL - Safety & Official Links
 
-Please verify everything through official Alpha Husky channels only.
+Use only confirmed Alpha Husky links and verification details.
+
+Official project:
+Alpha Husky
+
+Token:
+HOWL
+
+Official token mint / CA:
+FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS
+
+Official website:
+https://thealphahusky.netlify.app/
+
+Official X:
+https://x.com/The_Alpha_Husky
+
+Official Telegram community:
+https://t.me/Alpha_Husky_ct
+
+Official Telegram Mini App / bot:
+https://t.me/Alpha_husky_bot/AlphaHuskyHub
+
+Official logo:
+/assets/howl-token-logo.png
+
+Official contact:
+kovciu1909@gmail.com
 
 Safety reminders:
-
-only trust the official contract address posted by official Alpha Husky accounts
-ignore fake replies, fake accounts, impersonators, and scam links
-no one from the team will ever ask for your seed phrase
-no legitimate support flow will ask you to send funds in DMs
-only connect your wallet through official Alpha Husky flows
-
-Official links:
-
-Official X: https://x.com/The_Alpha_Husky
-Official Telegram: https://t.me/The_Alpha_husky
-Official Website: https://thealphahusky.netlify.app/
-Official Contract Address: [paste official CA at launch]
-
-If anything feels off, slow down and verify first.
-Alpha Husky will only publish official launch information through its confirmed channels.
+- Verify the mint and links from the official website or official X account.
+- Ignore fake replies, impersonators, scam links, and DM pressure.
+- No one from the project will ask for your seed phrase.
+- Connect wallets only through official Alpha Husky flows.

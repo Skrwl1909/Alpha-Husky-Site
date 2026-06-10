@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alpha Husky | Live Telegram Mini App RPG</title> <!-- WDROŻONO: Ulepszony title dla SEO -->
-  <!-- WDROŻONO: Meta tags dla SEO i social sharing -->
+  <title>Alpha Husky | Live Telegram Mini App RPG</title> 
+  
   <meta name="description" content="Alpha Husky is a live Telegram Mini App RPG. HOWL is the support and community layer for the world, not a pay-to-win gate pass.">
   <meta property="og:title" content="Alpha Husky | Live Telegram Mini App RPG">
   <meta property="og:description" content="A live Telegram Mini App RPG with factions, progression, and HOWL as the support and community layer.">
@@ -16,8 +16,8 @@
   <meta name="twitter:description" content="A live Telegram Mini App RPG with HOWL as the support and community layer.">
   <meta name="twitter:image" content="https://thealphahusky.netlify.app/assets/howl-token-logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- WDROŻONO: Dodano Open Sans -->
-  <!-- AOS for animations -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     html { scroll-behavior: smooth; }
@@ -1004,12 +1004,12 @@
 
 </head>
 <body class="bg-black text-yellow-400">
-  <!-- TEASER -->
+  
 <div id="ah-teaser"
      class="sticky top-0 z-50 border-b border-yellow-400/20 bg-black/60 backdrop-blur px-3 py-2">
   <div class="mx-auto max-w-6xl flex items-center justify-center gap-3 text-sm">
     <span class="glow">🚀 WebApp beta is live</span>
-    <a href="https://t.me/ALPHA_husky_bot"
+    <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub"
        class="glitch-btn rounded-full border border-yellow-400/40 px-3 py-1 font-bold hover:bg-yellow-400/10">
       Open in Telegram
     </a>
@@ -1030,7 +1030,7 @@
   }
 </script>
   
-<!-- === FULL MOON COUNTDOWN BANNER (naprawiony: ścieżka /assets/events/ + fallback) === -->
+
 <section id="fullmoon-banner" class="fm-wrap fm-compact">
   <picture class="fm-bg">
     <source type="image/png"
@@ -1051,12 +1051,12 @@
       <span class="fm-tag">Lunar Event</span>
       <h3 class="fm-title">Full Moon Rising</h3>
       <p class="fm-sub">
-        Next full moon: <span id="fm-dd">0</span>d : <span id="fm-hh">00</span>h : <span id="fm-mm">00</span>m : <span id="fm-ss">00</span>s<br>
-        <span id="fm-phase">Current Phase: Calculating…</span>
-        <div class="fm-progress mt-2">
-          <div id="fm-progress-bar" class="bg-yellow-400 h-2 rounded" style="width: 0%;"></div>
-        </div>
+        <span id="fm-countdown-text">Lunar timing updates automatically when the page loads.</span><br>
+        <span id="fm-phase">Phase updates automatically.</span>
       </p>
+      <div class="fm-progress mt-2">
+        <div id="fm-progress-bar" class="bg-yellow-400 h-2 rounded" style="width: 0%;"></div>
+      </div>
     </div>
     <div class="fm-right">
       <a href="#lore" class="fm-cta">Join Lunar Raid</a>
@@ -1095,15 +1095,12 @@
         return;
       }
 
-      const ddEl = document.getElementById('fm-dd');
-      const hhEl = document.getElementById('fm-hh');
-      const mmEl = document.getElementById('fm-mm');
-      const ssEl = document.getElementById('fm-ss');
+      const countdownEl = document.getElementById('fm-countdown-text');
       const phaseEl = document.getElementById('fm-phase');
       const progressBar = document.getElementById('fm-progress-bar');
       const dismissBtn = document.getElementById('fm-dismiss');
 
-      if (!ddEl || !phaseEl) return;
+      if (!countdownEl || !phaseEl) return;
 
       // Kalibrowany na 15.10.2025 (Waning Crescent ~33%, Beaver Moon 5.11.2025 13:19 UTC)
       const LUNAR_CYCLE = 29.53058867;
@@ -1172,10 +1169,7 @@
         const h = Math.floor((s % 86400) / 3600);
         const m = Math.floor((s % 3600) / 60);
         const sec = s % 60;
-        ddEl.textContent = d;
-        hhEl.textContent = String(h).padStart(2, "0");
-        mmEl.textContent = String(m).padStart(2, "0");
-        ssEl.textContent = String(sec).padStart(2, "0");
+        countdownEl.textContent = `Next full moon: ${d}d : ${String(h).padStart(2, "0")}h : ${String(m).padStart(2, "0")}m : ${String(sec).padStart(2, "0")}s`;
         updatePhase();
       }
 
@@ -1193,12 +1187,12 @@
     }
   })();
 </script>
-<!-- === /FULL MOON EVENT BANNER === -->
-  <!-- NAVBAR -->
+
+  
   <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
     <div class="flex items-center gap-3">
-      <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9"> <!-- WDROŻONO: Hover zoom działa tu -->
-      <span class="font-bold text-xl tracking-widest glow"><span class="font-extrabold">Alpha</span> Husky</span> <!-- WDROŻONO: Pogrubienie dla dynamiki -->
+      <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9"> 
+      <span class="font-bold text-xl tracking-widest glow"><span class="font-extrabold">Alpha</span> Husky</span> 
     </div>
     <div class="md:space-x-2 text-sm md:text-base font-bold hidden md:block">
       <a href="#game-first" class="hover:text-yellow-200 transition">Live Now</a>
@@ -1208,15 +1202,15 @@
       <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
       <a href="#launch-trust" class="hover:text-yellow-200 transition">Launch & Safety</a>
       <a href="#community-join" class="hover:text-yellow-200 transition">Community</a>
-      <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl ml-2 hover:bg-yellow-300 shadow font-bold">Play on Telegram</a> <!-- WDROĹ»ONO: Styl przycisku -->
+      <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl ml-2 hover:bg-yellow-300 shadow font-bold">Play on Telegram</a> 
     </div>
-    <!-- Hamburger menu na mobile -->
+    
     <button id="hamburger" class="md:hidden text-yellow-400 focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
-    <!-- Mobile menu -->
+    
     <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 bg-black/95 p-4 border-t border-yellow-900 absolute top-full left-0 right-0 z-50">
       <a href="#game-first" class="hover:text-yellow-200 transition">Live Now</a>
       <a href="#howl-token" class="hover:text-yellow-200 transition">HOWL Token</a>
@@ -1228,7 +1222,7 @@
       <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl hover:bg-yellow-300 shadow font-bold">Play on Telegram</a>
     </div>
   </nav>
-  <!-- HERO -->
+  
   <section class="flex flex-col items-center justify-center min-h-screen text-center px-6 pb-10">
     <img src="logo.png" alt="Alpha Husky Logo" class="w-48 mb-8 drop-shadow-lg animate-pulse">
     <h1 class="text-4xl md:text-6xl font-extrabold mb-4 glow">Alpha Husky</h1>
@@ -1242,7 +1236,7 @@
     </div>
     <p class="mt-8 text-yellow-300/70 text-sm italic">Follow, play, build. #JoinThePack</p>
   </section>
-  <!-- GAME FIRST (Manifest) -->
+  
 <section id="game-first" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">What Is Playable Right Now</h2>
   <p class="text-yellow-200 max-w-4xl">
@@ -1276,7 +1270,7 @@
         <div class="howl-token-brand">
           <div class="howl-token-logo-wrap">
             <span class="howl-token-logo-fallback" aria-hidden="true">$HOWL</span>
-            <img src="assets/howl-token-logo.png" alt="Official $HOWL token logo" class="howl-token-logo" loading="lazy" data-howl-token-logo>
+          <img src="assets/howl-token-logo.png" alt="Official Alpha Husky HOWL token logo" class="howl-token-logo" loading="lazy" data-howl-token-logo>
           </div>
           <div>
             <p class="howl-token-kicker">Official Alpha Husky Token</p>
@@ -1318,7 +1312,7 @@
             <p class="howl-panel-kicker">Live market data</p>
             <h3 class="text-xl font-extrabold text-yellow-100">DexScreener snapshot</h3>
           </div>
-          <span class="howl-market-state" data-howl-market-state>Loading</span>
+          <span class="howl-market-state" data-howl-market-state>Live market data is available through DexScreener</span>
         </div>
 
         <div class="howl-stats-grid">
@@ -1414,17 +1408,15 @@
         <div class="max-w-2xl">
           <p class="howl-panel-kicker">Official Project Verification</p>
           <h3 class="text-2xl font-extrabold text-yellow-100">Official Project Verification</h3>
-          <p class="mt-3 text-sm leading-7 text-yellow-100/82">
-            Alpha Husky official project contact:
-            <a href="mailto:kovciu1909@gmail.com" class="font-semibold text-yellow-200 underline underline-offset-4 hover:text-yellow-100">kovciu1909@gmail.com</a>
-          </p>
-          <p class="mt-2 text-sm leading-7 text-yellow-100/82">
-            Official token mint:
-            <span class="font-mono break-all text-yellow-200">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</span>
-          </p>
           <p class="mt-4 text-sm leading-7 text-yellow-100/78">
-            HOWL is the community and support layer for Alpha Husky, a live Telegram Mini App RPG. It is not presented as a pay-to-win gate pass.
+            HOWL is the community and support layer for Alpha Husky, a live Telegram Mini App RPG. Alpha Husky is game-first; the token is not required to play and is not presented as an investment product.
           </p>
+          <div class="mt-4 space-y-2 text-sm leading-7 text-yellow-100/86">
+            <p><span class="font-semibold text-yellow-200">Project:</span> Alpha Husky</p>
+            <p><span class="font-semibold text-yellow-200">Token:</span> HOWL</p>
+            <p><span class="font-semibold text-yellow-200">Official mint:</span> <span class="font-mono break-all text-yellow-200">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</span></p>
+            <p><span class="font-semibold text-yellow-200">Official contact:</span> <a href="mailto:kovciu1909@gmail.com" class="font-semibold text-yellow-200 underline underline-offset-4 hover:text-yellow-100">kovciu1909@gmail.com</a></p>
+          </div>
         </div>
         <div class="min-w-[260px] rounded-2xl border border-yellow-500/15 bg-yellow-900/10 p-5">
           <p class="text-xs font-bold uppercase tracking-[0.28em] text-yellow-300/75">Official Links</p>
@@ -1432,14 +1424,15 @@
             <p><span class="font-semibold text-yellow-200">Website:</span> <a href="https://thealphahusky.netlify.app/" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">thealphahusky.netlify.app</a></p>
             <p><span class="font-semibold text-yellow-200">X:</span> <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">@The_Alpha_Husky</a></p>
             <p><span class="font-semibold text-yellow-200">Telegram:</span> <a href="https://t.me/Alpha_Husky_ct" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">t.me/Alpha_Husky_ct</a></p>
-            <p><span class="font-semibold text-yellow-200">Logo:</span> <a href="https://thealphahusky.netlify.app/assets/howl-token-logo.png" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">Official HOWL logo</a></p>
+            <p><span class="font-semibold text-yellow-200">Mini App:</span> <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">t.me/Alpha_husky_bot/AlphaHuskyHub</a></p>
+            <p><span class="font-semibold text-yellow-200">Logo:</span> <a href="https://thealphahusky.netlify.app/assets/howl-token-logo.png" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">/assets/howl-token-logo.png</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- FAQ -->
+
 <section id="faq" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
   <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">FAQ</h2>
 
@@ -1474,38 +1467,7 @@
     Game first. No wallet required. Not an investment.
   </p>
 </section>
-<!-- Launch Docs -->
-<section id="launch-docs" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
-  <h2 class="text-3xl md:text-4xl font-bold mb-3 glow">Launch Docs</h2>
-  <p class="text-yellow-200 max-w-3xl">
-    Built first. Token second. This section keeps launch clarity in one place: purpose, holder flow, and official safety guidance.
-  </p>
-  <div id="launch-docs-root" class="mt-6 text-yellow-300/70" data-src="/partials/launch-docs.html" aria-live="polite"></div>
-</section>
-<script>
-(() => {
-  const root = document.getElementById("launch-docs-root");
-  if (!root) return;
-
-  const ver = window.WEBAPP_VER ? `?v=${window.WEBAPP_VER}` : "?v=1";
-  const src = (root.dataset.src || "/partials/launch-docs.html") + ver;
-
-  fetch(src, { cache: "no-store" })
-    .then((res) => {
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      return res.text();
-    })
-    .then((html) => {
-      root.innerHTML = html;
-      root.dataset.loaded = "true";
-    })
-    .catch((err) => {
-      console.error("Launch docs load failed:", err);
-      root.innerHTML = '<p class="text-yellow-300">Launch docs are temporarily unavailable.</p>';
-    });
-})();
-</script>
-  <!-- What's New / Social Proof Section -->
+  
 <section id="whats-new" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
   <h2 class="text-3xl md:text-4xl font-bold mb-6 glow text-center">What's New in the Pack</h2>
   <p class="text-lg text-yellow-200 mb-8 text-center">
@@ -1513,25 +1475,25 @@
     <span class="font-bold text-yellow-400">3.5K+ Believers Strong 🐺</span>
   </p>
 
-  <!-- Rotating Update Cards -->
+  
   <div class="flex justify-center mb-8">
     <div id="update-carousel" class="relative w-full max-w-2xl h-48 bg-yellow-900/20 rounded-xl overflow-hidden border border-yellow-700/50">
       <div class="absolute inset-0 flex items-center justify-center">
-        <!-- Card 1: New Skin -->
+        
         <div class="update-card active text-center p-6">
           <h3 class="text-xl font-bold mb-2">New Skin Dropped!</h3>
           <p class="text-yellow-300 mb-4">Unlock Ashclaw Founder Blade in the game – equip your husky for the next raid!</p>
           <a href="#skins" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">View Gallery</a>
         </div>
 
-        <!-- Card 2: Lore Teaser -->
+        
         <div class="update-card text-center p-6">
           <h3 class="text-xl font-bold mb-2">Chapter 6 Voting Live Soon</h3>
           <p class="text-yellow-300 mb-4">Shape the Oracle of Rugs – vote in Telegram for epic twists!</p>
           <a href="#lore" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">Read Lore</a>
         </div>
 
-        <!-- Card 3: Community Event -->
+        
         <div class="update-card text-center p-6">
           <h3 class="text-xl font-bold mb-2">Pack Raid Night</h3>
           <p class="text-yellow-300 mb-4">Join tonight's Telegram raid for exclusive rewards – LFG!</p>
@@ -1542,13 +1504,13 @@
   </div>
 </section>
 
-<!-- WDROŻONO: Live X Feed w sekcji Community – embedded timeline z 3 recent postami od @The_Alpha_Husky (bez replies) -->
+
 <section id="community" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
   <h2 class="text-3xl md:text-4xl font-bold mb-6 glow text-center">Pack Howls on X</h2>
   <p class="text-lg text-yellow-200 mb-8 text-center">Stay howling with the latest from our Alpha community. Real-time drops and raids – follow for the vibe! <span class="font-bold text-yellow-400">#JoinThePack 🐺</span></p>
  
   <div class="grid md:grid-cols-3 gap-6">
-    <!-- Post 1: Good Morning Howlers (Oct 6, 2025) -->
+    
     <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
       <div class="flex items-center mb-3">
         <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
@@ -1562,7 +1524,7 @@
       <a href="https://x.com/The_Alpha_Husky/status/1975101396627464372" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
     </div>
    
-    <!-- Post 2: Good night howlers (Oct 5, 2025) -->
+    
     <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
       <div class="flex items-center mb-3">
         <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
@@ -1576,7 +1538,7 @@
       <a href="https://x.com/The_Alpha_Husky/status/1974944271452299349" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
     </div>
    
-    <!-- Post 3: Good afternoon howlers (Oct 5, 2025) -->
+    
     <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
       <div class="flex items-center mb-3">
         <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
@@ -1598,7 +1560,7 @@
   </div>
 </section>
 
-<!-- Inline JS for Carousel Rotation -->
+
 <script>
   const carousel = document.getElementById('update-carousel');
   const cards = carousel.querySelectorAll('.update-card');
@@ -1621,7 +1583,7 @@
   setInterval(rotateCards, 5000);
 </script>
 
-<!-- Inline CSS for Active Card (fade effect) -->
+
 <style>
   .update-card {
     opacity: 0;
@@ -1631,7 +1593,7 @@
     opacity: 1;
   }
 </style>
-  <!-- QUIZ SECTION -->
+  
   <section id="quiz" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
     <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Which Pack Character Are You?</h2>
     <p class="text-lg text-yellow-200 mb-8">Discover your legendary identity in the Alpha Husky world! Answer the questions and join the rebellion.</p>
@@ -1639,7 +1601,7 @@
       <div id="quiz-start" class="text-center mb-8">
         <button id="start-quiz" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Start Quiz</button>
       </div>
-      <!-- Questions -->
+      
       <div id="quiz-questions">
         <div class="quiz-question active" data-question="1">
           <h3 class="text-xl font-bold mb-4">How do you react to challenges in the Chain?</h3>
@@ -1679,13 +1641,13 @@
       </div>
     </div>
   </section>
-  <!-- LEGENDS -->
+  
 <section id="legends" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
-  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center"><span class="font-extrabold">Legends</span> of the Pack</h2> <!-- WDROŻONO: Pogrubienie kluczowej frazy dla dynamiki typografii -->
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center"><span class="font-extrabold">Legends</span> of the Pack</h2> 
   <p class="text-lg text-yellow-200 mb-8 text-center">Meet the legendary Alphas and contributors who shaped the story and spirit of Alpha Husky. Each legend has a story, a face, and a legacy.</p>
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8"> <!-- Już responsywny grid; WDROŻONO: Dodano subtelne cienie i hover do kart dla lepszego balansu wizualnego -->
-    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1"> <!-- WDROŻONO: Hover lift i cień dla interaktywności -->
-      <img src="Alpha.png" alt="Alpha" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors"> <!-- WDROŻONO: Hover na border (niebieski) i scale z globalnego CSS -->
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8"> 
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1"> 
+      <img src="Alpha.png" alt="Alpha" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors"> 
       <h3 class="text-xl font-bold mb-2">Alpha</h3>
       <p class="text-yellow-200 text-sm text-center">Founder, leader, and the spirit behind the movement. Read the full legend soon.</p>
     </div>
@@ -1699,44 +1661,44 @@
       <h3 class="text-xl font-bold mb-2">GTL</h3>
       <p class="text-yellow-200 text-sm text-center">Shadow agent and master of the network. Discover his legend in the next drop.</p>
     </div>
-    <!-- NEW: Alpha Herod -->
+    
     <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
       <img src="alpha_herod.jpg" alt="Alpha Herod" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover group-hover:border-blue-500 transition-colors">
       <h3 class="text-xl font-bold mb-1">Alpha Herod</h3>
       <p class="text-yellow-200 text-sm text-center mb-1">Story architect who keeps the flame steady and the vision sharp.</p>
       <p class="text-yellow-300 text-xs italic">Vibe: Calm · Creative · Visionary</p>
     </div>
-    <!-- NEW: Cherenkov Warden -->
+    
     <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
       <img src="cherenkov_warden.jpg" alt="Cherenkov Warden" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover group-hover:border-blue-500 transition-colors">
       <h3 class="text-xl font-bold mb-1">Cherenkov Warden</h3>
       <p class="text-yellow-200 text-sm text-center mb-1">Armor of grit, eyes on the breach. Holds the line when the chain turns red.</p>
       <p class="text-yellow-300 text-xs italic">Vibe: Relentless · Ruggedness · Doggedness</p>
     </div>
-    <!-- BLOOD-MOON WHISPER spotlight – WDROŻONO: Dodano hover dla spójności -->
+    
     <div class="flex flex-col sm:flex-row items-center gap-4 mb-7 max-w-2xl w-full mx-auto p-4 bg-yellow-900/30 rounded-2xl shadow-xl border border-yellow-700 sm:col-span-2 md:col-span-3 group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/40 hover:-translate-y-1">
-      <img src="bloodmoons_whisper.png" alt="Blood-Moon Whisper" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-lg bg-black object-cover group-hover:border-blue-500 transition-colors"> <!-- WDROŻONO: Hover na border -->
+      <img src="bloodmoons_whisper.png" alt="Blood-Moon Whisper" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-lg bg-black object-cover group-hover:border-blue-500 transition-colors"> 
       <div class="text-left sm:ml-4 flex-1">
         <h2 class="text-xl font-bold text-yellow-200 mb-1">Blood-Moon Whisper</h2>
         <p class="text-yellow-300 text-sm mb-1"><span class="font-bold text-yellow-400">Legendary Contest Winner:</span> The enigmatic husky cloaked in glitch and myth. Appears when hope seems lost, a signal in the chaos—part memory, part myth, forever scanning the ruins with a single red eye.</p>
-        <span class="inline-block mt-2 px-3 py-1 bg-yellow-500/70 text-black rounded-full text-xs font-bold border border-blue-500/50 transition-colors group-hover:bg-yellow-400">Featured in Chapter 5: The Meme War</span> <!-- WDROŻONO: Subtelny hover na tagu -->
+        <span class="inline-block mt-2 px-3 py-1 bg-yellow-500/70 text-black rounded-full text-xs font-bold border border-blue-500/50 transition-colors group-hover:bg-yellow-400">Featured in Chapter 5: The Meme War</span> 
       </div>
     </div>
   </div>
-  <div class="mt-8 text-yellow-300 text-center italic">More legends and their stories are being released in future updates. <span class="text-yellow-500 font-bold">#JoinThePack</span></div> <!-- WDROŻONO: Pogrubienie hasztagu -->
+  <div class="mt-8 text-yellow-300 text-center italic">More legends and their stories are being released in future updates. <span class="text-yellow-500 font-bold">#JoinThePack</span></div> 
 </section>
-  <!-- UPDATES (condensed) -->
+  
   <section id="updates" class="section p-10 max-w-5xl mx-auto">
     <h2 class="text-3xl font-bold mb-3 glow">Updates</h2>
     <p class="text-yellow-200 mb-6">Single source of live build progress from the public updates feed.</p>
     <div id="updatesList" class="space-y-6"></div>
   </section>
-  <!-- GALLERY -->
+  
 <section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10" hidden>
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center">Gallery</h2>
   <p class="text-lg text-yellow-200 mb-6 text-center">Discover the Pack's visual masterpieces – from pixel art to contest memes. #JoinThePack</p>
  
-  <!-- Tabs Navigation -->
+  
   <div class="flex justify-center mb-6 bg-yellow-900/20 rounded-t-xl p-1">
     <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200 mr-1 active" data-tab="general">
       General Gallery
@@ -1746,7 +1708,7 @@
       <span class="inline-block ml-1 bg-yellow-500/70 text-black text-xs px-2 py-0.5 rounded-full font-bold">Archive!</span>
     </button>
   </div>
-  <!-- Tab Content: General Gallery (default active) -->
+  
   <div id="tab-general" class="tab-content bg-yellow-900/20 rounded-xl p-6 border border-yellow-700/50 active">
     <h3 class="text-2xl font-bold mb-4 glow text-center">Pack Classics</h3>
     <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -1760,11 +1722,11 @@
           Alpha — Pixel Art
         </figcaption>
       </figure>
-      <!-- Add more existing graphics here if you have them – copy <figure> -->
+      
     </div>
   </div>
  
-  <!-- Tab Content: Howl o Ween -->
+  
   <div id="tab-howloween" class="tab-content bg-yellow-900/20 rounded-xl p-6 border border-yellow-700/50 hidden">
     <h3 class="text-2xl font-bold mb-4 glow text-center border-b border-yellow-400/50 pb-2">Howl o Ween – Best Submissions</h3>
     <p class="text-yellow-200 mb-6 text-center italic text-lg">
@@ -1828,7 +1790,7 @@
           loading="lazy" decoding="async">
         <figcaption class="mt-2 text-yellow-300 text-xs text-center">#7 – Echo archives haunt</figcaption>
       </figure>
-      <!-- Copy <figure> for additional graphics if needed -->
+      
     </div>
     <div class="text-center mt-6">
       <a href="https://x.com/search?q=%23HowlOWeen%20%40AlphaHusky&src=typed_query" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all">
@@ -1837,7 +1799,7 @@
     </div>
   </div>
 </section>
-  <!-- Lore Section -->
+  
 <style>
 .full-text {
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
@@ -1863,7 +1825,7 @@
     <a href="#updates" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all">Track New Drops</a>
   </div>
 
-  <!-- Chapter 1 -->
+  
   <section id="chapter1" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 1: The Awakening</h3>
     <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Origin Story – Part 1"</p>
@@ -1905,7 +1867,7 @@
     </div>
     <a href="https://x.com/The_Alpha_Husky/status/1954952163190509987" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
   </section>
-  <!-- Chapter 2 -->
+  
   <section id="chapter2" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 2: The Escape</h3>
     <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Continues…"</p>
@@ -1967,7 +1929,7 @@
     </div>
     <a href="https://x.com/The_Alpha_Husky/status/1960088254793027933" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
   </section>
-  <!-- Chapter 3 -->
+  
   <section id="chapter3" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 3: The Pack Awakens</h3>
     <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Grows..."</p>
@@ -2027,7 +1989,7 @@
     </div>
     <a href="https://x.com/The_Alpha_Husky/status/1967693071983812816" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
   </section>
-  <!-- Chapter 4 -->
+  
   <section id="chapter4" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
     <h3 class="text-2xl font-bold mb-2 glow">Chapter 4: Moon Hunters Incoming</h3>
     <p class="text-yellow-200 mb-3 italic">"They watched not with eyes, but with algorithms."</p>
@@ -2081,7 +2043,7 @@
     </div>
     <a href="https://x.com/The_Alpha_Husky/status/1971585234173919521" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
   </section>
-    <!-- Chapter 5 -->
+    
     <section id="chapter5" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
       <div class="flex flex-col md:flex-row items-start gap-6">
         <div class="flex-1">
@@ -2155,7 +2117,7 @@ It had no need.
         </div>
       </div>
     </section>
-    <!-- Chapter 6 (Teaser) -->
+    
     <section id="chapter6" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
       <h3 class="text-2xl font-bold mb-2 glow">Chapter 6: The Oracle of Rugs</h3>
       <p class="text-yellow-200 mb-2">In development.</p>
@@ -2171,7 +2133,7 @@ It had no need.
       </button>
     </div>
   </section>
-  <!-- GAME -->
+  
   <section id="game" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
     <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">The Game</h2>
     <p class="text-lg text-yellow-200 mb-6">An interactive Telegram game where players earn, feed, level up, and explore the world of Alpha. <span class="text-yellow-400">Game MVP live on Telegram. Join the adventure.</span></p>
@@ -2181,7 +2143,7 @@ It had no need.
     </div>
     <div class="mt-8 text-yellow-300 text-center italic">Achievements, NFTs, and more features are planned for later updates.</div>
   </section>
-  <!-- COMMUNITY -->
+  
   <section id="community-links" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
     <h2 class="text-3xl font-bold mb-4 glow">Community</h2>
     <p class="text-lg text-yellow-200 mb-6">Built by believers, fueled by organic growth. <span class="text-yellow-400">No VCs. No hype pumps. Just the Pack.</span></p>
@@ -2191,7 +2153,7 @@ It had no need.
     </div>
     <div class="mt-8 text-yellow-300 text-center italic">#BuiltByBelievers #JoinThePack</div>
   </section>
-  <!-- POLICY -->
+  
   <section id="policy" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
     <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Community Policy</h2>
     <p class="text-yellow-200 mb-4">
@@ -2208,7 +2170,7 @@ It had no need.
       Full legal terms: <a class="underline text-yellow-200 font-bold" href="terms.html">Terms</a> • <a class="underline text-yellow-200 font-bold" href="privacy.html">Privacy</a> • <a class="underline text-yellow-200 font-bold" href="cookies.html">Cookies</a>
     </p>
   </section>
-  <!-- Roadmap (Interactive Timeline with AOS) -->
+  
 <section id="roadmap" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
   <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Roadmap Snapshot</h2>
   <p class="text-yellow-200 max-w-4xl mb-6">
@@ -2280,29 +2242,26 @@ It had no need.
             </article>
 
             <article class="ah-luxe-card p-5 text-yellow-100">
-              <h3 class="text-xl font-bold text-yellow-200 mb-2">Safety & Official Links</h3>
+              <h3 class="text-xl font-bold text-yellow-200 mb-2">Official Project Verification</h3>
               <p class="text-yellow-100/80 text-sm mb-4">Use only confirmed channels and never share sensitive wallet secrets.</p>
               <ul class="space-y-3 text-sm leading-6 text-yellow-100/88">
-                <li>Trust the official contract address only when posted on official Alpha Husky channels.</li>
+                <li>Project: Alpha Husky</li>
+                <li>Token: HOWL</li>
                 <li>Ignore fake replies, impersonators, scam links, and DM pressure.</li>
                 <li><strong class="text-yellow-200">No one from the team will ever ask for your seed phrase.</strong></li>
                 <li>Connect wallets only through official Alpha Husky flows.</li>
               </ul>
               <div class="mt-4 text-sm leading-7 text-yellow-100/86">
                 <p><span class="font-bold text-yellow-200">Official contact:</span> <a href="mailto:kovciu1909@gmail.com" class="underline hover:text-yellow-100">kovciu1909@gmail.com</a></p>
+                <p><span class="font-bold text-yellow-200">Official mint:</span> <span class="font-mono break-all">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</span></p>
                 <p><span class="font-bold text-yellow-200">Official X:</span> <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="underline hover:text-yellow-100">@The_Alpha_Husky</a></p>
                 <p><span class="font-bold text-yellow-200">Official Telegram:</span> <a href="https://t.me/Alpha_Husky_ct" target="_blank" rel="noopener" class="underline hover:text-yellow-100">t.me/Alpha_Husky_ct</a></p>
+                <p><span class="font-bold text-yellow-200">Official Mini App:</span> <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener" class="underline hover:text-yellow-100">t.me/Alpha_husky_bot/AlphaHuskyHub</a></p>
                 <p><span class="font-bold text-yellow-200">Official Website:</span> <a href="https://thealphahusky.netlify.app/" target="_blank" rel="noopener" class="underline hover:text-yellow-100">thealphahusky.netlify.app</a></p>
-                <p><span class="font-bold text-yellow-200">Official Contract Address:</span> <span class="font-mono break-all">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</span></p>
-                <p class="text-yellow-100/72">Always verify the CA from official Alpha Husky sources only.</p>
+                <p><span class="font-bold text-yellow-200">Official logo:</span> <a href="https://thealphahusky.netlify.app/assets/howl-token-logo.png" target="_blank" rel="noopener" class="underline hover:text-yellow-100">/assets/howl-token-logo.png</a></p>
+                <p class="text-yellow-100/72">Always verify the mint and links from this website or the official Alpha Husky X account.</p>
               </div>
             </article>
-          </div>
-
-          <div class="flex flex-wrap gap-3 text-sm">
-            <a class="underline text-yellow-200 font-bold hover:text-yellow-100" href="/alpha_husky_token_launch_note.docx" download>Download Launch Note</a>
-            <a class="underline text-yellow-200 font-bold hover:text-yellow-100" href="/alpha_husky_token_faq.docx" download>Download Token FAQ</a>
-            <a class="underline text-yellow-200 font-bold hover:text-yellow-100" href="/safety%20%26%20official%20links.txt" download>Download Safety Links</a>
           </div>
         </div>
 
@@ -2443,96 +2402,14 @@ It had no need.
       : "Hide Detailed Milestones";
   });
 
-  // ===== Builder's Notes (hybrid: link + inline toggle) =====
-  const btnBN  = document.getElementById("toggle-builders-note");
-  const rootBN = document.getElementById("builders-note-root");
-
-  btnBN?.addEventListener("click", async (ev) => {
-    // allow middle/ctrl/meta clicks to open in new tab
-    if (ev.button === 1 || ev.ctrlKey || ev.metaKey) return;
-
-    // switch to inline toggle
-    ev.preventDefault();
-    const wasHidden = rootBN.classList.contains("hidden");
-
-    if (wasHidden && rootBN.dataset.loaded !== "true") {
-      try {
-        await loadPartialInto(rootBN, "/partials/builders-note.html");
-      } catch (e) {
-        console.error("Builder's notes load failed:", e);
-        rootBN.innerHTML = '<p class="text-yellow-300">Builder\'s notes are temporarily unavailable.</p>';
-      }
-    }
-
-    rootBN.classList.toggle("hidden");
-    btnBN.textContent = rootBN.classList.contains("hidden")
-      ? "View Builder's Notes"
-      : "Hide Builder's Notes";
-  });
-
-  // Deep-link to auto-open Builder's Notes
-  (function autoOpenBuildersNote() {
-    const params = new URLSearchParams(location.search);
-    if (params.get("section") === "builders-note" || location.hash === "#builders-note") {
-      btnBN?.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true }));
-      setTimeout(() => rootBN?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
-    }
-  })();
 })();
 </script>
-
-<!-- TOKEN (planned; post-MVP, temporarily hidden) -->
-<section id="token" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
-  <h2 class="text-3xl md:text-4xl font-bold mb-2 glow">
-    Planned Token Utility (post-MVP)
-    <span class="ml-2 align-middle px-2 py-1 text-xs rounded-full bg-yellow-500/80 text-black font-bold">Draft</span>
-  </h2>
-  <p class="text-yellow-300/90 mb-6 text-sm">
-    Not live yet. Any launch will be announced only after the <a href="#roadmap" class="underline text-yellow-200 hover:text-yellow-100 font-bold">token readiness gates</a> are met.
-    No hard dates. No promises — ship &gt; hype.
-  </p>
-  <div class="grid md:grid-cols-2 gap-8">
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
-      <div class="font-bold text-yellow-400">In-game (planned)</div>
-      <div class="text-yellow-200 text-sm">
-        Unlock/select quests, tougher missions, item upgrades, and cosmetic skins — after MVP &amp; economy balancing.
-      </div>
-    </div>
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
-      <div class="font-bold text-yellow-400">Community (planned)</div>
-      <div class="text-yellow-200 text-sm">
-        Roles, nominations, governance signals, and event access tied to contribution &amp; on-chain proofs.
-      </div>
-    </div>
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2">
-      <div class="font-bold text-yellow-400">NFT / Collectibles (planned)</div>
-      <div class="text-yellow-200 text-sm">
-        Claims, upgrades, and redemptions connected to gameplay &amp; engagement — contingent on security reviews.
-      </div>
-    </div>
-    <div class="bg-yellow-900/20 rounded-xl p-6 flex flex-col gap-2 opacity-70">
-      <div class="font-bold text-yellow-400">More (later)</div>
-      <div class="text-yellow-200 text-sm">
-        Additional utilities may be added after stability/retention targets are consistently met.
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- ========= SKINS SECTION (NEW) ========= -->
-  <section id="skins" class="section p-8 md:p-12 max-w-6xl mx-auto" hidden>
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow flex items-center gap-3">Animated Skins <span class="bg-yellow-500/70 text-black text-xs px-2 py-1 rounded-full">MP4</span></h2>
-    <p class="text-yellow-200 mb-6">Autoplay requires mute on most browsers. All clips are optimized MP4. Upload files to <code class="text-yellow-400">assets/skins/</code>.</p>
-    <div id="skinsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
-    <p class="mt-4 text-yellow-300/70 text-sm">Tip: keep files small (&lt; 10–15MB) for fast loads. WEBM with alpha can be added later as a fallback for transparency.</p>
-  </section>
-  <!-- FOOTER -->
+  
 <footer class="bg-yellow-900/90 p-6 text-center text-black mt-12 rounded-t-3xl shadow-xl border-t border-yellow-400">
 
   <p class="mb-3 text-lg font-bold glow">Join the Pack</p>
 
-  <!-- Primary links (in-site + legal) -->
+  
   <div class="flex flex-wrap items-center justify-center gap-3 text-sm font-bold mb-4">
     <a href="#game-first" class="hover:text-yellow-200 transition">Game First</a>
     <span class="opacity-40">•</span>
@@ -2551,7 +2428,7 @@ It had no need.
     <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="hover:text-yellow-200 transition">X</a>
   </div>
 
-  <!-- Social links (external) -->
+  
   <div class="space-x-6">
     <a href="https://t.me/Alpha_Husky_ct" target="_blank" rel="noopener" class="underline hover:text-yellow-200 transition">Telegram</a>
     <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="underline hover:text-yellow-200 transition">X (Twitter)</a>
@@ -2577,53 +2454,12 @@ It had no need.
   })();
 </script>
 
-<!-- Scripts -->
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 1200 });
 </script>
-<!-- SKINS SCRIPT -->
-  <script>
-    const SKINS = [
-      { id:'ASHCLAW', title:'Ashclaw — Founder Blade', src:'assets/skins/ASHCLAW.mp4' },
-      { id:'FROSTBORN', title:'Frostborn', src:'assets/skins/FROSTBORN.mp4' },
-      { id:'LUNARHOWL', title:'Lunarhowl', src:'assets/skins/LUNARHOWL.mp4' },
-      { id:'RUINWARDEN', title:'Ruinwarden', src:'assets/skins/RUINWARDEN.mp4' },
-      { id:'SHADOW_AGENT', title:'Shadow Agent', src:'assets/skins/SHADOW_AGENT.mp4' },
-      { id:'SHARDGLASS_RONIN', title:'Shardglass Ronin', src:'assets/skins/SHARDGLASS_RONIN.mp4' },
-      { id:'STORMVAIN', title:'Storwain', src:'assets/skins/STORMVAIN.mp4' },
-      { id:'X_HOUND', title:'X-Hound', src:'assets/skins/X_HOUND.mp4' },
-      { id:'MOONLAB_ROGUE', title:'Moonlab Rogue', src:'assets/skins/MOONLAB_ROGUE.mp4' },
-      { id:'NOMADS_GUARD', title:"Nomad's Guard", src:'assets/skins/NOMADS_GUARD.mp4' },
-    ];
-    const grid = document.getElementById('skinsGrid');
-    function cardTemplate(item){
-      return `
-        <article class="relative rounded-2xl border border-yellow-700/40 bg-yellow-900/20 overflow-hidden shadow hover:shadow-yellow-500/20 transition card-glow aspect-square">
-          <div class="absolute top-2 left-2 text-[10px] uppercase tracking-wider bg-black/60 border border-yellow-700/60 text-yellow-200 px-2 py-1 rounded-full">mp4</div>
-          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 text-center text-yellow-100 text-sm font-bold">${item.title}</div>
-          <video class="w-full h-full object-contain" preload="none" muted loop playsinline></video>
-        </article>`;
-    }
-    SKINS.forEach(s => {
-      const wrap = document.createElement('div');
-      wrap.innerHTML = cardTemplate(s);
-      const card = wrap.firstElementChild;
-      const video = card.querySelector('video');
-      video.src = s.src;
-      video.setAttribute('aria-label', s.title);
-      grid.appendChild(card);
-    });
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        const v = e.target;
-        if (e.isIntersecting) { v.play().catch(()=>{}); }
-        else { v.pause(); }
-      });
-    }, { threshold: 0.4 });
-    document.querySelectorAll('#skinsGrid video').forEach(v => io.observe(v));
-  </script>
-  <!-- Updates loader (now with Show more / Show less) -->
+  
   <script>
   (function(){
     const listElId = 'updatesList';
@@ -2746,7 +2582,7 @@ It had no need.
     document.addEventListener('DOMContentLoaded', loadUpdates);
   })();
   </script>
-  <!-- LIGHTBOX for Gallery -->
+  
   <script>
     (function(){
       const grid = document.getElementById('galleryGrid'); if(!grid) return;
@@ -2770,14 +2606,14 @@ It had no need.
       document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && !lb.classList.contains('hidden')) close(); });
     })();
   </script>
-  <!-- Hamburger toggle script -->
+  
   <script>
     document.getElementById('hamburger').addEventListener('click', () => {
       const menu = document.getElementById('mobile-menu');
       menu.classList.toggle('hidden');
     });
   </script>
-  <!-- Toggle script for Chapter 5 -->
+  
   <script>
     document.getElementById('toggle-chapter5').addEventListener('click', () => {
       const content = document.getElementById('chapter5-content');
@@ -2786,7 +2622,7 @@ It had no need.
       button.textContent = content.classList.contains('hidden') ? 'Read More' : 'Hide';
     });
   </script>
-  <!-- Quiz Script -->
+  
 <script>
   const quiz = {
     questions: 3,
@@ -2827,7 +2663,7 @@ It had no need.
     document.getElementById('quiz-result').classList.remove('hidden');
   }
 </script>
-<!-- Tabs Functionality for Gallery -->
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const tabBtns = document.querySelectorAll('.tab-btn');
