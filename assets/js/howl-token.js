@@ -143,7 +143,7 @@
       return;
     }
 
-    setMarketState(section, "Loading");
+    setMarketState(section, "Live data updates automatically");
 
     try {
       const response = await fetch(DEXSCREENER_API_TOKENS, { cache: "no-store" });
@@ -158,7 +158,7 @@
       renderPair(section, cachedPair, Date.now(), "Live market data");
     } catch (error) {
       if (cached && cached.pair) {
-        renderPair(section, cached.pair, cached.fetchedAt, "Using cached data");
+      renderPair(section, cached.pair, cached.fetchedAt, "Using cached market data");
       } else {
         renderEmpty(section);
       }
@@ -214,7 +214,7 @@
       setStat(section, key, EMPTY);
     });
     setLastUpdated(section, null);
-    setMarketState(section, "Unavailable");
+    setMarketState(section, "Live market data is available through DexScreener");
   }
 
   function setStat(section, key, value) {
