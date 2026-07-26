@@ -1,0 +1,182 @@
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+MINT = "FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS"
+
+
+def read(path: str) -> str:
+    return (ROOT / path).read_text(encoding="utf-8")
+
+
+def write(path: str, content: str) -> None:
+    (ROOT / path).write_text(content, encoding="utf-8")
+
+
+def replace_all(path: str, pairs: list[tuple[str, str]]) -> None:
+    text = read(path)
+    updated = text
+    for old, new in pairs:
+        updated = updated.replace(old, new)
+    if updated != text:
+        write(path, updated)
+
+
+def replace_between(path: str, start_marker: str, end_marker: str, replacement: str) -> None:
+    text = read(path)
+    start = text.find(start_marker)
+    if start < 0:
+        raise SystemExit(f"{path}: start marker not found")
+    end = text.find(end_marker, start)
+    if end < 0:
+        raise SystemExit(f"{path}: end marker not found")
+    end += len(end_marker)
+    write(path, text[:start] + replacement + text[end:])
+
+
+def verification_block(indent: str = "") -> str:
+    block = f'''<section class="official-verification" style="
+  background: linear-gradient(145deg, #0f0f13 0%, #16161d 100%);
+  border: 1px solid #2a2a35;
+  border-radius: 16px;
+  padding: 28px 24px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 680px;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #e8e8ed;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+">
+  <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+    <div aria-hidden="true" style="width: 8px; height: 8px; flex: 0 0 8px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 10px #22c55e;"></div>
+    <h2 style="margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.02em; color: #f4f4f5;">Official Project Verification</h2>
+  </div>
+
+  <p style="margin: 0 0 22px 0; font-size: 0.9rem; line-height: 1.5; color: #a1a1aa;">
+    This is the official Alpha Husky project. All links below are verified and controlled by the project.
+  </p>
+
+  <div style="display: grid; gap: 14px; font-size: 0.95rem;">
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">Project</span>
+      <span style="color: #f4f4f5; font-weight: 500;">Alpha Husky</span>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">Token</span>
+      <span style="color: #f4f4f5; font-weight: 500;">HOWL</span>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: flex-start;">
+      <span style="color: #71717a;">Mint</span>
+      <code style="background: #1c1c24; padding: 4px 8px; border-radius: 6px; font-size: 0.82rem; color: #a78bfa; word-break: break-all; text-align: right;">{MINT}</code>
+    </div>
+
+    <div style="height: 1px; background: #27272a; margin: 6px 0;"></div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">Website</span>
+      <a href="https://alphahusky.win" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none;">alphahusky.win</a>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">Email</span>
+      <a href="mailto:contact@alphahusky.win" style="color: #60a5fa; text-decoration: none;">contact@alphahusky.win</a>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">X (Twitter)</span>
+      <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none;">@The_Alpha_Husky</a>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">Telegram</span>
+      <a href="https://t.me/Alpha_Husky_ct" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none;">t.me/Alpha_Husky_ct</a>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">Mini App</span>
+      <a href="https://app.alphahusky.win" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none;">app.alphahusky.win</a>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+      <span style="color: #71717a;">Official Logo</span>
+      <a href="https://alphahusky.win/assets/howl-token-logo.png" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: none; word-break: break-all; text-align: right;">howl-token-logo.png</a>
+    </div>
+  </div>
+
+  <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #27272a; font-size: 0.8rem; color: #71717a; text-align: center;">
+    Rug-Never · Game First · Proof not promises
+  </div>
+</section>'''
+    return "\n".join(indent + line if line else "" for line in block.splitlines())
+
+
+COMMON_REPLACEMENTS = [
+    ("https://thealphahusky.netlify.app/assets/howl-token-logo.png", "https://alphahusky.win/assets/howl-token-logo.png"),
+    ("https://thealphahusky.netlify.app/#updates", "https://alphahusky.win/#updates"),
+    ("https://thealphahusky.netlify.app/", "https://alphahusky.win"),
+    ("https://thealphahusky.netlify.app", "https://alphahusky.win"),
+    ("thealphahusky.netlify.app", "alphahusky.win"),
+    ("kovciu1909@gmail.com", "contact@alphahusky.win"),
+    ("https://t.me/Alpha_husky_bot/AlphaHuskyHub", "https://app.alphahusky.win"),
+    ("t.me/Alpha_husky_bot/AlphaHuskyHub", "app.alphahusky.win"),
+]
+
+TARGETS = [
+    "index.html",
+    "contact.html",
+    "partials/launch-docs.html",
+    "partials/builders-note.html",
+    "safety & official links.txt",
+    "assets/updates.json",
+]
+
+for target in TARGETS:
+    replace_all(target, COMMON_REPLACEMENTS)
+
+replace_between(
+    "index.html",
+    '              <article class="ah-luxe-card p-5 text-yellow-100">\n                <h3 class="text-xl font-bold text-yellow-200 mb-2">Official Project Verification</h3>',
+    "              </article>",
+    verification_block("              "),
+)
+
+replace_between(
+    "contact.html",
+    '        <div class="p-4 rounded-xl border border-yellow-700/40 bg-black/30">\n          <h2 class="text-xl font-bold text-yellow-300 mb-1">Official Project Verification</h2>',
+    "        </div>",
+    verification_block("        "),
+)
+
+replace_all(
+    "safety & official links.txt",
+    [
+        ("Official Telegram Mini App / bot:\nhttps://app.alphahusky.win", "Official Mini App:\nhttps://app.alphahusky.win"),
+        ("Official logo:\n/assets/howl-token-logo.png", "Official logo:\nhttps://alphahusky.win/assets/howl-token-logo.png"),
+        ("Official contact:\ncontact@alphahusky.win", "Official email:\ncontact@alphahusky.win"),
+    ],
+)
+
+EXPECTED = [
+    "https://alphahusky.win",
+    "contact@alphahusky.win",
+    "https://app.alphahusky.win",
+    "https://alphahusky.win/assets/howl-token-logo.png",
+    MINT,
+]
+
+for target in ("index.html", "contact.html"):
+    text = read(target)
+    missing = [value for value in EXPECTED if value not in text]
+    if missing:
+        raise SystemExit(f"{target}: missing expected values: {missing}")
+    if text.count('class="official-verification"') != 1:
+        raise SystemExit(f"{target}: expected exactly one official-verification block")
+
+for target in TARGETS:
+    text = read(target)
+    for forbidden in ("thealphahusky.netlify.app", "kovciu1909@gmail.com", "Alpha_husky_bot/AlphaHuskyHub"):
+        if forbidden in text:
+            raise SystemExit(f"{target}: old value remains: {forbidden}")
+
+print("Official verification update completed successfully.")
