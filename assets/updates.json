@@ -1,16 +1,5 @@
 [
   {
-    "date": "2026-04-29",
-    "title": "Devlog #HOWLitsMade — Awakening Origin Flow + Fresh Start Readiness 🐺",
-    "status": "IN PROGRESS",
-    "text": "🌑 The Awakening — origin flow upgraded\n• Turned the Origin screen into a proper cinematic choice moment instead of plain text options\n• Added the final Origin seal assets for Stray, Broken, Forgotten, and Unchained\n• Screen 3 now reveals the full origin artwork first, then brings in selectable cards with emblem, lore copy, selected glow, and check state\n• Fixed the flow so Claim Origin no longer completes onboarding immediately — it now moves into the final 4/4 Enter the Pack screen\n• Final completion now happens on Enter the Pack with the selected origin safely passed to the existing backend endpoint\n\n🧬 Identity layer, not power\n• Origins remain lore/profile identity only\n• No XP, stats, currency, items, buffs, materials, tokens, or gameplay advantage added\n• Pack Profile can surface the Origin chip as part of player identity\n\n🛡️ Fresh Start readiness fixes\n• Removed equipment level gating so players can equip owned gear regardless of level\n• Kept the real checks intact: item exists, player owns it, item slot is valid, and the slot is supported\n• Added limited rookie mission protection so fresh players are not immediately discouraged by repeated early losses\n• First protected Easy mission can rescue a failed battle into a win; the next protected Easy attempts get a high success floor\n• Hard / Very Hard missions do not receive rookie protection\n\n💸 HowlPay path\n• Continued preparing the WebApp HowlPay route/module path for optional $HOWL cosmetic payments\n• Kept this separate from holder verification, support purchases, wallet links, and cosmetic entitlement logic\n• Still no pay-to-win: support and token identity remain cosmetic/status layers\n\n✅ Net\nThe first minutes of Alpha Husky are getting much cleaner: players enter through lore, choose an identity, can equip what they own, and have a fairer shot at completing early missions.\n\n⚠️ Next\n• Deploy and smoke test the final Awakening 1/4 → 4/4 flow on Telegram\n• Restart backend for the equipment and starter mission fixes\n• Run the Fresh Start audit + dry-run mapping before any real reset\n• Preserve trust, reset gameplay, and keep support/holder cosmetics safe\n\nBuilt first. Token second. Pack always. 🐺",
-    "links": [
-      { "label": "WebApp", "url": "https://app.alphahusky.win" },
-      { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
-    ]
-  },
-  {
     "date": "2026-03-10",
     "title": "Devlog #HOWLitsMade — Siege Unfreeze + Real Combat Stats Wired 🐺",
     "status": "IN PROGRESS",
@@ -18,7 +7,7 @@
     "links": [
       { "label": "WebApp", "url": "https://app.alphahusky.win" },
       { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
 },
   {
@@ -29,7 +18,7 @@
   "links": [
     { "label": "WebApp", "url": "https://app.alphahusky.win" },
     { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
-    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
   ]
 },
   {
@@ -40,7 +29,7 @@
   "links": [
     { "label": "WebApp", "url": "https://app.alphahusky.win" },
     { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
-    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
   ]
 },
 {
@@ -62,7 +51,7 @@
     "links": [
       { "label": "WebApp", "url": "https://app.alphahusky.win" },
       { "label": "Play on Telegram", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -72,7 +61,7 @@
     "text": "✅ Rebuilt the FAQ into a proper hub (clean sections, real info, no fluff)\n\n✨ Equipment UI polish\n• Rarity-based glow now matches item rarity (finally feels like a game)\n\n🧼 Visual stability pass\n• Fixed missing graphics / blank squares issues across the WebApp\n\n🧰 Content drop\n• Added new items / 1–2 gear sets live\n\n⏭️ Next\n• Keep rolling more small fixes + upgrades into “What’s New”\n• Continue Missions polish toward the final look/feel\n\nRest is earned family 🐺🔥",
     "links": [
       { "label": "WebApp", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -82,7 +71,7 @@
     "text": "✅ Missions → WebApp core flow progress\n• Timer/countdown now holds stable (no more blinking back to offers)\n• Added pending-start sync + state polling to bridge backend confirmation\n• Waiting screen supports RUNNING → READY → Resolve properly\n\n🧱 UI groundwork\n• Missions sheet behavior improved (closer to a real feature, less like a random popup)\n• Backgrounds wired for offers + waiting modes\n\n⏭️ Next\n• “Visual punch” pass: header, badges, stronger game framing (no backend rebuild)\n• Tighten full-screen feel + presentation so it reads like a core game loop\n\nBig step forward. Now it’s about making it look as good as it plays 🐺",
     "links": [
       { "label": "WebApp", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -92,7 +81,7 @@
     "text": "✅ Big blocker removed: Missions endpoints are now properly wired into the WebApp API (no more 404s).\n\n🔧 1) Missions → WebApp routing fix\n• Registered Missions routes on the correct aiohttp app (make_state_app)\n• Confirmed live via /webapp/missions/ping\n• Cleaned up legacy TG handler references that caused a startup crash (NameError)\n\n🧭 2) Mission Board visibility update\n• Mission Board UI was highlighted/cleaned up so it reads clearer as a core game loop entry\n\n⏭️ Next (tomorrow)\n• Final cutover: /mission in Telegram becomes “Open Missions (WebApp)”\n• Disable old TG mission buttons/callbacks\n• Full E2E run: state → refresh offers → start → countdown → resolve\n\nClose to the finish line. WebApp-first missions are about to be fully locked in 🐺",
     "links": [
       { "label": "WebApp", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -102,7 +91,7 @@
   "text": "✅ Today was about clarity + urgency + fresh content — making the WebApp feel more like a real game loop.\n\n🏆 1) Legendary Path — Main Reward Preview (Mission Board)\nLegendary Path now shows ONE main reward for the whole track (not per step), so it reads like a real progression path.\n• Added track-level reward preview (shown once per Legendary Path card)\n• Cloudinary-first icon handling (consistent with the rest of the project)\n• Hard size cap to prevent the icon from taking over the entire quest card\n• Track progress displayed as doneSteps/totalSteps for clean readability\n\n🧬 2) Limited-Time Skin — claim window flow\nA limited skin drop can now be claimed only during an active time window.\n• One-time claim behavior + guard rails\n• Designed to be run_id/idempotent friendly (spam-safe)\n• Ready for optional code/password hunts for lore events\n\n🌑 3) New gear content — Eclipse Raider set\nDropped a new gear set to expand rewards and keep the loot ecosystem moving.\n• Prepared for future lootbox/shop rotations and WebApp inspect/compare\n\nNot a noisy day — but a very real step forward. Brick by brick 🧱🐺",
   "links": [
     { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
   ]
 },
   {
@@ -112,7 +101,7 @@
     "text": "✅ Big stability day — bringing core loops back to life and making rewards actually feel real.\n\n🧰 1) WebApp Salvage — restored + safe again\nWe brought salvage back online in the WebApp and made it reliable (no ghost gains / no half-applied state).\n• Salvage applies inventory changes only after the ledger-side result is confirmed\n• Clean output summary (Scrap/Shards yielded)\n• Safer flow for duplicate cleanup\n\n🎁 2) Lootboxes — Mystery/Premium/Legendary opening flow wired\nWe connected the box opening flow so boxes can be consumed and rewards can be applied correctly.\n• Box open path moved into /webapp/inventory/use (sync-safe)\n• Drop results apply through ledger-first logic and mirror into materials for UI\n• Foundation ready for proper loot tuning (pools / rarity / pity)\n\n⚡ 3) Consumables — effects restored + visible again\nConsumables were reconnected so they actually do something when used.\n• Effects execute properly on use\n• UI displays the effect feedback (no more silent 'Used item')\n• Buff/effect visibility path re-synced so players can tell what’s active\n\nThis was a systems day — not flashy, but it makes everything else scale and stay stable. Brick by brick 🧱🐺",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -122,7 +111,7 @@
     "text": "✅ Rewards day — boxes are live, loot logic is real, and the content pool got a serious upgrade.\n\n🎲 1) loot_tables.py — closed + tuned (no longer 'next')\nWe finished the loot tables properly, including the real tuning knobs:\n• Reward pools per box (Mystery / Premium / Legendary)\n• Rarity odds + slot weights\n• Pity rules to avoid dead streaks and keep openings exciting\n\n🎁 2) Mystery/Premium/Legendary boxes — activated for players\nBoxes are now usable end-to-end:\n• Use box → roll drops → apply rewards → update balances → inventory refresh\n• The goal is simple: opening a box should never feel empty\n\n🧪 3) 3 new consumables + effects added\nAdded three new consumables to the pool and shipped their gameplay effects.\n• Effects execute consistently\n• Feedback shows up in UI so players know what they triggered\n\n⚔️ 4) New gear set added\nA new set is now part of the item universe and ready to appear through rewards.\n• Integrated into the item pool cleanly\n• Ready for drops / future event hooks\n\nThis was the missing piece for progression: rewards with structure, fairness, and momentum. 🐺",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -132,7 +121,7 @@
   "text": "✅ Today was all about turning rough systems into real long-term gameplay.\n\n🐾 1) Pet Arena — proper stats + HP scaling (long-term fair play)\nWe fixed the core issue where pet power didn’t scale consistently with level, causing weird HP gaps (like 50 HP forever vs 400+ tanks).\n\nWhat shipped:\n• Canonical pet stat calculation via compute_pet_effective_stats()\n• Arena uses one clean source of truth (no mixed legacy bonuses)\n• Hybrid HP system (Step C):\n  - Level ALWAYS increases HP\n  - Vitality adds bonus HP, but capped to prevent extreme tank meta\n  - Tunable via ENV without patching code\n\nResult:\n• Pet levels finally matter\n• Fights feel fairer across archetypes\n• Huge future-proof base for real pet grinding\n\n🎁 2) Loot Tables for Boxes\nWe added the loot table foundation for box rewards.\nThis unlocks scaling rewards like:\n• shards\n• materials\n• special drops\n• future cosmetics / event items\n\n🛒 3) Shop — better purchase feedback\nShop purchase messaging is now cleaner and more readable.\nPlayers immediately know:\n• what they bought\n• what it cost\n• what changed in their balance\n\n🧊 4) Prep for the Shardborn Skin\nWe prepared the structure so Shardborn can drop in cleanly as a cosmetic without breaking UI flow.\nReady for:\n• unlock/purchase\n• reward drop\n• event-only release\n\n⚡ 5) Consumables — real timed effects\nConsumables are now wired to actually apply timed buffs instead of being “just an item”.\nNext step is already planned:\n• show active buffs visibly in UI (with remaining duration)\n\nThis wasn’t just content — it was the kind of systems work that makes the whole game scale smoothly. Brick by brick 🧱🐺",
   "links": [
     { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+    { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
   ]
 },
   {
@@ -142,7 +131,7 @@
     "text": "✅ FINAL PUSH: the \"progress rolls back / disappears\" ghost is now under control.\n\nAfter fixing the root UID ghost (data[uid] vs data['users'][uid]), the next beast was even worse:\n\n⚠️ The real nightmare:\n• Telegram Bot + WebApp were both doing load_data() → mutate → save_data(data)\n• In parallel requests, older snapshots were overwriting newer saves\n• Result: random rollbacks, missing rewards, WebApp vs Bot desync\n\n✅ What we shipped to kill it properly:\n1) Tripwire protection (WebApp)\n   • save_data() is hard-disabled in webapp_dashboard.py on purpose\n   • any legacy save path crashes instantly instead of silently corrupting progress\n\n2) New safe persistence layer: data_store.py\n   • per-user asyncio.Lock (one writer at a time)\n   • atomic writes (temp → rename)\n   • backups/rotation\n   • one rule:\n     READ = read_user(uid)\n     WRITE = with_user(uid, mutator)\n\n3) Core migration started (no more \"save the whole world\")\n   • WebApp state endpoints = read-only (no setdefault + no saves)\n   • WebApp actions = with_user() only\n   • Telegram mission start/resolve is being moved into the same safe pattern\n\n🎯 Result right now:\n• Massive drop in rollback risk (no more silent overwrites)\n• Progress stays consistent across Bot + WebApp\n• If something unsafe still exists, it fails LOUD (easy to find + patch)\n\n📌 Next cleanup (small remaining %):\n• Convert any last legacy save_data() in TG modules (daily/teamup multi-user rewards)\n• Add run_id/idempotency to spam-click actions (no double rewards)\n• Final grep pass to confirm: WebApp = zero legacy saves\n\nThis wasn’t a fun content week… but it’s the upgrade that makes the game scale. Brick by brick 🧱🐺",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -152,7 +141,7 @@
     "text": "🛠️ This week was a real \"systems over content\" moment — the game looked like it was randomly wiping progress (lvl 1 / empty inventory), especially when more than 1 player was testing at the same time.\n\n✅ What was happening (real cause):\n• We had TWO user trees living at once: data[uid] (root) AND data['users'][uid] (schema2).\n• Some modules were writing to the ROOT bucket while others were reading from users[].\n• That created a ghost profile: one user could exist twice with different levels/items.\n• In parallel requests, this caused overwrites + desync between Telegram and WebApp.\n\n✅ Fixes shipped so far:\n1) Unified user access with users_dict(data)\n   • Patched wallet.py and started replacing any data.setdefault(uid, ...) that created root UID ghosts.\n\n2) Verified & repaired the \"root vs users\" mismatch\n   • Confirmed both references can point to the SAME object (no more split progress).\n   • Progress started loading correctly again (lvl / inv / stats are back).\n\n3) WebApp write protection (anti-desync)\n   • save_data() is now hard-disabled inside webapp_dashboard.py on purpose.\n   • Any leftover save_data(data) calls inside WebApp handlers crash instantly → this exposed every unsafe endpoint.\n\n4) Started the SAVE_DATA PURGE\n   • The WebApp is being migrated to a clean rule:\n     READ = read_user(uid)\n     WRITE = with_user(uid, mutator)\n   • This prevents race conditions + makes writes atomic and consistent.\n\n5) Fixed Telegram WebApp restriction crash\n   • Dashboard button (WebApp keyboard) can only be used in private chats.\n   • Patch added: in groups it now sends a safe \"Open Dashboard in DM\" link instead of hard-failing.\n\n📌 What’s still in progress (next):\n• Purge remaining save_data(data) calls from webapp_dashboard.py (many endpoints still contain legacy saves).\n• Patch Building flows (start/resolve), Moon Lab Fortress menu/start, Quests, Daily actions, Pets, Shop, Referrals.\n• Make sure ALL WebApp actions follow the same pipeline and never create/overwrite ghost users.\n\n🎯 Result so far:\n• Player progress started showing correctly again (no more fake lvl 1 ghost profile).\n• The system now clearly reveals any unsafe save paths instead of silently corrupting data.\n\nPack update: This is the kind of boring fix that makes the whole game 10x stronger long-term. Brick by brick 🧱🐺",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -162,7 +151,7 @@
     "text": "🛒 Shop Inspect (WebApp): added a new item details preview when you tap an item in the Shop — so you can actually judge if it’s worth buying.\n🧩 Full Item Card: shows rarity/slot/price + description and quick stat chips for fast readability.\n📊 Compare vs Equipped: the inspect view includes a clean NEW vs EQ comparison table with a Δ column, so you instantly see what you gain (or lose) before spending.\n🧭 Navigation-Friendly: the inspect modal follows the new stack-based navigation rules — Back/Close behaves predictably and never breaks your flow.\n✅ Goal: reduce “blind buys” and make progression feel smarter and more fair for players.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -172,7 +161,7 @@
     "text": "🧭 Navigation Fix (WebApp): introduced a single, deterministic navigation flow with ONE global HOME (goHome) and a BackButton router.\n🔁 BackButton Router: replaced the old BackButton behavior (closing the WebApp instantly) with a proper stack-based handler — Back now closes the topmost open modal/sheet first, and only closes the WebApp when nothing is open.\n🧱 Nav Stack Consistency: added safe stack clearing on goHome() to prevent “ghost” back states after returning to the map.\n🌐 Global Helpers for Modules: exposed nav helpers globally (window.navOpen/navClose/navCloseTop) so standalone modules (like quests.js) can use the same navigation rules without scope errors.\n🐾 Active Pet Picker (MyPets): aligned the pets flow with an explicit “set active pet” picker in the WebApp — a dedicated MyPets entrypoint is now wired as the canonical way to choose your active pet during gameplay.\n🎯 Community-Driven Direction: next work sessions will focus primarily on UI/navigation polish (clarity, flow, fewer clicks, stronger wayfinding) based on the community’s feedback — making the product feel smooth before pushing further content.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" }
     ]
   },
   {
@@ -182,8 +171,8 @@
     "text": "🎬 Pet Arena Replay Patch B: switched replay delivery to a single MP4 video generated from battle frames (PNG ➜ ffmpeg ➜ H.264 MP4) instead of sending multiple assets.\n⚙️ Background Render Job: replay generation now runs as a non-blocking background task — the callback immediately responds with a \"Rendering replay…\" message and the video arrives when ready.\n🛡️ Per-User Task Guard: added a uid→Task lock so the same player can’t accidentally start two renders at once (prevents duplicate load + spam).\n🧹 Guaranteed Cleanup: implemented strict try/finally cleanup for both frame directories and MP4 output folders under /tmp (no orphaned temp files).\n⏳ Telegram Flood Safety: wrapped send_video with RetryAfter handling to respect Telegram rate limits and avoid failed sends during peak usage.\n🧩 Compatibility Hardening: added tolerant field mapping for steps (HP keys, actor side detection) and a safer renderer init path to reduce edge-case failures across battle payload variants.\n🎯 Why It Matters: replays are now lighter, cleaner, and more scalable — faster delivery, fewer messages, and safer server behavior as Arena usage ramps up.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" },
-      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+      { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" },
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
     ]
   },
   {
@@ -193,8 +182,8 @@
   "text": "🐾 Pet Arena Stability Pass: continued tightening Arena behavior and fixing edge cases so battles, replays, and pet effects feel consistent.\n🧬 Set Bonuses WIP: started consolidating how set bonuses are applied so stats remain predictable across modes (no hidden stacking / no desync between views).\n🧪 Consumables Effects Fix: corrected consumable effect application so buffs/debuffs reliably trigger and persist through the intended flow.\n🛒 Shop Consistency & Tuning: another balancing and cleanup pass to keep pricing, rotations, and rewards aligned with the ledger-first economy direction.\n📰 WebApp “What’s New” Integration: connected the site’s updates feed to the WebApp — users now get an in-app updates modal with a NEW indicator, per-user read state, and direct links back to the devlog for full details.\n🎯 Why It Matters: this is core hardening work — the boring fixes that prevent economy exploits, UI mismatches, and combat confusion as we scale toward TGE readiness.",
   "links": [
     { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-    { "label": "Updates / Devlog", "url": "https://thealphahusky.netlify.app/#updates" },
-    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    { "label": "Updates / Devlog", "url": "https://alphahusky.win/#updates" },
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
   ]
 },
   {
@@ -204,7 +193,7 @@
     "text": "🧲 WebApp Referrals (Recruit & Earn): added the missing referral flow directly inside the dashboard, so the pack can share invites and track progress in-app.\n⚙️ Forge Ledger-First Upgrade: moved Forge actions to a single source of truth — costs and rewards now go through the ledger to prevent desync and economy exploits before TGE.\n🎲 Shard Pity Unified: standardized shard crafting pity into one canonical tracker (shard_pity) with auto-migration and a pityMap returned to the UI for clear state visibility.\n🌑 Background Refresh: shipped a new WebApp ambience layer to make the hub feel more alive while we keep porting core loops into the UI.\n🎯 Why It Matters: this is TGE hardening work — referrals and Forge are now closer to production-grade reliability and ready for full end-to-end testing.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
     ]
   },
   {
@@ -214,7 +203,7 @@
     "text": "🧍 Character & Equipped Panel: shipped the first working version of the character view inside the WebApp — avatar preview + equipped slots.\n🧩 Equipped Module: split into a dedicated equipped.js flow that talks to /webapp/equipped/* endpoints and renders the character PNG with gear overlays.\n🗺️ UI Navigation Step-Up: the dashboard is evolving from text commands into a true hub — more actions are now reachable as buttons/modals instead of chat-only.\n🎯 Why It Matters: this is the bridge between the game’s core economy and a clean, modern UI — a key step before token utility goes live.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
     ]
   },
   {
@@ -224,7 +213,7 @@
     "text": "🧪 Fortress Combat Parity: unified the combat pipeline so every mode reads from the same stats source (base + gear + pet).\n❤️ HP Consistency Pass: standardized player max HP calculation (HP = 50 + 12*VIT) to eliminate edge cases where the WebApp/boss fight could show incorrect HP.\n📜 Cleaner Battle Logs: improved the clarity of combat outputs so totals reflect what the player actually has equipped.\n🎯 Why It Matters: stability beats hype — combat parity across systems is mandatory before scaling the economy into TGE territory.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
     ]
   },
   {
@@ -234,7 +223,7 @@
     "text": "📋 Mission Board MVP: brought the Quest/Mission Board into the WebApp with a real UI (filters, states, actions) backed by /webapp/quests endpoints.\n🧠 Quest Hooks Everywhere: prepared hooks so victories and key actions reliably push quest progress across missions and building runs.\n🏰 Moon Lab Fortress Wired: integrated Fortress state/start flows into the WebApp router, including cooldown handling and save protection.\n🎯 Why It Matters: quests are the long-term progression spine — moving them into the WebApp makes the experience feel like a real game hub, not just a bot menu.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
     ]
   },
   {
@@ -244,7 +233,7 @@
   "text": "🐾 Full Pet Stat Pass: defined BASE_STATS for all existing pets — not only adoptable companions, but also evolutions, exclusives and event pets. Every pet now has clear STR/AGI/LUCK/VIT/DEF values instead of relying on loose defaults.\n🔺 Feral / Trickster / Mystic Archetypes: grouped every pet into one of three arena archetypes (feral, trickster, mystic), including hidden and token-only pets. Each archetype has at least one easily accessible pet, so new players can pick a style instead of being locked into one meta.\n🎮 Rock–Paper–Scissors Layer in Pet Arena: wired a light RPS system into Pet Arena — Feral beats Trickster, Trickster beats Mystic, Mystic beats Feral. The winner archetype gets a small stat boost, the weaker one a small debuff, before the normal combat simulation runs.\n⚖️ Less RNG, More Meaningful Choices: fights between similar-level pets are no longer pure coin flips. Archetype matchups matter, but RNG and progression still play a big role, keeping battles exciting instead of deterministic.\n🧱 Why It Matters: this update turns Pet Arena from a fun prototype into a more deliberate system — pet choice, progression and matchups all matter, and the backend is ready for future pet content, skills and token-linked rewards.",
   "links": [
     { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
   ]
 },
 {
@@ -254,7 +243,7 @@
 "text": "📜 Quest Engine Clean-Up: reworked the quest backend so story, daily and repeatable quests are now clearly separated, easier to tune and safer for long-term balance. XP rewards were normalized (with a soft cap for regular tasks) so progress feels steady instead of spiky.\n🧭 Lore-Driven Story Quests: expanded the STORY category with new lore quests and pet milestones (pet level 10 and 20), tying progression directly into the Alpha Husky saga instead of generic “do X times Y” objectives.\n🧩 Backend Wiring for Quests: hooked quest progress into multiple systems — missions, shop, main loop, fortress and WebApp — so actions across the game reliably emit quest events and contribute to the right tasks without hidden side paths.\n⛓️ AFK Chain Gate Lock & Claim: tightened the AFK system by adding a proper lock — when your avatar is on AFK duty at the Chain Gate, they can’t start other building runs, and rewards are now claimed manually via a dedicated resolve action instead of silently in the background.\n🔄 Unified AFK State Machine: integrated AFK state (idle → running → ready → claimed) into the WebApp + bot handlers, ensuring that timers, rewards and locks stay in sync and are easier to reason about before TGE.\n🐾 Pet Arena Evolution: refined pet XP and level-up logic so skills unlock cleanly and both daily-style progress (pet_level_up) and story milestones (pet_level_reached) are tracked consistently across feeding, arena battles and future pet content.\n🎯 Why It Matters: this update doesn’t scream with new buttons, but it hardens the spine of the game — quests, AFK and pets now behave more like a production-grade system than a prototype, which is exactly the kind of stability we need before putting a real token on top.",
 "links": [
 { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-{ "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+{ "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
 ]
 }, 
 {
@@ -264,7 +253,7 @@
 "text": "🧩 Cleaner WebApp Layout: rebalanced the main dashboard and map view so key actions, stats and buttons are easier to see at a glance, with less clutter and more readable spacing on both desktop and mobile.\n🖼️ Central Player Card: added a new hero panel in the middle of the dashboard that shows your Husky skin artwork, nickname and real in-game level pulled from the backend, so every login feels like stepping back into your own character rather than a generic menu.\n🎭 Skins Ready for Future Utility: wired the skin slot into a dedicated frame and DOM IDs, making it straightforward to later plug in dynamic skins, rarity frames and event cosmetics without reshaping the whole layout again.\n⏳ Chain Gate AFK Mode: turned Chain Gate into a proper utility building by giving it an AFK loop — you send your Husky on an AFK run, let the timer tick in the background and then claim rewards directly via the WebApp through a dedicated claim action.\n🦴 AFK State Tracking: backend now stores per-player AFK state (idle → running → ready) and safely resets progress once rewards are collected, so AFK gains are trackable, fair and easy to tune.\n🎯 Why It Matters: this update makes the WebApp feel more like a real character hub and less like a prototype UI, while introducing AFK progression as a new pillar of the core loop — even when you are offline, the Pack keeps moving and your Husky does not stand still.",
 "links": [
 { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-{ "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+{ "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
 ]
 },
   {
@@ -274,7 +263,7 @@
   "text": "📒 Ledger Sanity & Admin View: wired an admin-only /verify_ledger and /ledger_show on top of ledger_lite — admins can now run signature checks across the full log, see per-user balances, and inspect the last entries directly in Telegram, making the ledger the single source of truth for Season 0 rewards.\n♻️ Auto-Dupe 2.0: refined add_item_autodupe and auto_dupe_cleanup so excess gear copies are safely auto-salvaged into Scrap and Rune Dust, respect backpack capacity and locked items, and write a single aggregated materials grant to the ledger while tracking how many items were auto-salvaged per player.\n🛡️ Shop Anti-Farm Limits: introduced per-item daily limits for the Daily Shop (with a global default and optional daily_limit overrides in all_items.json). Both /buy and inline buy_... buttons now share a unified check backed by per-user shop_limits, so key consumables and utility items cannot be spam-farmed in a single day.\n🧬 Referrals → Ledger Wiring: the existing invite flow now appends a referral_bonus entry to the ledger whenever a referrer is rewarded (within the 5-per-day cap), with ref metadata (type=referral, from=referrer_id, to=new_howler_id). Badge thresholds were updated so ECHO_HOWLER now unlocks at 5 invites and SIGNAL_CALLER at 8, while ALPHA_HERALD and PACK_SUMMONER remain the higher milestones.\n🪙 Inspect HUD with Live Materials: unified the inspect view for equipped and inventory items into a single _render_inspect_card_inplace that shows current stats, Next★ preview, Max★ projection (including HP gain from VIT) and a live ledger-based readout of the player’s Scrap, Rune Dust and Bones vs the upgrade cost, so every Howler instantly sees if they can afford the next forge.\n🎯 Why It Matters: today’s work hardens the backbone for TGE — referrals, shop, forge and future Season 0 snapshots all read from the same append-only ledger, and the in-game UI finally reflects those true balances, making progression and rewards transparent, auditable and much harder to game.",
   "links": [
     { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
   ]
 },
   {
@@ -284,7 +273,7 @@
     "text": "🧬 Referral Spine E2E: locked `ref_` as the canonical invite prefix and wired it into /referral — each player now gets both a classic bot link and a Mini App link that feed into the same tracking path.\n🌐 WebApp start_param Wiring: the WebApp state endpoint now reads start_param=ref_<id> from Telegram init_data, sets invited_by once, applies the 5-per-day referral reward cap, and grants the four referral badges at their thresholds (ECHO_HOWLER, SIGNAL_CALLER, ALPHA_HERALD, PACK_SUMMONER).\n📣 Player Referral Panel: refstats was cleaned up into a proper referral dashboard — it shows who invited you (if tracked), total rewarded invites, today’s progress out of 5, and referral-only badges instead of dumping every achievement you’ve ever earned.\n📊 Admin Referral Audit: shipped ref_audit as an admin-only overview that reports how many users have an inviter tracked and ranks referrers by rewarded invites; fixed the ADMIN_IDS string/int mismatch so all admin checks behave consistently across commands.\n🎯 Why It Matters: referrals are now a reliable Season 0 signal — every valid invite is tracked and capped fairly, whether a new Howler lands through the bot or directly in the Mini App, laying groundwork for pre-TGE contribution recognition.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
     ]
   },
   {
@@ -294,7 +283,7 @@
     "text": "🔧 Equipment Upgrade Guard: enforced per-item star cap (star_cap) server-side and in the inspect refresher — the Upgrade button now switches to “At cap” immediately. No overshoot; costs/preview only when below cap.\n🧪 Single Timed-Buff Policy: only one timed consumable buff can be active at a time (xp_gain 30m, cooldown_reduction 15m, alpha_surge 30m, generic boost 24h). Central lock (buff_lock_until) with user message showing remaining time. Both /use and inline ‘Use’ respect the lock. One-offs (dice_luck, double_feed, plushie_protect, mission_speed_next) are unaffected.\n🎒 Inventory & Use Handlers: aligned /use and inline callback behavior; normalized “consumable”→“special” alias; consistent achievements + save flow. Cleaned indentation (tabs→spaces) to remove a runtime IndentationError.\n🖼️ Inspect Card UX: refresh now respects per-item cap instantly (shows Stars bar and disabled state), preserves cost & stat-preview when upgrade is available, and keeps Unequip/Back actions in place.\n❓ WebApp FAQ (v0): added faq.js module and wiring; seeded Quick Start, How to begin, and Core Loop entries; content is scaffolded for fast iteration.",
     "links": [
       { "label": "WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
-      { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" }
+      { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" }
     ]
   },
   {
@@ -304,8 +293,8 @@
   "text": "🧹 Purge Day: world reset shipped — fresh inventories, clean stats, equal chances for newcomers.\\n💙 One Source of Truth (HP/Stats): Missions now use the same pipeline as Moon Lab → compute_full_stats → player_from_totals → compute_player_max_hp (HP = 50 + 12×VIT). 1-HP edge cases removed; parity confirmed.\\n🧩 Shards (ledger path): fixed a bug where Premium Box could overwrite shard balances — rewards now credit additively via ledger (no set/overwrite). Unified naming to <slot>_shards with a back-compat reader that sums (new + legacy).\\n🧰 Migration: shipped one-off, idempotent script to merge legacy shard_<slot> → <slot>_shards in ledger and reconcile totals for affected users.\\n🐾 Adoption Center: standalone pet adoption (separate from Daily Shop) with Bones-ledger payments and correct stat assignment/persist.\\n🔥 Forge→Shards: craft flow live (RNG 80/20, pity 5, refine +2) with proper additive credits and UI feedback.\\n📝 Builder’s Notes: added “Why Alpha Husky is Different” section (lean, proof-first).",
   "links": [
     { "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map" },
-    { "label": "Lean Roadmap (TGE gates)", "url": "https://thealphahusky.netlify.app/#roadmap" },
-    { "label": "Builder’s Notes", "url": "https://thealphahusky.netlify.app/partials/builders-note.html" }
+    { "label": "Lean Roadmap (TGE gates)", "url": "https://alphahusky.win/#roadmap" },
+    { "label": "Builder’s Notes", "url": "https://alphahusky.win/partials/builders-note.html" }
   ],
   "next": "Gearing up for TGE (no date): finalize ledger/audit checks and crate tests; publish light-paper v0.1 + ‘Why Alpha is different’ teaser thread; prepare Season 0 snapshot plan and contributor allowlist form; outline staged-LP/liquidity approach; 72-hour stability & telemetry pass; soft-announce readiness gates (ship > hype)."
 },
@@ -316,7 +305,7 @@
 "text": "🏰 Fortress: fixed L1 loop & 1-HP bosses (HP from blueprint + safe min), reliable cooldown (cooldownUntil + legacy), no rollback on save, dynamic encounter count, gentle agility/crit scaling, turn_cap=60.\n💰 Ledger: shop spends Bones via ledger; missions (auto-resolve, daily + RAID bonus) pay through ledger/tokens; pets evolve by spending tokens via ledger; inventory (boxes, salvage, bulk, auto-dupe, item “bones” rewards) credits via ledger with UI snapshot mirror.\n🧰 Utils: save-time fortress_progress_guard prevents stale writes; minor polling stability tips documented.\n🧩 Dev: universal credit/debit/tx shims added for consistent economy calls.",
 "links": [
 { "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map" },
-{ "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap" }
+{ "label": "Roadmap section", "url": "https://alphahusky.win/#roadmap" }
 ],
 "next": "Migrate Moon Lab victory rewards fully to ledger; wire Forge/salvage admin tools to ledger; unify co-op payouts; add per-user ledger history in WebApp; maintenance switch + nightly backups/compaction; finalize reset script using ledger audit; publish short FAQ (ledger vs points/tokens)."
 },
@@ -327,7 +316,7 @@
 "text": "⚔️ Missions now pay via Ledger-Lite (Bones/Scrap/Rune Dust/Shards) with a single apply; XP unchanged.\n📅 Daily Quests: “Explore” completes after any mission resolve (win/lose). RAID daily completes after /raid <passcode> with DM fallback.\n🛡️ Anti-abuse: tokens are granted at /end_raid (1 per raid per user), daily cap enforced, per-raid dedup; status and ranking live.\n🎁 /gift: Bones transfer runs through ledger with a shared transfer_id (auditable), mirrored to UI; self-gift blocked.\n📊 /materials & /profile: now read from ledger snapshot (Bones fixed); /skills formatting cleanup.",
 "links": [
 { "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map" },
-{ "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap" }
+{ "label": "Roadmap section", "url": "https://alphahusky.win/#roadmap" }
 ],
 "next": "Wire remaining minigames (Lucky Dice, Slot) to ledger; add per-user ledger history in WebApp; nightly backups + compaction; finalize reset script using ledger as audit trail; finish Mission Board hooks; patch Moon Lab 1-HP edge case; publish FAQ (wallet vs score) ahead of TGE."
 },
@@ -338,7 +327,7 @@
 "text": "💾 Ledger-Lite = single source of truth for game wallets (Scrap, Rune Dust, Bones, Tokens). Snapshot (user.materials) mirrors ledger on read.\n🛒 Shop & 🛠️ Upgrade now use the same flow: check → ledger_spend → mirror (no more points/materials decrements). Purchases and upgrades are fully auditable.\n🪙 Tokens & 🦴 Bones helpers refactored: add/spend write to ledger; daily limits & history remain as telemetry (separate from wallet balance).\n🧰 Admin toolbelt: /ledger_report_bones, /migrate_bones_all [force], /migrate_bones <uid>, /wallet_bones_set, /wallet_sync_bones_from_score, /grant, /bones_debug.\n📦 Migration executed: 29 users credited, +4,663,469,484 Bones total (module=bootstrap). Wallets now match pre-reset balances.\n🧪 Dev UI: /dev_me shows real ledger balances and Total Spent computed from ledger entries.\n🔒 Guardrails: token spends for upgrades blocked in materials mode; zero-safe mirroring for known assets; CSV export fixed; double-tap locks on upgrades.\n📣 Clarity: “Bone Score (lifetime)” (leaderboards) vs “Bones (wallet)” (spendable) distinguished across UI.",
 "links": [
 { "label": "WebApp (map)", "url": "https://app.alphahusky.win?section=map" },
-{ "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap" }
+{ "label": "Roadmap section", "url": "https://alphahusky.win/#roadmap" }
 ],
 "next": "Finish swapping remaining flows (quests, drops/crafting, any legacy spends) to ledger; add per-user ledger history in WebApp; nightly backups + compaction; finalize reset script using ledger as audit trail; migrate tokens/scrap where needed; publish player FAQ on wallet vs score; TGE prep: bridge integration & post-reset wallet seeding."
 },
@@ -359,8 +348,8 @@
     "text": "🥋 Dojo (Testnet Wastes): shipped a zero-risk training ground. Front: new js/dojo.js modal with timer + live metrics (DPS, total, hits, avg/max, crit%). Map pin routes straight to Dojo; Start triggers /webapp/building/start (dojo), state returns last session. No materials lost, small mastery rewards planned.\n🔌 Wiring: index loads js/dojo.js (cachebusted), Dojo.init shares apiPost with Fortress; map click handler and bot’s NODE_TO_BUILDING map now include testnet_wastes → testnet_wastes_dojo. Backend: dedicated dojo branches in /webapp/building/state and /webapp/building/start.\n🖼️ Gallery: added two legend cards (Alpha Herod, Cherenkov Warden) with lightbox, lazy-load and proper alt text.\n🗺️ Lore consistency: kept location name as “Testnet Wastes”; Dojo is a building/function inside that region, not a new region.\n🧭 Roadmap: updated “Shipped” with Site/Gallery row, consolidated Shop/Admin telemetry, tightened wording on DoD. Kept WebApp action migration as “In progress”; clarified “Next” (bring back /daily; wire start/resolve for AW/BC; inventory cap → stash).\n🐛 UX: fixed start/refresh flows in the building modal to reflect server timers reliably; added gentle haptics + clearer alerts.",
     "links": [
       { "label": "WebApp (prod)", "url": "https://app.alphahusky.win?section=map" },
-      { "label": "Roadmap section", "url": "https://thealphahusky.netlify.app/#roadmap" },
-      { "label": "Gallery", "url": "https://thealphahusky.netlify.app/#gallery" }
+      { "label": "Roadmap section", "url": "https://alphahusky.win/#roadmap" },
+      { "label": "Gallery", "url": "https://alphahusky.win/#gallery" }
     ]
   },
 {
@@ -372,7 +361,7 @@
 { "label": "WebApp (prod)", "url": "https://app.alphahusky.win" },
 { "label": "API Health", "url": "https://api.alphahusky.win/health" },
 { "label": "Open in Telegram (Mini App)", "url": "https://t.me/Alpha_husky_bot/AlphaHuskyHub" },
-{ "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+{ "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
 ]
 },
   {
@@ -383,7 +372,7 @@
     "links": [
       { "label": "API Health", "url": "https://api.alphahusky.win/health" },
       { "label": "WebApp (prod)", "url": "https://alpha-husky-webapp.vercel.app/" },
-      { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+      { "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
     ]
   },
    {
@@ -394,7 +383,7 @@
     "links": [
       { "label": "API Health", "url": "https://api.alphahusky.win/health" },
       { "label": "Ping (POST)", "url": "https://api.alphahusky.win/dbg/ping" },
-      { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+      { "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
     ]
   },
   {
@@ -403,9 +392,9 @@
   "status": "LIVE",
   "text": "☁️ Backend now runs behind a Cloudflare Tunnel — our IPv6-only VPS is reachable from both IPv4 & IPv6 with automatic HTTPS.\n🔒 Safer exposure — traffic goes through Cloudflare; the origin stays behind the tunnel (no public inbound port needed).\n🌉 Stable API domain — WebApp targets https://api.alphahusky.win, paving the way for new features and smoother deploys.\n🗺️ Roadmap — work in progress; more details soon. We’ll keep posting updates on the site.",
   "links": [
-    { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
+    { "label": "Open Site", "url": "https://alphahusky.win/" },
     { "label": "Open WebApp (Vercel)", "url": "https://alpha-husky-webapp.vercel.app/?section=map" },
-    { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+    { "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
   ]
   },
   {
@@ -414,10 +403,10 @@
   "status": "LIVE",
   "text": "🔓 Map All-Unlock — temporarily all regions and buildings are open for everyone (no keys/fragments).\n⚔️ Moon Lab: Fortress — **under construction (WIP)**. Menu is available from the map; boss fight prototype behind a toggle (1h CD). Progression/rewards are subject to change.\n🌀 Lightweight battle animation (WebApp) — HP bars, hits/CRIT, VICTORY/DEFEAT, Replay; steps delivered via /webapp/state (lastBattle). Zero extra bot load.\n🧩 WebApp Bridge — new on_webapp_data understands JSON and short \"a:b:c\"; handles building_enter, region_open, cmd. No more “Unsupported WebApp action”.\n🗺️ map.json (front) — defaults set to unlocked; Moon Lab & Testnet Wastes use unlock: free; paths render without locks.\n🎯 Explore/Hunt mapping — Exploration → Abandoned Wallets (abandoned_wallets_vault), Hunt → Broken Contracts (broken_contracts_hub).\n🔧 Stability — WebApp handler runs first (group=-1, block=True); fixed WEBAPP_BASE (no trailing slash); lazy-imported Moon Lab menu (fixes NameError).\n🛠️ Dev switch — UNLOCK_ALL=1 active; turn off with UNLOCK_ALL=0.\n\nHow to test: Open App → Map → Moon Lab → “⚔️ Fight Boss (prototype)”. Abandoned/Broken → “Enter” starts a run.",
   "links": [
-    { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
-    { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=map" },
+    { "label": "Open Site", "url": "https://alphahusky.win/" },
+    { "label": "Open WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
     { "label": "Open WebApp (Vercel)", "url": "https://alpha-husky-webapp.vercel.app/?section=map" },
-    { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+    { "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
   ]
 },
   {
@@ -426,9 +415,9 @@
 "status": "LIVE",
 "text": "🧩 Universal Key Shards — added a self-serve migration in /keys. If you have old “Map Fragment(s)”, you’ll see a Migrate old fragments → Universal button. Migration is idempotent and supports legacy names.\n🔑 /keys panel upgrade — shows Universal shards and new inline actions: per-region +1 / +5 / MAX and ⚖️ Split ALL evenly. Craft & Unlock uses KEY_RECIPES (dynamic needs).\n🛒 Shop: Daily Consumables — rotation enabled (auto-refresh). handle_buy updated to support consumables cleanly.\n🧰 Admin tools — bulk prep/migration for legacy holders; test seeding for QA.\n🔗 QoL — /forge shortcut opens the /keys panel; minor inline UI polish.\n\nHow to use: farm shards → open /keys → (if you have legacy, hit Migrate) → convert Universal → Craft Key → Unlock regions. Consumables are in the shop’s daily rotation.",
 "links": [
-{ "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
-{ "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
-{ "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+{ "label": "Open Site", "url": "https://alphahusky.win/" },
+{ "label": "Open WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+{ "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
 ]
 },
   {
@@ -437,9 +426,9 @@
   "status": "LIVE",
   "text": "🗺️ New WebApp Map — click buildings; the old image-map is retired.\n🧪 Moon Lab: Fortress — multi-floor boss gauntlet, rising difficulty, 1h cooldown, rare drops.\n🧠 41 new Daily Quiz questions.\n🔹 Missions → Key Shards — missions now drop region key shards (with a pity every 10 wins).\n🔑 /keys & /forge — craft keys from shards and Unlock regions (inline buttons).\nℹ️ “How to get keys?” — helpful popup (no cooldown toast).\n\nHow to play: Open App → Map → try Moon Lab • farm shards in missions • /keys or /forge → Craft Key → Unlock new regions. 🚀",
   "links": [
-    { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
-    { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
-    { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+    { "label": "Open Site", "url": "https://alphahusky.win/" },
+    { "label": "Open WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+    { "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
   ]
 },
   {
@@ -449,9 +438,9 @@
     "text": "Today we focused on the front-end to make the game experience smoother and to prep for the Blood Moon eclipse. Added an event banner to the homepage with a D-3→start countdown, light glitch pulse on digits, mobile/desktop responsive picture, dismiss button (localStorage), and auto-expire after the event window. Also tightened WebApp entry points and minor UI polish (lazy videos + IntersectionObserver). Worth checking the site daily — the banner flips to LIVE coverage during the eclipse.",
     "media": "/assets/event/bloodmoon_banner_1920x640.jpg",
     "links": [
-      { "label": "Open Site", "url": "https://thealphahusky.netlify.app/" },
-      { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
-      { "label": "Join Telegram", "url": "https://t.me/The_Alpha_Husky" }
+      { "label": "Open Site", "url": "https://alphahusky.win/" },
+      { "label": "Open WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+      { "label": "Join Telegram", "url": "https://t.me/Alpha_Husky_ct" }
     ]
  },
   {
@@ -460,8 +449,8 @@
   "status": "LIVE (partial)",
   "text": "We launched the WebApp → bot bridge: buttons in the WebApp now trigger bot actions (Mission, Inventory, Equipped, Keys, Feed, MyStats, MyPets, Profile, Howlboard, Shop, Map). Added a robust web_app_data handler + sniffer, a global menu button, /app_* commands, and the webapp_kb helper. Brought up a minimal /webapp/state API (aiohttp:8081). Enabled DEBUG logging and installed aiohttp. Fixed mission_open → mission mapping. Rollback-ready: /dashboard works as the classic text view if needed. The map modal wires up Ask the Bot / Forge / Shop.",
   "links": [
-    { "label": "Open WebApp (Dashboard)", "url": "https://thealphahusky.netlify.app/?section=dashboard" },
-    { "label": "Open WebApp (Map)", "url": "https://thealphahusky.netlify.app/?section=map" }
+    { "label": "Open WebApp (Dashboard)", "url": "https://app.alphahusky.win" },
+    { "label": "Open WebApp (Map)", "url": "https://app.alphahusky.win" }
   ]
 },
   {
@@ -470,7 +459,7 @@
   "status": "LIVE",
   "text": "Region Keys meta is live: collect Map Key Fragments and craft region keys in Forge (Moon Lab: 10, Testnet Wastes: 15). Unified gates in Bot + WebApp: /keys shows status and Unlock; map modal shows requirements. Moon Lab fortress online (3 floors × 10 encounters, 1h cooldown, persistent progress). WebApp gains clickable commands (Mission, Inventory, Equipped, Keys, Feed, MyStats, MyPets, Profile, Howlboard, Shop, Map). Consumables rotation hooks ready (SKU e.g. moon_frag_pack).",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post",   "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -480,7 +469,7 @@
   "status": "LIVE",
   "text": "Wrap-up: materials-only upgrades are fully enforced (token path hard-blocked), Reforge (5/day) and Fuse (8/day) live, ★5 cap active. Inspect/Upgrade/Unequip routing fixed (slot whitelist); inventory Inspect now stable with text fallback while assets are added. Telemetry enabled for dev (materials_spent by reason, first ★5 timestamp). Monitoring remains on, but D4–D5 are considered complete.",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -490,7 +479,7 @@
   "status": "HOTFIXED",
   "text": "Symptom: some upgrades still deducted tokens despite materials mode. Root cause: UPGRADE_COST_MODEL was imported at module load (stale value cached) and a legacy `else: spend_tokens(...)` path still existed; a second handler might also have been catching `^upgrade_`.\n\nFixes applied: 1) Removed module-level import of UPGRADE_COST_MODEL; the mode is now read dynamically inside the handler. 2) Added a hard guard in the upgrade handler to enforce materials-only during Forge Week; legacy branch disabled. 3) Normalized config/env to strict 'materials'. 4) Atomic materials deduction before stat changes; int-safe helpers. 5) Anti double-tap lock around upgrade. 6) Process restart to refresh config.\n\nDiagnostics & safety: temporary breaker available in spend_tokens() to raise if materials mode is active (to reveal stray call-sites). Repo grep planned for any extra `CallbackQueryHandler(..., pattern=\"^upgrade_\")` and `spend_tokens(` references.\n\nState: materials upgrades verified in smoke tests (no 'Spent X tokens' logs), reforge/fuse limits remain green, backpack cap OK. Monitoring continues while we clean up any legacy handlers. Next: enable telemetry (materials_spent + star5_at) and add /dev_star5 + /dev_costmodel.",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -500,7 +489,7 @@
   "status": "LIVE",
   "text": "Big step for the Forge. 1) Upgrades now run on materials: Scrap + Bones (+Rune Dust from ★3), with a hard cap at ★5 and a config toggle to fall back to tokens if needed. Costs tuned upward for meaningful late-game progress. 2) Reforge is live as a daily-limited reroll (Bones + Dust by rarity), preserving total potency while shifting stat lines; limit = 5/day, resets 00:00 UTC. 3) Fuse burns duplicates by slot+rarity and grants Selector Shards toward crafting higher tiers; limit = 8/day (Bones/Dust cost by tier). 4) UI parity: both equipment and inventory ‘inspect’ now show material costs and route the same Upgrade action. 5) Glue/handlers wired; legacy token text removed to avoid confusion. Note: to minimize player impact, we will run a focused test window tomorrow morning and adjust rollout if anything unexpected appears.",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -510,7 +499,7 @@
   "status": "READY",
   "text": "Clean and simple progression. 1) Backpack cap is live (default 30): only gear counts; locked items are excluded when BACKPACK_COUNT_LOCKED=false. 2) Auto-Dupe now respects the cap — when full, extra gear instantly converts into Scrap (and sometimes Rune Dust); non-gear never counts. 3) Start-mission alert warns when your backpack is full; missions still run, and excess drops auto-salvage. 4) Safety pass: a gear-only filter powers bulk/clean to ensure consumables/boxes/tokens are never affected. No Loadout, no Stash — by design, to keep UX lean. Next: Day 4–5 — Upgrade/Reforge/Fuse on materials with daily limits.",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -520,7 +509,7 @@
   "status": "LIVE",
   "text": "We shipped the inventory quality-of-life trio and closed D2–D3. 1) New player commands: /lock, /unlock, /locks, /salvage <item> [qty], /bulk_dismantle rarity=... keep=... — safe cleanup with locked items always skipped. 2) Auto-Dupe: excess copies now auto-salvage into Scrap (and sometimes Rune Dust) using per-rarity limits (common/uncommon=3, rare=2, epic/legendary=1). 3) Admin /forge_clean_user: one-time tester cleanup that keeps ≥1 per item key (and equipped), skips locked, grants Veteran Salvager badge + small shard cache, and reports materials gained. 4) Hotfix: bulk & clean now affect gear only (consumables/boxes/tokens remain untouched). Next: Day 4–5 — Upgrade/Reforge/Fuse on materials with daily limits. Happy International Dog Day to the whole pack! 🐾",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -530,7 +519,7 @@
   "status": "LIVE",
   "text": "Forge Week continues. 1) Swapped ALL core loot sources to the new economy: solo missions, TeamUp (co-op) stages, and boxes now grant Bones, Scrap Alloy, Rune Dust, and Selector Shards (no full gear) while ENABLE_FULL_GEAR_DROPS=false; rare boss/event drops remain a separate toggle. 2) Unified helpers and removed ‘Bones’ from materials storage to prevent desync (Bones remain from points). 3) /materials + HUD stay aligned with the new counts. Also today: Chapter 2 of the lore premiered, and we refreshed several sections of the website with cleaner layouts and a mobile-friendly pass (navigation, spacing, typography). Next: Salvage (manual/bulk/auto-dupe) and the one-time Forge Clean.",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -541,7 +530,7 @@
 "text": "Profile cards now render real badge PNGs. We filtered /setbadges to true BADGES keys, added a robust icon resolver (absolute assets/badges paths, slug + icon_file support), and sanitized markup to avoid parse errors. Result: the bottom row shows selected badges instead of placeholders (with +N overflow). Milestone: we crossed 2,200 followers on X — thank you, pack!",
 "media": "assets/alphahusky_x_2200.png",
 "links": [
-{ "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+{ "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
 { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
 ]
 },
@@ -551,7 +540,7 @@
   "status": "LIVE",
   "text": "Laid the economy groundwork. 1) Data migration complete: every player now has materials.scrap and materials.rune_dust plus a per-slot shards dictionary (weapon/armor/fangs/cloak/collar/helmet/ring/offhand/gloves). Pet is excluded from shards. The script created an automatic backup before saving. 2) Config set: SELECTOR_SHARD_SLOTS updated (no pet), SHARDS_REQUIRED_UNCOMMON=10, and a materials-only drop table scaffolded; ENABLE_FULL_GEAR_DROPS is prepared for the switch. 3) New /materials command is live — shows Scrap, Rune Dust, and Shards; Bones are intentionally not shown here to avoid desync (Bones remain governed by core balance). 4) Art for Scrap Alloy and Rune Dust is ready. Next: swap mission/box loot to materials+shards and ship salvage (manual, bulk, auto-dupe) with the one-time Forge Clean.",
   "links": [
-    { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+    { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
     { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
   ]
 },
@@ -561,7 +550,7 @@
     "status": "LIVE",
     "text": "Big systems pass today. 1) Effects are live in gameplay: dispatcher now treats effect.type='consumable' as special → all registered effects fire. New/updated handlers: xp_gain (+25%/30m), dice_luck (next roll boost), cooldown_reduction (−50%/15m), double_feed (2 uses), plushie_protect (fail shield x1), alpha_surge (+20% XP/loot/bones/30m), boost_next_mission_speed (next mission ×0.5 duration), bone_pack_lottery (10–2000 bones). 2) Items: Moonstone Orb now grants +30 pet XP once per UTC day (no level-up); Cosmic Seed intentionally unknown (for future event); Energy Drink uses the next-mission speed boost. 3) Boxes: Mystery now pulls ONLY consumables and excludes other boxes (no box-in-box); Premium rolls random gear; Legendary prefers unique pet/skin tokens, otherwise legendary+ gear (fallback to epic+); alias random_shop_reward→random_reward. 4) Feed/Dice/Missions are wired into hooks: feed uses adjust_cooldown/apply_xp_bonus/apply_bones_bonus/apply_feed_xp_bonus (Turbo Bone can bypass CD by consuming a use; Lucky Coin auto-consumes on next feed); Lucky Dice uses adjust_cooldown and apply_dice_bonus (then scales wins via apply_bones_bonus); Missions: on start, duration respects cooldown reduction and consumes the next-mission speed boost; on resolve, XP/Bones pass through effect multipliers and Plushie saves on fail; loot_table reads user_data; token drop chance kept with daily cap. 5) Inventory/UX: stricter gear detection (unknown items no longer show as gear); migration aliases added (e.g., standard_box→mystery_box, booster_xp→xp_surge, encrypted_chip→decrypt_datapad, firebone→turbo_bone, ice_crystal→icecrystal).",
     "links": [
-      { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+      { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
       { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
     ]
   },
@@ -572,7 +561,7 @@
     "text": "Finished the consumables pass and wired effects into gameplay hooks. New/updated items: XP Surge (+25%/30m), Chaos Dice (+25% next roll), Speed Boost (-50% cooldowns/15m), Turbo Bone (double feed), Husky Plushie (fail protection x1), Alpha Surge (+20% XP/loot/bones/30m), Lucky Coin (2× XP next feed), Energy Drink (next mission 2× faster). Added Bones bonus + mission duration helpers. Loot boxes shipped: Mystery Box (consumables-only pool), Premium Box (random gear), Legendary Box (legendary gear + support for unique pet/skin tokens). Bone Pack converted to a lottery (10–2000 bones; shop price 1000).",
     "media": "assets/items/boxes_promo.png",
     "links": [
-      { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+      { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
       { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
     ]
   },
@@ -583,7 +572,7 @@
     "text": "Shipped tiered Bug Hunter badges (5/15/25), Howl Streak badges (7 & 30 days), single-tier Never Lucky, unified stat pipeline across /mystats, /stats and upgrades, admin-only /accept_bug, idempotent /dailyhowl; plus multiple fixes.",
     "media": "assets/badges/bug_hunter3.png",
     "links": [
-      { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+      { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
       { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
     ]
   },
@@ -591,10 +580,10 @@
     "date": "2025-08-19",
     "title": "Site Launch + Skins Gallery MVP",
     "status": "LIVE",
-    "text": "We launched the public site and the first version of the animated skins gallery. MP4 clips autoplay when visible and pause off-screen. More skins, posters, and UI polish coming next.",
+    "text": "We launched the public site and the first version of the supporter cosmetics gallery. MP4 clips autoplay when visible and pause off-screen. More cosmetics, posters, and UI polish coming next.",
     "media": "assets/skins/ASHCLAW.mp4",
     "links": [
-      { "label": "Telegram", "url": "https://t.me/+QaAcoS1Cp_9kNTVk" },
+      { "label": "Telegram", "url": "https://t.me/Alpha_Husky_ct" },
       { "label": "X Post", "url": "https://x.com/The_Alpha_Husky" }
     ]
   }
