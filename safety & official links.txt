@@ -12,7 +12,7 @@ Official token mint / CA:
 FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS
 
 Official website:
-https://thealphahusky.netlify.app/
+https://alphahusky.win/
 
 Official X:
 https://x.com/The_Alpha_Husky
@@ -27,7 +27,7 @@ Official logo:
 /assets/howl-token-logo.png
 
 Official contact:
-kovciu1909@gmail.com
+contact@alphahusky.win
 
 Safety reminders:
 - Verify the mint and links from the official website or official X account.
