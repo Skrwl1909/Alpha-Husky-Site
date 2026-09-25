@@ -23,8 +23,11 @@ https://t.me/Alpha_Husky_ct
 Official Telegram Mini App / bot:
 https://t.me/Alpha_husky_bot/AlphaHuskyHub
 
+Official web app:
+https://app.alphahusky.win/
+
 Official logo:
-/assets/howl-token-logo.png
+https://alphahusky.win/assets/howl-token-logo.png
 
 Official contact:
 contact@alphahusky.win

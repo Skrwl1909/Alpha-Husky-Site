@@ -1,0 +1,3 @@
+/* Bring preserved legal text into the current visual system without changing its meaning. */
+body{background:#080d12!important;color:#e4ebed!important;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;font-size:16px;line-height:1.65}
+nav{background:#101920!important;border-color:#344650!important}nav a{color:#e4ebed!important}main{max-width:900px!important}main>section,main>div{color:#dce5e9}main p,main li{color:#c1d0d6!important;line-height:1.75}main h1,main h2{color:#e1c192!important;text-shadow:none!important}a{overflow-wrap:anywhere}a:focus-visible{outline:2px solid #e1c192;outline-offset:4px}
