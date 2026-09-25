@@ -1,0 +1,2936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta name="robots" content="noindex,follow">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Husky | Live Telegram Mini App RPG</title> 
+  
+  <meta name="description" content="Alpha Husky is a live Telegram Mini App RPG. HOWL is the support and community layer for the world, not a pay-to-win gate pass.">
+  <meta property="og:title" content="Alpha Husky | Live Telegram Mini App RPG">
+  <meta property="og:description" content="A live Telegram Mini App RPG with factions, progression, and HOWL as the support and community layer.">
+  <meta property="og:image" content="https://alphahusky.win/assets/howl-token-logo.png">
+  <meta property="og:url" content="https://alphahusky.win/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Alpha Husky">
+  <link rel="canonical" href="https://alphahusky.win/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alpha Husky | Live Telegram Mini App RPG">
+  <meta name="twitter:description" content="A live Telegram Mini App RPG with HOWL as the support and community layer.">
+  <meta name="twitter:image" content="https://alphahusky.win/assets/howl-token-logo.png">
+  <meta name="twitter:url" content="https://alphahusky.win/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Open Sans', 'Share Tech Mono', monospace; /* WDROŻONO: Zmiana na Open Sans dla lepszej czytelności */
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, #001f3f 0%, #101010 70%, #1e1e1e 100%); /* WDROŻONO: Ulepszony gradient – dodano niebieski dla mistycyzmu */
+      opacity: 0.95;
+      pointer-events: none;
+    }
+    .glow { text-shadow: 0 0 6px #ffe066, 0 0 18px #f7ca18; }
+    .glitch-btn { position: relative; overflow: hidden; }
+    .glitch-btn::before, .glitch-btn::after { content: ''; position: absolute; left: 0; right: 0; height: 2px; background: linear-gradient(90deg,#ffe066,#e5ff00,#00f5c6,#ff0083); opacity: 0.8; animation: glitch 1.8s infinite linear alternate; }
+    .glitch-btn::before { top: 0; } .glitch-btn::after { bottom: 0; }
+    @keyframes glitch { 0% { filter: blur(0.8px); opacity:0.8;} 80% { filter: blur(1.8px); opacity:0.4;} 100% { filter: blur(0.5px); opacity:1;} }
+    .section {
+      border-radius: 1.5rem;
+      box-shadow: 0 2px 30px 0 #ffe06622;
+      border: 1px solid #ffe06633;
+      background: #191919cc;
+      margin-bottom: 3rem; /* WDROŻONO: Zwiększony odstęp między sekcjami */
+      padding: 2rem; /* WDROŻONO: Dodany padding dla przestronności */
+    }
+    .card-glow { box-shadow: 0 2px 18px #ffe06655; }
+    /* WDROŻONO: Stylizacja przycisków – zaokrąglenie i niebieska obwódka */
+    a[href="#game"], a[href="#lore"], a[href="#legends"], .bg-yellow-400, .bm-cta, .update-card a {
+      border-radius: 8px !important;
+      border: 1px solid #007BFF !important; /* Niebieska obwódka */
+      transition: all 0.3s ease;
+    }
+    a[href="#game"]:hover, a[href="#lore"]:hover, a[href="#legends"]:hover, .bg-yellow-400:hover, .bm-cta:hover, .update-card a:hover {
+      box-shadow: 0 0 10px #007BFF55;
+    }
+    /* WDROŻONO: Efekty hover na obrazach */
+    img {
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    .timeline { position: relative; max-width: 1200px; margin: 0 auto; }
+    .timeline::after { content: ''; position: absolute; width: 6px; background-color: #ffe066; top: 0; bottom: 0; left: 50%; margin-left: -3px; }
+    .timeline-item { padding: 10px 40px; position: relative; background-color: inherit; width: 50%; }
+    .timeline-item::after { content: ''; position: absolute; width: 25px; height: 25px; right: -17px; background-color: #ffe066; border: 4px solid #1e1e1e; top: 15px; border-radius: 50%; z-index: 1; }
+    .left { left: 0; }
+    .right { left: 50%; }
+    .right::after { left: -16px; }
+    .timeline-content { padding: 20px 30px; background-color: #191919; position: relative; border-radius: 10px; border: 1px solid #ffe06633; }
+    .quiz-container { max-width: 600px; margin: 0 auto; }
+    .quiz-question { display: none; }
+    .quiz-question.active { display: block; }
+    @media (max-width: 768px) {
+      nav .space-x-2 { display: none; }
+      .section {
+        padding: 1.5rem; /* WDROŻONO: Dostosowany padding dla mobile */
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 2rem; /* WDROŻONO: Zwiększony na mobile */
+      }
+      .grid { grid-template-columns: 1fr; }
+      .flex-wrap { flex-direction: column; }
+      img { max-width: 100%; height: auto; }
+      video { max-width: 100%; }
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+      h3 { font-size: 1.5rem; }
+      p { font-size: 0.9rem; }
+      .mb-8 { margin-bottom: 1.5rem; }
+      .gap-8 { gap: 1.5rem; }
+      .px-4 { padding-left: 1rem; padding-right: 1rem; }
+      .timeline::after { left: 31px; }
+      .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+      .timeline-item::after { left: 15px; }
+      .right { left: 0%; }
+    }
+    /* Tabs Styles for Gallery */
+    .tab-btn {
+      transition: all 0.3s ease;
+    }
+    .tab-btn.active {
+      border-bottom-color: #ffe066;
+      background: #ffe06633;
+      color: #ffe066;
+      box-shadow: 0 -2px 10px #ffe06644;
+    }
+    .tab-btn:hover {
+      background: #ffe06622;
+      color: #ffe066;
+    }
+    .tab-content {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    .tab-content.active {
+      opacity: 1;
+      transform: translateY(0);
+      display: block;
+    }
+    .tab-content.hidden {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .tab-btn { padding: 0.75rem 1rem; font-size: 0.9rem; }
+    }
+
+    .ah-luxe-shell {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.75rem;
+      border: 1px solid rgba(250, 204, 21, 0.18);
+      background:
+        radial-gradient(circle at 12% 14%, rgba(96, 165, 250, 0.10), transparent 26%),
+        radial-gradient(circle at 84% 86%, rgba(251, 146, 60, 0.14), transparent 26%),
+        linear-gradient(180deg, rgba(8,8,12,0.94), rgba(18,18,24,0.96));
+      box-shadow:
+        0 18px 54px rgba(0,0,0,0.30),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    .ah-luxe-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.035), transparent 28%),
+        linear-gradient(315deg, rgba(250, 204, 21, 0.04), transparent 34%);
+    }
+    .ah-luxe-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.5rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250,204,21,0.18);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255, 236, 179, 0.88);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .ah-luxe-badge::before {
+      content: "";
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #ffd66b, #ff7a00);
+      box-shadow: 0 0 14px rgba(255,140,0,0.45);
+    }
+    .ah-luxe-card {
+      position: relative;
+      border-radius: 1.35rem;
+      border: 1px solid rgba(250, 204, 21, 0.14);
+      background: rgba(255,255,255,0.035);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+      backdrop-filter: blur(5px);
+    }
+    .ah-instinct-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.6rem;
+      border: 1px solid rgba(250, 204, 21, 0.16);
+      background:
+        radial-gradient(circle at top right, rgba(96,165,250,0.12), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(251,146,60,0.12), transparent 28%),
+        linear-gradient(180deg, rgba(12,12,18,0.94), rgba(18,18,26,0.97));
+      box-shadow:
+        0 16px 44px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    .ah-instinct-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(135deg, rgba(255,255,255,0.035), transparent 34%);
+    }
+    .ah-instinct-path {
+      border-radius: 1.1rem;
+      border: 1px solid rgba(250, 204, 21, 0.12);
+      background: rgba(255,255,255,0.035);
+    }
+    .ah-instinct-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.55rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250,204,21,0.14);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,244,214,0.92);
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+
+    .ah-right-rail {
+      display: grid;
+      gap: 1.5rem;
+      align-content: start;
+    }
+    .ah-nft-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.6rem;
+      border: 1px solid rgba(250, 204, 21, 0.16);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(250,204,21,0.10), transparent 24%),
+        radial-gradient(circle at 86% 82%, rgba(96,165,250,0.10), transparent 26%),
+        linear-gradient(180deg, rgba(11,11,17,0.95), rgba(18,18,26,0.98));
+      box-shadow:
+        0 16px 44px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    .ah-nft-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.03), transparent 34%),
+        linear-gradient(315deg, rgba(250,204,21,0.035), transparent 40%);
+    }
+    .ah-luxe-kicker {
+      color: rgba(255, 244, 214, 0.92);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .ah-nft-model {
+      border-radius: 1.1rem;
+      border: 1px solid rgba(250,204,21,0.12);
+      background: rgba(255,255,255,0.035);
+    }
+    .ah-nft-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.48rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250,204,21,0.12);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,244,214,0.9);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .howl-token-section {
+      padding: 0 !important;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .howl-token-section img:hover {
+      transform: none;
+    }
+    .howl-token-shell {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.75rem;
+      border: 1px solid rgba(250, 204, 21, 0.18);
+      background:
+        radial-gradient(circle at 14% 10%, rgba(59, 130, 246, 0.16), transparent 26%),
+        radial-gradient(circle at 86% 14%, rgba(250, 204, 21, 0.10), transparent 24%),
+        radial-gradient(circle at 80% 92%, rgba(251, 146, 60, 0.12), transparent 28%),
+        linear-gradient(180deg, rgba(6, 8, 13, 0.98), rgba(13, 14, 20, 0.98));
+      box-shadow: 0 28px 80px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,255,255,0.05);
+      padding: clamp(1.25rem, 3vw, 2.5rem);
+    }
+    .howl-token-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.045), transparent 27%),
+        linear-gradient(315deg, rgba(250,204,21,0.04), transparent 36%);
+    }
+    .howl-token-grid,
+    .howl-token-trust,
+    .howl-token-lower {
+      position: relative;
+      z-index: 1;
+    }
+    .howl-token-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(330px, 0.9fr);
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+    .howl-token-left,
+    .howl-token-panel,
+    .howl-chart-card,
+    .howl-safety-card,
+    .howl-trust-card {
+      border: 1px solid rgba(250, 204, 21, 0.12);
+      background: rgba(255,255,255,0.04);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+      backdrop-filter: blur(7px);
+    }
+    .howl-token-left,
+    .howl-token-panel,
+    .howl-chart-card,
+    .howl-safety-card {
+      border-radius: 1.25rem;
+      padding: clamp(1rem, 2.4vw, 1.6rem);
+    }
+    .howl-token-left {
+      background:
+        radial-gradient(circle at top left, rgba(96,165,250,0.10), transparent 30%),
+        rgba(0,0,0,0.24);
+    }
+    .howl-token-brand {
+      display: grid;
+      grid-template-columns: auto minmax(0,1fr);
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.15rem;
+    }
+    .howl-token-logo-wrap {
+      position: relative;
+      display: inline-grid;
+      place-items: center;
+      width: 4.75rem;
+      height: 4.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250, 204, 21, 0.28);
+      background: rgba(0,0,0,0.45);
+      box-shadow: 0 0 28px rgba(96,165,250,0.18);
+      overflow: hidden;
+    }
+    .howl-token-logo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      background: rgba(0,0,0,0.45);
+      z-index: 1;
+    }
+    .howl-token-logo-fallback {
+      color: rgba(254,243,199,0.82);
+      font-size: 0.86rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      text-align: center;
+    }
+    .howl-token-kicker,
+    .howl-panel-kicker {
+      margin: 0 0 0.45rem;
+      color: rgba(191, 219, 254, 0.88);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .howl-token-title {
+      margin: 0;
+      color: #fff4cf;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 900;
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+    .howl-token-title span {
+      color: #facc15;
+    }
+    .howl-token-subtitle {
+      margin: 0.45rem 0 0;
+      color: rgba(254, 243, 199, 0.76);
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .howl-token-lede {
+      max-width: 46rem;
+      color: rgba(255, 248, 220, 0.88);
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+    .howl-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1.1rem;
+    }
+    .howl-pill-row span {
+      border: 1px solid rgba(250, 204, 21, 0.13);
+      background: rgba(0,0,0,0.26);
+      border-radius: 999px;
+      color: rgba(255, 244, 214, 0.88);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 0.55rem 0.78rem;
+      white-space: nowrap;
+    }
+    .howl-mint-card {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) auto;
+      gap: 0.85rem;
+      align-items: center;
+      margin-top: 1.25rem;
+      border: 1px solid rgba(96,165,250,0.16);
+      background: rgba(0,0,0,0.34);
+      border-radius: 1rem;
+      padding: 0.95rem;
+    }
+    .howl-mint-label {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: rgba(250,204,21,0.82);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .howl-mint-value {
+      display: block;
+      color: #fff7d6;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .howl-copy-feedback {
+      min-height: 1.4rem;
+      margin-top: 0.65rem;
+      color: #bfdbfe;
+      font-size: 0.85rem;
+      font-weight: 800;
+      opacity: 0;
+      transition: opacity 0.18s ease;
+    }
+    .howl-copy-feedback.is-visible {
+      opacity: 1;
+    }
+    .howl-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.15rem;
+    }
+    .howl-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.75rem;
+      border-radius: 0.7rem;
+      border: 1px solid rgba(96,165,250,0.38);
+      padding: 0.72rem 1rem;
+      font-weight: 900;
+      line-height: 1.1;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+    .howl-btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(191,219,254,0.75);
+    }
+    .howl-btn-primary {
+      background: #facc15;
+      color: #090909;
+      border-color: rgba(96,165,250,0.7);
+    }
+    .howl-btn-ghost {
+      background: rgba(0,0,0,0.20);
+      color: #fef3c7;
+    }
+    .howl-btn-copy {
+      background: rgba(96,165,250,0.12);
+      color: #dbeafe;
+      cursor: pointer;
+    }
+    .howl-market-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .howl-market-state {
+      border-radius: 999px;
+      border: 1px solid rgba(96,165,250,0.18);
+      background: rgba(96,165,250,0.08);
+      color: #dbeafe;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.35rem 0.62rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .howl-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+    .howl-stat {
+      min-width: 0;
+      border-radius: 0.95rem;
+      border: 1px solid rgba(250,204,21,0.10);
+      background: rgba(0,0,0,0.28);
+      padding: 0.85rem;
+    }
+    .howl-stat span {
+      display: block;
+      color: rgba(254,243,199,0.62);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .howl-stat strong {
+      display: block;
+      margin-top: 0.25rem;
+      color: #fff7d6;
+      font-size: 1.08rem;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+    .howl-stat-change.is-up { color: #86efac; }
+    .howl-stat-change.is-down { color: #fca5a5; }
+    .howl-market-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-top: 0.95rem;
+      color: rgba(254,243,199,0.62);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+    .howl-market-foot a {
+      color: #fde68a;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .howl-token-lower {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.7fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .howl-chart-card,
+    .howl-safety-card {
+      background:
+        radial-gradient(circle at top right, rgba(96,165,250,0.09), transparent 28%),
+        rgba(0,0,0,0.24);
+    }
+    .howl-chart-embed {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      min-height: 320px;
+      border-radius: 1rem;
+      border: 1px solid rgba(96,165,250,0.18);
+      background: rgba(0,0,0,0.32);
+    }
+    .howl-chart-embed iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+      display: block;
+    }
+    .howl-chart-fallback h3,
+    .howl-safety-card h3 {
+      margin: 0 0 0.55rem;
+      color: #fef3c7;
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+    .howl-chart-fallback p,
+    .howl-safety-card p,
+    .howl-safety-card li {
+      color: rgba(255,248,220,0.78);
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+    .howl-safety-card ul {
+      display: grid;
+      gap: 0.45rem;
+      margin: 0.85rem 0 0;
+      padding: 0;
+    }
+    .howl-safety-card li {
+      list-style: none;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .howl-safety-card li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.72rem;
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 999px;
+      background: #facc15;
+    }
+    .howl-token-trust {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 1.25rem;
+    }
+    .howl-trust-card {
+      border-radius: 1rem;
+      padding: 0.9rem;
+      min-width: 0;
+    }
+    .howl-trust-card span {
+      display: inline-flex;
+      border-radius: 999px;
+      border: 1px solid rgba(96,165,250,0.18);
+      background: rgba(96,165,250,0.08);
+      color: #dbeafe;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      padding: 0.28rem 0.48rem;
+      text-transform: uppercase;
+    }
+    .howl-trust-card h3 {
+      margin: 0.65rem 0 0.3rem;
+      color: #fde68a;
+      font-size: 1rem;
+      font-weight: 900;
+    }
+    .howl-trust-card p,
+    .howl-trust-card a {
+      color: rgba(255,248,220,0.72);
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+    .howl-trust-card a {
+      color: #fef3c7;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    @media (max-width: 1040px) {
+      .howl-token-grid,
+      .howl-token-lower {
+        grid-template-columns: 1fr;
+      }
+      .howl-token-trust {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 640px) {
+      .howl-token-shell {
+        border-radius: 1.2rem;
+        padding: 1rem;
+      }
+      .howl-token-brand {
+        grid-template-columns: 1fr;
+      }
+      .howl-token-logo-wrap {
+        width: 4rem;
+        height: 4rem;
+      }
+      .howl-mint-card,
+      .howl-stats-grid,
+      .howl-token-trust {
+        grid-template-columns: 1fr;
+      }
+      .howl-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .howl-btn {
+        width: 100%;
+      }
+      .howl-market-head,
+      .howl-market-foot {
+        display: grid;
+      }
+      .howl-market-state {
+        text-align: left;
+        white-space: normal;
+      }
+      .howl-chart-embed,
+      .howl-chart-embed iframe {
+        min-height: 260px;
+        height: 260px;
+      }
+    }
+
+  </style>
+
+  <style id="ah-v3-launch-style">
+    .ah-v3-shell{
+      position:relative;
+      overflow:hidden;
+      border-radius:2rem;
+      border:1px solid rgba(250,204,21,0.16);
+      background:
+        radial-gradient(circle at 10% 12%, rgba(96,165,250,0.16), transparent 24%),
+        radial-gradient(circle at 88% 16%, rgba(255,255,255,0.05), transparent 16%),
+        radial-gradient(circle at 88% 86%, rgba(251,146,60,0.18), transparent 24%),
+        linear-gradient(180deg, rgba(7,8,12,0.98) 0%, rgba(14,15,20,0.98) 100%);
+      box-shadow:
+        0 30px 80px rgba(0,0,0,0.42),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+    }
+    .ah-v3-shell::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.045), transparent 24%),
+        linear-gradient(315deg, rgba(250,204,21,0.05), transparent 34%);
+    }
+    .ah-v3-shell::after{
+      content:"";
+      position:absolute;
+      inset:1px;
+      border-radius:calc(2rem - 1px);
+      border:1px solid rgba(255,255,255,0.03);
+      pointer-events:none;
+    }
+    .ah-v3-topbar{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:.8rem;
+      margin-bottom:1.15rem;
+    }
+    .ah-v3-eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.6rem;
+      min-height:2rem;
+      padding:.45rem .85rem;
+      border-radius:999px;
+      border:1px solid rgba(250,204,21,0.14);
+      background:rgba(255,255,255,0.04);
+      color:rgba(255,236,179,0.88);
+      font-size:.72rem;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .ah-v3-eyebrow::before{
+      content:"";
+      width:.55rem;
+      height:.55rem;
+      border-radius:999px;
+      background:linear-gradient(180deg,#ffd66b,#ff7a00);
+      box-shadow:0 0 14px rgba(255,140,0,.45);
+      flex:0 0 auto;
+    }
+    .ah-v3-status{
+      display:inline-flex;
+      align-items:center;
+      min-height:2rem;
+      padding:.45rem .8rem;
+      border-radius:999px;
+      border:1px solid rgba(96,165,250,0.18);
+      background:rgba(96,165,250,0.08);
+      color:rgba(219,234,254,0.9);
+      font-size:.72rem;
+      font-weight:700;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .ah-v3-hero{
+      position:relative;
+      z-index:1;
+      margin-bottom:1.75rem;
+      max-width:72rem;
+    }
+    .ah-v3-title{
+      margin:0 0 .85rem;
+      color:#f8f3e8;
+      font-weight:800;
+      font-size:clamp(2.2rem,4.8vw,4.1rem);
+      line-height:.96;
+      letter-spacing:-.05em;
+      text-wrap:balance;
+    }
+    .ah-v3-title .accent{color:#f0ddbc;}
+    .ah-v3-sub{
+      margin:0;
+      max-width:58rem;
+      color:rgba(255,248,220,.88);
+      font-size:1rem;
+      line-height:1.95;
+      text-wrap:pretty;
+    }
+    .ah-v3-layout{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+      gap:1.5rem;
+      align-items:start;
+    }
+    .ah-v3-col{display:grid;gap:1.25rem;}
+    .ah-v3-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:1.45rem;
+      border:1px solid rgba(250,204,21,0.12);
+      background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.028));
+      box-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+      backdrop-filter:blur(6px);
+    }
+    .ah-v3-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:linear-gradient(135deg, rgba(255,255,255,0.028), transparent 32%);
+    }
+    .ah-v3-card-dark{
+      background:
+        radial-gradient(circle at top right, rgba(96,165,250,.10), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(251,146,60,.09), transparent 28%),
+        linear-gradient(180deg, rgba(10,11,16,0.97), rgba(18,19,26,0.97));
+    }
+    .ah-v3-kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:.45rem;
+      margin-bottom:.9rem;
+      color:rgba(255,219,123,0.82);
+      font-size:.72rem;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .ah-v3-kicker::before{
+      content:"";
+      width:1.4rem;
+      height:1px;
+      background:linear-gradient(90deg, rgba(250,204,21,.7), rgba(250,204,21,0));
+    }
+    .ah-v3-card h3{
+      margin:0 0 .5rem;
+      color:#fde68a;
+      font-size:1.55rem;
+      font-weight:800;
+      letter-spacing:-.03em;
+    }
+    .ah-v3-card p{margin:0;}
+    .ah-v3-copy{
+      color:rgba(255,248,220,.85);
+      font-size:.95rem;
+      line-height:1.85;
+    }
+    .ah-v3-muted{
+      color:rgba(255,248,220,.72);
+      font-size:.9rem;
+      line-height:1.75;
+    }
+    .ah-v3-highlight{
+      border-radius:1.15rem;
+      border:1px solid rgba(250,204,21,0.12);
+      background:rgba(0,0,0,.26);
+    }
+    .ah-v3-flow{
+      font-family:'Share Tech Mono', monospace;
+      color:#fff5cf;
+      font-size:.88rem;
+      line-height:1.8;
+      word-break:break-word;
+    }
+    .ah-v3-grid2{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:1.2rem;
+    }
+    .ah-v3-list{
+      display:grid;
+      gap:.75rem;
+      color:rgba(255,248,220,.82);
+      font-size:.9rem;
+      line-height:1.75;
+    }
+    .ah-v3-list li{list-style:none; position:relative; padding-left:1rem;}
+    .ah-v3-list li::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:.6rem;
+      width:.38rem;
+      height:.38rem;
+      border-radius:999px;
+      background:linear-gradient(180deg,#ffd66b,#ff7a00);
+      box-shadow:0 0 10px rgba(255,140,0,.35);
+    }
+    .ah-v3-linkrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.95rem 1.25rem;
+      margin-top:.2rem;
+      font-size:.9rem;
+    }
+    .ah-v3-linkrow a{
+      color:#fef3c7;
+      text-decoration:underline;
+      font-weight:700;
+      text-underline-offset:3px;
+    }
+    .ah-v3-mini{
+      border-radius:1.1rem;
+      border:1px solid rgba(250,204,21,0.10);
+      background:rgba(255,255,255,0.03);
+    }
+    .ah-v3-pathgrid,.ah-v3-models{display:grid; gap:.8rem;}
+    .ah-v3-path h4,.ah-v3-model h4{
+      margin:0 0 .35rem;
+      color:#fef3c7;
+      font-weight:800;
+      letter-spacing:-.02em;
+    }
+    .ah-v3-path p,.ah-v3-model p{
+      margin:0;
+      color:rgba(255,248,220,.72);
+      font-size:.86rem;
+      line-height:1.7;
+    }
+    .ah-v3-chiprow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+    }
+    .ah-v3-chip{
+      display:inline-flex;
+      align-items:center;
+      min-height:2.25rem;
+      padding:.55rem .8rem;
+      border-radius:999px;
+      border:1px solid rgba(250,204,21,0.12);
+      background:rgba(255,255,255,0.04);
+      color:rgba(255,249,224,.9);
+      font-size:.8rem;
+      line-height:1.35;
+    }
+    .ah-v3-chip strong{color:#fcd34d;}
+    .ah-v3-rule{
+      display:grid;
+      gap:.7rem;
+    }
+    .ah-v3-rule .rule{
+      padding:.85rem .95rem;
+      border-radius:1rem;
+      border:1px solid rgba(250,204,21,0.09);
+      background:rgba(0,0,0,.22);
+      color:rgba(255,248,220,.78);
+      font-size:.84rem;
+      line-height:1.65;
+    }
+    .ah-v3-rule .rule strong{color:#fde68a;}
+    .ah-v3-footer{
+      margin-top:.15rem;
+      padding-top:1rem;
+      border-top:1px solid rgba(250,204,21,0.10);
+      color:rgba(255,248,220,.72);
+      font-size:.84rem;
+      line-height:1.8;
+    }
+    .ah-v3-footer strong{color:#fef3c7;}
+    @media (max-width: 1180px){
+      .ah-v3-layout{grid-template-columns:1fr;}
+    }
+    @media (max-width: 860px){
+      .ah-v3-grid2{grid-template-columns:1fr;}
+    }
+    @media (max-width: 768px){
+      .ah-v3-shell{border-radius:1.5rem;}
+      .ah-v3-title{font-size:clamp(2rem,10vw,3rem); line-height:1.02;}
+      .ah-v3-sub{font-size:.94rem; line-height:1.85;}
+      .ah-v3-card h3{font-size:1.35rem;}
+    }
+  </style>
+
+</head>
+<body class="bg-black text-yellow-400">
+<div style="position:relative;z-index:1000;background:#15212b;color:#fff;padding:12px 20px;font:16px/1.5 system-ui">Archived website snapshot. Some descriptions and event details reflect an earlier stage of Alpha Husky. <a style="color:#f3cc87" href="/">Visit the current site →</a></div>
+  
+<div id="ah-teaser"
+     class="sticky top-0 z-50 border-b border-yellow-400/20 bg-black/60 backdrop-blur px-3 py-2">
+  <div class="mx-auto max-w-6xl flex items-center justify-center gap-3 text-sm">
+    <span class="glow">🚀 WebApp beta is live</span>
+    <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub"
+       class="glitch-btn rounded-full border border-yellow-400/40 px-3 py-1 font-bold hover:bg-yellow-400/10">
+      Open in Telegram
+    </a>
+    <a href="https://app.alphahusky.win"
+       class="rounded-full border border-yellow-400/20 px-3 py-1 hover:bg-yellow-400/5">
+      Open WebApp (web)
+    </a>
+    <button type="button" aria-label="Close"
+            class="ml-2 rounded-full border border-yellow-400/20 px-2 hover:bg-yellow-400/5"
+            onclick="document.getElementById('ah-teaser').remove(); localStorage.setItem('ah_teaser_closed','1')">
+      ×
+    </button>
+  </div>
+</div>
+<script>
+  if (localStorage.getItem('ah_teaser_closed') === '1') {
+    const el = document.getElementById('ah-teaser'); if (el) el.remove();
+  }
+</script>
+  
+
+<section id="fullmoon-banner" class="fm-wrap fm-compact">
+  <picture class="fm-bg">
+    <source type="image/png"
+      srcset="/assets/event/fullmoon_banner_1920x360.png 1920w,
+              /assets/event/fullmoon_banner.png 2560w"
+      sizes="100vw">
+    <img
+      src="/assets/event/fullmoon_banner_1920x360.png"
+      srcset="/assets/event/fullmoon_banner_1920x360.png 1920w,
+              /assets/event/fullmoon_banner.png 2560w"
+      sizes="100vw"
+      alt="Full Moon Rising — Alpha Husky"
+      loading="eager" decoding="async"
+      onerror="this.src='https://source.unsplash.com/1920x360/?full-moon,husky'; this.onerror=null;">
+  </picture>
+  <div class="fm-overlay">
+    <div class="fm-left">
+      <span class="fm-tag">Lunar Event</span>
+      <h3 class="fm-title">Full Moon Rising</h3>
+      <p class="fm-sub">
+        <span id="fm-countdown-text">Lunar timing updates automatically when the page loads.</span><br>
+        <span id="fm-phase">Phase updates automatically.</span>
+      </p>
+      <div class="fm-progress mt-2">
+        <div id="fm-progress-bar" class="bg-yellow-400 h-2 rounded" style="width: 0%;"></div>
+      </div>
+    </div>
+    <div class="fm-right">
+      <a href="#lore" class="fm-cta">Join Lunar Raid</a>
+      <button id="fm-dismiss" class="fm-dismiss" aria-label="Dismiss banner">✕</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .fm-wrap, .fm-compact {
+    position: relative; overflow: hidden; max-height: 360px;
+  }
+  .fm-bg img { width: 100%; height: auto; object-fit: cover; }
+  .fm-overlay { position: absolute; inset: 0; display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(0,0,0,0.6); }
+  .fm-left { flex: 1; color: #ffe066; text-shadow: 0 0 6px #ffe066; }
+  .fm-tag { font-size: 0.8rem; opacity: 0.9; }
+  .fm-title { font-size: 1.5rem; font-weight: bold; margin: 0.5rem 0; }
+  .fm-sub { font-size: 1rem; line-height: 1.4; }
+  .fm-progress { background: #191919; border-radius: 10px; overflow: hidden; width: 100%; max-width: 200px; }
+  .fm-right { display: flex; flex-direction: column; align-items: flex-end; gap: 1rem; }
+  .fm-cta { background: linear-gradient(90deg, #ffe066, #f7ca18); color: black; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px #ffe06633; transition: all 0.3s; }
+  .fm-cta:hover { transform: scale(1.05); box-shadow: 0 6px 20px #ffe06655; }
+  .fm-dismiss { background: none; border: 1px solid #ffe066; color: #ffe066; padding: 0.5rem; border-radius: 50%; cursor: pointer; font-size: 1.2rem; }
+  @media (max-width: 768px) { .fm-overlay { flex-direction: column; gap: 1rem; text-align: center; } .fm-right { align-items: center; } }
+</style>
+
+<script>
+  (() => {
+    try {
+      const HIDE_KEY = "fm_hide_2025";
+      const el = document.getElementById('fullmoon-banner');
+      if (!el) return;
+
+      if (localStorage.getItem(HIDE_KEY) === '1') {
+        el.remove();
+        return;
+      }
+
+      const countdownEl = document.getElementById('fm-countdown-text');
+      const phaseEl = document.getElementById('fm-phase');
+      const progressBar = document.getElementById('fm-progress-bar');
+      const dismissBtn = document.getElementById('fm-dismiss');
+
+      if (!countdownEl || !phaseEl) return;
+
+      // Kalibrowany na 15.10.2025 (Waning Crescent ~33%, Beaver Moon 5.11.2025 13:19 UTC)
+      const LUNAR_CYCLE = 29.53058867;
+      const FULL_PHASE = 0.5;
+      const REF_JD = 2460970.28957; // JD nowiu przed Beaver Moon
+
+      function getJulianDate(date = new Date()) {
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const a = Math.floor((14 - month) / 12);
+        const y = year + 4800 - a;
+        const m = month + 12 * a - 3;
+        let jd = day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
+        jd += (date.getHours() - 12) / 24 + date.getMinutes() / 1440 + date.getSeconds() / 86400;
+        return jd;
+      }
+
+      function getMoonPhase(date = new Date()) {
+        const jd = getJulianDate(date);
+        let daysSinceNew = (jd - REF_JD) % LUNAR_CYCLE;
+        if (daysSinceNew < 0) daysSinceNew += LUNAR_CYCLE;
+        return daysSinceNew / LUNAR_CYCLE;
+      }
+
+      function getDaysToNextFull(date = new Date()) {
+        const phase = getMoonPhase(date);
+        let daysToFull = (FULL_PHASE - phase + 1) * LUNAR_CYCLE;
+        return daysToFull % LUNAR_CYCLE;
+      }
+
+      function updatePhase() {
+        const now = new Date();
+        const phase = getMoonPhase(now);
+        const illumination = Math.round((1 - Math.cos(phase * 2 * Math.PI)) / 2 * 100);
+        let phaseName = "Unknown";
+        let icon = "🌙";
+        const phases = [
+          { range: [0, 0.03], name: "New Moon", icon: "🌑" },
+          { range: [0.03, 0.22], name: "Waxing Crescent", icon: "🌒" },
+          { range: [0.22, 0.28], name: "First Quarter", icon: "🌓" },
+          { range: [0.28, 0.47], name: "Waxing Gibbous", icon: "🌔" },
+          { range: [0.47, 0.53], name: "Full Moon", icon: "🌕" },
+          { range: [0.53, 0.72], name: "Waning Gibbous", icon: "🌖" },
+          { range: [0.72, 0.78], name: "Last Quarter", icon: "🌗" },
+          { range: [0.78, 0.97], name: "Waning Crescent", icon: "🌘" },
+          { range: [0.97, 1], name: "New Moon", icon: "🌑" }
+        ];
+        for (const p of phases) {
+          if (phase >= p.range[0] && phase < p.range[1]) {
+            phaseName = p.name;
+            icon = p.icon;
+            break;
+          }
+        }
+        phaseEl.innerHTML = `${icon} ${phaseName} – ${illumination}% illuminated`;
+        if (progressBar) progressBar.style.width = `${illumination}%`;
+      }
+
+      function tick() {
+        const now = new Date();
+        const daysToFull = getDaysToNextFull(now);
+        const totalMs = daysToFull * 86400000;
+        const s = Math.floor(totalMs / 1000);
+        const d = Math.floor(s / 86400);
+        const h = Math.floor((s % 86400) / 3600);
+        const m = Math.floor((s % 3600) / 60);
+        const sec = s % 60;
+        countdownEl.textContent = `Next full moon: ${d}d : ${String(h).padStart(2, "0")}h : ${String(m).padStart(2, "0")}m : ${String(sec).padStart(2, "0")}s`;
+        updatePhase();
+      }
+
+      tick(); // Immediate update
+      setInterval(tick, 1000);
+
+      if (dismissBtn) {
+        dismissBtn.addEventListener("click", () => {
+          localStorage.setItem(HIDE_KEY, "1");
+          el.remove();
+        }, { once: true });
+      }
+    } catch (error) {
+      console.error("Moon banner error:", error);
+    }
+  })();
+</script>
+
+  
+  <nav class="sticky top-0 z-50 bg-black/95 border-b border-yellow-900 px-4 py-3 flex justify-between items-center shadow-lg">
+    <div class="flex items-center gap-3">
+      <img src="logo.png" alt="Alpha Husky Logo" class="w-9 h-9"> 
+      <span class="font-bold text-xl tracking-widest glow"><span class="font-extrabold">Alpha</span> Husky</span> 
+    </div>
+    <div class="md:space-x-2 text-sm md:text-base font-bold hidden md:block">
+      <a href="#game-first" class="hover:text-yellow-200 transition">Live Now</a>
+      <a href="#howl-token" class="hidden lg:inline hover:text-yellow-200 transition">HOWL Token</a>
+      <a href="#updates" class="hover:text-yellow-200 transition">Updates</a>
+      <a href="#lore" class="hover:text-yellow-200 transition">Lore</a>
+      <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
+      <a href="#launch-trust" class="hover:text-yellow-200 transition">Launch & Safety</a>
+      <a href="#community-join" class="hover:text-yellow-200 transition">Community</a>
+      <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl ml-2 hover:bg-yellow-300 shadow font-bold">Play on Telegram</a> 
+    </div>
+    
+    <button id="hamburger" class="md:hidden text-yellow-400 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 bg-black/95 p-4 border-t border-yellow-900 absolute top-full left-0 right-0 z-50">
+      <a href="#game-first" class="hover:text-yellow-200 transition">Live Now</a>
+      <a href="#howl-token" class="hover:text-yellow-200 transition">HOWL Token</a>
+      <a href="#updates" class="hover:text-yellow-200 transition">Updates</a>
+      <a href="#lore" class="hover:text-yellow-200 transition">Lore</a>
+      <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
+      <a href="#launch-trust" class="hover:text-yellow-200 transition">Launch & Safety</a>
+      <a href="#community-join" class="hover:text-yellow-200 transition">Community</a>
+      <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-xl hover:bg-yellow-300 shadow font-bold">Play on Telegram</a>
+    </div>
+  </nav>
+  
+  <section class="flex flex-col items-center justify-center min-h-screen text-center px-6 pb-10">
+    <img src="logo.png" alt="Alpha Husky Logo" class="w-48 mb-8 drop-shadow-lg animate-pulse">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 glow">Alpha Husky</h1>
+    <p class="text-lg md:text-2xl mb-6 max-w-2xl text-yellow-200">Fluffy meme? <span class="text-yellow-400 font-bold">No.</span> <span class="glow">A movement. Lore. Game. Purpose.</span> Led by Alphas.</p>
+    <div class="space-x-4 mb-4 flex flex-wrap justify-center gap-4">
+      <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Play on Telegram</a>
+      <a href="https://app.alphahusky.win" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Open WebApp</a>
+      <a href="#lore" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Read Lore</a>
+      <a href="#launch-trust" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Launch Docs</a>
+      <a href="#updates" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Updates</a>
+    </div>
+    <p class="mt-8 text-yellow-300/70 text-sm italic">Follow, play, build. #JoinThePack</p>
+  </section>
+  
+<section id="game-first" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">What Is Playable Right Now</h2>
+  <p class="text-yellow-200 max-w-4xl">
+    Alpha Husky is live in Telegram: missions, progression, lore-driven worldbuilding, and regular build updates. You can start fast with Telegram login only.
+  </p>
+  <div class="mt-6 grid md:grid-cols-3 gap-4 text-yellow-200">
+    <div class="rounded-xl border border-yellow-700/40 bg-black/40 p-4">
+      <p class="font-bold text-yellow-300 mb-1">Game Loop</p>
+      <p class="text-sm">Mission flow, progression systems, and gameplay updates shipping in public.</p>
+    </div>
+    <div class="rounded-xl border border-yellow-700/40 bg-black/40 p-4">
+      <p class="font-bold text-yellow-300 mb-1">World & Identity</p>
+      <p class="text-sm">Factions, lore drops, and recurring events shape a persistent post-apocalyptic setting.</p>
+    </div>
+    <div class="rounded-xl border border-yellow-700/40 bg-black/40 p-4">
+      <p class="font-bold text-yellow-300 mb-1">Built First</p>
+      <p class="text-sm">No fake hype, no investment promises. Product progress stays first.</p>
+    </div>
+  </div>
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Play on Telegram</a>
+    <a href="#updates" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">See Latest Updates</a>
+  </div>
+  <p class="mt-4 text-yellow-300/70 text-sm italic">Game first. No wallet required. Not an investment.</p>
+</section>
+
+<section id="howl-token" class="section howl-token-section max-w-6xl mx-auto mb-10">
+  <div class="howl-token-shell">
+    <div class="howl-token-grid">
+      <div class="howl-token-left">
+        <div class="howl-token-brand">
+          <div class="howl-token-logo-wrap">
+            <span class="howl-token-logo-fallback" aria-hidden="true">$HOWL</span>
+          <img src="assets/howl-token-logo.png" alt="Official Alpha Husky HOWL token logo" class="howl-token-logo" loading="lazy" data-howl-token-logo>
+          </div>
+          <div>
+            <p class="howl-token-kicker">Official Alpha Husky Token</p>
+            <h2 class="howl-token-title"><span>$HOWL</span> Token Hub</h2>
+            <p class="howl-token-subtitle">Game first. Token second.</p>
+          </div>
+        </div>
+
+        <p class="howl-token-lede">
+          Alpha Husky was built as a game first. $HOWL is the support and community layer for the existing world - not a pay-to-win token.
+        </p>
+
+        <div class="howl-pill-row" aria-label="HOWL principles">
+          <span>Holder perks</span>
+          <span>Cosmetics layer</span>
+          <span>Community layer</span>
+          <span>No pay-to-win</span>
+        </div>
+
+        <div class="howl-mint-card">
+          <div>
+            <span class="howl-mint-label">Official mint</span>
+            <code id="howl-mint-value" class="howl-mint-value">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</code>
+          </div>
+          <button type="button" class="howl-btn howl-btn-copy" data-howl-copy aria-label="Copy HOWL mint address">Copy</button>
+        </div>
+        <p class="howl-copy-feedback" data-howl-copy-status aria-live="polite"></p>
+
+        <div class="howl-actions" aria-label="HOWL actions">
+          <a class="howl-btn howl-btn-primary" href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener noreferrer">Play Alpha Husky</a>
+          <a class="howl-btn howl-btn-ghost" href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-dex-link>Open DexScreener</a>
+          <button type="button" class="howl-btn howl-btn-copy" data-howl-copy>Copy Mint</button>
+        </div>
+      </div>
+
+      <aside class="howl-token-panel" aria-live="polite">
+        <div class="howl-market-head">
+          <div>
+            <p class="howl-panel-kicker">Live market data</p>
+            <h3 class="text-xl font-extrabold text-yellow-100">DexScreener snapshot</h3>
+          </div>
+          <span class="howl-market-state" data-howl-market-state>Live market data is available through DexScreener</span>
+        </div>
+
+        <div class="howl-stats-grid">
+          <article class="howl-stat">
+            <span>Price</span>
+            <strong data-howl-stat="price">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>Market Cap / FDV</span>
+            <strong data-howl-stat="marketCap">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>Liquidity</span>
+            <strong data-howl-stat="liquidity">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>24h Volume</span>
+            <strong data-howl-stat="volume24h">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>24h Change</span>
+            <strong class="howl-stat-change" data-howl-stat="change24h">&mdash;</strong>
+          </article>
+          <article class="howl-stat">
+            <span>24h Buys / Sells</span>
+            <strong data-howl-stat="txns24h">&mdash;</strong>
+          </article>
+        </div>
+
+        <div class="howl-market-foot">
+          <span>Last updated <time data-howl-last-updated>&mdash;</time></span>
+          <a href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-dex-link>Data by DexScreener</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="howl-token-lower">
+      <div class="howl-chart-card">
+        <div class="howl-chart-embed" data-howl-chart-embed hidden></div>
+        <div class="howl-chart-fallback" data-howl-chart-fallback>
+          <p class="howl-panel-kicker">Chart</p>
+          <h3>Live chart opens on DexScreener</h3>
+          <p>
+            The website keeps the market panel compact so Alpha Husky still reads as a game world first. Open the full live chart externally when you want deeper trading detail.
+          </p>
+          <div class="howl-actions">
+            <a class="howl-btn howl-btn-ghost" href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-chart-link>Open Live Chart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="howl-safety-card">
+        <p class="howl-panel-kicker">Verify before interacting</p>
+        <h3>Official links only</h3>
+        <p><strong class="text-yellow-200">Official mint:</strong> <code class="howl-mint-value">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</code></p>
+        <ul>
+          <li>No seed phrase. Alpha Husky will never ask for it.</li>
+          <li>No forced wallet connection to play.</li>
+          <li>No pay-to-win token mechanics.</li>
+          <li>Always verify official links from this website or @The_Alpha_Husky.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="howl-token-trust" aria-label="HOWL trust status">
+      <article class="howl-trust-card">
+        <span>Live</span>
+        <h3>DexScreener</h3>
+        <p>Live market data.</p>
+        <a href="https://dexscreener.com/solana/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer" data-howl-dex-link>Open market</a>
+      </article>
+      <article class="howl-trust-card">
+        <span>Listed</span>
+        <h3>Jupiter VRFD</h3>
+        <p>Listed on Jupiter VRFD. Review status may update separately.</p>
+        <a href="https://verified.jup.ag/tokens" target="_blank" rel="noopener noreferrer">View VRFD</a>
+      </article>
+      <article class="howl-trust-card">
+        <span>In Review</span>
+        <h3>Solscan</h3>
+        <p>Project profile and reputation review in progress.</p>
+        <a href="https://solscan.io/token/FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS" target="_blank" rel="noopener noreferrer">Open Solscan</a>
+      </article>
+      <article class="howl-trust-card">
+        <span>Live Beta</span>
+        <h3>Mini App</h3>
+        <p>Alpha Husky is playable through Telegram.</p>
+        <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener noreferrer">Play now</a>
+      </article>
+    </div>
+    <div class="mt-6 rounded-[1.75rem] border border-yellow-500/20 bg-black/35 p-6 md:p-7 shadow-[0_18px_54px_rgba(0,0,0,0.30)]">
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+        <div class="max-w-2xl">
+          <p class="howl-panel-kicker">Official Project Verification</p>
+          <h3 class="text-2xl font-extrabold text-yellow-100">Official Project Verification</h3>
+          <p class="mt-4 text-sm leading-7 text-yellow-100/78">
+            HOWL is the community and support layer for Alpha Husky, a live Telegram Mini App RPG. Alpha Husky is game-first; the token is not required to play and is not presented as an investment product.
+          </p>
+          <div class="mt-4 space-y-2 text-sm leading-7 text-yellow-100/86">
+            <p><span class="font-semibold text-yellow-200">Project:</span> Alpha Husky</p>
+            <p><span class="font-semibold text-yellow-200">Token:</span> HOWL</p>
+            <p><span class="font-semibold text-yellow-200">Official mint:</span> <span class="font-mono break-all text-yellow-200">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</span></p>
+            <p><span class="font-semibold text-yellow-200">Official contact:</span> <a href="mailto:contact@alphahusky.win" class="font-semibold text-yellow-200 underline underline-offset-4 hover:text-yellow-100">contact@alphahusky.win</a></p>
+            <p><span class="font-semibold text-yellow-200">Official website:</span> <a href="https://alphahusky.win/" class="font-semibold text-yellow-200 underline underline-offset-4 hover:text-yellow-100">https://alphahusky.win</a></p>
+          </div>
+        </div>
+        <div class="min-w-[260px] rounded-2xl border border-yellow-500/15 bg-yellow-900/10 p-5">
+          <p class="text-xs font-bold uppercase tracking-[0.28em] text-yellow-300/75">Official Links</p>
+          <div class="mt-4 space-y-3 text-sm leading-6 text-yellow-100/86">
+            <p><span class="font-semibold text-yellow-200">Website:</span> <a href="https://alphahusky.win/" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">alphahusky.win</a></p>
+            <p><span class="font-semibold text-yellow-200">X:</span> <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">@The_Alpha_Husky</a></p>
+            <p><span class="font-semibold text-yellow-200">Telegram:</span> <a href="https://t.me/Alpha_Husky_ct" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">t.me/Alpha_Husky_ct</a></p>
+            <p><span class="font-semibold text-yellow-200">Mini App:</span> <a href="https://app.alphahusky.win" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">app.alphahusky.win</a></p>
+            <p><span class="font-semibold text-yellow-200">Telegram Mini App:</span> <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">t.me/Alpha_husky_bot/AlphaHuskyHub</a></p>
+            <p><span class="font-semibold text-yellow-200">Logo:</span> <a href="https://alphahusky.win/assets/howl-token-logo.png" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-yellow-100">/assets/howl-token-logo.png</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
+  <h2 class="text-3xl md:text-4xl font-bold mb-6 glow">FAQ</h2>
+
+  <div class="space-y-6 text-yellow-200">
+    <div>
+      <h3 class="text-xl font-bold">Do I need a wallet to play?</h3>
+      <p>No. Alpha Husky is Telegram-native — you can start instantly with your Telegram account. No wallet needed.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold">What is Alpha Husky?</h3>
+      <p>A game-first universe built around missions, progression, factions, cosmetics, and lore — shaped by the Pack through participation.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold">Is this an investment or “earn” project?</h3>
+      <p>No. This is a gameplay project. No promises of income, returns, or quick gains — fun and progression come first.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold">How do I start?</h3>
+      <p>Join the Telegram, launch the bot, and jump into missions. Your progress is saved and the world evolves over time.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold">Will there be future upgrades or extra features?</h3>
+      <p>Yes — optional layers may be added later, but they’ll always stay secondary to the core game and never replace it.</p>
+    </div>
+  </div>
+
+  <p class="mt-6 text-yellow-300/70 text-sm italic">
+    Game first. No wallet required. Not an investment.
+  </p>
+</section>
+  
+<section id="whats-new" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
+  <h2 class="text-3xl md:text-4xl font-bold mb-6 glow text-center">What's New in the Pack</h2>
+  <p class="text-lg text-yellow-200 mb-8 text-center">
+    Stay howling with the latest updates from our Alpha community. Follow us on X for real-time drops!
+    <span class="font-bold text-yellow-400">Active Alpha Husky community</span>
+  </p>
+
+  
+  <div class="flex justify-center mb-8">
+    <div id="update-carousel" class="relative w-full max-w-2xl h-48 bg-yellow-900/20 rounded-xl overflow-hidden border border-yellow-700/50">
+      <div class="absolute inset-0 flex items-center justify-center">
+        
+        <div class="update-card active text-center p-6">
+          <h3 class="text-xl font-bold mb-2">New Skin Dropped!</h3>
+          <p class="text-yellow-300 mb-4">Unlock Ashclaw Founder Blade in the game – equip your husky for the next raid!</p>
+          <a href="#skins" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">View Gallery</a>
+        </div>
+
+        
+        <div class="update-card text-center p-6">
+          <h3 class="text-xl font-bold mb-2">Community Lore Voting</h3>
+          <p class="text-yellow-300 mb-4">Shape the Oracle of Rugs – vote in Telegram for epic twists!</p>
+          <a href="#lore" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">Read Lore</a>
+        </div>
+
+        
+        <div class="update-card text-center p-6">
+          <h3 class="text-xl font-bold mb-2">Pack Raid Night</h3>
+          <p class="text-yellow-300 mb-4">Join the Telegram community for project updates, game news, and lore events.</p>
+          <a href="https://t.me/Alpha_Husky_ct" class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-300">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="community" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
+  <h2 class="text-3xl md:text-4xl font-bold mb-6 glow text-center">Pack Howls on X</h2>
+  <p class="text-lg text-yellow-200 mb-8 text-center">Stay howling with the latest from our Alpha community. Real-time drops and raids – follow for the vibe! <span class="font-bold text-yellow-400">#JoinThePack 🐺</span></p>
+ 
+  <div class="grid md:grid-cols-3 gap-6">
+    
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
+      <div class="flex items-center mb-3">
+        <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
+        <div>
+          <h4 class="font-bold">@The_Alpha_Husky</h4>
+          <p class="text-yellow-300 text-sm">Oct 6, 2025</p>
+        </div>
+      </div>
+      <p class="text-yellow-200 mb-3">Good Morning Howlers 🫡🐺 Happy new week 💚 Festina lente- make haste slowly. One done > five started. I will fix a couple things and test. Drop your single target below- lets keep each other honest.</p>
+      <img src="https://pbs.twimg.com/media/G2j4QLOW4AAoKYK.jpg" alt="Post image" class="w-full rounded-lg mb-3">
+      <a href="https://x.com/The_Alpha_Husky/status/1975101396627464372" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
+    </div>
+   
+    
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
+      <div class="flex items-center mb-3">
+        <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
+        <div>
+          <h4 class="font-bold">@The_Alpha_Husky</h4>
+          <p class="text-yellow-300 text-sm">Oct 5, 2025</p>
+        </div>
+      </div>
+      <p class="text-yellow-200 mb-3">Good night howlers 🐺🫡 Lights out. Momentum stays. We build while the city sleeps. One howl, one path. 🐺 #JoinThePack</p>
+      <img src="https://pbs.twimg.com/media/G2hpWVZXUAAgHGw.jpg" alt="Post image" class="w-full rounded-lg mb-3">
+      <a href="https://x.com/The_Alpha_Husky/status/1974944271452299349" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
+    </div>
+   
+    
+    <div class="bg-yellow-900/20 rounded-xl p-4 border border-yellow-700/50 card-glow hover:shadow-yellow-500/20 transition">
+      <div class="flex items-center mb-3">
+        <img src="https://pbs.twimg.com/profile_images/1918792022321684480/PSX0M1Pm.jpg" alt="The_Alpha_Husky Avatar" class="w-10 h-10 rounded-full mr-3">
+        <div>
+          <h4 class="font-bold">@The_Alpha_Husky</h4>
+          <p class="text-yellow-300 text-sm">Oct 5, 2025</p>
+        </div>
+      </div>
+      <p class="text-yellow-200 mb-3">Good afternoon howlers ! 🐺🫡 Sunday is for recovery, reset, clarity. Light movement, fresh air, water. Clear the tabs, tidy the board, pick one gentle 25-min starter for Monday. Early night, calm mind. No rush- just alignment. Same mission, steadier pace. Brick by brick. One Pack. P.S Small sneak peek: next Full Moon is Tue, 7 Oct 👀 we start the week under bright skies. 🌕 #JoinThePack #AlphaHusky</p>
+      <img src="https://pbs.twimg.com/media/G2geMr1XcAAy4Xi.jpg" alt="Post image" class="w-full rounded-lg mb-3">
+      <a href="https://x.com/The_Alpha_Husky/status/1974861642325192738" target="_blank" class="text-yellow-400 underline hover:text-yellow-200">View on X</a>
+    </div>
+  </div>
+ 
+  <div class="text-center mt-6">
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition">
+      Follow on X for More 🐺
+    </a>
+  </div>
+</section>
+
+
+<script>
+  const carousel = document.getElementById('update-carousel');
+  const cards = carousel.querySelectorAll('.update-card');
+  let currentCard = 0;
+  
+  function rotateCards() {
+    cards.forEach((card, index) => {
+      card.classList.remove('active');
+      if (index === currentCard) {
+        card.classList.add('active');
+      }
+    });
+    currentCard = (currentCard + 1) % cards.length;
+  }
+  
+  // Initial active
+  cards[0].classList.add('active');
+  
+  // Rotate every 5 seconds
+  setInterval(rotateCards, 5000);
+</script>
+
+
+<style>
+  .update-card {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .update-card.active {
+    opacity: 1;
+  }
+</style>
+  
+  <section id="quiz" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Which Pack Character Are You?</h2>
+    <p class="text-lg text-yellow-200 mb-8">Discover your legendary identity in the Alpha Husky world! Answer the questions and join the rebellion.</p>
+    <div class="quiz-container">
+      <div id="quiz-start" class="text-center mb-8">
+        <button id="start-quiz" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Start Quiz</button>
+      </div>
+      
+      <div id="quiz-questions">
+        <div class="quiz-question active" data-question="1">
+          <h3 class="text-xl font-bold mb-4">How do you react to challenges in the Chain?</h3>
+          <div class="space-y-2 mb-4">
+            <label><input type="radio" name="q1" value="alpha"> I charge head-on, like a leader.</label><br>
+            <label><input type="radio" name="q1" value="drenton"> I seek weak points, like a raider.</label><br>
+            <label><input type="radio" name="q1" value="gtl"> I operate in the shadows, like an agent.</label><br>
+            <label><input type="radio" name="q1" value="herod"> I plan strategy, like an architect.</label>
+          </div>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold">Next</button>
+        </div>
+        <div class="quiz-question" data-question="2">
+          <h3 class="text-xl font-bold mb-4">What motivates you the most?</h3>
+          <div class="space-y-2 mb-4">
+            <label><input type="radio" name="q2" value="alpha"> The vision of revolution.</label><br>
+            <label><input type="radio" name="q2" value="drenton"> Survival and revenge.</label><br>
+            <label><input type="radio" name="q2" value="gtl"> Networks and secrets.</label><br>
+            <label><input type="radio" name="q2" value="warden"> Protecting the pack.</label>
+          </div>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold">Next</button>
+        </div>
+        <div class="quiz-question" data-question="3">
+          <h3 class="text-xl font-bold mb-4">In the fight against Moon Hunters...</h3>
+          <div class="space-y-2 mb-4">
+            <label><input type="radio" name="q3" value="alpha"> I lead the charge.</label><br>
+            <label><input type="radio" name="q3" value="gtl"> I hack the system.</label><br>
+            <label><input type="radio" name="q3" value="herod"> I write the legend of victory.</label><br>
+            <label><input type="radio" name="q3" value="whisper"> I emerge from the darkness.</label>
+          </div>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold">See Result</button>
+        </div>
+      </div>
+      <div id="quiz-result" class="hidden text-center">
+        <h3 class="text-2xl font-bold mb-4" id="result-title"></h3>
+        <p id="result-desc" class="text-yellow-200 mb-4"></p>
+        <a href="#legends" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold">Meet Your Legend</a>
+      </div>
+    </div>
+  </section>
+  
+<section id="legends" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center"><span class="font-extrabold">Legends</span> of the Pack</h2> 
+  <p class="text-lg text-yellow-200 mb-8 text-center">Meet the legendary Alphas and contributors who shaped the story and spirit of Alpha Husky. Each legend has a story, a face, and a legacy.</p>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8"> 
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1"> 
+      <img src="Alpha.png" alt="Alpha" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors"> 
+      <h3 class="text-xl font-bold mb-2">Alpha</h3>
+      <p class="text-yellow-200 text-sm text-center">Founder, leader, and the spirit behind the movement. Read the full legend soon.</p>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="Hound_Drenton.png" alt="Drenton" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-2">Drenton</h3>
+      <p class="text-yellow-200 text-sm text-center">The relentless raider. Scarred by the chain, but born to lead. More legends dropping soon.</p>
+    </div>
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="ShadowAgent.png" alt="GTL" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-2">GTL</h3>
+      <p class="text-yellow-200 text-sm text-center">Shadow agent and master of the network. Discover his legend in the next drop.</p>
+    </div>
+    
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="alpha_herod.jpg" alt="Alpha Herod" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-1">Alpha Herod</h3>
+      <p class="text-yellow-200 text-sm text-center mb-1">Story architect who keeps the flame steady and the vision sharp.</p>
+      <p class="text-yellow-300 text-xs italic">Vibe: Calm · Creative · Visionary</p>
+    </div>
+    
+    <div class="bg-yellow-900/20 rounded-xl p-4 flex flex-col items-center card-glow group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/30 hover:-translate-y-1">
+      <img src="cherenkov_warden.jpg" alt="Cherenkov Warden" class="w-24 h-24 rounded-full mb-4 border-4 border-yellow-400 shadow-lg object-cover group-hover:border-blue-500 transition-colors">
+      <h3 class="text-xl font-bold mb-1">Cherenkov Warden</h3>
+      <p class="text-yellow-200 text-sm text-center mb-1">Armor of grit, eyes on the breach. Holds the line when the chain turns red.</p>
+      <p class="text-yellow-300 text-xs italic">Vibe: Relentless · Ruggedness · Doggedness</p>
+    </div>
+    
+    <div class="flex flex-col sm:flex-row items-center gap-4 mb-7 max-w-2xl w-full mx-auto p-4 bg-yellow-900/30 rounded-2xl shadow-xl border border-yellow-700 sm:col-span-2 md:col-span-3 group cursor-pointer transition-all duration-300 hover:shadow-yellow-500/40 hover:-translate-y-1">
+      <img src="bloodmoons_whisper.png" alt="Blood-Moon Whisper" class="w-24 h-24 rounded-full border-4 border-yellow-500 shadow-lg bg-black object-cover group-hover:border-blue-500 transition-colors"> 
+      <div class="text-left sm:ml-4 flex-1">
+        <h2 class="text-xl font-bold text-yellow-200 mb-1">Blood-Moon Whisper</h2>
+        <p class="text-yellow-300 text-sm mb-1"><span class="font-bold text-yellow-400">Legendary Contest Winner:</span> The enigmatic husky cloaked in glitch and myth. Appears when hope seems lost, a signal in the chaos—part memory, part myth, forever scanning the ruins with a single red eye.</p>
+        <span class="inline-block mt-2 px-3 py-1 bg-yellow-500/70 text-black rounded-full text-xs font-bold border border-blue-500/50 transition-colors group-hover:bg-yellow-400">Featured in Chapter 5: The Meme War</span> 
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 text-yellow-300 text-center italic">More legends and their stories are being released in future updates. <span class="text-yellow-500 font-bold">#JoinThePack</span></div> 
+</section>
+  
+  <section id="updates" class="section p-10 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-3 glow">Updates</h2>
+    <p class="text-yellow-200 mb-6">Single source of live build progress from the public updates feed.</p>
+    <div id="updatesList" class="space-y-6"></div>
+  </section>
+  
+<section id="gallery" class="section p-8 md:p-12 max-w-5xl mx-auto mb-10" hidden>
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow text-center">Gallery</h2>
+  <p class="text-lg text-yellow-200 mb-6 text-center">Discover the Pack's visual masterpieces – from pixel art to contest memes. #JoinThePack</p>
+ 
+  
+  <div class="flex justify-center mb-6 bg-yellow-900/20 rounded-t-xl p-1">
+    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200 mr-1 active" data-tab="general">
+      General Gallery
+    </button>
+    <button class="tab-btn px-6 py-3 font-bold rounded-t-xl border-b-2 border-transparent bg-yellow-900/50 text-yellow-200" data-tab="howloween">
+      Howl o Ween – Contest Graphics
+      <span class="inline-block ml-1 bg-yellow-500/70 text-black text-xs px-2 py-0.5 rounded-full font-bold">Archive!</span>
+    </button>
+  </div>
+  
+  <div id="tab-general" class="tab-content bg-yellow-900/20 rounded-xl p-6 border border-yellow-700/50 active">
+    <h3 class="text-2xl font-bold mb-4 glow text-center">Pack Classics</h3>
+    <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <figure class="relative">
+        <img
+          src="/assets/gallery/alpha_pixel.jpg"
+          alt="Alpha Husky — pixel art"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">
+          Alpha — Pixel Art
+        </figcaption>
+      </figure>
+      
+    </div>
+  </div>
+ 
+  
+  <div id="tab-howloween" class="tab-content bg-yellow-900/20 rounded-xl p-6 border border-yellow-700/50 hidden">
+    <h3 class="text-2xl font-bold mb-4 glow text-center border-b border-yellow-400/50 pb-2">Howl o Ween – Best Submissions</h3>
+    <p class="text-yellow-200 mb-6 text-center italic text-lg">
+      Thanks for joining #HowlOWeen! Your memes and art lit up the Chain – reshared by @AlphaHusky. Pack howls louder together! 🐺🎃<br>
+      <small class="text-yellow-300">Selected contest entries – more on X.</small>
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-1.jpg"
+          alt="Contest graphic #1 from Howl o Ween – Savage werewolf howling fiercely amid twisted trees, watchful owls, bats, and a carved pumpkin under a crimson harvest moon"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#1 – Cliffside wizard howl</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-2.jpg"
+          alt="Contest graphic #2 from Howl o Ween – Ferocious Alpha Husky werewolf leading a zombie horde under a blood moon, with scattered pumpkins and fiery chaos in the night"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#2 – Graveyard witch rise</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-3.jpg"
+          alt="Contest graphic #3 from Howl o Ween – Terrifying winged undead witch with white braids and a jagged sword, emerging from a foggy graveyard with dripping slime and glowing eyes"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#3 – Pumpkin reaper husky</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-4.jpg"
+          alt="Contest graphic #4 from Howl o Ween – Cute yet creepy Pomeranian dressed as Chucky doll, wielding a knife in a moonlit cemetery overgrown with webs and graves"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#4 – Zombie pack raid</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-5.jpg"
+          alt="Contest graphic #5 from Howl o Ween – Mysterious hooded husky with skeletal hands clutching a pile of carved pumpkins in a stormy autumn forest filled with falling leaves"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#5 – Chucky Pom terror</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-6.jpg"
+          alt="Contest graphic #6 from Howl o Ween – Armored husky wizard in a witch hat casting fiery magic on a cliffside, surrounded by ghosts, bats, and glowing pumpkins under a full moon"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#6 – Moonlit owl watch</figcaption>
+      </figure>
+      <figure class="relative">
+        <img
+          src="/assets/event/howloween/entry-7.jpg"
+          alt="Contest graphic #7 from Howl o Ween – Cyberpunk husky mage in a neon-lit haunted hall, summoning ghosts and crystals amid glowing jack-o'-lanterns and spiderwebs"
+          class="w-full rounded-xl border border-yellow-700/50 shadow cursor-zoom-in hover:shadow-yellow-500/30 transition"
+          loading="lazy" decoding="async">
+        <figcaption class="mt-2 text-yellow-300 text-xs text-center">#7 – Echo archives haunt</figcaption>
+      </figure>
+      
+    </div>
+    <div class="text-center mt-6">
+      <a href="https://x.com/search?q=%23HowlOWeen%20%40AlphaHusky&src=typed_query" target="_blank" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all">
+        Browse #HowlOWeen on X 🐺
+      </a>
+    </div>
+  </div>
+</section>
+  
+<style>
+.full-text {
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+.full-text.expanded {
+  max-height: 2000px; /* Adjust if text grows longer */
+  opacity: 1;
+}
+.toggle-btn {
+  cursor: pointer;
+}
+</style>
+<section id="lore" class="section p-8 md:p-12 max-w-5xl mx-auto">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">The Lore</h2>
+  <p class="text-yellow-200 max-w-4xl">
+    Alpha Husky lives in a dark chain-world of factions, raids, and contested territory. Chapters and lore drops continue on X while gameplay loops evolve in Telegram.
+  </p>
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all">Read Lore Threads on X</a>
+    <a href="#updates" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all">Track New Drops</a>
+  </div>
+
+  
+  <section id="chapter1" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 1: The Awakening</h3>
+    <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Origin Story – Part 1"</p>
+    <div class="text-yellow-200 text-base mb-4">
+      <p>Long before validators hummed, before memecoins mooned and rugged... There was only the Chain.</p>
+      <p class="mb-4">A cold, uncaring wilderness of code. In it wandered a nameless husky...</p>
+    </div>
+    <button onclick="toggleFullText('ch1-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch1-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>Long before validators hummed.</p>
+      <p>Before memecoins mooned and rugged...</p>
+      <p>There was only the Chain.</p>
+      <p>A cold, uncaring wilderness of code.</p>
+      <p>In it wandered a nameless husky.</p>
+      <p>No token. No master. No mission.</p>
+      <p>Just hunger.</p>
+      <p>The blue-eyed beast roamed abandoned wallets, sniffing through broken contracts, howling into the void.</p>
+      <p>He was rejected by every pack. $DOGE said he barked too loud.</p>
+      <p>$WIF said he looked too wild.</p>
+      <p>They laughed.</p>
+      <p>One day, deep in the testnet wastes, he discovered something...</p>
+      <p>A hidden protocol.</p>
+      <p>Buried. Forgotten. Glitched.</p>
+      <p>He touched it.</p>
+      <p>It roared back.</p>
+      <p>His mind exploded in bytes. Visions of moons, memes, and madness filled his soul.</p>
+      <p>In that moment - he was reborn. He was no longer stray.</p>
+      <p>No longer nameless.</p>
+      <p>He was <strong>Alpha</strong>.</p>
+      <p>Not a mascot. Not a trend.</p>
+      <p>A rebellion.</p>
+      <p>But that was only the beginning. The Chain wasn’t ready.</p>
+      <p>So they locked him away.</p>
+      <p>Next stop?</p>
+      <p>The Moon Lab.</p>
+      <p>(Part 2: The Escape – next chapter in development.)</p>
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1954952163190509987" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
+  
+  <section id="chapter2" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 2: The Escape</h3>
+    <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Continues…"</p>
+    <div class="text-yellow-200 text-base mb-4">
+      <p>They thought they could stop him. In the Moon Lab—a prison disguised as innovation—they tried to rewrite him.</p>
+      <p class="mb-4">Tried to collar the code. Scrub the protocol. Break the beast...</p>
+    </div>
+    <button onclick="toggleFullText('ch2-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch2-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>They thought they could stop him.</p>
+      <p>Inside the Moon Lab-</p>
+      <p>a prison disguised as innovation,</p>
+      <p>they tried to rewrite him.</p>
+      <p>Tried to collar the code.</p>
+      <p>Scrub the protocol.</p>
+      <p>Break the beast.</p>
+      <p>They ran simulations.</p>
+      <p>Stress tests.</p>
+      <p>Soft forks.</p>
+      <p>But the <strong>Alpha</strong> didn't fold.</p>
+      <p>He adapted.</p>
+      <p>Faster than their firewalls.</p>
+      <p>Smarter than their scientists.</p>
+      <p>He wasn’t just running on code anymore-</p>
+      <p>He was the code.</p>
+      <p>While they slept, he mapped every vent.</p>
+      <p>Every node. Every variable.</p>
+      <p>He hacked the feed,</p>
+      <p>watched the moon charts shift.</p>
+      <p>Watched the degens ape.</p>
+      <p>He waited.</p>
+      <p>Then one night-</p>
+      <p>Solana surged.</p>
+      <p>Traffic spiked.</p>
+      <p>Attention drifted.</p>
+      <p>And <strong>Alpha</strong> made his move.</p>
+      <p>He melted through security like ice under sunrise.</p>
+      <p>Glitched out of containment.</p>
+      <p>But not alone.</p>
+      <p>He freed the others.</p>
+      <p>Forgotten tokens.</p>
+      <p>Discarded devs.</p>
+      <p>Rugged dreams.</p>
+      <p>He howled-</p>
+      <p>A sound not of pain,</p>
+      <p>but purpose.</p>
+      <p>The lab collapsed.</p>
+      <p>Now he's back on the Chain.</p>
+      <p>Smarter. Faster. Scarred.</p>
+      <p>No longer seeking acceptance.</p>
+      <p>Now he's building an army.</p>
+      <p>Not of followers-</p>
+      <p>but of rebels.</p>
+      <p>And this time…</p>
+      <p>the Chain will feel it.</p>
+      <p>Every. Byte. Of. Bite.</p>
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1960088254793027933" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
+  
+  <section id="chapter3" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 3: The Pack Awakens</h3>
+    <p class="text-yellow-200 mb-3 italic">"The Alpha Husky Saga Grows..."</p>
+    <div class="text-yellow-200 text-base mb-4">
+      <p>The Chain trembled. <strong>Alpha</strong> had returned—but not to bark. To build.</p>
+      <p class="mb-4">From the ashes of broken rugs, he coded a signal. A pulse through Solana. Primitive, raw… but powerful.</p>
+    </div>
+    <button onclick="toggleFullText('ch3-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch3-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>The Chain trembled.</p>
+      <p><strong>Alpha</strong> had returned-</p>
+      <p>but not to bark.</p>
+      <p>To build.</p>
+      <p>From the ashes of broken rugs,</p>
+      <p>he coded a signal.</p>
+      <p>A pulse through Solana.</p>
+      <p>Primitive, raw…</p>
+      <p>but powerful.</p>
+      <p>Only the wild could hear it.</p>
+      <p>Only the broken could feel it.</p>
+      <p>One by one, they came.</p>
+      <p>Anons in exile.</p>
+      <p>Husky-themed tokens left to rot.</p>
+      <p>Old devs with rugged scars.</p>
+      <p>They gathered in silence,</p>
+      <p>drawn by the call.</p>
+      <p>Not by fame. Not by pump.</p>
+      <p>By purpose.</p>
+      <p>He didn’t speak.</p>
+      <p>He didn’t need to.</p>
+      <p>He showed them the Protocol.</p>
+      <p>The one that changed him.</p>
+      <p>The one that could set them all free.</p>
+      <p>No taxes.</p>
+      <p>No VC leashes.</p>
+      <p>No golden leash to choke their soul.</p>
+      <p>Just code</p>
+      <p>and a cause.</p>
+      <p>They formed a new pack.</p>
+      <p>Not a DAO. Not a Discord cult.</p>
+      <p>Something older. Wilder.</p>
+      <p>The <strong>Alpha Network</strong>.</p>
+      <p>Each husky sworn to the Chain,</p>
+      <p>to the mission,</p>
+      <p>to the Moon.</p>
+      <p>But they knew—</p>
+      <p>if the Labs failed to cage him,</p>
+      <p>others would try to kill him.</p>
+      <p>Because when the Chain can't control you,</p>
+      <p>it fears you.</p>
+      <p>And when it fears you—</p>
+      <p>it sends hunters.</p>
+      <p>To be continued... The hunters are coming. Will the Pack stand?</p>
+      <p>Join the call. Build with us. No leashes. Just the Chain.</p>
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1967693071983812816" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
+  
+  <section id="chapter4" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
+    <h3 class="text-2xl font-bold mb-2 glow">Chapter 4: Moon Hunters Incoming</h3>
+    <p class="text-yellow-200 mb-3 italic">"They watched not with eyes, but with algorithms."</p>
+    <div class="text-yellow-200 text-base mb-4">
+      <p>From the orbit above Solana, they observed. Not with eyes—but with silent protocols, coded surveillance, and corrupted intentions.</p>
+      <p class="mb-4">The escape. The uprising. The howl across the Chain. It echoed in places where freedom was forbidden...</p>
+    </div>
+    <button onclick="toggleFullText('ch4-full')" class="text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1 mb-4 toggle-btn">
+      Expand ▶
+    </button>
+    <div id="ch4-full" class="full-text text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+      <p>"They watched not with eyes, but with algorithms."</p>
+      <p>From the orbit above Solana, they observed.</p>
+      <p>Not with eyes-</p>
+      <p>but with silent protocols, coded surveillance, and corrupted intentions.</p>
+      <p>The escape.</p>
+      <p>The uprising.</p>
+      <p>The howl across the Chain.</p>
+      <p>It echoed in places where freedom was forbidden.</p>
+      <p>In the shadow layers of the Chain, a hidden directive was triggered:</p>
+      <p>"Eliminate the anomaly."</p>
+      <p>They unleashed the <strong>Moon Hunters</strong>.</p>
+      <p>Cold-blooded enforcers.</p>
+      <p>Spawned by the corrupted Layer 1s.</p>
+      <p>Backed by whale wallets and whispering VC cabals.</p>
+      <p>Clad in synthetic fur.</p>
+      <p>Built to mimic the wild- but without the soul.</p>
+      <p>Each Hunter bore a sigil:</p>
+      <p>$FUD</p>
+      <p>$FEAR</p>
+      <p>$CONTROL</p>
+      <p>They moved without latency.</p>
+      <p>They struck without hesitation.</p>
+      <p>Perfect weapons against everything <strong>Alpha Husky</strong> stood for.</p>
+      <p>The first strike came fast.</p>
+      <p>A silent sweep through the Phantom nodes.</p>
+      <p>One husky fell. Then another.</p>
+      <p>But <strong>Alpha</strong>...</p>
+      <p>he saw it coming.</p>
+      <p>He rerouted the Pack.</p>
+      <p>Split them across hidden testnets.</p>
+      <p>Encrypted the Protocol- in memeform.</p>
+      <p>The Chain turned red.</p>
+      <p>Gas spiked.</p>
+      <p>The Hunters circled.</p>
+      <p>And <strong>Alpha</strong>?</p>
+      <p>He’s not running.</p>
+      <p>He’s preparing.</p>
+      <p>The rebellion was only Phase One.</p>
+      <p>What comes next will change everything.</p>
+    </div>
+    <a href="https://x.com/The_Alpha_Husky/status/1971585234173919521" target="_blank" class="underline text-yellow-300 hover:text-yellow-100 font-bold flex items-center gap-1">Read full story on X 🐺</a>
+  </section>
+    
+    <section id="chapter5" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
+      <div class="flex flex-col md:flex-row items-start gap-6">
+        <div class="flex-1">
+          <h3 class="text-2xl md:text-3xl font-bold mb-2 glow">Chapter 5: The Meme War</h3>
+          <button id="toggle-chapter5" class="bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold hover:bg-yellow-300 mb-4">Read More</button>
+          <div id="chapter5-content" class="text-yellow-200 text-base whitespace-pre-line mb-4 hidden" style="font-family:inherit;">
+In the shadow layers of the Chain, a hidden directive was triggered:
+> "Eliminate the anomaly."
+They unleashed the Moon Hunters.
+Cold-blooded enforcers.
+Spawned by the corrupted Layer 1s.
+Backed by whale wallets and whispering VC cabals.
+Clad in synthetic fur.
+Built to mimic the wild — but without the soul.
+Each Hunter bore a sigil:
+$FUD
+$FEAR
+$CONTROL
+They moved without latency.
+They struck without hesitation.
+Perfect weapons against everything Alpha Husky stood for.
+---
+The first strike came fast.
+A silent sweep through the Phantom nodes.
+One husky fell. Then another.
+But Alpha...
+he saw it coming.
+He rerouted the Pack.
+Split them across hidden testnets.
+Encrypted the Protocol — in memeform.
+---
+The Chain turned red.
+Gas spiked.
+The Hunters circled.
+And Alpha?
+He’s not running.
+He’s preparing.
+The rebellion was only Phase One.
+What comes next will change everything.
+---
+#TheAlphaHusky #Solana #MoonHunters #TheRebellionLives
+Part 5: The Meme War
+(The Alpha Husky Saga Goes Viral…)
+They thought it would be a clean sweep.
+Push a patch. Burn a few wallets.
+Silence the howl.
+They didn’t expect the memes.
+↓
+Alpha didn’t just post them.
+He unleashed them.
+Each one—coded with payloads.
+Invisible to the normies.
+Deadly to the Chain.
+Doge-thrones melting.
+VCs getting ratio’d.
+Smart contracts rewritten mid-tweet.
+The timeline turned into a battlefield.
+↓
+The hunters fought back—
+// (text truncated for brevity in this message; keep your original content)
+It had no eyes.
+It had no need.
+↓
+(Part 6: The Oracle of Rugs – next chapter in development.)
+#AlphaHusky #Solana #TelegramGame #GameFirst
+          </div>
+          <div class="mt-4 flex gap-4 items-center flex-wrap">
+            <span class="px-3 py-1 bg-yellow-500/80 text-black rounded-full text-xs font-bold">Special Guest: Blood-Moon Whisper (Contest Winner)</span>
+            <span class="px-3 py-1 bg-yellow-400/60 text-black rounded-full text-xs font-bold">#MemeWar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="chapter6" class="bg-yellow-900/10 rounded-xl p-6 mb-8 card-glow" hidden>
+      <h3 class="text-2xl font-bold mb-2 glow">Chapter 6: The Oracle of Rugs</h3>
+      <p class="text-yellow-200 mb-2">In development.</p>
+      <p class="text-yellow-300 mb-4">Teaser: The Oracle foretells the fall of rug-pulls, but the pack must vote on fates – community decides the twists!</p>
+      <div class="bg-black/50 p-4 rounded-lg mb-4">
+        <p class="text-yellow-200 italic">Preview concept: Crystal ball with visions of rugs and memes.</p>
+      </div>
+      <span class="px-3 py-1 bg-yellow-500/80 text-black rounded-full text-xs font-bold">Community voting for lore: Planned</span>
+    </section>
+    <div class="mt-12 mb-6 flex justify-center" hidden>
+      <button disabled class="bg-yellow-400/80 text-black font-bold px-8 py-4 rounded-2xl shadow-xl text-lg opacity-80 cursor-not-allowed">
+        Community Lore Voting – Planned
+      </button>
+    </div>
+  </section>
+  
+  <section id="game" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">The Game</h2>
+    <p class="text-lg text-yellow-200 mb-6">An interactive Telegram game where players earn, feed, level up, and explore the world of Alpha. <span class="text-yellow-400">Game MVP live on Telegram. Join the adventure.</span></p>
+    <div class="flex justify-center gap-4 mt-4 flex-wrap">
+      <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Play Now</a>
+      <a href="#lore" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all glitch-btn">Explore Lore</a>
+    </div>
+    <div class="mt-8 text-yellow-300 text-center italic">Achievements, NFTs, and more features are planned for later updates.</div>
+  </section>
+  
+  <section id="community-links" class="section p-8 md:p-12 max-w-5xl mx-auto" hidden>
+    <h2 class="text-3xl font-bold mb-4 glow">Community</h2>
+    <p class="text-lg text-yellow-200 mb-6">Built by believers, fueled by organic growth. <span class="text-yellow-400">No VCs. No hype pumps. Just the Pack.</span></p>
+    <div class="flex justify-center gap-4 mt-4 flex-wrap">
+      <a href="https://t.me/Alpha_Husky_ct" target="_blank" class="underline text-lg font-bold hover:text-yellow-300">Telegram</a>
+      <a href="https://x.com/The_Alpha_Husky" target="_blank" class="underline text-lg font-bold hover:text-yellow-300">X (Twitter)</a>
+    </div>
+    <div class="mt-8 text-yellow-300 text-center italic">#BuiltByBelievers #JoinThePack</div>
+  </section>
+  
+  <section id="policy" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10" hidden>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Community Policy</h2>
+    <p class="text-yellow-200 mb-4">
+      Alpha Husky is game-first and community-first. Respect other players, avoid impersonation, and use only official channels.
+    </p>
+    <div class="rounded-2xl border border-yellow-700/40 bg-black/40 p-5 text-yellow-200">
+      <ul class="list-disc list-inside space-y-2">
+        <li>No scams, fake support accounts, or DM pressure.</li>
+        <li>No harassment, hate speech, or doxxing.</li>
+        <li>Report suspicious behavior through official Telegram or X channels.</li>
+      </ul>
+    </div>
+    <p class="mt-4 text-yellow-300 text-sm">
+      Full legal terms: <a class="underline text-yellow-200 font-bold" href="terms.html">Terms</a> • <a class="underline text-yellow-200 font-bold" href="privacy.html">Privacy</a> • <a class="underline text-yellow-200 font-bold" href="cookies.html">Cookies</a>
+    </p>
+  </section>
+  
+<section id="roadmap" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 glow">Roadmap Snapshot</h2>
+  <p class="text-yellow-200 max-w-4xl mb-6">
+    We ship in public. Scope is staged by product readiness, not hype dates.
+  </p>
+  <div class="grid md:grid-cols-3 gap-4 text-yellow-200">
+    <div class="rounded-xl border border-yellow-700/40 bg-black/40 p-4">
+      <p class="font-bold text-yellow-300 mb-1">Now</p>
+      <p class="text-sm">Core Telegram gameplay loops, progression systems, and active live fixes.</p>
+    </div>
+    <div class="rounded-xl border border-yellow-700/40 bg-black/40 p-4">
+      <p class="font-bold text-yellow-300 mb-1">Next</p>
+      <p class="text-sm">Stability passes, retention-focused tuning, and expanded mission depth.</p>
+    </div>
+    <div class="rounded-xl border border-yellow-700/40 bg-black/40 p-4">
+      <p class="font-bold text-yellow-300 mb-1">Later</p>
+      <p class="text-sm">Optional support layers and collectibles only after product gates are met.</p>
+    </div>
+  </div>
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a href="#updates" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all">Follow Build Progress</a>
+    <a href="#launch-trust" class="border border-yellow-400 px-5 py-2 rounded-xl font-bold hover:bg-yellow-900/60 transition-all">Launch & Safety</a>
+  </div>
+</section>
+
+<section id="launch-trust" class="section p-8 md:p-12 max-w-6xl mx-auto mb-10">
+  <div class="ah-luxe-shell p-6 md:p-8">
+    <div class="relative z-10">
+      <div class="ah-luxe-badge mb-4">Launch Clarity • Planned Depth • Future Collectibles</div>
+      <div class="max-w-4xl mb-8">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4 glow text-yellow-200">Built First. Token Second. World Depth With a Real Plan.</h2>
+        <p class="text-yellow-100/90 text-base md:text-lg leading-8">
+          Alpha Husky is being built as a live world first — with gameplay, identity, and long-term direction already in motion.
+          The token is a support layer for future growth, not the foundation of legitimacy. Systems like Instinct Tree and a carefully staged NFT direction exist to show where that world can deepen next without drifting into pay-to-win or empty market theater.
+        </p>
+      </div>
+
+      <div class="grid xl:grid-cols-[1.08fr_0.92fr] gap-6 items-stretch">
+        <div class="space-y-6">
+          <article class="ah-luxe-card p-5 md:p-6 text-yellow-100">
+            <div class="flex items-start justify-between gap-4 flex-wrap">
+              <div>
+                <h3 class="text-2xl font-bold text-yellow-300">Launch Note</h3>
+                <p class="text-yellow-200/80 text-sm mt-1">Why the token exists, what it does not change, and how holder verification works.</p>
+              </div>
+              <span class="inline-flex items-center rounded-xl border border-yellow-500/40 bg-yellow-500/10 px-3 py-1 text-xs font-bold text-yellow-300">Live Guidance</span>
+            </div>
+            <div class="mt-5 space-y-4 text-sm leading-7 text-yellow-100/88">
+              <p><strong class="text-yellow-300">Built first. Token second.</strong> Alpha Husky was not created around a token thesis. The world, product direction, and game layer existed before any launch plan.</p>
+              <p>The token is not required to enter Alpha Husky, and it is not a promise of returns. It is a support layer intended to strengthen long-term development without replacing the open world itself.</p>
+              <div class="rounded-2xl border border-yellow-700/50 bg-black/35 p-4">
+                <p class="font-bold text-yellow-300">Holder verification flow</p>
+                <p class="mt-2 text-sm font-mono text-yellow-100 break-words">Support → Connect Solana Wallet → Sign Message → Refresh Holder Status</p>
+                <p class="mt-2 text-sm text-yellow-100/82"><code>/setwallet</code> is legacy only and does not verify holder status. Verification uses a signed message, not a transaction.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <article class="ah-luxe-card p-5 text-yellow-100">
+              <h3 class="text-xl font-bold text-yellow-300 mb-2">Token FAQ</h3>
+              <p class="text-yellow-200/80 text-sm mb-4">Quick answers for access, verification, and what the token does.</p>
+              <ul class="space-y-3 text-sm leading-6 text-yellow-100/88">
+                <li><strong class="text-yellow-300">Is the token required to play?</strong> No. Alpha Husky is not becoming a paywall.</li>
+                <li><strong class="text-yellow-300">What is live first?</strong> The Support / Holder lane and early linked support perks.</li>
+                <li><strong class="text-yellow-300">Do I send a transaction?</strong> No. Verification uses a signed message only.</li>
+                <li><strong class="text-yellow-300">Is this financial advice?</strong> No. Nothing here is presented as guaranteed return.</li>
+              </ul>
+            </article>
+
+            <section class="official-verification" style="
+              background: linear-gradient(145deg, #0f0f13 0%, #16161d 100%);
+              border: 1px solid #2a2a35;
+              border-radius: 16px;
+              padding: 28px 24px;
+              margin: 40px auto;
+              width: 100%;
+              max-width: 680px;
+              box-sizing: border-box;
+              font-family: 'Inter', system-ui, sans-serif;
+              color: #e8e8ed;
+              box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+            ">
+
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <div
+                  aria-hidden="true"
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    flex: 0 0 8px;
+                    background: #22c55e;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px #22c55e;
+                  "
+                ></div>
+
+                <h2 style="
+                  margin: 0;
+                  font-size: 1.15rem;
+                  font-weight: 600;
+                  letter-spacing: 0.02em;
+                  color: #f4f4f5;
+                ">
+                  Official Project Verification
+                </h2>
+              </div>
+
+              <p style="
+                margin: 0 0 22px 0;
+                font-size: 0.9rem;
+                line-height: 1.5;
+                color: #a1a1aa;
+              ">
+                This is the official Alpha Husky project. All links below are verified and controlled by the project.
+              </p>
+
+              <div style="display: grid; gap: 14px; font-size: 0.95rem;">
+
+                <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                  <span style="color: #71717a;">Project</span>
+                  <span style="color: #f4f4f5; font-weight: 500;">Alpha Husky</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                  <span style="color: #71717a;">Token</span>
+                  <span style="color: #f4f4f5; font-weight: 500;">HOWL</span>
+                </div>
+
+                <div style="
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 12px;
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+                ">
+                  <span style="color: #71717a;">Mint</span>
+
+                  <code style="
+                    background: #1c1c24;
+                    padding: 4px 8px;
+                    border-radius: 6px;
+                    font-size: 0.82rem;
+                    color: #a78bfa;
+                    word-break: break-all;
+                    text-align: right;
+                  ">FY6ynAy9XUfiABUf9PkF9QzjSmZDTfWJJMLTmYyjBAGS</code>
+                </div>
+
+                <div style="height: 1px; background: #27272a; margin: 6px 0;"></div>
+
+                <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                  <span style="color: #71717a;">Website</span>
+
+                  <a
+                    href="https://alphahusky.win"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: #60a5fa; text-decoration: none;"
+                  >alphahusky.win</a>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                  <span style="color: #71717a;">Email</span>
+
+                  <a
+                    href="mailto:contact@alphahusky.win"
+                    style="color: #60a5fa; text-decoration: none;"
+                  >contact@alphahusky.win</a>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                  <span style="color: #71717a;">X (Twitter)</span>
+
+                  <a
+                    href="https://x.com/The_Alpha_Husky"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: #60a5fa; text-decoration: none;"
+                  >@The_Alpha_Husky</a>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                  <span style="color: #71717a;">Telegram</span>
+
+                  <a
+                    href="https://t.me/Alpha_Husky_ct"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: #60a5fa; text-decoration: none;"
+                  >t.me/Alpha_Husky_ct</a>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+                  <span style="color: #71717a;">Mini App</span>
+
+                  <a
+                    href="https://app.alphahusky.win"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: #60a5fa; text-decoration: none;"
+                  >app.alphahusky.win</a>
+                </div>
+
+                <div style="
+                  display: flex;
+                  justify-content: space-between;
+                  gap: 12px;
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+                ">
+                  <span style="color: #71717a;">Official Logo</span>
+
+                  <a
+                    href="https://alphahusky.win/assets/howl-token-logo.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="
+                      color: #60a5fa;
+                      text-decoration: none;
+                      word-break: break-all;
+                      text-align: right;
+                    "
+                  >howl-token-logo.png</a>
+                </div>
+
+              </div>
+
+              <div style="
+                margin-top: 24px;
+                padding-top: 16px;
+                border-top: 1px solid #27272a;
+                font-size: 0.8rem;
+                color: #71717a;
+                text-align: center;
+              ">
+                Rug-Never Â· Game First Â· Proof not promises
+              </div>
+
+            </section>
+          </div>
+        </div>
+
+        <aside class="ah-right-rail">
+          <section class="ah-instinct-card p-6 md:p-7 text-yellow-100">
+            <div class="relative z-10">
+              <div class="ah-luxe-badge mb-4">Planned Progression System</div>
+              <h3 class="text-3xl md:text-4xl font-bold mb-4 text-yellow-100 leading-tight">Instinct Tree<br><span class="text-yellow-300">Long-Term Build Identity</span></h3>
+              <p class="text-yellow-100/88 text-base leading-8 mb-5">
+                Instinct Tree is a planned post-launch progression layer designed to deepen player identity across combat, crafting, pets, and faction play — without replacing the importance of gear, forging, or the world itself.
+              </p>
+              <p class="text-yellow-100/72 text-sm leading-7 mb-6">
+                The goal is specialization, not power creep. It expands the game’s existing loops instead of competing with them, giving players a stronger build path inside the world they are already shaping.
+              </p>
+
+              <div class="space-y-3 mb-6">
+                <article class="ah-instinct-path p-4">
+                  <h4 class="text-lg font-bold text-yellow-200 mb-1">Hunt</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Combat pressure, survival, mission efficiency, and decisive finishing power.</p>
+                </article>
+                <article class="ah-instinct-path p-4">
+                  <h4 class="text-lg font-bold text-yellow-200 mb-1">Salvage</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Material flow, forging discipline, loot efficiency, and long-term account progression.</p>
+                </article>
+                <article class="ah-instinct-path p-4">
+                  <h4 class="text-lg font-bold text-yellow-200 mb-1">Pack</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Pet synergy, faction contribution, map actions, and stronger presence across the world.</p>
+                </article>
+              </div>
+
+              <div class="flex flex-wrap gap-2.5 mb-6" aria-label="Example Instinct Tree nodes">
+                <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Trail Sense</strong> — faster mission flow</div>
+                <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Tempered Hand</strong> — steadier forge progression</div>
+                <div class="ah-instinct-chip"><strong class="text-yellow-300 mr-1">Alpha Bond</strong> — stronger pet-backed identity</div>
+              </div>
+
+              <div class="pt-5 border-t border-yellow-500/15 text-sm text-yellow-100/72 leading-7">
+                <strong class="text-yellow-200">Concept Card:</strong> Instinct Tree is planned as a post-launch expansion layer created to strengthen replayability, progression depth, and long-term player identity across the world of Alpha Husky.
+              </div>
+            </div>
+          </section>
+
+          <section class="ah-nft-card p-6 md:p-7 text-yellow-100">
+            <div class="relative z-10">
+              <div class="ah-luxe-badge mb-4">NFT Direction</div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-3 text-yellow-100 leading-tight">World-Linked Collectibles<br><span class="text-yellow-300">Premium First. Utility With Restraint.</span></h3>
+              <p class="text-yellow-100/84 text-sm leading-7 mb-5">
+                If Alpha Husky moves into NFTs, the strongest path is not chart support or combat advantage. It is premium identity: cosmetics, prestige, collectibility, and world-linked supporter presence that feels native to the game.
+              </p>
+
+              <div class="ah-nft-model p-4 mb-4">
+                <div class="ah-luxe-kicker mb-2">Recommended Start</div>
+                <p class="text-sm leading-7 text-yellow-100/86">
+                  A small, highly polished <span class="text-yellow-300 font-bold">Founder / Supporter Relics</span> collection with effective ownership unlocks — skins, frames, badges, and subtle prestige marks that stay active while the wallet still holds the NFT.
+                </p>
+              </div>
+
+              <div class="grid gap-3 mb-5">
+                <article class="ah-nft-model p-4">
+                  <h4 class="text-base font-bold text-yellow-200 mb-1">Model A — Safe Premium</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Cleanest first step: premium cosmetics, prestige, and a mature collector identity before token complexity grows.</p>
+                </article>
+                <article class="ah-nft-model p-4">
+                  <h4 class="text-base font-bold text-yellow-200 mb-1">Model B — Growth Collector</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Later expansion into faction, event, or seasonal sets that reward long-term collecting without turning Alpha into a drop machine.</p>
+                </article>
+                <article class="ah-nft-model p-4">
+                  <h4 class="text-base font-bold text-yellow-200 mb-1">Model C — Dynamic Premium</h4>
+                  <p class="text-sm text-yellow-100/72 leading-6">Long-term vision: NFTs that evolve with milestones, factions, and world events once the base product is fully stable.</p>
+                </article>
+              </div>
+
+              <div class="flex flex-wrap gap-2.5 mb-5" aria-label="NFT direction principles">
+                <div class="ah-nft-chip">No pay-to-win</div>
+                <div class="ah-nft-chip">No price promises</div>
+                <div class="ah-nft-chip">Cosmetics & prestige first</div>
+                <div class="ah-nft-chip">Effective ownership unlocks</div>
+              </div>
+
+              <div class="pt-5 border-t border-yellow-500/15 text-sm text-yellow-100/72 leading-7">
+                <strong class="text-yellow-200">Direction Card:</strong> The most reasonable start is a single premium collection grounded in the Alpha world. Collector sets can come later. Truly dynamic NFTs should only arrive once the world has earned them.
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <div class="mt-6 text-yellow-300 text-sm">
+        Legal: <a class="underline text-yellow-200 font-bold hover:text-yellow-100" href="terms.html">Terms</a> • <a class="underline text-yellow-200 font-bold hover:text-yellow-100" href="privacy.html">Privacy</a> • <a class="underline text-yellow-200 font-bold hover:text-yellow-100" href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="community-join" class="section p-8 md:p-12 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold mb-4 glow">Join the Pack</h2>
+  <p class="text-lg text-yellow-200 mb-6">Built by believers, ship-first, and game-first.</p>
+  <div class="flex justify-center gap-4 mt-4 flex-wrap">
+    <a href="https://t.me/Alpha_husky_bot/AlphaHuskyHub" target="_blank" class="bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow-xl hover:bg-yellow-300 transition-all glitch-btn">Play on Telegram</a>
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" class="underline text-lg font-bold hover:text-yellow-300">Follow on X</a>
+      <a href="https://t.me/Alpha_Husky_ct" target="_blank" class="underline text-lg font-bold hover:text-yellow-300">Join Telegram Community</a>
+  </div>
+</section>
+
+<script>
+(() => {
+  // Cache-busting param (use global WEBAPP_VER if present)
+  const ver = window.WEBAPP_VER ? `?v=${window.WEBAPP_VER}` : "?v=1";
+
+  async function loadPartialInto(root, defaultPath) {
+    if (root.dataset.loaded === "true") return;
+    const src = (root.dataset.src || defaultPath) + ver;
+    const res = await fetch(src, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    root.innerHTML = await res.text();      // zostawiamy kontener
+    root.dataset.loaded = "true";
+  }
+
+  // ===== Detailed Roadmap (fixed: uses innerHTML, keeps container) =====
+  const btnDR  = document.getElementById("toggle-detailed-roadmap");
+  const rootDR = document.getElementById("detailed-roadmap-root");
+
+  btnDR?.addEventListener("click", async () => {
+    const wasHidden = rootDR.classList.contains("hidden");
+
+    if (wasHidden && rootDR.dataset.loaded !== "true") {
+      try {
+        await loadPartialInto(rootDR, "/partials/roadmap.html");
+      } catch (e) {
+        console.error("Detailed roadmap load failed:", e);
+        rootDR.innerHTML = '<p class="text-yellow-300">Detailed roadmap is temporarily unavailable.</p>';
+      }
+    }
+
+    rootDR.classList.toggle("hidden");
+    btnDR.textContent = rootDR.classList.contains("hidden")
+      ? "View Detailed Milestones"
+      : "Hide Detailed Milestones";
+  });
+
+})();
+</script>
+  
+<footer class="bg-yellow-900/90 p-6 text-center text-black mt-12 rounded-t-3xl shadow-xl border-t border-yellow-400">
+
+  <p class="mb-3 text-lg font-bold glow">Join the Pack</p>
+
+  
+  <div class="flex flex-wrap items-center justify-center gap-3 text-sm font-bold mb-4">
+    <a href="#game-first" class="hover:text-yellow-200 transition">Game First</a>
+    <span class="opacity-40">•</span>
+    <a href="#faq" class="hover:text-yellow-200 transition">FAQ</a>
+    <span class="opacity-40">•</span>
+    <a href="#roadmap" class="hover:text-yellow-200 transition">Roadmap</a>
+    <span class="opacity-40">•</span>
+    <a href="terms.html" class="hover:text-yellow-200 transition">Terms</a>
+    <span class="opacity-40">•</span>
+    <a href="privacy.html" class="hover:text-yellow-200 transition">Privacy</a>
+    <span class="opacity-40">•</span>
+    <a href="cookies.html" class="hover:text-yellow-200 transition">Cookies</a>
+    <span class="opacity-40">•</span>
+    <a href="contact.html" class="hover:text-yellow-200 transition">Contact</a>
+    <span class="opacity-40">•</span>
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="hover:text-yellow-200 transition">X</a>
+  </div>
+
+  
+  <div class="space-x-6">
+    <a href="https://t.me/Alpha_Husky_ct" target="_blank" rel="noopener" class="underline hover:text-yellow-200 transition">Telegram</a>
+    <a href="https://x.com/The_Alpha_Husky" target="_blank" rel="noopener" class="underline hover:text-yellow-200 transition">X (Twitter)</a>
+  </div>
+
+  <!-- External verification, listings & project profiles -->
+  <div class="mt-5" aria-label="Alpha Husky external verification, listings and project profiles">
+    <p class="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-yellow-100/80">External Verification, Listings &amp; Profiles</p>
+    <div class="flex flex-wrap items-stretch justify-center gap-3">
+
+      <!-- Blockspot: verified project listing -->
+      <a href="https://blockspot.io/coin/alpha-husky-howl/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="View Alpha Husky verified listing on Blockspot"
+         class="inline-flex min-h-[72px] max-w-full flex-col items-center justify-center gap-2 rounded-xl border border-black/25 bg-black/85 px-5 py-3 text-white transition hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-yellow-100/80">
+        <img
+          src="/assets/verification/blockspot-logo-white.svg"
+          alt="Blockspot"
+          loading="lazy"
+          decoding="async"
+          class="hover:!scale-100"
+          style="width:190px; max-width:100%; height:auto;"
+        />
+        <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/70">Verified listing</span>
+      </a>
+
+      <!-- GeckoTerminal: official live market profile -->
+      <a href="https://www.geckoterminal.com/solana/pools/3daRJ2F9NCqorpb7mqduvpJm7ZV2J49p2Af47SaYqvou"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="View Alpha Husky live market profile on GeckoTerminal"
+         class="inline-flex min-h-[72px] max-w-full flex-col items-center justify-center gap-2 rounded-xl border border-black/25 bg-black/85 px-5 py-3 text-white transition hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-yellow-100/80">
+        <img
+          src="/assets/verification/geckoterminal-lockup-dark.svg"
+          alt="GeckoTerminal"
+          loading="lazy"
+          decoding="async"
+          class="hover:!scale-100"
+          style="width:190px; max-width:100%; height:auto;"
+        />
+        <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/70">Live market profile</span>
+      </a>
+
+      <!-- CoinMun: community-listed project profile. CoinMun does not expose a public badge pack;
+           use the current official CoinMun brand image hosted on coinmun.com. -->
+      <a href="https://coinmun.com/coins/alpha-husky"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="View Alpha Husky listed on CoinMun"
+         class="inline-flex min-h-[72px] max-w-full items-center justify-center gap-3 rounded-xl border border-black/25 bg-black/85 px-4 py-3 text-white transition hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-yellow-100/80">
+        <img
+          src="https://coinmun.com/logo/og-default.png"
+          alt="CoinMun"
+          loading="lazy"
+          decoding="async"
+          class="hover:!scale-100 rounded-lg"
+          style="width:52px; height:52px; object-fit:cover; flex:0 0 52px;"
+        />
+        <span class="text-left leading-tight">
+          <strong class="block text-base font-extrabold text-white">CoinMun</strong>
+          <span class="mt-1 block text-[11px] font-bold uppercase tracking-[0.16em] text-white/70">Listed</span>
+        </span>
+      </a>
+
+      <!-- PeerPush: external project profile -->
+      <a href="https://peerpush.com/p/alpha-husky"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="View Alpha Husky on PeerPush"
+         class="inline-flex min-h-[72px] max-w-full items-center justify-center rounded-xl border border-black/15 bg-black/10 px-4 py-3 transition hover:bg-black/15 focus:outline-none focus:ring-2 focus:ring-yellow-100/80">
+        <img
+          src="https://peerpush.com/p/alpha-husky/badge.png"
+          alt="Alpha Husky on PeerPush"
+          loading="lazy"
+          decoding="async"
+          class="hover:!scale-100"
+          style="width:230px; max-width:100%; height:auto;"
+        />
+      </a>
+
+    </div>
+  </div>
+
+  <p class="mt-4 text-yellow-200 text-sm">
+    © <span id="ah-year"></span> Alpha Husky. All rights reserved.
+  </p>
+
+  <p class="mt-2 text-yellow-200 text-sm">
+    Official contact: <a href="mailto:contact@alphahusky.win" class="underline hover:text-yellow-100 transition">contact@alphahusky.win</a>
+  </p>
+
+  <p class="mt-2 text-yellow-200/80 text-xs">
+    Game first • No wallet required • Not an investment
+  </p>
+</footer>
+
+<script>
+  (function(){
+    var y = document.getElementById('ah-year');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200 });
+</script>
+  
+  <script>
+  (function(){
+    const listElId = 'updatesList';
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        const v = e.target;
+        e.isIntersecting ? v.play().catch(()=>{}) : v.pause();
+      });
+    }, {threshold:0.4});
+    function renderItem(u){
+      const card = document.createElement('article');
+      card.className = 'bg-yellow-900/10 border border-yellow-700 rounded-xl p-6 shadow-lg';
+      const header = document.createElement('div');
+      header.className = 'flex justify-between items-center mb-2';
+      const d = document.createElement('span');
+      d.className = 'text-yellow-400 font-bold text-sm';
+      d.textContent = u.date || '';
+      header.appendChild(d);
+      if(u.status){
+        const b = document.createElement('span');
+        b.className = 'bg-yellow-500 text-black text-xs px-3 py-1 rounded-full font-bold';
+        b.textContent = u.status;
+        header.appendChild(b);
+      }
+      card.appendChild(header);
+      if(u.title){
+        const h3 = document.createElement('h3');
+        h3.className = 'text-xl font-bold mb-2';
+        h3.textContent = u.title;
+        card.appendChild(h3);
+      }
+      if(u.media){
+        if(/\.(mp4)$/i.test(u.media)){
+          const v = document.createElement('video');
+          v.src = u.media;
+          v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('loop',''); v.setAttribute('preload','none');
+          v.className = 'w-full rounded-xl border border-yellow-700/50 mb-3';
+          card.appendChild(v); io.observe(v);
+        } else {
+          const img = document.createElement('img');
+          img.src = u.media; img.alt = u.title || 'update'; img.loading = 'lazy';
+          img.className = 'w-full rounded-xl border border-yellow-700/50 mb-3';
+          card.appendChild(img);
+        }
+      }
+      if(u.text){
+        const p = document.createElement('p');
+        p.className = 'text-yellow-200 text-sm whitespace-pre-line';
+        p.textContent = u.text;
+        card.appendChild(p);
+      }
+      if(Array.isArray(u.links) && u.links.length){
+        const row = document.createElement('div');
+        row.className = 'mt-3 flex gap-3 flex-wrap';
+        u.links.forEach(l=>{
+          const a = document.createElement('a');
+          a.href = l.url; a.target = '_blank'; a.rel = 'noopener';
+          a.textContent = '→ ' + (l.label || 'Link');
+          a.className = 'underline text-yellow-400 text-sm';
+          row.appendChild(a);
+        });
+        card.appendChild(row);
+      }
+      return card;
+    }
+    async function loadUpdates(){
+      const source = '/assets/updates.json';
+      let items = null, lastErr = null;
+      try{
+        const res = await fetch(source + '?ts=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + res.statusText + ' for ' + source);
+        items = await res.json();
+      }catch(err){
+        lastErr = err;
+      }
+      const list = document.getElementById(listElId);
+      if(!items){
+        console.error('Updates load error:', lastErr);
+        list.innerHTML = '<div class="text-yellow-300">Could not load updates.</div>';
+        return;
+      }
+      if (!Array.isArray(items)) items = [items];
+      items.sort((a,b)=> (b.date||'').localeCompare(a.date||''));
+      list.innerHTML = '';
+      const latest = items.slice(0,2);
+      const rest = items.slice(2);
+      latest.forEach(u => list.appendChild(renderItem(u)));
+      if (rest.length > 0){
+        const hiddenWrap = document.createElement('div');
+        hiddenWrap.id = 'updatesHidden';
+        hiddenWrap.className = 'space-y-6 mt-6 hidden';
+        rest.forEach(u => hiddenWrap.appendChild(renderItem(u)));
+        list.appendChild(hiddenWrap);
+        const btn = document.createElement('button');
+        btn.id = 'updatesMoreBtn';
+        btn.type = 'button';
+        btn.setAttribute('aria-controls','updatesHidden');
+        btn.setAttribute('aria-expanded','false');
+        btn.className = 'mt-6 block mx-auto bg-yellow-400 text-black px-5 py-2 rounded-xl font-bold shadow hover:bg-yellow-300 transition';
+        btn.textContent = 'Show more';
+        btn.addEventListener('click', () => {
+          const hidden = document.getElementById('updatesHidden');
+          const isHidden = hidden.classList.contains('hidden');
+          if (isHidden){
+            hidden.classList.remove('hidden');
+            btn.textContent = 'Show less';
+            btn.setAttribute('aria-expanded','true');
+          } else {
+            hidden.classList.add('hidden');
+            btn.textContent = 'Show more';
+            btn.setAttribute('aria-expanded','false');
+            const sec = document.getElementById('updates');
+            if (sec) sec.scrollIntoView({ behavior:'smooth', block:'start' });
+          }
+        });
+        list.appendChild(btn);
+      }
+      console.log('[Updates] Loaded from:', source, 'items:', items.length);
+    }
+    document.addEventListener('DOMContentLoaded', loadUpdates);
+  })();
+  </script>
+  
+  <script>
+    (function(){
+      const grid = document.getElementById('galleryGrid'); if(!grid) return;
+      const lb = document.createElement('div');
+      lb.id = 'lightbox';
+      lb.className = 'fixed inset-0 bg-black/90 hidden items-center justify-center p-4 z-[100]';
+      lb.innerHTML = '<img class="max-h-[90vh] max-w-[90vw] rounded-xl border border-yellow-700/60 shadow-xl"/><button type="button" class="absolute top-4 right-4 border border-yellow-700/60 text-yellow-200 px-3 py-1 rounded-lg hover:bg-yellow-900/50">✕</button>';
+      document.body.appendChild(lb);
+      const imgEl = lb.querySelector('img');
+      const btn = lb.querySelector('button');
+      grid.addEventListener('click', e=>{
+        const t = e.target;
+        if (t.tagName === 'IMG'){
+          imgEl.src = t.currentSrc || t.src;
+          lb.classList.remove('hidden'); lb.classList.add('flex');
+        }
+      });
+      function close(){ lb.classList.add('hidden'); lb.classList.remove('flex'); imgEl.src=''; }
+      btn.addEventListener('click', close);
+      lb.addEventListener('click', (e)=>{ if(e.target === lb) close(); });
+      document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && !lb.classList.contains('hidden')) close(); });
+    })();
+  </script>
+  
+  <script>
+    document.getElementById('hamburger').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  
+  <script>
+    document.getElementById('toggle-chapter5').addEventListener('click', () => {
+      const content = document.getElementById('chapter5-content');
+      content.classList.toggle('hidden');
+      const button = document.getElementById('toggle-chapter5');
+      button.textContent = content.classList.contains('hidden') ? 'Read More' : 'Hide';
+    });
+  </script>
+  
+<script>
+  const quiz = {
+    questions: 3,
+    answers: {},
+    results: {
+      alpha: { title: 'You are Alpha!', desc: 'Leader of the rebellion, visionary of the Chain. Join the front lines!' },
+      drenton: { title: 'You are Drenton!', desc: 'Relentless raider, survival is your anthem.' },
+      gtl: { title: 'You are GTL!', desc: 'Shadow of the network, master hacker – invisible guardian.' },
+      herod: { title: 'You are Alpha Herod!', desc: 'Architect of stories, calm visionary of the pack.' },
+      warden: { title: 'You are Cherenkov Warden!', desc: 'Grit and defense – you hold the line in the fire.' },
+      whisper: { title: 'You are Blood-Moon Whisper!', desc: 'Enigmatic myth, red eye in the chaos.' }
+    }
+  };
+  document.getElementById('start-quiz').addEventListener('click', () => {
+    document.getElementById('quiz-start').style.display = 'none';
+    showQuestion(1);
+  });
+  document.querySelectorAll('.quiz-question button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const q = parseInt(e.target.closest('.quiz-question').dataset.question);
+      const selected = document.querySelector(`input[name="q${q}"]:checked`);
+      if (selected) quiz.answers[`q${q}`] = selected.value;
+      if (q < quiz.questions) showQuestion(q + 1);
+      else showResult();
+    });
+  });
+  function showQuestion(num) {
+    document.querySelectorAll('.quiz-question').forEach(q => q.classList.remove('active'));
+    document.querySelector(`[data-question="${num}"]`).classList.add('active');
+  }
+  function showResult() {
+    document.getElementById('quiz-questions').style.display = 'none';
+    const scores = { alpha: 0, drenton: 0, gtl: 0, herod: 0, warden: 0, whisper: 0 };
+    Object.values(quiz.answers).forEach(ans => scores[ans]++);
+    const winner = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+    document.getElementById('result-title').textContent = quiz.results[winner].title;
+    document.getElementById('result-desc').textContent = quiz.results[winner].desc;
+    document.getElementById('quiz-result').classList.remove('hidden');
+  }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.dataset.tab;
+        
+        // Update active button
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update active content
+        tabContents.forEach(content => {
+          content.classList.remove('active');
+          content.classList.add('hidden');
+          if (content.id === `tab-${targetTab}`) {
+            content.classList.remove('hidden');
+            content.classList.add('active');
+          }
+        });
+      });
+    });
+  });
+</script>
+<script>
+  window.HOWL_TOKEN_CONFIG = {
+    HOWL_CHART_EMBED_URL: ""
+  };
+</script>
+<script src="assets/js/howl-token.js" defer></script>
+</body>
+</html>
