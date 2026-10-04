@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "Alpha Husky Bible v1.1 EN FINAL",
+  "sourceDate": "2026-10-04",
+  "evidenceThrough": "2026-10-04",
+  "generatedFor": "Alpha Husky Public Bible V1",
+  "publicPolicy": {
+    "purpose": "A player-facing view of current Alpha Husky product truth.",
+    "statusRule": "Code, build and device/runtime evidence are not treated as the same thing.",
+    "redactionRule": "Security-sensitive implementation details, tester data, private operational identifiers and exploit-sensitive internals are excluded.",
+    "historyRule": "Historical evidence is preserved as history and is not presented as current LIVE truth."
+  },
+  "statusLegend": [
+    {
+      "id": "VERIFIED",
+      "label": "Verified",
+      "description": "Supported by an appropriate audit, verifier or runtime test."
+    },
+    {
+      "id": "IN_TESTING",
+      "label": "In testing",
+      "description": "Implemented or partly verified, with a current runtime/device gate still open."
+    },
+    {
+      "id": "PLANNED",
+      "label": "Planned",
+      "description": "Approved direction, not presented as implemented."
+    },
+    {
+      "id": "HISTORICAL",
+      "label": "Historical",
+      "description": "Real earlier state retained for the record, not current product truth."
+    }
+  ],
+  "playNow": [
+    {
+      "title": "Missions & FIRST SIGNAL",
+      "detail": "The early mission flow has verified backend/FTUE layers. A fresh standalone Android entry regression remains openly tracked."
+    },
+    {
+      "title": "Tactical Ops",
+      "detail": "Broken Signal, Field Ops, the Living War Table and Pack Mastery form the verified/implemented tactical core; the newest presentation layer keeps its own device gate."
+    },
+    {
+      "title": "Moon Lab",
+      "detail": "The 30-floor progression core is preserved, with later visual polish and Active Pursuit work recorded separately by evidence level."
+    },
+    {
+      "title": "Builds, stats & gear",
+      "detail": "Backend-authoritative stats and equipment remain the build foundation, with the Android stat-allocation repair recorded as verified."
+    },
+    {
+      "title": "Blood Moon",
+      "detail": "The core event plus standalone Direct Blood Moon / Tower routing has real-device evidence; the wider Full Moon economy remains open."
+    },
+    {
+      "title": "Identity & community",
+      "detail": "Field Record identity work and Community Bot V1.2 have verified evidence; community scale is still presented honestly as early."
+    }
+  ],
+  "flow": [
+    "Enter Alpha",
+    "FIRST SIGNAL",
+    "Build & gear",
+    "Explore the world",
+    "Tactical Ops",
+    "Choose your faction",
+    "Push long-form challenges",
+    "Leave a record in the living world"
+  ],
+  "latestChanges": [
+    {
+      "date": "2026-10-04",
+      "title": "Bible v1.1 closed",
+      "detail": "All 18 canonical sections reviewed against later evidence."
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Faction HQ progression recorded",
+      "detail": "Runtime integration and Rogue Byte progression-art work separated by evidence level."
+    },
+    {
+      "date": "2026-10-03",
+      "title": "Tactical Ops v3.x recorded",
+      "detail": "Latest presentation work logged without promoting repository merges to device proof."
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Howlboard device/performance pass",
+      "detail": "Runtime acceptance and measured performance improvement added to the evidence record."
+    }
+  ],
+  "books": [
+    {
+      "id": "book-1",
+      "number": "I",
+      "title": "Project foundation & player entry",
+      "summary": "How Alpha defines truth, brings a player into the world and decides when the first session is actually ready."
+    },
+    {
+      "id": "book-2",
+      "number": "II",
+      "title": "Progression, combat & economy",
+      "summary": "The systems that make a run matter: progression, missions, tactical combat, pets, builds, gear and the soft economy."
+    },
+    {
+      "id": "book-3",
+      "number": "III",
+      "title": "World, factions & events",
+      "summary": "The playable world layer: map, lore, factions, living-world signals and Blood Moon."
+    },
+    {
+      "id": "book-4",
+      "number": "IV",
+      "title": "Platform, community & operations",
+      "summary": "How the same Alpha player moves across clients, how identity/community works and how the project verifies what it ships."
+    }
+  ],
+  "systems": [
+    {
+      "id": "F01",
+      "book": "book-1",
+      "title": "Project Canon & Source of Truth",
+      "publicTitle": "How Alpha defines truth",
+      "status": "VERIFIED",
+      "statusDetail": "Current canon — Telegram/WebApp and standalone Android share one server-authoritative player truth.",
+      "summary": "The rulebook behind every public claim: backend state wins, newer verified evidence can supersede older descriptions, and build success is not the same as a device pass.",
+      "highlights": [
+        "One canonical player state",
+        "Backend-authoritative progression",
+        "Evidence hierarchy",
+        "No parallel Android save"
+      ],
+      "playerRoute": "Foundation / transparency",
+      "publicLimit": "Internal auth, build-security and operational details are deliberately not exposed here.",
+      "updated": "2026-10-04",
+      "playerFacing": false
+    },
+    {
+      "id": "F02",
+      "book": "book-1",
+      "title": "FTUE, Onboarding & Campaign Readiness",
+      "publicTitle": "The first minutes",
+      "status": "IN_TESTING",
+      "statusDetail": "Core FTUE implemented/verified; fresh standalone Android entry blocker remains open.",
+      "summary": "Alpha's guided opening connects callsign, oath/faction context, FIRST SIGNAL, the first reward/equip moment and the bridge into the wider world.",
+      "highlights": [
+        "Callsign & early identity",
+        "FIRST SIGNAL",
+        "Manual reward/equip learning",
+        "Post-FTUE discovery"
+      ],
+      "playerRoute": "New player entry",
+      "publicLimit": "A current standalone fresh-player entry regression is shown as an open gate rather than hidden.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F03",
+      "book": "book-2",
+      "title": "Progression Spine & MoonLab",
+      "publicTitle": "Progression & Moon Lab",
+      "status": "VERIFIED",
+      "statusDetail": "Moon Lab core preserved; later polish / Active Pursuit layers keep separate device evidence.",
+      "summary": "The long-form progression spine that gives the player a next goal, with Moon Lab's 30-floor ladder, sector structure, bosses and persistent progress.",
+      "highlights": [
+        "30-floor ladder",
+        "Three sectors",
+        "Boss encounters",
+        "Persistent progression"
+      ],
+      "playerRoute": "Long-form challenge",
+      "publicLimit": "Latest presentation work is not silently promoted beyond its recorded device evidence.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F04",
+      "book": "book-2",
+      "title": "Alpha Den, War Room & Tactical Briefs",
+      "publicTitle": "War Table & tactical return loop",
+      "status": "IN_TESTING",
+      "statusDetail": "Den boundaries preserved; War Table / Tactical Rank / Pack Mastery stack expanded with verifier evidence and open cumulative device checks.",
+      "summary": "The personal preparation layer around tactical play: the Den remains separate while the War Table adds rotating Field Ops, rank, pressure and companion mastery.",
+      "highlights": [
+        "Living War Table",
+        "Daily Field Ops",
+        "Tactical Rank",
+        "Pack Mastery"
+      ],
+      "playerRoute": "Prepare / return",
+      "publicLimit": "Prepared Attempt and newer Tactical progression remain separate systems; the page does not invent a unified power economy.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F05",
+      "book": "book-2",
+      "title": "Standard Missions & Quest Board",
+      "publicTitle": "Missions & Quest Board",
+      "status": "IN_TESTING",
+      "statusDetail": "FIRST SIGNAL flow verified in backend/FTUE layers; current fresh standalone board entry remains blocked.",
+      "summary": "The repeatable mission surface and first-mission contract. FIRST SIGNAL now has a much stronger protected state/reward flow than the original July baseline.",
+      "highlights": [
+        "FIRST SIGNAL protections",
+        "Quest Board discovery",
+        "Result/consequence clarity",
+        "Repeat-safe rewards"
+      ],
+      "playerRoute": "Core mission loop",
+      "publicLimit": "The site does not claim a complete live audit of every standard mission tier, timer or reward table.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F06",
+      "book": "book-2",
+      "title": "Elite Missions & Tactical Combat",
+      "publicTitle": "Tactical Ops",
+      "status": "VERIFIED",
+      "statusDetail": "Tactical core / verifiers passed; newest v3.x presentation still has a separate device recheck.",
+      "summary": "Alpha's turn-based tactical layer now extends beyond the original Elite slice into Broken Signal, reusable Field Ops, the Living War Table and Pack Mastery.",
+      "highlights": [
+        "Broken Signal",
+        "Recover / Hold / Survive",
+        "Living War Table",
+        "Pack Mastery"
+      ],
+      "playerRoute": "Tactical combat",
+      "publicLimit": "Repository merges prove implementation, not physical-device acceptance of every latest visual pass.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F07",
+      "book": "book-2",
+      "title": "Siege & PvP Duel",
+      "publicTitle": "Siege",
+      "status": "IN_TESTING",
+      "statusDetail": "July code-closed baseline preserved; current Telegram/APK runtime requires a fresh dedicated smoke.",
+      "summary": "Siege is the PvP duel / territory-pressure branch associated with Edge of the Chain. Its historical implementation evidence remains real, but current runtime status is deliberately conservative.",
+      "highlights": [
+        "PvP duel contract",
+        "Edge of the Chain",
+        "Replay / result rules",
+        "Separate from other war systems"
+      ],
+      "playerRoute": "PvP / world pressure",
+      "publicLimit": "A map destination is not treated as proof that the complete current Siege runtime has passed.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F08",
+      "book": "book-2",
+      "title": "Teamup & Cooperative Combat",
+      "publicTitle": "Teamup",
+      "status": "IN_TESTING",
+      "statusDetail": "Ten-wave code + verifier baseline preserved; fresh live Telegram / standalone parity smoke remains open.",
+      "summary": "The cooperative combat branch built around a ten-wave run, contribution tracking, scaling and safe single settlement.",
+      "highlights": [
+        "10-wave run",
+        "Contribution tracking",
+        "Scaling",
+        "Single settlement safety"
+      ],
+      "playerRoute": "Co-op combat",
+      "publicLimit": "Absence of a newer dedicated checkpoint is not presented as either a regression or a fresh runtime pass.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F09",
+      "book": "book-2",
+      "title": "Stats, Buildcraft & Equipment",
+      "publicTitle": "Builds, stats & equipment",
+      "status": "VERIFIED",
+      "statusDetail": "Tactical stat bridge verified; Android stat allocation fix recorded; Forge artwork regression tracked separately.",
+      "summary": "Character power remains backend-authoritative across base stats, pets and gear, with a capped bridge into Tactical Ops rather than a second combat-stat system.",
+      "highlights": [
+        "Base + pet + gear",
+        "Tactical derived bonuses",
+        "Equipment loadout",
+        "Android stat allocation repair"
+      ],
+      "playerRoute": "Character build",
+      "publicLimit": "Visual Forge asset issues are not misreported as economy/stat failures.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F09P",
+      "book": "book-2",
+      "title": "Pets, Evolution & Consumable Effects",
+      "publicTitle": "Pets & companions",
+      "status": "IN_TESTING",
+      "statusDetail": "Pet core preserved; Adoption Center V2 and PET mastery implemented with full device/persistence acceptance still open.",
+      "summary": "Pets remain part of progression and tactical identity, while Adoption Center V2 provides a more game-like companion discovery and ownership surface.",
+      "highlights": [
+        "Pet progression",
+        "Adoption Center V2",
+        "Owned / active states",
+        "PET Pack Mastery"
+      ],
+      "playerRoute": "Companion progression",
+      "publicLimit": "Gallery → detail → adopt → restart/persistence is still tracked as a full acceptance path.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F10",
+      "book": "book-2",
+      "title": "Economy, Currency, Loot & Upgrade",
+      "publicTitle": "Economy, loot & Forge",
+      "status": "VERIFIED",
+      "statusDetail": "Core soft-economy canon preserved; optional wallet/HOWL ownership read verified; UI regressions kept separate.",
+      "summary": "Bones, Scrap, Rune Dust, gear upgrades and loot remain part of the game-first economy. HOWL/wallet ownership is optional and does not buy combat dominance.",
+      "highlights": [
+        "Bones / Scrap / Rune Dust",
+        "Gear upgrades",
+        "Optional wallet verification",
+        "No pay-to-win"
+      ],
+      "playerRoute": "Economy / upgrades",
+      "publicLimit": "Wallet ownership proof does not imply spending, staking, swaps, payouts or token-gated progression.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F11",
+      "book": "book-3",
+      "title": "World Exploration & RELAY-7",
+      "publicTitle": "World Map V2",
+      "status": "IN_TESTING",
+      "statusDetail": "Map V2 is current; real-device spatial flow passed in part; the older scan/unlock system remains historical/disabled.",
+      "summary": "The current world map is a spatial WORLD → REGION → activity surface built around Citadel, Blackglass Reach, Iron March and Locked Horizons.",
+      "highlights": [
+        "Four world regions",
+        "WORLD → REGION navigation",
+        "Production POIs",
+        "Reactive map direction"
+      ],
+      "playerRoute": "World navigation",
+      "publicLimit": "The legacy scan/key-fragment exploration design is not presented as the current map loop.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F12",
+      "book": "book-3",
+      "title": "World, Lore, NPC & Factions",
+      "publicTitle": "Factions & the living world",
+      "status": "IN_TESTING",
+      "statusDetail": "Living-world and faction runtime expanded with a mix of verified and implemented evidence.",
+      "summary": "Four factions share one post-collapse world. Newer systems make that world react through real frontline state, faction HQ surfaces, activity records and map response.",
+      "highlights": [
+        "Four factions",
+        "Faction HQ",
+        "Frontline Echo",
+        "Network Activity / Living World"
+      ],
+      "playerRoute": "Faction / world state",
+      "publicLimit": "Alpha does not fabricate crowds, online counts or player activity to make the world look busier than it is.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F13",
+      "book": "book-3",
+      "title": "Blood Moon Tower & Events",
+      "publicTitle": "Blood Moon",
+      "status": "VERIFIED",
+      "statusDetail": "Blood Moon core plus standalone Direct Blood Moon / Tower route have device-pass evidence; wider Full Moon economy stays open.",
+      "summary": "The Blood Moon is a faction PvE event/challenge branch with a current standalone route and a wider lunar-event direction that is kept separate from what has actually been verified.",
+      "highlights": [
+        "Blood Moon core",
+        "Blood-Moon Tower",
+        "Standalone route pass",
+        "Shared-world discovery"
+      ],
+      "playerRoute": "Event / challenge",
+      "publicLimit": "Full Moon shop pricing, exclusivity and wider economy evolution are not presented as finished.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F14",
+      "book": "book-4",
+      "title": "Mobile APK, Companion & Alpha Account",
+      "publicTitle": "Standalone Android & Alpha Account",
+      "status": "IN_TESTING",
+      "statusDetail": "Android is a functioning second client with multiple device passes; the public release gate remains open.",
+      "summary": "Telegram/WebApp and standalone Android are two access paths to the same Alpha player. Veteran progress can be restored without creating a second game state.",
+      "highlights": [
+        "Shared canonical player",
+        "Sync Code veteran restore",
+        "Optional wallet ownership",
+        "Separate device acceptance"
+      ],
+      "playerRoute": "Platform / account",
+      "publicLimit": "Internal authentication, session security and build-pipeline implementation details are intentionally redacted.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F15",
+      "book": "book-4",
+      "title": "Pack Comms, Community & Campaign",
+      "publicTitle": "Community & public record",
+      "status": "VERIFIED",
+      "statusDetail": "Pack Comms core preserved; Community Bot V1.2 verified; Road to 25 recorded at 7/25; acquisition remains early.",
+      "summary": "Alpha keeps community, in-game communication and public campaigns separate, with a strict rule that marketing cannot outrun verified build truth.",
+      "highlights": [
+        "Pack Comms",
+        "Community Bot V1.2",
+        "Road to 25",
+        "Built first. Token second."
+      ],
+      "playerRoute": "Community / campaign",
+      "publicLimit": "The project does not claim solved retention, large DAU/MAU or scalable acquisition.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F16",
+      "book": "book-4",
+      "title": "Badges, Titles, Cosmetics & Visual Assets",
+      "publicTitle": "Identity, cosmetics & Field Record",
+      "status": "VERIFIED",
+      "statusDetail": "Identity core and Field Record verified; newer presentation/asset layers keep their own runtime evidence.",
+      "summary": "Callsign, titles, badges, frames, skins and Field Record build identity without becoming a hidden source of combat power.",
+      "highlights": [
+        "Callsign / titles",
+        "Badges & frames",
+        "Skins",
+        "Field Record"
+      ],
+      "playerRoute": "Identity / cosmetics",
+      "publicLimit": "Committed art is not automatically treated as owned, catalog-ready or live in the client.",
+      "updated": "2026-10-04",
+      "playerFacing": true
+    },
+    {
+      "id": "F17",
+      "book": "book-4",
+      "title": "Technical Operations, QoL & Performance",
+      "publicTitle": "How Alpha verifies what it ships",
+      "status": "VERIFIED",
+      "statusDetail": "Operating doctrine updated around canonical sync, separate evidence gates, real-device testing and measured performance.",
+      "summary": "The project records code/build/device evidence separately, measures performance fixes and treats WebApp, Telegram WebView and standalone Android as distinct runtime surfaces.",
+      "highlights": [
+        "Build ≠ device pass",
+        "Measured performance",
+        "Rollback discipline",
+        "Cross-client evidence"
+      ],
+      "playerRoute": "Production / transparency",
+      "publicLimit": "Security-sensitive operational details, private identifiers and exploit-relevant internals are intentionally excluded.",
+      "updated": "2026-10-04",
+      "playerFacing": false
+    }
+  ]
+}
