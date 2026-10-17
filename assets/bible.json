@@ -124,7 +124,7 @@
       "title": "Project Canon & Source of Truth",
       "publicTitle": "Source of truth",
       "status": "VERIFIED",
-      "statusDetail": "Details of authentication and operational security are excluded.",
+      "statusDetail": "The v1.3 RC2 evidence review reconciles 18 sections; it is a document review, not a new game build.",
       "summary": "One server-authoritative player and honest evidence boundaries underpin every public claim.",
       "highlights": [
         "One canonical account",
@@ -132,11 +132,12 @@
         "Versioned history",
         "No speculative LIVE claims"
       ],
-      "publicLimit": "Read the records as dated, evidence-scoped claims.",
+      "publicLimit": "No security internals or private operational identifiers are published.",
       "updated": "2026-10-17",
       "playerFacing": false,
-      "evidenceBoundary": "Details of authentication and operational security are excluded.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "The v1.3 RC2 evidence review reconciles 18 sections; it is a document review, not a new game build.",
+      "canonReviewRequired": false,
+      "playerRoute": "Understand what was built, tested and still awaits approval."
     },
     {
       "id": "F02",
@@ -144,7 +145,7 @@
       "title": "FTUE, Onboarding & Campaign Readiness",
       "publicTitle": "The first minutes",
       "status": "IN_TESTING",
-      "statusDetail": "Full restart and cross-client FTUE acceptance still open.",
+      "statusDetail": "Android vc86 (16 Oct) targeted first-session journey PASS after backend repair. Stats → Pets → Forge hinting is merged code; full end-to-end restart and cross-client acceptance remain open.",
       "summary": "First Signal comes first: earn and equip Rustfang, then choose a faction and follow the Blood Moon lead.",
       "highlights": [
         "First Signal V2",
@@ -152,11 +153,12 @@
         "Choose a faction",
         "Scout hints, not forced clicks"
       ],
-      "publicLimit": "Follow the first signal, equip your first weapon, join a faction and discover the map.",
+      "publicLimit": "Full post-Tower FTUE and recovery paths remain open; no mandatory Moon Lab route for unprepared newcomers.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Full restart and cross-client FTUE acceptance still open.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Android vc86 (16 Oct) targeted first-session journey PASS after backend repair. Stats → Pets → Forge hinting is merged code; full end-to-end restart and cross-client acceptance remain open.",
+      "canonReviewRequired": false,
+      "playerRoute": "First Signal → earn and equip Rustfang → choose faction → find Blood Moon lead."
     },
     {
       "id": "F03",
@@ -164,7 +166,7 @@
       "title": "Progression Spine & MoonLab",
       "publicTitle": "Progression & Moon Lab",
       "status": "VERIFIED",
-      "statusDetail": "Do not interpret the first-session Scout hint as a new Moon Lab unlock.",
+      "statusDetail": "The 30-floor Moon Lab ladder is part of the earlier verified record; no complete fresh October floor-by-floor QA was performed.",
       "summary": "Moon Lab is a separate 30-floor challenge, not the compulsory next stop for an unprepared first-session player.",
       "highlights": [
         "30-floor Moon Lab",
@@ -172,11 +174,12 @@
         "Boss challenges",
         "First growth before difficulty"
       ],
-      "publicLimit": "Return when your build is ready.",
+      "publicLimit": "The first-session path should not force Moon Lab before build growth.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Do not interpret the first-session Scout hint as a new Moon Lab unlock.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "The 30-floor Moon Lab ladder is part of the earlier verified record; no complete fresh October floor-by-floor QA was performed.",
+      "canonReviewRequired": false,
+      "playerRoute": "Build up, then enter the 30-floor Moon Lab challenge when ready."
     },
     {
       "id": "F04",
@@ -184,7 +187,7 @@
       "title": "Alpha Den, War Room & Tactical Briefs",
       "publicTitle": "War Table & preparation",
       "status": "IN_TESTING",
-      "statusDetail": "The War Table is not a substitute for the Alpha Den or an extra currency system.",
+      "statusDetail": "War Table, campaign-first operations and Hub navigation have implementation evidence, but latest cross-client persistence and presentation QA remain scoped.",
       "summary": "The War Table connects campaign operations and rotating Field Ops while the Hub points players to relevant next steps.",
       "highlights": [
         "War Table",
@@ -192,11 +195,12 @@
         "Saved squads",
         "Tactical Rank"
       ],
-      "publicLimit": "Prepare a squad and choose an operation.",
+      "publicLimit": "War Table, Alpha Den and Hub are distinct; no fabricated progression grants.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "The War Table is not a substitute for the Alpha Den or an extra currency system.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "War Table, campaign-first operations and Hub navigation have implementation evidence, but latest cross-client persistence and presentation QA remain scoped.",
+      "canonReviewRequired": false,
+      "playerRoute": "Select campaign missions or Field Ops from the War Table and prepare a squad."
     },
     {
       "id": "F05",
@@ -204,7 +208,7 @@
       "title": "Standard Missions & Quest Board",
       "publicTitle": "Missions & Quest Board",
       "status": "IN_TESTING",
-      "statusDetail": "No invented daily rewards or unrestricted Forge giveaways.",
+      "statusDetail": "First Signal reward/equip passed on Android vc86; general Quest Board tiers, repeatable rewards and timers were not reverified.",
       "summary": "First Signal has a verified narrow Android completion and earned equipment handoff; general Quest Board rewards need separate regression.",
       "highlights": [
         "First Signal result",
@@ -212,11 +216,12 @@
         "Quest Board",
         "Server-confirmed rewards"
       ],
-      "publicLimit": "Complete the opening mission, then explore available quests.",
+      "publicLimit": "Do not infer verified repeatable payouts or unlimited Forge items.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "No invented daily rewards or unrestricted Forge giveaways.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "First Signal reward/equip passed on Android vc86; general Quest Board tiers, repeatable rewards and timers were not reverified.",
+      "canonReviewRequired": false,
+      "playerRoute": "Complete First Signal and then open the repeatable Quest Board."
     },
     {
       "id": "F06",
@@ -224,7 +229,7 @@
       "title": "Elite Missions & Tactical Combat",
       "publicTitle": "Tactical Ops",
       "status": "VERIFIED",
-      "statusDetail": "Do not present the P1 player-stat projection, new balancing or device compatibility as completed.",
+      "statusDetail": "The Dead Relay three-mission Telegram completion and persistence passed 11 Oct. Fixes for iOS HUD and defeat recording merged 16 Oct; iOS-device acceptance is still open. Full account-derived Tactical P1 profile is NOT LIVE.",
       "summary": "Broken Signal, The Dead Relay and three Field Ops form the tactical foundation. Full player-build power is not yet reflected in every battle.",
       "highlights": [
         "Broken Signal",
@@ -232,11 +237,12 @@
         "Field Ops / War Table",
         "Build integration pending"
       ],
-      "publicLimit": "Pick a tactical operation, make choices and review the result.",
+      "publicLimit": "No claim of live player-stat scaling, completed balance rework or iOS fix device PASS.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Do not present the P1 player-stat projection, new balancing or device compatibility as completed.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "The Dead Relay three-mission Telegram completion and persistence passed 11 Oct. Fixes for iOS HUD and defeat recording merged 16 Oct; iOS-device acceptance is still open. Full account-derived Tactical P1 profile is NOT LIVE.",
+      "canonReviewRequired": false,
+      "playerRoute": "Play Broken Signal, Dead Relay or rotating Field Ops and learn from each turn."
     },
     {
       "id": "F07",
@@ -244,7 +250,7 @@
       "title": "Siege & PvP Duel",
       "publicTitle": "Siege & PvP",
       "status": "IN_TESTING",
-      "statusDetail": "Do not treat lore references as proof of a currently verified PvP feature.",
+      "statusDetail": "Existing PvP contracts have earlier evidence; no dedicated 10–17 Oct PvP outcome/settlement full regression was found.",
       "summary": "Edge of the Chain Siege is distinct from PvE Tactical Ops and faction-frontline systems.",
       "highlights": [
         "Siege",
@@ -252,11 +258,12 @@
         "Territory pressure",
         "Distinct from Field Ops"
       ],
-      "publicLimit": "A separate competitive branch.",
+      "publicLimit": "Story mentions of the Edge do not certify current PvP settlement.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Do not treat lore references as proof of a currently verified PvP feature.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Existing PvP contracts have earlier evidence; no dedicated 10–17 Oct PvP outcome/settlement full regression was found.",
+      "canonReviewRequired": false,
+      "playerRoute": "Explore the separate Siege branch where currently available."
     },
     {
       "id": "F08",
@@ -264,7 +271,7 @@
       "title": "Teamup & Cooperative Combat",
       "publicTitle": "Teamup",
       "status": "IN_TESTING",
-      "statusDetail": "Future Pack Assault is not an already released Teamup variant.",
+      "statusDetail": "Ten-wave cooperative contract and contribution model retain earlier evidence; no new cross-client Teamup regression has been confirmed.",
       "summary": "Teamup is a cooperative ten-wave encounter with contribution and reward-settlement protections.",
       "highlights": [
         "Ten waves",
@@ -272,11 +279,12 @@
         "Contribution",
         "Single reward settlement"
       ],
-      "publicLimit": "Join allies for a shared run.",
+      "publicLimit": "Future Pack Assault should not be advertised as released.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Future Pack Assault is not an already released Teamup variant.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Ten-wave cooperative contract and contribution model retain earlier evidence; no new cross-client Teamup regression has been confirmed.",
+      "canonReviewRequired": false,
+      "playerRoute": "Form a team for a ten-wave cooperative encounter."
     },
     {
       "id": "F09",
@@ -284,7 +292,7 @@
       "title": "Stats, Buildcraft & Equipment",
       "publicTitle": "Stats, builds & gear",
       "status": "VERIFIED",
-      "statusDetail": "Effective totals must not double-count a Pet; no claim of already-active account-based Tactical scaling.",
+      "statusDetail": "Stats 3.0 and earned first stat points have targeted evidence. RPG totals combine base + Pet + gear once; the active Tactical battle does NOT yet use a full player-derived profile.",
       "summary": "Stats 3.0, equipment and active Pets shape RPG progression. Tactical battle still awaits a verified connection to the actual player build.",
       "highlights": [
         "Stats 3.0",
@@ -292,11 +300,12 @@
         "Rustfang +1 STR",
         "Tactical P1 not live"
       ],
-      "publicLimit": "Build your character through earned points and equipment.",
+      "publicLimit": "Never double-count active-Pet stats; Tactical integration remains gated.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Effective totals must not double-count a Pet; no claim of already-active account-based Tactical scaling.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Stats 3.0 and earned first stat points have targeted evidence. RPG totals combine base + Pet + gear once; the active Tactical battle does NOT yet use a full player-derived profile.",
+      "canonReviewRequired": false,
+      "playerRoute": "Use earned stat points, equipped gear and a selected active Pet to grow."
     },
     {
       "id": "F09P",
@@ -304,7 +313,7 @@
       "title": "Pets, Evolution & Consumable Effects",
       "publicTitle": "Pets & companions",
       "status": "IN_TESTING",
-      "statusDetail": "Alpha Spirit's spirit_guard has no verified combat hook; Alpha Lord remains locked/exclusive. Phantom Echo is a gated cosmetic foundation, not an obtainable market item. Exact live Pet catalog and training flags still require audit.",
+      "statusDetail": "Historic evolution at Pet level 15 costs 50,000 Bones, 500 Scrap and 75 Rune Dust; 17 paths passed code verifiers, not current all-path device QA. Kennel historical L1 3h/+30 XP, L2 3h/+45, L3 6h/+100. XP Surge is +25% on one next qualifying mission, not timed. Scent Trail affects mission loot; Ice Crystal is a Forge catalyst.",
       "summary": "Adopt and activate companions, grow their levels and use them alongside your character. Evolution and consumable contracts have precise historical rules with current runtime gates.",
       "highlights": [
         "Adoption Center V2",
@@ -312,11 +321,12 @@
         "Evolution: level 15",
         "Kennel / consumables"
       ],
-      "publicLimit": "Visit Pets to adopt, choose your active companion, then explore Pet Arena and eligible progression.",
+      "publicLimit": "Alpha Spirit spirit_guard has no verified battle hook; Alpha Lord remains locked. Phantom Echo is not an open market. Exact live Pet catalog, evolution, Kennel and passive execution still need QA.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Alpha Spirit's spirit_guard has no verified combat hook; Alpha Lord remains locked/exclusive. Phantom Echo is a gated cosmetic foundation, not an obtainable market item. Exact live Pet catalog and training flags still require audit.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Historic evolution at Pet level 15 costs 50,000 Bones, 500 Scrap and 75 Rune Dust; 17 paths passed code verifiers, not current all-path device QA. Kennel historical L1 3h/+30 XP, L2 3h/+45, L3 6h/+100. XP Surge is +25% on one next qualifying mission, not timed. Scent Trail affects mission loot; Ice Crystal is a Forge catalyst.",
+      "canonReviewRequired": false,
+      "playerRoute": "Visit Pets, adopt a companion, set the active Pet and try Pet Arena. Historical evolution and training rules require live recheck."
     },
     {
       "id": "F10",
@@ -324,7 +334,7 @@
       "title": "Economy, Currency, Loot & Upgrade",
       "publicTitle": "Economy, loot & Forge",
       "status": "VERIFIED",
-      "statusDetail": "No wallet is required and HOWL is not a competitive stat shortcut.",
+      "statusDetail": "The soft-economy contracts remain grounded in earlier implementation; Rustfang is an earned first-session reward, not repeatable free gear.",
       "summary": "Bones, Scrap and Rune Dust support gear, upgrades and progression. HOWL is optional and cosmetics-focused.",
       "highlights": [
         "Bones / Scrap / Rune Dust",
@@ -332,11 +342,12 @@
         "Earned loot",
         "No pay-to-win"
       ],
-      "publicLimit": "Earn resources and work on gear at the Forge.",
+      "publicLimit": "Wallet and HOWL are optional; neither buys competitive power.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "No wallet is required and HOWL is not a competitive stat shortcut.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "The soft-economy contracts remain grounded in earlier implementation; Rustfang is an earned first-session reward, not repeatable free gear.",
+      "canonReviewRequired": false,
+      "playerRoute": "Earn Bones and materials, upgrade equipment and use the Forge."
     },
     {
       "id": "F11",
@@ -344,7 +355,7 @@
       "title": "World Exploration & RELAY-7",
       "publicTitle": "World Map V2",
       "status": "IN_TESTING",
-      "statusDetail": "Scout's guidance is not RELAY-7, and visual map regions do not establish unapproved lore geography.",
+      "statusDetail": "Android vc86 displayed the post-faction map route toward Blood Moon Tower. Every Map V2 point of interest was not retested.",
       "summary": "Explore Citadel, Blackglass Reach and Iron March with Locked Horizons reserved for future discovery.",
       "highlights": [
         "WORLD → region → activity",
@@ -352,11 +363,12 @@
         "Blackglass Reach / Iron March",
         "Locked Horizons"
       ],
-      "publicLimit": "Use the map to move from your current objective to a region's activities.",
+      "publicLimit": "The map is navigation, not proof of proposed geographic lore or future POIs.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Scout's guidance is not RELAY-7, and visual map regions do not establish unapproved lore geography.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Android vc86 displayed the post-faction map route toward Blood Moon Tower. Every Map V2 point of interest was not retested.",
+      "canonReviewRequired": false,
+      "playerRoute": "From World Map V2, select a region and follow currently unlocked activity markers."
     },
     {
       "id": "F12",
@@ -364,7 +376,7 @@
       "title": "World, Lore, NPC & Factions",
       "publicTitle": "Factions & the living world",
       "status": "IN_TESTING",
-      "statusDetail": "Part 5 final wording and D11 unresolved; missing Parts 6/7 and Campaign Ch6/7 must not be reconstructed as published text. No fictional crowds or fabricated player activity.",
+      "statusDetail": "Four factions exist before the player's First Signal (D13). E01–E20 is a 20-event reconstruction, not 20 playable chapters; missing story bodies remain unrecovered.",
       "summary": "The Chain contains four established factions and an evolving story. Published chapters, playable missions and proposed lore remain separate.",
       "highlights": [
         "Echo Wardens",
@@ -372,11 +384,12 @@
         "Rogue Byte",
         "Pack Burners"
       ],
-      "publicLimit": "Choose a faction and explore its HQ and the world's existing stories.",
+      "publicLimit": "Part 5 final wording and D11 are unresolved; Parts 6/7, Campaign Ch6/7 and other missing bodies are not invented. Betrayal Hash perpetrator unknown.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Part 5 final wording and D11 unresolved; missing Parts 6/7 and Campaign Ch6/7 must not be reconstructed as published text. No fictional crowds or fabricated player activity.",
-      "canonReviewRequired": true
+      "evidenceBoundary": "Four factions exist before the player's First Signal (D13). E01–E20 is a 20-event reconstruction, not 20 playable chapters; missing story bodies remain unrecovered.",
+      "canonReviewRequired": true,
+      "playerRoute": "Join Echo Wardens, Inner Howl, Rogue Byte or Pack Burners and visit Faction HQ."
     },
     {
       "id": "F13",
@@ -384,7 +397,7 @@
       "title": "Blood Moon Tower & Events",
       "publicTitle": "Blood Moon Tower",
       "status": "VERIFIED",
-      "statusDetail": "Future Full Moon Convergence economy is not a live promise; lore Whisper is distinct from Tower.",
+      "statusDetail": "Tower V3 passed focused Android vc83 QA. Android vc86 confirmed Tower guidance only, not a full challenge completion.",
       "summary": "Blood Moon Tower V3 has a focused Android device pass. In the current first-session flow it becomes a lead after faction selection.",
       "highlights": [
         "Tower V3",
@@ -392,11 +405,12 @@
         "Post-faction objective",
         "Events separately gated"
       ],
-      "publicLimit": "Follow the Blood Moon signal once your faction is chosen.",
+      "publicLimit": "Whisper (lore), Tower (gameplay) and lunar events remain distinct.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "Future Full Moon Convergence economy is not a live promise; lore Whisper is distinct from Tower.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Tower V3 passed focused Android vc83 QA. Android vc86 confirmed Tower guidance only, not a full challenge completion.",
+      "canonReviewRequired": false,
+      "playerRoute": "After faction choice, follow the map toward Blood Moon Tower."
     },
     {
       "id": "F14",
@@ -404,7 +418,7 @@
       "title": "Mobile APK, Companion & Alpha Account",
       "publicTitle": "Standalone Android & account",
       "status": "IN_TESTING",
-      "statusDetail": "A signed APK or merged code does not imply Google Play release or fully verified Google linking. Private auth details withheld.",
+      "statusDetail": "Android vc86 passed focused First Signal→Rustfang→faction→Tower-lead device QA after backend repair. Guest Recovery passed 12 staging tests but is NOT LIVE as full account recovery. Public release remains HOLD.",
       "summary": "Standalone Android shares server-backed progression with Telegram. The latest vc86 first-session journey passed focused device QA; public release is still on hold.",
       "highlights": [
         "Android 2.0.24 / vc86",
@@ -412,11 +426,12 @@
         "Safe account switching",
         "Store release HOLD"
       ],
-      "publicLimit": "Use Telegram or the standalone client according to the currently supported access path.",
+      "publicLimit": "No public Play Store release, Google-linking completeness or production Guest Recovery claim.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "A signed APK or merged code does not imply Google Play release or fully verified Google linking. Private auth details withheld.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Android vc86 passed focused First Signal→Rustfang→faction→Tower-lead device QA after backend repair. Guest Recovery passed 12 staging tests but is NOT LIVE as full account recovery. Public release remains HOLD.",
+      "canonReviewRequired": false,
+      "playerRoute": "Use supported Telegram or Android entry; keep recovery credentials safe."
     },
     {
       "id": "F15",
@@ -424,7 +439,7 @@
       "title": "Pack Comms, Community & Campaign",
       "publicTitle": "Community & Pack Comms",
       "status": "VERIFIED",
-      "statusDetail": "No fabricated player activity, token adoption or automated-success claims.",
+      "statusDetail": "Community Bot v1.3 has a 2 Oct historical checkpoint; newer knowledge and timed autonomous cadence need recheck. Road to 25 7/25 is dated 30 Sep, not a current count.",
       "summary": "In-game Pack Comms and the community Telegram bot serve different purposes; community updates must follow real builds and evidence.",
       "highlights": [
         "Pack Comms",
@@ -432,11 +447,12 @@
         "Road to 25",
         "Honest devlogs"
       ],
-      "publicLimit": "Join the Pack and follow build-history updates.",
+      "publicLimit": "Never imply live community counts or bot automation PASS without fresh evidence.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "No fabricated player activity, token adoption or automated-success claims.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Community Bot v1.3 has a 2 Oct historical checkpoint; newer knowledge and timed autonomous cadence need recheck. Road to 25 7/25 is dated 30 Sep, not a current count.",
+      "canonReviewRequired": false,
+      "playerRoute": "Join the Pack and follow evidence-backed game and community updates."
     },
     {
       "id": "F16",
@@ -444,7 +460,7 @@
       "title": "Badges, Titles, Cosmetics & Visual Assets",
       "publicTitle": "Identity & cosmetics",
       "status": "VERIFIED",
-      "statusDetail": "No HOWL-funded gameplay advantage; concept art is not automatically an available skin.",
+      "statusDetail": "Share Studio and equipped-player artwork fixes merged in October; full older-client acceptance and seasonal art rollout remain open.",
       "summary": "Wear skins, frames and earned titles to express your role without purchasing combat superiority.",
       "highlights": [
         "Badges / titles",
@@ -452,11 +468,12 @@
         "Share Studio",
         "Seasonal concepts"
       ],
-      "publicLimit": "Customize your identity and create share cards when available.",
+      "publicLimit": "Concept skins are not in-game items until released; cosmetics provide no gameplay advantage.",
       "updated": "2026-10-17",
       "playerFacing": true,
-      "evidenceBoundary": "No HOWL-funded gameplay advantage; concept art is not automatically an available skin.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "Share Studio and equipped-player artwork fixes merged in October; full older-client acceptance and seasonal art rollout remain open.",
+      "canonReviewRequired": false,
+      "playerRoute": "Equip identity cosmetics and share cards where supported."
     },
     {
       "id": "F17",
@@ -464,7 +481,7 @@
       "title": "Technical Operations, QoL & Performance",
       "publicTitle": "Engineering & proof",
       "status": "VERIFIED",
-      "statusDetail": "Public documents exclude sensitive endpoint/security details; no new deployment authorized by a documentation update.",
+      "statusDetail": "GitHub merge, bundle build, signed APK, backend patch and real-device acceptance are distinct. The 16 Oct same-APK retest does not certify every client or backend path.",
       "summary": "Source merges, builds, live backend configuration and real-device acceptance are different gates.",
       "highlights": [
         "Safe releases",
@@ -472,11 +489,12 @@
         "Rollback",
         "Evidence before launch"
       ],
-      "publicLimit": "Consult dated notes to distinguish delivered code from completed QA.",
+      "publicLimit": "No sensitive logs, tokens, infrastructure details or unapproved production change.",
       "updated": "2026-10-17",
       "playerFacing": false,
-      "evidenceBoundary": "Public documents exclude sensitive endpoint/security details; no new deployment authorized by a documentation update.",
-      "canonReviewRequired": false
+      "evidenceBoundary": "GitHub merge, bundle build, signed APK, backend patch and real-device acceptance are distinct. The 16 Oct same-APK retest does not certify every client or backend path.",
+      "canonReviewRequired": false,
+      "playerRoute": "Read current dated release checkpoints before treating a feature as accepted."
     }
   ]
 }
