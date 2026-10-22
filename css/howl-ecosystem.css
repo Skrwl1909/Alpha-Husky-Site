@@ -1,0 +1,115 @@
+/* HOWL ecosystem — October 2026. A factual, non-transactional presentation of existing game paths. */
+.howl-ecosystem{
+  --he-cyan:#85cadb;--he-gold:#dbb883;--he-muted:#b5c7d0;
+  --he-edge:rgba(154,191,210,.27);
+  position:relative;isolation:isolate;overflow:hidden;background:#09131b;
+  border-block:1px solid #435361;
+}
+.howl-ecosystem::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(ellipse 700px 410px at 88% 12%,rgba(47,125,153,.18),transparent 70%),
+    radial-gradient(ellipse 700px 480px at 4% 76%,rgba(193,131,68,.08),transparent 73%),
+    linear-gradient(180deg,#0d1821,#081119 66%,#0b161e);
+}
+.howl-eco-head{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(245px,.7fr);gap:3rem;align-items:end;margin-bottom:2.7rem}
+.howl-eco-head .eyebrow{margin-bottom:1.4rem}
+.howl-eco-head h2{font-size:clamp(3.2rem,6.2vw,6.6rem);max-width:860px;margin:0}
+.howl-eco-head h2 em{color:var(--he-gold)}
+.howl-eco-lede{max-width:390px;padding-left:1.45rem;border-left:1px solid #886e4d}
+.howl-eco-lede strong{font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:#e3ba7a}
+.howl-eco-lede p{font-size:1.02rem;line-height:1.7;color:#c6d6dd;margin:.6rem 0 0}
+.howl-eco-signal{
+  display:grid;grid-template-columns:180px minmax(0,1fr) auto;
+  align-items:center;gap:2rem;min-height:214px;padding:1.3rem 2.1rem;
+  background:linear-gradient(102deg,rgba(30,53,66,.82),rgba(13,28,40,.86) 62%,rgba(28,54,65,.85));
+  border:1px solid #547080;position:relative;overflow:hidden;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 23px 50px rgba(0,0,0,.19);
+}
+.howl-eco-signal::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;
+  background-image:linear-gradient(rgba(130,174,193,.25) 1px,transparent 1px),linear-gradient(90deg,rgba(130,174,193,.25) 1px,transparent 1px);
+  background-size:42px 42px;mask-image:linear-gradient(90deg,transparent,black 38%,transparent);
+}
+.howl-eco-coin{width:150px;height:150px;position:relative;display:grid;place-items:center;isolation:isolate}
+.howl-eco-coin::before{content:"";position:absolute;inset:7px;border:1px solid #b6925d9c;border-radius:50%;box-shadow:0 0 45px rgba(221,177,116,.13),inset 0 0 26px rgba(0,0,0,.45)}
+.howl-eco-coin::after{content:"";position:absolute;inset:-8px;border:1px dashed #78919c6e;border-radius:50%}
+.howl-eco-coin img{width:114px;height:114px;object-fit:contain;border-radius:50%;filter:drop-shadow(0 4px 19px rgba(0,0,0,.55))}
+.howl-eco-signal-copy{position:relative;z-index:1}
+.howl-eco-label{display:block;font-size:.7rem;letter-spacing:.19em;font-weight:700;text-transform:uppercase;color:var(--he-cyan);margin-bottom:.65rem}
+.howl-eco-signal h3{font-size:clamp(2rem,3.4vw,3.3rem);margin:0 0 .6rem;color:#f0f3f4}
+.howl-eco-signal p{margin:0;max-width:530px;color:#c4d2d9;font-size:.96rem}
+.howl-eco-status{position:relative;z-index:1;border:1px solid #80c5d077;padding:.65rem .8rem;color:#a8dce5;font-weight:700;font-size:.69rem;line-height:1.4;letter-spacing:.13em;text-transform:uppercase;text-align:center}
+.howl-eco-bridge{min-height:92px;display:flex;align-items:center;justify-content:center;position:relative}
+.howl-eco-bridge::before{content:"";width:1px;height:100%;background:linear-gradient(180deg,#b5d3e599,#d9ba7c77)}
+.howl-eco-bridge span{position:absolute;background:#09141c;padding:.45rem 1.2rem;color:#d6c39f;font-size:.7rem;letter-spacing:.17em;text-transform:uppercase;font-weight:700;text-align:center;border:1px solid #625946}
+.howl-eco-rails{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+.howl-eco-rails::before{content:"";position:absolute;top:-1px;left:25%;right:25%;height:1px;background:#657b8588;pointer-events:none}
+.howl-eco-lane{position:relative;display:flex;flex-direction:column;min-width:0;min-height:395px;padding:2rem;background:linear-gradient(140deg,#152a37,#0b1821 78%);border:1px solid #416173;box-shadow:0 16px 45px #02070c42}
+.howl-eco-lane::before{content:"";position:absolute;top:-17px;left:50%;height:16px;width:1px;background:#657b8588}
+.howl-eco-lane--treasury{background:linear-gradient(135deg,#2a261e,#121c25 41%,#0c1821 85%);border-color:#8c7454}
+.howl-eco-lane-top{display:flex;justify-content:space-between;align-items:center;gap:.75rem;padding-bottom:1.4rem;border-bottom:1px solid rgba(225,238,243,.14)}
+.howl-eco-index{color:var(--he-cyan);font-weight:700;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}
+.howl-eco-lane--treasury .howl-eco-index{color:#f1ca91}
+.howl-eco-lane-kind{font-size:.69rem;letter-spacing:.11em;text-transform:uppercase;color:#a8bfc9;text-align:right}
+.howl-eco-lane h4{font:600 clamp(2rem,3.3vw,3.4rem)/.98 'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;letter-spacing:.008em;color:#edf2f3;margin:2.1rem 0 1rem}
+.howl-eco-lane>p{color:#bfcfd6;font-size:.95rem;line-height:1.75;margin:0 0 1.45rem;max-width:52ch}
+.howl-eco-flow{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-top:auto;padding:1.1rem 0 0;border-top:1px solid rgba(219,238,246,.15)}
+.howl-eco-flow span{color:#f1f4f5;font-size:.78rem;font-weight:700}
+.howl-eco-flow i{font-style:normal;color:var(--he-cyan);font-size:1.05rem}
+.howl-eco-lane--treasury .howl-eco-flow i{color:#e7bb80}
+.howl-eco-detail{margin:1.25rem 0 0!important;font-size:.78rem!important;line-height:1.55!important;color:#9eb4bf!important}
+.howl-eco-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin-top:1.2rem}
+.howl-eco-result{min-width:0;display:flex;gap:1.25rem;align-items:flex-start;padding:1.4rem 1.65rem;background:rgba(5,14,22,.65);border:1px solid #374e5b}
+.howl-eco-result svg{flex:none;width:27px;height:27px;color:#90d3df;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.howl-eco-result:nth-child(2) svg{color:#efc68e}
+.howl-eco-result strong{display:block;color:#f0f4f5;text-transform:uppercase;font:.7rem/1.4 'DM Sans',sans-serif;font-weight:800;letter-spacing:.13em;margin-bottom:.45rem}
+.howl-eco-result p{font-size:.84rem;color:#b4c7d1;line-height:1.55;margin:0}
+.howl-eco-proof{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2rem;margin-top:2rem;padding:1.5rem 0;border-top:1px solid #4b5c65;border-bottom:1px solid #4b5c65}
+.howl-eco-proof span{font-size:.74rem;letter-spacing:.08em;font-weight:700;color:#bdcdd4;text-transform:uppercase}
+.howl-eco-proof span::before{content:"✓";color:#a9d9df;margin-right:.7rem}
+.howl-eco-footer{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding-top:2rem}
+.howl-eco-footer-copy{max-width:640px}
+.howl-eco-footer-copy h3{font-size:clamp(1.8rem,2.8vw,2.7rem);margin-bottom:.8rem}
+.howl-eco-footer-copy p{color:#b8c9d2;font-size:.91rem;line-height:1.65;margin:0}
+.howl-eco-actions{display:flex;flex-wrap:wrap;gap:.9rem;flex:none}
+.howl-eco-actions .button{min-height:48px;gap:1rem;padding:.7rem 1.1rem}
+.howl-eco-actions .text-link{margin:0;align-self:center;white-space:nowrap}
+.howl-eco-risks{font-size:.79rem;line-height:1.6;color:#a9bbc6;max-width:920px;margin:1.5rem 0 0}
+.howl-eco-risks strong{color:#d4dee1}
+.howl-eco-risks a{color:#d8c2a3;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:1050px){
+  .howl-eco-head{grid-template-columns:minmax(0,1fr) 260px;gap:1.75rem}
+  .howl-eco-signal{grid-template-columns:135px minmax(0,1fr);gap:1.5rem}
+  .howl-eco-coin{width:126px;height:126px}.howl-eco-coin img{width:100px;height:100px}
+  .howl-eco-status{grid-column:2;justify-self:start}
+  .howl-eco-footer{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:740px){
+  .howl-eco-head{grid-template-columns:1fr;gap:1.6rem;margin-bottom:2rem}
+  .howl-eco-head h2{font-size:clamp(3.1rem,11vw,4.7rem)}
+  .howl-eco-lede{max-width:650px}
+  .howl-eco-signal{grid-template-columns:98px minmax(0,1fr);gap:1rem;padding:1.2rem}
+  .howl-eco-coin{width:90px;height:90px}.howl-eco-coin::after{inset:-4px}.howl-eco-coin img{width:76px;height:76px}
+  .howl-eco-signal h3{font-size:clamp(1.8rem,5vw,2.7rem)}
+  .howl-eco-status{grid-column:1/-1;justify-self:start;margin-left:0}
+  .howl-eco-bridge{min-height:65px}
+  .howl-eco-rails,.howl-eco-results{grid-template-columns:1fr;gap:.8rem}
+  .howl-eco-rails::before,.howl-eco-lane::before{display:none}
+  .howl-eco-lane{min-height:0;padding:1.65rem}
+  .howl-eco-lane h4{margin:1.4rem 0 .9rem}
+  .howl-eco-result{padding:1.2rem}
+  .howl-eco-footer{padding-top:1.6rem}
+}
+@media(max-width:420px){
+  .howl-eco-signal{grid-template-columns:72px minmax(0,1fr)}
+  .howl-eco-coin{width:70px;height:70px}.howl-eco-coin img{width:57px;height:57px}
+  .howl-eco-coin::before{inset:4px}
+  .howl-eco-signal h3{font-size:1.75rem}
+  .howl-eco-lane{padding:1.4rem}
+  .howl-eco-proof{gap:.9rem 1rem}
+  .howl-eco-proof span{font-size:.7rem}
+  .howl-eco-actions{width:100%}.howl-eco-actions .button{width:100%}
+  .howl-eco-actions .text-link{margin-top:.3rem}
+}
+@media(prefers-reduced-motion:reduce){.howl-ecosystem *{animation:none!important}}
