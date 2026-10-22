@@ -113,3 +113,61 @@
   .howl-eco-actions .text-link{margin-top:.3rem}
 }
 @media(prefers-reduced-motion:reduce){.howl-ecosystem *{animation:none!important}}
+
+
+/* HOWL — evidence-first, premium archival gallery. The three visuals are real game captures. */
+.howl-evidence{margin-top:clamp(4rem,7vw,7.5rem);padding-top:2rem;border-top:1px solid rgba(132,166,181,.32);position:relative}
+.howl-evidence::before{content:"";position:absolute;left:0;top:-1px;width:92px;height:2px;background:linear-gradient(90deg,#69becd,#d6a966)}
+.howl-evidence-intro{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);align-items:end;gap:2rem;margin-bottom:2rem}
+.howl-evidence-kicker{display:inline-flex;align-items:center;gap:.65rem;margin-bottom:1.1rem;color:#9ed2db;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.howl-evidence-signal{position:relative;flex:none;width:9px;height:9px;border-radius:50%;background:#7fc6d1;box-shadow:0 0 0 4px rgba(127,198,209,.12),0 0 18px rgba(127,198,209,.22)}
+.howl-evidence-intro h3{font-size:clamp(2.9rem,5.3vw,5.7rem);line-height:.94;margin:0;max-width:770px}
+.howl-evidence-intro h3 em{font-style:normal;color:#dbb883}
+.howl-evidence-intro>p{color:#c3d2d9;line-height:1.72;font-size:.94rem;max-width:470px;margin:0;padding:0 0 .25rem}
+.howl-evidence-grid{display:grid;grid-template-columns:minmax(0,1.09fr) minmax(0,.91fr);grid-template-rows:auto auto;gap:1.05rem;align-items:stretch}
+.howl-evidence-card{min-width:0;position:relative;display:flex;flex-direction:column;overflow:hidden;margin:0;background:linear-gradient(155deg,#14222c,#090f17 90%);border:1px solid #465965;box-shadow:0 18px 40px rgba(0,0,0,.18);transition:border-color .22s,transform .22s}
+.howl-evidence-card:hover{border-color:#829caa;transform:translateY(-2px)}
+.howl-evidence-card--hunter{grid-row:1 / span 2;border-color:#3d7285;background:linear-gradient(165deg,#102736,#09111b 65%)}
+.howl-evidence-card--prime{border-color:#776346}
+.howl-evidence-image{position:relative;display:block;overflow:hidden;isolation:isolate;background:#080e15;min-width:0;flex:none}
+.howl-evidence-image::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 56%,rgba(7,12,19,.7));opacity:.75;transition:opacity .2s}
+.howl-evidence-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transform:scale(1);transition:transform .4s;filter:saturate(.95)}
+.howl-evidence-card:hover .howl-evidence-image img,.howl-evidence-image:focus-visible img{transform:scale(1.025)}
+.howl-evidence-image-action{position:absolute;right:1rem;bottom:1rem;z-index:1;color:#f4f5f2;background:rgba(10,21,31,.84);border:1px solid rgba(184,213,224,.5);padding:.45rem .7rem;font-size:.68rem;font-weight:700;letter-spacing:.025em}
+.howl-evidence-card--hunter .howl-evidence-image{height:clamp(370px,46vw,620px)}
+.howl-evidence-card--prime .howl-evidence-image{height:clamp(180px,19vw,270px)}
+.howl-evidence-card--milestones .howl-evidence-image{height:clamp(175px,17vw,230px)}
+.howl-evidence-card--milestones .howl-evidence-image img{object-position:center 12%}
+.howl-evidence-caption{padding:1.35rem 1.5rem 1.6rem;flex:1;border-top:1px solid rgba(154,186,198,.16)}
+.howl-evidence-card--hunter .howl-evidence-caption{padding:1.7rem 1.8rem 2rem}
+.howl-evidence-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1rem}
+.howl-evidence-type{font-size:.67rem;color:#a6c6d1;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+.howl-evidence-tag{border:1px solid #75674f;background:#26221c;color:#f1c993;font-size:.63rem;font-weight:800;letter-spacing:.09em;padding:.38rem .55rem;white-space:nowrap}
+.howl-evidence-card--milestones .howl-evidence-tag{border-color:#547681;background:#12252b;color:#a8dce6}
+.howl-evidence-caption h4{font:600 clamp(1.65rem,2.7vw,2.6rem)/1 'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;letter-spacing:.015em;margin:1.1rem 0 .55rem;color:#f2f4f4}
+.howl-evidence-caption p{margin:0;color:#b6cbd3;font-size:.87rem;line-height:1.65}
+.howl-evidence-footnote{margin:1.4rem 0 0;padding-left:1rem;border-left:2px solid rgba(219,184,131,.75);color:#aebfc6;font-size:.8rem;line-height:1.6;max-width:980px}
+@media(max-width:850px){
+ .howl-evidence-intro{grid-template-columns:1fr;gap:1rem}
+ .howl-evidence-intro>p{max-width:720px}
+ .howl-evidence-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto auto}
+ .howl-evidence-card--hunter{grid-column:1/-1;grid-row:auto}
+ .howl-evidence-card--hunter .howl-evidence-image{height:clamp(320px,61vw,475px)}
+ .howl-evidence-card--prime .howl-evidence-image,.howl-evidence-card--milestones .howl-evidence-image{height:clamp(170px,29vw,260px)}
+}
+@media(max-width:600px){
+ .howl-evidence{margin-top:3.5rem}
+ .howl-evidence-intro h3{font-size:clamp(2.8rem,11.8vw,4.2rem)}
+ .howl-evidence-grid{grid-template-columns:1fr;gap:.8rem}
+ .howl-evidence-card--hunter{grid-column:auto}
+ .howl-evidence-card--hunter .howl-evidence-image{height:clamp(315px,88vw,420px)}
+ .howl-evidence-card--prime .howl-evidence-image{height:clamp(205px,64vw,300px)}
+ .howl-evidence-card--milestones .howl-evidence-image{height:clamp(185px,53vw,250px)}
+ .howl-evidence-card--hunter .howl-evidence-caption,.howl-evidence-caption{padding:1.25rem 1.1rem 1.4rem}
+ .howl-evidence-caption h4{font-size:2rem}
+ .howl-evidence-image-action{font-size:.65rem;right:.65rem;bottom:.65rem}
+}
+@media(prefers-reduced-motion:reduce){
+ .howl-evidence-card,.howl-evidence-image img,.howl-evidence-image::after{transition:none}
+ .howl-evidence-card:hover,.howl-evidence-card:hover .howl-evidence-image img{transform:none}
+}
