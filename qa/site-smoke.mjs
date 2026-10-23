@@ -16,6 +16,7 @@ try {
     const response = await page.goto(base,{waitUntil:'domcontentloaded',timeout:30000});
     await page.locator('.howl-network-live').waitFor({timeout:8000});
     await page.evaluate(()=>document.fonts.ready);
+    await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=650){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,40));}window.scrollTo(0,0)});
     await page.waitForTimeout(500);
     const data = await page.evaluate(()=>{
       const all = [...document.querySelectorAll('img')];
