@@ -20,6 +20,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Integration smoke — public merged PRs without publishing
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BUILD_DATE: '2026-10-23'
+          BUILD_LOG_DRY_RUN: '1'
+        run: |
+          node scripts/build-log/collect.mjs
+          node -e "const fs=require('fs');const p='qa-artifacts/build-log/2026-10-23.json';if(!fs.existsSync(p))throw Error('Collector created no dry-run evidence');const j=JSON.parse(fs.readFileSync(p));if(j.review_state!=='pending'||!j.evidence.some(e=>e.url==='https://github.com/Skrwl1909/Alpha-Husky-Site/pull/11')||!j.evidence.some(e=>e.url==='https://github.com/Skrwl1909/Alpha-Husky-Site/pull/13'))throw Error('Unexpected merged PR evidence')"
       - run: |
           node --check js/build-log.js
           node --check scripts/build-log/collect.mjs
