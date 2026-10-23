@@ -17,12 +17,12 @@ try {
     await page.locator('.howl-network-live').waitFor({timeout:8000});
     await page.evaluate(()=>document.fonts.ready);
     await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=650){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,40));}window.scrollTo(0,0)});
-    await page.evaluate(async()=>{await Promise.all([...document.querySelectorAll('img')].filter(i=>i.loading!=='lazy'||i.getBoundingClientRect().top<innerHeight).map(i=>i.decode().catch(()=>{})))});
+    await page.evaluate(async()=>{await Promise.all([...document.querySelectorAll('img')].map(async i=>{i.loading='eager';await Promise.race([i.decode().catch(()=>{}),new Promise(r=>setTimeout(r,1800))]);}))});
     await page.waitForTimeout(600);
     const data = await page.evaluate(()=>{
       const all = [...document.querySelectorAll('img')];
       const refs = [...document.querySelectorAll('a[href^="#"]')];
-      const badImgs=all.filter(x=>!x.complete||x.naturalWidth===0).map(x=>({src:x.getAttribute('src'),currentSrc:x.currentSrc,loading:x.loading,complete:x.complete,width:x.naturalWidth,external:x.currentSrc?new URL(x.currentSrc).origin!==location.origin:false}));
+      const badImgs=all.filter(x=>(!x.complete||x.naturalWidth===0)&&new URL(x.src,location.href).origin===location.origin).map(x=>({src:x.getAttribute('src'),complete:x.complete,width:x.naturalWidth}));
       const missingHash=refs.filter(x=>x.getAttribute('href')!== '#'&&!document.getElementById(x.hash.slice(1))).map(x=>x.getAttribute('href'));
       const tree=document.querySelector('.howl-network-live');
       const holder=document.querySelector('.howl-live-holder');
@@ -78,12 +78,13 @@ try {
     page.on('pageerror',e=>pageErrors.push(String(e)));
     const response=await page.goto(new URL(route,base).toString(),{waitUntil:'domcontentloaded',timeout:30000});
     await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=850){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,12))}window.scrollTo(0,0)});
+    await page.evaluate(async()=>{await Promise.all([...document.querySelectorAll('img')].map(async i=>{i.loading='eager';await Promise.race([i.decode().catch(()=>{}),new Promise(r=>setTimeout(r,1600))])}))});
     await page.waitForTimeout(200);
     const data=await page.evaluate(()=>{
       const ids=[...document.querySelectorAll('[id]')].map(x=>x.id);
       const hrefs=[...document.querySelectorAll('a[href^="#"]')].map(x=>x.getAttribute('href')).filter(x=>x!=='#');
       return {overflow:Math.max(document.documentElement.scrollWidth,document.body.scrollWidth)-document.documentElement.clientWidth,
-       brokenImages:[...document.querySelectorAll('img')].filter(x=>!x.complete||x.naturalWidth===0).map(x=>({src:x.src,loading:x.loading,complete:x.complete})),
+       brokenImages:[...document.querySelectorAll('img')].filter(x=>(!x.complete||x.naturalWidth===0)&&new URL(x.src,location.href).origin===location.origin).map(x=>({src:x.src,loading:x.loading,complete:x.complete})),
        offenders:[...document.querySelectorAll('body *')].filter(el=>{const r=el.getBoundingClientRect();return r.width>0&&(r.right>document.documentElement.clientWidth+2||r.left< -2)}).slice(0,14).map(el=>({tag:el.tagName,cls:String(el.className).slice(0,80),id:el.id,box:[Math.round(el.getBoundingClientRect().left),Math.round(el.getBoundingClientRect().right)]})),
        duplicateIds:ids.filter((id,i)=>ids.indexOf(id)!==i),
        brokenAnchors:hrefs.filter(x=>!ids.includes(x.slice(1)))};
