@@ -1,0 +1,12 @@
+.build-hero{background:radial-gradient(ellipse 70% 80% at 90% 15%,#246b803b,transparent 70%),linear-gradient(135deg,#081721,#0a1017);padding:clamp(5rem,10vw,9rem) 0;border-bottom:1px solid #587782}
+.build-hero .eyebrow{color:#8dcbd6}.build-hero h1{font:700 clamp(4rem,11vw,10rem)/.86 'Barlow Condensed',Impact,sans-serif;letter-spacing:.015em;color:#f1f5f5;margin:.9rem 0 1.8rem}.build-hero h1 em{font-style:normal;color:#dfb782}.build-hero p:not(.eyebrow){max-width:670px;color:#d0dce0;font-size:clamp(1rem,1.7vw,1.27rem);line-height:1.7}
+.build-rule{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}.build-rule span{border:1px solid #587482;color:#cae0e5;padding:.5rem .75rem;letter-spacing:.09em;font-size:.7rem;font-weight:700}
+.build-stream{padding-block:clamp(3rem,6vw,5.5rem)}.build-stream-head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;margin-bottom:2rem}.build-stream-head h2{font-size:clamp(2.4rem,5vw,4rem);margin:0}.build-stream-head p{color:#c0d1d8;max-width:390px;line-height:1.6;margin:0}
+.build-status{padding:1.5rem;border:1px solid #4c6470;color:#d3e1e5;background:#0d1e29}.build-status:empty{display:none}
+.build-entries{display:grid;gap:1rem}.build-entry{border:1px solid #567381;background:linear-gradient(135deg,#122733,#091620);padding:clamp(1.3rem,3vw,2rem)}
+.build-entry-meta{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;color:#9fcbd3;font-size:.75rem;font-weight:700;letter-spacing:.12em}.build-entry-status{border:1px solid #588e99;padding:.32rem .55rem;color:#a8e4e5}
+.build-entry h3{font:700 clamp(1.8rem,3.7vw,3rem)/1.1 'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;margin:1.1rem 0 .65rem;color:#fff}.build-entry p{max-width:800px;color:#d2dfe4;line-height:1.65}
+.build-entry-links{display:flex;flex-wrap:wrap;gap:1.2rem;margin-top:1.3rem}.build-entry-links a{color:#f0c895;text-decoration:underline;text-underline-offset:4px}
+.build-entry-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}.build-entry-tags span{color:#c5d8df;font-size:.73rem;border:1px solid #455d68;padding:.2rem .5rem}
+.build-history-link{margin-top:2rem}
+@media(max-width:650px){.build-stream-head{display:block}.build-stream-head p{margin-top:1rem}.build-hero{padding-block:4.3rem}.build-hero h1{font-size:clamp(4.5rem,18vw,7rem)}}
