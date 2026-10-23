@@ -1,0 +1,38 @@
+name: Website QA (Playwright)
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "css/**"
+      - "js/**"
+      - "assets/**"
+      - "qa/**"
+      - ".github/workflows/site-qa.yml"
+jobs:
+  browser-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Serve current branch locally
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/howl-http.log 2>&1 &
+          sleep 3
+      - name: Test viewport responsiveness, assets and navigation
+        run: node qa/site-smoke.mjs
+      - name: Upload visual QA screenshots and JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-qa-artifacts
+          path: qa-artifacts/
+          if-no-files-found: warn
