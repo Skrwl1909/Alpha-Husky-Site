@@ -1,5 +1,28 @@
 {
   "version": 1,
-  "updated_at": null,
-  "entries": []
+  "updated_at": "2026-10-23T16:00:00Z",
+  "entries": [
+    {
+      "id": "merged-2026-10-23",
+      "date": "2026-10-23",
+      "status": "implemented",
+      "title": "The HOWL website and Build Log foundation reached main",
+      "summary": "Two website pull requests were merged: the premium HOWL ecosystem presentation and the first evidence-backed Build Log foundation. The page, validator and evidence-draft workflow are present in the repository. This records merged source changes only; production rendering and automatic daily publishing have not yet been independently confirmed.",
+      "tags": [
+        "Website",
+        "Build Log",
+        "Source record"
+      ],
+      "sources": [
+        {
+          "label": "HOWL website — PR #11",
+          "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/11"
+        },
+        {
+          "label": "Build Log foundation — PR #13",
+          "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/13"
+        }
+      ]
+    }
+  ]
 }
