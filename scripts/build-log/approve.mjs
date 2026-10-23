@@ -17,10 +17,12 @@ validateDraft(candidate);
 if(candidate.date!==day)throw Error('Mismatched day');
 if(candidate.review_state!=='reviewed')throw Error('Candidate must have review_state=reviewed after editorial review');
 const projects=[...new Set(candidate.evidence.map(x=>x.repository))];
-const title=String(candidate.editorial?.title||('Development record · '+day)).trim();
+if(typeof candidate.editorial?.title!=='string'||typeof candidate.editorial?.summary!=='string')throw Error('Human editorial title and summary are mandatory');
+const title=candidate.editorial.title.trim();
 const facts=candidate.evidence.map(x=>'#'+x.pr_number+' '+x.title).slice(0,7).join('; ');
 const fallback='Merged public pull requests: '+facts+'. This records integrated source changes only; it does not confirm production deployment, player access or a successful device test.';
-const summary=String(candidate.editorial?.summary||fallback).trim();
+const summary=candidate.editorial.summary.trim();
+if(!title||!summary)throw Error('Empty editorial not publishable');
 const entry={
   id:'merged-'+day,
   date:day,
