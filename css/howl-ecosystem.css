@@ -448,3 +448,67 @@
 @media(max-width:850px){.howl-network-head{grid-template-columns:1fr;gap:1rem}.howl-network-links a{padding:.8rem;font-size:.79rem}}
 @media(max-width:720px){.howl-network-links{grid-template-columns:1fr}.howl-network-links a+a{border-left:0;border-top:1px solid #4d7180}.howl-network-links a{min-height:51px;padding:.65rem 1rem;font-size:.91rem}}
 @media(max-width:600px){.howl-network{padding-top:2rem}.howl-network-head{margin-bottom:1.15rem}.howl-network-head h3{font-size:clamp(2.55rem,10.5vw,3.6rem)}.howl-network-head>p{font-size:.96rem;line-height:1.55}.howl-network-foot{font-size:.81rem}}
+
+/* Premium network v2 — real Alpha Husky game art + accessible HTML nodes. */
+.howl-network-live{background:radial-gradient(ellipse at 50% 5%,#2364782e,transparent 55%),#081721;border:1px solid #466c7a;padding:clamp(1rem,3vw,2.5rem);overflow:hidden}
+.howl-network-live-top{display:flex;justify-content:center;align-items:center;gap:1.3rem;position:relative}
+.howl-network-live-top>img{width:clamp(110px,15vw,195px);height:auto;filter:drop-shadow(0 10px 35px #27a4c246)}
+.howl-network-live-top strong{display:block;font:700 clamp(1.65rem,3.4vw,3.25rem)/1 'Barlow Condensed',Impact,sans-serif;letter-spacing:.03em;color:#f3f6f6}
+.howl-network-live-top p,.howl-live-branch-head p{margin:.5rem 0 0;color:#cadce3;font-size:.93rem}
+.howl-live-id{display:block;font:800 .71rem/1.4 'DM Sans',sans-serif;letter-spacing:.17em;color:#9bdce7;margin-bottom:.65rem}
+.howl-network-live-fork{height:65px;display:flex;justify-content:center;align-items:flex-end;position:relative}
+.howl-network-live-fork:before{content:"";position:absolute;top:0;bottom:32px;left:50%;width:2px;background:linear-gradient(#88dae0,#d4a76a)}
+.howl-network-live-fork:after{content:"";position:absolute;bottom:14px;left:25%;right:25%;height:19px;border:2px solid #609aa6;border-bottom:0;border-radius:26px 26px 0 0}
+.howl-network-live-fork i{width:8px;height:8px;background:#dfbb86;position:absolute;bottom:25px;left:calc(50% - 4px);border-radius:50%;box-shadow:0 0 16px #dcb980}
+.howl-live-branches{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.howl-live-branch{min-width:0;position:relative;background:linear-gradient(150deg,#142d3a,#081723 75%);border:1px solid #508997;padding:1.45rem}
+.howl-live-treasury{background:linear-gradient(140deg,#292820,#0a1721 62%);border-color:#95734a}
+.howl-live-branch:before{content:"";position:absolute;top:0;left:50%;width:2px;height:22px;transform:translateY(-100%);background:#5ca6b8}
+.howl-live-treasury:before{background:#d4a66f}
+.howl-live-branch-head{display:flex;align-items:center;gap:1rem;padding-bottom:1.2rem;border-bottom:1px solid #7296a34b}
+.howl-live-branch-head img{height:auto;width:clamp(83px,10vw,134px);object-fit:contain;filter:drop-shadow(0 5px 18px #0ac1e832)}
+.howl-live-treasury .howl-live-branch-head img{filter:drop-shadow(0 4px 17px #d5944b45)}
+.howl-live-treasury .howl-live-id{color:#e8bf85}
+.howl-live-branch-head h4{font:700 clamp(1.45rem,2.3vw,2.15rem)/1 'Barlow Condensed',Impact,sans-serif;letter-spacing:.02em;color:#eef6f6;margin:0}
+.howl-live-branch-head p{font-size:.82rem}
+.howl-live-stages{padding:1.5rem 0 0;margin:0;list-style:none}
+.howl-live-stages li{position:relative;display:grid;grid-template-columns:45px 1fr;align-items:center;min-height:76px;gap:.95rem}
+.howl-live-stages li:not(:last-child):before{content:"";position:absolute;top:46px;bottom:-12px;left:22px;border-left:2px dotted #57a1b78c}
+.howl-live-treasury .howl-live-stages li:not(:last-child):before{border-color:#daa96e9b}
+.howl-live-marker{display:grid;place-items:center;width:45px;height:45px;position:relative;z-index:1;border:1px solid #6cbac9;background:radial-gradient(circle,#295564,#122b36);clip-path:polygon(22% 0,78% 0,100% 22%,100% 78%,78% 100%,22% 100%,0 78%,0 22%);font:.8rem 'DM Sans',sans-serif;font-weight:800;color:#c5e9f0}
+.howl-live-treasury .howl-live-marker{border-color:#ddb27d;background:radial-gradient(circle,#54412c,#211d1a);color:#f0d2a5}
+.howl-live-stages strong{display:block;font:700 clamp(1.35rem,2vw,1.78rem)/1.15 'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;color:#f2f5f5}
+.howl-live-stages small{display:block;font:.82rem/1.5 'DM Sans',sans-serif;color:#c6d7df;margin-top:.2rem}
+.howl-live-end strong{color:#9ce0e8}
+.howl-live-treasury .howl-live-end strong{color:#edc28b}
+.howl-network-live-foot{margin-top:1.2rem;border-top:1px solid #55707b69;padding:1rem .7rem 0;display:flex;align-items:center;justify-content:center;gap:.9rem}
+.howl-network-live-foot img{width:58px;height:auto}
+.howl-network-live-foot strong{display:block;color:#e6edec;font-size:.74rem;letter-spacing:.15em}
+.howl-network-live-foot span{display:block;color:#bccdd5;font-size:.74rem;margin-top:.25rem}
+@media(max-width:720px){
+ .howl-network-live{padding:1rem}
+ .howl-network-live-top{gap:.55rem}
+ .howl-network-live-top>img{width:112px}
+ .howl-network-live-top strong{font-size:1.85rem}
+ .howl-network-live-top p{font-size:.83rem}
+ .howl-live-branches{grid-template-columns:1fr;gap:1.1rem}
+ .howl-network-live-fork{height:34px}
+ .howl-network-live-fork:before{bottom:0}
+ .howl-network-live-fork:after{display:none}
+ .howl-live-branch{padding:1rem}
+ .howl-live-branch:before{height:0}
+ .howl-live-branch-head img{width:100px}
+ .howl-live-branch-head h4{font-size:2rem}
+ .howl-live-stages{padding-top:.7rem}
+ .howl-live-stages li{min-height:69px}
+ .howl-live-stages strong{font-size:1.6rem}
+ .howl-live-stages small{font-size:.84rem}
+ .howl-network-live-foot{gap:.5rem;justify-content:flex-start}
+ .howl-network-live-foot img{width:45px}
+}
+@media(max-width:390px){
+ .howl-network-live-top>img{width:91px}
+ .howl-network-live-top strong{font-size:1.55rem}
+ .howl-live-branch-head img{width:83px}
+ .howl-live-branch-head h4{font-size:1.7rem}
+}
