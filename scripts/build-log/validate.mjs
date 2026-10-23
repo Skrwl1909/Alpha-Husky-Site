@@ -9,8 +9,13 @@ function validDate(d){return typeof d==='string'&&dateRx.test(d)&&!Number.isNaN(
 function validUrl(str){
   try {
     const u=new URL(str);
-    return u.protocol==='https:'&&u.hostname==='github.com'&&!u.search&&!u.hash&&allowed.some(r=>new RegExp('^/'+r+'/pull/[1-9][0-9]*
-  }catch{return false}
+    if(u.protocol!=='https:'||u.hostname!=='github.com'||u.search||u.hash)return false;
+    return allowed.some(repo=>{
+      const prefix='/'+repo+'/pull/';
+      const number=u.pathname.startsWith(prefix)?u.pathname.slice(prefix.length):'';
+      return /^[1-9][0-9]*$/.test(number);
+    });
+  }catch{return false;}
 }
 export function validateDraft(d){
   assert.equal(d.schema_version,1,'Draft schema');
