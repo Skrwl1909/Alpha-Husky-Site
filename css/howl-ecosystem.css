@@ -236,3 +236,93 @@
  .howl-holder-entitlements dd{font-size:.77rem;max-width:59%;overflow-wrap:break-word}
  .howl-holder-receipt{padding:1.2rem}
 }
+
+
+/* Final Signal Core visual pass — native CSS around the project's real token emblem. */
+.howl-eco-signal--core{grid-template-columns:minmax(180px,260px) minmax(0,1fr) 142px;min-height:280px;gap:clamp(1rem,2.1vw,2rem);padding:clamp(1.15rem,3.5vw,2.5rem);border-color:#66858e;background:linear-gradient(115deg,#142c39 0%,#10222d 38%,#0b1821 74%,#19242a 100%);box-shadow:inset 0 1px 0 #ffffff19,0 20px 55px #0004}
+.howl-eco-signal--core::after{content:"";position:absolute;inset:11px;border:1px solid #adcbd213;pointer-events:none}
+.howl-core-visual{position:relative;isolation:isolate;height:232px;display:flex;align-items:center;justify-content:center;min-width:0;background:radial-gradient(circle,#669eae17 0,#14303a05 51%,transparent 74%)}
+.howl-core-visual::before,.howl-core-visual::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.howl-core-visual::before{width:183px;height:183px;border:1px solid #9ed2d56e;box-shadow:0 0 43px #64a9b61c,inset 0 0 30px #6ba8af21}
+.howl-core-visual::after{width:226px;height:226px;border:1px solid #6e93a24d}
+.howl-core-orbit{position:absolute;pointer-events:none;border-radius:50%;aspect-ratio:1;display:block}
+.howl-core-orbit--inner{width:207px;border:1px dashed #c6a16e63;animation:howl-core-spin 36s linear infinite}
+.howl-core-orbit--outer{width:247px;border-top:2px solid #a4d4da9f;border-bottom:2px solid #d7ab6d66;border-left:1px solid transparent;border-right:1px solid transparent;animation:howl-core-spin 48s linear infinite reverse}
+.howl-core-hardware{position:absolute;bottom:0;left:0;right:0;text-align:center;color:#a5c6ca;font-weight:750;letter-spacing:.21em;font-size:.56rem}
+.howl-eco-signal--core .howl-eco-coin{position:relative;z-index:1;width:152px;height:152px}
+.howl-eco-signal--core .howl-eco-coin img{width:144px;height:144px;object-fit:contain;filter:drop-shadow(0 12px 22px #020b12a9) drop-shadow(0 0 18px #b88e5031)}
+.howl-eco-signal--core .howl-eco-coin::before{inset:3px;border-color:#d4b47ba3}
+.howl-eco-signal--core .howl-eco-coin::after{display:none}
+.howl-eco-signal--core .howl-eco-signal-copy{padding:.1rem 0}
+.howl-eco-signal--core .howl-eco-label{font-size:.66rem;letter-spacing:.17em;margin-bottom:.9rem}
+.howl-eco-signal--core .howl-eco-signal-copy h3{font-size:clamp(2rem,3.8vw,4.3rem);line-height:.97;letter-spacing:.012em;margin-bottom:1rem}
+.howl-eco-signal--core .howl-eco-signal-copy h3 em{font-style:normal;color:#e2c28e}
+.howl-eco-signal--core .howl-eco-signal-copy p{font-size:.92rem;line-height:1.65;max-width:56ch}
+.howl-core-flags{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.howl-core-flags span{font-size:.61rem;letter-spacing:.11em;color:#c8d6db;border:1px solid #91a8ab69;padding:.38rem .52rem;background:#06121a69;font-weight:750}
+.howl-core-readout{align-self:stretch;position:relative;display:flex;flex-direction:column;justify-content:center;min-width:0;padding:1rem .1rem 1rem 1.3rem;border-left:1px solid #7494a35c}
+.howl-core-readout span{color:#98b2be;font-size:.6rem;letter-spacing:.13em;font-weight:750;white-space:nowrap}
+.howl-core-readout strong{color:#c7e7e9;font-family:'Barlow Condensed',Impact,sans-serif;font-size:1.21rem;font-weight:600;letter-spacing:.055em;margin:.1rem 0 .7rem}
+.howl-core-readout i{height:1px;width:60%;margin:0 0 .75rem;background:linear-gradient(90deg,#6ca4af6e,transparent)}
+.howl-eco-quicknav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #46606b;border-top:0;background:#0d1a23}
+.howl-eco-quicknav a{display:grid;grid-template-columns:1fr auto;align-items:center;gap:.3rem .8rem;min-height:79px;padding:1rem 1.3rem;transition:background .18s ease,color .18s ease;min-width:0}
+.howl-eco-quicknav a+a{border-left:1px solid #46606b}
+.howl-eco-quicknav a:hover,.howl-eco-quicknav a:focus-visible{background:#1a303a}
+.howl-eco-quicknav a span:first-child{grid-column:1/-1;letter-spacing:.17em;color:#c19c6b;font-weight:800;font-size:.59rem}
+.howl-eco-quicknav a strong{font:600 clamp(1.05rem,1.6vw,1.4rem)/1.15 'Barlow Condensed',Impact,sans-serif;letter-spacing:.015em;text-transform:uppercase;color:#e9f0f2}
+.howl-eco-quicknav a span:last-child{font-size:1.2rem;color:#9fcbd6}
+.howl-eco-quicknav a:focus-visible{outline:2px solid #f0cc96;outline-offset:-3px}
+.howl-eco-bridge{min-height:82px}
+.howl-eco-lane{min-height:320px}
+.howl-eco-lane h4{margin:1.6rem 0 .85rem}
+.howl-eco-lane>p{line-height:1.65;margin-bottom:1.1rem}
+.howl-eco-head{margin-bottom:2.2rem}
+.howl-holder-proof,.howl-evidence{scroll-margin-top:90px}
+#howl-holder-proof-title,#howl-evidence-title{scroll-margin-top:96px}
+@keyframes howl-core-spin{to{transform:rotate(360deg)}}
+@media(max-width:1100px){
+ .howl-eco-signal--core{grid-template-columns:200px minmax(0,1fr)}
+ .howl-core-visual{height:216px}
+ .howl-core-readout{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.25rem 1rem;align-items:center;justify-content:stretch;padding:.85rem 0 0;border-left:0;border-top:1px solid #7494a35c}
+ .howl-core-readout span{grid-row:1}
+ .howl-core-readout strong{grid-row:2;font-size:1.15rem;margin:0}
+ .howl-core-readout i{display:none}
+}
+@media(max-width:760px){
+ .howl-eco-signal--core{grid-template-columns:150px minmax(0,1fr);gap:1rem}
+ .howl-core-visual{height:200px}
+ .howl-core-visual::before{width:139px;height:139px}
+ .howl-core-visual::after{width:163px;height:163px}
+ .howl-core-orbit--inner{width:155px}
+ .howl-core-orbit--outer{width:181px}
+ .howl-eco-signal--core .howl-eco-coin{width:115px;height:115px}
+ .howl-eco-signal--core .howl-eco-coin img{width:109px;height:109px}
+ .howl-core-hardware{font-size:.49rem;letter-spacing:.1em}
+ .howl-eco-signal--core .howl-eco-signal-copy h3{font-size:clamp(1.7rem,4.8vw,2.8rem)}
+ .howl-eco-quicknav a{padding:.85rem .85rem;min-height:74px}
+}
+@media(max-width:600px){
+ .howl-eco-signal--core{grid-template-columns:1fr;gap:1.15rem}
+ .howl-core-visual{height:211px}
+ .howl-core-visual::before{width:162px;height:162px}
+ .howl-core-visual::after{width:190px;height:190px}
+ .howl-core-orbit--inner{width:176px}
+ .howl-core-orbit--outer{width:210px}
+ .howl-eco-signal--core .howl-eco-coin{width:140px;height:140px}
+ .howl-eco-signal--core .howl-eco-coin img{width:132px;height:132px}
+ .howl-eco-signal--core .howl-eco-signal-copy h3{font-size:clamp(2rem,9vw,3.3rem)}
+ .howl-core-readout{grid-template-columns:repeat(3,minmax(0,1fr));gap:.2rem .35rem}
+ .howl-core-readout span{white-space:normal;letter-spacing:.07em;font-size:.55rem}
+ .howl-core-readout strong{font-size:1rem}
+ .howl-eco-quicknav{grid-template-columns:1fr}
+ .howl-eco-quicknav a{grid-template-columns:1fr auto;min-height:57px;padding:.65rem 1rem}
+ .howl-eco-quicknav a+a{border-left:0;border-top:1px solid #46606b}
+ .howl-eco-quicknav a span:first-child{grid-column:auto;grid-row:1;align-self:end;font-size:.57rem}
+ .howl-eco-quicknav a strong{grid-column:1;grid-row:2;font-size:1.3rem}
+ .howl-eco-quicknav a span:last-child{grid-column:2;grid-row:1 / span 2}
+ .howl-eco-lane{min-height:0}
+}
+@media(prefers-reduced-motion:reduce){
+ .howl-core-orbit--inner,.howl-core-orbit--outer{animation:none!important}
+ .howl-eco-quicknav a{transition:none!important}
+}
