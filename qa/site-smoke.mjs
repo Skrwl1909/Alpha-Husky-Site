@@ -93,5 +93,5 @@ try {
   }
 } finally { await browser.close(); }
 fs.writeFileSync('qa-artifacts/results.json',JSON.stringify({base,records,issues},null,2));
-console.log(JSON.stringify({widths,results:records.map(x=>({width:x.width,checks:x.checks,consoleErrors:x.consoleErrors})),failures:issues.map(x=>({width:x.width,name:x.name}))},null,2));
+console.log(JSON.stringify({widths,results:records.map(x=>({route:x.route??'index.html',width:x.width,checks:x.checks,imagesBroken:x.data?.imagesBroken??x.data?.brokenImages,overflow:x.data?.horizontalOverflow??x.data?.overflow,consoleErrors:x.consoleErrors})),failures:issues.map(x=>({route:x.route??'index.html',width:x.width,name:x.name,detail:{imagesBroken:x.detail?.data?.imagesBroken,overflow:x.detail?.data?.horizontalOverflow}}))},null,2));
 assert.equal(issues.length,0,'Site browser QA failures: '+issues.map(x=>x.width+':'+x.name).join(', '));
