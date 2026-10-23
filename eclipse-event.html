@@ -24,7 +24,10 @@
       --success: #29c17e;
       --warning: #f5a524;
     }
-    html, body { height: 100%; }
+    html, body { height: 100%; max-width:100%; overflow-x:clip; }
+    *, *::before, *::after { box-sizing:border-box; }
+    .wrap { min-width:0; }
+    img, video, iframe { max-width:100%; }
     body {
       margin: 0; background: radial-gradient(1200px 700px at 85% -10%, rgba(181,22,47,.20), transparent 60%),
                                radial-gradient(900px 600px at 10% -10%, rgba(122,125,255,.18), transparent 60%),
