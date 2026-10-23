@@ -35,3 +35,4 @@ jobs:
           node --check scripts/build-log/approve.mjs
           node scripts/build-log/validate.mjs
           node --test scripts/build-log/tests/*.test.mjs
+          node scripts/build-log/tests/approval-flow.mjs
