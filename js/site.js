@@ -50,6 +50,19 @@ const ensureBibleLink = (nav, beforeHref) => {
 ensureBibleLink(document.querySelector('.site-nav'), '/history.html');
 document.querySelectorAll('.site-footer nav').forEach(nav => ensureBibleLink(nav, '/history.html'));
 
+/* Build Log V1: add a single first-class link without modifying canonical history. */
+const ensureBuildLogLink = nav => {
+  if (!nav || nav.querySelector('a[href="/build-log.html"]')) return;
+  const link = document.createElement('a');
+  link.href = '/build-log.html';
+  link.textContent = 'Build Log';
+  const historyLink = nav.querySelector('a[href="/history.html"]');
+  if (historyLink) historyLink.insertAdjacentElement('afterend',link);
+  else nav.appendChild(link);
+};
+ensureBuildLogLink(document.querySelector('.site-nav'));
+document.querySelectorAll('.site-footer nav').forEach(ensureBuildLogLink);
+
 const archiveIntro = document.querySelector('.archive-main .archive-intro');
 if (archiveIntro && !document.querySelector('.bible-history-callout')) {
   const callout = document.createElement('p');

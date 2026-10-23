@@ -1,0 +1,58 @@
+name: Build Log — daily evidence draft
+on:
+  schedule:
+    - cron: '17 8 * * *'
+  workflow_dispatch:
+    inputs:
+      build_date:
+        description: 'Optional London calendar date YYYY-MM-DD; defaults to yesterday'
+        required: false
+        type: string
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: build-log-draft
+  cancel-in-progress: false
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate current public record and pipeline
+        run: |
+          node scripts/build-log/validate.mjs
+          node --test scripts/build-log/tests/*.test.mjs
+      - name: Collect publicly merged PRs into unreviewed draft
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BUILD_DATE: ${{ inputs.build_date }}
+        run: node scripts/build-log/collect.mjs
+      - name: Open a draft PR for reviewed sources only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain -- data/build-log-drafts)" ]]; then
+            echo "No new merged PRs; no update."
+            exit 0
+          fi
+          DATE="$(find data/build-log-drafts -maxdepth 1 -name '*.json' -printf '%f\n' | sort | tail -1)"
+          DAY="${DATE%.json}"
+          BRANCH="auto/build-log-${DAY}"
+          if gh pr list --head "${BRANCH}" --state open --json number --jq 'length' | grep -q '^1$'; then
+            echo "Existing draft PR for ${DAY}; no duplicate."
+            exit 0
+          fi
+          git config user.name "alpha-build-log-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "${BRANCH}"
+          git add "data/build-log-drafts/${DATE}"
+          git commit -m "chore(build-log): collect evidence ${DAY} (review required)"
+          git push origin "${BRANCH}"
+          gh pr create --draft --base main --head "${BRANCH}" --title "Build Log evidence: ${DAY} — review required" --body "Automated public merged-PR evidence only. **NOT approved for website publication.** Review sources, applicability, and factual wording; optionally edit this draft and then run the human-gated approve script in a separate content PR. Do not claim runtime verification from a merged PR alone."

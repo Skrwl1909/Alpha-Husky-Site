@@ -1,0 +1,29 @@
+name: Build Log — schema QA
+on:
+  pull_request:
+    paths:
+      - "build-log.html"
+      - "css/build-log.css"
+      - "js/build-log.js"
+      - "data/build-log.json"
+      - "data/build-log-drafts/**"
+      - "scripts/build-log/**"
+      - ".github/workflows/build-log*.yml"
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          node --check js/build-log.js
+          node --check scripts/build-log/collect.mjs
+          node --check scripts/build-log/validate.mjs
+          node --check scripts/build-log/approve.mjs
+          node scripts/build-log/validate.mjs
+          node --test scripts/build-log/tests/*.test.mjs
