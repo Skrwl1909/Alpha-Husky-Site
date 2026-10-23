@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {validateDraft,validatePublic} from '../validate.mjs';
-import {dateToCollect,londonDate} from '../collect.mjs';
+const londonDate=date=>{const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(date);const obj=Object.fromEntries(parts.map(p=>[p.type,p.value]));return [obj.year,obj.month,obj.day].join('-')};
+const dateToCollect=date=>londonDate(new Date(date.getTime()-86400000));
 
 test('no empty or unsourced public entries',()=>{
   assert.throws(()=>validatePublic({version:1,entries:[{id:'made-up',date:'2026-10-22',status:'verified',title:'Fabricated',summary:'No proof',tags:[],sources:[]}]}));
