@@ -430,3 +430,21 @@
  .howl-ecosystem .howl-eco-footer-copy p{font-size:.96rem}
  .howl-ecosystem .howl-eco-risks{font-size:.85rem;line-height:1.6}
 }
+
+/* Premium signal network — replaces the former rectangle/arrow HOWL utility lanes. */
+.howl-network{padding-top:clamp(3rem,5vw,5.25rem)}
+.howl-network-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:2rem;align-items:end;margin-bottom:1.6rem}
+.howl-network-head h3{font-size:clamp(2.8rem,4.8vw,5rem);line-height:.97;margin:0}
+.howl-network-head h3 em{font-style:normal;color:#dbb883}
+.howl-network-head>p{font-size:1rem;line-height:1.65;color:#d5e1e5;max-width:470px;margin:0}
+.howl-network-art{display:block;isolation:isolate;position:relative;background:#07121d;border:1px solid #5c8291;box-shadow:0 24px 65px #0006}
+.howl-network-art img{display:block;width:100%;height:auto;object-fit:contain}
+.howl-network-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #4d7180;border-top:0}
+.howl-network-links a{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:62px;padding:1rem 1.25rem;color:#e6eef1;font-weight:700;font-size:.85rem;line-height:1.4;background:#0d222d}
+.howl-network-links a+a{border-left:1px solid #4d7180}
+.howl-network-links a:hover,.howl-network-links a:focus-visible{background:#193340;color:#fff}
+.howl-network-links a span{color:#dfb780;font-size:1.15rem;flex:none}
+.howl-network-foot{font-size:.8rem;color:#b7cbd3;line-height:1.6;margin:1rem 0 0}
+@media(max-width:850px){.howl-network-head{grid-template-columns:1fr;gap:1rem}.howl-network-links a{padding:.8rem;font-size:.79rem}}
+@media(max-width:720px){.howl-network-links{grid-template-columns:1fr}.howl-network-links a+a{border-left:0;border-top:1px solid #4d7180}.howl-network-links a{min-height:51px;padding:.65rem 1rem;font-size:.91rem}}
+@media(max-width:600px){.howl-network{padding-top:2rem}.howl-network-head{margin-bottom:1.15rem}.howl-network-head h3{font-size:clamp(2.55rem,10.5vw,3.6rem)}.howl-network-head>p{font-size:.96rem;line-height:1.55}.howl-network-foot{font-size:.81rem}}
