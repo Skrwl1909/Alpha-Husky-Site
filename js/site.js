@@ -50,7 +50,6 @@ const ensureBibleLink = (nav, beforeHref) => {
 ensureBibleLink(document.querySelector('.site-nav'), '/history.html');
 document.querySelectorAll('.site-footer nav').forEach(nav => ensureBibleLink(nav, '/history.html'));
 
-
 /* Build Log V1: add a single first-class link without modifying canonical history. */
 const ensureBuildLogLink = nav => {
   if (!nav || nav.querySelector('a[href="/build-log.html"]')) return;
