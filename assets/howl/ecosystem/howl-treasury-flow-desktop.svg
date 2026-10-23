@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="308" viewBox="0 0 1440 308" role="img" aria-label="HOWL Treasury flow: eligible cosmetic, HOWL payment, designated public project wallet"><defs>
+<linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#112937"/><stop offset=".62" stop-color="#0b1721"/><stop offset="1" stop-color="#17212a"/></linearGradient>
+<linearGradient id="edge" x1="0" x2="1"><stop stop-color="#69b8c5"/><stop offset=".5" stop-color="#d7a974"/><stop offset="1" stop-color="#69b8c5"/></linearGradient></defs>
+<rect x="1.5" y="1.5" width="1437" height="305" rx="12" fill="url(#surface)" stroke="#456b78" stroke-width="3"/>
+<path d="M24 14H210" stroke="url(#edge)" stroke-width="4"/><path d="M1230 294H1416" stroke="url(#edge)" stroke-width="3" opacity=".85"/>
+<g font-family="Inter,Arial,sans-serif" letter-spacing="2" font-weight="700" fill="#8cbbc8" font-size="14"><text x="36" y="48">HOWL / TREASURY SIGNAL</text></g><text x="36" y="85" font-family="Inter,Arial,sans-serif" font-size="15" fill="#d3dfe4">An optional, recorded in-game path. Not a burn. Not a trading promise.</text><g><rect x="36" y="106" width="407" height="149" rx="8" fill="#0a1822" stroke="#9bd2d9" stroke-opacity=".45" stroke-width="1.8"/>
+ <rect x="50" y="120" width="379" height="4" rx="2" fill="#9bd2d9" opacity=".43"/>
+ <text x="59" y="157" font-family="Inter,Arial,sans-serif" font-size="12" letter-spacing="2.1" fill="#9bd2d9" font-weight="700">01 / SELECT</text>
+ <text x="59" y="204" font-family="'Barlow Condensed',Arial,sans-serif" font-weight="700" font-size="31" fill="#eef2f3">VAULT ITEM</text>
+ <text x="59" y="232" font-family="Inter,Arial,sans-serif" font-size="13" fill="#b7ccd5">Eligible cosmetic</text></g><g><rect x="516" y="106" width="407" height="149" rx="8" fill="#0a1822" stroke="#e8b878" stroke-opacity=".45" stroke-width="1.8"/>
+ <rect x="530" y="120" width="379" height="4" rx="2" fill="#e8b878" opacity=".43"/>
+ <text x="539" y="157" font-family="Inter,Arial,sans-serif" font-size="12" letter-spacing="2.1" fill="#e8b878" font-weight="700">02 / PAY</text>
+ <text x="539" y="204" font-family="'Barlow Condensed',Arial,sans-serif" font-weight="700" font-size="31" fill="#eef2f3">HOWL TRANSFER</text>
+ <text x="539" y="232" font-family="Inter,Arial,sans-serif" font-size="13" fill="#b7ccd5">Verified in game</text></g><g><rect x="996" y="106" width="407" height="149" rx="8" fill="#0a1822" stroke="#9bd2d9" stroke-opacity=".45" stroke-width="1.8"/>
+ <rect x="1010" y="120" width="379" height="4" rx="2" fill="#9bd2d9" opacity=".43"/>
+ <text x="1019" y="157" font-family="Inter,Arial,sans-serif" font-size="12" letter-spacing="2.1" fill="#9bd2d9" font-weight="700">03 / RECEIVE</text>
+ <text x="1019" y="204" font-family="'Barlow Condensed',Arial,sans-serif" font-weight="700" font-size="31" fill="#eef2f3">PROJECT WALLET</text>
+ <text x="1019" y="232" font-family="Inter,Arial,sans-serif" font-size="13" fill="#b7ccd5">Public Solana address</text></g><path d="M451 184h59" stroke="#b9c4c6" stroke-width="2.2" stroke-dasharray="6 5"/><path d="m503 176 10 8-10 8" fill="none" stroke="#dcb47a" stroke-width="2.2"/><path d="M931 184h59" stroke="#b9c4c6" stroke-width="2.2" stroke-dasharray="6 5"/><path d="m983 176 10 8-10 8" fill="none" stroke="#dcb47a" stroke-width="2.2"/><text x="36" y="287" font-family="Inter,Arial,sans-serif" font-size="11" letter-spacing="1" fill="#99adb9">CHECK LIVE ITEM AVAILABILITY AND PAYMENT DESTINATION INSIDE THE GAME</text></svg>
