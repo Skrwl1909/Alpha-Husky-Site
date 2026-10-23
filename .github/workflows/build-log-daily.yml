@@ -31,6 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           BUILD_DATE: ${{ inputs.build_date }}
+          BUILD_LOG_DRY_RUN: "0"
         run: node scripts/build-log/collect.mjs
       - name: Open a draft PR for reviewed sources only
         env:
@@ -45,8 +46,8 @@ jobs:
           DATE="$(find data/build-log-drafts -maxdepth 1 -name '*.json' -printf '%f\n' | sort | tail -1)"
           DAY="${DATE%.json}"
           BRANCH="auto/build-log-${DAY}"
-          if gh pr list --head "${BRANCH}" --state open --json number --jq 'length' | grep -q '^1$'; then
-            echo "Existing draft PR for ${DAY}; no duplicate."
+          if git ls-remote --exit-code --heads origin "${BRANCH}" > /dev/null; then
+            echo "Existing remote branch for ${DAY}; reconcile manually instead of attempting duplicate branch."
             exit 0
           fi
           git config user.name "alpha-build-log-bot"
