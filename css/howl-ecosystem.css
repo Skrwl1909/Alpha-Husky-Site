@@ -344,3 +344,89 @@
 .howl-treasury-art-note{font-size:.77rem;color:#a9bec7;margin:1rem 0 0;line-height:1.5}
 @media(max-width:760px){.howl-treasury-art-head{grid-template-columns:1fr;gap:1rem}}
 @media(max-width:600px){.howl-holder-tier--art{width:83px;height:96px}.howl-core-relay-asset{width:235px}.howl-treasury-art-head h3{font-size:3rem}}
+
+/* Visual QA pass (user's phone screenshots, Oct 23, 2026): more readable mobile copy,
+   less repeated content and tighter editorial rhythm. Scoped to the HOWL section only. */
+.howl-ecosystem .howl-eco-lede p,
+.howl-ecosystem .howl-eco-signal-copy p,
+.howl-ecosystem .howl-eco-lane>p,
+.howl-ecosystem .howl-holder-proof-heading>p,
+.howl-ecosystem .howl-holder-rank-row p,
+.howl-ecosystem .howl-evidence-intro>p,
+.howl-ecosystem .howl-evidence-caption p,
+.howl-ecosystem .howl-treasury-art-head>p,
+.howl-ecosystem .howl-eco-footer-copy p {color:#d1dee4}
+.howl-ecosystem .howl-holder-steps li div>span,
+.howl-ecosystem .howl-eco-detail,
+.howl-ecosystem .howl-holder-receipt-note,
+.howl-ecosystem .howl-holder-entitlements dt,
+.howl-ecosystem .howl-evidence-footnote,
+.howl-ecosystem .howl-treasury-art-note,
+.howl-ecosystem .howl-eco-risks {color:#bed0da!important}
+.howl-ecosystem .howl-evidence-image img{filter:brightness(1.085) saturate(1.1)}
+.howl-ecosystem .howl-evidence-image::after{opacity:.34}
+@media(max-width:600px){
+ .howl-ecosystem.section{padding-block:3.2rem}
+ .howl-ecosystem .howl-eco-head{gap:1rem;margin-bottom:1.4rem}
+ .howl-ecosystem .howl-eco-head h2{font-size:clamp(2.75rem,11.5vw,4.25rem)}
+ .howl-ecosystem .howl-eco-lede{padding-left:1rem}
+ .howl-ecosystem .howl-eco-lede p{font-size:.98rem;line-height:1.55}
+ .howl-ecosystem .howl-eco-signal--core{gap:.75rem;padding:1.1rem}
+ .howl-ecosystem .howl-core-visual{height:188px}
+ .howl-ecosystem .howl-eco-signal--core .howl-eco-signal-copy h3{font-size:clamp(2rem,9.2vw,3.05rem);margin-bottom:.65rem}
+ .howl-ecosystem .howl-eco-signal--core .howl-eco-signal-copy p{font-size:.97rem;line-height:1.55}
+ .howl-ecosystem .howl-core-flags{gap:.38rem;margin-top:.95rem}
+ .howl-ecosystem .howl-core-flags span{font-size:.7rem;padding:.4rem .5rem;letter-spacing:.055em;color:#e2eef1}
+ .howl-ecosystem .howl-core-readout{display:none}
+ .howl-ecosystem .howl-eco-quicknav a{min-height:51px;padding:.5rem .9rem}
+ .howl-ecosystem .howl-eco-quicknav a span:first-child{font-size:.66rem;color:#e1bd89}
+ .howl-ecosystem .howl-eco-quicknav a strong{font-size:1.3rem}
+ .howl-ecosystem .howl-eco-bridge{min-height:52px}
+ .howl-ecosystem .howl-eco-bridge span{font-size:.65rem;letter-spacing:.105em;padding:.36rem .72rem}
+ .howl-ecosystem .howl-eco-rails{gap:.7rem}
+ .howl-ecosystem .howl-eco-lane{min-height:0;padding:1.3rem}
+ .howl-ecosystem .howl-eco-lane-top{padding-bottom:.85rem}
+ .howl-ecosystem .howl-eco-index{font-size:.73rem}
+ .howl-ecosystem .howl-eco-lane-kind{font-size:.69rem;color:#c1d0d6}
+ .howl-ecosystem .howl-eco-lane h4{font-size:clamp(2rem,9vw,2.65rem);margin:1.05rem 0 .7rem}
+ .howl-ecosystem .howl-eco-lane>p{font-size:.97rem;line-height:1.55;margin-bottom:.8rem}
+ .howl-ecosystem .howl-eco-flow{margin-top:.45rem;padding-top:.8rem;gap:.4rem}
+ .howl-ecosystem .howl-eco-flow span{font-size:.79rem;color:#eaf2f3}
+ .howl-ecosystem .howl-eco-detail{font-size:.86rem!important;line-height:1.55!important;margin-top:.85rem!important}
+ .howl-ecosystem .howl-holder-proof{margin-top:2.7rem;padding-top:1.4rem}
+ .howl-ecosystem .howl-holder-proof-heading{gap:.8rem;margin-bottom:1.25rem}
+ .howl-ecosystem .howl-holder-proof-heading h3{font-size:clamp(2.6rem,10.8vw,3.55rem)}
+ .howl-ecosystem .howl-holder-proof-heading>p{font-size:.97rem;line-height:1.55}
+ .howl-ecosystem .howl-holder-proof-stage{gap:.75rem}
+ .howl-ecosystem .howl-holder-receipt{padding:1.2rem}
+ .howl-ecosystem .howl-holder-receipt-top{padding-bottom:1rem}
+ .howl-ecosystem .howl-holder-rank-row{padding:1.2rem 0}
+ .howl-ecosystem .howl-holder-rank-title{font-size:2.15rem}
+ .howl-ecosystem .howl-holder-rank-row p{font-size:.86rem}
+ .howl-ecosystem .howl-holder-entitlements>div{padding:.72rem 0}
+ .howl-ecosystem .howl-holder-entitlements dt,.howl-ecosystem .howl-holder-entitlements dd{font-size:.87rem}
+ .howl-ecosystem .howl-holder-receipt-note{font-size:.82rem;margin-top:1.1rem}
+ .howl-ecosystem .howl-holder-story{min-height:0;padding:1.25rem}
+ .howl-ecosystem .howl-holder-story-intro p{font-size:1.48rem;margin:.75rem 0 1.45rem}
+ .howl-ecosystem .howl-holder-steps{margin-bottom:1.4rem}
+ .howl-ecosystem .howl-holder-steps li{padding-bottom:1.15rem}
+ .howl-ecosystem .howl-holder-steps li strong{font-size:.96rem}
+ .howl-ecosystem .howl-holder-steps li div>span{font-size:.87rem;line-height:1.5}
+ .howl-ecosystem .howl-holder-no-power span{font-size:.87rem;color:#e4d8ce}
+ .howl-ecosystem .howl-evidence{margin-top:2.9rem;padding-top:1.35rem}
+ .howl-ecosystem .howl-evidence-intro{gap:.8rem;margin-bottom:1.2rem}
+ .howl-ecosystem .howl-evidence-intro h3{font-size:clamp(2.85rem,10.5vw,3.75rem)}
+ .howl-ecosystem .howl-evidence-intro>p{font-size:.97rem;line-height:1.55}
+ .howl-ecosystem .howl-evidence-caption p{font-size:.94rem;line-height:1.55}
+ .howl-ecosystem .howl-evidence-footnote{font-size:.84rem}
+ .howl-ecosystem .howl-treasury-art{margin:2.8rem 0 1.3rem;padding-top:1.3rem}
+ .howl-ecosystem .howl-treasury-art-head h3{font-size:clamp(2.6rem,10.5vw,3.55rem)}
+ .howl-ecosystem .howl-treasury-art-head>p{font-size:.94rem;line-height:1.55}
+ .howl-ecosystem .howl-eco-results{display:none}
+ .howl-ecosystem .howl-eco-proof{margin-top:1.6rem;padding-block:1.05rem;display:grid;grid-template-columns:1fr 1fr;gap:.55rem}
+ .howl-ecosystem .howl-eco-proof span{font-size:.7rem;line-height:1.5;letter-spacing:.035em}
+ .howl-ecosystem .howl-eco-footer{padding-top:1.55rem;gap:1.1rem}
+ .howl-ecosystem .howl-eco-footer-copy h3{font-size:2.15rem}
+ .howl-ecosystem .howl-eco-footer-copy p{font-size:.96rem}
+ .howl-ecosystem .howl-eco-risks{font-size:.85rem;line-height:1.6}
+}
