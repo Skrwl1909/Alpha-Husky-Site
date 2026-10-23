@@ -1,4 +1,4 @@
-import { chromium } from 'playwright';
+import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 
@@ -6,7 +6,7 @@ const base = process.env.QA_BASE_URL ?? 'http://127.0.0.1:8765/';
 const widths = [360, 390, 768, 1440];
 const issues = [], records = [];
 fs.mkdirSync('qa-artifacts', {recursive:true});
-const browser = await chromium.launch({headless:true});
+const browser = await chromium.launch({headless:true, executablePath:process.env.QA_CHROMIUM_EXECUTABLE ?? '/usr/bin/google-chrome', args:['--no-sandbox']});
 try {
   for (const width of widths) {
     const page = await browser.newPage({viewport:{width,height:900},deviceScaleFactor:1});
@@ -68,6 +68,27 @@ try {
       if(!visible)issues.push({width,name:'proof navigation scrolls to holder'});
     }
     await page.screenshot({path:'qa-artifacts/site-'+width+'.png',fullPage:true,animations:'disabled'});
+    await page.close();
+  }
+  // Full-site smoke: all user-facing static routes at representative mobile width.
+  for (const route of ['bible.html','contact.html','cookies.html','eclipse-event.html','history.html','howloween.html','lore.html','privacy.html','terms.html']) {
+    const page=await browser.newPage({viewport:{width:390,height:850}});
+    const pageErrors=[];
+    page.on('pageerror',e=>pageErrors.push(String(e)));
+    const response=await page.goto(new URL(route,base).toString(),{waitUntil:'domcontentloaded',timeout:30000});
+    await page.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=850){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,12))}window.scrollTo(0,0)});
+    await page.waitForTimeout(200);
+    const data=await page.evaluate(()=>{
+      const ids=[...document.querySelectorAll('[id]')].map(x=>x.id);
+      const hrefs=[...document.querySelectorAll('a[href^="#"]')].map(x=>x.getAttribute('href')).filter(x=>x!=='#');
+      return {overflow:Math.max(document.documentElement.scrollWidth,document.body.scrollWidth)-document.documentElement.clientWidth,
+       brokenImages:[...document.querySelectorAll('img')].filter(x=>!x.complete||x.naturalWidth===0).map(x=>x.src),
+       duplicateIds:ids.filter((id,i)=>ids.indexOf(id)!==i),
+       brokenAnchors:hrefs.filter(x=>!ids.includes(x.slice(1)))};
+    });
+    const checks={httpOk:response.status()===200,noHorizontalOverflow:data.overflow<=2,imagesLoaded:data.brokenImages.length===0,noDuplicateIds:data.duplicateIds.length===0,noMissingAnchors:data.brokenAnchors.length===0,noPageErrors:pageErrors.length===0};
+    records.push({route,width:390,checks,data,pageErrors});
+    for(const [name,pass] of Object.entries(checks))if(!pass)issues.push({route,width:390,name,data});
     await page.close();
   }
 } finally { await browser.close(); }
