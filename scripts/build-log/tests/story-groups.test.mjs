@@ -1,0 +1,5 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {buildStoryCandidates} from '../story-groups.mjs';
+const ps=[{repository:'Skrwl1909/alpha-husky-webapp',pr_number:168,url:'https://github.com/Skrwl1909/alpha-husky-webapp/pull/168',title:'Tactical combat counterplay'},{repository:'Skrwl1909/alpha-husky-webapp',pr_number:169,url:'https://github.com/Skrwl1909/alpha-husky-webapp/pull/169',title:'Tactical S3 consequences'},{repository:'Skrwl1909/Alpha-Husky-Site',pr_number:12,url:'https://github.com/Skrwl1909/Alpha-Husky-Site/pull/12',title:'Lore epilogue'},{repository:'Skrwl1909/Alpha-Husky-Site',pr_number:99,url:'https://github.com/Skrwl1909/Alpha-Husky-Site/pull/99',title:'Minor generic cleanup'}];
+test('related tactical PRs one candidate, lore separate, unrelated kept separate',()=>{const rows=buildStoryCandidates(ps);assert.equal(rows.find(r=>r.id==='tactical-ops').source_count,2);assert.equal(rows.find(r=>r.id==='lore').source_count,1);assert.equal(rows.filter(r=>r.category==='needs-triage').length,1);assert.ok(rows.every(r=>r.review_state==='pending'&&r.editorial.title===null));});
