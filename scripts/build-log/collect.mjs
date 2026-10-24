@@ -5,6 +5,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import {buildStoryCandidates} from './story-groups.mjs';
 
 const repos=['Skrwl1909/alpha-husky-webapp','Skrwl1909/Alpha-Husky-Site'];
 const timestamp=new Date();
@@ -53,6 +54,7 @@ const result={
   status:'implemented',
   review_state:'pending',
   evidence,
+  story_candidates:buildStoryCandidates(evidence),
   editorial:{title:null,summary:null},
   note:'Merged code only. No runtime or device verification asserted. Review required before any public entry.'
 };
