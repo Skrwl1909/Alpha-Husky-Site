@@ -31,6 +31,7 @@ jobs:
       - run: |
           node --check js/build-log.js
           node --check scripts/build-log/collect.mjs
+          node --check scripts/build-log/story-groups.mjs
           node --check scripts/build-log/validate.mjs
           node --check scripts/build-log/approve.mjs
           node scripts/build-log/validate.mjs
