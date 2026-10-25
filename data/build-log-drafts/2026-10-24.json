@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "collected_at": "2026-10-25T13:10:48.688Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 178,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/178",
+      "merged_at": "2026-10-23T23:23:50Z",
+      "merge_sha": "0cc8585d1978f8d1bc51697fe4b07dca20cbdad9",
+      "title": "Tactical 10×7 standard — accepted Foundation contract integration (backend gate)"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 180,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/180",
+      "merged_at": "2026-10-24T15:36:02Z",
+      "merge_sha": "cbdf6166107c5184e315c987b77800ee8135936d",
+      "title": "fix(tactical): Foundation 10×7 backend-accepted handshake"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 183,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/183",
+      "merged_at": "2026-10-24T19:43:25Z",
+      "merge_sha": "e85b67956e87edc90a902875c77b41ea06261639",
+      "title": "ui(tactical): move status and objective HUD out of 10×7 battlefield"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 170,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/170",
+      "merged_at": "2026-10-24T21:05:34Z",
+      "merge_sha": "745a006b379b7ad70d89302c2669ca1957ff915d",
+      "title": "S3 receipt-truth closure — match run/mission and preserve Intel uncertainty"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 185,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/185",
+      "merged_at": "2026-10-24T21:40:25Z",
+      "merge_sha": "8d23f8b8ae2a7f686c21e21dcefaf79222c05a37",
+      "title": "polish(tactical): Combat FX readability P1 — soften AoE and impact overlays"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 186,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/186",
+      "merged_at": "2026-10-24T22:35:35Z",
+      "merge_sha": "d69cce92ac39c200e0f14e0f6097d129092ab054",
+      "title": "polish(tactical): Combat FX action identity P2 — all 17 atlases, mobile-safe"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
