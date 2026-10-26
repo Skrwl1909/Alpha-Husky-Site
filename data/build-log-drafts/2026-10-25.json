@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-25",
+  "collected_at": "2026-10-26T15:10:44.073Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 187,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/187",
+      "merged_at": "2026-10-25T00:10:41Z",
+      "merge_sha": "662da18b931be20a5814cfb08d5fc5897582729f",
+      "title": "WIP Tactical Combat Contact P3 — physical hit response, not full choreography"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 188,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/188",
+      "merged_at": "2026-10-25T00:24:01Z",
+      "merge_sha": "8659f19beda6ad509b40ad3578756a7c3e2e6292",
+      "title": "polish(tactical): S4 single-actor choreography and truthful support actions"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 189,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/189",
+      "merged_at": "2026-10-25T00:41:45Z",
+      "merge_sha": "a6489dfca9b212dfdfbabab3a3c36062816c25ae",
+      "title": "polish(tactical): S4 contact timing — feedback at physical impact"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 190,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/190",
+      "merged_at": "2026-10-25T08:30:44Z",
+      "merge_sha": "1b7d7d403f5bafe7fe168481efcd5f87c0adaeab",
+      "title": "polish(tactical): S5 HP bars follow confirmed impact events"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 191,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/191",
+      "merged_at": "2026-10-25T09:24:29Z",
+      "merge_sha": "54b95ff7267056714c596d4431b661b15e3415d5",
+      "title": "feat(tactical): S6 confirmed enemy attack identity — melee, heavy, ranged, jam"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 192,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/192",
+      "merged_at": "2026-10-25T09:37:59Z",
+      "merge_sha": "aa1b544ef6e2c2592a55f4ad38e1cb24b99e30fb",
+      "title": "feat(tactical): S7 verified combat consequences — finish, guard, counter"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 194,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/194",
+      "merged_at": "2026-10-25T10:07:08Z",
+      "merge_sha": "1c7e5d9d53c5d8d4c49654fa159a9664d301b9dc",
+      "title": "polish(tactical): S8 final visual cohesion — synchronized contact, hierarchy, mobile readability"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 195,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/195",
+      "merged_at": "2026-10-25T10:25:22Z",
+      "merge_sha": "dc0a067f6b481b9d0457824baca70e011d89f101",
+      "title": "feat(tactical): S9A campaign orders — real goals, front priorities and persistent career"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 197,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/197",
+      "merged_at": "2026-10-25T12:48:14Z",
+      "merge_sha": "579eb7a0f7a9dee58a75ab332904ef1df437a277",
+      "title": "feat(tactical): S9B doctrine chapter contract — three paths, verified progression model"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
