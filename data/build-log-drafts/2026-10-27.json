@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "collected_at": "2026-10-28T15:05:38.390Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 203,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/203",
+      "merged_at": "2026-10-27T13:53:35Z",
+      "merge_sha": "1dc60ecee6feb35d30b82fc495507fceb3c82e79",
+      "title": "Release Tactical G1 + Battlefield P5 to the Telegram WebApp"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 205,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/205",
+      "merged_at": "2026-10-27T21:56:05Z",
+      "merge_sha": "0e233d63b915003911383131008a4886dc6624e8",
+      "title": "fix(tactical): player-first objectives and foundation combat guidance"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 204,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/204",
+      "merged_at": "2026-10-27T23:29:04Z",
+      "merge_sha": "fba1d8bd926209e39f67507a384a9b0b4b58afb3",
+      "title": "Test four-direction Alpha on the battlefield"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
