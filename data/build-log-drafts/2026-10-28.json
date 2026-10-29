@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "collected_at": "2026-10-29T15:12:59.558Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 206,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/206",
+      "merged_at": "2026-10-28T10:10:10Z",
+      "merge_sha": "e9e098b2d74cd57ff172aed8eac07950f1f8c54b",
+      "title": "feat(tactical): premium threat projections and source-to-target tethers"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 207,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/207",
+      "merged_at": "2026-10-28T14:38:07Z",
+      "merge_sha": "dbb9e33f92ba755afdf4cf6dfc1eb11b61ad155c",
+      "title": "fix(tactical): surface real Skillbook purchase HTTP errors"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 208,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/208",
+      "merged_at": "2026-10-28T17:06:14Z",
+      "merge_sha": "46fc61eec5a8b5069129ec2e1078ff4e6faec7ca",
+      "title": "fix(tactical): reject mismatched accepted mission before VNext battlefield boot"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
