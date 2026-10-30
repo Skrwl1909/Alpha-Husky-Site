@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "collected_at": "2026-10-30T15:01:52.860Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 209,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/209",
+      "merged_at": "2026-10-29T08:09:34Z",
+      "merge_sha": "fb284197752d1ae32a819c1e24b2e45f223605b7",
+      "title": "fix(tactical): readable mobile objectives and RECOVER command"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 210,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/210",
+      "merged_at": "2026-10-29T12:05:43Z",
+      "merge_sha": "a3e93a0f41cf22cec9fc30ff2052847662cf9f7c",
+      "title": "feat(tactical): make Signal Atlas the official Skillbook"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 211,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/211",
+      "merged_at": "2026-10-29T14:40:01Z",
+      "merge_sha": "8db3528a2b672a373505080f80704d3c1f646025",
+      "title": "fix(tactical): close V1 Atlas run-lock and duplicate-error blockers"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
