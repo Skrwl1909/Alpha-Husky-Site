@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "collected_at": "2026-10-31T14:30:43.450Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 212,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/212",
+      "merged_at": "2026-10-30T07:13:01Z",
+      "merge_sha": "a24dc6a9aae39dbb700a205f5ebfb9bdabe37173",
+      "title": "feat(tactical): one next mission and meaningful return for V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 213,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/213",
+      "merged_at": "2026-10-30T14:23:15Z",
+      "merge_sha": "555f4062efcc552a0b1fbdd2e2a338c08c3524c5",
+      "title": "feat(tactical): Relay Mastery unlocks optional Relay Lockdown — DEPTH 01"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 214,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/214",
+      "merged_at": "2026-10-30T23:14:19Z",
+      "merge_sha": "ca608115de6b2023a1995dea7170e0d52fedbdc7",
+      "title": "fix(tactical): AAA real-device brief and results clarity — DEPTH 01.1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 215,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/215",
+      "merged_at": "2026-10-30T23:29:09Z",
+      "merge_sha": "8e448e9155534d7dc2a3982e38ded00e378c0137",
+      "title": "fix(tactical): premium mobile target optics instead of white target boxes"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
