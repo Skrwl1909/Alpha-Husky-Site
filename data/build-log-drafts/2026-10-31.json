@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "collected_at": "2026-11-01T15:05:43.699Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 216,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/216",
+      "merged_at": "2026-10-31T09:08:28Z",
+      "merge_sha": "ce250687554f4335f9300c715319eb6bbe99186c",
+      "title": "Tactical Ops AAA clarity: concise Brief, permanent COMMAND records & calmer battlefield"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 217,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/217",
+      "merged_at": "2026-10-31T10:10:43Z",
+      "merge_sha": "5b4f1cf782551282db03dd5856f55a4433a5bd04",
+      "title": "DEPTH 02: choose Anchor or Crosslink before Relay Lockdown"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 218,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/218",
+      "merged_at": "2026-10-31T10:56:35Z",
+      "merge_sha": "d7d012b42be72b16e5e76a5eb104e80450a57f1a",
+      "title": "Relay Sentinel: catalog-driven Badge Wall art and existing ownership flow"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 219,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/219",
+      "merged_at": "2026-10-31T14:43:23Z",
+      "merge_sha": "9b36eae4169489fe4b807c7fc14ece376bc79a63",
+      "title": "Progression Depth V2: Veteran Commander and Pack Mastery"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 220,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/220",
+      "merged_at": "2026-10-31T18:09:12Z",
+      "merge_sha": "040831f33c34c1a1b02b282215097b0f8f4c0e1d",
+      "title": "Tactical Intercept: screened escape and tracking counterplay"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
