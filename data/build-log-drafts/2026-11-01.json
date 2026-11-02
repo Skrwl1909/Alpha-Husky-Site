@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-01",
+  "collected_at": "2026-11-02T18:19:58.047Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 224,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/224",
+      "merged_at": "2026-11-01T12:34:29Z",
+      "merge_sha": "b62f0e7aef0a7f9fc525ff81edec10b66ec13010",
+      "title": "Tactical Ops: cinematic, receipt-confirmed Field Op aftermath"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 225,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/225",
+      "merged_at": "2026-11-01T13:50:16Z",
+      "merge_sha": "ed6dc6101d8a37be18dc44ea55319fde81b10243",
+      "title": "Tactical Ops: compact special Results and reliable Vercel Preview assets"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 223,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/223",
+      "merged_at": "2026-11-01T13:54:17Z",
+      "merge_sha": "281335d26b5fbdc83977de869edab74c222fe1ab",
+      "title": "Tactical Ops Premium UX — consolidated Brief, Results & Cinematic Aftermath"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 221,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/221",
+      "merged_at": "2026-11-01T13:54:19Z",
+      "merge_sha": "62ebdca0f1985df9a029b4cb43d43fd0497e82b7",
+      "title": "fix(tactical): veteran reward truth, lean Recovery brief & pet overlay"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 222,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/222",
+      "merged_at": "2026-11-01T13:54:19Z",
+      "merge_sha": "62ebdca0f1985df9a029b4cb43d43fd0497e82b7",
+      "title": "Field Op Results: premium receipt-truthful mobile summary"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 226,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/226",
+      "merged_at": "2026-11-01T15:57:14Z",
+      "merge_sha": "953ce77ca8e99542acab2aec6397b8ad8887d43f",
+      "title": "Tactical Ops PHASE 05 — Premium War Table Command Deck + Missions"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 227,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/227",
+      "merged_at": "2026-11-01T19:42:07Z",
+      "merge_sha": "a730855925505bd6ddfbcecab389fce55e65918d",
+      "title": "Tactical Ops — restore meaningful next mission after completed Relay Lockdown"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
