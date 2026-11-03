@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "review_state": "assets_pending_upload",
+  "review_state": "assets_committed_in_open_pr",
   "capture_dates": "unverified",
   "source": "Eight original screenshots supplied by project founder in ChatGPT conversation on 2026-11-03",
-  "publication_gate": "Visuals are displayed only after their authentic optimized WebP assets are uploaded to the PR branch and the founder merges the PR. Unverified dates must remain explicit in the UI.",
+  "publication_gate": "Eight source images are committed to the open PR; review screenshot privacy and undated comparisons before merging. PR presence is not production deployment.",
   "groups": [
     {
       "id": "map",
@@ -119,5 +119,5 @@
     "complete chronological ordering",
     "independent game functionality verification from a static image"
   ],
-  "notes": "SHA256 values are 16-character prefixes here; full hashes and source JPEGs are in the founder-held visual evidence ZIP, which is intentionally not part of the website until publication review."
+  "notes": "Eight authentic optimized WebP screenshots are in assets/proof-of-building/ on the feature branch. Source originals and full SHA-256 hashes are preserved in the founder-held evidence ZIP."
 }
