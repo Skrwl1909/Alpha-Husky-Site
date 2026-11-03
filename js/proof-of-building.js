@@ -19,6 +19,27 @@ document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click'
 if(last)inspect(last);$('#proof-updated').textContent=d.generated_at;
 for(const p of d.evolution){const card=el('article','proof-card');card.append(el('small','',p.label),el('h3','',p.title),el('p','',p.description));const l=link(p.url,'Explore the '+p.evidence+' ↗');if(l)card.append(l);$('#proof-evolution').append(card)}
 for(const p of d.milestones){const card=el('article','proof-milestone'),stamp=el('time','',present(p.date)),body=el('div');stamp.dateTime=p.date;body.append(el('h3','',p.title),el('p','',p.description),el('span','proof-proof-tag',p.status+' source · '));const l=link(p.url,'Inspect evidence ↗');if(l)body.append(l);card.append(stamp,body);$('#proof-milestones').append(card)}
+try{
+const visualResponse=await fetch('/data/proof-visuals-review.json',{cache:'no-store'});
+if(!visualResponse.ok)throw Error('Visual evidence register unavailable');
+const visuals=await visualResponse.json(), gallery=$('#proof-visual-gallery');
+if(visuals.schema_version!==1||!Array.isArray(visuals.groups))throw Error('Visual evidence register invalid');
+const groupCopy={
+map:'Regions Map — authentic interface states, not a verified release sequence.',
+navigation:'Navigation — from character-centred menus to the dedicated Hub.',
+gameplay:'Historical game interfaces. No matched modern gameplay capture is asserted.'
+};
+for(const group of visuals.groups){
+const section=el('section','proof-visual-group'),heading=el('h4','',group.title),intro=el('p','',groupCopy[group.id]||'Historical interface screenshots');
+const cards=el('div','proof-visual-cards');section.append(heading,intro,cards);
+for(const item of group.items||[]){
+if(!/^[a-z0-9-]+$/.test(item.id))continue;
+const card=el('figure','proof-visual-card'),img=el('img','proof-visual-image');img.src='/assets/proof-of-building/'+item.id+'.webp';img.alt='Historical Alpha Husky Telegram WebApp screenshot — '+item.role;img.loading='lazy';img.decoding='async';img.width=300;img.onerror=()=>{card.hidden=true};
+const caption=el('figcaption',''),label=el('strong','',item.role),sub=el('span','','Capture date unverified · original '+item.original);caption.append(label,sub);card.append(img,caption);cards.append(card)
+}
+gallery.append(section)
+}
+}catch(galleryError){console.warn('Historical images unavailable:',galleryError.message)}
 status.textContent='';
 }catch(e){status.textContent='Proof records are temporarily unavailable. You can still inspect the original Build History and GitHub repositories using the links below.';detail.textContent='No unverified activity is displayed.';console.error('Proof of Building unavailable:',e.message)}
 })();
