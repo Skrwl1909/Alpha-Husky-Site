@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "review_state": "assets_pending_upload",
+  "capture_dates": "unverified",
+  "source": "Eight original screenshots supplied by project founder in ChatGPT conversation on 2026-11-03",
+  "publication_gate": "Do not display images from this registry until the corresponding authentic WebP assets are uploaded, original source review is complete, and consent for public publication is confirmed.",
+  "groups": [
+    {
+      "id": "map",
+      "title": "Regions Map — interface evolution",
+      "items": [
+        {
+          "id": "map-legacy",
+          "original": "17377.jpg",
+          "role": "legacy map modal",
+          "sha256": "602edb5cd0861ac5"
+        },
+        {
+          "id": "map-expanded",
+          "original": "19187.jpg",
+          "role": "expanded map and activity strip",
+          "sha256": "80f9d203efd32559"
+        },
+        {
+          "id": "map-activity",
+          "original": "19299.jpg",
+          "role": "compact reward CTA and differentiated nodes",
+          "sha256": "aa493d884ea6286b"
+        }
+      ]
+    },
+    {
+      "id": "navigation",
+      "title": "Dashboard and Hub — navigation evolution",
+      "items": [
+        {
+          "id": "navigation-legacy",
+          "original": "17530.jpg",
+          "role": "character-centred vertical navigation",
+          "sha256": "e3edcc88a8dbad6e"
+        },
+        {
+          "id": "dashboard-expanded",
+          "original": "18555.jpg",
+          "role": "expanded character-centred navigation",
+          "sha256": "8087c937295d90c6"
+        },
+        {
+          "id": "navigation-hub",
+          "original": "18952.jpg",
+          "role": "organised two-column Hub menu",
+          "sha256": "dac04a7ceaf91f2f"
+        }
+      ]
+    },
+    {
+      "id": "gameplay",
+      "title": "Historical gameplay and character interface",
+      "items": [
+        {
+          "id": "combat-moon-lab",
+          "original": "18546.jpg",
+          "role": "text-based Moon Lab combat",
+          "sha256": "8e3cbd018b04199a"
+        },
+        {
+          "id": "character-menu",
+          "original": "18817.jpg",
+          "role": "Character panel navigation",
+          "sha256": "52e950134d58ccc0"
+        }
+      ]
+    }
+  ],
+  "asset_path": "assets/proof-of-building/<id>.webp",
+  "claims_not_supported": [
+    "precise capture dates",
+    "production ship date for each pictured feature",
+    "complete chronological ordering",
+    "independent game functionality verification from a static image"
+  ],
+  "notes": "SHA256 values are 16-character prefixes here; full hashes and source JPEGs are in the founder-held visual evidence ZIP, which is intentionally not part of the website until publication review."
+}
