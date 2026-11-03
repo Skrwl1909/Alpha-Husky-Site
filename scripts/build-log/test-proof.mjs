@@ -18,4 +18,17 @@ for(const x of d.milestones){assert.ok(date(x.date));assert.ok(['merged','archiv
 for(const x of d.evolution)assert.ok(x.url.startsWith('/history.html')||x.url.startsWith('https://github.com/Skrwl1909/'));
 const page=fs.readFileSync('proof-of-building.html','utf8'),index=fs.readFileSync('index.html','utf8');
 const history=fs.readFileSync('history.html','utf8');for(const x of ar)assert.ok(history.includes('id="archive-'+x.date+'"'),'Unresolvable archive date '+x.date);assert.match(page,/id="proof-heatmap"/);assert.match(page,/id="proof-milestones"/);assert.match(page,/id="proof-evolution"/);assert.match(index,/href="\/proof-of-building.html"/);
+const v=JSON.parse(fs.readFileSync('data/proof-visuals-review.json','utf8'));
+assert.equal(v.schema_version,1);
+assert.equal(v.groups.length,3);
+let imageCount=0;
+for(const group of v.groups){for(const item of group.items){
+assert.match(item.id,/^[a-z0-9-]+$/);
+assert.match(item.original,/^[0-9]+\\.jpg$/);
+assert.ok(fs.statSync('assets/proof-of-building/'+item.id+'.webp').size>1000,'Missing actual image asset: '+item.id);
+imageCount++;
+}}
+assert.equal(imageCount,8);
+assert.match(page,/id="proof-visual-gallery"/);
+console.log('Visual source images PASS:',imageCount);
 console.log('Proof of Building evidence consistency PASS:',d.github.merged_pr_count,'PRs,',d.archive.entry_count,'archive entries');
