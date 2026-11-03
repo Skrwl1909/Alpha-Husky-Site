@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - "index.html"
+      - "proof-of-building.html"
+      - "data/proof-of-building.json"
+      - "scripts/build-log/test-proof.mjs"
       - "css/**"
       - "js/**"
       - "assets/**"
@@ -19,6 +22,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Validate Proof of Building evidence
+        run: |
+          node --check js/proof-of-building.js
+          node scripts/build-log/test-proof.mjs
       - name: Install lean Playwright library and use runner Chrome
         run: |
           which google-chrome
