@@ -24,7 +24,7 @@ assert.equal(v.groups.length,3);
 let imageCount=0;
 for(const group of v.groups){for(const item of group.items){
 assert.match(item.id,/^[a-z0-9-]+$/);
-assert.match(item.original,/^[0-9]+\\.jpg$/);
+assert.match(item.original,/^[0-9]+\.jpg$/);
 assert.ok(fs.statSync('assets/proof-of-building/'+item.id+'.webp').size>1000,'Missing actual image asset: '+item.id);
 imageCount++;
 }}
