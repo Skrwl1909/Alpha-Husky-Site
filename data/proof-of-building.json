@@ -1,0 +1,1236 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-03",
+  "scope": "Public merged GitHub PRs in the two repos; archived, dated development notes in Alpha-Husky-Site/history.html",
+  "timezone": "UTC for merged PR dates; as published for archived development notes",
+  "github": {
+    "repositories": [
+      "Skrwl1909/alpha-husky-webapp",
+      "Skrwl1909/Alpha-Husky-Site"
+    ],
+    "merged_pr_count": 220,
+    "days": [
+      {
+        "date": "2026-09-16",
+        "merged_prs": 1,
+        "site_prs": 0,
+        "game_prs": 1,
+        "samples": [
+          {
+            "title": "UI/tactical ops compact hud",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/4"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-22",
+        "merged_prs": 2,
+        "site_prs": 0,
+        "game_prs": 2,
+        "samples": [
+          {
+            "title": "Fix stat allocation click regression",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/5"
+          },
+          {
+            "title": "Moon Lab Visual Polish V2",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/6"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-23",
+        "merged_prs": 2,
+        "site_prs": 0,
+        "game_prs": 2,
+        "samples": [
+          {
+            "title": "Polish Chain Gate and Recovery Wheel",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/7"
+          },
+          {
+            "title": "Standard Missions: verified consequence receipt P0",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/8"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-24",
+        "merged_prs": 1,
+        "site_prs": 0,
+        "game_prs": 1,
+        "samples": [
+          {
+            "title": "feat: rebuild Phantom Node as Live Front presentation",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/9"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-25",
+        "merged_prs": 3,
+        "site_prs": 3,
+        "game_prs": 0,
+        "samples": [
+          {
+            "title": "Premium game-first rebuild of Alpha Husky site",
+            "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/1"
+          },
+          {
+            "title": "Show four factions in the game section",
+            "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/2"
+          },
+          {
+            "title": "Restore external HOWL listings and verification cards",
+            "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/3"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-26",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "Build Adoption Center V2 companion gallery",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/10"
+          },
+          {
+            "title": "World Map V2: spatial WORLD → REGION → POI",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/11"
+          },
+          {
+            "title": "Fix Map V2 POI activity opening",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/12"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-27",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "Polish Map V2 POI hierarchy and anchoring",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/13"
+          },
+          {
+            "title": "Faction HQ V3 P0 — living HQ hierarchy",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/14"
+          },
+          {
+            "title": "Faction HQ V3 — premium command center final pass",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/15"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-29",
+        "merged_prs": 1,
+        "site_prs": 0,
+        "game_prs": 1,
+        "samples": [
+          {
+            "title": "Fix Howlboard hub routing and duplicate load",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/16"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-30",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "Tactical Ops v2.9 — playable loop UX pass",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/17"
+          },
+          {
+            "title": "Tactical Ops v2.9 — ship runtime bundle",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/18"
+          },
+          {
+            "title": "Recover Actionable Frontline Echo P0",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/20"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-01",
+        "merged_prs": 6,
+        "site_prs": 0,
+        "game_prs": 6,
+        "samples": [
+          {
+            "title": "Fix Frontline Echo backend contract integration",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/21"
+          },
+          {
+            "title": "Living World: Pack Response P0",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/22"
+          },
+          {
+            "title": "Tactical Ops v3.0A — Rotation Spine + Progression Clarity",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/23"
+          },
+          {
+            "title": "Living World: Reactive World Map P0",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/24"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-02",
+        "merged_prs": 8,
+        "site_prs": 0,
+        "game_prs": 8,
+        "samples": [
+          {
+            "title": "Faction Identity & Initiation V1 — Signal Chamber",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/27"
+          },
+          {
+            "title": "Faction HQ Premium P0 — Echo Wardens Living HQ",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/28"
+          },
+          {
+            "title": "Fix Faction Signal bind payload — canonical faction slug",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/29"
+          },
+          {
+            "title": "Echo Wardens HQ P0.1 — composition polish",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/30"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-03",
+        "merged_prs": 5,
+        "site_prs": 0,
+        "game_prs": 5,
+        "samples": [
+          {
+            "title": "Faction HQ — fix bottom dock clearance on FRONT / PACK",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/35"
+          },
+          {
+            "title": "Faction HQ Runtime Integration V2 — final four-faction composition",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/36"
+          },
+          {
+            "title": "Faction HQ — restore build loop + Layered HQ Growth V1",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/37"
+          },
+          {
+            "title": "Fix Faction HQ Support sheet input on Living HQ",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/38"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-04",
+        "merged_prs": 4,
+        "site_prs": 0,
+        "game_prs": 4,
+        "samples": [
+          {
+            "title": "Tactical Ops v3.1.1 — real-device premium combat polish",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/40"
+          },
+          {
+            "title": "Faction HQ — wire Rogue Byte LV1/LV3/LV4/LV6 progression art",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/41"
+          },
+          {
+            "title": "Faction HQ — add hidden five-tap Rogue Byte visual selector trigger",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/42"
+          },
+          {
+            "title": "Faction HQ — harden Rogue Byte five-tap selector trigger",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/43"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-05",
+        "merged_prs": 5,
+        "site_prs": 0,
+        "game_prs": 5,
+        "samples": [
+          {
+            "title": "Phantom Node compact premium UI pass",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/44"
+          },
+          {
+            "title": "Phantom Node final premium mobile pass",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/45"
+          },
+          {
+            "title": "Faction HQ Pack Presence P0",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/46"
+          },
+          {
+            "title": "Lunar World Director P0-B — Hub + World Map",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/47"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-06",
+        "merged_prs": 4,
+        "site_prs": 1,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "Lunar World Director P0-C — HQ + Oracle + Blood Moon",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/49"
+          },
+          {
+            "title": "Oracle mobile scroll follow-up",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/50"
+          },
+          {
+            "title": "Faction HQ: back navigation + living lunar state",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/51"
+          },
+          {
+            "title": "Add LaunchNest verification badge",
+            "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/4"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-07",
+        "merged_prs": 6,
+        "site_prs": 0,
+        "game_prs": 6,
+        "samples": [
+          {
+            "title": "Blood Moon V3 P2 — dedicated enemy registry (rebased)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/53"
+          },
+          {
+            "title": "Blood Moon V3 P3 — Arena shell",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/54"
+          },
+          {
+            "title": "Blood Moon V3 — cinematic raid production pass (P4-P9)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/55"
+          },
+          {
+            "title": "Blood Moon V3 — final audit and APK-readiness fixes",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/57"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-08",
+        "merged_prs": 7,
+        "site_prs": 0,
+        "game_prs": 7,
+        "samples": [
+          {
+            "title": "Blood Moon P11.2 — final restage + environment pass",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/60"
+          },
+          {
+            "title": "Blood Moon P11.3 — hard restage + environment polish",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/61"
+          },
+          {
+            "title": "Blood Moon P11.3.1 — combat scale + environment correction",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/62"
+          },
+          {
+            "title": "Blood Moon P11.3.2 — arena state continuity",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/63"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-09",
+        "merged_prs": 7,
+        "site_prs": 0,
+        "game_prs": 7,
+        "samples": [
+          {
+            "title": "fix(share): recover loading state, mobile preview and PNG export",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/68"
+          },
+          {
+            "title": "feat(share): premium faction Identity backgrounds — visual acceptance",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/69"
+          },
+          {
+            "title": "feat(share): Moment Master Dark — final art pass",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/70"
+          },
+          {
+            "title": "Stats 3.0 — Character Command (Overview / Build / Legacy)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/71"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-10",
+        "merged_prs": 4,
+        "site_prs": 0,
+        "game_prs": 4,
+        "samples": [
+          {
+            "title": "Stats 3.0 P0 — World Identity shell + Overview vertical slice",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/75"
+          },
+          {
+            "title": "Stats 3.0 — integrate approved Overview / Build / Legacy world environments",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/76"
+          },
+          {
+            "title": "Stats 3.0 — Final AAA material & restraint polish",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/77"
+          },
+          {
+            "title": "[DRAFT] Phantom Echo P0-A + Tactical Ops Operation 02 P1 (frontend integration)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/78"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-11",
+        "merged_prs": 10,
+        "site_prs": 1,
+        "game_prs": 9,
+        "samples": [
+          {
+            "title": "Tactical Ops: campaign-first War Table",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/79"
+          },
+          {
+            "title": "DEV FRESH: compact movable badge for first-player audit",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/80"
+          },
+          {
+            "title": "P0: repair First Signal → Blood Moon handoff",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/81"
+          },
+          {
+            "title": "P1 FTUE: keep Active Pursuit visible over generic Next Move",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/82"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-12",
+        "merged_prs": 8,
+        "site_prs": 0,
+        "game_prs": 8,
+        "samples": [
+          {
+            "title": "P0 FTUE: fix BUILD IMPROVED contrast in Telegram light theme",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/88"
+          },
+          {
+            "title": "P0 FTUE: restore Callsign focus and identity modal order",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/89"
+          },
+          {
+            "title": "First Signal V2: interactive signal intercept (backend-gated)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/90"
+          },
+          {
+            "title": "P0 FTUE: stop Tactical guidance overlaying First Signal V2",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/91"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-13",
+        "merged_prs": 12,
+        "site_prs": 0,
+        "game_prs": 12,
+        "samples": [
+          {
+            "title": "FTUE: refine TRACE A/B waveform presentation",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/96"
+          },
+          {
+            "title": "FTUE: reactive feedback for First Signal interception",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/97"
+          },
+          {
+            "title": "FTUE: faction-first handoff after Rustfang",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/98"
+          },
+          {
+            "title": "World Map V2: living lunar beacon for eligible Blood Moon objective",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/99"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-14",
+        "merged_prs": 6,
+        "site_prs": 0,
+        "game_prs": 6,
+        "samples": [
+          {
+            "title": "Hub V2 Navbar V3 — Telegram chrome and owner UI polish",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/111"
+          },
+          {
+            "title": "FTUE P0-B: global server-confirmed Level-Up Reward Moment V2",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/113"
+          },
+          {
+            "title": "P0 HOTFIX: restore profile level hydration after #113",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/114"
+          },
+          {
+            "title": "Story Layer P0: First Signal Scout voice — final polish",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/115"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "merged_prs": 5,
+        "site_prs": 0,
+        "game_prs": 5,
+        "samples": [
+          {
+            "title": "fix(moonlab): display equipped player skin during boss duel",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/120"
+          },
+          {
+            "title": "FTUE P1: unified Scout portrait across First Signal and Hub",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/121"
+          },
+          {
+            "title": "FTUE P2: optional Scout guidance for Stats, Pets and Forge",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/122"
+          },
+          {
+            "title": "FTUE P3: First Growth Loop — Stats to companions without forced MoonLab",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/123"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "FTUE P0: UNBOUND First Signal before faction (current main)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/125"
+          },
+          {
+            "title": "fix(tactical): protect defeat recording for Field Ops",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/126"
+          },
+          {
+            "title": "fix(tactical): constrain battle HUD inside field on narrow Telegram WebViews",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/127"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-17",
+        "merged_prs": 7,
+        "site_prs": 2,
+        "game_prs": 5,
+        "samples": [
+          {
+            "title": "Tactical P1A: dormant Combat Profile V2 transport contract",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/128"
+          },
+          {
+            "title": "Map V2 & FTUE UX cleanup — Kacper feedback",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/129"
+          },
+          {
+            "title": "Tactical PR1B: real Alpha and equipped pet combat units from frozen server run",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/130"
+          },
+          {
+            "title": "Map V2: one compact header instead of stacked WORLD / REGIONS panels",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/131"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-18",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "PR1B release: frontend V3 bundle, cache and HUD verifier",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/133"
+          },
+          {
+            "title": "DRAFT P2: Courier tactical pressure — encounter-only gameplay experiment",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/135"
+          },
+          {
+            "title": "P0 mobile QA: fix oversized result portrait and iPhone status overlay",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/136"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "merged_prs": 16,
+        "site_prs": 2,
+        "game_prs": 14,
+        "samples": [
+          {
+            "title": "Fix Tactical Ops runtime: ship merged P2 + iOS HUD in versioned bundle",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/137"
+          },
+          {
+            "title": "Tactical VNext A — global intent contract, 12-mission inventory and safety gates",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/138"
+          },
+          {
+            "title": "Align Chain and Blood-Moon Tower map copy with post-rug canon",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/139"
+          },
+          {
+            "title": "Tactical VNext: shared enemy intent scheduler (experimental)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/140"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "merged_prs": 5,
+        "site_prs": 1,
+        "game_prs": 4,
+        "samples": [
+          {
+            "title": "Tactical VNext: Player Growth & Mastery unified milestone",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/151"
+          },
+          {
+            "title": "Tactical VNext Step 5: squad identity, real Signal Codex and Disruptor counterplay",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/152"
+          },
+          {
+            "title": "Tactical Command Deck V1 — screen-first War Table and Mission Brief",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/153"
+          },
+          {
+            "title": "Tactical Command Deck Premium UX — focused command, portrait squad, no endless progression scroll",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/154"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "merged_prs": 8,
+        "site_prs": 0,
+        "game_prs": 8,
+        "samples": [
+          {
+            "title": "Tactical Command Deck UX Completion — focused missions, loadout, authentic PET and safe deploy",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/155"
+          },
+          {
+            "title": "Fix Tactical Ops mobile Deploy dock overlapping Mission Brief",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/156"
+          },
+          {
+            "title": "Tactical Mastery V1 — Combat Identity & Feedback (ALPHA / CNC / SHADOW / PET)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/157"
+          },
+          {
+            "title": "Tactical Ops P2 — wire 14 authored combat action icons into HUD",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/158"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-22",
+        "merged_prs": 4,
+        "site_prs": 0,
+        "game_prs": 4,
+        "samples": [
+          {
+            "title": "Tactical Ops VNext + S1 — unified release (#163 + #164)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/165"
+          },
+          {
+            "title": "Tactical S1 QA — HOLD progress, objective priority and certified Commander copy",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/166"
+          },
+          {
+            "title": "S2 Meaningful Combat — 12/12 engineered encounters, 68/68 dual-win paths & real counterplay",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/168"
+          },
+          {
+            "title": "S3 Growth & Consequences — server-truth after-action foundation",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/169"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-23",
+        "merged_prs": 10,
+        "site_prs": 4,
+        "game_prs": 6,
+        "samples": [
+          {
+            "title": "Lore: align faction identities and historical Fracture copy with approved canon",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/172"
+          },
+          {
+            "title": "Signal Atlas V2 — QA-merge candidate (CI + production bundle PASS; public rollout HOLD)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/173"
+          },
+          {
+            "title": "Signal Atlas V2 — premium visual polish P1 (mobile overlay, relay shell, skill nodes)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/174"
+          },
+          {
+            "title": "Signal Atlas P2 — Frozen Relay artwork and six live sector crests",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/175"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-24",
+        "merged_prs": 5,
+        "site_prs": 0,
+        "game_prs": 5,
+        "samples": [
+          {
+            "title": "S3 receipt-truth closure — match run/mission and preserve Intel uncertainty",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/170"
+          },
+          {
+            "title": "fix(tactical): Foundation 10×7 backend-accepted handshake",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/180"
+          },
+          {
+            "title": "ui(tactical): move status and objective HUD out of 10×7 battlefield",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/183"
+          },
+          {
+            "title": "polish(tactical): Combat FX readability P1 — soften AoE and impact overlays",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/185"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-25",
+        "merged_prs": 9,
+        "site_prs": 0,
+        "game_prs": 9,
+        "samples": [
+          {
+            "title": "WIP Tactical Combat Contact P3 — physical hit response, not full choreography",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/187"
+          },
+          {
+            "title": "polish(tactical): S4 single-actor choreography and truthful support actions",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/188"
+          },
+          {
+            "title": "polish(tactical): S4 contact timing — feedback at physical impact",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/189"
+          },
+          {
+            "title": "polish(tactical): S5 HP bars follow confirmed impact events",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/190"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "merged_prs": 1,
+        "site_prs": 0,
+        "game_prs": 1,
+        "samples": [
+          {
+            "title": "feat(tactical): complete Signal Atlas P3 premium visual integration",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/200"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "Release Tactical G1 + Battlefield P5 to the Telegram WebApp",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/203"
+          },
+          {
+            "title": "Test four-direction Alpha on the battlefield",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/204"
+          },
+          {
+            "title": "fix(tactical): player-first objectives and foundation combat guidance",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/205"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-28",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "feat(tactical): premium threat projections and source-to-target tethers",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/206"
+          },
+          {
+            "title": "fix(tactical): surface real Skillbook purchase HTTP errors",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/207"
+          },
+          {
+            "title": "fix(tactical): reject mismatched accepted mission before VNext battlefield boot",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/208"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "fix(tactical): readable mobile objectives and RECOVER command",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/209"
+          },
+          {
+            "title": "feat(tactical): make Signal Atlas the official Skillbook",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/210"
+          },
+          {
+            "title": "fix(tactical): close V1 Atlas run-lock and duplicate-error blockers",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/211"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-30",
+        "merged_prs": 4,
+        "site_prs": 0,
+        "game_prs": 4,
+        "samples": [
+          {
+            "title": "feat(tactical): one next mission and meaningful return for V1",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/212"
+          },
+          {
+            "title": "feat(tactical): Relay Mastery unlocks optional Relay Lockdown — DEPTH 01",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/213"
+          },
+          {
+            "title": "fix(tactical): AAA real-device brief and results clarity — DEPTH 01.1",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/214"
+          },
+          {
+            "title": "fix(tactical): premium mobile target optics instead of white target boxes",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/215"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-31",
+        "merged_prs": 5,
+        "site_prs": 0,
+        "game_prs": 5,
+        "samples": [
+          {
+            "title": "Tactical Ops AAA clarity: concise Brief, permanent COMMAND records & calmer battlefield",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/216"
+          },
+          {
+            "title": "DEPTH 02: choose Anchor or Crosslink before Relay Lockdown",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/217"
+          },
+          {
+            "title": "Relay Sentinel: catalog-driven Badge Wall art and existing ownership flow",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/218"
+          },
+          {
+            "title": "Progression Depth V2: Veteran Commander and Pack Mastery",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/219"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "merged_prs": 7,
+        "site_prs": 0,
+        "game_prs": 7,
+        "samples": [
+          {
+            "title": "fix(tactical): veteran reward truth, lean Recovery brief & pet overlay",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/221"
+          },
+          {
+            "title": "Field Op Results: premium receipt-truthful mobile summary",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/222"
+          },
+          {
+            "title": "Tactical Ops Premium UX — consolidated Brief, Results & Cinematic Aftermath",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/223"
+          },
+          {
+            "title": "Tactical Ops: cinematic, receipt-confirmed Field Op aftermath",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/224"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "merged_prs": 5,
+        "site_prs": 0,
+        "game_prs": 5,
+        "samples": [
+          {
+            "title": "Tactical Ops — G1 Growth × P5 Battlefield combined gameplay acceptance",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/228"
+          },
+          {
+            "title": "Hub Activity Discovery + Phantom Node Donate Visibility (mobile UX)",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/229"
+          },
+          {
+            "title": "Tactical Ops — Results × War Table mobile UX clarity polish",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/231"
+          },
+          {
+            "title": "Tactical Ops — Progression Identity V1 · receipt-truthful Veteran career",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/232"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "merged_prs": 3,
+        "site_prs": 0,
+        "game_prs": 3,
+        "samples": [
+          {
+            "title": "Tactical G3 — progression opportunity and receipt-confirmed reward clarity",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/234"
+          },
+          {
+            "title": "Tactical G2 — Courier Trace carryover reconciled with G3",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/235"
+          },
+          {
+            "title": "Tactical G4 — Living Battlefield Loop · regional pressure to real HOUND timing",
+            "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/236"
+          }
+        ]
+      }
+    ]
+  },
+  "archive": {
+    "source": "/history.html",
+    "entry_count": 56,
+    "days": [
+      {
+        "date": "2025-08-19",
+        "entries": 2
+      },
+      {
+        "date": "2025-08-20",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-21",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-22",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-24",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-25",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-26",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-27",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-28",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-29",
+        "entries": 1
+      },
+      {
+        "date": "2025-08-30",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-01",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-02",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-04",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-09",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-10",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-12",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-16",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-17",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-20",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-25",
+        "entries": 1
+      },
+      {
+        "date": "2025-09-30",
+        "entries": 1
+      },
+      {
+        "date": "2025-10-10",
+        "entries": 1
+      },
+      {
+        "date": "2025-10-17",
+        "entries": 1
+      },
+      {
+        "date": "2025-10-20",
+        "entries": 1
+      },
+      {
+        "date": "2025-10-27",
+        "entries": 1
+      },
+      {
+        "date": "2025-11-07",
+        "entries": 1
+      },
+      {
+        "date": "2025-11-11",
+        "entries": 1
+      },
+      {
+        "date": "2025-11-14",
+        "entries": 1
+      },
+      {
+        "date": "2025-11-15",
+        "entries": 1
+      },
+      {
+        "date": "2025-11-17",
+        "entries": 1
+      },
+      {
+        "date": "2025-11-24",
+        "entries": 1
+      },
+      {
+        "date": "2025-11-28",
+        "entries": 1
+      },
+      {
+        "date": "2025-12-01",
+        "entries": 1
+      },
+      {
+        "date": "2025-12-03",
+        "entries": 1
+      },
+      {
+        "date": "2025-12-11",
+        "entries": 1
+      },
+      {
+        "date": "2025-12-16",
+        "entries": 1
+      },
+      {
+        "date": "2025-12-31",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-05",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-08",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-10",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-15",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-17",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-20",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-24",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-25",
+        "entries": 1
+      },
+      {
+        "date": "2026-01-29",
+        "entries": 1
+      },
+      {
+        "date": "2026-02-10",
+        "entries": 1
+      },
+      {
+        "date": "2026-02-13",
+        "entries": 1
+      },
+      {
+        "date": "2026-02-14",
+        "entries": 1
+      },
+      {
+        "date": "2026-02-18",
+        "entries": 1
+      },
+      {
+        "date": "2026-02-25",
+        "entries": 1
+      },
+      {
+        "date": "2026-02-27",
+        "entries": 1
+      },
+      {
+        "date": "2026-03-05",
+        "entries": 1
+      },
+      {
+        "date": "2026-03-10",
+        "entries": 1
+      }
+    ]
+  },
+  "milestones": [
+    {
+      "date": "2025-08-19",
+      "title": "Development notes preserved",
+      "description": "Earliest dated development note in the preserved site archive. The note is a historical account, not an independently verified launch record.",
+      "status": "archived",
+      "url": "/history.html"
+    },
+    {
+      "date": "2026-01-17",
+      "title": "User data consistency work",
+      "description": "Archived devlog records a per-user lock datastore pass and the effort to prevent disappearing progress.",
+      "status": "archived",
+      "url": "/history.html"
+    },
+    {
+      "date": "2026-02-27",
+      "title": "Factions backend foundation",
+      "description": "Archived devlog describes work on faction routing, Headquarters and influence functionality.",
+      "status": "archived",
+      "url": "/history.html"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Public website rebuilt",
+      "description": "Merged public website pull request documenting the game-first presentation overhaul.",
+      "status": "merged",
+      "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/1"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Evidence-backed Build Log foundation",
+      "description": "Reviewed source record shows the first Build Log foundation and an editorial approval gate. This does not claim verified production behavior.",
+      "status": "merged",
+      "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/13"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Commander Progress V2",
+      "description": "Public PR records integration of rank identity and next-step UX. Merged source code is not independent player-session verification.",
+      "status": "merged",
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/233"
+    }
+  ],
+  "evolution": [
+    {
+      "label": "2025 / archived foundations",
+      "title": "The game takes shape",
+      "description": "Historical posts document early gameplay, equipment, pets, and iteration. Read the original account, including unfinished work.",
+      "url": "/history.html",
+      "evidence": "Dated archive"
+    },
+    {
+      "label": "2026 / expanded systems",
+      "title": "Progression, factions, world systems",
+      "description": "Archived devlogs document work on Faction HQ, game routes and data reliability; public repo preserves later code changes.",
+      "url": "/history.html",
+      "evidence": "Dated archive"
+    },
+    {
+      "label": "Autumn 2026 / public GitHub",
+      "title": "Tactical Ops and the premium player loop",
+      "description": "Merged changes show sustained iteration on mission clarity, tactical mechanics and progression UX.",
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pulls?q=is%3Apr+is%3Amerged",
+      "evidence": "Merged PR history"
+    }
+  ]
+}
