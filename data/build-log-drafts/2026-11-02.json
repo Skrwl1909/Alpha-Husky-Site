@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "collected_at": "2026-11-03T16:14:08.211Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 229,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/229",
+      "merged_at": "2026-11-02T01:33:37Z",
+      "merge_sha": "320804e07731f187e57e2f7d1d6d8d46e5b8219d",
+      "title": "Hub Activity Discovery + Phantom Node Donate Visibility (mobile UX)"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 228,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/228",
+      "merged_at": "2026-11-02T13:36:42Z",
+      "merge_sha": "e85d6dcef087ba47f35b68235a706664be1e521f",
+      "title": "Tactical Ops — G1 Growth × P5 Battlefield combined gameplay acceptance"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 231,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/231",
+      "merged_at": "2026-11-02T21:18:22Z",
+      "merge_sha": "98944a0b901892a7c0e28c8c99e25a96b6bf569b",
+      "title": "Tactical Ops — Results × War Table mobile UX clarity polish"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 232,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/232",
+      "merged_at": "2026-11-02T22:19:48Z",
+      "merge_sha": "7344cc10084e41bf8d8f82a56385149bc165a880",
+      "title": "Tactical Ops — Progression Identity V1 · receipt-truthful Veteran career"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 233,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/233",
+      "merged_at": "2026-11-02T22:44:04Z",
+      "merge_sha": "50fb6a2e9de7f3c3a905dcb5427f4f97e9701a09",
+      "title": "Tactical Ops — Commander Progress V2 · rank identity and next-step UX"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
