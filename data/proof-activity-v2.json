@@ -1,0 +1,4111 @@
+{
+  "schema_version": 2,
+  "as_of": "2026-11-04",
+  "scope": "Main-branch reachable commits attributed by GitHub to Skrwl1909; four public repositories plus one private source. Daily dates are commit AUTHOR UTC dates. No claims about local VPS activity, unmerged branches, or account-wide GitHub contributions.",
+  "privacy": "No SHA, URL, message, filenames or email from the private repository are present.",
+  "full_history_backfill": true,
+  "repo_count_public": 4,
+  "repo_count_private": 1,
+  "public_repositories": [
+    "Skrwl1909/alpha-husky-webapp",
+    "Skrwl1909/Alpha-Husky-Site",
+    "Skrwl1909/alpha-code",
+    "Skrwl1909/token"
+  ],
+  "deduplication": "Globally distinct public commit SHA across repositories; private contribution counts aggregated separately; excludes commits attributed to bots or unrelated authors.",
+  "yearly": {
+    "2025": {
+      "public_commits": 678,
+      "private_commits": 3,
+      "active_days": 110,
+      "active_weeks": 27,
+      "active_months": 8
+    },
+    "2026": {
+      "public_commits": 3143,
+      "private_commits": 1,
+      "active_days": 282,
+      "active_weeks": 45,
+      "active_months": 11
+    }
+  },
+  "public_commit_count": 3821,
+  "private_commit_count": 4,
+  "active_days": 392,
+  "days": [
+    {
+      "date": "2025-03-25",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/token/commit/4edd0ceaf57cb10a5705d4be5db4809105fca930"
+      ]
+    },
+    {
+      "date": "2025-03-26",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/token/commit/5d9adcd864edc499a1a831d1a32d8126ceec574d",
+        "https://github.com/Skrwl1909/token/commit/a0eb21f38d7fed7df81ef8277b80d73d1cd8bbaf"
+      ]
+    },
+    {
+      "date": "2025-05-05",
+      "public_commits": 0,
+      "private_commits": 2,
+      "public_sources": []
+    },
+    {
+      "date": "2025-05-16",
+      "public_commits": 0,
+      "private_commits": 1,
+      "public_sources": []
+    },
+    {
+      "date": "2025-05-31",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/59ad88351f0f24af9f9fc6ebb1dda934c8e58f68",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/fd35eb99e17ec093af69d77832a257ac353d865b"
+      ]
+    },
+    {
+      "date": "2025-06-04",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/71f06b03f1e767a0f19394c537c20b1363df652c",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/3ac87a4900f18418de8bae0fa3e11e45d74066f8",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/f57c9578e1398d5ebebf8c10ed01a0a2238a4243",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/5ed31bbec15022fdf58fcbbe33d987a7349a936d"
+      ]
+    },
+    {
+      "date": "2025-06-19",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/4d0a9cab6d98b7860e3f27d03056bccc9540605f",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/2625aad031cd80c48f38be9e3fa680f40e6e5144",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/4e7ca0b7daa7a8b6b32e3e43189343a0944c95ab",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/d530646ec3c6ee56102b3acb69b53078c61fd685"
+      ]
+    },
+    {
+      "date": "2025-06-20",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/78d891036c4097969c0d716983680717177b7920",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/a56c18347e2466c48a0878d4350b8da397f20b1c",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/b9555d49e381f552ef3b31a97f3a4b923c770d65"
+      ]
+    },
+    {
+      "date": "2025-08-09",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d9fc75abf1bf3b1e657f1ba8a296ab813a980c20",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/88b203c03ddff52f0fd324ce5e6d9fcc09f274c5"
+      ]
+    },
+    {
+      "date": "2025-08-10",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4a78f24e9c9baca363fc24f4dae9dbe269ae4bfc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f586f511e1d793bd2140110975a290e8c45909e7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/acd05f1fbe2c8025dd49fa1910785157cc77ec30",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/66e875f4da849c1ca586b64916a0d35388d6d10c"
+      ]
+    },
+    {
+      "date": "2025-08-18",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0eef31ee30b8037ba3e77318f070f41ffdf18d56",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bfbe331a605a35ffeefb6ea0afcccdea6f978759",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a88a05c2d083f4134bc6b536157ace75dd4d7d6f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fb0a6bf51a62ebd3e10d97dbf602daa5ebd2d73b"
+      ]
+    },
+    {
+      "date": "2025-08-19",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/8fa56e492b9851873ce33f4d7540dda1a59bf2ef",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/632151433dc0e62d183bf20a826bca01e494ce5b",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/1a225abb61c6b5d658651fb06646ca44f758025d",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/eb4d7e6e13c4199a1173554c004d64dc00a8e2fd"
+      ]
+    },
+    {
+      "date": "2025-08-20",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/f727aad33ef73ab280d3f1533b6d98cdc34c66a9",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/258dacd2baf9f7022d87b70c2a7ca0a3ebbeac62",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/7c2608cc80afacc0ae368d546ec6fe99a9492ea1",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/d053b5d7802423dfbf047dc15b45f2a5cb5916ee"
+      ]
+    },
+    {
+      "date": "2025-08-21",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/03839d6d8cc1da4b6b12e22d0ec17633c77e6372",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/0d5e7b56d0cfb0d4b7fbe3e2062ac87f3f239281",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/47fc1ab38a0009e7f034b5b133e1f964a46a9dea",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/d9bd31fc2b229933575dac77345bfa317812239e"
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/80e4e549ffbc8c187812aeff03588117d92a38fb",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/395beeac8324cef75363193d41932b33b1810d00",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/95f23d4b9b19425e65dd75d4d3a902bf8dad166b"
+      ]
+    },
+    {
+      "date": "2025-08-24",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/836995652dbd04f2495e2332bb0081324ed71ced",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/e1d5a09fe027d1d4f51c1fd5bd4cff9442d2e091",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/998cfb531ff6b74b353fef73cb5b06d18d56f69d",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/71a2d3a3d3dcd3f7637dbf83b67f10dcc28d40df"
+      ]
+    },
+    {
+      "date": "2025-08-25",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/889d47e0b3960bc7cf560b9566dc42c91ff9fdb6",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/f1db9fe3da0ed5f406489f5e791638a66c666729",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/a2cbd734260b8374aa3daec5b53341776d987ffe",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/8107b155433aac97191e47b072040ec87b6b2092"
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/f378b54b688e092c2090d59c42a9f72f51243043",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/53b90ff5bf1c79ef637f22130764c51a5aa61cb3"
+      ]
+    },
+    {
+      "date": "2025-08-27",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/7a030f65529d41e8d509a1b494b0b653c8b4fb82",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/0965a648e7a002bfda322fd2f41cad6128db5b44",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/be9eca12eb1188f46c44ad90707c9d4a62187c56"
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/608975de8476469f769deb0aa6e765e672044850",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/3fd7d55820ef697299b24842952b6fe1b2ebb2aa"
+      ]
+    },
+    {
+      "date": "2025-08-29",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4150fd706c80fd73743f87ed6a40ba412d9c9c22",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/e213c4b5d6b89bdc48e95a56859791c441a93103"
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/17032d76eee9d9570a176997d4a7d468f768289d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/72df00d25ca56d43a5ddce1044f391f403512a6b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dd8e9b577295e668c1299daf728813e24a7caf00",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bd545e6f60a9265a35c5062b5d39d862d206de99"
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "public_commits": 16,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a256f944bbcf72dbc68a5fc5dd38e4750921d07a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e2f719a9ded8361ad55b9a8d85727ace1be82806",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/63f60d329f09f688d0a2343fe1d9ebab7be157ee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a4d0030d3ad1adb1d7b2908e4dfd57385d31d290"
+      ]
+    },
+    {
+      "date": "2025-09-01",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8934a855919f41e030e0ef4e8d1d18cdbb6b36fc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d25c09a90389e16010a885792371dbbbe2669e42",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cae7ae3847bb9f9789557b39eb9af09a1dbbd948",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ac31d9bd602311845bc820ff4adbc0635bba8eb1"
+      ]
+    },
+    {
+      "date": "2025-09-02",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fec2aeca0e20aa3241c7365cef966609134e5f4d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0e41052c6a664154ba98f685cd3b3d4f4dae346e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/446c1921fbb1b4080c096e15d84d25a37e8e008f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4eb957726ca4cf901ccaa1dacf76f0d8ef8e2bf9"
+      ]
+    },
+    {
+      "date": "2025-09-03",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d44702087b02ab8230221246c4d680fa5709022a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d3129bb0d271c32f85f2f6d3a283bc84fc181159",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/14e18304955372df26aa86d6c4c0414e8f74bf29"
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "public_commits": 10,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/52774245cc5e0ce8ded61a88c9ba0a845d651d95",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/68333f3fd213596fa2200486eef99baa618fc621",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/36aaf07b121a4add72a6bcb5302e0ea9fdb66c93",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/3b828ba05d8806203e8c2262c2ea228779412d90"
+      ]
+    },
+    {
+      "date": "2025-09-05",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/917a3d355ef8ad949f1e89b77b6d759dc271d60a",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/601431278b9cae6c573c98796dbe4573e33a9744",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/310b5cf81f548f13c1ac50cecbaed6b888160c8c",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/c315b5f678a9a4e0b183688a3c823861f8012e15"
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f97c5b233954e26a6eddf56d63dcc49f4e6b97d6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6853198d6b0fac955e6d6a333b8ce6a29b6465ad",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/22a6af3c6732c4c6fdd4adf3c0d32c32826abf2d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c9c4a6c5cb175a7767a26a414f16f809a4e07edb"
+      ]
+    },
+    {
+      "date": "2025-09-07",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/49f0587f0ee748ade30722cfc84c65a45d1454b3",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/7c6f9a6b588d7f755dd0932e514c5688d66157d5"
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/6186cb735ec4bc97d884bfb829e78ea04c743bf1"
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/17f4270cfb1588259ed5433cb8a17d5f409061e0"
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ef13e18618a29c022cf82cabf528932024ad9bcb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3f920a5f925aa5dfccd373ddfe919dfe8ea023be",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c7a11ca508a43955739bd3fbad004c821e724a4d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/98d0077b58896394e295aec954329c3e5373a913"
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0d03bad5c955a66230627d788fd8b7d296ef792c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a1d96cc5574320622d5ef065b95d652ca5f23610",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7b7eaaae9e3483c7c96d1dd8c87f61b79651388e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cf2612b69e7db29746cfe6e4774b387e384d862b"
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b186a0b617605323ba682bf4faa76f4313bc3fe6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f0a0a608f12eaac0bf384a1a72e0786598f1810b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2969810f9ab74591228f5c49b891ccd1c4c3ad06"
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/97b3449966ff798e259f27e32cd545aae5adceb7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3257afa97364f09f8411b133c9d6e53c3c10c609"
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/d2a7148281278ebbdde5d001a835f6e80481a563",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/9e0470516feb87283a454b2933a024adf6d9c399"
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/30b93409408a02856a0fccdbec95ed6f1a3b83e0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b5f79a9de1f0edda005ca2d23cc6dc63faa626fc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/46a55dde5ec192e319a358d047a9c5c375c872ba",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/d4ee82dae5bd5ed49cdfc2f198226a0337ead1cf"
+      ]
+    },
+    {
+      "date": "2025-09-18",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1255276fbe453eae0132a581368051e285562abd"
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4e3b512bf1ecbfcd43be2e8c588e6c46ebaf45ae",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2e4a3ec3e1eefc17bf77f40ce610cb4ee814700a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8ee160a40178f407d800d239b5cff6cf9548e5f3",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/626a0430caf7f356862baa3c0e0469addc0e39d3"
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/127ce2d613cff9fa0eb17451936c6807e796dcf8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4dcfce37c6d97fb9816a9d774b57cf5e7992642a"
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a2d37e45ee91c14638f34bcb826f180ce72a2a61",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b56d3fe8c53b452d42ac1f2308ffcca4562a49d1"
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/011d19314c23231cd96a8cd53d8aeab95a103fec",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3f3054778544860597bce65a051ea893568b7690",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/98a0e2be878bb356960de68d9e66ac65788cfc7d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8521495a790e5a1316eb533dffca6b227c327d70"
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c5e773a1a6545e27090fee58fc36e691fc9cfae8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a48a31b891d4c668ca50689ca934d719c48e2aa4"
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "public_commits": 10,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/62219fbc8889779e4008f4ef81914165e34031de",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/699d4cb2aa2df1457ffe207ae5c1c7963492bef7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6d890533a63d7f0f32e80fa565188c6ba345f6c5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/14c32d43f1cbcd9461d52ee47371c89d5803d8d7"
+      ]
+    },
+    {
+      "date": "2025-09-29",
+      "public_commits": 10,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/880933b4d24b0c888abdb2ee326c526dc467781c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b1e6a73e4f37d413d5ae1783df05f997e47f2cd9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/364dfadf28f60872b8494fb6d43fd62e6507ffce",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0ddd3f8cc2cf877a8ca19c3bcb1e6bc965719958"
+      ]
+    },
+    {
+      "date": "2025-09-30",
+      "public_commits": 17,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2944470fefc792b427d253276c61a2a051a62d2b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/309d63966f7bf2bb045b55ba566c828d02b3940f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7e8d08b833590c5d6da1ca4bc6f472b708eae2da",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d7d22cbc6c718ac09676b3c453b1f4f7ecfade80"
+      ]
+    },
+    {
+      "date": "2025-10-01",
+      "public_commits": 17,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e36535d2e578e92b0b0a1f8b5a8647bb27cadc2c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3042970c49f2bf75d11f42f19f4ab3717c841289",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6baa3659b1f4549505104a71f00c3634215fdeb7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b673d9d16800dccecc85b6f6a2047619e95203b0"
+      ]
+    },
+    {
+      "date": "2025-10-02",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d31954dd21b6ff6170edb6247d42eaf35860a9dc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/22cd4b670f8bffea3dc212399a193a0b37735ef1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/22235a423f9a6ebacde70d5a7c4bf777058188d7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fcef497e7f01c4cb8d553a1ffdf97dddea7e6fc4"
+      ]
+    },
+    {
+      "date": "2025-10-03",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/090310e903a5d18cf61ef5cc2bb3f06fbbf05ac1"
+      ]
+    },
+    {
+      "date": "2025-10-04",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/db86d2c5d0881175a4f59718279ee9f43c0e737c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2938c2bfb0adeba86c8784ecbfcb1f673c1f2c21",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/91c1aec3be2d861e4f60f505a170e9223640c29e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c38a12939b7c9d926f0c1b309d8e10f8b1508d3d"
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3f80a3924371c5fd34c840002eba2bb9817d1376",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/998c7c419e00980fbf183cb020aa00e94dfbb929",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/563be6966d2f2ae76288e093b9690e024bc12e04",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/2d1d524ddbc4f0af3e6b0ebd9033f77f6fc6f47c"
+      ]
+    },
+    {
+      "date": "2025-10-06",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1b8eba9915c7e25a27144317b34b3148eab18af9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4224cf2b714c8271e4abdcddf91a395279f5098f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9bddbcac3258272878ba8758d39c7a172fa83693",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/064ba6c73300b17a11c96e6d2e255bbe8c701cfc"
+      ]
+    },
+    {
+      "date": "2025-10-07",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/eecba04b405e14ff2986b8d2515c0d7f9e667cea",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3d967232242ed220143d5e1fda9404d7f210e0fc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3cb4cbce1c602bffe24412eeba88c6b0ed8e084b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7c6bc1dbd299869b0cf8d4d378958f54baebccfd"
+      ]
+    },
+    {
+      "date": "2025-10-09",
+      "public_commits": 22,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1daa22aa291df128d35f854d94e7cef3258e77c3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c044adb7141481369836ae3943cd026b74487674",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/acefdf0a3fa8371499a803208107faa4cfe620de",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/75941e58e52348e558bb79ff092346b0d282756a"
+      ]
+    },
+    {
+      "date": "2025-10-10",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fe54fda50c2266ab4f5266f41045358d8e69148b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6f1bbd60f67e4179c4e8fa9e7e87ce7628fe2a17",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ca6d617595bb527cfbbb9566249d6481e45a4a2d",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/173f4622f4cbc0a492cb79625c67ca638eccc215"
+      ]
+    },
+    {
+      "date": "2025-10-11",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/09fa69a5a2e83dd332b7ba3952377f385963644f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6912da0589e7bbf528fa9e434d235b25bc26a5c4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/31b50ffc441e41ae35fc82993e0fbbf2d678c7d3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2b5abb8a0b0daf844dee59f7ecfca97db437b81d"
+      ]
+    },
+    {
+      "date": "2025-10-13",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/845548ad889cc68f5f6d11becfb06d0e5b17758f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/73f3c906991826ec48fe21f5763ad28d076b65ba",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bdb266415c6bf171626330ffd9441ca32eb4c090",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8182e1c0453edfb9abc9149be410302e47710c68"
+      ]
+    },
+    {
+      "date": "2025-10-14",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e70583dee681974e8618616693682864736f06ad",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fc4fbab86aba427391a1afc8e844f45bedbb58f4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1f3065a3282ce34a8d9170c8e0064df1bbcb96de",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/47b03df48a54cf57237947d8ab64edbce9b45746"
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "public_commits": 10,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/33a5563ab3c031e0521246efe93b1c01c8b054a5",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/65c0fa1b9405794d225be7fe1b26de7b78dfc741",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/78b451b22b74eed2ab87c506e7a2bbc06c0208e9",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/c79d603c1cb39c3d09f1b3739a4bd58a1c5c8a82"
+      ]
+    },
+    {
+      "date": "2025-10-16",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/9b17a756b89888d272e77f4d6abdd8e6a258b72e",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/e3cb197432e39457a4f663fefb991e15ccea8c0a",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/feb7238f87ede126fe1227a31fac193fad7f1b4c",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/b62829e3f601f6490df72c057dcf9ecd6c6732cf"
+      ]
+    },
+    {
+      "date": "2025-10-17",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/f33ea96cd35fcd0cca04bffe15c029b5064d6d26",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/54687ec359b75826d5dcb98e8c7d32d256cefe90"
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/671f5bb08e790d4778756c27d24cff9c17421357",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/fa839d4f31b63d9fd49db0300633c87db094b8da"
+      ]
+    },
+    {
+      "date": "2025-10-21",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/4fac9dd6becb4a1681663c12301a3e43d0e34982",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/5d45d63690eba1b158178610247ca79458bc6278"
+      ]
+    },
+    {
+      "date": "2025-10-23",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/46afc8ffbcd912414b77788e43696b41b874db6c",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/893096fec7d160c18e25a2b7107119bdacd82040",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/724614c41150df8bd2262e4d5c2c88f0265da6bc",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/38834aae3fd39263e1b81f9ec926e9bce7107fe8"
+      ]
+    },
+    {
+      "date": "2025-10-24",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/38252feedfd3f3ea6cdbf909411421e8ec9251c0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f80cccd5640ca4f565ed1a635e0e170db81f577a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a8e9de8d2b80862a0bf1e6c0bdbb82b574d6626a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a4788501ba73c2184249933808ff2a62be3e8d34"
+      ]
+    },
+    {
+      "date": "2025-10-27",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a1e9473d80eb9199aee29ff8a0fa0fe00075b5c0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9662a770fe91f70291ccde33c21d01fb3aafb7f7",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/d523150f58557b32fa1a499da4e5b75992fa3863",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/23e881054aa6d33ba4d2a739627dc7d43f70bd26"
+      ]
+    },
+    {
+      "date": "2025-10-28",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/04c4524ec019f2999c652478455cd03d91f3d5d2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6360b19a08829a35cf7f5e96a3c4c681868d292c"
+      ]
+    },
+    {
+      "date": "2025-10-29",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cec6f4eebf83d964e5dbc348132bbb7f0181372b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1672c8a907005366e1b354a1aedeba1a9c88b894",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d07af2f3d031ed868d8724bd9361ff659ff9b0a9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/64c555e87c4ffe8fa32edb983c8d79809cf31d37"
+      ]
+    },
+    {
+      "date": "2025-10-31",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-code/commit/40007aec107cdf0158ad48cfa54cf34caf822ea5"
+      ]
+    },
+    {
+      "date": "2025-11-05",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/da61c473c9f5930523d7b44ee78ade798fa51b9a",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/0195ce4332bf9a29ac46e0fc71b28cf6f628813b",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/1cb40aae4e31f2245e379b94df09c0053f685f93",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/936485b96f598a49af688b8d6fcdf5459221e051"
+      ]
+    },
+    {
+      "date": "2025-11-07",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/b2997cc4f9906255ee79ad00fbdc31986ae23432",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/3ca7221f20c19c728314d159cd3493562a871bd2",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/57a5fa4fb86f9a59471d69d6032f9147ee421a7b"
+      ]
+    },
+    {
+      "date": "2025-11-08",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a15601963005228075c91a3503e63b810330b83e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ef9f1c14c2f834745f766eb2c277956617028e61",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5ad6466554cd32e007556f033fb8dc3798209c4a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3451604c9e28e7858ddd648d264774976227d1b0"
+      ]
+    },
+    {
+      "date": "2025-11-09",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/92b155ec5765e5b3d9c272cdc8fed094ce142988",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b487ca3bf7775f269a398d977cd00c47d8b7f9b7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d7a0205f27f3255f3ec349b8618d8711e91a74bb"
+      ]
+    },
+    {
+      "date": "2025-11-11",
+      "public_commits": 25,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/81ea74087f9a420a6eb3ffda0de28dfd38e6edee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/52ef932f35fda050a1235a2325a4be63df343af6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ec46c92e90d8d753d1f328d4eacc688842257d5a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a014cc496dfc897ba3a1119ca11cc3b5511d7f8c"
+      ]
+    },
+    {
+      "date": "2025-11-12",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/de819e18b12ff9fe619fd2b7d561b14abd9ca7ff",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2e03fc138f6e965f412ead4e11745b20c3b8782f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/581e7552056d45a1e0813e68ece9e8d68044efaa",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d5db23ffd31fdc3efec3b0707c8a4b9105ccb39c"
+      ]
+    },
+    {
+      "date": "2025-11-14",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4898debcb136563f041b4df48b1c2df9aed2dd61",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/69ca91046394b9168bdb15370e55c4e5f63bc1e5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5a69a046c51f43ca0cf10307505da2b8f42c1e5d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3bc7d7b24b891ee22d7a34ae2e2c09cb2342de1c"
+      ]
+    },
+    {
+      "date": "2025-11-15",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/564c4cb9e7509dae64392a8d135c1cb02a3b6797"
+      ]
+    },
+    {
+      "date": "2025-11-16",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c78646cd7e247f7773e567f830bb5314b01b5e82",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/020551432b4816533fec614700dd544ee10f79a9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d4070569773063b6bc3c484a7170810619252fea",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2baa8731ee7fa50281b8b345f9ec19ed48628e75"
+      ]
+    },
+    {
+      "date": "2025-11-17",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/79635ecb080a097cd695b3c4f944e7144981af6c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/52cda298cf96e0d27580ae47f3973bdc89d70a1e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a85cb4958cf77db6c114f9047358709a2cddb3c0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/baac0b42edcb07ccda5f6d55ec2863aa186ab972"
+      ]
+    },
+    {
+      "date": "2025-11-19",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1a93df375e7edb1119f0499cb017bf73e4620705",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a3b0333bb4f6ee5a9897060023bb5512c26baa3c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/db8262892f9012497779d2cd0362ba46a8dd0827",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f027911f42c0907c3f5b2215436046d7703b5164"
+      ]
+    },
+    {
+      "date": "2025-11-20",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/01d880f3ee5c19a417acdbfe565a8435909e34bc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/255a94d706e591f2b1439ae801b18c141650dc4e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/632416aad16ba7e44609c70d54c736e57c409134",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6df9af31d80f2b7a320ed738288747b563c5d8e4"
+      ]
+    },
+    {
+      "date": "2025-11-22",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a29fbf4eb7825b97b7fee223c3d939cb91fabb28"
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ece00999d94db1b3aef5371f1ef3afa48906b443",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/c1ac8a3287568f022fd99de389db2b5c25878250"
+      ]
+    },
+    {
+      "date": "2025-11-27",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7ba3b19afe9c92c6145ce5bdfd41e48874f647ee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ba7e985aaf460854ac72e1615ef8d3d71381a976",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/caf7a3727a1849146a3cc12c7dee1882fbbafd63"
+      ]
+    },
+    {
+      "date": "2025-11-28",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fbb032f9f254ed9fcfbc9ae83e9ead49504ce30b",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/327cdd6c4958c6d83428da05268befc06f985b5e"
+      ]
+    },
+    {
+      "date": "2025-12-05",
+      "public_commits": 17,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fbab7b8e0eb91ac6c297ab4a29e2209889ac9cdc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/739e6fb656472e46d9647c54febb4fc1dff334a6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a1148b753fbaf9d44386c4a382dd6b448dc87111",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/33fefdfd0bfdfce40aeba8f4b32e4f0ec22efa95"
+      ]
+    },
+    {
+      "date": "2025-12-06",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/20bec47de0a51692678b31f144c79018518302c5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f7e75c80b048d842fc9882e2b61f1e87a950d980",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/013365c954a379532f2667990b7231f25d749ce7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6e7cfdf2d8a88936ea3aace1a97c4a520da412a0"
+      ]
+    },
+    {
+      "date": "2025-12-07",
+      "public_commits": 18,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f13a52cb6fe56f6245c3bb3fe45cedfe6602db08",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ce397af205f8337dfd11761d91e7bc5892de2418",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6ad2da2d3cdd2db2588a5c01e81764675952fc46",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cc6b5b4ef7a27f42b94576c2d5cfa74f27a927c7"
+      ]
+    },
+    {
+      "date": "2025-12-08",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a1019868bca7ddb8d0db1b48c6cfc5dbb6860ac3"
+      ]
+    },
+    {
+      "date": "2025-12-09",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c6df3a446a72e4d21e6386efc6fa7b7acefdc5f6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1da2e773d9feafae1c36676ff108270cb0c6a25d"
+      ]
+    },
+    {
+      "date": "2025-12-10",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/44927a1521522dadc9cfb1edcbdf2946f281f306",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/487adf623b5f7b82f9c0e4cf2543f73f207ca4ee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fa45c639679f500c86c1056c0e3a7de90cdbf777"
+      ]
+    },
+    {
+      "date": "2025-12-11",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6f7bb86726913ae01d7c11701a076121ca78f986",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2a88494a95acfa622b59cd704a7f5a0e08b29da2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f664e46fe97497b193c9c7e925426fc31964ae80",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/46562ee32fcd5cd493fb59becb98efdd0288c326"
+      ]
+    },
+    {
+      "date": "2025-12-12",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0b882a2702ae771a7e112cab04216096781c3224",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/37b849aa6492f23940100ce30727cd9f93575cdd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/03cf201629369ac968d92bd88f21341d3c458b62",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9587168498c21652bb8b39a83af01b5723a0f383"
+      ]
+    },
+    {
+      "date": "2025-12-13",
+      "public_commits": 21,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c3d94dab2bdc9976971245a438e730cd2eab355a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/68e3b9da0e7eb6c7fc57b67fdb4ac1c7efaccb0a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5113748eb4701f3aa0ff973fad8875936593821d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a2d435c8ea1163ddabc3838d52308243e3207193"
+      ]
+    },
+    {
+      "date": "2025-12-14",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cc28cc685a533b770e55258c9e8c6acddcad2492",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6b33e4f3706fa3e06a229f5c19976f988b706d56",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/39d0de6bbc9cf529630f84e3f685b838b04fd6d1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e865c68ac55d7fbb0e1b2e479b26f9355c4a06bf"
+      ]
+    },
+    {
+      "date": "2025-12-15",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2bf41f7574afd2655b7580309ffb34016f075664",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ac48a47d1ff998a358db23dfedf958d398aad53c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ebbc73d37b8cf1edc1830c78e10728355292a738",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c3aa0d5b3a24a6b107639582c62561b1ee2c76aa"
+      ]
+    },
+    {
+      "date": "2025-12-16",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/40c8b849b461a3897b57836e2128634345e4c13b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e314667ffc4a99707c37b340a3f41943e3dc0864",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f1c9c094a4d4dbcbaf8f80b80e875b9578adb35e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/69810ff657f1bb26245ced813758e3ac3321ce6c"
+      ]
+    },
+    {
+      "date": "2025-12-17",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ab0ed72e82cfd694ab2ace7d0415ece84765db4e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bb51893f4ce7b147cb1a89d1a8029eefd13a87f6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/da90af7a994164127a0ecae372aaa077d886f820",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/80e11d3a6be777d7b1d5fa3217ed1198e187b80a"
+      ]
+    },
+    {
+      "date": "2025-12-18",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4e1734f19e0a73b9ee892dc4864a917c6696c9d6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/37569a171c9b91084167836b1a9ee254850e7107",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/87a5a280eaef95781d40ac7fc9f7d0c3f46b74cd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d269ba10d4fb237b4a834c611f9d4f42655cf333"
+      ]
+    },
+    {
+      "date": "2025-12-19",
+      "public_commits": 16,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4a21cd3c8dad0fae38ce85cb559cd6562856e9ca",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/25fa6b0cd0be2a413ea27b418d3e4d119f93ff2b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/58e349e7378223b3922caad456d2a0b5172049c5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5c54d4cae58ca1b27869754ff1716fb0bdfecbc5"
+      ]
+    },
+    {
+      "date": "2025-12-20",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a449b7704923490df771620ac8ee00420053cb56",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c3412742cd3137d0c7e5be1990cdd6d3199631c1"
+      ]
+    },
+    {
+      "date": "2025-12-22",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/143a31aedff989a8757169cffb0b461f8079c249",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3cce01ca5b3ba7b90bd0da8bb67423291cc0f838",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a90d748af39b1122614578e419f2ab95c122fbf1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1db6ee99c769e788e9534b46313c9fbf71dced99"
+      ]
+    },
+    {
+      "date": "2025-12-24",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/81bc2d917f1e82e9ee3f49e52c0482ce96f486af",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0ec731d3bcddcca6d55495bd6c1aedd1a3a95361",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e3dd6b60fb05b01352b621e216d49fef53ac5719"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/32ebb7020f4cd6f96550f045b99ce66668153982"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ad3fe5a3128ac15d4960ab77f1f12b6be5383107",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c2a0910b1362586ea496b1d516d853752c5e610e"
+      ]
+    },
+    {
+      "date": "2025-12-28",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d29394c79d63cc75d9e790cf411886b6f8facd14",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9b690edc35993733e5b73d13b802526339dc6a54",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9cdcc7f80f38ea2ae5d8f2e37b445244bf500043",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7df5e123564679490e6183784ff8722a877d18cb"
+      ]
+    },
+    {
+      "date": "2025-12-29",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c313fc97fb5e72b5212861230c4a5fdd2a56ac84",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f846f41803403c1c96cd0d2abcd097bd4a88218d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7134a234809c3b2cc0b8bbb8cf266ee36bdf4982",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a0ffea493da4ddeb6d00f85984982e3f1a6240f8"
+      ]
+    },
+    {
+      "date": "2025-12-30",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/88c11f878a7dcd8f849a6befcc9cc889f60d2594"
+      ]
+    },
+    {
+      "date": "2025-12-31",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6e263a287c4e3d3f9e54c288e25ec4de4e1c8cae",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d7b78f39f93ed3b70c3239f4a6b253279242c4ea",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8dfaa94df6906a711e8c32ceee54a7832c42b939",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/45533d70888866db66f6aa6d17875c37b8e507d3"
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f8c1192c3215d1416ebde030d0246e7ae57a7ed2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/59553a874ec46576e60a346c3d45078a600d6ff5",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/5376046e887ce608ae578339333be01ee39d24f4"
+      ]
+    },
+    {
+      "date": "2026-01-03",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e6170af635600091fa62e67b50cc13b1b6ca3098",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/41d38ebde5b47cd3bf43ccf7c2e5f37708753d8b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/864251b60f31ea44a2f7a5f3f65879c2177de48c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c6a12d14c2049c7b2f6dc28c6e55fe238f82f85c"
+      ]
+    },
+    {
+      "date": "2026-01-04",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/590f366c14b4c02292bd15ba9bfc58f21dcc1770"
+      ]
+    },
+    {
+      "date": "2026-01-05",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ce9fbd1379167d06d3807e2b9b3fe6a46bd35661",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c7e980b048944a9c3c7862c7e5dcfc52491e920e",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/0fb04d44bec81d1286a85d07415643f17454efd3"
+      ]
+    },
+    {
+      "date": "2026-01-06",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f78ff2257b962823f7bd5d0f93d88ca512ae409f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/af9e06aac79a621d13d6426267ec99c3b5dfd1d8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e737fbbd843e22917450842c8a294fcd81b9327b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/126c7993d3996564433f9e03f1858db8436b3c5b"
+      ]
+    },
+    {
+      "date": "2026-01-07",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/068c2261a62d3341a04b498eb288be8a20809f78",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c8de5ba820f1f9748a771bf820cf8c3093be00fd"
+      ]
+    },
+    {
+      "date": "2026-01-08",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/804a2fdd517a60a36206ec02844105408fe0249c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/848b9cebbb155701600a3b0bc9e63d7f1f59df27",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0cdc14dd219d475fcca6db8228c45cd8ce28d6c1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/08029140efbe1fb0a61f03174206a97fe21fff7e"
+      ]
+    },
+    {
+      "date": "2026-01-09",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/813f585c8c40d9e60c92c0cd0b5ac95f91eebf81",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2e16132605d5225897a459d7b7ed5efa8570cff9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/be16d97f7ee6835c4c3d66b01320ac2d0acca323",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0be98129f008e941e015b281f242962e28d04854"
+      ]
+    },
+    {
+      "date": "2026-01-10",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/af04389863a580ba62fd8e1caf48fb318fa0d45f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8a5e967a1b2ae55e2c1f3bb5f695ec2dac7617e9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0b9cfd36b035dd77ad6823ce5a7badc38507e3d0",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/23f6fd4614271d635176cba05063c6dc26735c51"
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/cc7958049e206dda3aad0929e3722e86216e6304"
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/0e95a892eb0962da73230f816314f9b2468c81bd"
+      ]
+    },
+    {
+      "date": "2026-01-20",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/90d1e9f62501f2bf0c8c46fe94b7153df086fa46",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/56ab0ae2255e48b52df75450b11dba4a4f3bb533",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6cdcaa5ccf26146798df7b7f6f3374b4d5f436b6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4b9355100ff64cb85ad1dc51e5768f6dddd52c48"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d965e174399c051c2bc02986a16050e242d44512",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/76e08ca899b73a44b62fb73ab99e78e69b21e996",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/34b8ac26561f2b0090f620be8253894d2ce667a5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2d75a081d31c6c47bc15dac3a111d046c52de66f"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cdca582b761a2cc2da0acec0e1046194778748c6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9348ac9c9fea1053ae2e6bdd5f9ebf7423627eeb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/54562b4101981fe1f456b33b5c23c5c2d0d8bd64",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/375d61a816d953e326d60f3879812aefe54b2908"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d04c9951bb54f07128e16813efc1e9f6124fe8ec",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ea73dbcbd4b7f4551d3c9299c735362946377260",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dc60d714c82194b5aaad453908b7cfc91563d868",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/26681a563327fdbc6626f310ab629cdbb3656d35"
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f1b0a1272ae6f26cb0bdcb0c3a3d5f653a3cab1a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3257de16f2955489797f9afd024e2ab5933b9a38",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b317abf9bf5bbbd58bed7ca28b492224090dd9f7"
+      ]
+    },
+    {
+      "date": "2026-01-25",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9d708d4611a007519bca86697230f195f6feac20",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7052ee40f82939d11274aead14b0aaa495040e9c"
+      ]
+    },
+    {
+      "date": "2026-01-27",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3cb20951d6de0bc419db42efc897728bd8aef261",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/99367d5806636b8417debce47ef0bb429fc6c24f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e2b9f6c3bd42cd35512c85c1b4681d3b5d86941e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b55dbeeeac0626f72f3420dbfd8bbc764a3321e1"
+      ]
+    },
+    {
+      "date": "2026-01-28",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cce8ee826eec4b9b4fa29cddda833c82f3fb5ba2"
+      ]
+    },
+    {
+      "date": "2026-01-29",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ef1c4d546a003c7b99376c90ba914bfbc94c54d7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7fd22eae047969bab83a3fd2c885ee02253faa15",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2d54714217ad3fb21e4d70e97c6288aa5343eebc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f094d0f72f5fd6df1312a28b7d8d29e6e60633df"
+      ]
+    },
+    {
+      "date": "2026-01-31",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/041dfc9863cad9ec9ec6b0e59362a28ad1d5c22d"
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f364b5a6cc0a76050731589a3baa87e646ade136",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f214801e726ea6898c1a4957870d92967aa7cd49",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9782fc2c93308e6fa47b2a7b6b1b08bb7944f918",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/12f187ed8afbe18ac54a5c6af8b804c9d923fdd7"
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c7b13cacea153180c0ef2b6f22a172de39b16a33",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8ef10db4fb5f1dc3acd14401b1815f195bcddbf2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7a5963a59ebcb914a7fae57b8bd0b44e8582d16b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1ede5b3b47cc589982ee8c7224d277bef1a401d0"
+      ]
+    },
+    {
+      "date": "2026-02-03",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/be5e57834d557cd5cf4a387674a6665aa811498d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0c33b31aa11f43b24dbdbf8ffb0a28945fd48326",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/43625754804328036b01525b6bebfac96dd0b2d5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1b11db13a80ba65324f41195e97c1198a672cb83"
+      ]
+    },
+    {
+      "date": "2026-02-04",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/34ab348183960c5de03f54fcc586f09e6720bdb6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/88db789e089abcd6a9a9f6d9b079404815e3e27f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1fff40b5a290ab521a3d40e99c8d22303a1e2e7f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ffdd22c61696c73de8b57c0e26eb7e987a72698d"
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/254686a511f25be51ce2bc71e4999e0d187ba8f1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b68442614e1a9f30360a8ecadc366e825913f6e2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a84bf52669b4d8ed80a40ec0c53e126f88d8d48d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/853ad1e508337f81e52281ad2384ec81d8735e9c"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/143c6d407c1e1fb293006eaa0cc4a8c2a16bca02",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e0b9b8a9859c6e467a3adc1f196dea2b8ec4739f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5bcf9195503a5bbf669c256449bfbdcedd88e5ed",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/91d62fce573acf26b3b7149dcdbfcc9e67aff2c5"
+      ]
+    },
+    {
+      "date": "2026-02-07",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3d9e931cff502938a181253f04bd84044e8f7575",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0a7261428dd2c2f857b7b993bed60cdc57f08cdb"
+      ]
+    },
+    {
+      "date": "2026-02-08",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e1477e3772a20e0170e57635e9682aec80cb1908",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/03158b87fc50cd50b4ba74c8e2d628dacd03b8d4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8821808f8c806e86262b0b2a1eecbb54a25e2c3e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e36dd34e876ed2d42d415a689d7ff02626bd0a63"
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cce93a4e9303460071d5ce65cd3c5b0bf475f1ea",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c74a81f5d188b70c68689248904e3b1a90ffaa46",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2d299d9aef6e89b3df4b27f44940e9c2d5714eb0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/46fefd986e4107852d6c166c86956bba51f8e733"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5c2fc8ec3bfd836a2955f84d67a5dd7e007e018f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/69a6de3083a54cfd2ce13f2b791a61a559cb267c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/96f0a5b5e3cbe8ed6a708fd856bd114305e3a57b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/045c8ca614248fe21accc722c42a8094b0a39d23"
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/da40d4fe7717f2c6798c28c816ac9ad958945080",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/13c2b00e8d119ba206f4114d376cae3473305e81",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/48336b364e15e010ac376b748b9d3f794dee51d4"
+      ]
+    },
+    {
+      "date": "2026-02-12",
+      "public_commits": 19,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c4b22fc6dd1116d90e799d110eac7cc347b73421",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3f118369c1930f0de88b155fd97f908f00ddd5df",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cf6d5219b8e650fd5bbc87663fbad74bfb2b627b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/583b78c60c33c6644cc296f3305dbf9b8cbe0e6d"
+      ]
+    },
+    {
+      "date": "2026-02-13",
+      "public_commits": 26,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9e42a74b4b1b002c0b78b752a00d74f30ca6963a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/476e92dc7c9ef5f1b8971ad6e93aa4636f0d2d70",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1f06844a0b105f1f0fa7633ab0a8aae990b75970",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/726651b9afd7eb62d80bdd73c3d44f3c84f4bc55"
+      ]
+    },
+    {
+      "date": "2026-02-14",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5d93a9caa35aaa5f3daacf04a417b64ebdb513a2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/311f91eaedd3e40c6669f8d10484d708b47b7f5a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e34915fd624133a5d06eb245a68511cdb8e0e987",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/26b5262f1a5b7f16e5e856b15247f05ad8975218"
+      ]
+    },
+    {
+      "date": "2026-02-15",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c83bdab399835a8d192a72752de44ec16823f1eb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7bd195f11d40535678118569e9f5ae98c3b4b065",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/059458dd851c65f81f3d3441bac313089f4f91c8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9d2fc5dfd5976cea94e2fb109fa29d32442db1c8"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "public_commits": 19,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/107b4f3c2b47df0ebfcec68e0bfee01cf7b59976",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7b29dd07c611f942ecc8ba1cd910ed145c244874",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/81d400012d71a8e01589c7f75be3a8add47fe83b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/49bb0d9fb311f943fb9b0c807516eeb1427ad8b1"
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/36a0d95d83c68184bd4fa3610dfc6080972663c5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4bf0cdb484a1de3d7cfd91d4361c947c23e59763",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d5bca121abcbb8f5ada7db274aa2c34046e61606",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ab319e608abda3c6959b42f4e80a65a65a31e8f3"
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cd75f8c546547e5badb51ca15c7636f19eb22437",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e6eda4495a4072053750c6a3b61f7553242f07ea",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bd96c4af94bbba8d7ec1131a3bce80d77a368072",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/02463a4e6ca10b26eb45126e956a854865094285"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b116b00c8e7507e2aaad4aa8ed3faa28b4d92a2a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/386910127fe06db867150a3637e39f2f413e55cb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7bb13dad2c7b6b1cc8838255c55bf7e8479a9588",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/29017a844e4b22caa618c86ef67c560cffb175dd"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "public_commits": 19,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/003b0155efac1b7fc2be80b0d1e98b47783945f2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7f8635a50f404b8ead89aa682c7682f6c3345270",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/99c514221a341640813c0a54d5f2d02d84668a35",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/704032ac928669fff9dfbda439785df3d524e8cd"
+      ]
+    },
+    {
+      "date": "2026-02-21",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b466233f580a67c5c31f180d6cbc788f94b43e64",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/061a73953e1b7f8020cdd43de9f0ecac642d9b16",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/11003683ced1616dfa3edf6d39b9d07ad853a9ab",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/549c071ca74dbee02a91f114d856febeba406d90"
+      ]
+    },
+    {
+      "date": "2026-02-22",
+      "public_commits": 25,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8a06fe03697b9b5c224046758c84ed0b77e7c15b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9fd45995602caa777592630c0349c0b4d7f3e067",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e7cdbccc21f4616f663656f860950202234b08f5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a7de6e96446824ee015c25f0117dc14e610c5031"
+      ]
+    },
+    {
+      "date": "2026-02-23",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2be70a0ebe6918557882504faf5e24cf73e9cc16",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/43d797e4cf5822c49ed7d463fc1317387c8587a1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dae0db5d09a78d425ea5c8bc3a8484a14ddd0774"
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "public_commits": 38,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b0a2b02a106c1534284ee979dc3152760ed59c29",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/804d860fede397680a023836ea647f2b7085875e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/48b98c3ef605d0da1b7fcdf367bd599f6ac56142",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7e4c520b89563f066e47b8fbd27a9f13dabd2be9"
+      ]
+    },
+    {
+      "date": "2026-02-25",
+      "public_commits": 16,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5e5ae87b2c901568462252a3d88e3c0285bb2420",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b02bceecb39482bb73482a5318bde85aabc82cc2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9d8e814d0a4ccce8c1c50f24b90edf8ed8ff8b85",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3371a94ebd99611db8606f860ca9bcf4dba8db41"
+      ]
+    },
+    {
+      "date": "2026-02-26",
+      "public_commits": 18,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e016e1cf267c8f5f875e1bd0c0e5da12a049f209",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/616f9f439b3de8e36c14fa8f639b9b1ab3207e75",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3daf98f4494874beba4351f935227d0dee08157b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1a8989c7ea7d19216db74f7956a2e068ca40df9f"
+      ]
+    },
+    {
+      "date": "2026-02-27",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7c98021dea3c9562ce4a66bc9186caa9d7d1f24f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/58481d694b9be0fb8865e3093ee41c3c693eb29b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1d0eb1594db343c4c66045f20dc172bdf8f5845b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f613a5d6a1be48e9903f72b243c2aa3620c2807c"
+      ]
+    },
+    {
+      "date": "2026-02-28",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/076e8f258d083de38f0bb195262ce232de15793d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a2270f27043403d2cc05258cf0822e096d5db668",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/87189edf6cdff412a452f068e606e6565d421f80",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3d775281aa80aa85738e1ff830ff4c57bafcabf3"
+      ]
+    },
+    {
+      "date": "2026-03-01",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/51b6e397ffafe55378cd669540c64e7da29293ab",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cc41ecc72be353cb68f8eeeca09da40174d9df39",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e69b7c28adc1d662c7de55d0b32bd87260797519",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/eb992df9d7a837c9d2a9aec28e7a93133a7b7c6a"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4a6185cd0a91790261715c90399ad854deb63cc8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/293bbead61cd87529292d865ba9fffd272d1facb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/04d40197a2b3a20658b0c9935211f044de4bc4cb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c1aceb884025e59cd8026ded9e39b20a21899da3"
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "public_commits": 19,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/95dfd01e9cbb653d03f5216103a7ce328d8245d0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c35910d90aa16406f0f61f05e08789818aa54861",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/64f00391545c7e16e00c42b282ec3fa003a59455",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c0cbcd5709f53614e5fab20797c56f5b44bb5500"
+      ]
+    },
+    {
+      "date": "2026-03-04",
+      "public_commits": 21,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c70f89ab3e4880a5222f54f3a4bf02498be7e54d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6609706c8998e11149a0a6d9b9aa6269bbd4d7fc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d56c4590dfeaf10204742b62b67fcd556527a8df",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cdbc548e57f138dc55d83784ab441f65265d0f50"
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3c629e0932b5ef0b59817e87885b448ecc1c6630",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c15072c977a61a644886009f7e436e0e39792fb6",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/ff5d21f7f864cfd93a9e3c56af7591f5a074a720"
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d8789e27c939d8b1d5cbc3d8b64ded251926b2f7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fad14b472058676cf0800b958b4de5684a802079",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a2eabaa4c8d39f2acb175b5438446fc9d5c26ac7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/82117b4aab3bc1b5cce61a0c58a519f967fda437"
+      ]
+    },
+    {
+      "date": "2026-03-07",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3fb74e60db880c8f4b0b76c62e3dc517eed07bfd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/15fea86a5a1037ca3bb4da6cbdc871737b0363c9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/15d51d94cc4191c5b3eeb4750a86b5b973fc03c9"
+      ]
+    },
+    {
+      "date": "2026-03-08",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d21da63a29bd82a9bbb45524b4e64b736a3ac94d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ff90cbf82e064d4e5a4a5029da9b228bab4cac84",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c7da79f4a8046391516878915cab345b4d7cd151",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d5f099c841406a0f995bd9842132d2fdd8f581b7"
+      ]
+    },
+    {
+      "date": "2026-03-09",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6a9261fdc48b7f33a4109c7c5a2046cbf413f698",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c41b3056808d83f55406605c436aa273ad781745",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b096ce8c01b7b05fb4434689cffc912bcf79d31f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e518a6b2b37fc91be9675cd2331054f7389694d7"
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/413917d8766328559811ae8e5308fc4c635a22a0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/74ea1db9c1825a48e6b0c4cb0b5d5d5f980eb18f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7bf93dbe6459789daec5fe3fcb69bea406c945b9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/91704390ac0502fb1627729826fb285e5a77b00c"
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0ef78475c3ca32c9c2e9e2e5decda5ca30b2a5df",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/069ca78c350c8d6c82e00fcc429902c829ce02c9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e6447a4aa4bbf726265535e10dc812a493be6b71",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8474577aee503d4021d27c8a5b2ac5dacc8160bf"
+      ]
+    },
+    {
+      "date": "2026-03-12",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6b95b8113f9c0323d8b6dab79d7e0218fb7a03a2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/95343500b0a1d6e8f0d929321eeeff52fc76a222",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9c5b633c5a760de47112d45421c5ba44479e66c5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7de9986ff04d25e0ab4bbcc41a51ff8c141bcad8"
+      ]
+    },
+    {
+      "date": "2026-03-13",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d94ee2071c784f46c829c138d315313c4f42c08b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d02bc7be1f16fd153f85f6270f35be28f623e251",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d11cdca9589efd025348a13cc8eb740bd9da3bd0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7ae8b387e1ef54cece1f832e818b9bb885e22b88"
+      ]
+    },
+    {
+      "date": "2026-03-14",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bf15bc947b1b0b11624f4a62aff20b604853c5b8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6a3f977dcdc40d34ac7f841ef05b2de745adcde7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/405cf1bbb14f2fadfb371a1cf2079ecb5ba37418",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3829b9a3e808c20dd9c9d202e9824e6d532104e2"
+      ]
+    },
+    {
+      "date": "2026-03-15",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/30934ae41088f741aa48d3b4b49196f9765e99fb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/354a976e30aa23d015b16fe068113c1a6caadb1b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/644455a95c73fdce65fb9e8e39a33afcd244e7c0"
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dc0f634d0e4a48f9efbf800168a0f54b6a939f87",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6778f42998d4b474e0e7dafb78e35205bd2effcc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3ee517f7ccf7ec4af54481b1d21398fea7de64c1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/776469eac9ea33033db8c6f7461869abfae6a26b"
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/755e9ea9d281ded9831c9e31d6e80f142716f4e3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8ba4b3670bac763b40d1a288d08c65406f8e8358"
+      ]
+    },
+    {
+      "date": "2026-03-18",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/98eabbc560734cdf9d7c7e2ec0d8a57694806822",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b723f72ddfdace5ecc96e7e6c365d901a86d65b3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c5b1cc53097cdc68786a002a85ff7fa950bb83e7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/86ffa8e4df6be17508faa39db4a4d7148614a4af"
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0f6073bfbeebb39aa54a34fbea5f1995a3d0b2d5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3a60b44a7c27be691c2c8fe69addf3c6b9113d42",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2d90c9b83d96e58049f871d174ef2a195599e08d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/194c7186a6eb6e9f538cf88c49654f57723d5d28"
+      ]
+    },
+    {
+      "date": "2026-03-20",
+      "public_commits": 18,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7f1a381448017537c230d48e7248ce38e2db6d55",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/845084fe3d792ae203069df98c1461d3fac5cabe",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7867d4fdd211a4e14994fe7d433a5e63ebd9cae9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b0e7e0e60af7063a5ba4562c831189bd6c16a5cc"
+      ]
+    },
+    {
+      "date": "2026-03-21",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/eb6796d4ba7834df77a5a5dfd86e162084c97991",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/99dc7fe593ef8f25e9114f4e361ea3674cbd2696",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/365d35d898e8c161e39cd8dca228d9801550d642",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/03ba272ecbd3ae2d3d940c512e8f974d4acabbe3"
+      ]
+    },
+    {
+      "date": "2026-03-22",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c3f377102b510bb54d31556e9a86c5d0cc6c11b0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bcd92eec2f31db8aef9f1fa4bff9f3834e737f1d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d6e1350a3928b75185b909ca6a0be30c2b07a2cd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e02765c5a05d8c4c3a88853856094bc6de6ed465"
+      ]
+    },
+    {
+      "date": "2026-03-23",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b676469577406d85a2bab8b0aac0a2f99acfe628",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d9723f685a6f56bae88af9e17ba8d13f6f510f38",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e8177b6b79cbc471af2320642a84c94328d6a7b5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c12c41f52e049e3af043394a9a0b06569abf1ec2"
+      ]
+    },
+    {
+      "date": "2026-03-24",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/49978dd989bfe7aeddfe5dfa878483d931b12fa2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3f1b76c42608fe61a892c05c092e25ab10b0a95f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/90ec00772b4608d848edd960a18fe9320815e818",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/99ede011d1a983f38fee2f279b28e8aa1299548f"
+      ]
+    },
+    {
+      "date": "2026-03-25",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0a50a6d70df20fd30b31e099cb5e1d1a3e35afde",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bcdb64d6ad9ee346c80fb113f41fc3888959851a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/027eaefac91fbb6d3ef7d3ff2f82a7e95a746e33",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/77fd0537eefde5aed49d95898c89e1197fb773e6"
+      ]
+    },
+    {
+      "date": "2026-03-26",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d00a539ff3f35e4787d5e3e6fe7232a0e1e5575a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/38cc6a0c1add6421f4c9da19f7f561a0b43b1ee7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6ccbcb9e8a8172db8d3d7df72b1072bff9c2860c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/613c4370b869775881507517f4e2355808393bbd"
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "public_commits": 19,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/98dbe25b254532fc21fc69ee4a2f6a7165967920",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b492140ab123312139ba1601928c8ad505784aa1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/955c47dc487206b3154f75255c89bca69ceeff48",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9aba955b155ff1e7e6597c4f7202d9ffe4fca878"
+      ]
+    },
+    {
+      "date": "2026-03-28",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/081a52e0b7db2478f62632277bf0f2b47cb2a18b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5a3fe458d6c8a5f6d3f4786c28e4067cc28dd313",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/28d12ed9a8952d080d893f2b76e5d735f516341c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ea2cd0cc21a1dad314a03bae97d2b165e5597807"
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b55a2eb0a70f467645319af861e37533b9e21a7d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e90f706e644db092e5cf693b5159e7f1f630659a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/aa3e45cefebf5dfb9be6ce38265ee3d00c355321",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/75538fa36c396e6816cb99336a2290b08aabf377"
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/84a3b2c5a7ebe55240613e4a238a7542ccc24453",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8ba05bcf88c6729d202ef2849472ee18bbbbb276",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/636c3f424715edf0a7171f754dfa9b2e76bd74ba",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bc64f38bf8f28f09cedc5554dd00c94e1a297580"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4e5e3217e9780ab76a6738b1754e0d5ad0b2803e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a1c90267b53c31103296fe1ef099757db4c34044",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cdee89ed98ebe304ef35ef477cfc3d584f711ca1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e9b6021805c64caddf76800b8bdad95dc42e550e"
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "public_commits": 19,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4ffb0353c4ff695ffc55f53166a0cd86dc141a94",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8c4561d8ebfa8ba0e8dfb525375c1d188c362b8a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/af09b26c7a2f4c5d83b5ce2c74e818a26131bd7c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f49ecc478727a40644de802f4dde3a3fbb087029"
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/87ac94666495e62ec4602d49056b1243d5e20283",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/eee0e011ee09c84849ba1c8de4d9107555f649bc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/757056cf76a5a9719028a3613181b1a697b3c9e9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c55182ecce1f6bb77e83f0079559231db5d20d20"
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/de8bd7225b6f81291abf020c63f1e439000c5946",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/483f4ad7b11aa7e5504bda90c01ba82f34c62db7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bfc91fb513df6f3af85564f83a6a61d5690135ad",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/66eb62bbd428606eea1813d6c70d3cfc268b5f57"
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5163a4092d4efafad4f806503748f6c9c5895a8a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b57797842ce7b05ccca098931b77c7f0c372f5ec",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4f2107945568aa0a2c714452113c2851a3f7f8a7"
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5f1a532b88f663afe9a4140aedbcc682a52cf3b9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6e4fd380b65fd8610b37ff9e529f378665f743e2"
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1c33cc9600e53c4c4ec49c3869019c7f46cf999d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9c7c5ddcf3bb54e8291184367a8dbd60b1e4c56e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a3ee50a6d01355c05e6292093dd767846bb232e6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f9216be401bd730b5f63348e10d73d2ae703984c"
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5a999824b9c196209ebebe6816a00257a3031e32",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a9380131fb649ca074473fa0d873b6770585f7dd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3c690fe457e75de67652c7738047114352ec31a2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/00eceed8457abc656346c4a9a6108254dcc92085"
+      ]
+    },
+    {
+      "date": "2026-04-10",
+      "public_commits": 10,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8faf540b38d16a5415274e1765aef32ca12ea64d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/259f387938c73c75901c6d86da65f0f23f829691",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c5c1cd0f4f88612621ddab93cf5233a75f8649ac",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4dd485fcbe5517602fafa7121b62e2884e17438a"
+      ]
+    },
+    {
+      "date": "2026-04-11",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6436dad76a58c9e414ee08801e4d83d8094645ec",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d7f4955752288de356d58fed515a8caea9ae4e09",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3784844844246341c22e2577346c9a25e879be9c"
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/80d2955744af0967d3608ebe723ceb009b100151",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/246d6e5aa57122b8937fa66a738586a0dcbeee2a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c0ffa18e5ff17ebd61cdc4694f2e7aa6fe206550",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5691f4a6bac93227c6d457690032855b9f45ffae"
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3a0b4774843db8ca439b51c24f8de89bb8dc7a7b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4fbd73e868038913714fffbeb32f51ad47b3c594",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9608e23a2b034bf238eff81768368ad63be89c3c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a352cf43a137599214c02a0a6ba32a4067e329b5"
+      ]
+    },
+    {
+      "date": "2026-04-14",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/05a5ff8096c11ed7bc9bb4c8d2bd48be92f8b0d3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/443540b835962ac251ce0474cfe892e59756e82e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bb78d5f6a18d20e779fc5be09f7395a8081cc39f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/51424516456c2f42b97413ea49f62f57ff5244c7"
+      ]
+    },
+    {
+      "date": "2026-04-15",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7c44b549527d8447c99dbc9e2598c6a8859984ba",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/40a1bf460b2832ad38514f5bef77f8a553afc302",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/bc2d51a2eff13d169fb5c5b48c12a950a18c0301",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/e127cd3d02381fabd7fe887208634513116aef6a"
+      ]
+    },
+    {
+      "date": "2026-04-16",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/180f36c071ad733082f09dadd0ec8702ccf62e7a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0f79d4c3cb216f0408744ef8bc0abda6217cc7ab",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/69b00f8c61aa1f5850ae34965029e02b013c8d49",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/934075f0bac4c367ea7e2c3f735e33f93c4d45ee"
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bf39a8a91afd42661a3f42d7dde6362d8cd1573f"
+      ]
+    },
+    {
+      "date": "2026-04-18",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f93ad85d54fb61ec9e862238858761d425853452"
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/19ad486e424a73b7579c8c841288b40feb07822c"
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0e90f9469382e86505d847f72bb51fbbb5fced2e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e49466d8de2a31910a9c6df319b0af012d073998",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/04d761ddb4cf8e3011e2adcf22a0d6d0435b4a52",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c532d202c387a02c08fd9858b8222d7fb0855bb5"
+      ]
+    },
+    {
+      "date": "2026-04-21",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/96435ab38058f5b029fff1ca958e11f5577fd409",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/955dc857f1e75cdb26fb31623327ee69e4bb4f72",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/d2bbe54687a23525acc3a6435b637aae4784c3f7"
+      ]
+    },
+    {
+      "date": "2026-04-22",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d3239eded5d3bf5c1eac2e8faf0f068e3b08de83",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e4bb8eaeab8aa44096c4a2a69298ae56e0cdc8e2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/020847153a595d37b06b6d2eeb4bd9da4310fc6d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4d43a9802794577ca8dbf594bae7c2f9a216bf03"
+      ]
+    },
+    {
+      "date": "2026-04-23",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1d40c1b2ba41346c4e30d73a699607937fc8e4a0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e7a1b93cbb328742839593cb284522f2fcab3076",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/351cb3066bb5ab13a96a67596ef3899026431576",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0241f743e3b1d832a6e859a17fdaf86fd3219059"
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "public_commits": 10,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/19b69c2d8a2ca2ac4c7fb23b483d2c51f15cb200",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b275db58c4374dd9c3ca45bb036b1031a7cb477b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ff8af01786b7687ab1dd427f3b41632a2276963e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b98e90acd6548d26653510eafdb192eb8bf537e0"
+      ]
+    },
+    {
+      "date": "2026-04-25",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e228ef2377d2a4646aab57355dd80c66850b967e",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/261f55df625fd19caea339aa631a255176ba9e6a",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/7b6f700c0799246c0a996a024af74a9b55f02958",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/697d713ca06082a6319679350ac278143207663d"
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/05d001acf00bf9b539ce982533f85829960d9d81",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a6169f0c9f3de30d77dfc783589beaabcda5c344",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/01536660282237216b42f3e1f8ca89f47126dfbb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d2b0501de624fa609568271a4a13b0f7ede8ea49"
+      ]
+    },
+    {
+      "date": "2026-04-27",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/47178f2f6a8dd02aabd5afd40ff70dbcc53e4cb5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5117be2f04fef9faf915428f3b16f36507a7f939",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/76571c03797a9086c8c01f25fdf7340cfc521c22",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/91ab118808e513383d468075ab4bc5bc10e19396"
+      ]
+    },
+    {
+      "date": "2026-04-28",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b69947c20657cd3922ac48a6ddcc828dfa49796a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0f5be035feeaeafe108e9b887658448a9efcd30c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/91fc477f095d7be2f664ad2cffdfea80817e6f01",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ab01d9f18f97db0c2e9d56fc9773b8fcc3452a20"
+      ]
+    },
+    {
+      "date": "2026-04-29",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/338c1727b5d10cdf84d7bba38626cadc58f52e54",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2adc64451d322e8e21092391439477513bf0efc7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6b95d0699a879c3da5324328d460196f63274955",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d225de4a4ffc35f1ed62f167083e4334358dab96"
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d5019b6d182faa18c35d8553178603785815288f",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/7a55e540bb6e925474424a9842f6025dca6e7457",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/9171fe2f6b8ca76602e3db70c8c4d6c813da9d98",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/17e43c831d78e1bb33e140742514a9b4d7fcb9ad"
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/32b3226fdfc1b10fd0955cf3ecf29662f80b39cf",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/64cc1db9df146f9016a001efcb4ffdc68b6a91af",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/971623b5dce7ab85d0b2a1bea9982d68ec6472c8"
+      ]
+    },
+    {
+      "date": "2026-05-03",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/789e4a7262fd2db834a9fc3c679900a628d536f5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/05e6e199b719ed4e48ab59ca2a119777dd9473b7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cf3f05bca4ba7c241191dbf1aeae609c7a9d6600",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fc96a86ab4e28ac859d66c119925a49cf9fda638"
+      ]
+    },
+    {
+      "date": "2026-05-04",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ea2882af48f4b2552adb78a237d2612819f097c4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d8283934cd8af6b4ce8d449ec793e4148d2402ef",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a373d7ea26871cb3b5cf9b4cc5ed0a3ccfd3f113",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a85476793d42d2cc200ee4545aa6e856f1e6367b"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/59898d01b1b01b58e9c03c296b494a0d548ce42d"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0c4cdd5243e076bcd4a5a684831a12e560f853ce",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9658b062257b248cb4e82c0e18a5b418448dd238",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/971c43acdaa90c63a27f0688a9f761a443b8690d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/85826eb92e3995d39db216b1571828bfa438e25c"
+      ]
+    },
+    {
+      "date": "2026-05-07",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bbbdbc65bf75e8821bcf16e1b9bdb7878004770c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/45c88ae453ea4c6e33caf981ae6fb2ce4d3fd987",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/446b5b1da78ab3a2feb50a8c0f0c7ea6b13776b4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/451c725014cbb11850b806fc8121b6365a059647"
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2be672100bd9183b2ac8bc8e310db50bc9f558d9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d850276870737ab5103d4837b8bbca8e45d42111",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/49b301e0f8e6890f973b1cce853768d7c4c351e7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1e94452e21342eab9da03c81ca74d0874b0dbb70"
+      ]
+    },
+    {
+      "date": "2026-05-09",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/143556020492c2a727e00b5003e4786633f5195f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1b72b2a6b4696b02b1f26ba0bf0e1f2b72a88a09",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/07f6c74ca4ce546580b5b862a3a15a034b423ee5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/801c4fe9c60d60e6b42eb883d4b631e6538e3b20"
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fdeda3a876e42b81e4f607779d0d0691d919fd9e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cdbfdea47f7dd4b150b1ea983d1b5b06cd355950"
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/29aeaa2c75482adc6985dccdafdbb30426dabb43",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/921e9f68fc3d77481a3f90e29ad16eb350981155",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/87d7334c3a0ba7bcd4f84c957dd74fece9d295e4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/edb6153ed42979a6041793331e2cbfcd1e6a0487"
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/27f1421ed3b669c14ac99d51358428df32029d70",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c450ac6b208e645d1bb45f455b0f3b79522de754"
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ee107f9c7e7a6ab0777bbd8439643ec83eb32f12",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8d18b3bed519e2321fe32f56ab3468a37b1c254a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/727acd2266823b12407398a1b27f37630e859f35",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/eda4e73c44501a7ec64518b9b9995e62dddbcae6"
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c72e66f9292cdb6a2332c0f7278321f9844956f0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ab57bfb59df750fdc0a57f24631daa7149fccabc"
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8aaa10c7971da94b85fa3b8ca832a2869f3e9a86",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6d10dc516f9ac0ab45fcfdee5fb7a639e9eace69",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2c93e97cc429a0021bff19c9298dee34592e41fb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a88c37f752086b8a23d57490c7145c5cbe166d4a"
+      ]
+    },
+    {
+      "date": "2026-05-17",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0a24901e7b6f8a19b0c00053c9e6c2c30e52a841",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/84baaf91eee41973c1146da38959d302f6dcde34",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4a1fa2ae8d51f57065d2564f1877d9323db8300a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5b663e4a075d64d2e1c5c8880df220819b287f85"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c60ec46a09cec49c1519d81a5d8678d9d9879a9d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/59fe8993edad3a74778b6ea763eae466a850d8bc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8300ffda229eff5902fbf566abdb1485ad40e479"
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/99f96971e7583785d2e4626f3e7403300c81c9ff",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d3055a8057f6a9a43e72bafec12a166eb920c1c5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0ec8ab3ca7759cd4bd8924ca6417181636f241e5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4cce49bee6b3582c71e87b472ea06d719a958c61"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/19780c715248868a0fb9dab728be9cfe865b3fa0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d93d99f7ce4b4d7e0999cb658e3ce9f60d516456",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/aa0671865c9c45b6ea4fe3de671e0836e2ff7c76",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b1bfda756ad8d9e5caa4b9a7901823b695b94235"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2a05b285bf31c0d73c8dea9240a977dc1766045d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8e015764fb773ec09a05effcc73d51ae0a1bb7aa",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cdfb4231011c0c078c06c6f9c694cb6f58e7866a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/749e7f80b7704047a3f73733bcf93d158d3b4519"
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8b15779f048a50f9c6fddbd8500033b081e02d57",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d0269baf653186303966ee5bc159601f82ad2888"
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5bcc155b2a222a66fcf6bb96ee0885bd43f9fa21",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7527de85b21319bc13b64c08f857cf7a1d8df3a6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/50ccb4010b5c8c8125c771e63a21e5c9f035f705",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1357047639b6c8ba7c2636b5c938b4c6945999fa"
+      ]
+    },
+    {
+      "date": "2026-05-24",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/15aca6b8b2ab4a5dbbf78d5fd6924c3d45641161",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a7760fcc82156ca2a6d062bd1b3aa606c436eb13",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6f8822f8c8fbd4fbd4725833c4a374a9f93993ed"
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/97c23971dc35c6e40656b6f85bf8dee2d9fa7dbb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6039ece6f53b291949e028b757802058abf0a0c3"
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/54b62b977e9f9d4af4574d0ca3593dca1adf0e6d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2d134fbbe4dff5eb8a6b4ede1aeb8143c49667f6"
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/144e4901374ef8e8b62ee703f9db883b283db64b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dfd327a1080fc1033d0b95f3dd5fdd43b6bea861"
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9bc6a03e30cd874eb96ad9e6bf014c2821de26eb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/07434ccf43a0c9ffa7efe58680f92974fdea9508",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7d1961ef2a4a7a4310ea4144b3b5a679f5ee4cd1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9f466841aeb54b632cc3cf7ab776a9ecfd5d4a3e"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/907b6ca1d5e77ed5888a046f4bdb45498fab6b02",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3da4b2837a33bb6c51180e1cb422f799dcf3dbb8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8e44fb4c805962ad9f687a1b48d76b2913b35141",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ff05686ca14efd31d0a581f43142e367ed195e99"
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b5970e5d57e638ef46288914ae25b65965fc0f72",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/24655baa05fdda43ceaaf4c8adc3bbf344cd99d8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/198ea070fcaf2eb74e67e04f1c2cea59a98bdf06",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d3e46f6ec0e7ae3785fbb3db9ace58818b102933"
+      ]
+    },
+    {
+      "date": "2026-05-31",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c78aa987698f1a7acdd9cba863601311ef8964d1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/78aa0ee264adfa56efc3fbeebac5907d52a28780",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a7c464b7c98b773ca2d9436c6ff179682e24cfe2"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cca3026bc1199c44ecb6a5a37cca5f418c1ee1fd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/49785c9a6978dbe4c0777b8eef309184d892aa2c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/577fed1bed03098cc5ab0d072e67884accba9000",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7045a80b0870b6fa886b299d4eb87baa115dca33"
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c94a227fe35365f214d40591c5a957feefdb1eca",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7b04224d37ae2f8217f8a08913ed09ff136efe0b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/36ee4e99ebd4463b5f5cd9ad60278472afccf056",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2e0e449f3d393bf1796e995dbd4b2569c7093f4d"
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/aa00d7cd280c233ef1b328efa70a28afb60145af",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/7dad8ccb6ca7883428c8f0161da309d4d7a59aa9"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a4f3b9e79127730f73efd1a2f6647f9ab2c43667",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/687c79ea8bab08af95c3b132bf023dad06dd1e94",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/90df9e6d0ec03fcff66cffbe2f44764773977acc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a101696f1cb27704fb441dca7010f361adf475c6"
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "public_commits": 0,
+      "private_commits": 1,
+      "public_sources": []
+    },
+    {
+      "date": "2026-06-08",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/916d7108cfecf0584d37e45f6008cb81438ba5f7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/70cd418632b4b869d9312ae7c484d99a201c61c4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2f3806a36e4ac04b577d386beb9af31ccb347e71"
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/82c7e41e0c5154418e7dd4f11839f55e98ab5f3a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a8cd4fdcab59083accb2a7d09d31145eab50222a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ee0ff7e6d95a159b1dc308d0d4197e9c12610394",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/eda618b676a588041064160296669633bcdb194d"
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a986c2aa23f883853ca4ee1c0c14c9d1b4a3f8db",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ea928cab9ec3eebfe2a0cff1c87e6bc0d6157142",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ff4a1a69f36c19d977a7890a235d2397a0fde787",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3ed1b4b493db7c47fb0792a9ad08448bd0e7da61"
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c646a13ca1a53911f1cc02ffa776a4110593be25",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1c639f3ad45abd8239281301333d4a080e30dad3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8d7294e884baa20fcdd11c005263c7b24e801f8d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/70e1cab8cb21facb8f27b7e46ebe2d1df4d2128e"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/03d596d14034a4cd37b0b7954929d6c5b234fcb5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dca3893f7123cc4989a322f0aefc1a4f21085a0c"
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d86b0a45579fab458b0a61dad2fdfd024b5c9717",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/07bdae5cd10232563fa0badc41c2c94eadaea8c4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8ed9e6ae92df7088b47fe2abb9a068b1179120c8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/98edd9f51e6fe5a63cb9f618b70fc97b50d43356"
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a19f938c10efe324cdcc6715f9dfcf65b423e16e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/184c41ff13503c7cfd382e3d1f4dd2e1945fb244"
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1ef57aecdf0195b76b03eb065e2010efaa47c5eb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d5b049a3971a72e85f551ef756bcbe3b6bdeeced",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/801f1e4d650cc7f7919845b925f0c7e2d96b0879",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1e774f12e3c4409befec8b41be0699042afe2ac3"
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f9f4212cf2b23737a23f21f614ab6aef90ff3ae6"
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9099666f70e2c9de5a86233ce71ad19562e07545",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/204de54dd6ef4994ec558db47939934c5027188b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cc3acf9be1af05a637707c5ad7332504716f5c23"
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/007f26e9c3bee944fa33832d83f75715c55e9717",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dfefda451b6c4e55904fad8930ae9b911d84f289",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e78d48d864f3637a1e1e8aab215f1dc1e3230114",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/38654aea947b0ab48999012643f44c5e69fb5a53"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b158bceea28faa1b5f4dd8509c886036bd219427",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c2ece45780330982d363a27f56661b51c9fe4e72"
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b519368f741d5c393583c8322cb7199e4a04e0da",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ecd0f0d5e480b0d476071af08faa53b6cc14f434",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/91ce712dfe885eae8f41d64f6e0bcdf324403d02",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c477ec98b8105e91284c7e62214185bdd89c97c5"
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1f8cf9148ffcfb87d708badabd51007299d04110",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/660359dc2ea6e6ec861954face6bb22730879400",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4de63ff8a0b4f4b3cdeb2f36c6c6db3ef2d3acc1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/aba1aabd85fb1ffd0bf42bf9ba342e37910731f5"
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f5fe133f42de6205e7eed5f0f307106d1bb21f62",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/05d7f716048251cdca31fc2d74bd153e406b3927",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a5faef24477c0ae4a011f106260325f7430e42af",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ab52c9081a5a9f9fc39139cfe37525aafa8e2c05"
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/150020165575dee9b6a31021bd28bd340c3b72c8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/19b9fa0a061eecb68546d037424c20ffcf7c6f1b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0cfddcad1232bd30863030dbadab55c60421043b"
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f3933ec0be58c93eb493ef049bc94263b660889f"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/759773b18579080f73b7121a181f81d52a4306fd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/905b0aecaa47d506cae6236ca433248b41083926",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/26345af9e0f461142128700621a321d605fcd6dc"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8f5846dfedc5797fbc6265ecb11e07e31a323710",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/11a8bba94f7f2b8af62ce504aa1555abbae18f63"
+      ]
+    },
+    {
+      "date": "2026-06-27",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7106c6e1fc431d97b8e7076d42d1b7c98ea5923a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f67eebb2cb4b66cd605eb893a1c6a5dd1e18a096",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c67c9c92be582398a824301f0d986559bc1927af"
+      ]
+    },
+    {
+      "date": "2026-06-28",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/38d67ed779c0b6b6125c9d96f3f1b1b4e8439a6a"
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a328ee2a9221e79b0d413043e07e65eb3b56cc6c"
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c310d4b665834a324982ac6c6ab0755121e48e57",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ac18e6f4e2f0e106246167852c403225477df8bf"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b49a568a1dfd01f4089f9701b7b34016947856f7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/57a0c7c4d9b40c8eaf6dbc7a583dd868bcce00c0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/74b53a9b9fafb42dcadeb3aa83e82ac7730f8d93",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2cbd043fb9ce6c34c311946ef4dba2add736720a"
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9d1c724d9c249987d9386882ac10ad48f4fd0406"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/853c6cdae3a804fada8747c8d9568fb66166dc55"
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7400ac19e5adebf19d82d874dbff62d4612c160c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ade8efc631efd24094989e88f29f9405fe08fc6b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b952c292b07af7ecb872633290cb98bf118149d1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3a993bc9af2ddfcfc5f909879df9bf1b1141ee18"
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c8034d74fe8460d47fa541c855dfbf113b11312a"
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/67286c05a8f2e3fedf8830ff93a7639f82baeee4"
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3f726d4979849dbba4c83758412b9393d65a7311",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7608aa4b871fb4105d87df81b9188a07a9d887d4"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/32baf8cc7eab736e735d1ff2704877cd6fca055d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ec042a85d9218e96b2f93bae344724445094f5e8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bcccf9b019edd9a9cd3c8ffcb8c6181d448a5f7a"
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bccc1ae77748b3fec4e2a7e0d1208f019ef83145",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/211cbc356dde5f70a44161052e77e2f66ccfd525",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b6795e4dfec180953a6939eb3198abf09e8fde02"
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/03f76169cbe3f2b82a7f2b5e1983ceb6ef289b28",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/81b5c47da17beede2834d28d6a5debdab2f9d3f3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fcef39581462fe5568f4c731a9c800adb1f91a10",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7cdc7342f668c28ac37afc5a2fbeef323e721dc6"
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4316181410c45daa9f0ab83f4e21866e8dfec199",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fca2d2ec0d5f49c549f682e06ba55c3b323487ef",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6e32ed4dff5afdbf0f98ba307194b4a33f61c81b"
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c836cd3c4fb46be6bb6c35181f67b2717998245b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a41f163c6babbda2efc670cd70d56fb72730caa7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a36a9ce554711cbfbb7880ccb9b6a7fdb2228c23",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0ae5a0a270174061daa1ee19515be31a0d84ea61"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e5b2b852e01c5bf1abaa2793a25088c8059cbf43",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/17206b158d47f664e1c500ac1adcd87c644eb891",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b88441bf92347061e0ad6171536cd60e159e9084",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8ad3dff983fa2cff5a34e29a0c52c2a55d0f8cd6"
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/874a05214d094f76eacd79ea3897481963678daa",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d0d8176e32d4e6fc7aa400ffe53dd6b4a3ac13c7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fcb93803c2c7eb238c72ecb350ca2529c87a5d2a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c6329b522a7122c138b7553c80389bee89319230"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2f4f7ec01a93854ab22dd7fbcc3ab97dbc1fb061",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/18590df8f7668e09e74ff7ca48ef0a2034826afa",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/25bdaeebca46135b9a35da374bb6630ab0a5c06d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3d05bdfa794b8bb38967b764a88517f63e287038"
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/26d45e0f02c69b863f7a13d47202221afda3bc5b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b1ff70ac3ebdc9a32e695e428c15cd8f799addff",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ba7482adadccb56e2b8b88d16205a95762628e04",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fac370fcef45262ea4486fe07dec9e5dbe8aa72c"
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/db1376338222935cc849880c8761e30f1e01f2a0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/24d4cf227bf0de8cac83d160ccb4419adc689aac",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d410096f75837869abcc7eb1dd63cdf7eaf8f887",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/66cd86d5c2859cb0cf81512d6e7f3013db23dbb2"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/de4e90c9e07dcb8236585b7972b053b607db4aff",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c4ee9d773224d8aa337771a76743387e2f449886",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e944468a10c067951d6a6b6f6cbb288fa857b099",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/85e0f8191528547e966538d85990b8e8d314ac17"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/365f1e669a44d2dd008651078d1d43ac0340601d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bf8ba297be2bf5b1f2a5b01d0db5c1e1e3c5e991",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0f955f42e138b985aa2119b156d27a78174b5ee9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ab6ea36a140711ae18c53b0611e4e41df0b64f48"
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/96688c02ad20a277520920422a67cf0244e330fe",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4f94f30880ae6d48816ee9fb3d75966fb3ccca00",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/23b8c4f54098410457d8d3b5da4424e766281243",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/21809a524d7af21084dd284698434a3bd9cb29e8"
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ae0756a496cb801ad3ac8b8b17aad95a250cc9ff",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/997e7c14ca824f778018c170f2b20137ea5bc9d1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/aed88fead05fec40d2fe6737b40b561510864f30",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cfd2de13a80d4890be5f1a1570d0a3492fe18d65"
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/480da8f1f85812cca1ef32dbf6b7864b59f9c973",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0047f7ba35e22b0b29e3003e1637034eeaf9ffb5"
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fc819cb9bac351efb821c369146106b89f31546b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7b130ca917891838c0ddb989bfe223f2ddf32827",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e764107aebe21dbec1117b56b550c19f55566578"
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c268b94700b261474da1519cee4f9be385e15545",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c840c6e96112c893ec4cc436cdd814a3e75602a8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a0013543fbad4a355a67d308bc6e3e9ff43cc0e7"
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/182837ed9376a51f3c3afb7611690f971f82821f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8cd4354f491e51cfc3632f8b6b6016f55ef313d0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/30ee6fa25604d40f5ef51dcf2b8a4b2595be621b"
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/04c302999e1f2352595fede909b8b7ca9e959ec0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7012cbb8d007941794d5c675da949850647bf13f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d12d4ea41882b690112eb98ecdd1a34933ab2dd8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8e1adc7cbde2c88f227e54477b7042d24016424f"
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c14c50eaa35a82178c11255f90845482bb086fd2",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6d55924549d10fefec835ecdb7a6e0757d0f42e5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/84dfe8ed97e061f5f1b8386caa1964faef3f78ed",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/761d0889c23785fa6c9734901b2d178923335431"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e3711f345814338eda5ba185f26984baea89cf0b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f1004f13225cad3821d49f461df9f34557640594"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cd3ae3a23d38ea39571d3d2159d7ff56d19fe952",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/01842d5d8d493fade659e4896090b7b778133d4e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/36693bab3e269bdd1d6a237f9602271e5b737a15",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/78a083698dafe68b2d7dd7a25c2473fe77724120"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/33af73e82da5c2854327249a110657dbbcd526c8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ba3587a12a4b290e442187662eb78adea6c605c4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/67da65f0e11fecdb374ae31da69d01e8ca138d5f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3de9344eccc769116328ac63dce351291598fc40"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/39977bfabbf9a9ed49d6a6c8eecea654f144672d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fe5312c8dc30280132f442d6e81e9d1437ad8aa5"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f6cc9358416c8127c5749b88589a386d80cfc826",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c7929197989c4bbed692a974d7b9b205f4b2b0f0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f82b443f00a72f0676a75dcb3bfd691bf7b0ef10",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d1eba406c43e203f27de5dd8dc3356bacacdec85"
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c13f5bc7b2e216b5bc80f81698bf0e6a8de46f04",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ab142f31af71d523da0a6218569bf6a8a4b5c433",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/05d096d06196e5134fb054dda0a8411bc3ffd3bf",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/38414f543f9220a927214c9d17b32437f2e7775b"
+      ]
+    },
+    {
+      "date": "2026-08-09",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bf01adea2c020718de5ed59d313cee6a9dbba521",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8068b884c39b952d7efefe4aa0aef0656cd6e9e3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3b030f8ad3c403ba0e30f98e9b614808cb80b35d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/036c14dd1d40b9ba4f1706359be03537db1d5579"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/571b3f95507d15fb7b4ecc2fb11fbbe278d53642",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/017c3d7847fafaeed2ea3079ccd2d714c4445851",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2dd2fd201c7f328528f297d267917b714400cd8a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b1701718667f5b6ff1c8df565085dbb11fc1a7e3"
+      ]
+    },
+    {
+      "date": "2026-08-11",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/57845f3e4df26e7d6fd2608ff94c3b5567176415"
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dc10b356bc1adf076b1bc651d68ddc0159afdf9e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/64362a4f1a5a3797ffcec7cf790ff7af2bc820b5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/77721c9e9b2abee24151c3f180686353fbeb51b9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fd039ed4bf5aeb4dddc08b99284b388b21c029b3"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ffd0ae62137efe08545559c7951ab27cb6c9e155",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cf78b972b5e2d1af5b05e56bbf7d7c5814038d18",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/75473dfacab7aaee089641ab8051f727cef1a2e3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5e59fd701517c89316682344c5b3c4ff2248849e"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/564febe541c24786ab581155dd91ff0ac8f91038",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8f2b852b04fd72122f303be28eb87538578a0c3a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bbc2c785106f9028442acd52758ece66fe9d475d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5a39c740d33259599041a65c1f4e3725225122f1"
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9697182afa251200e3824e74f185b8f3b63f56e3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/373b948f233d76c35725f299a8c523fbaf82867e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/70ebbdafb07139664c18623b7b0986e23da2cd46",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c2ffe46733ff2083401d109fd0bc874710b6faa2"
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/df746f865ae1cd2fb2d678e5d213b54a2c5dd2ee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b996fa9f838a5b9cab3b1cdb63cfd63da13aecee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/83c738d7524ba2d55a11e4683c0c93e07058f2cb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6220e7828b85c7f21f82a7a1670c56f7a524569f"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b51e343e5324168d6684a3058dfbec142761d638",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e511be83bfafe79f7f39fa9f8d9101720c130742",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/64501713c1870c51c7cb3dd2eec39564de1d2600",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f821443acc1d06df79aab3dd52b9138ff11d6e5a"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/249e24eb60824a2f4a78eed47684ed2fb482f1f1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2ad7041baea80f5956f38754746a6ca7051eee06",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/219770a654038b8741ad0a5f09c21d94431e30d4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1ed0319f69d7a7d1dc5a9570bbd1549f07a6fd01"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d101dc66f040e69371a3f83e663b86e57c7234d6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2019b83d38fa770b76bcfe2ca96f32a5bfc6a737",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f09a2eaa4d7bf7b38cb2e5856a8e0ed0e7820203"
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/fec41c3ce8b6b78889b550af632a3c5d17b1c637",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/77a60a1c07c92908c8b43a285dd91533688f81ee",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/09fb98f4ca7324ce4022a8d23a520d4a3e248f90",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/834179a09dfef9e066819918a4183ee7c15efa58"
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2450a2ce736a391bf01b1c2d43b3347f6c5ee89b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3839beef1692f30d5cbf63163e09367182e6048f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ec5aa9670896010781e22e83336663d5cb14c565",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6c94ce8b46b2cfa5020a118df1a1af9d14834f86"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/88a917a7d77254492014d8f446336b3022ef8f7e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7f89b7a522b6ea78ff3c73ef0cbfe9b8c16805ee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7ea069dbe3dc961fed38d28e8e7ca6643b172110",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b0e609021f74d6d57e448cab8dadb910cd65f800"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f9111d57155b94319ea195e8bff0be096b050c72",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/165f81f3dc3a3c4b67e26c4df7118baa03db341d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/50ad6734764dad02fa1e0d6f7998b34760a58288",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/66ea8e30e820943311a690a8630772bd2eaec199"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/453be055e1a152dfc68f652151690c70e5bc4c40",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b7a4a566c711b8a76a90d7db67c7ebe15a458401",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/706ba949bc38baf4634d1ad8dc1f0c3755a2deb0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1c7a519079a8edf74dac212a572cae0215bb3ff5"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/988382c1d58a38c5c46551bed478855af99b6589",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/68f774bb2b9e2c738403a1d339a7ba947a375471",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d779570afb4e942d0cdfb5b24a2312140f5f9c31",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9c3dff3e2406d86aba8e85e508b582252ab423a9"
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "public_commits": 3,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/18e568304fad950f9e1776a3fedb560914374c39",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d43794f80f7483523cb2ed1f1c897bcfe41f4c3a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3702c69cc12ab9be6bae897eb30833eb33fe1012"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5e5a9714402393c24e02cd117666468ffa7bd3f7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/be11642e5233ba76ebb0b6eb4cf2bc3ea8080e66",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7cda9b375ec4a4664cf52bc0e480af717f974ded",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9d733f2009a8583e9cff050c7a85b59334e6c54d"
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b9cf1c5e50cf97a32dbd92ff54e1f5a4cf024cc7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cd289efdca689bbe487b57535d6652ee12ebc7f4"
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d8762eaa0b91d743d3af268911123604c1ed3511",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bffede0e04b11f8f47b1b9ae3bc6439af80328ce",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b9a4b8608feaeae90386a540b45a0204fc863673",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a56721cd9da61c4223f8f750710135cff7f2c94c"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e5f393f9ff77b9be1b594223e1b18beee7d50e5f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/56a88f555f8b5f830899016bafba7e8332d4de9f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/786efd689bf4ba65e9042644bbc2f681c82f7ea5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/16625c4a7b87c9fd462c905b566014709038f015"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/808d5f2aef8a7f3a630eac6270e34636b4d19510",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/679315691ff16a71ed06b381084142ba46d05bd6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a1958c977473dcf9b589535326a18911fd03a220",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4541333c07ddb24aa5d1a5b1e6179193c8baf4a5"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bf6237470f29357d3513780816002c7dac391a80",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/20ab4b7f2db39b17d71e43f0de890e53378d86b0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e4fc8edf527c89909ec7e6232febfa41d3dd1e17",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3b5f7153077efeb37bd2d958cc3c4ee31ac64b4f"
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9b8c296fc263d5462b39c1d5dff7564091a996cf",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/25f9e860e89f614f9627eadad90ae0999cf1268d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4dee435c4a10e44d453c3c9edbd88690ea1f9dc6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/89595e73456a9d623012f0cc6b858f515505091d"
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/89bfdfcd8d648910a249b979c278f616d2bfb42b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/39d791912e3bc1379204e0285eacd42b039ab4a7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7140b070089a6ba437f896f6c2cf0d46c9922cc6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a60cdc9ee85d91eea5997f0184eeb107d194c70b"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a51fe8f0b5bef25c909c713c4bb254cfad39aee4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c05c6d677baaee2842373a9eb39dac3d20e4e2fe",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/31e307edb3466f0050eb59a8aed9284f62bef629",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9fbd3246d01aad8045122349d38d37136786970d"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c06e0f2f73da09217c5d72acb392cf5ef104441e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ad78cf67f2882c2071fff29e2ee4387762bdc72b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/798720fe22e3abb8805d8bd2b08743dff954e17b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/55e64a7bd9a9e82b03ba3b54e2faa7aebbaf0e64"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b1d5465cdd5298c4785a583eac92bbf4eac6e39d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/de3924396d0998368b76a20abd1750c98d4360d4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/85286d7d5bf32054d21f3c08a3c24f2274f6c937",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8e041d4152e4c110410f7d4c364fdc304d2c7b50"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "public_commits": 13,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5cccf9593dc8416f49458c87721572bc18db91bf",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1edfc9b8a47a9ba222f0d8a1c39e390b5ee6d690",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/30c743592314f8ee1b259668ee5c02bf5f486a63",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/931318138c67a0f821b3a7ff4e2b7628f4cdf1fd"
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4727465403dd735ebbce94fca6e3de6b0c14652e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9d357223da803abe29dce48e381c85542ed445cb"
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ffb12711b37eed75c6223d611f424f460f4c4156",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ad16606a6352a0874101e5a58a92fc1a5b59dffd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2ed6d574c8b16b1a3070918af3f1a14968b0d12c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/86a8bb82d3da9c3089f3e64755211d293dd52184"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3bf88de30658332d372c183535af1dae8f5c2468",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6b1b4cbb198f05eedc0ae1bfb471dff057705328",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/de7dbac54f467a3b2edc0783a11fdb41b58bf0bf",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a0e512b615035279233784be702d2e9a412fa586"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0a47455dfd6c7b438482834b5170fae8a7e11e47",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/23dd07565404ffa96f019a26d79971816fbafd92",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1b3103bbf079da606f65eeaebeb94eb7d5d1c96d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/52bce3cfd8a146c37039022b4a2dca82ab86f50c"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "public_commits": 11,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3ebea60bedd786d0ded61037793567c55561fa8b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d9800bca317dac34b49c8150a8587be7e8d9818e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/953c8a93f95f66a2f7538652500ecce817a5b661",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dfee47986cef20ec9e4cbf65678d817e18735f65"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/931302d3323250115aa83e7fdab0142ea0443c67",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/996404d15867ab029df459b4b88c030faf48011c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/486fbbbaf53d0424a49171a10f630f13c3bebd2c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d53ec81aab1da648c8e0de62dbe0ac0da3bd9125"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "public_commits": 7,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5c48220456071c6dfc903c100d6aaa50b942a922",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cc0b60f8587fdebd16eef32c05a185756f955872",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0af05d0d671859a6641cd6130f32807f3ee70b16",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ced26f19d45a2fe639944114366aced2cddfbad4"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9bc4713bc53cd07de6c78f540db02d8587099f87",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/82c1c101faa30fb551f0aa88fb6bf2e405bca7d7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6d41d5a7ed4bfb8b2b907fb4b35d3d2acbde4f71",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/039ec209c29842790a8c6a8f9c952c4e86f3a14f"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5290c114cb3d5abe6aa650f494516b2e299bb532",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c1c450526284189b4ed729c7b15ecba56d6f87bb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/82bd491135ef1c9c72845b79379d9a7efe586616",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6ba8d0aeebab086e72a0838373f100e525ad1f42"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ff7dd40e26117d2a16a88c7b5f9ac817d5b7b618",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a6d505fa58b6eea062e3b8b17328b0fb5120f76e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9b030baa6fb05cc4dd2ec3a412d666eaacc237d0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/32d19317906e722aba878c2a0df57f458a70ce0f"
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "public_commits": 8,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7daa60d0e4a7e925722158ef6c1b25c9775a9df3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a3c7679a67256a00539e32e2863d48434770fa64",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5339bb8f567f75ac9dba98571fc26cf0bf84b59d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9c721878034604ce0e0f601b2ee2acd958de1d05"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "public_commits": 5,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/470eff686cfdb8038d3f526f9873e027bd2deea7",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/de334270f296487860330b866e9f9f99855fddc4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/169f78db87feb11beca41175867abf6b2c496cdc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f2f43737abb66c9386610b48b211c76f2bced03a"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "public_commits": 2,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/41e0bdaba5aedbd3e6e720025a751a5a6bd73704",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/35ba5df4a36784dd5142546f2dd14dc40bb780f0"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "public_commits": 6,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/e9f240dffe48161d07d143e91f247afc717d97d8",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/29e2a4363b8ca4386ddc8a0c108fc7bf6c2a2f2a",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/0ea986177c006794175b1f186a950478e2836ab0",
+        "https://github.com/Skrwl1909/Alpha-Husky-Site/commit/cf2048319d6814813ea0b43684ddf40ec3e77ec2"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "public_commits": 22,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8055535f5df4e4e0c1ba9037fdb770aec0971ab9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/db9a0e94e58c0def0d8746af172f7961b39b50bc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c4e96938840cad70915f0e332ebe404f7efb82c3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/86853dee055d6a7eb15ee23ecd6fa9ace405959b"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "public_commits": 32,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9b1c19bb42e124cdfdb1f285c86c614961563857",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/41ff0e0380d45717ff0ab339519be780a455ad8e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8d232770707855890807b6f206143e510b5d9a3e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a8ed59fd3196af6aee5e70c38f3379ff9e437c84"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/97e6843baf3f8a82a52e8733ec6d349d5c2ba88a"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "public_commits": 1,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a8dc3b21e46129fe6dbc94b948e017ff436cfd06"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "public_commits": 16,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a0ea1de296944fb60b161335983fc3dcaaa7ba70",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4bf88d14390d482214a2b1d8afcc68698b083503",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/44b3b6fb6834cf7c78b1a5a16f4c3975d60b3ac6",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3c51a2937815b0891dfca3bf7e0bada4e6854fd5"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "public_commits": 49,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/53047210c067a3bf17d0627c6ec5a3caa7f0ae5b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cc5ec92ce2458fda547a3eebd39f48b51224437d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/85297b25c26245566cc752d2899c76f65391f004",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d50956d859bae39a4b56d9b967d517f5e0612e7f"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "public_commits": 50,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4a8f6b6e48da240331220b95327e09acfce33f58",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3609933ddb049e57de45e8ebd5532bd8dafdc191",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/45dd5492c9336226def11ffb2b807c584c4cf21d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d864d289cbe92cc9861d0dadb60ab32e648a0406"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "public_commits": 41,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a27215a2232351ac3e25bd9b44503677b970dd29",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ed1f8f37399015f3cef7405b6227ff18fc39c71a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/97acd704d5984364db2c744335cbfe7feb522c4b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f92bbbb83e2f16c41406dada0dd916364370269c"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "public_commits": 12,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/900eabfd3911e9141dc61ae886e2c2ff41774fbd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fcf934253378d0f3725b01169faaa2bff76e57b5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dbfc58c9722e339a461cf594e16e56434e96e204",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7c2d64fac686a5eadbcd324cc175918c9f82577e"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "public_commits": 29,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/adab530f44c7f1b7b47ba86ab8249800f57ccb4e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c3402bd6915eb491260c18b90cecda0b6d2e56a3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/785f03346ccd8d38cb0ba2965b22400752d48a42",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7f13289799e3f45cc54ebbb0b1461bcc089a8652"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "public_commits": 20,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/97660bcdcfefd42e1d7c96752c15ce9176535a6b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1e0eb00693f97a25fb9de7c532a0d9a1d26b13fd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3b6e31d2afaecf94b2aecbaa97e69c704eca9695",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c83b8b39b955b7ba076b3cb162724a037b27e5f1"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "public_commits": 41,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4e4034ed75fea4d297ef779fe737b00c0ab763bc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5d17c7d5578db38d86f346e624db501369903038",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/62c40f9c6443a948bed1e1eb140ec640fc014404",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7e0d1e83c93c42c77e6b1b602c78c9714b21041a"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "public_commits": 30,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7855897f63bb57efaf9e93d6f817fd6fbeb04a0d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d810e2e94a4a1060228ab9e9f4ec0d175b05127d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d09d61478bf3205ad348ccc741a9165fdb8a4794",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/13288e76866fd26a7f2526cecd2d16f34be9bacc"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "public_commits": 35,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9e4aff56e36cfb380329ea1eac4302d2f6cd9b0c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/81370ffc545bc810c51d1a9456bce452b448bf9a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1236fa3d2220f79f545a11071f89d0d6503ffe56",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cb7983dd0adc631adec7a035423f2bb77a954f5c"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "public_commits": 16,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/44527ddea3789fc663b031f5ae215ac73500bb46",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/976ef726a054965587188887a258a9e0c4cad911",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d7ebc9588c94043e97a1e15be59f60c2133b1d64",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/dfa4c823bd3130b8c3b2c0c11a1bcb1333af409b"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "public_commits": 26,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/47455461c7e2bffef7e8878b678ce085e64ea79c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/75610dc57348f9ce263409ee2602592d83ed5cc8",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2a56b601b43c3864a4779e2cec815093fc137a37",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6c10354f46847462d2299cafeca2ceb4d9b37644"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "public_commits": 34,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/13ef82fcced5e576ba528ab7eafa0b2b7317bb84",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1fa572a487f5dabf83d2674a99a151af40ebf68d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7012b3caef5c9adc9b1ef91305b1fa856fd84792",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4b200fdb4b3c48c4ebcbf938d9465b373b829c9b"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "public_commits": 41,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5e88a4c8b9ba7b7858996e92dc43609b55c6888d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3ac3ea93817487fa8d54e12bbb4fad5a7256bd8e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9e80386d04a7e7627317f31a8650014ee5eccac5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/87d5c8bc3504bd959200be6740a03d42529e203d"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "public_commits": 23,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/766601f8a704ec135ecc7b9f4ff6ea51edaedf7d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ea832023f3c7b73180a88ad66d3484617e445652",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cd4b42e82e728c3872e5b8a0d02b824e334d3361",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0b8bb27b736b4c9a6bbc4c8dedc3dffd777f2e9c"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "public_commits": 41,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/82e896da3b714d046b4e24a4e72966bfb66bb83b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a6252053a537a9e5387022e4f91080510126b3a9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d6d64f2a22d24a73e415e9e14bef25aaa871838a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/afbc96302b6018917d8cd10e2c096249db920308"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "public_commits": 16,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3a9c1bca6430f54d6563accf6c560854668edcf0",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/cb47795e2c8d6669938956374d8a61efc4d30bb9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fef9f0efde54c60766f51f0818e2fea4792e7f6e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e7041218174bd876f56a59e917bc76b25a889316"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "public_commits": 32,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c517c931c8d21187f23c745f914bc7b55e7540d3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c83326e326733eb9c907d677f88eea49c8c4700b",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a85178cb39207c316f0e8045b14c4593407bbb95",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/95b04f22850650ab045018776f3e737919b6b0bb"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "public_commits": 14,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5875b920b013a7a0c693e87773f83bc9766e9bfa",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0b1feb3aea1d8cff7429d822e193abc8f7c96cec",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/90f6ab0da4ec5e5607bed99a0fd64d72ef7bf4b4",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9c3f41bbbf3e04ffa518f4b3bfdde6cf310b059b"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "public_commits": 112,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/44948c8fd2d313644752e718aa93061262e8158e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/df5cbedde103eb2c572cd00bda437ed722152a39",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/3bec7b2b34a2453ffe410f21b263da25ac4ac46d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/140883468dbc5dc1fedd57566c3610f4bf96652c"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "public_commits": 74,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/76d64b40b32e159f5896a0186cf9bedad0467dd9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a3d34696f08c9fe6ec984d07e34ce0ec9d45a2c1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/47939603dd8c79cfd6b081430d8640dca39d23c3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d00e70d1ad288cb952962208d40709c6cc5e6fa3"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "public_commits": 90,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6ff74e5c1b89dbbfb7cb267e43293197e1b647eb",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0ed5494ab7f7bf4df4ae9777f49ba073c4b8e693",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c10237bd3bf6d7a104349eec1ad2f4b8b1d2b3f1",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f045f1fccddd76704a2baba4a37fb8d67fd8535e"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "public_commits": 63,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8a1520a3dedb28aa55c5f668efa1c05a6d3779cc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5f3b438a0977a483f77a0379ca9328963dce4c7d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c72d6b56baa737c8709c37e85f3f37fcb32e179e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/180c9810070a665600f9b530fbabf457aeb5b57c"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "public_commits": 152,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0cc8585d1978f8d1bc51697fe4b07dca20cbdad9",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/da84034e74864230ef631d1d5d71ee1d7347e7ea",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4953e3d9bb082cb2e3cc1795ea454158c990a84f",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/f303f47bd17c782144b95aedca6efec939ccbad5"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "public_commits": 34,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/47e1b6b928bd4277d755c84cc5d439a596a18ede",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/da16492cf990f08fd9bd70a1ec02f2d0eeac7f25",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/065383efbe6c104b2f62c7b660600d22e4346123",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9e4627abcd8618098676f3cf7fdd0cafbc5d9176"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "public_commits": 47,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/579eb7a0f7a9dee58a75ab332904ef1df437a277",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7775a0809a5599f90779651ab11a2d8eb865c410",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4d325cf4a70b96655f1292962989e471936a1398",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/7c4ec07475a42bdad8e14224a823b57186e694b0"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "public_commits": 4,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5c6133360927f0c306540a2cb89bca8b3a0aad45",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/83d0b96462ebb9ba50ffd2d00b6a7bad655ec308",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4b4665f7fed894a570e984da33f5897d922e2814",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6d3cbed41f7825cb611838c8a23787b5644b2bf1"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "public_commits": 37,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/fba1d8bd926209e39f67507a384a9b0b4b58afb3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/77584631ddc6b7f271846b1d40173a8875b5fa7c",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/6ff5f8fe8876d18302a8d3e51188328784004a85",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8e39d93c6252904ac496fcc1cb17238d8fcb900f"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "public_commits": 20,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/c386ff82ebde35b91fa6e4a07d8903997adf2316",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/46fc61eec5a8b5069129ec2e1078ff4e6faec7ca",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a23eeac64fb49fabfbd71f917f7738930eea056d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/783dc2ad0db211551604e91a67256c17ec3ceaaf"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "public_commits": 9,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bcda7124bc2f250890ce0c4272a9d51fd968c00d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0527a71a9438cd56c554ab441f195b5fc8032bfa",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8db3528a2b672a373505080f80704d3c1f646025",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/b8f0951596779347b15e3a3f98f72c69f1bbdab0"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/8e448e9155534d7dc2a3982e38ded00e378c0137",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9ccc81716739aff0c25555c5253a588f8911836a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9c693eb1ade752e74998171d08324115d8684776",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/ca608115de6b2023a1995dea7170e0d52fedbdc7"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "public_commits": 15,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/040831f33c34c1a1b02b282215097b0f8f4c0e1d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/d8acaca54f78ad4701d6a7f882ede1e92ccbd5f5",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2d1dfdbcd9d236743e04aa4188cabcebe35a284e",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9b36eae4169489fe4b807c7fc14ece376bc79a63"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "public_commits": 51,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/4a5eee8133c0d038325b5a263d3143706e30cf77",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/787d84cc6c354226aeff20113d28c0b6da2e39ee",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a730855925505bd6ddfbcecab389fce55e65918d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/5b6592d217fc7fdb9417f5566d56c9401308b688"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "public_commits": 24,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/50fb6a2e9de7f3c3a905dcb5427f4f97e9701a09",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/bf40d25d35256c7a240a217fcba18191e11990cc",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/1ae7882a64054df64dd247dfd776fdb1b9ae8c58",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/0d82d2eb8fafc8dd0abc7e6b7934f68c3df6175a"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "public_commits": 70,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/9cf59ca860e7792b742f7ebd414e4fd15b521afd",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e00c99bc02677c4f68a864f4aabedcb43aeb64a3",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/a7795dae47a7d571d83f1fad828cf79442434829",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e3f455f2fcff4c71c355f74cecd9f95f92a29a91"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "public_commits": 40,
+      "private_commits": 0,
+      "public_sources": [
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/282b5a37dad2aca4b03c0f9671462618b470971a",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/2577c4d91a5398524545d13f4d7779cb02d70343",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/e0e2b6c9825557664761bb92262e6eb91baefc6d",
+        "https://github.com/Skrwl1909/alpha-husky-webapp/commit/70cfe8b73ef42fa610109c8c02eae240e391795c"
+      ]
+    }
+  ]
+}
