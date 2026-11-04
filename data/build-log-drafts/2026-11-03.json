@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "collected_at": "2026-11-04T16:17:23.718Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 234,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/234",
+      "merged_at": "2026-11-03T11:32:02Z",
+      "merge_sha": "24ac8223966ea60552e4e655f9d9d2e252a71b71",
+      "title": "Tactical G3 — progression opportunity and receipt-confirmed reward clarity"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 235,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/235",
+      "merged_at": "2026-11-03T12:29:31Z",
+      "merge_sha": "5bfce7eb2d9030bece415d6682a6cbd511e20922",
+      "title": "Tactical G2 — Courier Trace carryover reconciled with G3"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 236,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/236",
+      "merged_at": "2026-11-03T15:40:11Z",
+      "merge_sha": "ca0d8a969eac2f4a4d93e2d9abd2705410cd5e7c",
+      "title": "Tactical G4 — Living Battlefield Loop · regional pressure to real HOUND timing"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
