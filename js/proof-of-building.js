@@ -5,6 +5,44 @@ function link(url,label){if(typeof url!=='string')return null;let u;try{u=new UR
 function dateValid(s){return /^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(Date.parse(s+'T12:00:00Z'))}
 function present(d){return new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'})}
 try{
+async function renderPublicCommits(){
+const status=$('#project-activity-status'),panel=$('#project-activity-panel'),calendar=$('#project-activity-calendar'),stats=$('#project-activity-stats'),detail=$('#project-activity-day');
+try{
+const response=await fetch('/data/proof-activity.json',{cache:'no-store'});if(!response.ok)throw Error('Public commit snapshot unavailable');
+const snapshot=await response.json();
+if(snapshot.schema_version!==1||!Array.isArray(snapshot.days)||!Array.isArray(snapshot.sources))throw Error('Invalid commit snapshot');
+const map=new Map(snapshot.days.map(entry=>[entry.date,entry]));
+let selectedYear='2026';
+function draw(){
+calendar.replaceChildren();stats.replaceChildren();detail.textContent='Select an active date to inspect the repository breakdown.';
+const yearData=snapshot.years[selectedYear]||{commits:0,active_days:0};
+const start=new Date(selectedYear+'-01-01T12:00:00Z'),end=new Date(selectedYear+'-12-31T12:00:00Z');
+start.setUTCDate(start.getUTCDate()-start.getUTCDay());end.setUTCDate(end.getUTCDate()+(6-end.getUTCDay()));
+const activeWeeks=new Set(snapshot.days.filter(x=>x.date.startsWith(selectedYear)).map(x=>{const d=new Date(x.date+'T12:00:00Z');d.setUTCDate(d.getUTCDate()-d.getUTCDay());return d.toISOString().slice(0,10)})).size;
+for(const [value,label] of [[yearData.commits,'Public repository commits'],[yearData.active_days,'Days with commits'],[activeWeeks,'Weeks with commits']]){
+const card=el('div','proof-stat');card.append(el('strong','',value.toLocaleString('en-GB')),el('span','',label));stats.append(card)}
+for(let t=new Date(start);t<=end;t.setUTCDate(t.getUTCDate()+1)){
+const date=t.toISOString().slice(0,10),inYear=date.startsWith(selectedYear),entry=inYear?map.get(date):null,number=entry?.commits||0;
+const level=number>=15?4:number>=7?3:number>=3?2:number>0?1:0;
+const button=el('button','proof-cell proof-commit-cell');button.type='button';button.dataset.level=String(level);
+button.disabled=!inYear||!number;button.title=date+' · '+number+' public commit(s)';
+button.setAttribute('aria-label',button.title);
+if(inYear&&number)button.addEventListener('click',()=>{
+detail.replaceChildren(el('strong','',present(date)+' · '+number+' commit(s) across public repositories'));
+const breakdown=el('div','proof-day-links');
+for(const [repoName,count] of Object.entries(entry.repositories)){
+const source=snapshot.sources.find(x=>x.id===repoName);if(!source)continue;
+const anchor=link('https://github.com/'+source.repository+'/commits',''+repoName+': '+count);if(anchor)breakdown.append(anchor)}
+detail.append(breakdown);
+});
+calendar.append(button)}
+document.querySelectorAll('[data-commit-year]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.commitYear===selectedYear)));
+}
+document.querySelectorAll('[data-commit-year]').forEach(btn=>btn.addEventListener('click',()=>{selectedYear=btn.dataset.commitYear;draw()}));
+draw();panel.hidden=false;status.textContent='';
+}catch(error){status.textContent='The public code-history snapshot is unavailable. The verified PR and devlog record below remains accessible.';console.warn('Commit calendar unavailable:',error.message)}
+}
+await renderPublicCommits();
 const r=await fetch('/data/proof-of-building.json',{cache:'no-store'});if(!r.ok)throw Error('No data');const d=await r.json();if(d.schema_version!==1||!Array.isArray(d.github?.days)||!Array.isArray(d.archive?.days)||!Array.isArray(d.milestones)||!Array.isArray(d.evolution))throw Error('Invalid data');
 const gm=new Map(d.github.days.map(x=>[x.date,x])),am=new Map(d.archive.days.map(x=>[x.date,x]));
 const archiveDays=d.archive.days.filter(x=>dateValid(x.date)).length,githubDays=d.github.days.filter(x=>dateValid(x.date)).length;
