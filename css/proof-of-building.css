@@ -10,3 +10,21 @@
 .proof-profile-year a{color:#f5cc94;text-underline-offset:4px;margin-top:.65rem;font-size:.84rem}
 .proof-profile-note{max-width:960px;color:#bdd0d7;font-size:.88rem;line-height:1.7}
 @media(max-width:650px){.proof-profile-grid{grid-template-columns:1fr}.proof-profile-year strong{font-size:4.8rem}}
+
+/* The Long Howl V2 — project-only, source-backed Git history */
+.proof-v2-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-bottom:1.5rem}
+.proof-v2-board{margin:0}
+.proof-v2-board .proof-heatmap{grid-template-rows:repeat(7,12px);grid-auto-columns:12px;gap:4px}
+.proof-v2-board .proof-cell{width:12px;height:12px;transition:filter .13s ease}
+.proof-v2-board .proof-cell:not(:disabled){cursor:pointer}
+.proof-v2-board .proof-cell[data-level="github"][data-density="1"]{background:#326a56}
+.proof-v2-board .proof-cell[data-level="github"][data-density="2"]{background:#418c6b}
+.proof-v2-board .proof-cell[data-level="github"][data-density="3"]{background:#4cbb8b}
+.proof-v2-board .proof-cell[data-level="github"][data-density="4"]{background:#79efb2}
+.proof-v2-board .proof-cell[data-level="both"]{background:#c98df0}
+.proof-v2-board .proof-cell.proof-inactive{background:#29343c}
+.proof-v2-board .proof-cell.proof-outside{background:transparent}
+.proof-months{font-size:.71rem;color:#a9c4ce;letter-spacing:.08em;white-space:pre;overflow:hidden;margin-top:1.25rem}
+.proof-private-disclosure{font-size:.78rem;color:#afc7ce}
+@media(max-width:850px){.proof-v2-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){.proof-v2-stats .proof-stat{padding:.8rem}.proof-v2-board .proof-heatmap{grid-auto-columns:10px;grid-template-rows:repeat(7,10px);gap:3px}.proof-v2-board .proof-cell{width:10px;height:10px}}
