@@ -30,5 +30,12 @@ imageCount++;
 }}
 assert.equal(imageCount,8);
 assert.match(page,/id="proof-visual-gallery"/);
+assert.match(page,/id="consistency-title"/);
+assert.match(page,/687<\/strong>/);
+assert.match(page,/3,239<\/strong>/);
+assert.match(page,/account-wide snapshots provided by the founder/);
+assert.match(page,/not a complete history of daily work/);
+assert.match(page,/https:\/\/github.com\/Skrwl1909\?tab=overview/);
+
 console.log('Visual source images PASS:',imageCount);
 console.log('Proof of Building evidence consistency PASS:',d.github.merged_pr_count,'PRs,',d.archive.entry_count,'archive entries');
