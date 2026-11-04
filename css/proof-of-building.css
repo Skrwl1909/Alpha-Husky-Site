@@ -10,3 +10,26 @@
 .proof-profile-year a{color:#f5cc94;text-underline-offset:4px;margin-top:.65rem;font-size:.84rem}
 .proof-profile-note{max-width:960px;color:#bdd0d7;font-size:.88rem;line-height:1.7}
 @media(max-width:650px){.proof-profile-grid{grid-template-columns:1fr}.proof-profile-year strong{font-size:4.8rem}}
+
+
+/* Audited public-repository commit activity (separate from profile-wide contribution totals). */
+.proof-project-panel{border:1px solid #486573;background:linear-gradient(135deg,#0e212b,#0b1923);padding:clamp(1rem,2.5vw,1.8rem)}
+.proof-project-panel[hidden]{display:none}
+.proof-project-controls{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.9rem;align-items:center;margin-bottom:1.1rem}
+.proof-project-controls>a{color:#f4cc97;text-underline-offset:4px;font-size:.82rem}
+.proof-project-panel .proof-stats{margin-bottom:.7rem}
+.proof-commit-cell[data-level="0"]{background:#28353d}
+.proof-commit-cell[data-level="1"]{background:#255c50}
+.proof-commit-cell[data-level="2"]{background:#398e74}
+.proof-commit-cell[data-level="3"]{background:#48b58e}
+.proof-commit-cell[data-level="4"]{background:#67deb0}
+.proof-commit-cell:disabled{cursor:default}
+.proof-activity-key{display:flex;align-items:center;justify-content:flex-end;gap:.36rem;color:#bad0d7;font-size:.73rem;margin:.3rem 0 1.3rem}
+.proof-activity-key i{display:inline-block;width:11px;height:11px;border-radius:2px;background:#28353d}
+.proof-activity-key i[data-level="1"]{background:#255c50}
+.proof-activity-key i[data-level="2"]{background:#398e74}
+.proof-activity-key i[data-level="3"]{background:#48b58e}
+.proof-activity-key i[data-level="4"]{background:#67deb0}
+#project-activity-status{color:#bed4dc;margin:0 0 1rem}
+#project-activity-status:empty{display:none}
+@media(max-width:650px){.proof-project-panel .proof-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:.35rem}.proof-project-panel .proof-stat{padding:.65rem}.proof-project-panel .proof-stat strong{font-size:clamp(1.4rem,5.5vw,2.4rem)}.proof-project-panel .proof-stat span{font-size:.69rem}}
