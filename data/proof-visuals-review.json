@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "review_state": "assets_committed_in_open_pr",
+  "capture_dates": "unverified",
+  "source": "Eight original screenshots supplied by project founder in ChatGPT conversation on 2026-11-03",
+  "publication_gate": "Eight source images are committed to the open PR; review screenshot privacy and undated comparisons before merging. PR presence is not production deployment.",
+  "groups": [
+    {
+      "id": "map",
+      "title": "Regions Map — interface evolution",
+      "items": [
+        {
+          "id": "map-legacy",
+          "original": "17377.jpg",
+          "role": "legacy map modal",
+          "sha256": "602edb5cd0861ac5",
+          "title": "Compact Regions Map",
+          "caption": "A compact map modal with labelled region nodes over the original-style game dashboard.",
+          "alt": "Historical Alpha Husky Regions Map in a smaller modal, with circular map nodes and old dashboard behind it.",
+          "webp_sha256_prefix": "4c8aa1da01c58324",
+          "asset": "/assets/proof-of-building/map-legacy.webp"
+        },
+        {
+          "id": "map-expanded",
+          "original": "19187.jpg",
+          "role": "expanded map and activity strip",
+          "sha256": "80f9d203efd32559",
+          "title": "Expanded Regions Map",
+          "caption": "A larger map composition with illustrated destinations and a Blood-Moon activity notice.",
+          "alt": "Expanded map with multiple illustrated region nodes, highlighted activities and the permanent bottom navigation.",
+          "webp_sha256_prefix": "ca9b4004fb1e5004",
+          "asset": "/assets/proof-of-building/map-expanded.webp"
+        },
+        {
+          "id": "map-activity",
+          "original": "19299.jpg",
+          "role": "compact reward CTA and differentiated nodes",
+          "sha256": "aa493d884ea6286b",
+          "title": "Activity-led Map",
+          "caption": "A compact rewards banner with an Open Tower action alongside highlighted map locations.",
+          "alt": "Regions Map with Blood-Moon rewards strip, Open Tower action and prominent illustrated destination nodes.",
+          "webp_sha256_prefix": "e6538b8753a59503",
+          "asset": "/assets/proof-of-building/map-activity.webp"
+        }
+      ]
+    },
+    {
+      "id": "navigation",
+      "title": "Dashboard and Hub — navigation evolution",
+      "items": [
+        {
+          "id": "navigation-legacy",
+          "original": "17530.jpg",
+          "role": "character-centred vertical navigation",
+          "sha256": "e3edcc88a8dbad6e",
+          "title": "Character-centred Dashboard",
+          "caption": "Home actions arranged around the character artwork instead of grouped navigation.",
+          "alt": "Older Alpha Husky dashboard with character portrait and vertical controls on either side.",
+          "webp_sha256_prefix": "11433783d6674260",
+          "asset": "/assets/proof-of-building/navigation-legacy.webp"
+        },
+        {
+          "id": "dashboard-expanded",
+          "original": "18555.jpg",
+          "role": "expanded character-centred navigation",
+          "sha256": "8087c937295d90c6",
+          "title": "Expanded Dashboard",
+          "caption": "An additional dashboard configuration with more game actions and share options.",
+          "alt": "Historical Alpha Husky homepage with red-cloaked character artwork and expanded navigation controls.",
+          "webp_sha256_prefix": "7f05e5053d1d4dac",
+          "asset": "/assets/proof-of-building/dashboard-expanded.webp"
+        },
+        {
+          "id": "navigation-hub",
+          "original": "18952.jpg",
+          "role": "organised two-column Hub menu",
+          "sha256": "dac04a7ceaf91f2f",
+          "title": "Dedicated Hub Menu",
+          "caption": "A two-column Hub groups game destinations into a more scannable menu.",
+          "alt": "Dark two-column Alpha Husky Hub menu with gameplay and community destinations.",
+          "webp_sha256_prefix": "6df23d82f83247a2",
+          "asset": "/assets/proof-of-building/navigation-hub.webp"
+        }
+      ]
+    },
+    {
+      "id": "gameplay",
+      "title": "Historical gameplay and character interface",
+      "items": [
+        {
+          "id": "combat-moon-lab",
+          "original": "18546.jpg",
+          "role": "text-based Moon Lab combat",
+          "sha256": "8e3cbd018b04199a",
+          "title": "Moon Lab Combat Log",
+          "caption": "A historical battle record with HP gauges and individual damage events.",
+          "alt": "Historical Moon Lab Fortress battle modal showing player and boss hit points and a text-based combat log.",
+          "webp_sha256_prefix": "f86981c0f806de63",
+          "asset": "/assets/proof-of-building/combat-moon-lab.webp"
+        },
+        {
+          "id": "character-menu",
+          "original": "18817.jpg",
+          "role": "Character panel navigation",
+          "sha256": "52e950134d58ccc0",
+          "title": "Character Panel",
+          "caption": "A standalone character menu listing Equipped, Skins, Avatar, Stats and Pets.",
+          "alt": "Alpha Husky Character modal with five stacked entries for Equipment, Skins, Avatar, Stats and Pets.",
+          "webp_sha256_prefix": "f98a45539773241a",
+          "asset": "/assets/proof-of-building/character-menu.webp"
+        }
+      ]
+    }
+  ],
+  "asset_path": "assets/proof-of-building/<id>.webp",
+  "claims_not_supported": [
+    "precise capture dates",
+    "production ship date for each pictured feature",
+    "complete chronological ordering",
+    "independent game functionality verification from a static image"
+  ],
+  "notes": "Eight authentic optimized WebP screenshots are in assets/proof-of-building/ on the feature branch. Source originals and full SHA-256 hashes are preserved in the founder-held evidence ZIP."
+}
