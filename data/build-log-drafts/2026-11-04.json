@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "collected_at": "2026-11-05T16:27:50.491Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 238,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/238",
+      "merged_at": "2026-11-04T09:47:33Z",
+      "merge_sha": "411c1a118f5afbb600f3480edada2ec9406e589f",
+      "title": "Tactical After Action Impact V1 — receipt-first victory and next move"
+    },
+    {
+      "repository": "Skrwl1909/Alpha-Husky-Site",
+      "pr_number": 19,
+      "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/19",
+      "merged_at": "2026-11-04T11:03:47Z",
+      "merge_sha": "ef9573ddeb11dc31fba4d508e10a2ab6f542cd2e",
+      "title": "The Long Howl — source-backed Proof of Building V1"
+    },
+    {
+      "repository": "Skrwl1909/Alpha-Husky-Site",
+      "pr_number": 20,
+      "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/20",
+      "merged_at": "2026-11-04T11:36:51Z",
+      "merge_sha": "6a731ee78b21cbb9e70672d3101a9e0e2f2b9f1d",
+      "title": "The Long Howl — restore full GitHub consistency context"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 239,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/239",
+      "merged_at": "2026-11-04T11:58:51Z",
+      "merge_sha": "282b5a37dad2aca4b03c0f9671462618b470971a",
+      "title": "Tactical Player Voice V1 — game-first copy, graded victories and real HOUND payoff"
+    },
+    {
+      "repository": "Skrwl1909/Alpha-Husky-Site",
+      "pr_number": 21,
+      "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/21",
+      "merged_at": "2026-11-04T12:23:43Z",
+      "merge_sha": "69c48ce1ce93cdca5870bd431981f46be56df1d3",
+      "title": "The Long Howl V2 — audit full 2025–2026 Git activity and restore true project scale"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 237,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/237",
+      "merged_at": "2026-11-04T12:35:04Z",
+      "merge_sha": "7ffa44997b71cb4c7c3fa230abaf88c9f72444dc",
+      "title": "[DRAFT] Browser Guest Entry V1 — opt-in, APK-safe isolation"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 241,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/241",
+      "merged_at": "2026-11-04T18:05:39Z",
+      "merge_sha": "8f5db8c8c66f02c49785d1988d64e0fae5efbdff",
+      "title": "Tactical Ops RC Gate 01 — validate accepted-run contract versions"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
