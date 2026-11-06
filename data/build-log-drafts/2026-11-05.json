@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "collected_at": "2026-11-06T15:54:32.498Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 243,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/243",
+      "merged_at": "2026-11-05T12:03:59Z",
+      "merge_sha": "6b78f7812d0a4eae480f13b5ecdf07acf5b78453",
+      "title": "Tactical Ops — Overhead Perspective V1 (shared Legacy/VNext projection)"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 244,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/244",
+      "merged_at": "2026-11-05T12:44:22Z",
+      "merge_sha": "98b41d5a1b8112c09787a2eca6185df79145d6ca",
+      "title": "Tactical Ops — HOUND Directional V1: five playable archetype silhouettes"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 242,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/242",
+      "merged_at": "2026-11-05T14:17:15Z",
+      "merge_sha": "df00ab5d473186ccc4ff7a583ea49a1a48e8a075",
+      "title": "[DRAFT] Browser Guest V1 — session, FTUE & canonical Equipped integration"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 246,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/246",
+      "merged_at": "2026-11-05T22:57:31Z",
+      "merge_sha": "71870735afca184e1e7b32d95aca6059a5937d07",
+      "title": "Tactical Ops — Battlefield Visual Alignment V1 (render-only)"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
