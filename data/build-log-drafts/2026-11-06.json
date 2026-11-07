@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "collected_at": "2026-11-07T14:53:13.568Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 248,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/248",
+      "merged_at": "2026-11-06T00:02:47Z",
+      "merge_sha": "887f037bc65bc2f819d13bb0f5a7155b93e4f829",
+      "title": "Tactical Ops — Battlefield Actor Readability & Facing V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 247,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/247",
+      "merged_at": "2026-11-06T00:04:19Z",
+      "merge_sha": "86dcda363e1876613a1ad9ef27170cdabd527134",
+      "title": "Draft: Signal Rank Plate V1 — visual-only frame wiring"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 249,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/249",
+      "merged_at": "2026-11-06T00:18:12Z",
+      "merge_sha": "d7ab1decd31f8f02baecca1db30f039ebef2383f",
+      "title": "Fix: show Signal Rank Plate in Frames as preview-only"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 250,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/250",
+      "merged_at": "2026-11-06T00:23:46Z",
+      "merge_sha": "f05059c576290ea0b8fcffaca2d7f44d5c405f5d",
+      "title": "Fix: Signal Rank Plate animated Frame Gallery preview"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 251,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/251",
+      "merged_at": "2026-11-06T10:06:42Z",
+      "merge_sha": "5569beb7bc76f7c6b24f677b75fc7d8e13df5ebf",
+      "title": "Tactical Ops — Premium Combat Experience"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 252,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/252",
+      "merged_at": "2026-11-06T10:29:39Z",
+      "merge_sha": "dbc930295c37393b7cd6ef21a02e476eff3a03c5",
+      "title": "fix(browser): Faction Bind uses canonical SecureSession API"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 255,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/255",
+      "merged_at": "2026-11-06T11:36:56Z",
+      "merge_sha": "31a4cef47856177d4769f27c89bf906e069e2dcb",
+      "title": "Fix Signal Rank Plate preview animation on desktop"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 254,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/254",
+      "merged_at": "2026-11-06T11:50:45Z",
+      "merge_sha": "a19311fdcb91c69c66779f6f9e50536e17ad4fb5",
+      "title": "Tactical Ops G2 — close the Courier Trace consequence"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 256,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/256",
+      "merged_at": "2026-11-06T15:41:42Z",
+      "merge_sha": "7df407abb9f3224f11488e98f7815c84f62c7fe2",
+      "title": "Tactical Ops — V1 Final Player Experience Pass"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 257,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/257",
+      "merged_at": "2026-11-06T23:43:52Z",
+      "merge_sha": "faff4e740061b213a0960d5ed737eecd46a48d90",
+      "title": "Tactical Ops Loadout V1 — squad-first Mission Brief"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
