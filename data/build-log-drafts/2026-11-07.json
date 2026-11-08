@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-07",
+  "collected_at": "2026-11-08T15:10:02.454Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 258,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/258",
+      "merged_at": "2026-11-07T11:10:22Z",
+      "merge_sha": "1a9e41436c364e2bf0c557f74b1e11e57a47084f",
+      "title": "Tactical Ops Field Contracts V1 · Reach Rend"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 259,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/259",
+      "merged_at": "2026-11-07T14:15:04Z",
+      "merge_sha": "e00d0e534fb1f3387102818b5d8db35dafd44ae2",
+      "title": "Keep Field Contracts and Reach Rend truthful on legacy Field Ops"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 253,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/253",
+      "merged_at": "2026-11-07T14:24:34Z",
+      "merge_sha": "56d6c1176f8f839516c92e7c9264a01e335da284",
+      "title": "Browser Guest Release Gate — safe read-only API probe & Reddit QA contract"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 260,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/260",
+      "merged_at": "2026-11-07T16:57:30Z",
+      "merge_sha": "f36f97231be5671a4045aaf60f8fd1e7d8b1329e",
+      "title": "fix(browser): visible safe exit from Tactical Ops"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 261,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/261",
+      "merged_at": "2026-11-07T22:42:38Z",
+      "merge_sha": "673499c056f639d752b5d96bbccd4ce186687050",
+      "title": "Tactical Ops · take Reach Rend from Victory to ALPHA’s A2"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 262,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/262",
+      "merged_at": "2026-11-07T22:48:06Z",
+      "merge_sha": "b03985fed135ff4d2f68d059343b1f17d86d2d95",
+      "title": "Tactical Ops · premium Reward → Equip → Play"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
