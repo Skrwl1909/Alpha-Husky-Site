@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "collected_at": "2026-11-09T18:46:04.582Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 263,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/263",
+      "merged_at": "2026-11-08T10:11:31Z",
+      "merge_sha": "b9e837361d8b1f67edd57375eccc36d4c9c21141",
+      "title": "Tactical Ops · SURVIVE Combat Tension V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 265,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/265",
+      "merged_at": "2026-11-08T15:24:08Z",
+      "merge_sha": "0c2740ab0821f177dca71752245c706e51aa3626",
+      "title": "Browser Existing Player V1 — Telegram Sync Code without account migration"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 266,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/266",
+      "merged_at": "2026-11-08T15:28:40Z",
+      "merge_sha": "d4da1a3f7ecc894e6295bd2b7ccd0f3d31107979",
+      "title": "Browser FTUE — preserve Awakening and Oath before faction bind"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 264,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/264",
+      "merged_at": "2026-11-08T16:43:52Z",
+      "merge_sha": "b32f4594d43cf6ceec105e8371ba29627645716a",
+      "title": "Tactical Ops · Commander Service Record V1"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
