@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "collected_at": "2026-11-10T16:24:57.578Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 269,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/269",
+      "merged_at": "2026-11-09T10:37:33Z",
+      "merge_sha": "7cfd9421039146c7e61b99be91a099a3c2622f79",
+      "title": "Browser Public Entry V1 — open app.alphahusky.win without test flag"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 268,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/268",
+      "merged_at": "2026-11-09T10:41:31Z",
+      "merge_sha": "182778165eab8ddde44cb3bfe4fe5d25d44145ee",
+      "title": "Tactical Ops Next Decision V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 267,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/267",
+      "merged_at": "2026-11-09T14:11:43Z",
+      "merge_sha": "a4e37998a5756dddad16e2cb97104a5263551601",
+      "title": "Signal Trials V1 · Relay Pressure combat review"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 270,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/270",
+      "merged_at": "2026-11-09T14:37:56Z",
+      "merge_sha": "11a9c169cce09a7b75837af08fe13248b7d90cb4",
+      "title": "Hub Next Move V2 — eligibility-driven activity rotation"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 272,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/272",
+      "merged_at": "2026-11-09T22:37:45Z",
+      "merge_sha": "feff1a21f563db532b8c313c88ba502d587a187c",
+      "title": "First Playable Bridge V1 — Rustfang → server-gated Tactical Foundation"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
