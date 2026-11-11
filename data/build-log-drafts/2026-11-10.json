@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "collected_at": "2026-11-11T16:08:35.579Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 273,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/273",
+      "merged_at": "2026-11-10T12:26:25Z",
+      "merge_sha": "982cb2e93306fc85e22fc2af196e9ef1325dc3c9",
+      "title": "Tactical Ops Reward Experience V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 274,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/274",
+      "merged_at": "2026-11-10T13:31:33Z",
+      "merge_sha": "83139a060bf1db35719020d4ce5fc533e3e856a7",
+      "title": "Play Field Ops Relay Recovery with server-confirmed commands"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
