@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "collected_at": "2026-11-12T16:47:40.633Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 275,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/275",
+      "merged_at": "2026-11-11T00:17:59Z",
+      "merge_sha": "fb3408756d71ada28f7c1d5bf4a871f17f99a9e1",
+      "title": "Tactical Ops — Victory Experience V2 · Premium Mobile Results"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 276,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/276",
+      "merged_at": "2026-11-11T09:26:32Z",
+      "merge_sha": "ef278db86500e8b18e2727c75c0da1ef72f93fdb",
+      "title": "Tactical Ops — Victory Art Kit V1 · cinematic presentation layers"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 279,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/279",
+      "merged_at": "2026-11-11T14:31:42Z",
+      "merge_sha": "368047c05fe86040984e76ee67ec6ee65f0d315d",
+      "title": "Tactical Gear Impact V3.1 — capped combat consequence, legacy RECOVER parity, coordinated release"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
