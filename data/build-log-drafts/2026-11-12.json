@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "collected_at": "2026-11-13T16:18:34.736Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 280,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/280",
+      "merged_at": "2026-11-12T09:30:28Z",
+      "merge_sha": "22f7e58886fab280031d5e3fac460663b5dd28f4",
+      "title": "Tactical Player Identity V2 — Equipped Skins & Frames Across Tactical Ops"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 281,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/281",
+      "merged_at": "2026-11-12T10:48:51Z",
+      "merge_sha": "0d53bc3c971c91d99ab1df116622875c6680e7b3",
+      "title": "War Table Visual Identity V2 — AAA Operation Environments & Mission Emblems"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 282,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/282",
+      "merged_at": "2026-11-12T11:06:51Z",
+      "merge_sha": "48141f925224bc3943561c3b38bdcf3e6085b789",
+      "title": "Tactical Results — Forge Item Preview V1 (Cloudinary art, rarity, fallback)"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
