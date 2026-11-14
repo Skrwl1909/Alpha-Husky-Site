@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-13",
+  "collected_at": "2026-11-14T15:02:02.191Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 283,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/283",
+      "merged_at": "2026-11-13T00:07:51Z",
+      "merge_sha": "ea6889b86bddc4d16283b124ced978c8302225d3",
+      "title": "Tactical Field Legacy Reward Reveal V1 — receipt-confirmed Victory Results"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 271,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/271",
+      "merged_at": "2026-11-13T09:42:22Z",
+      "merge_sha": "99275626383eaf13ce9a45419c56951aa5ae6044",
+      "title": "Tactical Foundation Character Bridge V1 — apply frozen V3 at spawn"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 284,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/284",
+      "merged_at": "2026-11-13T12:24:31Z",
+      "merge_sha": "dae9179cb1ef75a140552add9d1a01489401740a",
+      "title": "Tactical Ops P0 — deliver merged Real Player Stats runtime to Telegram"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 277,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/277",
+      "merged_at": "2026-11-13T12:54:29Z",
+      "merge_sha": "bd4e0cdbda8bbdbfecc64db90031aad84cd78d82",
+      "title": "Forge → Field Test V1: confirm real upgrade gains and return to Tactical Ops"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 278,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/278",
+      "merged_at": "2026-11-13T13:08:52Z",
+      "merge_sha": "169cda299f220e06239277ca4e1f780e486e16d0",
+      "title": "Reward Loop P2: turn confirmed Field Ops payout into an actionable material goal"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 285,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/285",
+      "merged_at": "2026-11-13T18:17:13Z",
+      "merge_sha": "c3e001cf1d0ed98c70fee2b3c4c4d70ea540e4a8",
+      "title": "Tactical Ops P0 — First Upgrade Supply to confirmed Forge upgrade"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 286,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/286",
+      "merged_at": "2026-11-13T18:50:44Z",
+      "merge_sha": "063e9b83e8fc7461a04d9edf95db85ce91def6ec",
+      "title": "Tactical Power V1 — confirmed combat stats in Squad & Battle"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 287,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/287",
+      "merged_at": "2026-11-13T19:03:56Z",
+      "merge_sha": "4106e49b0858e351827768874d52bf567efb1e42",
+      "title": "Forge Upgrade Impact V1 — verified star-up reveal & Field Test"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 288,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/288",
+      "merged_at": "2026-11-13T20:35:59Z",
+      "merge_sha": "ae24b0142bab146538c9588cb505965086d80862",
+      "title": "Hub V2 — centre network core inside rotating ring"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
