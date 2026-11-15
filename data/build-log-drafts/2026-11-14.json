@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "collected_at": "2026-11-15T15:38:44.007Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 289,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/289",
+      "merged_at": "2026-11-14T00:18:05Z",
+      "merge_sha": "c126ed8c37e1af2863013f6767f0d955454cac5c",
+      "title": "Navbar V3 Lite — Tactical Ops direct entry + original SVG icons"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 290,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/290",
+      "merged_at": "2026-11-14T12:20:06Z",
+      "merge_sha": "f37a6b790c7d8707e64830143b9d749058dd774c",
+      "title": "Allow Tactical Ops Alpha soft-cap stat ranges"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 291,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/291",
+      "merged_at": "2026-11-14T20:31:01Z",
+      "merge_sha": "50b0a86d957b404e6c5c2f58b823a69eb9ed58d5",
+      "title": "Allow Tactical Ops Alpha progression V1 ranges"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 292,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/292",
+      "merged_at": "2026-11-14T22:07:43Z",
+      "merge_sha": "0378efb6817bd2b023d7d9b445197967d26a8668",
+      "title": "Add revisioned Veteran Relay Pressure encounters"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
