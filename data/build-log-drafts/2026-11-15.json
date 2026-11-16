@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "collected_at": "2026-11-16T18:29:54.396Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 293,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/293",
+      "merged_at": "2026-11-15T09:29:58Z",
+      "merge_sha": "4ca501bd0d191a9d8fec0632446a5e3b7a00e61c",
+      "title": "Fix Tactical Ops movement onto defeated enemy tiles"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 294,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/294",
+      "merged_at": "2026-11-15T09:45:22Z",
+      "merge_sha": "5e0f5218d44d1552e052dede538cf2a8a7916b60",
+      "title": "Tactical Ops — LAST HOWL V1 endless survival"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 295,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/295",
+      "merged_at": "2026-11-15T12:16:53Z",
+      "merge_sha": "25edd97a554ad8315d6613bc38c7957d283cc855",
+      "title": "Last Howl V1.1 reinforcement pressure"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 296,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/296",
+      "merged_at": "2026-11-15T16:01:23Z",
+      "merge_sha": "c6790147256f1d585b79978bfa89278eca458f95",
+      "title": "Tactical Ops — Combat Motion Foundation V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 297,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/297",
+      "merged_at": "2026-11-15T17:59:39Z",
+      "merge_sha": "d3c53ce4979ba94a2b83b24a9496bf16cc4dae2a",
+      "title": "Tactical Ops — Enemy Combat Identity Art Kit V1 (assets only)"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 298,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/298",
+      "merged_at": "2026-11-15T19:04:24Z",
+      "merge_sha": "deb448796e91f8089c0c571a4a5bcfdb7c714c45",
+      "title": "Tactical Ops — Enemy Combat Motion V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 299,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/299",
+      "merged_at": "2026-11-15T19:04:45Z",
+      "merge_sha": "efb63e0f1ef6935dd2fad49a2aa7486cf8ae03bd",
+      "title": "Tactical Ops — Skill & Mastery Motion V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 300,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/300",
+      "merged_at": "2026-11-15T20:24:52Z",
+      "merge_sha": "bdc545d9fe140e7a79581452ad4309588af3e7b1",
+      "title": "Tactical Ops — Land Skill & Mastery Motion V1 on main (#299 follow-up)"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
