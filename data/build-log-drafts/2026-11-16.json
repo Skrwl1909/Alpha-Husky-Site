@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "collected_at": "2026-11-17T17:37:16.656Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 301,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/301",
+      "merged_at": "2026-11-16T10:33:48Z",
+      "merge_sha": "2fdb990846840a997f36a49a176b6f848463a46d",
+      "title": "Tactical Ops M1 — Show saved build effects and the next Atlas upgrade"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 302,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/302",
+      "merged_at": "2026-11-16T14:38:39Z",
+      "merge_sha": "fec9422a265ac455a05b8318e426100c89f32097",
+      "title": "Tactical Ops M2: add Wide Lunge for Pursuer CNC"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 303,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/303",
+      "merged_at": "2026-11-16T15:26:33Z",
+      "merge_sha": "6cb0a0d5599986a03ba27acf58aa966b7ba0e407",
+      "title": "Signal Atlas Premium V1 — Tactical Blueprint × Forged Doctrine"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 304,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/304",
+      "merged_at": "2026-11-16T15:43:44Z",
+      "merge_sha": "b30ad79db0ae30fd86cd6823078287150bba0246",
+      "title": "Signal Atlas: show premium skill tree on first opening"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 305,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/305",
+      "merged_at": "2026-11-16T23:30:07Z",
+      "merge_sha": "0373ccaf3849d4c46e8c3a09670dd5207822337b",
+      "title": "Signal Atlas: concept 02 core blueprint + concept 03 doctrine stage"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
