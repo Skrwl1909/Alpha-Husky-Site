@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "collected_at": "2026-11-18T17:14:23.542Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 306,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/306",
+      "merged_at": "2026-11-17T14:19:31Z",
+      "merge_sha": "2546931eb8276a1267052dae067c99ba2166dc92",
+      "title": "Alpha-first Signal Atlas Skill Tree V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 307,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/307",
+      "merged_at": "2026-11-17T15:08:14Z",
+      "merge_sha": "e4c1a9b5285d2a2ed5ee79a95d933295c535002b",
+      "title": "Signal Atlas V1.1 — immersive screen and confirmed upgrade activation"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 308,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/308",
+      "merged_at": "2026-11-17T15:24:40Z",
+      "merge_sha": "26f193a8eaf1d3afaca1ee322637a52bf8d947fb",
+      "title": "Fix Signal Atlas header overlap in Telegram WebApp"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 309,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/309",
+      "merged_at": "2026-11-17T22:36:03Z",
+      "merge_sha": "ef42f2101833bfcf742a725befcad8a969913a4d",
+      "title": "Fix Last Howl exit/abandon controls hidden on mobile"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 310,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/310",
+      "merged_at": "2026-11-17T23:52:44Z",
+      "merge_sha": "ecf0f0e067a02697d6d0feb82e950af790aa003b",
+      "title": "Fix Signal Atlas Review Upgrade modal hidden behind fullscreen Atlas"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
