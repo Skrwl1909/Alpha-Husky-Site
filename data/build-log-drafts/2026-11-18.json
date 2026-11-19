@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "collected_at": "2026-11-19T17:21:42.800Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 311,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/311",
+      "merged_at": "2026-11-18T09:26:50Z",
+      "merge_sha": "5818ea1bcc45f6f36e32ac937bf9589d560211bb",
+      "title": "COMMAND DECK V2 — premium operation and progression hierarchy"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 312,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/312",
+      "merged_at": "2026-11-18T11:15:08Z",
+      "merge_sha": "9f0d2a340f15b5043f248b813e32a1ad376db215",
+      "title": "Signal Atlas P1-01 · Blood Scent (private backend candidate required)"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 313,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/313",
+      "merged_at": "2026-11-18T11:53:05Z",
+      "merge_sha": "3b2eb7c85316fc95e31148832c63346f2b419f8c",
+      "title": "Signal Atlas · PACK LINK positional HOWL guard — backend candidate required"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 314,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/314",
+      "merged_at": "2026-11-18T15:22:36Z",
+      "merge_sha": "2fb3b58904d82be38735b178ed22df108c31788c",
+      "title": "S9C Counterstrike — The False Relay (private authority candidate required)"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
