@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "collected_at": "2026-11-20T16:56:27.240Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 315,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/315",
+      "merged_at": "2026-11-19T10:05:19Z",
+      "merge_sha": "8a2ef9cc4f621e14da3053b731497fba123ac27b",
+      "title": "Tactical Story Lite V1 — False Relay briefing, HOUND cue & aftermath"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 316,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/316",
+      "merged_at": "2026-11-19T11:43:39Z",
+      "merge_sha": "520f3bd80bc5aa21ee80066989f71bf3d6aaf7f8",
+      "title": "Counterstrike: enable Story Lite and unclip False Relay on Telegram Desktop"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 317,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/317",
+      "merged_at": "2026-11-19T12:18:23Z",
+      "merge_sha": "393cd70f30a0c4ac18021f9dbfb35ad227c59980",
+      "title": "Counterstrike Briefing V2: cinematic to action, compact on Telegram Desktop"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 318,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/318",
+      "merged_at": "2026-11-19T14:32:01Z",
+      "merge_sha": "92167ad1ea4c6c3d94d8a8454c7d0d5db60c5fe6",
+      "title": "G3-01 · Carrier Jam for Relay Recovery"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
