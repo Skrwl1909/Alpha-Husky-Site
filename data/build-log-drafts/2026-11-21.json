@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-21",
+  "collected_at": "2026-11-22T16:15:07.429Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 325,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/325",
+      "merged_at": "2026-11-21T10:33:20Z",
+      "merge_sha": "f07aa4414b4079d280cd6f23213bd9d2cf6148ad",
+      "title": "fix(tactical): Combat UX Reliability V1 — targeting, feedback and command telemetry"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 326,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/326",
+      "merged_at": "2026-11-21T10:42:52Z",
+      "merge_sha": "e5f779c60c53d6961adc59c5ab42dd086dda07d4",
+      "title": "fix(tactical): recover Relay Intercept settlement after lost response (P0)"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 324,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/324",
+      "merged_at": "2026-11-21T15:51:02Z",
+      "merge_sha": "ada1c0891707aa5767e7d161acd152e8c77a73e2",
+      "title": "feat(tactical): Loot & Honors V1 frontend foundation and 10 vector collectibles"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
