@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "collected_at": "2026-11-24T19:29:37.391Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 327,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/327",
+      "merged_at": "2026-11-23T15:10:01Z",
+      "merge_sha": "4925a8250a03d57353ed8986486a7b5024e111be",
+      "title": "fix(tactical): server-authoritative Survival settlement P0 and pressure V1"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 328,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/328",
+      "merged_at": "2026-11-23T16:53:59Z",
+      "merge_sha": "ef551b991fb2a9f31f6592fc066168dbe2d3445f",
+      "title": "feat(tactical): Premium Game Feel P1 — confirmed victory and reward feedback"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 329,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/329",
+      "merged_at": "2026-11-23T18:07:17Z",
+      "merge_sha": "026eee33d51a296a2d2f876551ced092d7c01320",
+      "title": "feat(tactical): Threat & Battlefield Clarity P2 — accepted danger readability"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
