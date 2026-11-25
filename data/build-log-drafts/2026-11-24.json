@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "collected_at": "2026-11-25T18:38:44.986Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 330,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/330",
+      "merged_at": "2026-11-24T09:55:06Z",
+      "merge_sha": "baae5912740d74cc8746744f44379bbe7e8bbc3f",
+      "title": "P3 — Operation Consequence Cards"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 331,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/331",
+      "merged_at": "2026-11-24T11:09:08Z",
+      "merge_sha": "a330e12bdb0cc0145dc65e8d9e3f4793143ade3f",
+      "title": "P3.1 — Premium Result Visual Consistency"
+    },
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 332,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/332",
+      "merged_at": "2026-11-24T22:58:08Z",
+      "merge_sha": "a3161f8e8ef7f2f4dd06191718170b814f2093b3",
+      "title": "Fix Operation Consequence Frame — P3.2"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
