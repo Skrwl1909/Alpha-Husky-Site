@@ -1,0 +1,46 @@
+name: IndexNow — production-gated submission
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+      - 'data/build-log.json'
+      - 'data/proof-of-building.json'
+      - 'data/proof-activity-v2.json'
+      - 'assets/updates.json'
+  workflow_dispatch:
+    inputs:
+      submit:
+        description: 'Submit all sitemap URLs (unchecked = dry run)'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify syntax and select URLs
+        env:
+          INDEXNOW_ALL: ${{ github.event_name == 'workflow_dispatch' }}
+          INDEXNOW_BEFORE: ${{ github.event.before }}
+          INDEXNOW_DRY_RUN: 'true'
+        run: node --check scripts/indexnow.mjs && node scripts/indexnow.mjs
+      - name: Submit verified production changes
+        if: github.event_name == 'push' || inputs.submit == true
+        env:
+          INDEXNOW_ALL: ${{ github.event_name == 'workflow_dispatch' }}
+          INDEXNOW_BEFORE: ${{ github.event.before }}
+          INDEXNOW_DRY_RUN: 'false'
+        run: node scripts/indexnow.mjs
