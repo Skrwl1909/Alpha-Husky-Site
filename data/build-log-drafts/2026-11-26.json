@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "collected_at": "2026-11-27T18:10:02.398Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/Alpha-Husky-Site",
+      "pr_number": 44,
+      "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/44",
+      "merged_at": "2026-11-26T22:23:47Z",
+      "merge_sha": "76f7e8043b553bc39189974e3b80514b51e97057",
+      "title": "SEO & AI Discoverability P0 — game-first discovery"
+    },
+    {
+      "repository": "Skrwl1909/Alpha-Husky-Site",
+      "pr_number": 45,
+      "url": "https://github.com/Skrwl1909/Alpha-Husky-Site/pull/45",
+      "merged_at": "2026-11-26T22:44:20Z",
+      "merge_sha": "75af842f0b6d23cd7fe1691f6e7c57b77a6767c1",
+      "title": "IndexNow P1 — production-gated search distribution"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
