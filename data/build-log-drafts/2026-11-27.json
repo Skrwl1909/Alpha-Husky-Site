@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "collected_at": "2026-11-28T16:51:43.514Z",
+  "status": "implemented",
+  "review_state": "pending",
+  "evidence": [
+    {
+      "repository": "Skrwl1909/alpha-husky-webapp",
+      "pr_number": 335,
+      "url": "https://github.com/Skrwl1909/alpha-husky-webapp/pull/335",
+      "merged_at": "2026-11-27T15:22:37Z",
+      "merge_sha": "8b6e12ab37c9bed0d95205cd6b05253da7222e51",
+      "title": "Tactical Ops V2 × Meaningful Power V1: production reconciliation and acceptance closure"
+    }
+  ],
+  "editorial": {
+    "title": null,
+    "summary": null
+  },
+  "note": "Merged code only. No runtime or device verification asserted. Review required before any public entry."
+}
